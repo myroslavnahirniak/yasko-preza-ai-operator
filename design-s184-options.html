@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>184 · Одной кнопкой окажу услуг ещё примерно на $1500 · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.text{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3;text-align:center}
+.text h1{font:500 4.4cqw/1.18 Unbounded,sans-serif;letter-spacing:-.03em;text-wrap:balance}
+.art:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,.85) 0%,rgba(11,9,7,.55) 18%,transparent 34%)}
+/* підписи під предметами */
+.cap{position:absolute;z-index:4;width:22cqw;text-align:center;transform:translateX(-50%)}
+.cap b{display:block;font:500 2.05cqw/1.25 Manrope,sans-serif;color:var(--cream);text-wrap:balance}
+.cap i{display:block;margin-top:.7cqh;font:500 2.5cqw/1 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--yellow)}
+.cap:before{content:'';position:absolute;left:50%;top:-3.6cqh;height:3cqh;width:1px;background:linear-gradient(180deg,transparent,#fdd506)}
+.cap.is-past{opacity:.72}
+.glow{position:absolute;z-index:1;width:30cqw;height:30cqw;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(253,213,6,.28) 0%,rgba(253,213,6,.08) 40%,transparent 70%);pointer-events:none;mix-blend-mode:screen}
+.glow.is-past{opacity:.35}
+.total{position:absolute;z-index:4;left:7cqw;right:7cqw;bottom:6cqh;display:flex;justify-content:space-between;align-items:baseline;padding-top:1.6cqh;border-top:1px solid rgba(253,213,6,.55)}
+.total span{font:500 2.1cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.total em{font:500 6cqw/1 Unbounded,sans-serif;letter-spacing:-.04em}
+/* А · стол */
+.v-A .cap{top:70cqh}
+.v-A .cap.c1{left:16.5cqw}.v-A .cap.c2{left:37.5cqw}.v-A .cap.c3{left:62cqw}.v-A .cap.c4{left:86.5cqw}
+.v-A .glow{top:52cqh}.v-A .glow.g1{left:16.5cqw}.v-A .glow.g2{left:37.5cqw}.v-A .glow.g3{left:62cqw}.v-A .glow.g4{left:86.5cqw}
+/* Б · кнопка */
+.v-B .text h1{font-size:4.1cqw}
+.v-B .cap{width:26cqw}
+.v-B .cap.c1{left:21cqw;top:50cqh}.v-B .cap.c2{left:82cqw;top:52cqh}.v-B .cap.c3{left:23cqw;top:88cqh}.v-B .cap.c4{left:78cqw;top:86.5cqh}
+.v-B .cap:before{display:none}
+.v-B .glow{width:34cqw;height:34cqw}
+.v-B .glow.g1{left:21cqw;top:37cqh}.v-B .glow.g2{left:83cqw;top:38cqh}.v-B .glow.g3{left:23cqw;top:76cqh}.v-B .glow.g4{left:78cqw;top:72cqh}
+.v-B .total{left:33cqw;right:33cqw;bottom:auto;top:69cqh;flex-direction:column;align-items:center;gap:1cqh;border-top:0;padding-top:0}
+.v-B .total em{font-size:6.4cqw;text-shadow:0 0 3cqw rgba(253,213,6,.35)}
+/* В · іконки */
+.v-C{background:radial-gradient(ellipse at 50% 20%,#1a1410 0%,#0b0907 60%)}
+.v-C .text h1{font-size:4.3cqw}
+.tiles{position:absolute;left:7cqw;right:7cqw;top:25cqh;display:grid;grid-template-columns:repeat(4,1fr);gap:2cqw;z-index:3}
+.tile{background:var(--panel);border:1px solid var(--rule);padding:0 0 2.2cqh;text-align:center;position:relative;overflow:hidden}
+.tile .ic{display:block;width:100%;aspect-ratio:1;object-fit:cover;mix-blend-mode:lighten}
+.tile b{display:block;margin:.8cqh 1.2cqw 0;font:500 2.05cqw/1.25 Manrope,sans-serif;color:var(--cream);min-height:5cqh;text-wrap:balance}
+.tile i{display:block;margin-top:.9cqh;font:500 2.4cqw/1 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--yellow)}
+.tile.is-now{border-color:rgba(253,213,6,.7);box-shadow:0 0 0 1px rgba(253,213,6,.25),0 1.2cqh 4cqh rgba(0,0,0,.5)}
+.v-C .total{bottom:17cqh}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Стол с четырьмя предметами</button><button role="tab" data-v="B">Б · Одна кнопка</button><button role="tab" data-v="C">В · Четыре 3D-иконки</button></div>
+<p class="description"></p>
+<p class="note">Полный текст источника (4 строки с ценами + итог). Фоны — GPT Image 2.5 (2k), подписи и цены — живой текст. 5 шагов: строки по одной, итог последним. Клавиши: ←/→ вариант, ↓/Space шаг, ↑ назад.</p>
+<div class="actions"><button id="prev" class="stepbtn">◀ шаг</button><span id="stepinfo"></span><button id="next" class="stepbtn">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+</nav>
+<script>
+const ROWS=[['AI-продавец','от $500'],['рекламное видео с моим лицом','от $250'],['рекламные объявления','от $250'],['реклама в соц сетях','от $500']];
+const H1='<div class="text fx-up"><h1>Одной кнопкой окажу услуг ещё примерно на <em>$1500</em></h1></div>';
+const caps=()=>ROWS.map((r,i)=>'<div class="glow g'+(i+1)+'" data-step="'+(i+1)+'"></div><div class="cap c'+(i+1)+'" data-step="'+(i+1)+'"><b>'+r[0]+'</b><i>'+r[1]+'</i></div>').join('');
+const TOTAL='<div class="total" data-step="5"><span>Итого</span><em>$1500</em></div>';
+window.VARIANTS={
+A:{steps:5,cls:'kb',html:'<div class="art"><img src="assets/gen-184-188/s184-desk.webp" alt=""></div>'+H1+caps()+TOTAL,
+   desc:'Фон: тёмный стол, четыре предмета под своими прожекторами — телефон с чатом и гарнитурой (AI-продавец), телефон на штативе с кольцевым светом (видео с моим лицом), стопка макетов (рекламные объявления), планшет с лентой и рупор (реклама в соцсетях). Подписи и цены — живой текст под каждым предметом, по шагам; активный предмет подсвечивается; итог под линейкой последним. Рекомендация.'},
+B:{steps:5,cls:'kb',html:'<div class="art"><img src="assets/gen-184-188/s184-button.webp" alt=""></div>'+H1+caps()+TOTAL,
+   desc:'Буквально «одной кнопкой»: один жёлтый физический «пуск» в центре, от него лучи к четырём предметам по углам. Подписи возле каждого предмета, итог $1500 светится под кнопкой.'},
+C:{steps:5,html:H1+'<div class="tiles">'+ROWS.map((r,i)=>'<div class="tile" data-step="'+(i+1)+'"><img class="ic" src="assets/gen-184-188/s184-ic-'+['seller','video','ads','social'][i]+'.webp" alt=""><b>'+r[0]+'</b><i>'+r[1]+'</i></div>').join('')+'</div>'+TOTAL,
+   desc:'Четыре премиальные 3D-иконки (сгенерированы отдельно, каждая — свой предмет) на тёмных плашках в ряд, как каталог. Самый спокойный и читаемый вариант: предметы крупные, текст не спорит с фоном. Итог под линейкой.'}};
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

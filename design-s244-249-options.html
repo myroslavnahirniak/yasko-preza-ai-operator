@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>244–249 · Программа · варианты оформления</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.h1{font-size:4.6cqw}
+.kick{display:block}
+.scrim{position:absolute;inset:0;z-index:1;pointer-events:none}
+.big{font:500 12cqw/1 Unbounded,sans-serif;letter-spacing:-.06em;color:var(--yellow)}
+.mono{font:500 1.7cqw/1.3 'JetBrains Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.dots{display:inline-flex;gap:.45cqw;vertical-align:middle}.dots i{width:.9cqw;height:.9cqw;background:var(--yellow);border-radius:50%}
+.only [data-step]:not(.is-now){opacity:0!important;visibility:hidden}
+
+/* ---- A · обложка + один модуль на шаг ---- */
+.v-A .cover{position:absolute;inset:0;z-index:2}
+.v-A .cover .scrim{background:linear-gradient(180deg,rgba(11,9,7,.9) 0%,rgba(11,9,7,.35) 40%,rgba(11,9,7,.2) 70%,rgba(11,9,7,.85) 100%)}
+.v-A .cover .txt{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3}
+.v-A .cover .kick{margin-bottom:1.6cqh}
+.v-A .cover .cnt{position:absolute;right:7cqw;bottom:7cqh;z-index:3;text-align:right}
+.v-A .cover .cnt small{display:block;font:400 2.2cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+.v-A .mod{position:absolute;inset:0;z-index:2;background:var(--bg)}
+.v-A .mod .pic{position:absolute;right:0;top:0;width:52cqw;height:100%;overflow:hidden}
+.v-A .mod .pic img{width:100%;height:100%;object-fit:cover}
+.v-A .mod .pic:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(11,9,7,.35) 35%,transparent 70%)}
+.v-A .mod .txt{position:absolute;left:7cqw;top:7cqh;width:52cqw;z-index:3}
+.v-A .mod .m{font:500 2cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;color:var(--yellow);margin-bottom:1.6cqh;display:block}
+.v-A .mod h2{font:500 4.4cqw/1.12 Unbounded,sans-serif;letter-spacing:-.04em;margin:0 0 1.6cqh}
+.v-A .mod .sub{font:400 2.3cqw/1.4 Manrope,sans-serif;color:var(--muted)}
+.v-A .mod .row{position:absolute;left:7cqw;width:52cqw;z-index:3}
+.v-A .mod .row.skill{top:44cqh}.v-A .mod .row.res{top:64cqh}
+.v-A .mod .row i{display:block;font:500 1.6cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:1.1cqh;font-style:normal}
+.v-A .mod .row p{font:400 2.4cqw/1.4 Manrope,sans-serif;color:var(--cream)}
+.v-A .mod .row.res p{color:var(--yellow);font-weight:500}
+.v-A .mod .foot{position:absolute;left:7cqw;bottom:7cqh;z-index:3;font:400 2cqw/1 Manrope,sans-serif;color:var(--muted);display:flex;align-items:center;gap:1.4cqw}
+.v-A .mod .foot b{font:500 2.6cqw/1 Unbounded,sans-serif;color:var(--yellow)}
+.v-A .fin{position:absolute;inset:0;z-index:2}
+.v-A .fin .scrim{background:linear-gradient(180deg,rgba(11,9,7,.55),rgba(11,9,7,.92))}
+.v-A .fin .txt{position:absolute;left:7cqw;right:7cqw;bottom:9cqh;z-index:3}
+.v-A .fin .txt p{font:500 3.6cqw/1.25 Unbounded,sans-serif;letter-spacing:-.03em;margin-top:2cqh}
+.v-A .fin .txt p em{color:var(--yellow)}
+
+/* ---- B · три плитки с 3D-предметами ---- */
+.v-B .head{position:absolute;left:7cqw;right:7cqw;top:6cqh;z-index:3}
+.v-B .head .kick{margin-bottom:1.4cqh}
+.v-B .head .h1{font-size:4.2cqw}
+.v-B .tiles{position:absolute;left:7cqw;right:7cqw;top:29cqh;height:52cqh;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.8cqw;z-index:3}
+.v-B .tile{position:relative;background:var(--panel);border:1px solid var(--rule);overflow:hidden;display:flex;flex-direction:column}
+.v-B .tile .pic{height:56%;overflow:hidden;position:relative}
+.v-B .tile .pic img{width:100%;height:100%;object-fit:cover;display:block}
+.v-B .tile .pic:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,var(--panel))}
+.v-B .tile .t{padding:1.2cqh 1.6cqw 1.6cqh;flex:1;display:flex;flex-direction:column;gap:.7cqh}
+.v-B .tile .m{font:500 1.5cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;color:var(--yellow)}
+.v-B .tile h3{margin:0;font:500 2.35cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em}
+.v-B .tile p{font:400 1.85cqw/1.35 Manrope,sans-serif;color:var(--muted);flex:1}
+.v-B .tile .n{display:flex;align-items:center;gap:.8cqw;font:500 1.7cqw/1 Manrope,sans-serif;color:var(--muted)}
+.v-B .tile .n b{font:500 2.4cqw/1 Unbounded,sans-serif;color:var(--yellow)}
+.v-B .bar{position:absolute;left:7cqw;right:7cqw;bottom:6cqh;z-index:3;display:grid;grid-template-columns:auto 1fr;gap:2.4cqw;align-items:center;border-top:1px solid #3a3020;padding-top:2cqh}
+.v-B .bar .big{font-size:6.4cqw}
+.v-B .bar p{font:500 2.2cqw/1.35 Manrope,sans-serif;color:var(--cream)}
+.v-B .bar p em{color:var(--yellow)}
+
+/* ---- C · кино-сцена + короткий список ---- */
+.v-C .art:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,9,7,.96) 0%,rgba(11,9,7,.85) 42%,rgba(11,9,7,.15) 75%,transparent 100%),linear-gradient(0deg,rgba(11,9,7,.9) 0%,transparent 35%)}
+.v-C .txt{position:absolute;left:7cqw;top:7cqh;width:56cqw;z-index:3}
+.v-C .txt .kick{margin-bottom:1.6cqh}
+.v-C .txt .h1{font-size:4.3cqw}
+.v-C .num{position:absolute;right:7cqw;top:5cqh;z-index:3;text-align:right}
+.v-C .num .big{font-size:15cqw}
+.v-C .num small{display:block;margin-top:-.8cqh;font:500 1.7cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.v-C .list{position:absolute;left:7cqw;width:56cqw;top:37cqh;z-index:3}
+.v-C .li{display:grid;grid-template-columns:5cqw 1fr auto;gap:0 1.4cqw;align-items:baseline;padding:1.5cqh 0;border-top:1px solid #35302a}
+.v-C .li i{font:500 1.7cqw/1 'JetBrains Mono',monospace;color:var(--yellow);font-style:normal}
+.v-C .li b{font:500 2.7cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em}
+.v-C .li small{display:block;grid-column:2;font:400 1.9cqw/1.35 Manrope,sans-serif;color:var(--muted);margin-top:.5cqh}
+.v-C .li em{font:500 2cqw/1 Unbounded,sans-serif;color:var(--yellow);font-style:normal}
+.v-C .li.is-past{opacity:.55}
+.v-C .res{position:absolute;left:7cqw;right:7cqw;bottom:6cqh;z-index:3;border-left:.35cqw solid var(--yellow);padding-left:2cqw}
+.v-C .res i{display:block;font:500 1.55cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:1cqh;font-style:normal}
+.v-C .res p{font:500 2.5cqw/1.3 Manrope,sans-serif;color:var(--cream)}
+
+/* ---- D · список: одна задача на экран ---- */
+.v-D .art:after{content:'';position:absolute;inset:0;background:rgba(11,9,7,.62)}
+.v-D .top{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3;display:flex;justify-content:space-between;align-items:baseline}
+.v-D .top .h1{font-size:3.4cqw}
+.v-D .top .cnt{font:500 2cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;color:var(--muted)}
+.v-D .top .cnt b{color:var(--yellow);font-weight:500}
+.v-D .task{position:absolute;left:7cqw;right:7cqw;top:30cqh;z-index:3}
+.v-D .task .big{font-size:18cqw;line-height:.9;opacity:.9}
+.v-D .task h2{margin:1.5cqh 0 1.6cqh;font:500 6cqw/1.05 Unbounded,sans-serif;letter-spacing:-.05em;text-wrap:balance}
+.v-D .task p{font:400 2.8cqw/1.35 Manrope,sans-serif;color:var(--muted)}
+.v-D .prog{position:absolute;left:7cqw;right:7cqw;bottom:7cqh;z-index:3;display:grid;grid-template-columns:repeat(7,1fr);gap:.8cqw}
+.v-D .prog i{height:.7cqh;background:#3a3020}
+.v-D .prog i.on{background:var(--yellow)}
+.v-D .fin{position:absolute;left:7cqw;right:7cqw;top:36cqh;z-index:3}
+.v-D .fin p{font:500 4cqw/1.2 Unbounded,sans-serif;letter-spacing:-.04em}
+.v-D .fin p em{color:var(--yellow)}
+
+/* ---- E · чек-лист заполняется ---- */
+.v-E .pic{position:absolute;left:0;top:0;width:46cqw;height:100%;overflow:hidden;z-index:1}
+.v-E .pic img{width:100%;height:100%;object-fit:cover}
+.v-E .pic:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 45%,var(--bg) 100%),linear-gradient(0deg,var(--bg),transparent 30%)}
+.v-E .txt{position:absolute;left:7cqw;top:7cqh;width:40cqw;z-index:3}
+.v-E .txt .h1{font-size:4cqw}
+.v-E .txt .kick{margin-bottom:1.4cqh}
+.v-E .chk{position:absolute;left:50cqw;right:7cqw;top:7cqh;z-index:3;display:grid;gap:0}
+.v-E .r{display:grid;grid-template-columns:3cqw 1fr;gap:0 1.5cqw;align-items:start;padding:1.35cqh 0;border-top:1px solid var(--rule)}
+.v-E .r:first-child{border-top:0}
+.v-E .box{width:2.6cqw;height:2.6cqw;border:.22cqw solid #6f685e;position:relative;margin-top:.3cqh}
+.v-E .r.is-now .box,.v-E .r.is-past .box{background:var(--yellow);border-color:var(--yellow)}
+.v-E .r.is-now .box:after,.v-E .r.is-past .box:after{content:'';position:absolute;left:.75cqw;top:.25cqw;width:.6cqw;height:1.2cqw;border:solid #1b1612;border-width:0 .3cqw .3cqw 0;transform:rotate(45deg)}
+.v-E .r b{font:500 2.25cqw/1.2 Manrope,sans-serif;color:var(--cream)}
+.v-E .r small{display:block;font:400 1.75cqw/1.3 Manrope,sans-serif;color:var(--muted);margin-top:.4cqh}
+.v-E .r[data-step].is-future{opacity:.35!important;visibility:visible;transform:none}
+.v-E .r.is-now b{color:var(--yellow)}
+.v-E .sum{position:absolute;left:7cqw;bottom:7cqh;width:40cqw;z-index:3}
+.v-E .sum .big{font-size:9cqw}
+.v-E .sum p{font:500 2.2cqw/1.35 Manrope,sans-serif;color:var(--cream);margin-top:1cqh}
+.v-E .sum p em{color:var(--yellow)}
+</style></head>
+<body>
+<div id="slide" class="slide"></div>
+<nav class="controls">
+<div class="tabs">
+<button role="tab" data-v="A">А · Обложка + один модуль на шаг (4 подслайда)</button>
+<button role="tab" data-v="B">Б · Три плитки с 3D-предметами</button>
+<button role="tab" data-v="C">В · Кино-сцена + короткий список</button>
+<button role="tab" data-v="D">Д · Списки: одна задача на экран</button>
+<button role="tab" data-v="E">Е · Списки: чек-лист заполняется</button>
+</div>
+<div class="actions"><button id="prev" class="stepbtn">◀ шаг</button><span id="stepinfo"></span><button id="next" class="stepbtn">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+<p class="description"></p>
+<p class="note">А/Б/В — на примере 247 «Контент-завод» (то же для 244, 248, 249). Д/Е — на примере 245 «Маркетинг — 7 задач» (то же для 246). ←/→ вариант · ↓/↑ шаг. Сцены — существующие рендеры; под каждый блок сгенерируем свою.</p>
+</nav>
+<script>
+const M=[
+ {m:'M5',name:'16 форматов контента',sub:'Reels, сторис, посты, Telegram, Threads, Shorts, статьи, карусели',n:9,skill:'Осознанная система контента под запуск: что, когда и для кого',res:'16 форматов из одного файла: посты, сторис, рилсы, статьи, письма — в вашем стиле',img:'assets/gen-184-188/s184-ic-social.webp'},
+ {m:'M6',name:'Видео, фото, голос, аватар',sub:'сценарий, съёмка без камеры, клон вашего голоса и лица',n:7,skill:'Фото, дизайн, карусели и видео нейросетями, клон голоса и лица',res:'Профессиональные фото, ролики, карусели и говорящий AI-аватар — без фотографа и монтажёра',img:'assets/gen-184-188/s186-studio.webp'},
+ {m:'M7',name:'AI-монтаж',sub:'длинное видео → готовые ролики',n:1,skill:'Длинное видео → готовые ролики под площадки, по расписанию',res:'Из одного эфира — неделя роликов без монтажёра',img:'assets/gen-184-188/s184-ic-video.webp'}
+];
+const T=[['разобрать нишу','за что в ней реально платят'],['понять клиента','кто он и что его бесит'],['посмотреть конкурентов','как продают десять лучших'],['назначить цену','сколько брать, чтобы брали'],['собрать предложение','от которого глупо отказаться'],['написать тексты','сайт, письмо, пост'],['понять, почему покупают','и повторить это в каждой продаже']];
+const dots=n=>'<span class="dots">'+'<i></i>'.repeat(n)+'</span>';
+const COVER='assets/gen-sales3/content-factory.png';
+const H1='Контент-завод: <em>месяц контента за день</em>';
+window.VARIANTS={
+A:{steps:4,cls:'only',desc:'Один слайд превращается в 4 подслайда: обложка блока со сценой и числом задач → M5 → M6 → M7 (каждый модуль один на экране: имя, навык, результат, 3D-предмет справа) → результат блока на сцене. Текст на экране — только про текущий модуль.',
+ html(){return `<div class="cover" data-step="0"><div class="art"><img src="${COVER}"></div><div class="scrim"></div><div class="txt"><span class="kick">Блок 3 · недели 5–6</span><h1 class="h1">${H1}</h1></div><div class="cnt"><span class="big">17</span><small>задач в этом блоке</small></div></div>`
+ +M.map((x,i)=>`<div class="mod" data-step="${i+1}"><div class="pic"><img src="${x.img}"></div><div class="txt"><span class="m">${x.m} · ${i+1} / 3</span><h2>${x.name}</h2><p class="sub">${x.sub}</p></div><div class="row skill"><i>Ключевой навык</i><p>${x.skill}</p></div><div class="row res"><i>Результат</i><p>${x.res}</p></div><div class="foot">${dots(x.n)}<b>${x.n}</b> ${x.n===1?'задача':'задач'}</div></div>`).join('')
+ +`<div class="fin" data-step="4"><div class="art"><img src="${COVER}"></div><div class="scrim"></div><div class="txt"><span class="kick">Результат блока</span><p>Плюс три услуги в прайсе: дизайн, видео и контент-завод — <em>месяц контента клиенту за день</em></p></div></div>`}},
+B:{steps:4,desc:'Один слайд, но вместо аккордеона — три большие плитки с 3D-предметом каждого модуля. По шагу появляются плитки, последним — «17 задач» и результат. Раскрытие деталей (навык/нейронки/команда) — по клику, как сейчас.',
+ html(){return `<div class="head"><span class="kick">Блок 3 · недели 5–6</span><h1 class="h1">${H1}</h1></div><div class="tiles">`
+ +M.map((x,i)=>`<div class="tile fx-up" data-step="${i+1}" style="animation-delay:${i*.12}s"><div class="pic"><img src="${x.img}"></div><div class="t"><span class="m">${x.m}</span><h3>${x.name}</h3><p>${x.sub}</p><span class="n"><b>${x.n}</b> ${x.n===1?'задача':'задач'}</span></div></div>`).join('')
+ +`</div><div class="bar" data-step="4"><span class="big">17</span><p>задач в этом блоке. Плюс три услуги в прайсе: дизайн, видео и контент-завод — <em>месяц контента клиенту за день</em></p></div>`}},
+C:{steps:4,desc:'Самый киношный и самый малословный: сцена «контент-завод» на весь фон, слева короткий список из трёх модулей (имя + число задач), справа гигантское «17». Результат блока — одной строкой внизу. Навык/команда — не на экране, а в речи.',
+ html(){return `<div class="art"><img src="${COVER}"></div><div class="txt"><span class="kick">Блок 3 · недели 5–6</span><h1 class="h1">${H1}</h1></div><div class="num"><span class="big">17</span><small>задач в блоке</small></div><div class="list">`
+ +M.map((x,i)=>`<div class="li" data-step="${i+1}"><i>${x.m}</i><b>${x.name}</b><em>${x.n}</em><small>${x.sub}</small></div>`).join('')
+ +`</div><div class="res" data-step="4"><i>Результат блока</i><p>Плюс три услуги в прайсе: дизайн, видео и контент-завод — месяц контента клиенту за день</p></div>`}},
+D:{steps:8,cls:'only',desc:'Семь задач — семь подслайдов: одна задача на экран огромным шрифтом, номер 01…07, полоска прогресса внизу. Восьмой шаг — «Это не термины…». Читается за секунду, темп задаёт спикер.',
+ html(){return `<div class="art"><img src="assets/gen-184-188/s184-desk.webp"></div><div class="top"><h1 class="h1">Маркетинг — <em>7 задач</em></h1></div>`
+ +T.map((t,i)=>`<div class="task" data-step="${i+1}"><span class="big">${String(i+1).padStart(2,'0')}</span><h2>${t[0]}</h2><p>${t[1]}</p></div>`).join('')
+ +`<div class="fin" data-step="8"><p>Это не термины. Это то, что вы делаете <em>руками агента</em> в первую неделю</p></div><div class="prog" id="prog">${'<i></i>'.repeat(7)}</div>`},
+ onStep(s,n){s.querySelectorAll('#prog i').forEach((e,i)=>e.classList.toggle('on',i<n));}},
+E:{steps:8,desc:'Как квест-карточка на 209: слева сцена и заголовок, справа чек-лист из семи пунктов, галочки ставятся по шагу. Внизу слева «7 задач». Последний шаг — «Это не термины…». Все семь строк видны сразу, но приглушены — глаз не тонет.',
+ html(){return `<div class="pic"><img src="assets/gen-164-213/s-sales-laptop-open.webp"></div><div class="txt"><span class="kick">Блок 2 · недели 3–4</span><h1 class="h1">Маркетинг — <em>7 задач</em></h1></div><div class="chk">`
+ +T.map((t,i)=>`<div class="r" data-step="${i+1}"><span class="box"></span><div><b>${t[0]}</b><small>${t[1]}</small></div></div>`).join('')
+ +`</div><div class="sum"><span class="big">7</span><p data-step="8">Это не термины. Это то, что вы делаете <em>руками агента</em> в первую неделю</p></div>`}}
+};
+window.ORDER=['A','B','C','D','E'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

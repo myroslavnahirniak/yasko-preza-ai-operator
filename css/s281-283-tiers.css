@@ -1,0 +1,26 @@
+/* Three offer tiers: one hierarchy, a distinct full-width scene per package. */
+.b129.b13-v2-s16-salesv6:has(.tier-scene) .b13-shell{background:#0b0907;isolation:isolate}
+.b129.b13-v2-s16-salesv6:has(.tier-scene) .b13-head{top:12cqh;left:8cqw;right:8cqw;text-align:center}
+.b129.b13-v2-s16-salesv6:has(.tier-scene) .b13-head h1{font:500 4.2cqw/1.28 Unbounded,sans-serif;letter-spacing:-.035em;text-wrap:balance}
+.b129.b13-v2-s16-salesv6:has(.tier-scene) .b13-body{inset:0;display:block;z-index:2}
+.sales-v6.tier-scene{position:absolute;inset:0;height:100%;max-height:none;display:block;text-align:center;overflow:hidden}
+.tier-scene .tier-backdrop{position:absolute;inset:25% 0 auto;width:100%;height:52%;object-fit:cover;object-position:center 68%;opacity:.9}
+.tier-silver .tier-backdrop{object-position:center 70%}
+.tier-gold .tier-backdrop{object-position:center 58%}
+.tier-scene .tier-shade{position:absolute;inset:0;background:linear-gradient(180deg,#0b0907 0%,#0b0907 28%,#0b0907c9 37%,#0b090710 47%,#0b090720 57%,#0b0907d9 69%,#0b0907 80%)}
+.tier-scene .tier-price{position:absolute;top:6cqh;left:7cqw;right:7cqw;font:500 2.5cqw/1.4 Manrope,sans-serif;letter-spacing:.015em;color:#f5f3ee}
+.tier-scene .tier-price::after{content:"";display:block;width:4cqw;height:2px;background:#fdd506;margin:1.7cqh auto 0}
+.sales-v6 .tier-lead{position:absolute;top:29cqh;left:12cqw;right:12cqw;font:400 2.65cqw/1.43 Manrope,sans-serif;color:#e3dfd8;text-wrap:balance;margin:0}
+.tier-scene .tier-includes{position:absolute;left:7cqw;right:7cqw;bottom:9cqh;padding:2.6cqh 3cqw;background:linear-gradient(140deg,#211b14f5,#100e0bec);border:1px solid #c6bda333;border-radius:1.6cqw;box-shadow:0 1.5cqh 5cqw #0005;backdrop-filter:blur(12px)}
+.tier-scene .tier-modules{display:flex;justify-content:center;flex-wrap:wrap;gap:1.1cqh 2.6cqw;padding-bottom:2cqh;border-bottom:1px solid #ffffff1c;color:#c7c0b5;font:400 2.05cqw/1.4 Manrope,sans-serif}
+.tier-scene .tier-modules span{white-space:nowrap}
+.tier-scene .tier-services{display:flex;justify-content:center;flex-wrap:wrap;gap:1.5cqh 2.9cqw;padding-top:2.2cqh;color:#f5f3ee;font:600 2.35cqw/1.35 Manrope,sans-serif}
+.tier-scene .tier-services span{display:flex;align-items:center;gap:.8cqw;white-space:nowrap}
+.tier-scene .tier-services span::before{content:"";display:block;width:.55cqw;height:.55cqw;border-radius:50%;background:#fdd506;flex-shrink:0}
+.tier-bronze .tier-services{font-size:3.1cqw}
+.tier-gold .tier-services{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5cqh 1cqw;font-size:2.15cqw}
+.tier-gold .tier-services span{justify-content:center}
+.tier-scene .tier-disclaimer{position:absolute;bottom:4.7cqh;left:7cqw;right:7cqw;color:#aaa296;font:400 1.6cqw/1.4 Manrope,sans-serif}
+
+.b129.b13-v2-s16-salesv6:has(.tier-scene) .b13-head em{display:block}
+.tier-gold .tier-modules{max-width:66cqw;margin:0 auto}

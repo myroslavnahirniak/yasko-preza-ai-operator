@@ -1,0 +1,113 @@
+/* Keep the reaction window in one position throughout the recognition sequence. */
+.op-story .story-composition { position: absolute; inset: 0; }
+.op-story .story-copy {
+  position: absolute;
+  top: 6cqh;
+  left: 7cqw;
+  right: 7cqw;
+  height: 38cqh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.8cqh;
+}
+.op-story .story-eyebrow {
+  font: 500 2cqh/1.3 var(--font-b);
+  letter-spacing: .035em;
+  color: #BEB9B0;
+  display: flex;
+  align-items: center;
+  gap: 1.3cqw;
+}
+.op-story .story-eyebrow::before {
+  content: '';
+  display: block;
+  width: 1.8cqw;
+  height: 2px;
+  background: #FDD506;
+}
+.slide.opening.op-story h1.story-title {
+  margin: 0;
+  max-width: none;
+  width: 100%;
+  font: 500 4.6cqh/1.18 var(--font-heading);
+  letter-spacing: -.04em;
+  text-wrap: initial;
+  color: #F5F3EE;
+  opacity: 1;
+  animation: none;
+}
+.story-title > span { display: block; }
+.slide.opening.op-story h1.story-title em { font-style: normal; font-weight: inherit; color: #FDD506; }
+.slide.opening.op-story .story-lead,
+.slide.opening.op-story .story-tail,
+.slide.opening.op-story .story-closing {
+  margin: 0;
+  width: 100%;
+  max-width: none;
+  font: 400 2.9cqh/1.38 var(--font-b);
+  letter-spacing: -.018em;
+  color: #CEC9C1;
+  opacity: 1;
+  animation: none;
+}
+.slide.opening.op-story .story-closing { color: #FDD506; font-weight: 500; }
+.op-story .reaction-media {
+  position: absolute;
+  left: 10cqw;
+  top: 49cqh;
+  width: 80cqw;
+  height: 45cqh;
+}
+.op-story .story-reassurance .story-copy { align-items: center; text-align: center; }
+.slide.opening.op-story .story-reassurance h1.story-title { font-size: 4.9cqh; }
+.slide.opening.op-story .story-reassurance .story-closing { font-size: 3.4cqh; margin-top: .7cqh; }
+.slide.opening.op-story .story-personal h1.story-title { font-size: 4.4cqh; }
+.slide.opening.op-story.on .story-copy { animation: story-copy-in .62s var(--op-ease) .08s both; }
+.slide.opening.op-story.on .reaction-media { animation: story-media-in .7s var(--op-ease) .14s both; }
+.slide.opening.op-story.on.op-return .story-copy,
+.slide.opening.op-story.on.op-return .reaction-media { animation-duration: .18s; animation-delay: 0s; }
+@keyframes story-copy-in {
+  from { opacity: 0; transform: translateY(1.4cqh); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes story-media-in {
+  from { opacity: 0; transform: translateY(1.8cqh); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@container (min-aspect-ratio: 6/5) {
+  .op-story .story-copy { top: 12cqh; left: 6cqw; right: auto; width: 45cqw; height: 76cqh; }
+  .op-story .reaction-media { top: 17cqh; left: 56cqw; width: 39cqw; height: 66cqh; }
+  .slide.opening.op-story h1.story-title { font-size: 4.5cqh; }
+  .op-story .story-reassurance .story-copy { text-align: left; align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .slide.opening.op-story.on .story-copy,
+  .slide.opening.op-story.on .reaction-media { animation: none !important; opacity: 1; transform: none; }
+}
+
+/* Recognition slides: one quiet label and one continuous headline. */
+.slide.opening.op-story .story-unified .story-copy{gap:2.5cqh}
+.slide.opening.op-story .story-unified .story-eyebrow{font:500 2cqh/1.3 var(--font-b);letter-spacing:.01em}
+.slide.opening.op-story h1.story-quote{font:500 4.1cqh/1.22 var(--font-heading);letter-spacing:-.04em;text-wrap:balance}
+.slide.opening.op-story h1.story-quote em{font:inherit;letter-spacing:inherit;font-style:normal;color:#FDD506}
+@container(max-aspect-ratio:6/5){
+ .slide.opening.op-story .story-unified .story-copy{top:4cqh;height:42cqh}
+}
+
+/* Two separate quotations, requested for the skeptic slide. */
+.slide.opening.op-story .story-two-quotes h1.story-quote{font-size:3.55cqh;line-height:1.24;text-wrap:pretty}
+.story-quote-paragraph{display:block}
+.story-quote-paragraph+.story-quote-paragraph{margin-top:2cqh}
+
+/* Reassurance: the generated scene has its own dark lower space for the complete live quote. */
+.story-art{position:absolute;inset:0;pointer-events:none}
+.story-art img{display:block;width:100%;height:100%;object-fit:cover}
+.slide.opening.op-story .story-with-image .story-copy{inset:auto 8cqw 7cqh;width:auto;height:auto;gap:4cqh;align-items:center;text-align:center}
+.slide.opening.op-story.on .story-art{animation:story-image-in .8s ease both}
+@keyframes story-image-in{from{opacity:.3}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.slide.opening.op-story.on .story-art{animation:none}}
+
+/* Display 12 (кол. 13, «Я уже шарю в нейронках…»): трохи менший кегль, щоб цитата лягла у 5 рядків. */
+.slide.opening.op-story[data-google="13"] h1.story-quote{font-size:3.6cqh;line-height:1.24}

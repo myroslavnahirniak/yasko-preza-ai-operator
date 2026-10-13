@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>24 · Сегодня — реалити-шоу AI-агентов · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<link rel="stylesheet" href="design-2430.css?v=2">
+</head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Скетчи</button><button role="tab" data-v="B">Б · Режиссёрский пульт (фото работ)</button><button role="tab" data-v="C">В · Студия реалити (фото-сцена)</button></div>
+<p class="description"></p>
+<p class="note nav-pages">Полный текст слайда; 5 шагов — акцент по порядку: сайт → объявление → реклама → голосовой ассистент → AI-продавец · Слайды: <a href="design-s24-options.html">24</a><a href="design-s27-options.html">27</a><a href="design-s31-options.html">31</a> · Клавиши: ←/→ вариант, ↓/Space шаг, ↑ назад.</p>
+<div class="actions"><button id="prev" class="stepbtn">◀ шаг</button><span id="stepinfo"></span><button id="next" class="stepbtn">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+</nav>
+<script>
+
+const ITEMS=['Трендовый сайт','Объявление','Реклама','Голосовой ассистент','AI-продавец'];
+const HD='<div class="hd fx-up"><h1>Сегодня — реалити‑шоу <em>AI‑агентов</em></h1><p>Покажу вам свою команду AI-агентов: возьму случайный бизнес из чата — и при вас они окажут ему полный пакет выхода в онлайн.</p></div>';
+const SK=['assets/sketches/reality-route-website-v1.png','assets/gen-2430/s24-ad.webp','assets/sketches/reality-route-ads-v1.png','assets/sketches/reality-route-voice-v1.png','assets/sketches/reality-route-sales-v1.png'];
+const SHOT=['r-site','r-ad','r-ads','r-voice','r-seller'].map(n=>'assets/gen-2430/'+n+'.webp');
+const X=[13.9,32.8,50.3,67.5,84.7];
+function mark(slide,step,sel){slide.querySelectorAll(sel).forEach((el,i)=>el.classList.toggle('on',i===step));}
+window.VARIANTS={
+A:{steps:4,html:HD+'<div class="sk-row">'+ITEMS.map((t,i)=>'<div class="sk"><img src="'+SK[i]+'" alt=""><b>'+t+'</b></div>').join('')+'</div><div class="bigname"><b></b><i></i></div><div class="dots">'+ITEMS.map(()=>'<i></i>').join('')+'</div>',
+  onStep:(s,st)=>{mark(s,st,'.sk');mark(s,st,'.dots i');s.querySelector('.bigname b').textContent=ITEMS[st];s.querySelector('.bigname i').textContent='0'+(st+1)+' / 05';},
+  desc:'Скетчи: пять карандашных рисунков в стиле серии «маршрут реалити» (сайт, объявление, рупор, гарнитура, чат с оплатой). Все пять стоят на местах, по клику акцент переходит слева направо: активный крупнее и в цвете, название — большим жёлтым снизу. Четыре скетча уже есть в деке, «объявление» дорисовано.'},
+B:{steps:4,cls:'v-B24',html:HD+'<div class="mon">'+SHOT.map(s=>'<img src="'+s+'" alt="">').join('')+'<span class="onair"><i></i>в эфире</span><div class="lab"></div></div><div class="strip">'+ITEMS.map((t,i)=>'<div class="th"><div class="scr"><img src="'+SHOT[i]+'" alt=""><span class="cam">CAM '+(i+1)+'</span></div><b>'+t+'</b></div>').join('')+'</div>',
+  onStep:(s,st)=>{mark(s,st,'.mon img');mark(s,st,'.th');s.querySelector('.mon .lab').textContent=ITEMS[st];},
+  desc:'Режиссёрский пульт реалити: большой «эфирный» монитор и пять камер снизу. В мониторах — настоящие работы агентов из деки: сайт ClearPoint, креатив «6 дизайнов за 20 минут», рекламный кабинет, лендинг Валюши (голос), переписка продавца с оплатой. По клику камера переключается.'},
+C:{steps:4,cls:'v-C24 kb',html:'<div class="art"><img src="assets/gen-2430/s24-studio.webp" alt=""></div>'+HD+'<div class="booth-glow"></div>'+ITEMS.map((t,i)=>'<div class="blab" style="left:'+X[i]+'cqw">'+t+'</div>').join(''),
+  onStep:(s,st)=>{mark(s,st,'.blab');const g=s.querySelector('.booth-glow');g.style.left=X[st]+'cqw';g.classList.add('on');},
+  desc:'Фото-сцена (GPT Image 2.5, в стиле слайдов 20–26): студия реалити-шоу ночью, пять стеклянных кабин в ряд, в каждой светится рабочее место агента, камера и лампа «в эфире». Подписи под кабинами — живой текст; по клику прожектор переходит на следующую кабину.'}};
+
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

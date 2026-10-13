@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>189 · Коммерческие предложения · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.text{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3;text-align:center}
+.text h1{font:500 5cqw/1.15 Unbounded,sans-serif;letter-spacing:-.03em}
+.lab{font:500 1.8cqw/1 'JetBrains Mono',monospace;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+img{display:block;width:100%;object-fit:cover;background:#000;border:1px solid #2a2420}
+.set{position:absolute;left:7cqw;right:7cqw;z-index:3;display:grid;gap:1.8cqw}
+.set.kp{grid-template-columns:repeat(3,1fr)}
+.set.kp .hero{grid-column:1/-1;aspect-ratio:1097/341}
+.set.kp .sm{aspect-ratio:413/271}
+.set.bn{grid-template-columns:1fr}
+.set.bn .b1{aspect-ratio:1000/380}.set.bn .b2{aspect-ratio:1000/239}
+.set .lab{grid-column:1/-1;text-align:center;margin-top:.4cqh}
+.set img{opacity:0;transform:translateY(1.6cqh)}
+.play .set img{animation:up .7s cubic-bezier(.2,.8,.2,1) forwards}
+.play .set img:nth-child(1){animation-delay:.1s}.play .set img:nth-child(2){animation-delay:.35s}.play .set img:nth-child(3){animation-delay:.45s}.play .set img:nth-child(4){animation-delay:.55s}
+/* А · два шага */
+.v-A .set{top:22cqh}
+.v-A .set.is-future,.v-A .set.is-past{opacity:0!important;visibility:hidden}
+.v-A .set{transition:opacity .45s ease}
+/* Б · всё сразу */
+.v-B .set.kp{left:7cqw;width:52cqw;top:22cqh;gap:1.2cqw}
+.v-B .set.bn{left:62cqw;width:31cqw;top:22cqh;gap:1.2cqw}
+.v-B .lab{font-size:1.5cqw}
+/* В · 3D-стопка */
+.v-C .scene{position:absolute;left:7cqw;right:7cqw;top:22cqh;bottom:7cqh;z-index:3;perspective:150cqw}
+.v-C .plane{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(16deg)}
+.v-C .plane img{position:absolute;box-shadow:0 2cqh 5cqh rgba(0,0,0,.6);border-color:#3a3129;opacity:0}
+.play.v-C .plane img{animation:fade .7s ease forwards}
+.v-C .kp3 .hero{left:0;right:0;top:0;aspect-ratio:1097/341;transform:translateZ(4cqw);animation-delay:.1s}
+.v-C .kp3 .s1{left:0;width:31cqw;top:34cqh;aspect-ratio:413/271;transform:translateZ(1cqw) rotateY(10deg);animation-delay:.4s}
+.v-C .kp3 .s2{left:27.5cqw;width:31cqw;top:36cqh;aspect-ratio:413/271;transform:translateZ(3cqw);animation-delay:.5s}
+.v-C .kp3 .s3{right:0;width:31cqw;top:34cqh;aspect-ratio:413/271;transform:translateZ(1cqw) rotateY(-10deg);animation-delay:.6s}
+.v-C .bn3 .b1{left:0;right:0;top:2cqh;aspect-ratio:1000/380;transform:translateZ(4cqw);animation-delay:.1s}
+.v-C .bn3 .b2{left:6cqw;right:6cqw;top:40cqh;aspect-ratio:1000/239;transform:translateZ(0);animation-delay:.4s}
+.v-C .plane.is-future,.v-C .plane.is-past{opacity:0!important;visibility:hidden}
+.v-C .lab{position:absolute;left:7cqw;right:7cqw;bottom:3.5cqh;text-align:center;z-index:3}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Полный слайд + три под ним, два шага</button><button role="tab" data-v="B">Б · КП и баннеры вместе</button><button role="tab" data-v="C">В · 3D-стопка</button></div>
+<p class="description"></p>
+<p class="note">Как просил Мирослав: первый слайд КП целиком, под ним три слайда; всё вырезано из скрина Google по отдельности, без тёмной рамки. Второй скрин источника (баннеры для сайта) — тем же способом. Клавиши: ←/→ вариант, ↓/Space шаг.</p>
+<div class="actions"><button id="prev" class="stepbtn">◀ шаг</button><span id="stepinfo"></span><button id="next" class="stepbtn">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+</nav>
+<script>
+const D='assets/vlad-1409/dizayn/';
+const H='<div class="text fx-up"><h1><em>Коммерческие предложения</em></h1></div>';
+const KP=(cls,step)=>'<div class="set kp '+(cls||'')+'"'+(step!==undefined?' data-step="'+step+'"':'')+'><img class="hero" src="'+D+'kp-hero.webp" alt=""><img class="sm" src="'+D+'kp-1.webp" alt=""><img class="sm" src="'+D+'kp-2.webp" alt=""><img class="sm" src="'+D+'kp-3.webp" alt=""><div class="lab">Презентация клиенту</div></div>';
+const BN=(cls,step)=>'<div class="set bn '+(cls||'')+'"'+(step!==undefined?' data-step="'+step+'"':'')+'><img class="b1" src="'+D+'banner-1.webp" alt=""><img class="b2" src="'+D+'banner-2.webp" alt=""><div class="lab">Баннеры для сайта</div></div>';
+window.VARIANTS={
+A:{steps:1,html:H+KP('',0)+BN('',1),desc:'Шаг 0: презентация клиенту — первый слайд во всю ширину, под ним три слайда в ряд. Шаг 1: баннеры для сайта тем же приёмом (большой + под ним второй). Ничего не обрезано, без тёмной рамки. Рекомендация.',
+   onStep(s,st){}},
+B:{html:H+KP()+BN(),desc:'Всё на одном экране: слева КП (первый слайд + три), справа баннеры. Компактно, но картинки мельче.'},
+C:{steps:1,html:H+'<div class="scene"><div class="plane kp3" data-step="0"><img class="hero" src="'+D+'kp-hero.webp" alt=""><img class="s1" src="'+D+'kp-1.webp" alt=""><img class="s2" src="'+D+'kp-2.webp" alt=""><img class="s3" src="'+D+'kp-3.webp" alt=""></div><div class="plane bn3" data-step="1"><img class="b1" src="'+D+'banner-1.webp" alt=""><img class="b2" src="'+D+'banner-2.webp" alt=""></div></div><div class="lab" data-step="0">Презентация клиенту</div><div class="lab" data-step="1">Баннеры для сайта</div>',
+   desc:'Те же кадры на наклонной 3D-плоскости: первый слайд «стоит» ближе к зрителю, три слайда веером под ним. Шаг 1 — баннеры. Эффектно, но текст на слайдах КП читается чуть хуже из-за наклона.',
+   onRender(s){s.querySelectorAll('.lab[data-step]').forEach(l=>{});}}};
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+<script>
+/* у варіантах A/C минулий крок теж ховаємо (це перелистування, а не накопичення) */
+(function(){const s=document.getElementById('slide');new MutationObserver(()=>{if(/v-A|v-C/.test(s.className))s.querySelectorAll('.lab[data-step].is-past').forEach(l=>{l.style.opacity=0;l.style.visibility='hidden'});s.querySelectorAll('.lab[data-step].is-now').forEach(l=>{l.style.opacity='';l.style.visibility=''});}).observe(s,{attributes:true,subtree:true,attributeFilter:['class']});})();
+</script>
+</body></html>

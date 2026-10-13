@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>rest 194–196 · тарифы Bronze / Silver / Gold · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.slide em{font-style:normal;color:var(--yellow)}
+.k{font:500 1.6cqw/1 'JetBrains Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:#b3a996}
+.h{font:500 4.2cqw/1.2 Unbounded,sans-serif;letter-spacing:-.035em;text-wrap:balance;margin:0}
+.lead{font:400 2.3cqw/1.45 Manrope,sans-serif;color:#c4bdb1;text-wrap:balance;margin:0}
+.disc{position:absolute;left:0;right:0;bottom:2.6cqh;text-align:center;font:400 1.35cqw/1 Manrope,sans-serif;color:#6f685e}
+.ok{color:#fdd506}
+
+/* А · Сходи: три набори поруч, поточний підсвічений, інші приглушені */
+.v-A .a-top{position:absolute;left:7cqw;right:7cqw;top:6cqh;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.8cqh}
+.v-A .a-row{position:absolute;left:4cqw;right:4cqw;bottom:6.5cqh;display:grid;grid-template-columns:repeat(3,1fr);gap:1.8cqw;align-items:end}
+.v-A .col{position:relative;display:flex;flex-direction:column;gap:1cqh;padding:2.6cqh 2cqw 2.4cqh;border:1px solid #2e2620;border-radius:1.4cqw;background:linear-gradient(180deg,#17120d,#0f0c09);opacity:.38;filter:saturate(.6);transition:opacity .4s,filter .4s,border-color .4s,box-shadow .4s}
+.v-A .col.on{opacity:1;filter:none;border-color:#fdd506;box-shadow:0 0 6cqw rgba(253,213,6,.16)}
+.v-A .col.past{opacity:.62}
+.v-A .col .nm{font:600 2.6cqw/1 Unbounded,sans-serif;letter-spacing:-.02em;color:#f5f3ee}
+.v-A .col .pr{font:600 3.6cqw/1 Unbounded,sans-serif;letter-spacing:-.04em;color:#fdd506;margin-bottom:.8cqh}
+.v-A .col .ls{display:flex;flex-direction:column;gap:.7cqh;padding-top:1.2cqh;border-top:1px solid #2e2620}
+.v-A .col .ls span{font:500 1.75cqw/1.25 Manrope,sans-serif;color:#d9d2c4;padding-left:2.2cqw;position:relative}
+.v-A .col .ls span:before{content:"";position:absolute;left:0;top:.45em;width:1cqw;height:1cqw;border-radius:.25cqw;background:#fdd506}
+.v-A .col .ls.ag span:before{background:none;border:1px solid #b3a996}
+.v-A .col .lb{font:500 1.15cqw/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#8d8576;margin-top:.6cqh}
+.v-A .col.on .cur{position:absolute;top:-1.6cqh;left:2cqw;padding:.6cqh 1.2cqw;border-radius:.6cqw;background:#fdd506;color:#0b0907;font:700 1.3cqw/1 Manrope,sans-serif}
+
+/* Б · Чек: велика ціна, що входить — і чого в цьому наборі ще нема */
+.v-B .b-top{position:absolute;left:7cqw;right:7cqw;top:6.5cqh;display:grid;grid-template-columns:minmax(0,1.35fr) auto;gap:3cqw;align-items:start}
+.v-B .b-top .h{margin-top:1.6cqh;font-size:3.9cqw}
+.v-B .b-top .lead{margin-top:2cqh}
+.v-B .b-price{text-align:right}
+.v-B .b-price b{display:block;font:700 10cqw/.9 Unbounded,sans-serif;letter-spacing:-.06em;color:#fdd506;text-shadow:0 0 6cqw rgba(253,213,6,.18)}
+.v-B .b-price span{display:block;margin-top:1.4cqh;font:500 1.8cqw/1 Manrope,sans-serif;color:#b3a996}
+.v-B .b-rule{position:absolute;left:7cqw;right:7cqw;top:46cqh;height:1px;background:#2e2620}
+.v-B .b-grid{position:absolute;left:7cqw;right:7cqw;top:50cqh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:4cqw}
+.v-B .lb{font:500 1.35cqw/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#8d8576;margin-bottom:2cqh}
+.v-B .row{display:flex;align-items:center;gap:1.4cqw;padding:1.15cqh 0;border-bottom:1px solid #1f1a15;font:500 2.1cqw/1.2 Manrope,sans-serif;color:#f5f3ee}
+.v-B .row i{flex:none;width:2.6cqw;height:2.6cqw;border-radius:50%;display:grid;place-items:center;font-style:normal;font:700 1.5cqw/1 Manrope,sans-serif;background:#fdd506;color:#0b0907}
+.v-B .row.no{color:#5a534b}
+.v-B .row.no i{background:none;border:1px solid #3a322b;color:#5a534b}
+.v-B .chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2cqh 1.2cqw}
+.v-B .chip{display:flex;align-items:center;gap:1cqw;padding:1.3cqh 1.4cqw;border-radius:1cqw;border:1px solid #fdd506;background:rgba(253,213,6,.07);font:600 1.9cqw/1.15 Manrope,sans-serif;color:#f5f3ee}
+.v-B .chip:before{content:"✓";color:#fdd506;font-weight:700}
+.v-B .chip.no{border-color:#2a231d;background:none;color:#5a534b}
+.v-B .chip.no:before{content:"—";color:#3a322b}
+
+/* В · Кадр: картинка набору на півслайда, рівень — шкала з 5 блоків, агенти — чіпи */
+.v-C .c-art{position:absolute;left:0;right:0;top:0;height:58cqh;overflow:hidden}
+.v-C .c-art img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;display:block}
+.v-C .c-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,.55) 0,rgba(11,9,7,0) 22%,rgba(11,9,7,0) 45%,#0b0907 100%),linear-gradient(90deg,rgba(11,9,7,.75) 0,rgba(11,9,7,0) 60%)}
+.v-C .c-pill{position:absolute;left:7cqw;top:6cqh;z-index:2;padding:1.1cqh 1.8cqw;border-radius:99cqw;background:#fdd506;color:#0b0907;font:700 1.9cqw/1 Manrope,sans-serif}
+.v-C .c-txt{position:absolute;left:7cqw;right:7cqw;top:38cqh;z-index:2;display:flex;flex-direction:column;gap:1.8cqh}
+.v-C .c-txt .h{font-size:4.6cqw;max-width:80cqw}
+.v-C .c-txt .lead{max-width:76cqw;color:#d9d2c4}
+.v-C .c-bar{position:absolute;left:7cqw;right:7cqw;top:66cqh;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.8cqw}
+.v-C .seg{display:flex;flex-direction:column;gap:1.2cqh}
+.v-C .seg i{display:block;height:1.1cqh;border-radius:.4cqh;background:#2a231d}
+.v-C .seg.on i{background:#fdd506;box-shadow:0 0 2cqw rgba(253,213,6,.35)}
+.v-C .seg span{font:500 1.5cqw/1.25 Manrope,sans-serif;color:#5a534b}
+.v-C .seg.on span{color:#f5f3ee}
+.v-C .c-ag{position:absolute;left:7cqw;right:7cqw;top:79cqh;display:flex;flex-wrap:wrap;gap:1cqh .9cqw}
+.v-C .c-ag span{padding:1.1cqh 1.5cqw;border-radius:.9cqw;border:1px solid rgba(253,213,6,.55);background:rgba(253,213,6,.06);font:600 1.75cqw/1 Manrope,sans-serif;color:#f5f3ee}
+.v-C .c-ag span.no{border-color:#2a231d;background:none;color:#4a433b}
+
+/* А+ · Сходи з візуалом: картинка поточного набору фоном за заголовком, у кожній колонці — кадр набору, агенти чіпами */
+.v-D .d-bg{position:absolute;left:0;right:0;top:0;height:60cqh;overflow:hidden}
+.v-D .d-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 35%;display:block;opacity:.95}
+.v-D .d-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,.78) 0,rgba(11,9,7,.45) 32%,rgba(11,9,7,.15) 55%,#0b0907 100%),radial-gradient(ellipse 90% 70% at 50% 50%,transparent 55%,rgba(11,9,7,.7) 100%)}
+.v-D .a-top{position:absolute;left:7cqw;right:7cqw;top:6cqh;z-index:2;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.8cqh}
+.v-D .a-top .lead{color:#e3dfd8}
+.v-D .a-row{position:absolute;left:4cqw;right:4cqw;bottom:6.5cqh;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:1.8cqw;align-items:end}
+.v-D .col{position:relative;display:flex;flex-direction:column;gap:.9cqh;padding:1cqw 1cqw 2.2cqh;border:1px solid #2e2620;border-radius:1.4cqw;background:linear-gradient(180deg,#17120d,#0f0c09);opacity:.4;filter:saturate(.35);transition:opacity .4s,filter .4s}
+.v-D .col.on{opacity:1;filter:none;border-color:#fdd506;box-shadow:0 0 6cqw rgba(253,213,6,.18),0 2cqh 5cqw rgba(0,0,0,.6)}
+.v-D .col.past{opacity:.62}
+.v-D .col .th{height:10.5cqh;border-radius:.9cqw;overflow:hidden;margin-bottom:.8cqh}
+.v-D .col .th img{width:100%;height:100%;object-fit:cover;object-position:50% 35%;display:block}
+.v-D .col .hd,.v-D .col .lb,.v-D .col .ls,.v-D .col .chips{margin-left:1cqw;margin-right:1cqw}
+.v-D .col .hd{display:flex;align-items:baseline;justify-content:space-between;gap:1cqw}
+.v-D .col .nm{font:600 2.5cqw/1 Unbounded,sans-serif;letter-spacing:-.02em;color:#f5f3ee}
+.v-D .col .pr{font:600 2.9cqw/1 Unbounded,sans-serif;letter-spacing:-.04em;color:#fdd506}
+.v-D .col .lb{font:500 1.15cqw/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#8d8576;margin-top:.8cqh}
+.v-D .col .ls{display:flex;flex-direction:column;gap:.6cqh}
+.v-D .col .ls span{font:500 1.7cqw/1.25 Manrope,sans-serif;color:#d9d2c4;padding-left:2.1cqw;position:relative}
+.v-D .col .ls span:before{content:"";position:absolute;left:0;top:.42em;width:1cqw;height:1cqw;border-radius:.25cqw;background:#fdd506}
+.v-D .col .chips{display:flex;flex-wrap:wrap;gap:.6cqh .5cqw}
+.v-D .col .chips span{padding:.6cqh .8cqw;border:1px solid #3a322b;border-radius:.6cqw;font:600 1.45cqw/1.1 Manrope,sans-serif;color:#d9d2c4}
+.v-D .col.on .chips span{border-color:rgba(253,213,6,.6);background:rgba(253,213,6,.07);color:#f5f3ee}
+
+/* А++ · Подіум: згенеровані сходи (assets/gen-rest-1009/tiers/stairs.webp), набори — на передніх гранях брил */
+.v-E{background:#0b0907}
+.v-E .e-bg{position:absolute;inset:0}
+.v-E .e-bg img{width:100%;height:100%;object-fit:cover;display:block}
+.v-E .a-top{position:absolute;left:7cqw;right:7cqw;top:6cqh;z-index:2;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.8cqh}
+.v-E .face{position:absolute;bottom:19.6cqh;z-index:2;display:flex;flex-direction:column;gap:.9cqh;padding:1.8cqh 1.6cqw;box-sizing:border-box;background:rgba(11,9,7,.35);transition:opacity .4s,background .4s}
+.v-E .face.off{filter:brightness(.42) saturate(.35)}
+.v-E .face.off .pr{color:#b3a996}
+.v-E .face.on{background:rgba(11,9,7,.15)}
+.v-E .f1{left:4.9cqw;width:29.8cqw;top:64.1cqh}
+.v-E .f2{left:34.8cqw;width:30cqw;top:56.7cqh}
+.v-E .f3{left:64.9cqw;width:30.5cqw;top:49.8cqh}
+.v-E .hd{display:flex;align-items:baseline;justify-content:space-between;gap:1cqw}
+.v-E .nm{font:600 2.4cqw/1 Unbounded,sans-serif;letter-spacing:-.02em;color:#f5f3ee}
+.v-E .pr{font:600 3cqw/1 Unbounded,sans-serif;letter-spacing:-.04em;color:#fdd506}
+.v-E .md{font:500 1.5cqw/1.45 Manrope,sans-serif;color:#d9d2c4}
+.v-E .chips{display:flex;flex-wrap:wrap;gap:.5cqh .45cqw}
+.v-E .chips span{padding:.5cqh .7cqw;border:1px solid rgba(253,213,6,.5);border-radius:.5cqw;background:rgba(11,9,7,.5);font:600 1.35cqw/1.1 Manrope,sans-serif;color:#f5f3ee}
+.v-E .glow{position:absolute;z-index:1;width:30cqw;height:40cqh;pointer-events:none;background:radial-gradient(ellipse 50% 60% at 50% 100%,rgba(253,213,6,.28),transparent 70%);transition:left .5s,top .5s}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="E">А++ · Подіум</button><button role="tab" data-v="D">А+ · Сходи з візуалом</button><button role="tab" data-v="A">А · Сходи: три набори поруч</button><button role="tab" data-v="B">Б · Чек: ціна і чек-лист</button><button role="tab" data-v="C">В · Кадр: картинка і шкала</button></div>
+<p class="description"></p>
+<div class="actions"><button id="prev">↑ набір</button><span id="stepinfo"></span><button id="next" class="stepbtn">↓ набір</button><button id="replay">↻</button></div>
+<p class="note">Крок 0 / 1 / 2 = Bronze / Silver / Gold (↓/↑ або кнопки). ←/→ — варіант. Текст і склад наборів — дослівно з поточних слайдів 194–196.</p>
+</nav>
+<script>
+const MODS=['Фундамент','Маркетинг и сайты','Контент-завод','Привлечение клиентов','Продажи и связки'];
+const AGS=['AI-сайты','AI-дизайн','AI-видео','Контент-завод','AI-таргет','AI-SEO','AI-продавец','страт-сессии'];
+const T=[
+ {n:'Bronze',p:'$490',t:'Bronze — если <em>делаете сами</em>',lead:'Разобраться руками, собрать первый сайт и найти первого клиента среди знакомых',m:2,a:['AI-сайты'],img:'assets/gen-tarif/bronze.webp'},
+ {n:'Silver',p:'$749',t:'Silver — если хотите, чтобы <em>контент работал за вас</em>',lead:'Четыре услуги в прайсе и контент-завод с вашим двойником — услуга с оплатой каждый месяц',m:3,a:['AI-сайты','AI-дизайн','AI-видео','Контент-завод'],img:'assets/gen-sales3/content-factory.png'},
+ {n:'Gold',p:'$1.500',t:'Gold — если <em>продавать должен агент</em>',lead:'Реклама приводит клиентов, агент закрывает сделку, а ваш проект мы разбираем на страт-сессиях',m:5,a:AGS,img:'assets/gen-s120-team/workforce.png'}];
+const DISC='<p class="disc">результаты индивидуальны</p>';
+const KICK=x=>'<span class="k">Набор «'+x.n+'» · '+x.p+'</span>';
+function A(s){const x=T[s];return '<div class="a-top fx-up">'+KICK(x)+'<h1 class="h">'+x.t+'</h1><p class="lead">'+x.lead+'</p></div><div class="a-row">'+
+  T.map((y,k)=>'<div class="col'+(k===s?' on':'')+(k<s?' past':'')+'">'+'<span class="nm">'+y.n+'</span><span class="pr">'+y.p+'</span>'+
+   '<span class="lb">блоки</span><div class="ls">'+MODS.slice(0,y.m).map(m=>'<span>'+m+'</span>').join('')+'</div>'+
+   '<span class="lb">агенты</span><div class="ls ag">'+y.a.map(a=>'<span>'+a+'</span>').join('')+'</div></div>').join('')+'</div>'+DISC;}
+function B(s){const x=T[s];return '<div class="b-top fx-up"><div>'+KICK(x)+'<h1 class="h">'+x.t+'</h1><p class="lead">'+x.lead+'</p></div><div class="b-price"><b>'+x.p+'</b><span>набор «'+x.n+'»</span></div></div><i class="b-rule"></i>'+
+  '<div class="b-grid fx-up" style="animation-delay:.25s"><div><div class="lb">блоки</div>'+MODS.map((m,k)=>'<div class="row'+(k<x.m?'':' no')+'"><i>'+(k<x.m?'✓':'')+'</i>'+m+'</div>').join('')+'</div>'+
+  '<div><div class="lb">агенты</div><div class="chips">'+AGS.map(a=>'<span class="chip'+(x.a.includes(a)?'':' no')+'">'+a+'</span>').join('')+'</div></div></div>'+DISC;}
+function C(s){const x=T[s];return '<div class="c-art fx-fade"><img src="'+x.img+'" alt=""></div><span class="c-pill fx-up">Набор «'+x.n+'» · '+x.p+'</span>'+
+  '<div class="c-txt fx-up"><h1 class="h">'+x.t+'</h1><p class="lead">'+x.lead+'</p></div>'+
+  '<div class="c-bar fx-up" style="animation-delay:.25s">'+MODS.map((m,k)=>'<div class="seg'+(k<x.m?' on':'')+'"><i></i><span>'+m+'</span></div>').join('')+'</div>'+
+  '<div class="c-ag fx-up" style="animation-delay:.35s">'+AGS.map(a=>'<span'+(x.a.includes(a)?'':' class="no"')+'>'+a+'</span>').join('')+'</div>'+DISC;}
+function D(s){const x=T[s];return '<div class="d-bg fx-fade"><img src="'+x.img+'" alt=""></div><div class="a-top fx-up">'+KICK(x)+'<h1 class="h">'+x.t+'</h1><p class="lead">'+x.lead+'</p></div><div class="a-row">'+
+  T.map((y,k)=>'<div class="col'+(k===s?' on':'')+(k<s?' past':'')+'"><figure class="th" style="margin:0 0 .8cqh"><img src="'+y.img+'" alt=""></figure><div class="hd"><span class="nm">'+y.n+'</span><span class="pr">'+y.p+'</span></div>'+
+   '<span class="lb">блоки</span><div class="ls">'+MODS.slice(0,y.m).map(m=>'<span>'+m+'</span>').join('')+'</div>'+
+   '<span class="lb">агенты</span><div class="chips">'+y.a.map(a=>'<span>'+a+'</span>').join('')+'</div></div>').join('')+'</div>'+DISC;}
+function E(s){const x=T[s],F=[[4.9,64.1],[34.8,56.7],[64.9,49.8]];return '<div class="e-bg fx-fade"><img src="assets/gen-rest-1009/tiers/stairs.webp" alt=""></div><i class="glow" style="left:'+F[s][0]+'cqw;top:'+(F[s][1]-40)+'cqh"></i><div class="a-top fx-up">'+KICK(x)+'<h1 class="h">'+x.t+'</h1><p class="lead">'+x.lead+'</p></div>'+
+  T.map((y,k)=>'<div class="face f'+(k+1)+(k===s?' on':' off')+' fx-up" style="animation-delay:'+(.15+k*.1)+'s"><div class="hd"><span class="nm">'+y.n+'</span><span class="pr">'+y.p+'</span></div><div class="md">'+MODS.slice(0,y.m).join(' · ')+'</div><div class="chips">'+y.a.map(a=>'<span>'+a+'</span>').join('')+'</div></div>').join('')+DISC;}
+function mk(fn){return {html:()=>fn(0),steps:2,onStep:(sl,s)=>{sl.innerHTML=fn(s);sl.classList.remove('play');requestAnimationFrame(()=>requestAnimationFrame(()=>sl.classList.add('play')));}};}
+window.VARIANTS={
+ E:Object.assign(mk(E),{desc:'А++ · Подіум: згенеровані сходи з трьох брил із золотими гранями; на передній грані кожної брили — набір, ціна, блоки й агенти. Поточна сходинка яскрава, над нею світло, інші приглушені. Bronze → Silver → Gold буквально ростуть.'}),
+ D:Object.assign(mk(D),{desc:'А+ · Сходи з візуалом: картинка поточного набору великим фоном за заголовком, у кожній колонці — кадр набору (Bronze — Влад за ноутом, Silver — контент-завод, Gold — армія агентів). Поточний набір яскравий у жовтій рамці, інші приглушені й знебарвлені; агенти — чіпами.'}),
+ A:Object.assign(mk(A),{desc:'Сходи: на кожному слайді видно всі три набори одразу — Bronze, Silver, Gold ростуть сходинками, поточний підсвічений жовтим, інші приглушені. Глядач бачить, що додається з кожним рівнем. Рекомендація для живого ефіру.'}),
+ B:Object.assign(mk(B),{desc:'Чек: без картинок. Ціна величезна праворуч, ліворуч заголовок і опис. Нижче — повний список з 5 блоків і 8 агентів: що входить у набір — жовтим з ✓, чого в ньому ще нема — приглушено. Апсел видно без слів.'}),
+ C:Object.assign(mk(C),{desc:'Кадр: картинка набору на верхню половину, ціна жовтою плашкою, заголовок поверх кадру. Блоки — шкала з 5 сегментів (Bronze 2/5, Silver 3/5, Gold 5/5), агенти — чіпи, відсутні приглушені.'})};
+window.ORDER=['E','D','A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

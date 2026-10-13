@@ -1,0 +1,41 @@
+{
+  "mode": "Project CLI/API gpt-image-2, used before user switched future work to built-in image_gen",
+  "jobs": [
+    {
+      "id": "s19-small-action-v1",
+      "aspect": "1:1",
+      "face": false,
+      "frame_style": "Square 1:1 premium studio photograph. Black #0B0907 background and warm yellow #FDD506 light. No people, faces, portraits, text, letters, numbers, logos or watermarks. ",
+      "brief": "A real physical kinetic installation in a near-black studio. One natural human hand in a plain black sleeve presses a small warm-yellow control button. The button activates a beautifully engineered mechanical lever lifting a much larger matte-black rectangular block. The visual relationship reads instantly: a small simple action activates a much more capable tool. Brushed metal, precise manufactured joints, soft warm-yellow rim light, shallow atmospheric depth. No robot, humanoid, hologram, money, coins, charts or fake interface. All objects occupy the upper 52 percent of the square: the block upper-right, hand entering from left. Lower 48 percent completely clean near-black negative space for separate HTML typography. No visible face, no human figures beyond the single hand.",
+      "no_reference": true
+    },
+    {
+      "id": "s20-two-audiences-v1",
+      "aspect": "1:1",
+      "face": false,
+      "frame_style": "Square 1:1 premium studio photograph. Black #0B0907 background and warm yellow #FDD506 light. No people, faces, portraits, text, letters, numbers, logos or watermarks. ",
+      "brief": "Two clearly separated miniature workstations at fixed left and right positions, occupying ONLY the BOTTOM THIRD of the square. Left: one elegant plain laptop with an empty softly lit dark glass screen on a simple desk. Right: a more developed workstation with three empty dark-glass display panels and a compact precisely arranged modular computer. No clutter. A subtle warm-yellow physical light track from each workstation converges toward one small finished matte-black geometric object between them. Both stations have equal dignity and equal visual weight; neither is broken or inferior. Realistic photographic perspective, no people or robots. Entire UPPER 60 percent is completely empty near-black negative space for readable HTML text. No text, software UI, currency, charts, arrows or printed symbols.",
+      "no_reference": true
+    }
+  ],
+  "generation_log": [
+    {
+      "batch": 1,
+      "mode": "images/edits with portrait style reference",
+      "count": 2,
+      "status": "rejected: portrait copied instead of requested scene",
+      "total_tokens_each": 8571
+    },
+    {
+      "batch": 2,
+      "mode": "images/generations no reference",
+      "count": 2,
+      "status": "accepted",
+      "total_tokens": [
+        7222,
+        7224
+      ]
+    }
+  ],
+  "cost": "Four API generations completed. Estimates announced: batch1 $0.50–0.70, batch2 $0.45–0.55. Actual billing not available."
+}

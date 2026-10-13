@@ -1,0 +1,105 @@
+.chapter-visual{position:absolute;inset:0;background:#0B0907;overflow:hidden;color:#F5F3EE}
+.slide.opening.op-chapter .chapter-visual h1,.slide.opening.op-chapter .chapter-visual h2{font-family:var(--font-heading);font-weight:500;letter-spacing:-.04em;line-height:1.18;margin:0;max-width:none;opacity:1;animation:none}
+.slide.opening.op-chapter .chapter-visual h1 em,.slide.opening.op-chapter .chapter-visual h2 em{color:#FDD506;font-style:normal;font-weight:inherit}
+.chapter-visual h1>span,.chapter-visual h2>span{display:block}
+.slide.opening.op-chapter .chapter-visual p{font:400 3cqh/1.42 var(--font-b);letter-spacing:-.018em;margin:0;max-width:none;opacity:1;animation:none;color:#CEC9C1}
+.chapter-visual .cv-image{position:absolute;inset:0}
+.chapter-visual .cv-image img{display:block;width:100%;height:100%;object-fit:cover}
+.cv-leverage .cv-image{mask-image:none}
+.cv-leverage .cv-photo-copy{position:absolute;left:8cqw;right:8cqw;bottom:8cqh;display:flex;flex-direction:column;gap:3.6cqh}
+.slide.opening.op-chapter .cv-leverage .cv-title{font-size:4.5cqh}
+.slide.opening.op-chapter .cv-leverage .cv-support{color:#F5F3EE;font-size:3cqh}
+.cv-phase{position:absolute;opacity:0;visibility:hidden;transform:translateY(1cqh);transition:opacity .3s ease,transform .4s ease,visibility .3s;pointer-events:none}
+.cv-phase.is-current{opacity:1;visibility:visible;transform:none;pointer-events:auto}
+.cv-rules-text .cv-phase{inset:8cqh 8cqw;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:5cqh}
+.slide.opening.op-chapter .cv-rules-text .cv-phase-title{font-size:5.3cqh}
+.cv-text-route{display:flex;flex-direction:column;gap:5cqh;width:100%}
+.cv-text-route strong{display:block;font:500 4.5cqh/1.2 var(--font-heading);color:#FDD506;letter-spacing:-.035em;margin-bottom:1.5cqh}
+.slide.opening.op-chapter .cv-rules-text .cv-closing{color:#FDD506;font-size:3.5cqh;max-width:30ch}
+.cv-audiences .cv-heading{position:absolute;top:6cqh;left:8cqw;right:8cqw}
+.slide.opening.op-chapter .cv-audiences .cv-title{font-size:5.5cqh;transition:opacity .3s ease}
+.cv-audiences .cv-phase{top:25cqh;left:8cqw;right:8cqw;display:flex;flex-direction:column;gap:2.6cqh}
+.slide.opening.op-chapter .cv-audiences .cv-phase-title{font-size:3.5cqh;line-height:1.25;border-left:.25cqw solid #FDD506;padding-left:2.3cqw}
+.slide.opening.op-chapter .cv-audiences .cv-phase-title em{color:#F5F3EE}
+.cv-audiences .cv-body{display:flex;flex-direction:column;gap:1.7cqh}
+.slide.opening.op-chapter .cv-audiences .cv-body p{font-size:3cqh;line-height:1.36}
+.slide.opening.op-chapter .cv-audiences .cv-body em{color:#FDD506;font-style:normal;font-weight:600}
+.slide.opening.op-chapter .cv-audiences .cv-closing{font-size:3.15cqh;color:#CEC9C1}
+.cv-audiences .cv-image{mask-image:none}
+.cv-shade{position:absolute;top:60%;bottom:0;transition:opacity .5s ease;pointer-events:none}
+.cv-shade-left{left:0;width:58%;background:linear-gradient(90deg,rgba(11,9,7,.86) 65%,transparent);opacity:0}
+.cv-shade-right{right:0;width:58%;background:linear-gradient(-90deg,rgba(11,9,7,.86) 65%,transparent);opacity:1}
+.cv-audiences[data-step="2"] .cv-shade-left{opacity:1}
+.cv-audiences[data-step="2"] .cv-shade-right{opacity:0}
+.cv-audiences[data-step="3"] .cv-shade{opacity:.72}
+.cv-audiences[data-step="3"] .cv-title{opacity:.18!important}
+.cv-audiences .cv-phase[data-phase="3"]{top:35cqh;min-height:29cqh;box-sizing:border-box;padding:4cqh 4cqw;justify-content:center;align-items:center;text-align:center;background:rgba(11,9,7,.96);border:1px solid rgba(253,213,6,.65);border-radius:1.2cqw;gap:2.6cqh}
+.slide.opening.op-chapter .cv-audiences .cv-phase[data-phase="3"] .cv-phase-title{border:0;padding:0;font-size:4.7cqh;line-height:1.2}
+.slide.opening.op-chapter .cv-audiences .cv-phase[data-phase="3"] .cv-phase-title em{color:#FDD506}
+.slide.opening.op-chapter .cv-audiences .cv-phase[data-phase="3"] .cv-body p{font-size:2.65cqh}
+.slide.opening.op-chapter.on .cv-heading,.slide.opening.op-chapter.on .cv-photo-copy{animation:cv-copy-in .65s var(--op-ease) .08s both}
+.slide.opening.op-chapter.on .cv-image{animation:cv-image-in .8s ease both}
+@keyframes cv-copy-in{from{opacity:0;transform:translateY(1.6cqh)}to{opacity:1;transform:none}}
+@keyframes cv-image-in{from{opacity:.25}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.chapter-visual *{animation:none!important;transition:none!important}.cv-phase.is-current{opacity:1;transform:none}}
+/* User-supplied square background for quiet, text-only scenes. */
+.slide.opening.op-background{background-color:#0B0907;background-size:cover;background-position:center}
+.slide.opening.op-background .chapter-visual,.slide.opening.op-background .chapter-roadmap{background:transparent}
+.slide.opening .story-text-only .story-copy{inset:16cqh 9cqw;height:auto;width:auto;justify-content:center;gap:4cqh}
+.slide.opening.op-story .story-text-only h1.story-title{font-size:5.5cqh}
+/* Exact final copy on the opening title, kept as live typography. */
+.slide.opening.op-intro .op-body{font:400 2.65cqh/1.4 var(--font-b);color:#CEC9C1;max-width:none;letter-spacing:-.018em}
+.slide.opening.op-intro .op-body em{font-style:normal;color:#FDD506}
+@container(max-aspect-ratio:6/5){
+ .slide.opening.op-intro .op-copy{gap:2cqh;bottom:6cqh}
+ .slide.opening.op-intro .op-support{max-width:none;font-size:2.7cqh}
+ .slide.opening.op-feeling h1{font-size:4.8cqh}
+ .slide.opening.op-feeling .op-eyebrow{max-width:40ch;font-size:1.85cqh}
+}
+/* Slide18: quiet warm shadow, without a decorative background photograph. */
+.slide.opening.op-chapter .cv-rules-text{background:radial-gradient(ellipse 65% 50% at 50% 66%,rgba(253,213,6,.045),transparent 80%),#0B0907}
+
+/* A still, low-contrast circuit silhouette frames the new working model. */
+.slide.opening.op-chapter .cv-circuit{position:absolute;inset:0;width:100%;height:100%;color:#FDD506;opacity:.2;stroke:none;pointer-events:none;transition:opacity .4s ease}
+.slide.opening.op-chapter .cv-rules-text[data-step="2"] .cv-circuit{opacity:.07}
+@media(prefers-reduced-motion:reduce){.cv-circuit{transition:none!important}}
+
+/* Slide18, phase2: the AI is the visible reason the two sides can do comparable work. */
+.cv-rules-text .cv-phase.cv-has-parity{inset:0;display:block}
+.slide.opening.op-chapter .cv-has-parity .cv-phase-title{position:absolute;top:8cqh;left:8cqw;right:8cqw;font-size:4.5cqh;line-height:1.22}
+.cv-parity{position:absolute;left:8cqw;right:8cqw;top:36cqh;height:31cqh;display:grid;grid-template-columns:1fr 6cqw 1fr;align-items:center;gap:2cqw}
+.cv-parity-side{min-width:0;text-align:center}
+.slide.opening.op-chapter .cv-parity svg{display:block;width:100%;height:auto;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;color:#F5F3EE}
+.slide.opening.op-chapter .cv-parity .cv-parity-equal{color:#FDD506;stroke-width:3.6;transform:translateY(-2cqh)}
+.slide.opening.op-chapter .cv-ai-chip{color:#FDD506}
+.slide.opening.op-chapter .cv-ai-chip .cv-chip-fill{fill:rgba(253,213,6,.055)}
+.slide.opening.op-chapter .cv-ai-chip text{fill:#FDD506;stroke:none;font:500 23px "Unbounded",sans-serif;text-anchor:middle}
+.cv-parity-plus{opacity:.5}
+.cv-expert-badge{color:#BEB9B0}
+.cv-parity-label{font:500 2.8cqh/1.3 var(--font-b);color:#F5F3EE;margin-top:1.5cqh;white-space:nowrap;letter-spacing:-.02em}
+.cv-parity-label em{font-style:normal;color:#FDD506}
+.slide.opening.op-chapter .cv-has-parity .cv-closing{position:absolute;top:76cqh;left:10cqw;right:10cqw;max-width:none;font-size:3.45cqh;line-height:1.4}
+.cv-has-parity.is-current .cv-parity-novice{animation:cv-parity-in .5s ease .1s both}
+.cv-has-parity.is-current .cv-parity-expert{animation:cv-parity-in .5s ease .25s both}
+.cv-has-parity.is-current .cv-parity-equal{animation:cv-parity-in .45s ease .4s both}
+.cv-has-parity.is-current .cv-ai-chip{animation:cv-chip-focus .7s ease .15s both}
+@keyframes cv-parity-in{from{opacity:0}to{opacity:1}}
+@keyframes cv-chip-focus{from{opacity:.12}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.cv-has-parity *{animation:none!important;transition:none!important}}
+
+/* The source slide is one complete screen: all copy remains visible together. */
+.slide.opening.op-chapter .cv-rules-text.cv-single-screen .cv-circuit{opacity:.065}
+.cv-single-screen .cv-phase.cv-has-parity{inset:0;text-align:center}
+.slide.opening.op-chapter .cv-single-screen .cv-phase-title{top:8cqh;left:7cqw;right:7cqw;width:auto;font-size:4.9cqh;line-height:1.2}
+.cv-single-screen .cv-text-route{position:absolute;top:23cqh;left:8cqw;right:8cqw;width:auto;display:grid;grid-template-columns:1fr 1fr;gap:5cqw;text-align:left}
+.cv-single-screen .cv-text-route>div{position:relative;padding-left:4.3cqw}
+.cv-single-screen .cv-text-route>div::before{content:attr(data-route-step);position:absolute;left:0;top:.1cqh;width:2.7cqw;height:2.7cqh;display:grid;place-items:center;border:1px solid #FDD506;border-radius:50%;font:500 1.7cqh/1 var(--font-b);color:#FDD506}
+.cv-single-screen .cv-text-route strong{font-size:3.1cqh;line-height:1.25;margin-bottom:1.3cqh}
+.slide.opening.op-chapter .cv-single-screen .cv-text-route p{font-size:2.65cqh;line-height:1.4}
+.cv-single-screen .cv-text-route p>span{display:block}
+.cv-single-screen .cv-parity{top:41cqh;left:12cqw;right:12cqw;height:21cqh}
+.slide.opening.op-chapter .cv-single-screen .cv-parity-side svg{height:15cqh}
+.cv-single-screen .cv-parity-label{font-size:2.6cqh;margin-top:1cqh}
+.cv-single-screen .cv-body{position:absolute;top:66cqh;left:9cqw;right:9cqw}
+.slide.opening.op-chapter .cv-single-screen .cv-body p{font-size:3.4cqh;line-height:1.4;color:#F5F3EE}
+.slide.opening.op-chapter .cv-single-screen .cv-closing{top:85cqh;left:10cqw;right:10cqw;font-size:3.05cqh;line-height:1.4;max-width:none}

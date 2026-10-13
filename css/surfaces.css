@@ -1,0 +1,16 @@
+/* Shared quiet background: screenshot 2, September 10 review. */
+:root{--slide-ambient:radial-gradient(ellipse 55% 55% at 78% 67%,rgba(253,213,6,.065),transparent 82%),#0B0907}
+.slide.opening.op-ambient,
+.slide.opening.op-ambient .s3-spotlight,
+.slide.opening.op-ambient .chapter-roadmap,
+.slide.opening.op-ambient .chapter-visual,
+.slide.opening.op-ambient .chapter-format{background:var(--slide-ambient)}
+.slide.opening.op-ambient .sp-ambient{display:none}
+/* Text backgrounds in the remaining deck inherit the same restrained base. */
+.slide:not(.opening):not(.frame):not(.split):not(.video):not(.light){background:var(--slide-ambient)}
+/* The former yellow interstitial now belongs to the same background family. */
+.slide.opening.op-ambient .chapter-format.cf-pause{background:var(--slide-ambient);color:#F5F3EE}
+.slide.opening.op-ambient .cf-pause .cf-heading,.slide.opening.op-ambient .cf-pause .cf-heading em{color:#F5F3EE}
+.slide.opening.op-ambient .cf-pause .cf-stop-mark{color:#FDD506}
+/* Keep the chat invitation on one line inside the square. */
+.slide.opening.op-feeling .op-eyebrow{max-width:none;width:100%;font-size:2cqh;letter-spacing:0;white-space:nowrap}

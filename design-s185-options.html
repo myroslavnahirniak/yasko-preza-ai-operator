@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>185 · Каждая следующая услуга — одна короткая команда ртом · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.art:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.72) 30%,rgba(11,9,7,.2) 52%,transparent 70%)}
+.text{position:absolute;left:8cqw;right:8cqw;top:11cqh;z-index:3;text-align:center}
+.text h1{font:500 4.6cqw/1.22 Unbounded,sans-serif;letter-spacing:-.03em;text-wrap:balance}
+.text h1 em{color:var(--yellow)}
+/* жива звукова хвиля поверх фону — коротка «команда» */
+.wave{position:absolute;z-index:3;display:flex;gap:.55cqw;align-items:center;height:5cqh;transform:translate(-50%,-50%);opacity:0}
+.play .wave{animation:fade .6s 1.1s forwards}
+.wave i{display:block;width:.55cqw;height:20%;background:var(--yellow);border-radius:1cqw;box-shadow:0 0 1.2cqw rgba(253,213,6,.7);animation:bar 1.1s ease-in-out infinite}
+.wave i:nth-child(2){animation-delay:.1s}.wave i:nth-child(3){animation-delay:.2s}.wave i:nth-child(4){animation-delay:.3s}.wave i:nth-child(5){animation-delay:.4s}.wave i:nth-child(6){animation-delay:.5s}.wave i:nth-child(7){animation-delay:.6s}.wave i:nth-child(8){animation-delay:.7s}.wave i:nth-child(9){animation-delay:.8s}
+@keyframes bar{0%,100%{height:18%}50%{height:100%}}
+.v-A .wave{left:66cqw;top:64cqh}
+.v-B .wave{display:none}
+.v-C .wave{left:58cqw;top:60cqh;height:4cqh}
+.v-C .art:after{background:linear-gradient(180deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.7) 28%,rgba(11,9,7,.25) 46%,transparent 62%)}
+.v-C .text{top:9cqh}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Микрофон и волна</button><button role="tab" data-v="B">Б · Голосовое в чате</button><button role="tab" data-v="C">В · Влад говорит в телефон</button></div>
+<p class="description"></p>
+<p class="note">Полный текст источника по центру верхней половины. Фоны — GPT Image 2.5 (2k), лёгкий наезд камеры; в А и В поверх фона живая жёлтая волна (CSS). Клавиши: ←/→ вариант.</p>
+<div class="actions"><button id="replay">↻ Повторить анимацию</button></div>
+</nav>
+<script>
+const T='<div class="text fx-up"><h1>Каждая следующая услуга, которую я сейчас буду показывать — <em>одна короткая команда ртом</em></h1></div>';
+const W='<div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>';
+window.VARIANTS={
+A:{cls:'kb',html:'<div class="art"><img src="assets/gen-184-188/s185-mic.webp" alt=""></div>'+T+W,
+   desc:'Студийный микрофон на тёмном столе, перед решёткой — короткая жёлтая волна: одна фраза, и всё. Поверх фона волна пульсирует живьём (CSS). Самый прямой образ «команды ртом». Рекомендация.'},
+B:{cls:'kb',html:'<div class="art"><img src="assets/gen-184-188/s185-voice.webp" alt=""></div>'+T,
+   desc:'Телефон на столе, на экране одно-единственное голосовое сообщение жёлтым — как в Telegram. Читается как «надиктовал агенту и пошёл дальше».'},
+C:{cls:'kb',html:'<div class="art"><img src="assets/gen-184-188/s185-vlad.webp" alt=""></div>'+T+W,
+   desc:'Сам Влад (референс лица) наговаривает команду в телефон, от телефона поднимается жёлтая волна. Личный вариант — продолжает линию «картинки с моим лицом» из начала эфира.'}};
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

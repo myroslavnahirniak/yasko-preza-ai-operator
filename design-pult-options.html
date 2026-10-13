@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Блоки «На выходе пакета» · 5 вариантов</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--y:#fdd506}
+*{box-sizing:border-box}html,body{margin:0;background:#000;color:#f5f3ee;font:14px/1.4 Manrope,sans-serif}
+.wrap{display:flex;flex-direction:column;align-items:center;gap:12px;padding:14px}
+.slide{width:min(96vw,calc(100dvh - 190px));aspect-ratio:1;background:var(--bg);position:relative;border:1px solid #2a2420}
+.slide iframe{position:absolute;inset:3%;width:94%;height:94%;border:0;background:transparent}
+.bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+button{font:500 13px/1.2 Manrope,sans-serif;cursor:pointer;border:1px solid #504735;border-radius:8px;background:#17130d;color:#ddd5c6;padding:8px 13px}
+button[aria-pressed=true]{color:var(--y);border-color:var(--y);background:#27210e}
+.desc{max-width:900px;text-align:center;color:#c8bfad;font-size:13px;min-height:36px}
+</style></head><body><div class="wrap">
+<div class="bar" id="modes"></div>
+<div class="bar" id="packs"></div>
+<div class="slide"><iframe id="f" title="вариант"></iframe></div>
+<p class="desc" id="d"></p>
+</div>
+<script>
+const M={a:['А · Стек крупно','Екран зверху, опис під ним у дві колонки; усе крупніше, ніж зараз, кейси сховано. Найближче до поточного, але читається з екрана.'],
+b:['Б · Сцена','Екран великий на всю ширину — головне показати роботу агента. Під ним одна смуга: назва, «Как работает агент» і 3 пункти. «Бизнесу/Заработок» і кейси сховано.'],
+c:['В · Меню збоку','Агенти списком ліворуч (як меню), праворуч великий екран і опис. Номери й назви всіх агентів видно одразу, клік по рядку — перемикання.'],
+d:['Г · Один агент — один кадр','Без ряду кнопок: екран ліворуч, повний опис праворуч, унизу перемикач ‹ 1 / 5 › і точки. Спокійно, як слайди всередині слайда.'],
+e:['Д · Огляд → деталь','Спочатку всі агенти пакета картками (кадр, назва, ціна, заробіток). Клік на картку — розгортає агента; «← все агенты» — назад до огляду.']};
+const P={'index':'Пакет 01 · сайты и маркетинг','pult-02':'Пакет 02 · контент-завод','pult-03':'Пакет 03 · продажи и трафик'};
+let m=(new URLSearchParams(location.search).get('m')||'a'), pk=(new URLSearchParams(location.search).get('p')||'pult-02');
+function btns(el,obj,cur,on){el.innerHTML=Object.keys(obj).map(k=>'<button data-k="'+k+'" aria-pressed="'+(k===cur)+'">'+(Array.isArray(obj[k])?obj[k][0]:obj[k])+'</button>').join('');el.onclick=e=>{const b=e.target.closest('button');if(b)on(b.dataset.k)};}
+function go(){btns(document.getElementById('modes'),M,m,k=>{m=k;go()});btns(document.getElementById('packs'),P,pk,k=>{pk=k;go()});
+ document.getElementById('f').src='assets/sites/aim-p4/'+(pk==='index'?'':pk+'.html')+'?m='+m+'&i=0';document.getElementById('d').textContent=M[m][1];history.replaceState(null,'','?m='+m+'&p='+pk);}
+go();
+</script></body></html>

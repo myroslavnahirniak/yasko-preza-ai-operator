@@ -1,0 +1,262 @@
+{
+  "slides": [
+    {
+      "googleNumber": 96,
+      "googleObjectId": "g3fadf66108e_0_651",
+      "editableTranscript": {
+        "title": "И собрал под это сайт",
+        "body": [],
+        "eyebrow": "",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g096-g3fadf66108e_0_771.png"
+      ],
+      "notes": [
+        "Visible slide contains a real website screenshot beneath this title. Its website UI copy belongs to the image and must not become slide body. Foreground _771 covers older screenshot _652. Preserve screenshot proof."
+      ],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 112,
+      "googleObjectId": "g3fadf66108e_0_1351",
+      "editableTranscript": {
+        "title": "Представьте двух человек за партами",
+        "body": [
+          "ОТЛИЧНИК НА ПЕРВОЙ ПАРТЕ\nЗнает всё обо всём. Ответит на любой вопрос\nНо сам не делал ничего ни разу",
+          "ТОТ, ЧТО НА ЗАДНЕЙ\nЗнает мало. Зато одну вещь делал тысячу раз\nИ зарабатывает на ней",
+          "Кому из них вы отдадите свой сайт?"
+        ],
+        "eyebrow": "",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g112-g3fadf66108e_0_1416.png"
+      ],
+      "notes": [
+        "Two contrasting classroom photos in lower half are visible illustration content."
+      ],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 113,
+      "googleObjectId": "g3fadf66108e_0_1361",
+      "editableTranscript": {
+        "title": "Первый — это чат. Второй — агент",
+        "body": [
+          "В чат вы ходите с вопросом. Он знает всё и не умеет ничего конкретного.",
+          "Агент умеет одно. Но так, как умеет мастер"
+        ],
+        "eyebrow": "",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g113-g3fadf66108e_0_1373.png"
+      ],
+      "notes": [
+        "Foreground _1373 covers stale images _1366 and _1367 plus native shape."
+      ],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 114,
+      "googleObjectId": "g3fadf66108e_0_1381",
+      "editableTranscript": {
+        "title": "И теперь он работает по инструкции, а не по вдохновению",
+        "body": [
+          "Не приступает, пока не получит нужные данные. Идёт шаг за шагом. Проверяет себя на каждом.",
+          "Поэтому результат одинаковый и в первый раз, и в сотый"
+        ],
+        "eyebrow": "",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g114-g3fadf66108e_0_1392.png"
+      ],
+      "notes": [],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 115,
+      "googleObjectId": "g3fadf66108e_0_1377",
+      "editableTranscript": {
+        "title": "Агент — это сотрудник, которого я обучил",
+        "body": [
+          "01 Он смотрел, как я делаю задачу\nсотню раз подряд, от начала до результата",
+          "02 Я правил каждый раз\nвот так нравится, вот так нет, вот так переделай",
+          "03 Заставил изучить методики\nи лучшие мировые примеры в этой работе",
+          "04 Он собрал себе инструкции\nрегламенты, базы, чек-листы — свои, не мои"
+        ],
+        "eyebrow": "",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g115-g3fadf66108e_0_1380.png"
+      ],
+      "notes": [],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 116,
+      "googleObjectId": "g3fadf66108e_0_1502",
+      "editableTranscript": {
+        "title": "И это не то, что вы уже пробовали",
+        "body": [
+          "01 Не курс\nвы покупали. Дошли до середины и бросили — и правильно сделали",
+          "02 Не профессия\nеё осваивают годами, а кормит она теперь год-два",
+          "03 Не «изучение нейросетей»\nвы уже что-то умеете. Денег от этого не прибавилось",
+          "Это другой способ зарабатывать: не уметь делать самому, а иметь тех, кто делает"
+        ],
+        "eyebrow": "НОВАЯ ВОЗМОЖНОСТЬ",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g116-g3fadf66108e_0_1507.png"
+      ],
+      "notes": [
+        "Visible foreground raster replaces stale native question about finding the buyer."
+      ],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 119,
+      "googleObjectId": "g3fadf66108e_0_1245",
+      "editableTranscript": {
+        "title": "15 лет я делал эту работу руками",
+        "body": [],
+        "eyebrow": "",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g119-g3fadf66108e_0_1253.png"
+      ],
+      "notes": [
+        "Foreground is portrait with this title, not stale native AI-agent definition. Excluded captured app status/navigation and page count. Preserve portrait visual."
+      ],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 120,
+      "googleObjectId": "g3fadf66108e_0_1402",
+      "editableTranscript": {
+        "title": "Раньше это всё мог только человек",
+        "body": [
+          "РАНЬШЕ\nИскать клиентов — человек\nПродавать — человек\nОказывать услугу — человек\nИ всё это один и тот же человек. Вы",
+          "ТЕПЕРЬ\nИскать клиентов — агент\nПродавать — агент\nОказывать услугу — агент\nА вы — ставите задачу"
+        ],
+        "eyebrow": "",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g120-g3fadf66108e_0_1405.png"
+      ],
+      "notes": [],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 121,
+      "googleObjectId": "g3fadf66108e_0_1393",
+      "editableTranscript": {
+        "title": "Сейчас таких агентов у меня 96 под каждую задачу/услугу",
+        "body": [
+          "РАЗВЕДКА\nизучить рынок\nпортрет клиента\nконкуренты",
+          "САЙТЫ\nлендинг\nквиз\nголосовой агент",
+          "КОНТЕНТ\nReels и посты\nкарусели\nAI-аватар",
+          "РЕКЛАМА\nкреативы\nтаргет\nаналитика",
+          "ПРОДАЖИ\nпереписка\nКП и презентации\nразбор звонков"
+        ],
+        "eyebrow": "",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g121-g3fadf66108e_0_1398.png"
+      ],
+      "notes": [
+        "Heading is native visible text; five category columns transcribed from separate lower raster."
+      ],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 122,
+      "googleObjectId": "g3fadf66108e_0_1347",
+      "editableTranscript": {
+        "title": "AI-Оператор — метод из четырёх шагов",
+        "body": [
+          "Получать деньги за услуги, которые делаете не вы, клиентам, которых нашли не вы",
+          "Выбрал услугу → Нашёл клиента → Продал клиенту → Оказал услугу → Забрал деньги",
+          "🤖 — работает AI-агент · 👤 — это вы"
+        ],
+        "eyebrow": "НАЗВАНИЕ СИСТЕМЫ",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g122-g3fadf66108e_0_1529.png"
+      ],
+      "notes": [
+        "Preserved original wording four steps although diagram has five nodes. First and last nodes human; three middle nodes agent."
+      ],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 123,
+      "googleObjectId": "g3fadf66108e_0_1258",
+      "editableTranscript": {
+        "title": "Три работы делают они. Одну — вы",
+        "body": [
+          "01 Находят, кому нужна услуга\nищут сами, каждый день, пока вы заняты своим",
+          "02 Доводят до оплаты\nотвечают, снимают возражения, принимают деньги",
+          "03 Делают работу\nту самую, за которую заплатили",
+          "Ваша работа — поставить задачу и забрать деньги"
+        ],
+        "eyebrow": "",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g123-g3fadf66108e_0_1263.png"
+      ],
+      "notes": [],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 132,
+      "googleObjectId": "g3fadf66108e_0_1282",
+      "editableTranscript": {
+        "title": "Сегодня у меня одна цель",
+        "body": [
+          "Если вы выйдете с этого эфира с одним-единственным пониманием — что работу теперь делает агент, а не вы, что это реальный ключ к тому, чтобы перестать считать дни до конца месяца, и что это достижимо именно для вас, — этот вечер изменит вашу траекторию.",
+          "Всё, что будет дальше, — три секрета, которые я отдал бы себе самому три года назад"
+        ],
+        "eyebrow": "БОЛЬШОЕ ДОМИНО",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g132-g3fadf66108e_0_1415.png"
+      ],
+      "notes": [],
+      "matchedLocal": null
+    },
+    {
+      "googleNumber": 135,
+      "googleObjectId": "g3fadf66108e_0_1420",
+      "editableTranscript": {
+        "title": "И это работает не только у меня",
+        "body": [
+          "340\nполучили доступ к системе",
+          "каждый\nсобрал первую услугу агентом",
+          "60%\nдо этого не заработали онлайн ни доллара",
+          "85%+\nиз взявшихся дошли до первых денег",
+          "Среди них — и подросток без опыта, и 50-летний нутрициолог. Включились не все. Но у тех, кто включился, система срабатывает"
+        ],
+        "eyebrow": "",
+        "verified": true
+      },
+      "sourceImages": [
+        "assets/google-source/g135-g3fadf66108e_0_1476.png"
+      ],
+      "notes": [
+        "Visible foreground _1476 replaces old _1427 numbers 190/60. The 85%+ label is visually verified although OCR missed it. Existing editorial note identifies some figures as unconfirmed; preserve as source copy, flag separately, no invented proof."
+      ],
+      "matchedLocal": null
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+/* 02.10 · нові слайди Google 186–325 («ДО СЮДА!»). Розмітка — source/google-2026-10-01/_patch_new_1002.py.
+   Клас слайда .b13-g3NNN = googleNumber 3000 + сторінка Google. Квадрат 1:1, одиниці cqw/cqh. */
+
+/* спільне */
+.b129 .g2-fin{position:absolute;left:7cqw;right:7cqw;bottom:7cqh;margin:0;text-align:center;font:600 2.9cqw/1.35 Manrope,sans-serif;color:#f5f3ee;z-index:4;text-wrap:balance}
+.b129 .g2-fin em{font-style:normal;color:#fdd506}
+.b129 .g2-was{position:absolute;left:9cqw;right:9cqw;margin:0;text-align:center;font:400 2.5cqw/1.45 Manrope,sans-serif;color:#c4bdb1;z-index:4;text-wrap:balance}
+@keyframes g2draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes g2pop{0%{transform:scale(.2);opacity:0}70%{transform:scale(1.25)}100%{transform:scale(1);opacity:1}}
+
+/* G196 · Окно возможности */
+.b129.b13-g3196 .g2-cols{position:absolute;left:7cqw;right:7cqw;top:23cqh;display:grid;grid-template-columns:repeat(3,1fr);gap:3cqw;z-index:3}
+.b129.b13-g3196 .g2-cols article{padding-top:2cqh;border-top:2px solid #3a3129}
+.b129.b13-g3196 .g2-cols article:nth-child(2){border-top-color:#fdd506}
+.b129.b13-g3196 .g2-cols b{font:600 1.8cqw/1 'JetBrains Mono',monospace;color:#fdd506}
+.b129.b13-g3196 .g2-cols h3{margin:1.4cqh 0 1cqh;font:500 2.45cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em;color:#f5f3ee}
+.b129.b13-g3196 .g2-cols p{margin:0;font:400 1.95cqw/1.42 Manrope,sans-serif;color:#b3a996}
+.b129.b13-g3196 .g2-gap{position:absolute;left:7cqw;width:86cqw;top:53cqh;height:26cqh;overflow:visible;z-index:3}
+.g2-gap .g2-base{stroke:#2a221f;stroke-width:2}
+.g2-gap .g2-area{fill:url(#g2gapf)}
+.g2-gap .g2-tech{fill:none;stroke:#fdd506;stroke-width:4;stroke-linecap:round}
+.g2-gap .g2-aware{fill:none;stroke:#8a8070;stroke-width:3;stroke-linecap:round}
+.g2-gap .g2-span{fill:none;stroke:#fdd506;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.8}
+.g2-gap .g2-d1{fill:#fdd506}.g2-gap .g2-d2{fill:#8a8070}
+.g2-gap text{font:500 21px Manrope,sans-serif;fill:#b3a996}
+.g2-gap .g2-t1{fill:#fdd506}
+.g2-gap .g2-t3{font:600 26px Manrope,sans-serif;fill:#fdd506}
+.b129.b13-g3196.s16-play .g2-tech,.b129.b13-g3196.s16-play .g2-aware{stroke-dasharray:1;animation:g2draw 1.5s .3s cubic-bezier(.4,0,.2,1) both}
+.b129.b13-g3196.s16-play .g2-area,.b129.b13-g3196.s16-play .g2-span,.b129.b13-g3196.s16-play .g2-t3{animation:s16-up .7s 1.5s both}
+
+/* G197 · анонс демо: офіс агента у вікні + підпис */
+.b129.b13-g3197 .s16-frame.g2-office{top:22cqh;bottom:19cqh}
+.b129.b13-g3197 .g2-sub{bottom:7cqh;text-align:center}
+.b129.b13-g3197 .g2-sub p{font:500 2.8cqw/1.35 Manrope,sans-serif;color:#f5f3ee}
+
+/* G198 · сайти 1995 / 2010 / 2026 */
+.b129.b13-g3198 .g2-eras{position:absolute;left:5cqw;right:5cqw;top:25cqh;display:grid;grid-template-columns:repeat(3,1fr);gap:2.4cqw;z-index:3;align-items:end}
+.b129.b13-g3198 .g2-era{margin:0;display:flex;flex-direction:column}
+.b129.b13-g3198 .g2-bw{height:2.6cqh;display:flex;align-items:center;gap:.5cqw;padding:0 1cqw;background:#2a241f;border-radius:1cqw 1cqw 0 0}
+.b129.b13-g3198 .g2-bw i{width:.8cqw;height:.8cqw;border-radius:50%;background:#5a4f45}
+.b129.b13-g3198 .g2-site{height:34cqh;overflow:hidden;position:relative;border:1px solid #2a241f;border-top:0;border-radius:0 0 1cqw 1cqw}
+.b129.b13-g3198 .g2-era figcaption{display:flex;justify-content:space-between;align-items:baseline;margin-top:2.2cqh;padding:0 .4cqw}
+.b129.b13-g3198 .g2-era figcaption b{font:500 3cqw/1 Unbounded,sans-serif;letter-spacing:-.04em;color:#8a8070}
+.b129.b13-g3198 .g2-era figcaption span{font:500 3cqw/1 Unbounded,sans-serif;letter-spacing:-.04em;color:#f5f3ee}
+.b129.b13-g3198 .e26 figcaption b{color:#f5f3ee}
+.b129.b13-g3198 .e26 figcaption span{color:#fdd506}
+.b129.b13-g3198 .e95,.b129.b13-g3198 .e10{filter:saturate(.75);opacity:.9}
+.b129.b13-g3198 .e26 .g2-bw{background:#3a3129}.b129.b13-g3198 .e26 .g2-site{border-color:#fdd50666;box-shadow:0 2cqh 7cqw rgba(253,213,6,.12)}
+/* 1995: сірий фон, Times, сині посилання */
+.b129 .g2-site.s95{background:#c0c0c0;padding:2cqh 1.6cqw;box-sizing:border-box;font-family:'Times New Roman',Times,serif;color:#000}
+.b129 .g2-site.s95 h4{margin:0;text-align:center;font:700 2.1cqw/1.2 'Times New Roman',serif;color:#000080!important}
+.b129 .g2-site.s95 hr{border:0;border-top:2px groove #fff;margin:1.4cqh 0}
+.b129 .g2-site.s95 p{margin:0;text-align:center;font:400 1.35cqw/1.5 'Times New Roman',serif;color:#000!important}
+.b129 .g2-site.s95 u{color:#0000ee}
+.b129 .g2-site.s95 .uc{margin:3cqh auto;width:80%;padding:1.4cqh 0;text-align:center;font:700 1.3cqw/1 Arial,sans-serif;color:#000;background:repeating-linear-gradient(45deg,#ffd800 0 1cqw,#111 1cqw 2cqw);outline:.4cqw solid #ffd800;text-shadow:0 0 .3cqw #ffd800,0 0 .3cqw #ffd800}
+.b129 .g2-site.s95 .cnt span{font-family:'Courier New',monospace;background:#000;color:#0f0;padding:0 .4cqw}
+/* 2010: глянцевий Web 2.0 */
+.b129 .g2-site.s10{background:#f2efe9;font-family:Verdana,Arial,sans-serif}
+.b129 .g2-site.s10 .hd{display:flex;align-items:center;gap:1.1cqw;padding:1.4cqh 1.2cqw;background:linear-gradient(#fafafa,#d8d4cc);border-bottom:1px solid #bdb6aa}
+.b129 .g2-site.s10 .hd b{margin-right:auto;font:700 1.5cqw/1 Verdana,sans-serif;color:#c25b12!important;text-shadow:0 1px 0 #fff}
+.b129 .g2-site.s10 .hd span{font:400 1cqw/1 Verdana,sans-serif;color:#555!important}
+.b129 .g2-site.s10 .bd{display:grid;grid-template-columns:1fr 26%;gap:1cqw;padding:1.6cqh 1.2cqw}
+.b129 .g2-site.s10 .hero{position:relative;height:17cqh;border-radius:1cqw;padding:2cqh 1.4cqw;box-sizing:border-box;background:linear-gradient(#ffb347,#e8761c);box-shadow:inset 0 1.4cqh 0 rgba(255,255,255,.28)}
+.b129 .g2-site.s10 .hero p{margin:0;font:700 1.35cqw/1.3 Verdana,sans-serif;color:#fff!important;text-shadow:0 1px 1px rgba(0,0,0,.3)}
+.b129 .g2-site.s10 .hero em{position:absolute;left:1.4cqw;bottom:1.8cqh;padding:.8cqh 1cqw;border-radius:99px;font:700 .95cqw/1 Verdana,sans-serif;font-style:normal;color:#c25b12;background:linear-gradient(#fff,#e9e9e9);box-shadow:0 1px 2px rgba(0,0,0,.3)}
+.b129 .g2-site.s10 .star{position:absolute;right:-1cqw;top:-1.4cqh;width:6.2cqw;height:6.2cqw;display:grid;place-items:center;font:700 .95cqw/1 Verdana,sans-serif;font-style:normal;color:#fff;background:#d6282b;clip-path:polygon(50% 0,61% 18%,82% 10%,80% 32%,100% 40%,85% 56%,96% 76%,74% 78%,68% 100%,50% 88%,32% 100%,26% 78%,4% 76%,15% 56%,0 40%,20% 32%,18% 10%,39% 18%);transform:rotate(12deg)}
+.b129 .g2-site.s10 .side{display:flex;flex-direction:column;gap:1cqh}
+.b129 .g2-site.s10 .side i{height:5cqh;border-radius:.6cqw;background:linear-gradient(#fff,#e4e0d8);border:1px solid #cfc8bb}
+/* 2026: справжній сайт, повільний скрол */
+.b129 .g2-site.s26{background:#120d0a}
+.b129 .g2-site.s26 img{display:block;width:100%;height:auto;animation:g2scroll 22s ease-in-out infinite alternate}
+@keyframes g2scroll{0%,8%{transform:translateY(0)}100%{transform:translateY(calc(-100% + 34cqh))}}
+.b129.b13-g3198 .g2-fin{bottom:8cqh;font:500 3.6cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em}
+
+/* G199 · з чого складався сайт */
+.b129.b13-g3199 .g2-team{position:absolute;left:7cqw;right:7cqw;top:24cqh;display:grid;grid-template-columns:repeat(4,1fr);gap:1.8cqw;z-index:3}
+.b129.b13-g3199 .g2-team>div{display:flex;flex-direction:column;align-items:flex-start;gap:1.2cqh;padding:3cqh 2cqw;background:linear-gradient(160deg,#1b1611,#120e0b);border:1px solid #3a3129;border-radius:1.6cqw}
+.b129.b13-g3199 .g2-team i{display:grid;place-items:center;width:5.6cqw;height:5.6cqw;border-radius:1.2cqw;background:#211b15;border:1px solid #3a3129;margin-bottom:.6cqh}
+.b129.b13-g3199 .g2-team svg,.b129.b13-g3199 .g2-agent svg{width:2.9cqw;height:2.9cqw;fill:none;stroke:#b3a996;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.b129.b13-g3199 .g2-team b{font:500 4.2cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:#f5f3ee}
+.b129.b13-g3199 .g2-team span{font:400 2.1cqw/1.2 Manrope,sans-serif;color:#b3a996}
+.b129.b13-g3199 .g2-brace{position:absolute;left:7cqw;width:86cqw;top:51.5cqh;height:6cqh;fill:none;stroke:#5a4f45;stroke-width:2;z-index:3}
+.b129.b13-g3199 .g2-sum{position:absolute;left:7cqw;right:7cqw;top:59.5cqh;margin:0;text-align:center;font:500 2.7cqw/1.35 Manrope,sans-serif;color:#f5f3ee;z-index:3}
+.b129.b13-g3199 .g2-agent{position:absolute;left:12cqw;right:12cqw;bottom:8cqh;display:flex;align-items:center;gap:2.4cqw;padding:2.6cqh 3cqw;border:2px solid #fdd506;border-radius:99px;background:rgba(253,213,6,.06);z-index:3}
+.b129.b13-g3199 .g2-agent i{flex:none;display:grid;place-items:center;width:6cqw;height:6cqw;border-radius:50%;background:#fdd506}
+.b129.b13-g3199 .g2-agent svg{stroke:#0b0907}
+.b129.b13-g3199 .g2-agent p{margin:0;font:500 2.7cqw/1.3 Manrope,sans-serif;color:#f5f3ee}
+.b129.b13-g3199 .g2-agent em{font-style:normal;color:#fdd506;font-weight:700}
+.b129.b13-g3199.s16-play .g2-team>div{animation:s16-up .6s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-g3199.s16-play .g2-team>div:nth-child(2){animation-delay:.1s}.b129.b13-g3199.s16-play .g2-team>div:nth-child(3){animation-delay:.2s}.b129.b13-g3199.s16-play .g2-team>div:nth-child(4){animation-delay:.3s}
+.b129.b13-g3199.s16-play .g2-agent{animation:s16-up .7s .8s both}
+
+/* G200 · ціна в часі — стовпчики */
+.b129.b13-g3200 .g2-bars{position:absolute;left:11cqw;right:11cqw;top:23cqh;height:40cqh;display:grid;grid-template-columns:repeat(4,1fr);gap:3cqw;align-items:end;z-index:3;border-bottom:2px solid #3a3129}
+.b129.b13-g3200 .g2-bars>div{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative}
+.b129.b13-g3200 .g2-bars b{font:500 3.3cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:#f5f3ee;margin-bottom:1.4cqh}
+.b129.b13-g3200 .g2-bars i{display:block;width:100%;height:calc(var(--h) * .30cqh);min-height:.8cqh;background:linear-gradient(180deg,#5a4f45,#2a221f);border-radius:.8cqw .8cqw 0 0}
+.b129.b13-g3200 .g2-bars>div:first-child i{background:linear-gradient(180deg,#8a8070,#3a3129)}
+.b129.b13-g3200 .g2-bars .fut i{background:transparent;border:2px dashed #fdd506;border-bottom:0;min-height:1.4cqh}
+.b129.b13-g3200 .g2-bars .fut b{color:#fdd506}
+.b129.b13-g3200 .g2-bars span{position:absolute;bottom:-4.4cqh;font:500 1.8cqw/1 'JetBrains Mono',monospace;letter-spacing:.06em;color:#8a8070;white-space:nowrap}
+.b129.b13-g3200 .g2-bars .fut span{color:#fdd506}
+.b129.b13-g3200 .g2-was{top:71cqh}
+.b129.b13-g3200 .g2-fin{color:#fdd506;font-size:3cqw}
+.b129.b13-g3200.s16-play .g2-bars i{transform-origin:bottom;animation:g2grow .9s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-g3200.s16-play .g2-bars>div:nth-child(2) i{animation-delay:.12s}.b129.b13-g3200.s16-play .g2-bars>div:nth-child(3) i{animation-delay:.24s}.b129.b13-g3200.s16-play .g2-bars>div:nth-child(4) i{animation-delay:.36s}
+@keyframes g2grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+
+/* G201 · модем: текст угорі, фінал унизу */
+.b129.b13-g3201 .g2-lines{position:absolute;left:12cqw;right:12cqw;top:23cqh;display:flex;flex-direction:column;gap:1.8cqh;text-align:center;z-index:3}
+.b129.b13-g3201 .g2-lines p{margin:0;font:400 2.6cqw/1.45 Manrope,sans-serif;color:#e9e3d8;text-wrap:balance;text-shadow:0 .3cqw 1.6cqw rgba(0,0,0,.7)}
+.b129.b13-g3201 .b13-art:after{background:linear-gradient(180deg,#0b0907 0%,rgba(11,9,7,.9) 30%,rgba(11,9,7,.2) 58%),linear-gradient(0deg,#0b0907 0%,rgba(11,9,7,.85) 14%,transparent 34%)}
+
+/* G202 · поле крапок */
+.b129.b13-g3202 .g2-dots{position:absolute;left:7cqw;width:86cqw;top:24cqh;height:33cqh;z-index:3}
+.b129.b13-g3202 .g2-dots circle{fill:#3a3129}
+.b129.b13-g3202 .g2-dots circle.on{fill:#fdd506;filter:drop-shadow(0 0 6px rgba(253,213,6,.7));transform-box:fill-box;transform-origin:center}
+.b129.b13-g3202 .g2-was{top:63cqh;font-size:2.7cqw;color:#e9e3d8}
+.b129.b13-g3202 .g2-fin{font-size:3.1cqw}
+.b129.b13-g3202.s16-play .g2-dots circle.on{animation:g2pop .6s 1s cubic-bezier(.2,.8,.2,1) both}
+
+/* G219 · Венн */
+.b129.b13-g3219 .g2-venn{position:absolute;left:12cqw;width:76cqw;top:8cqh;height:84cqh;z-index:3;overflow:visible}
+.b129.b13-g3219 .g2-venn circle{fill:rgba(253,213,6,.045);stroke:#5a4f45;stroke-width:2}
+.b129.b13-g3219 .g2-venn text{text-anchor:middle;font:500 22px Manrope,sans-serif;fill:#c4bdb1}
+.b129.b13-g3219 .g2-venn text.big{font:500 27px Unbounded,sans-serif;letter-spacing:-.5px;fill:#f5f3ee}
+.b129.b13-g3219 .g2-venn text.mid{font:600 26px Unbounded,sans-serif;fill:#fdd506;filter:drop-shadow(0 0 10px rgba(253,213,6,.5))}
+.b129.b13-g3219.s16-play .g2-venn circle{animation:s16-up .7s both}
+.b129.b13-g3219.s16-play .g2-venn circle:nth-of-type(2){animation-delay:.15s}.b129.b13-g3219.s16-play .g2-venn circle:nth-of-type(3){animation-delay:.3s}
+
+/* G225 · глобус */
+.b129.b13-g3225 .g2-globe{position:absolute;left:50%;top:25cqh;width:68cqh;height:68cqh;transform:translateX(-50%);z-index:3;overflow:visible}
+.b129.b13-g3225 .g2-globe .rim{stroke:#3a3129;stroke-width:2}
+.b129.b13-g3225 .g2-globe .grid ellipse,.b129.b13-g3225 .g2-globe .grid path{fill:none;stroke:#2c241e;stroke-width:1.5}
+.b129.b13-g3225 .g2-globe .arc{fill:none;stroke:#fdd506;stroke-width:2.2;stroke-linecap:round;opacity:.85}
+.b129.b13-g3225 .g2-globe .pt{fill:#c4bdb1}
+.b129.b13-g3225 .g2-globe .hub{fill:#fdd506;filter:drop-shadow(0 0 10px rgba(253,213,6,.8))}
+.b129.b13-g3225.s16-play .g2-globe .arc{stroke-dasharray:1;animation:g2draw .9s var(--d) cubic-bezier(.4,0,.2,1) both}
+
+/* G229 · складники агента + 96+ */
+.b129.b13-g3229 .g2-build{position:absolute;left:7cqw;width:50cqw;top:25cqh;z-index:3}
+.b129.b13-g3229 .g2-build p{margin:0 0 3cqh;font:500 2.7cqw/1.35 Manrope,sans-serif;color:#f5f3ee}
+.b129.b13-g3229 .g2-build .g2-ls{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:1.8cqh}
+.b129.b13-g3229 .g2-build .g2-ls>span{display:flex;align-items:center;gap:1.8cqw;font:400 2.5cqw/1.3 Manrope,sans-serif;color:#e9e3d8}
+.b129.b13-g3229 .g2-build .g2-ls i{flex:none;display:grid;place-items:center;width:5cqw;height:5cqw;border-radius:1.2cqw;background:#1b1611;border:1px solid #3a3129}
+.b129.b13-g3229 .g2-build svg{width:2.6cqw;height:2.6cqw;fill:none;stroke:#b3a996;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.b129.b13-g3229 .g2-binder{position:absolute;right:4cqw;top:22cqh;width:38cqw;height:auto;z-index:2;mix-blend-mode:lighten;-webkit-mask-image:radial-gradient(closest-side,#000 70%,transparent);mask-image:radial-gradient(closest-side,#000 70%,transparent)}
+.b129.b13-g3229 .g2-96{position:absolute;left:7cqw;right:7cqw;bottom:7cqh;margin:0;display:flex;align-items:baseline;justify-content:center;gap:2cqw;font:500 2.9cqw/1 Manrope,sans-serif;color:#f5f3ee;z-index:3;padding-top:3cqh;border-top:1px solid #3a3129}
+.b129.b13-g3229 .g2-96 b{font:500 9cqw/.9 Unbounded,sans-serif;letter-spacing:-.06em;color:#fdd506}
+
+/* G234 / G247 · фото-теза: заголовок крупніше */
+.b129.b13-g3234 .b13-head h1,.b129.b13-g3247 .b13-head h1{font-size:5.6cqw}
+.b129.b13-g3247 .b13-art:after{background:linear-gradient(180deg,#0b0907 0%,rgba(11,9,7,.6) 26%,transparent 46%)}
+
+/* G248 · шкала «від документа до вакцини» */
+.b129.b13-g3248 .b13-head h1{font-size:4.4cqw}
+.b129.b13-g3248 .g2-spec{position:absolute;left:7cqw;right:7cqw;top:44cqh;display:flex;justify-content:space-between;align-items:center;z-index:3}
+.b129.b13-g3248 .g2-spec:before{content:'';position:absolute;left:4cqw;right:4cqw;top:50%;height:2px;background:linear-gradient(90deg,#fdd506,#3a3129 20%,#3a3129 80%,#fdd506)}
+.b129.b13-g3248 .g2-spec i{position:relative;display:grid;place-items:center;width:6cqw;height:6cqw;border-radius:50%;background:#16120e;border:1px solid #3a3129}
+.b129.b13-g3248 .g2-spec i.end{width:10cqw;height:10cqw;border:2px solid #fdd506;background:#1d1710;box-shadow:0 0 5cqw rgba(253,213,6,.18)}
+.b129.b13-g3248 .g2-spec svg{width:2.8cqw;height:2.8cqw;fill:none;stroke:#b3a996;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.b129.b13-g3248 .g2-spec i.end svg{width:4.6cqw;height:4.6cqw;stroke:#fdd506}
+.b129.b13-g3248 .g2-was{top:64cqh;font-size:2.8cqw;color:#f5f3ee}
+.b129.b13-g3248.s16-play .g2-spec i{animation:s16-up .5s both}
+.b129.b13-g3248.s16-play .g2-spec i:nth-child(n+2){animation-delay:.1s}.b129.b13-g3248.s16-play .g2-spec i:nth-child(n+4){animation-delay:.2s}.b129.b13-g3248.s16-play .g2-spec i:nth-child(n+6){animation-delay:.3s}.b129.b13-g3248.s16-play .g2-spec i:nth-child(n+8){animation-delay:.4s}.b129.b13-g3248.s16-play .g2-spec i:last-child{animation-delay:.5s}
+
+/* G250 · сім послуг → клієнт */
+.b129.b13-g3250 .b13-head h1{font-size:4.4cqw}
+.b129.b13-g3250 .g2-funnel{position:absolute;left:7cqw;width:86cqw;top:28cqh;height:42cqh;z-index:3;overflow:visible}
+.b129.b13-g3250 .g2-funnel .chip{fill:#16120e;stroke:#3a3129;stroke-width:1.5}
+.b129.b13-g3250 .g2-funnel text{font:500 21px Manrope,sans-serif;fill:#e9e3d8}
+.b129.b13-g3250 .g2-funnel .ln{fill:none;stroke:#fdd506;stroke-width:2;opacity:.55}
+.b129.b13-g3250 .g2-funnel .node{fill:#fdd506;filter:drop-shadow(0 0 18px rgba(253,213,6,.45))}
+.b129.b13-g3250 .g2-funnel .nodeic{fill:none;stroke:#0b0907;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.b129.b13-g3250 .g2-funnel .nl{text-anchor:middle;font:600 26px Unbounded,sans-serif;fill:#fdd506}
+.b129.b13-g3250.s16-play .g2-funnel .ln{stroke-dasharray:1;animation:g2draw .9s var(--d) cubic-bezier(.4,0,.2,1) both}
+
+/* G251 · таблиця 7 послуг */
+.b129.b13-g3251 .g2-tbl{position:absolute;left:4cqw;right:4cqw;top:9cqh;bottom:9cqh;display:flex;flex-direction:column;gap:1.2cqh;z-index:3}
+.b129.b13-g3251 .g2-tbl>div{display:grid;grid-template-columns:29fr 17fr 13fr 11fr 14fr 14fr;align-items:center;gap:1cqw;padding:0 1.6cqw}
+.b129.b13-g3251 .g2-tbl .hd{padding-bottom:.6cqh}
+.b129.b13-g3251 .g2-tbl .hd span{font:500 1.2cqw/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#8a8070}
+.b129.b13-g3251 .g2-tbl .row{flex:1;background:linear-gradient(90deg,#1a1510,#120e0b);border:1px solid #2f2822;border-radius:1.2cqw}
+.b129.b13-g3251 .g2-tbl .nm{display:flex;align-items:center;gap:1.2cqw;font:500 1.85cqw/1.2 Manrope,sans-serif;color:#f5f3ee}
+.b129.b13-g3251 .g2-tbl .nm em{font:600 1.3cqw/1 'JetBrains Mono',monospace;font-style:normal;color:#fdd506}
+.b129.b13-g3251 .g2-tbl .pr b{display:block;font:500 2.05cqw/1.1 Unbounded,sans-serif;letter-spacing:-.04em;color:#fdd506}
+.b129.b13-g3251 .g2-tbl .pr small{display:block;margin-top:.4cqh;font:400 1.25cqw/1.2 Manrope,sans-serif;color:#8a8070}
+.b129.b13-g3251 .g2-tbl .py{font:400 1.45cqw/1.25 Manrope,sans-serif;color:#c4bdb1}
+.b129.b13-g3251 .g2-tbl .df{justify-self:start;padding:.7cqh 1cqw;border:1px solid #5a4f45;border-radius:99px;font:500 1.3cqw/1 Manrope,sans-serif;color:#c4bdb1}
+.b129.b13-g3251 .g2-tbl .df.mid{border-color:#fdd50699;color:#fdd506}
+.b129.b13-g3251 .g2-tbl .mt{display:flex;align-items:center;gap:.8cqw}
+.b129.b13-g3251 .g2-tbl .sg{display:flex;gap:.18cqw}
+.b129.b13-g3251 .g2-tbl .sg i{width:.75cqw;height:.9cqh;border-radius:.15cqw;background:#2a221f}
+.b129.b13-g3251 .g2-tbl .sg.dem i.on{background:#fdd506}
+.b129.b13-g3251 .g2-tbl .sg.cmp i.on{background:#8a8070}
+.b129.b13-g3251 .g2-tbl .mt b{font:500 1.9cqw/1 Unbounded,sans-serif;color:#f5f3ee;min-width:2.4cqw}
+.b129.b13-g3251.s16-play .g2-tbl .row{animation:s16-up .5s both}
+.b129.b13-g3251.s16-play .g2-tbl .row:nth-child(n+3){animation-delay:.08s}.b129.b13-g3251.s16-play .g2-tbl .row:nth-child(n+4){animation-delay:.16s}.b129.b13-g3251.s16-play .g2-tbl .row:nth-child(n+5){animation-delay:.24s}.b129.b13-g3251.s16-play .g2-tbl .row:nth-child(n+6){animation-delay:.32s}.b129.b13-g3251.s16-play .g2-tbl .row:nth-child(n+7){animation-delay:.4s}.b129.b13-g3251.s16-play .g2-tbl .row:nth-child(n+8){animation-delay:.48s}
+
+/* G253 · «Напишите слово ХОЛСТ»: телефон ліворуч, заголовок праворуч, слово в жовтій рамці */
+.b129.b13-g3253 .b13-head{position:absolute;left:50cqw;right:6cqw;top:50%;transform:translateY(-50%);text-align:left}
+.b129.b13-g3253 .b13-head h1{font-size:4.6cqw;line-height:1.3}
+.b129.b13-g3253 .b13-head h1 em{display:inline-block;margin-top:2.4cqh;padding:2.4cqh 3.4cqw;border:.45cqw solid #fdd506;border-radius:1.6cqw;font-size:7.4cqw;letter-spacing:-.04em;line-height:1}
+.b129.b13-g3253 .g51-iphone.g2-holst{position:absolute;left:7cqw;right:auto;top:11cqh;height:78cqh;width:auto;z-index:3}
+
+/* G294 / G295 · картки послуг: список і ціна ліворуч, медіа праворуч */
+.b129.b13-g3294 .b13-head,.b129.b13-g3295 .b13-head{position:absolute;left:7cqw;right:7cqw;top:8cqh}
+.b129.b13-g3294 .b13-head h1,.b129.b13-g3295 .b13-head h1{font-size:4.4cqw}
+.b129 .g2-svc{position:absolute;left:7cqw;width:43cqw;top:30cqh;bottom:8cqh;display:flex;flex-direction:column;justify-content:space-between;z-index:3}
+.b129 .g2-svc .g2-ls{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:2.6cqh}
+.b129 .g2-svc .g2-ls>span{display:block;position:relative;padding-left:3.2cqw;font:400 2.45cqw/1.4 Manrope,sans-serif;color:#e9e3d8}
+.b129 .g2-svc .g2-ls>span:before{content:'';position:absolute;left:0;top:1.1cqh;width:1.4cqw;height:1.4cqw;border-radius:.3cqw;background:#fdd506}
+.b129 .g2-price{padding-top:2.6cqh;border-top:1px solid #3a3129}
+.b129 .g2-price small{display:block;font:500 1.5cqw/1 'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a8070}
+.b129 .g2-price b{display:block;margin-top:1.4cqh;font:500 5cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:#fdd506}
+.b129 .g2-price span{display:block;margin-top:1cqh;font:400 2cqw/1.3 Manrope,sans-serif;color:#c4bdb1}
+.b129 .g2-media{position:absolute;right:6cqw;top:28cqh;bottom:8cqh;width:38cqw;z-index:3}
+.b129 .g2-media.g2-call{display:flex;flex-direction:column;background:#0f0c09;border:1px solid #3a3129;border-radius:1.6cqw;overflow:hidden;box-shadow:0 2.4cqh 7cqw rgba(0,0,0,.55)}
+.b129 .g2-media.g2-call .g1001-call{flex:1;border:0;border-radius:0}
+.b129 .g2-media.g2-phone{display:flex;align-items:center;justify-content:center}
+.b129 .g2-media.g2-phone .g1001-iphone{height:62cqh}
+.b129.b13-g3294.s16-play .g2-media,.b129.b13-g3295.s16-play .g2-media{animation:s16-up .8s .2s cubic-bezier(.2,.8,.2,1) both}
+
+/* G304 · скрін карти */
+.b129.b13-g3304 .g2-shot{position:absolute;left:7cqw;right:7cqw;top:50%;transform:translateY(-50%);margin:0;z-index:3}
+.b129.b13-g3304 .g2-shot img{display:block;width:100%;height:auto;border-radius:1.6cqw;border:1px solid #3a3129;box-shadow:0 2.4cqh 7cqw rgba(0,0,0,.6)}
+
+/* s5 «Я сегодня выкладываю всё как есть» (Мирослав 02.10): заголовок по центру, як підпис і крапки знизу */
+.s3-spotlight .sp-header{left:7.4cqw;right:7.4cqw;text-align:center}
+
+/* AI-SEO · Клиенты (Google 308): квадратний ролик Влада у квадратному плеєрі, без чорних смуг з боків.
+   googleNumber спільний з 24 частинами — тому гачок за самим відео */
+.b129.b13-v2-s16-video:has(video[src*="ai-seo-reel"]) .s16-player{left:50%;right:auto;top:22cqh;bottom:auto;width:68cqh;height:68cqh;transform:translateX(-50%);border-radius:1.6cqw;box-shadow:0 2.4cqh 7cqw rgba(0,0,0,.6)}
+.b129.b13-v2-s16-video:has(video[src*="ai-seo-reel"]) .s16-player video{width:100%;height:100%;object-fit:cover;max-width:none;max-height:none}
+
+/* s8 варіанти A/B/C (03.10, Мирослав «ці класні — щоб поклікати»): опис крупніше, ніж 1.8cqw — читається з екрана ефіру */
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-heading{bottom:25.5cqh}
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-live-intro{bottom:11.5cqh;width:62cqw;font-size:2.6cqw}
+.slide.opening.op-chapter.op-skin-b .cf-live .cf-live-intro{top:30cqh;width:48cqw;font-size:2.5cqw}
+.slide.opening.op-chapter.op-skin-c .chapter-format:after{top:39cqh}
+.slide.opening.op-chapter.op-skin-c .cf-live .cf-heading{top:42.5cqh}
+.slide.opening.op-chapter.op-skin-c .cf-live .cf-live-intro{top:58cqh;font-size:2.2cqw}
+.slide.opening.op-chapter.op-skin-c .cf-live-rail{top:73.5cqh}
+.slide.opening.op-chapter.op-skin-c .cf-live-panels{top:83cqh}
+
+/* s8 · варіант A — основний (Мирослав 03.10): без рейки іконок; назва кроку — капсула з іконкою і лічильником */
+.slide.opening.op-chapter .cf-live .cf-pill-ic,.slide.opening.op-chapter .cf-live .cf-pill-n{display:none}
+.slide.opening.op-chapter.op-skin-a .cf-live-rail{display:none}
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-heading{bottom:30cqh}
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-live-intro{bottom:16.5cqh}
+.slide.opening.op-chapter.op-skin-a .cf-live-panels{top:auto;bottom:5cqh;left:6cqw;right:6cqw;width:auto;height:8.6cqh;text-align:left}
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-panel{inset:auto auto 0 0}
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-panel h2{display:inline-flex;align-items:center;gap:1.8cqw;height:8.6cqh;margin:0;padding:0 2.6cqw 0 1.2cqh;box-sizing:border-box;border-radius:99px;background:rgba(14,11,9,.74);border:1px solid rgba(253,213,6,.55);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1.6cqh 5cqw rgba(0,0,0,.45);font-size:3cqw;line-height:1;white-space:nowrap;color:#fdd506}
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-pill-ic{display:grid;place-items:center;flex:none;width:6.2cqh;height:6.2cqh;border-radius:50%;background:#fdd506;color:#0b0907}
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-pill-ic .cf-icon{width:3.9cqh;height:3.9cqh;stroke-width:2.2}
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-pill-n{display:block;margin-left:.4cqw;font:500 1.45cqw/1 'JetBrains Mono',monospace;letter-spacing:.12em;color:#b3a996}
+/* градієнт під текстом сильніший: на кроках 3–5 камера наїжджає на білий фасад клініки під заголовком */
+.op-skin-a .op-bgvideo:after{background:linear-gradient(0deg,rgba(11,9,7,.96) 0%,rgba(11,9,7,.86) 24%,rgba(11,9,7,.62) 42%,rgba(11,9,7,.22) 56%,transparent 64%),linear-gradient(180deg,rgba(11,9,7,.35) 0%,transparent 14%)}
+
+/* s73 «Информационная война» (Google 59, без заголовка за Владом): текст шрифтом заголовка, трохи менше (Мирослав 03.10) */
+#slides .life-story[data-google="59"] .ls-body p{font:500 calc(var(--ls-title-size) * .78)/1.28 var(--font-d);letter-spacing:-.04em;color:#f5f3ee}
+
+/* s155 · етапи 1995/2010 — згенеровані скріни сайтів (03.10) */
+.b129 .g2-site.shot{padding:0;background:#111}
+.b129 .g2-site.shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
+.b129.b13-g3198 .g2-site{height:34.5cqh}
+@keyframes g2scroll{0%,8%{transform:translateY(0)}100%{transform:translateY(calc(-100% + 34.5cqh))}}
+.b129.b13-g3198 .g2-eras{top:27cqh}
+.b129.b13-g3198 .g2-era figcaption{margin-top:3cqh}
+.b129.b13-g3198 .g2-era figcaption b,.b129.b13-g3198 .g2-era figcaption span{font-size:3.4cqw}

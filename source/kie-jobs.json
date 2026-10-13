@@ -1,0 +1,97 @@
+{
+  "_format": "референс + базове ТЗ. Стиль прези один для всіх: чорний фон #0B0907, тепле жовте світло #FDD506, без тексту в кадрі, нижня чверть кадру темна й порожня (туди ляже заголовок). Влад — з reference-фото, чорний одяг.",
+  "style_refs": [
+    "https://yasko-preza-v5.vercel.app/assets/photo/vlad-portrait-gold.png"
+  ],
+  "face_refs": [
+    "https://yasko-preza-v5.vercel.app/assets/photo/vlad-portrait-studio.png"
+  ],
+  "jobs": [
+    {
+      "id": "s01-title",
+      "slide": 1,
+      "aspect": "1:1",
+      "face": true,
+      "brief": "Титул вебінару. Влад по пояс, руки схрещені, дивиться в камеру. За ним у темряві — золоті світні wireframe-фігури агентів за роботою. Світло тепле, знизу. Ліва половина кадру вільна під заголовок."
+    },
+    {
+      "id": "s02-mimo",
+      "slide": 2,
+      "aspect": "1:1",
+      "face": true,
+      "brief": "«Появилось что-то новое — а ты мимо». Нічний перон, поїзд із жовтими вікнами розмито рушає, Влад стоїть один спиною до камери, руки в кишенях. Кінематографічно, тепле світло вікон."
+    },
+    {
+      "id": "s03-tri",
+      "slide": 3,
+      "aspect": "1:1",
+      "face": false,
+      "brief": "Три предмети на чорному столі під теплим світлом: стос купюр, цінник-бирка, шестерня. Мінімалізм, продуктова зйомка, багато чорного простору навколо."
+    },
+    {
+      "id": "s04-plus",
+      "slide": 4,
+      "aspect": "1:1",
+      "face": true,
+      "brief": "Влад крупно, напівпрофіль, дивиться в камеру і показує піднятий вгору палець «плюс». Чорний фон, теплий контровий світло. Простір праворуч вільний."
+    },
+    {
+      "id": "s05-mir",
+      "slide": 5,
+      "aspect": "1:1",
+      "face": true,
+      "brief": "«Мир рванул вперёд, а я стою». Перехрестя мегаполісу вночі, довга витримка: потоки людей і машин розмиті в світлові смуги, Влад у центрі стоїть чітко, нерухомо."
+    },
+    {
+      "id": "s06-reels",
+      "slide": 6,
+      "aspect": "1:1",
+      "face": false,
+      "brief": "Два телефони на чорному столі під теплим світлом: на лівому — стрічка коротких відео з яскравими мініатюрами, на правому — порожнє поле чату ШІ з курсором. Без читабельного тексту."
+    },
+    {
+      "id": "s07-potolok",
+      "slide": 7,
+      "aspect": "1:1",
+      "face": true,
+      "brief": "«Расти некуда». Влад стоїть на вершині сходів, які впираються в низьку бетонну стелю, голова майже торкається стелі. Тепле світло знизу, чорнота навколо."
+    },
+    {
+      "id": "s08-kursy",
+      "slide": 8,
+      "aspect": "1:1",
+      "face": false,
+      "brief": "Полиця з рядом однакових дипломів-сертифікатів у рамках, під нею на столі порожній розкритий гаманець. Чорний фон, тепле бокове світло, продуктова зйомка."
+    },
+    {
+      "id": "s09-dveri",
+      "slide": 9,
+      "aspect": "1:1",
+      "face": true,
+      "brief": "Влад у темному коридорі перед двома дверима: ліві — крикливі, вкриті наліпками «знижка» без читабельних слів, праві — сірі, з незліченними кнопками й дротами. Він стоїть між ними, руки в кишенях."
+    },
+    {
+      "id": "s10-expert",
+      "slide": 10,
+      "aspect": "1:1",
+      "face": true,
+      "brief": "Власник малого бізнесу: Влад за стійкою невеликої кав'ярні ввечері, на столі калькулятор і рахунки, за вікном темно. Втома, але гідність. Тепле світло лампи."
+    },
+    {
+      "id": "s19-small-action-v1",
+      "aspect": "1:1",
+      "face": false,
+      "frame_style": "Square 1:1 premium studio photograph. Black #0B0907 background and warm yellow #FDD506 light. No people, faces, portraits, text, letters, numbers, logos or watermarks. ",
+      "brief": "A real physical kinetic installation in a near-black studio. One natural human hand in a plain black sleeve presses a small warm-yellow control button. The button activates a beautifully engineered mechanical lever lifting a much larger matte-black rectangular block. The visual relationship reads instantly: a small simple action activates a much more capable tool. Brushed metal, precise manufactured joints, soft warm-yellow rim light, shallow atmospheric depth. No robot, humanoid, hologram, money, coins, charts or fake interface. All objects occupy the upper 52 percent of the square: the block upper-right, hand entering from left. Lower 48 percent completely clean near-black negative space for separate HTML typography. No visible face, no human figures beyond the single hand.",
+      "no_reference": true
+    },
+    {
+      "id": "s20-two-audiences-v1",
+      "aspect": "1:1",
+      "face": false,
+      "frame_style": "Square 1:1 premium studio photograph. Black #0B0907 background and warm yellow #FDD506 light. No people, faces, portraits, text, letters, numbers, logos or watermarks. ",
+      "brief": "Two clearly separated miniature workstations at fixed left and right positions, occupying ONLY the BOTTOM THIRD of the square. Left: one elegant plain laptop with an empty softly lit dark glass screen on a simple desk. Right: a more developed workstation with three empty dark-glass display panels and a compact precisely arranged modular computer. No clutter. A subtle warm-yellow physical light track from each workstation converges toward one small finished matte-black geometric object between them. Both stations have equal dignity and equal visual weight; neither is broken or inferior. Realistic photographic perspective, no people or robots. Entire UPPER 60 percent is completely empty near-black negative space for readable HTML text. No text, software UI, currency, charts, arrows or printed symbols.",
+      "no_reference": true
+    }
+  ]
+}

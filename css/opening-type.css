@@ -1,0 +1,22 @@
+/* A distinct display face for opening headlines; supporting copy stays Manrope. */
+.opening,.s3-spotlight{--font-heading:"Unbounded","Manrope",sans-serif;--font-b:"Manrope",Arial,sans-serif}
+.slide.opening:where(:not(.op-spotlight)) h1{font-family:var(--font-heading);font-weight:500;letter-spacing:-.045em;line-height:1.14}
+.slide.opening:where(:not(.op-spotlight)) h1 em{font-weight:500}
+.slide.op-intro h1{font-size:7.2cqh}
+.slide.op-feeling h1{font-size:6.2cqh}
+.slide.op-recognition h1{font-size:6.1cqh}
+.s3-spotlight .sp-header{font-family:var(--font-heading);font-size:5.3cqw;font-weight:500;line-height:1.15;letter-spacing:-.045em;max-width:none;width:auto}
+.s3-spotlight .sp-header em{font-weight:500}
+.s3-spotlight .sp-caption h2{font-family:var(--font-heading);font-size:4.5cqw;line-height:1.2;font-weight:500;letter-spacing:-.035em}
+.s3-spotlight .sp-lead{font-family:var(--font-b);font-size:4.8cqw;letter-spacing:-.03em}
+.s3-spotlight .sp-ask{font-family:var(--font-heading);font-size:7.1cqw;line-height:1.17;font-weight:500;letter-spacing:-.04em;max-width:14ch}
+/* Isolate the reusable scene from the deck's paragraph/heading entrance rules. */
+.slide.op-spotlight h1.sp-header{font-family:var(--font-heading);font-size:5.3cqw;font-weight:500;line-height:1.15;letter-spacing:-.045em;max-width:none;width:auto;animation:none}
+.slide.op-spotlight .sp-caption p{opacity:1;animation:none;max-width:none}
+.slide.op-spotlight .sp-closing{animation:none;max-width:none}
+.slide.op-spotlight .sp-art svg{stroke:none;stroke-width:1;fill:none}
+@container(max-aspect-ratio:6/5){
+  .slide.op-intro h1{font-size:6.3cqh}
+  .slide.op-feeling h1{font-size:5.1cqh}
+  .slide.op-recognition h1{font-size:5.2cqh}
+}

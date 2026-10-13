@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>171 · Антон Тысячник — три варіанти</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--panel:#15110d;--controls:150px}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding-bottom:var(--controls);background:#000;color:var(--cream);font:400 14px/1.4 Manrope,sans-serif}
+.slide{position:relative;width:min(100vw,calc(100dvh - var(--controls)));aspect-ratio:1;container-type:size;overflow:hidden;background:var(--bg)}
+.slide h1,.slide p{margin:0}
+.k{font:500 2.4cqw/1 Manrope,sans-serif;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}
+h1{font:500 5cqw/1.15 Unbounded,sans-serif;letter-spacing:-.03em}
+h1 em{font-style:normal;color:var(--yellow)}
+video{display:block;object-fit:cover}
+/* A · відео на весь екран */
+.vA video{position:absolute;inset:0;width:100%;height:100%;filter:brightness(.85)}
+.vA .shade{position:absolute;inset:0;background:linear-gradient(0deg,#0b0907 0%,rgba(11,9,7,.92) 30%,rgba(11,9,7,.25) 60%,transparent 100%)}
+.vA .k{position:absolute;left:7cqw;top:7cqh;text-shadow:0 .4cqh 1cqw #000}
+.vA h1{position:absolute;left:7cqw;right:7cqw;top:52cqh;font-size:6cqw}
+.vA .q{position:absolute;left:7cqw;right:7cqw;top:66cqh;font:400 2.8cqw/1.4 Manrope,sans-serif;color:var(--muted)}
+.vA .row{position:absolute;left:7cqw;right:7cqw;bottom:6cqh;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.4cqw}
+.vA .row div{border-top:1px solid #3a3129;padding-top:1.2cqh;font:400 2cqw/1.35 Manrope,sans-serif;color:var(--muted)}
+.vA .row b{display:block;font:600 2.4cqw/1.25 Manrope,sans-serif;color:var(--cream);margin-bottom:.5cqh}
+.vA .row div:last-child b{color:var(--yellow)}
+/* B · картка + результат */
+.vB .card{position:absolute;left:7cqw;top:12cqh;width:38cqw;height:76cqh;border-radius:2.4cqw;overflow:hidden;border:1px solid #2f2822;box-shadow:0 3cqh 8cqw rgba(0,0,0,.6)}
+.vB .card video{width:100%;height:100%}
+.vB .k{position:absolute;left:51cqw;top:12cqh}
+.vB h1{position:absolute;left:51cqw;right:7cqw;top:17cqh;font-size:4.6cqw}
+.vB .q{position:absolute;left:51cqw;right:7cqw;top:33cqh;font:400 2.5cqw/1.4 Manrope,sans-serif;color:var(--muted)}
+.vB .big{position:absolute;left:51cqw;right:7cqw;top:48cqh}
+.vB .big b{display:block;font:500 9cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:var(--yellow)}
+.vB .big span{display:block;margin-top:1cqh;font:400 2.4cqw Manrope,sans-serif;color:var(--muted)}
+.vB .tl{position:absolute;left:51cqw;right:7cqw;top:68cqh;display:flex;flex-direction:column;gap:1.2cqh}
+.vB .tl div{position:relative;padding-left:4cqw;font:400 2.2cqw/1.35 Manrope,sans-serif;color:var(--muted)}
+.vB .tl div:before{content:'';position:absolute;left:0;top:.9cqh;width:1.6cqw;height:1.6cqw;border-radius:50%;background:#3a3129}
+.vB .tl div:last-child:before{background:var(--yellow)}
+.vB .tl b{color:var(--cream);font-weight:600}
+/* C · таймлайн */
+.vC .ava{position:absolute;left:7cqw;top:8cqh;width:16cqw;height:16cqw;border-radius:50%;overflow:hidden;border:.4cqw solid #3a3129}
+.vC .ava video{width:100%;height:100%}
+.vC .k{position:absolute;left:26cqw;top:9cqh}
+.vC h1{position:absolute;left:26cqw;right:7cqw;top:13cqh;font-size:4.6cqw}
+.vC .q{position:absolute;left:7cqw;right:7cqw;top:30cqh;font:400 2.6cqw/1.4 Manrope,sans-serif;color:var(--muted)}
+.vC .steps{position:absolute;left:7cqw;right:7cqw;top:42cqh;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2cqw}
+.vC .steps div{position:relative;background:var(--panel);border:1px solid var(--rule);padding:2.4cqh 2cqw 2cqh;min-height:34cqh}
+.vC .steps div:last-child{border-color:#5a4a10;background:#151107}
+.vC .steps i{display:block;font:500 6cqw/1 Unbounded,sans-serif;color:#3a3129;font-style:normal;margin-bottom:2cqh}
+.vC .steps div:last-child i{color:var(--yellow)}
+.vC .steps b{display:block;font:600 2.7cqw/1.25 Manrope,sans-serif;color:var(--cream);margin-bottom:1cqh}
+.vC .steps small{font:400 2cqw/1.35 Manrope,sans-serif;color:var(--muted)}
+.vC .arrow{position:absolute;top:57cqh;height:.2cqw;background:linear-gradient(90deg,#3a3129,#fdd506);left:36cqw;width:6cqw}
+.vC .line{position:absolute;left:7cqw;right:7cqw;bottom:6cqh;font:400 2.2cqw Manrope,sans-serif;color:var(--dim)}
+/* controls */
+.controls{position:fixed;bottom:0;left:0;right:0;height:var(--controls);background:#0c0a08f5;border-top:1px solid #292319;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:10px}
+.tabs,.actions{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap}
+button{font:400 13px/1.3 Manrope,sans-serif;cursor:pointer;border:1px solid #504735;border-radius:7px;background:#17130d;color:#ddd5c6;padding:7px 12px}
+button[aria-selected="true"]{color:var(--yellow);border-color:var(--yellow);background:#27210e}
+.description{font-size:12px;text-align:center;color:#c8bfad;max-width:900px;margin:0}
+.note{font-size:11px;color:#a49a84;text-align:center;margin:0}
+</style></head><body>
+<main class="slide vA" id="slide"></main>
+<nav class="controls"><div class="tabs" role="tablist"><button role="tab" data-v="A">А · Відео на весь екран</button><button role="tab" data-v="B">Б · Картка + результат</button><button role="tab" data-v="C">В · Три кроки як таймлайн</button></div><p class="description"></p><div class="actions"><button id="replay">↻ Знову</button><span class="note">← → перемикають варіанти · відео Влада з субтитрами (anton-subs.mp4)</span></div></nav>
+<script>
+const VID='assets/vlad-1409/kejsy/anton-subs.mp4';
+const V={
+A:{desc:'Один герой: відео Антона на весь квадрат, знизу темніє. Ім’я і цитата поверх, три кроки — однією стрічкою внизу (без нумерації), результат «$2.000» жовтим. Мінімум рамок, максимум обличчя. Субтитри Влада видно.',
+ html:()=>`<video src="${VID}" muted playsinline loop autoplay></video><div class="shade"></div><span class="k">Кто уже так делает</span><h1>Антон <em>Тысячник</em></h1><p class="q">Никогда не делал сайты — ноль, полный ноль — его слова</p><div class="row"><div><b>Первый месяц — делал знакомым</b>просто тренировался, без заказов и без денег</div><div><b>Первые двое заплатили по $250</b>не прайс — просто как знак «спасибо»</div><div><b>$2.000 за два месяца</b>это его собственные слова</div></div>`},
+B:{desc:'Дві колонки: зліва рівна відео-картка без нахилів, справа — ім’я, цитата і головна цифра «$2.000 за два месяца» великим. Кроки — коротким таймлайном із трьох рядків під цифрою. Найчистіша ієрархія: результат читається першим.',
+ html:()=>`<div class="card"><video src="${VID}" muted playsinline loop autoplay></video></div><span class="k">Кто уже так делает</span><h1>Антон <em>Тысячник</em></h1><p class="q">Никогда не делал сайты — ноль, полный ноль — его слова</p><div class="big"><b>$2.000</b><span>за два месяца — это его собственные слова</span></div><div class="tl"><div><b>Первый месяц</b> — делал знакомым, просто тренировался, без заказов и без денег</div><div><b>Первые двое</b> заплатили по $250 — не прайс, просто как знак «спасибо»</div><div><b>$2.000</b> за два месяца</div></div>`},
+C:{desc:'Шлях як три великі картки в ряд: 01 тренувався → 02 перші $250 → 03 $2.000, остання підсвічена. Відео — у круглому аватарі біля імені, цитата рядком над картками. Читається як історія зліва направо.',
+ html:()=>`<div class="ava"><video src="${VID}" muted playsinline loop autoplay></video></div><span class="k">Кто уже так делает</span><h1>Антон <em>Тысячник</em></h1><p class="q">Никогда не делал сайты — ноль, полный ноль — его слова</p><div class="steps"><div><i>01</i><b>Первый месяц — делал знакомым</b><small>просто тренировался, без заказов и без денег</small></div><div><i>02</i><b>Первые двое заплатили по $250</b><small>не прайс — просто как знак «спасибо»</small></div><div><i>03</i><b>$2.000 за два месяца</b><small>это его собственные слова</small></div></div>`}
+};
+const slide=document.getElementById('slide');let cur='A';
+function render(){slide.className='slide v'+cur;slide.innerHTML=V[cur].html();document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.v===cur)));document.querySelector('.description').textContent=V[cur].desc;}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{cur=b.dataset.v;render()});
+document.getElementById('replay').onclick=render;
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')cur=cur==='A'?'B':cur==='B'?'C':'A';else if(e.key==='ArrowLeft')cur=cur==='A'?'C':cur==='B'?'A':'B';else return;render();});
+cur=new URLSearchParams(location.search).get('v')||'A';if(!V[cur])cur='A';render();
+</script></body></html>

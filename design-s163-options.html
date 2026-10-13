@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>163 · Торты и фабрика — три анімовані варіанти</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--controls:150px}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding-bottom:var(--controls);background:#000;color:var(--cream);font:400 14px/1.4 Manrope,sans-serif}
+.slide{position:relative;width:min(100vw,calc(100dvh - var(--controls)));aspect-ratio:1;container-type:size;overflow:hidden;background:var(--bg)}
+.slide h1,.slide p{margin:0}
+.k{position:absolute;top:5cqh;left:0;right:0;text-align:center;font:500 2.4cqw/1 Manrope,sans-serif;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}
+h1{position:absolute;top:10cqh;left:7cqw;right:7cqw;text-align:center;font:500 4.6cqw/1.22 Unbounded,sans-serif;letter-spacing:-.03em}
+h1 em{font-style:normal;color:var(--yellow)}
+.copy{position:absolute;left:7cqw;right:7cqw;bottom:6cqh;text-align:center}
+.copy p{font:400 2.8cqw/1.42 Manrope,sans-serif;color:var(--muted)}
+.copy p.c{color:var(--cream);font-weight:500;font-size:3cqw;margin-top:1.3cqh}
+.copy em{font-style:normal;color:var(--yellow)}
+.bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shade-top{position:absolute;left:0;right:0;top:0;height:50%;background:linear-gradient(180deg,#0b0907 0%,#0b0907d9 40%,transparent 100%)}
+.shade-bot{position:absolute;left:0;right:0;bottom:0;height:38%;background:linear-gradient(0deg,#0b0907 0%,#0b0907d9 45%,transparent 100%)}
+/* ---------- A · game ---------- */
+.vA .bgimg{filter:saturate(.9)}
+.ticket{position:absolute;left:5cqw;top:26cqh;width:38cqw;background:#f5ecd6;color:#2b2119;border-radius:.8cqw;padding:2.2cqh 3cqw 2.4cqh;box-shadow:0 2cqh 5cqw #0009;transform:rotate(-3deg) translateY(-140%);animation:ticket-in .7s .3s cubic-bezier(.2,.8,.2,1) forwards}
+.ticket:before{content:'';position:absolute;left:0;right:0;top:0;height:1.6cqh;background:repeating-linear-gradient(90deg,#f5ecd6 0 2cqw,transparent 2cqw 3cqw);transform:translateY(-100%)}
+.ticket h4{margin:0 0 1.4cqh;font:600 2.4cqw/1 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#7a6242;border-bottom:.3cqw dashed #cdbf9f;padding-bottom:1.2cqh}
+.ticket .row{display:flex;align-items:center;gap:2cqw;font:600 3cqw/1 Manrope,sans-serif;padding:1.3cqh 0;border-bottom:1px dashed #e0d3b3;position:relative}
+.ticket .row:last-child{border:0}
+.ticket .box{width:3.6cqw;height:3.6cqw;border:.4cqw solid #7a6242;border-radius:.4cqw;flex:none;position:relative}
+.ticket .row.win .box:after{content:'';position:absolute;inset:.3cqw;background:var(--yellow);border-radius:.2cqw;transform:scale(0);animation:pop .3s 2.2s cubic-bezier(.3,1.6,.5,1) forwards}
+.ticket .row.win{color:#2b2119}
+.stamp{position:absolute;right:-2cqw;top:50%;transform:translateY(-50%) rotate(-14deg) scale(3);opacity:0;font:700 3.4cqw/1 Unbounded,sans-serif;color:#c6000c;border:.5cqw solid #c6000c;padding:.6cqh 1.6cqw;border-radius:.6cqw;letter-spacing:.1em;animation:stamp .35s 2.5s cubic-bezier(.2,1.2,.3,1) forwards;mix-blend-mode:multiply}
+.cursor{position:absolute;width:5cqw;height:5cqw;left:20cqw;top:90cqh;z-index:5;opacity:0;animation:cursorA 1.6s 1s ease-in-out forwards}
+.stations{position:absolute;left:48cqw;right:4cqw;top:47cqh;display:grid;grid-template-columns:repeat(4,1fr);gap:1cqw;opacity:0;animation:fade .5s 3s forwards}
+.stations>div{background:#1a1310cc;border:1px solid #4a3f33;border-radius:.6cqw;padding:1.1cqh 1cqw;text-align:center;font:600 1.9cqw/1 Manrope,sans-serif;color:var(--muted);letter-spacing:.04em;backdrop-filter:blur(4px)}
+.stations>div:first-child{border-color:var(--yellow);color:var(--yellow)}
+.vA .copy{opacity:0;animation:fade .5s 3.3s forwards;bottom:2.5cqh}.vA .copy p{font-size:2.5cqw}.vA .copy p.c{font-size:2.7cqw;margin-top:.8cqh}.vA .hglow{position:absolute;left:62cqw;top:58cqh;width:22cqw;height:22cqh;border-radius:50%;background:radial-gradient(ellipse,#fdd50655,transparent 65%);opacity:0;animation:fade .6s 2.4s forwards}
+.vA .copy p{text-shadow:0 .3cqh 1cqw #000}
+/* ---------- B · pedestal ---------- */
+.vB .bgimg{transform:scale(1.06);animation:kb 6s ease-out forwards;transition:transform .2s}
+.vB .glow{position:absolute;left:50%;top:62%;width:60cqw;height:40cqh;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(ellipse,#fdd50633,transparent 65%);animation:pulse 3s 1s ease-in-out infinite}
+.tag{position:absolute;left:50%;top:36cqh;transform:translateX(-50%);text-align:center;opacity:0;animation:drop .6s 1.2s cubic-bezier(.2,1.3,.3,1) forwards}
+.tag b{display:inline-block;font:600 2.8cqw/1 Manrope,sans-serif;letter-spacing:.18em;color:var(--bg);background:var(--yellow);padding:1cqh 2.2cqw}
+.tag i{display:block;width:.3cqw;height:8cqh;background:var(--yellow);margin:0 auto;transform-origin:top;animation:grow .5s 1.7s ease-out both}
+.names{position:absolute;left:0;right:0;top:75cqh;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;font:500 2.5cqw Manrope,sans-serif;color:var(--muted);opacity:0;animation:fade .6s 2.2s forwards;padding:0 4cqw}
+.names span.win{color:var(--yellow);font-weight:600}
+.vB .copy{bottom:3cqh;opacity:0;animation:fade .6s 2.8s forwards}.vB .copy p{font-size:2.5cqw}.vB .copy p.c{font-size:2.7cqw;margin-top:.8cqh}
+.vB .copy p{text-shadow:0 .3cqh 1cqw #000}
+.vB .layer{position:absolute;inset:0;transition:transform .15s ease-out;will-change:transform}
+/* ---------- C · blueprint ---------- */
+.vC svg{position:absolute;left:5cqw;right:5cqw;top:24cqh;height:56cqh;width:90cqw;overflow:visible;font-family:Manrope,sans-serif}
+.vC .cake{opacity:0;animation:fade .4s forwards}
+.vC .cake:nth-child(1){animation-delay:.3s}.vC .cake:nth-child(2){animation-delay:.5s}.vC .cake:nth-child(3){animation-delay:.7s}.vC .cake:nth-child(4){animation-delay:.9s}
+.vC .sel{opacity:0;animation:fade .3s 1.8s forwards}
+.vC .path{stroke:var(--yellow);stroke-width:4;fill:none;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s 2.1s ease-in-out forwards}
+.vC .st{opacity:.35;animation:lit .3s forwards}
+.vC .st:nth-of-type(1){animation-delay:2.4s}.vC .st:nth-of-type(2){animation-delay:2.75s}.vC .st:nth-of-type(3){animation-delay:3.1s}.vC .st:nth-of-type(4){animation-delay:3.45s}
+.vC .out{opacity:0;animation:fade .5s 3.6s forwards}
+.vC .copy{opacity:0;animation:fade .5s 3.9s forwards}
+.vC .cur{opacity:0;animation:cursorC 1.2s .9s ease-in-out forwards}
+@keyframes ticket-in{to{transform:rotate(-3deg) translateY(0)}}
+@keyframes pop{to{transform:scale(1)}}
+@keyframes stamp{to{opacity:1;transform:translateY(-50%) rotate(-14deg) scale(1)}}
+@keyframes cursorA{0%{opacity:0;left:60cqw;top:92cqh}30%{opacity:1}100%{opacity:1;left:13.5cqw;top:48.5cqh}}
+@keyframes cursorC{0%{opacity:0;transform:translate(120px,260px)}40%{opacity:1}100%{opacity:1;transform:translate(0,0)}}
+@keyframes fade{to{opacity:1}}
+@keyframes kb{to{transform:scale(1)}}
+@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
+@keyframes drop{from{opacity:0;transform:translate(-50%,-6cqh)}to{opacity:1;transform:translate(-50%,0)}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes lit{to{opacity:1}}
+/* controls */
+.controls{position:fixed;bottom:0;left:0;right:0;height:var(--controls);background:#0c0a08f5;border-top:1px solid #292319;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:10px}
+.tabs,.actions{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap}
+button{font:400 13px/1.3 Manrope,sans-serif;cursor:pointer;border:1px solid #504735;border-radius:7px;background:#17130d;color:#ddd5c6;padding:7px 12px}
+button[aria-selected="true"]{color:var(--yellow);border-color:var(--yellow);background:#27210e}
+.description{font-size:12px;text-align:center;color:#c8bfad;max-width:900px;margin:0}
+.note{font-size:11px;color:#a49a84;text-align:center;margin:0}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:0s!important;animation-delay:0s!important}}
+</style></head><body>
+<main class="slide vA" id="slide"></main>
+<nav class="controls"><div class="tabs" role="tablist"><button role="tab" data-v="A">А · Papa's Bakeria — квиток замовлення</button><button role="tab" data-v="B">Б · 3D-п'єдестал</button><button role="tab" data-v="C">В · Схема: вибір → конвеєр</button></div><p class="description"></p><div class="actions"><button id="replay">↻ Програти знову</button><span class="note" id="hint"></span></div></nav>
+<script>
+const TITLE='Вы печёте торты. И решили строить фабрику';
+const COPY='<div class="copy"><p>Фабрика начинается не с печи. С решения: <em>какой именно торт.</em></p><p class="c">Агент — так же. Не «сделай сайт», а «сайт-визитка локальному бизнесу»</p></div>';
+const CUR='<svg viewBox="0 0 24 24"><path d="M4 2 L4 20 L9 15 L13 22 L16 20.5 L12 13.5 L19 13.5 Z" fill="#f5f3ee" stroke="#0b0907" stroke-width="1.2"/></svg>';
+const V={
+A:{desc:'Ностальгія: бейкері з флеш-гри. Квиток замовлення падає на стійку, курсор ставить галочку на «Медовик», штамп «ЭТОТ». Знизу — станції Рецепт · Замес · Сборка · Украшение (місток у 164). Фон — генерація в стилі гри; квиток, галочки, штамп і станції — HTML.',
+ html:()=>`<img class="bgimg" src="assets/gen-154-163/s163-game.webp" alt=""><div class="shade-top" style="height:40%"></div><div class="shade-bot" style="height:22%"></div><div class="hglow"></div><span class="k">Представьте</span><h1>Вы печёте торты.<br>И решили строить фабрику</h1>
+ <div class="ticket"><h4>Заказ № 001</h4><div class="row"><span class="box"></span>Капкейки</div><div class="row"><span class="box"></span>Тарт</div><div class="row win"><span class="box"></span>Медовик<span class="stamp">ЭТОТ</span></div><div class="row"><span class="box"></span>Чизкейк</div></div>
+ <div class="cursor">${CUR}</div>
+ <div class="stations"><div>Рецепт</div><div>Замес</div><div>Сборка</div><div>Украшение</div></div>${COPY}`},
+B:{desc:'Преміум 3D: чотири десерти на темному поворотному столі, медовик на латунному п’єдесталі під прожектором. Повільний наїзд камери, пульсація світла, ярлик «ЭТОТ» опускається на медовик, назви проявляються, потім текст. Мишею — легкий паралакс (відчуття об’єму). Один кадр із Higgsfield + CSS.',
+ html:()=>`<div class="layer" id="par"><img class="bgimg" src="assets/gen-154-163/s163-pedestal.webp" alt=""><div class="glow"></div></div><div class="shade-top" style="height:44%"></div><div class="shade-bot" style="height:34%"></div><span class="k">Представьте</span><h1>Вы печёте торты.<br>И решили строить фабрику</h1>
+ <div class="tag"><b>ЭТОТ</b><i></i></div>
+ <div class="names"><span>Капкейки</span><span>Тарт</span><span class="win">Медовик</span><span>Чизкейк</span></div>${COPY}`},
+C:{desc:'Інженерна схема без фото: чотири торти-іконки на панелі вибору, курсор обирає медовик, жовта лінія промальовується крізь чотири станції фабрики і запалює на виході картку «сайт-визитка». Прямий міст до 164 і до аналогії з агентом. Повністю SVG, генерація не потрібна.',
+ html:()=>`<span class="k">Представьте</span><h1>Вы печёте торты.<br>И решили строить фабрику</h1>
+ <svg viewBox="0 0 900 560">
+  <defs><g id="cupcake"><path d="M-22 6h44l-6 30h-32z" fill="#3a2d22" stroke="#8a7746" stroke-width="2"/><path d="M-24 6c0-22 48-22 48 0z" fill="#f5ecd6"/><circle cy="-14" r="5" fill="#c6000c"/></g>
+  <g id="tart"><ellipse rx="30" ry="12" cy="14" fill="#8a6a3a"/><ellipse rx="26" ry="9" cy="10" fill="#c6000c"/><ellipse rx="10" ry="4" cy="8" fill="#f5ecd6" opacity=".6"/></g>
+  <g id="honey"><rect x="-22" y="-26" width="44" height="52" fill="#c9922b" stroke="#fdd506" stroke-width="2"/><g stroke="#f5ecd6" stroke-width="2"><path d="M-22 -16h44M-22 -6h44M-22 4h44M-22 14h44"/></g></g>
+  <g id="cheese"><path d="M-26 20l26-40 26 40z" fill="#f5ecd6" stroke="#8a7746" stroke-width="2"/><path d="M-26 20l26-40v40z" fill="#e8d9b5"/><path d="M-26 20h52v6h-52z" fill="#8a6a3a"/></g></defs>
+  <g class="panel"><rect x="0" y="0" width="150" height="560" rx="6" fill="#15110d" stroke="#2a2420"/>
+   <g class="cake" transform="translate(75 80)"><use href="#cupcake"/><text y="52" text-anchor="middle" font-size="15" fill="#c4bdb1">Капкейки</text></g>
+   <g class="cake" transform="translate(75 210)"><use href="#tart"/><text y="52" text-anchor="middle" font-size="15" fill="#c4bdb1">Тарт</text></g>
+   <g class="cake" transform="translate(75 340)"><use href="#honey"/><text y="56" text-anchor="middle" font-size="15" fill="#c4bdb1">Медовик</text></g>
+   <g class="cake" transform="translate(75 470)"><use href="#cheese"/><text y="52" text-anchor="middle" font-size="15" fill="#c4bdb1">Чизкейк</text></g>
+   <g class="sel"><rect x="14" y="290" width="122" height="122" rx="6" fill="none" stroke="#fdd506" stroke-width="3"/><text x="162" y="326" font-size="14" font-weight="600" fill="#fdd506" letter-spacing="3">← ЭТОТ</text></g>
+  </g>
+  <path class="path" pathLength="1" d="M150 340 H 210 V 300 H 700 V 300"/>
+  <g class="st" transform="translate(230 250)"><rect width="100" height="100" rx="4" fill="#15110d" stroke="#fdd506" stroke-width="2"/><text x="50" y="58" text-anchor="middle" font-size="16" font-weight="600" fill="#f5f3ee">Рецепт</text></g>
+  <g class="st" transform="translate(350 250)"><rect width="100" height="100" rx="4" fill="#15110d" stroke="#fdd506" stroke-width="2"/><text x="50" y="58" text-anchor="middle" font-size="16" font-weight="600" fill="#f5f3ee">Замес</text></g>
+  <g class="st" transform="translate(470 250)"><rect width="100" height="100" rx="4" fill="#15110d" stroke="#fdd506" stroke-width="2"/><text x="50" y="58" text-anchor="middle" font-size="16" font-weight="600" fill="#f5f3ee">Сборка</text></g>
+  <g class="st" transform="translate(590 250)"><rect width="100" height="100" rx="4" fill="#15110d" stroke="#fdd506" stroke-width="2"/><text x="50" y="58" text-anchor="middle" font-size="15" font-weight="600" fill="#f5f3ee">Украшение</text></g>
+  <g class="out" transform="translate(730 230)"><rect width="170" height="140" rx="6" fill="#0b0907" stroke="#fdd506" stroke-width="3"/><rect x="18" y="20" width="60" height="8" fill="#fdd506"/><rect x="18" y="40" width="120" height="6" fill="#3a332b"/><rect x="18" y="54" width="90" height="6" fill="#3a332b"/><rect x="18" y="82" width="56" height="20" fill="#fdd506"/><text x="85" y="128" text-anchor="middle" font-size="13" fill="#c4bdb1">сайт-визитка</text></g>
+  <g class="cur" transform="translate(0 0)"><g transform="translate(60 320) scale(1.6)"><path d="M4 2 L4 20 L9 15 L13 22 L16 20.5 L12 13.5 L19 13.5 Z" fill="#f5f3ee" stroke="#0b0907" stroke-width="1.2"/></g></g>
+ </svg>${COPY}`}
+};
+const slide=document.getElementById('slide');let cur='A';
+function render(){slide.className='slide v'+cur;slide.innerHTML=V[cur].html();document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.v===cur)));document.querySelector('.description').textContent=V[cur].desc;const u=new URL(location);u.searchParams.set('v',cur);history.replaceState(null,'',u);
+ if(cur==='B'){const p=document.getElementById('par');slide.onmousemove=e=>{const r=slide.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;p.style.transform=`translate(${-x*2.2}%,${-y*1.6}%) scale(1.05)`};slide.onmouseleave=()=>{p.style.transform=''}}else{slide.onmousemove=null}}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{cur=b.dataset.v;render()});
+document.getElementById('replay').onclick=render;
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')cur=cur==='A'?'B':cur==='B'?'C':'A';else if(e.key==='ArrowLeft')cur=cur==='A'?'C':cur==='B'?'A':'B';else if(e.key===' '||e.key==='r'){e.preventDefault()}else return;render()});
+cur=new URLSearchParams(location.search).get('v')||'A';if(!V[cur])cur='A';render();
+document.getElementById('hint').textContent='← → перемикають варіанти · клік по «Програти знову» перезапускає анімацію';
+</script></body></html>

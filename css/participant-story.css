@@ -1,0 +1,89 @@
+/* The approved live infographic. Namespaced for the main deck and the proposal. */
+.participant-story{position:absolute;inset:0;color:#f5f3ee;}
+.participant-story *{box-sizing:border-box;}
+.participant-story .ps-panel{position:absolute;inset:22cqh 7cqw 14cqh;display:flex;flex-direction:column;align-items:center;text-align:center;opacity:1;}
+.participant-story .ps-panel[hidden]{display:none!important;}
+.participant-story .ps-metric{margin:0;font:500 11cqw/1.1 Unbounded,sans-serif;letter-spacing:-.06em;color:#fdd506;}
+.participant-story .ps-metric.ps-word{font-size:8.5cqw;}
+.participant-story .ps-caption{margin:2.2cqh auto 0;max-width:76cqw;font:400 3.2cqw/1.42 Manrope,sans-serif;letter-spacing:0;color:#cec9c1;text-wrap:initial;}
+.participant-story .ps-visual{position:relative;width:75cqw;height:31cqh;margin-top:4cqh;flex:none;}
+.participant-story .ps-visual>svg{display:block;width:100%;height:100%;overflow:visible;}
+.participant-story .ps-cohort .ps-visual{width:77cqw;height:32cqh;}
+.participant-story .ps-service .ps-visual{width:86cqw;height:39cqh;margin-top:3cqh;}
+.participant-story .ps-svg-label{font:400 23px Manrope,sans-serif;letter-spacing:0;}
+.participant-story .ps-income .ps-visual{width:80cqw;height:30cqh;display:grid;grid-template-columns:18cqw 1fr;gap:3cqw;align-items:center;}
+.participant-story .ps-income-ring{width:18cqw;height:18cqh;}
+.participant-story .ps-income-ring svg{display:block;width:100%;height:100%;}
+.participant-story .ps-photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:2.5cqw;width:100%;height:100%;}
+.participant-story .ps-photo{display:block;position:relative;min-width:0;width:100%;height:100%;margin:0;border:1px solid #76612e;border-radius:1.4cqw;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#282216,#14110b 70%);}
+.participant-story .ps-photo img{display:block;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:center top;}
+.participant-story .ps-photo-empty{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1cqh;}
+.participant-story .ps-photo-empty svg{width:8cqw;height:8cqw;fill:none;stroke:#a18e61;stroke-width:1.6;stroke-linejoin:round;}
+.participant-story .ps-photo-empty span{font:400 2cqw/1.4 Manrope,sans-serif;color:#b5a991;}
+.participant-story .ps-experience{inset:23cqh 8cqw 14cqh;}
+.participant-story .ps-experience .ps-visual{width:68cqw;height:30cqh;margin-top:0;}
+.participant-story .ps-people,.participant-story .ps-closing{font:400 3cqw/1.45 Manrope,sans-serif;letter-spacing:0;max-width:82cqw;text-wrap:initial;}
+.participant-story .ps-people{margin:3cqh 0 0;color:#cec9c1;}
+.participant-story .ps-closing{margin:3cqh 0 0;color:#f5f3ee;}
+.participant-story .ps-closing em{font:inherit;color:#fdd506;}
+.participant-story .ps-rail{position:absolute;left:7cqw;right:7cqw;bottom:5cqh;height:6cqh;display:grid;grid-template-columns:repeat(5,1fr);gap:1.5cqw;}
+.participant-story .ps-rail button{position:relative;display:block;border:0;background:none;color:#aaa397;padding:0;margin:0;box-shadow:none;border-radius:0;font:400 1.75cqw/1.3 Manrope,sans-serif;cursor:pointer;}
+.participant-story .ps-rail button:before{content:'';display:block;width:100%;height:.3cqh;background:#423a2a;margin-bottom:1.6cqh;border-radius:1cqw;}
+.participant-story .ps-rail button[aria-current="step"]{color:#fdd506;}
+.participant-story .ps-rail button[aria-current="step"]:before,.participant-story .ps-rail button.is-done:before{background:#fdd506;}
+.participant-story .ps-rail button.is-done{color:#d6c990;}
+.participant-story .ps-rail button:focus-visible{outline:1px solid #fdd506;outline-offset:5px;}
+.participant-story .ps-flow-in,.participant-story .ps-flow-out,.participant-story .ps-result-check{stroke-dasharray:1;stroke-dashoffset:0;}
+.participant-story .ps-packet-in,.participant-story .ps-packet-out{opacity:0;}
+.participant-story .ps-core-gear{transform-origin:464px 238px;}
+.participant-story .ps-stage-light{fill:#fdd506;}
+.participant-story .ps-panel.ps-animate{animation:ps-enter .45s ease-out both;}
+.participant-story .ps-animate .ps-person{animation:ps-person-in .55s var(--ps-delay,0ms) both;}
+.participant-story .ps-animate .ps-flow-in{animation:ps-draw .85s .25s both;}
+.participant-story .ps-animate .ps-packet-in{animation:ps-packet-in 1s .3s both;}
+.participant-story .ps-animate .ps-core-halo{animation:ps-halo 1s 1.05s 2 both;}
+.participant-story .ps-animate .ps-core-gear{animation:ps-gear 2.1s 1s ease-in-out both;}
+.participant-story .ps-animate .ps-stage-light{animation:ps-light .55s both;}
+.participant-story .ps-animate .ps-light-1{animation-delay:1.1s;}
+.participant-story .ps-animate .ps-light-2{animation-delay:1.7s;}
+.participant-story .ps-animate .ps-light-3{animation-delay:2.3s;}
+.participant-story .ps-animate .ps-flow-out{animation:ps-draw .75s 2.4s both;}
+.participant-story .ps-animate .ps-packet-out{animation:ps-packet-out .85s 2.4s both;}
+.participant-story .ps-animate .ps-result-layer{animation:ps-build .6s ease-out both;}
+.participant-story .ps-animate .ps-result-1{animation-delay:2.75s;}
+.participant-story .ps-animate .ps-result-2{animation-delay:3s;}
+.participant-story .ps-animate .ps-result-3{animation-delay:3.25s;}
+.participant-story .ps-animate .ps-result-seal{animation:ps-build .45s 3.55s both;}
+.participant-story .ps-animate .ps-result-check{animation:ps-draw .4s 3.7s both;}
+.participant-story .ps-animate .ps-ring{animation:ps-ring .9s ease-out both;}
+@keyframes ps-enter{from{opacity:.2;transform:translateY(1cqh)}to{opacity:1;transform:none}}
+@keyframes ps-person-in{from{opacity:.1}to{opacity:1}}
+@keyframes ps-draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes ps-packet-in{0%{opacity:0;transform:translateX(0)}15%{opacity:1}85%{opacity:1}100%{opacity:0;transform:translateX(116px)}}
+@keyframes ps-packet-out{0%{opacity:0;transform:translateX(0)}15%{opacity:1}85%{opacity:1}100%{opacity:0;transform:translateX(84px)}}
+@keyframes ps-halo{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes ps-gear{from{transform:rotate(0)}to{transform:rotate(270deg)}}
+@keyframes ps-light{from{fill:#4e452a}to{fill:#fdd506}}
+@keyframes ps-build{from{opacity:.08;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes ps-ring{from{stroke-dasharray:0 100}to{stroke-dasharray:85 100}}
+/* Integration leaves the original source copy intact and replaces only its presentation. */
+.b129.b13-v2-participant-story .b13-shell{display:block;padding:0;}
+.b129.b13-v2-participant-story .b13-head{position:absolute;top:6cqh;left:7cqw;right:7cqw;text-align:center;z-index:2;}
+.b129.b13-v2-participant-story .b13-head h1{font:500 4cqw/1.3 Unbounded,sans-serif;letter-spacing:-.045em;}
+.b129.b13-v2-participant-story .b13-head em{display:block;}
+.b129.b13-v2-participant-story .b13-body{position:static;display:block;padding:0;}
+.b129.b13-v2-participant-story>.b13-step-dots{display:none;}
+.b129.b13-v2-participant-story:not(.on) .participant-story *{animation:none!important;}
+.b129.b13-v2-participant-story.ps-static .participant-story *{animation:none!important;}
+/* The selected proposal uses the same renderer as the main slide. */
+.slide.v1:has(.participant-story)>.scene{inset:0;display:block;animation:none;}
+.slide.v1:has(.participant-story)>.rail{display:none;}
+@media(prefers-reduced-motion:reduce){.participant-story *{animation:none!important;transition:none!important;}}
+
+.participant-story .ps-photo-pair.ps-single{grid-template-columns:1fr;justify-items:center;}
+.participant-story .ps-single .ps-photo{border:0;border-radius:0;background:transparent;width:auto;max-width:100%;}
+.participant-story .ps-single .ps-photo img{width:auto;max-width:100%;height:100%;object-fit:contain;}
+/* fit-2209 · Мирослав: фото вміщається всередину без обрізання, контейнер підлаштовується під фото */
+.participant-story .ps-photo-pair:not(.ps-single){display:flex;justify-content:center;align-items:stretch;gap:2.5cqw}
+.participant-story .ps-photo-pair:not(.ps-single) .ps-photo{width:auto;height:100%;flex:0 1 auto;min-width:0}
+.participant-story .ps-photo-pair:not(.ps-single) .ps-photo img{width:auto;height:100%;max-width:100%;object-fit:contain}

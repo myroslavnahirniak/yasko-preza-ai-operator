@@ -1,0 +1,417 @@
+/* Source-driven U001–U055 redesign. Light editorial interludes and larger evidence. */
+.b129.b13-v2-s16-sales3{--sv-bg:#0b0907;--sv-fg:#f5f2e9;--sv-soft:#c5beb0;--sv-line:#4b4435;--sv-panel:#191610;background:var(--sv-bg);color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3:has(.sv-light){--sv-bg:#f0ece3;--sv-fg:#211e17;--sv-soft:#625b4c;--sv-line:#cbc2ad;--sv-panel:#e6dfd1;background:var(--sv-bg)}
+.b129.b13-v2-s16-sales3 .b13-shell{position:absolute;inset:0;padding:0;display:block;background:transparent}
+.b129.b13-v2-s16-sales3 .b13-body{position:absolute;inset:0;padding:0;margin:0;font-family:Manrope,sans-serif;color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3 .b13-head{position:absolute;top:6cqh;left:7cqw;right:7cqw;z-index:4;text-align:left;margin:0;padding:0;max-width:none}
+.b129.b13-v2-s16-sales3 .b13-head h1{font:500 4.5cqw/1.22 Unbounded,sans-serif;letter-spacing:-.035em;color:var(--sv-fg);text-wrap:balance;margin:0}
+.b129.b13-v2-s16-sales3 .b13-head em{color:#fdd506;font-style:normal}
+.b129.b13-v2-s16-sales3:has(.sv-light) .b13-head em{color:var(--sv-fg);background:linear-gradient(transparent 62%,#fdd506 62%);padding-bottom:.2cqh}
+.b129.b13-v2-s16-sales3 .b13-eyebrow{font:500 1.65cqw/1.35 Manrope,sans-serif;color:var(--sv-soft);letter-spacing:.1em;margin:0 0 2cqh;padding:0}
+.b129.b13-v2-s16-sales3 .b13-eyebrow:before{display:none}
+.b129.b13-v2-s16-sales3 p,.b129.b13-v2-s16-sales3 h3{margin:0}
+.b129.b13-v2-s16-sales3 h3{font:500 2.6cqw/1.3 Unbounded,sans-serif;letter-spacing:-.025em}
+.b129.b13-v2-s16-sales3 p{font:400 2.65cqw/1.42 Manrope,sans-serif}
+.b129.b13-v2-s16-sales3 small{display:block;font:500 1.65cqw/1.3 Manrope,sans-serif;color:var(--sv-soft)}
+.b129.b13-v2-s16-sales3 img{display:block;width:100%;height:100%;object-fit:cover}
+.b129.b13-v2-s16-sales3 .sv-scene{position:absolute;inset:0;z-index:0;overflow:hidden}
+.b129.b13-v2-s16-sales3 .sv-scene:after{content:"";position:absolute;inset:0;background:linear-gradient(#0b0907 0%,#0b090788 28%,transparent 55%)}
+.b129.b13-v2-s16-sales3 .sv-end{position:absolute;left:7cqw;right:7cqw;bottom:7cqh;padding-top:2.6cqh;border-top:1px solid var(--sv-line);font:500 2.5cqw/1.4 Manrope,sans-serif;color:var(--sv-fg);z-index:3}
+.b129.b13-v2-s16-sales3 .sv-disc{position:absolute;left:7cqw;right:7cqw;bottom:2.3cqh;text-align:center;font:400 1.35cqw/1.3 Manrope,sans-serif;color:var(--sv-soft);z-index:3}
+.b129.b13-v2-s16-sales3 .sv-media{position:relative;width:100%;height:100%;overflow:hidden;background:#100e0b;border:0;border-radius:1.4cqw}
+.b129.b13-v2-s16-sales3 .sv-media img,.b129.b13-v2-s16-sales3 .sv-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.b129.b13-v2-s16-sales3 .sv-drawing{display:block;width:100%;height:100%;color:var(--sv-line)}
+/* Iceberg: picture centre, two levels of business on opposite banks */
+.b129.b13-v2-s16-sales3:has(.sv-iceberg) .b13-head{right:15cqw}
+.b129.b13-v2-s16-sales3:has(.sv-iceberg) .sv-scene img{height:115%;position:absolute;top:-6%;object-fit:cover}
+.b129.b13-v2-s16-sales3 .sv-ice-top{position:absolute;top:29cqh;left:7cqw;width:36cqw;z-index:2;padding:2cqw;background:#0b0907c9;border-left:2px solid #fdd506}
+.b129.b13-v2-s16-sales3 .sv-ice-bottom{position:absolute;top:61cqh;right:6cqw;width:38cqw;z-index:2;padding:2cqw;background:#0b0907cf;border-left:2px solid #fdd506}
+.b129.b13-v2-s16-sales3 .sv-ice-top small,.b129.b13-v2-s16-sales3 .sv-ice-bottom small{margin-bottom:1.5cqh;color:#fdd506;letter-spacing:.07em}
+.b129.b13-v2-s16-sales3 .sv-ice-bottom p+p,.b129.b13-v2-s16-sales3 .sv-ice-top p+p{margin-top:1.6cqh}
+/* Comparison: paths drawn before their consequences */
+.b129.b13-v2-s16-sales3 .sv-compare{position:absolute;top:25cqh;left:7cqw;right:7cqw;bottom:19cqh;display:grid;grid-template-columns:1fr 1fr;gap:5cqw}
+.b129.b13-v2-s16-sales3 .sv-compare>div{padding:1cqw 0;position:relative}
+.b129.b13-v2-s16-sales3 .sv-compare>div+div{border-left:1px solid var(--sv-line);padding-left:4cqw}
+.b129.b13-v2-s16-sales3 .sv-compare-art{height:12cqh;margin:-3cqh -3cqw 1cqh}
+.b129.b13-v2-s16-sales3 .sv-compare h3{font-size:2.5cqw;margin-bottom:2.8cqh;min-height:6cqh}
+.b129.b13-v2-s16-sales3 .sv-list-row{display:flex;gap:1.2cqw;font:400 2.45cqw/1.36 Manrope,sans-serif;padding:1.15cqh 0}
+.b129.b13-v2-s16-sales3 .sv-list-row i{width:.65cqw;height:.65cqw;border-radius:50%;background:var(--sv-soft);margin-top:1cqh;flex-shrink:0}
+.b129.b13-v2-s16-sales3 .win .sv-list-row i{background:#fdd506}
+.b129.b13-v2-s16-sales3 .dim{color:var(--sv-soft)}
+.b129.b13-v2-s16-sales3:has(.sv-U054) .sv-compare{top:29cqh;bottom:10cqh}
+/* Statement/photo breaks */
+.b129.b13-v2-s16-sales3:has(.sv-statement) .b13-head{top:10cqh;right:8cqw}
+.b129.b13-v2-s16-sales3:has(.sv-statement) .b13-head h1{font-size:5.25cqw;line-height:1.24}
+.b129.b13-v2-s16-sales3 .sv-statement-copy{position:absolute;top:35cqh;left:7cqw;width:77cqw;z-index:2}
+.b129.b13-v2-s16-sales3 .sv-statement-copy p{font-size:3cqw}
+.b129.b13-v2-s16-sales3 .sv-statement-copy p+p{margin-top:4cqh}
+.b129.b13-v2-s16-sales3 .sv-statement-final{color:#fdd506;font-weight:600}
+.b129.b13-v2-s16-sales3:has(.sv-U048) .sv-scene img{opacity:.88}
+.b129.b13-v2-s16-sales3:has(.sv-U048) .sv-scene:after{background:linear-gradient(#0b0907 0%,#0b0907f2 22%,#0b0907c8 40%,#0b090770 55%,transparent 72%)}
+/* 22.09 Мирослав: текст вище, щоб не налазив на Влада; м'якше затемнення */
+.b129.b13-v2-s16-sales3:has(.sv-U048) .b13-head{top:7cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U048) .sv-statement-copy{top:25cqh;width:86cqw;text-shadow:0 2px 14px #0b0907,0 0 28px #0b0907}
+.b129.b13-v2-s16-sales3:has(.sv-U048) .sv-statement-copy p{font-size:2.6cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U048) .sv-statement-copy p+p{margin-top:2.6cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U055) .sv-statement-copy{top:40cqh;max-width:62cqw}
+/* Source evidence: big, square, correct aspect ratio */
+.b129.b13-v2-s16-sales3 .sv-intro{position:absolute;top:22cqh;left:7cqw;right:7cqw}
+.b129.b13-v2-s16-sales3 .sv-intro p{font-size:2.5cqw;color:var(--sv-soft)}
+.b129.b13-v2-s16-sales3 .sv-screen{position:absolute;top:37cqh;bottom:8cqh;left:7cqw;right:7cqw;border:1px solid var(--sv-line);border-radius:1.4cqw;overflow:hidden;background:#11100e}
+.b129.b13-v2-s16-sales3 .sv-screen>img{object-fit:cover;object-position:top;height:auto;min-height:100%}
+.b129.b13-v2-s16-sales3 .sv-browser-bar{height:4cqh;background:#26231e;display:flex;gap:.6cqw;padding:0 1.5cqw;align-items:center;color:#b8b1a2;font-size:1.25cqw}
+.b129.b13-v2-s16-sales3 .sv-browser-bar i{width:.6cqw;height:.6cqw;border-radius:50%;background:#a4997f}
+.b129.b13-v2-s16-sales3 .sv-browser-bar span{margin-left:1cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U007) .sv-screen{top:31cqh;bottom:8cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U007) .sv-screen>img{height:calc(100% - 4cqh);min-height:0;object-fit:contain}
+.b129.b13-v2-s16-sales3 .sv-steps{position:absolute;left:7cqw;right:7cqw;top:23cqh;display:grid;grid-template-columns:repeat(4,1fr);gap:2cqw}
+.b129.b13-v2-s16-sales3 .sv-steps>div{border-top:2px solid #fdd506;padding-top:1.5cqh}
+.b129.b13-v2-s16-sales3 .sv-steps b{font:500 4.7cqw/1 Unbounded,sans-serif;color:#fdd506;display:block;margin-bottom:2cqh}
+.b129.b13-v2-s16-sales3 .sv-steps h3{font-size:2.05cqw}
+.b129.b13-v2-s16-sales3:has(.sv-steps) .sv-screen{top:43cqh;bottom:21cqh}
+/* Five chapters: one continuous route, varying scene */
+.b129.b13-v2-s16-sales3:has(.sv-chapter) .b13-head{top:5.5cqh}
+.b129.b13-v2-s16-sales3:has(.sv-chapter) .b13-head h1{font-size:4.05cqw}
+.b129.b13-v2-s16-sales3 .sv-route{position:absolute;left:7cqw;right:7cqw;top:24cqh;display:grid;grid-template-columns:repeat(5,1fr);gap:1.5cqw}
+.b129.b13-v2-s16-sales3 .sv-route>div{border-top:2px solid var(--sv-line);padding-top:1cqh;color:var(--sv-soft)}
+.b129.b13-v2-s16-sales3 .sv-route b{display:inline-block;font:500 2.4cqw/1 Unbounded,sans-serif;margin-right:1cqw}
+.b129.b13-v2-s16-sales3 .sv-route span{font:500 1.3cqw/1.2 Manrope,sans-serif}
+.b129.b13-v2-s16-sales3 .sv-route .active{border-color:#fdd506;color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3 .sv-route .active b{background:#fdd506;color:#19150b;border-radius:50%;padding:.7cqw;font-size:2cqw}
+.b129.b13-v2-s16-sales3 .sv-chapter-drawing{position:absolute;top:38cqh;left:4cqw;width:36cqw;height:29cqh}
+.b129.b13-v2-s16-sales3 .sv-chapter-art{position:absolute;top:33cqh;left:0;width:43cqw;height:43cqh;overflow:hidden}
+.b129.b13-v2-s16-sales3 .sv-chapter-art img{object-fit:cover}
+.b129.b13-v2-s16-sales3 .sv-modules{position:absolute;top:35cqh;right:7cqw;left:44cqw;bottom:22cqh;display:flex;flex-direction:column;justify-content:center;gap:2.8cqh}
+.b129.b13-v2-s16-sales3 .sv-modules>div{display:flex;gap:1.6cqw;border-bottom:1px solid var(--sv-line);padding-bottom:2cqh}
+.b129.b13-v2-s16-sales3 .sv-modules>div>small{color:var(--sv-soft);font-size:1.5cqw;padding-top:.5cqh;flex:none}
+.b129.b13-v2-s16-sales3 .sv-modules h3{font-size:2.25cqw}
+.b129.b13-v2-s16-sales3 .sv-modules p{font-size:2.1cqw;line-height:1.35;margin-top:1cqh;color:var(--sv-soft)}
+.b129.b13-v2-s16-sales3 .sv-modules strong{font:500 3.3cqw/1 Unbounded,sans-serif;color:#fdd506;margin-left:auto}
+.b129.b13-v2-s16-sales3 .sv-modules strong small{font-size:1.1cqw;margin-top:.6cqh}
+.b129.b13-v2-s16-sales3 .sv-result{position:absolute;left:7cqw;right:7cqw;bottom:6cqh;border-top:2px solid #fdd506;padding-top:2.4cqh;display:flex;gap:3cqw;align-items:center}
+.b129.b13-v2-s16-sales3 .sv-result>div{flex:1}
+.b129.b13-v2-s16-sales3 .sv-result>div small{letter-spacing:.09em;font-size:1.25cqw;margin-bottom:1cqh}
+.b129.b13-v2-s16-sales3 .sv-result p{font-size:2.35cqw}
+.b129.b13-v2-s16-sales3 .sv-result>b{font:500 4.5cqw/1 Unbounded,sans-serif;color:#fdd506;max-width:28cqw}
+.b129.b13-v2-s16-sales3 .sv-result>b small{font-size:1.4cqw;margin-top:.8cqh}
+/* Service films and captions */
+.b129.b13-v2-s16-sales3 .sv-services{position:absolute;top:25cqh;bottom:21cqh;left:7cqw;right:7cqw;display:grid;grid-template-columns:repeat(var(--count),1fr);gap:2cqw}
+.b129.b13-v2-s16-sales3 .sv-services article{display:flex;flex-direction:column;min-width:0;background:var(--sv-panel);border-radius:1.5cqw;overflow:hidden}
+.b129.b13-v2-s16-sales3 .sv-services .sv-media{height:24cqh;flex:none;border-radius:0}
+.b129.b13-v2-s16-sales3 .sv-service-copy{padding:2cqw}
+.b129.b13-v2-s16-sales3 .sv-service-copy h3{font-size:2.05cqw;margin-bottom:1.2cqh}
+.b129.b13-v2-s16-sales3 .sv-service-copy p{font-size:1.95cqw;line-height:1.35;color:var(--sv-soft)}
+.b129.b13-v2-s16-sales3 .sv-service-copy strong{display:block;font:500 2.75cqw/1.15 Unbounded,sans-serif;color:#fdd506;margin:2cqh 0 .5cqh}
+.b129.b13-v2-s16-sales3 .sv-service-copy .sv-pm{font-size:1.55cqw}
+.b129.b13-v2-s16-sales3 .sv-service-copy .sv-tag{font-size:1.5cqw;color:#fdd506;margin-top:1cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U029) .sv-services{right:7cqw;bottom:23cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U029) .sv-services article{display:grid;grid-template-columns:39cqw 1fr;background:none;gap:4cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U029) .sv-services .sv-media{height:100%;border-radius:2cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U029) .sv-service-copy{padding:4cqh 0}
+.b129.b13-v2-s16-sales3:has(.sv-U029) .sv-service-copy h3{font-size:3cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U029) .sv-service-copy p{font-size:2.3cqw;margin-top:2cqh}
+.b129.b13-v2-s16-sales3 .sv-bubble{position:absolute;left:7cqw;right:7cqw;bottom:17cqh;display:flex;gap:2cqw;align-items:center}
+.b129.b13-v2-s16-sales3 .sv-bubble p{font-size:1.85cqw;padding:1cqw 1.5cqw;border-radius:1cqw;background:var(--sv-panel)}
+/* Catalogue / skills / stats */
+.b129.b13-v2-s16-sales3 .sv-band{position:absolute;top:21cqh;left:7cqw;color:#fdd506;font-size:2.3cqw}
+.b129.b13-v2-s16-sales3 .sv-flow{position:absolute;top:27cqh;left:7cqw;right:7cqw;display:flex;gap:2cqw;align-items:center;font:500 2.2cqw/1.3 Manrope,sans-serif}
+.b129.b13-v2-s16-sales3 .sv-flow span{color:#fdd506;font-size:4cqw}
+.b129.b13-v2-s16-sales3 .sv-cards{position:absolute;top:27cqh;bottom:20cqh;left:7cqw;right:7cqw;display:grid;grid-template-columns:repeat(3,1fr);gap:2cqw}
+.b129.b13-v2-s16-sales3 .sv-cards article{position:relative;border-bottom:1px solid var(--sv-line);padding:0 0 1.4cqh;min-height:0}
+.b129.b13-v2-s16-sales3 .sv-cards .sv-media{height:14cqh;margin-bottom:1.4cqh;border-radius:1cqw}
+.b129.b13-v2-s16-sales3 .sv-cards small{font-size:1.5cqw;color:var(--sv-soft);margin-bottom:1cqh}
+.b129.b13-v2-s16-sales3 .sv-cards h3{font-size:2.1cqw}
+.b129.b13-v2-s16-sales3 .sv-cards p{font-size:1.9cqw;margin-top:1cqh;color:var(--sv-soft)}
+.b129.b13-v2-s16-sales3:has(.sv-U012) .sv-cards{top:38cqh;bottom:7cqh;grid-template-columns:repeat(2,1fr);gap:2cqw 5cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U012) .sv-cards article{padding-left:5cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U012) .sv-cards article small{position:absolute;left:0;top:0;font:500 2.4cqw/1 Unbounded,sans-serif;color:#fdd506}
+.b129.b13-v2-s16-sales3:has(.sv-U030) .sv-cards{top:66cqh;bottom:22cqh;grid-template-columns:repeat(4,1fr);gap:3cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U030) .sv-cards h3{font-size:2.15cqw}
+.b129.b13-v2-s16-sales3 .sv-kit-art{position:absolute;top:23cqh;left:20cqw;right:20cqw;height:40cqh;overflow:hidden}
+.b129.b13-v2-s16-sales3 .sv-kit-art img{object-fit:cover}
+.b129.b13-v2-s16-sales3 .sv-stats{position:absolute;top:25cqh;left:7cqw;right:7cqw;display:grid;grid-template-columns:repeat(4,1fr);gap:2cqw}
+.b129.b13-v2-s16-sales3 .sv-stats>div{border-top:1px solid var(--sv-line);padding-top:2.5cqh}
+.b129.b13-v2-s16-sales3 .sv-stats b{display:block;font:500 6cqw/1 Unbounded,sans-serif;letter-spacing:-.05em}
+.b129.b13-v2-s16-sales3 .sv-stats span{display:block;font:500 2cqw/1.4 Manrope,sans-serif;margin-top:2cqh;color:var(--sv-soft)}
+.b129.b13-v2-s16-sales3 .sv-income{position:absolute;top:49cqh;left:7cqw;right:7cqw;background:#fdd506;color:#19160b;padding:3.5cqw;border-radius:2cqw}
+.b129.b13-v2-s16-sales3 .sv-income small{color:#524716;font-size:2.1cqw;margin-bottom:1.8cqh}
+.b129.b13-v2-s16-sales3 .sv-income b{font:500 6.5cqw/1.2 Unbounded,sans-serif;letter-spacing:-.035em}
+/* Seventeen values: larger objects, alternating proof, diagrams and light sheets. */
+.b129.b13-v2-s16-sales3:has(.sv-element) .b13-head{top:6cqh}
+.b129.b13-v2-s16-sales3:has(.sv-element) .b13-head h1{font-size:4.15cqw}
+.b129.b13-v2-s16-sales3:has(.sv-element) .b13-eyebrow{font-size:1.35cqw}
+.b129.b13-v2-s16-sales3 .sv-description{position:absolute;left:7cqw;right:7cqw;top:24cqh;font-size:2.6cqw;color:var(--sv-soft);z-index:3}
+.b129.b13-v2-s16-sales3 .sv-extra{position:absolute;left:7cqw;right:7cqw;top:32cqh;font-size:1.8cqw;color:var(--sv-soft);z-index:3}
+.b129.b13-v2-s16-sales3 .sv-object{position:absolute;top:32cqh;left:17cqw;width:66cqw;height:49cqh;overflow:hidden}
+.b129.b13-v2-s16-sales3 .sv-object img{position:absolute;left:-108%;top:-142%;width:225%;height:225%;max-width:none;object-fit:cover;mix-blend-mode:lighten}
+.b129.b13-v2-s16-sales3 .sv-value{position:absolute;left:7cqw;right:7cqw;bottom:5.2cqh;z-index:4;display:flex;justify-content:space-between;gap:5cqw;border-top:1px solid var(--sv-line);padding-top:2.2cqh;background:var(--sv-bg)}
+.b129.b13-v2-s16-sales3 .sv-value small{font-size:1.55cqw;margin-bottom:1cqh}
+.b129.b13-v2-s16-sales3 .sv-value b{font:500 4.8cqw/1 Unbounded,sans-serif;letter-spacing:-.04em;color:#fdd506}
+.b129.b13-v2-s16-sales3 .sv-value>div:nth-child(2){text-align:right}
+.b129.b13-v2-s16-sales3 .sv-value>div:nth-child(2) b{color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3:has(.sv-light) .sv-value b{color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3 .sv-progress{position:absolute;bottom:-2.6cqh;left:0;right:0;display:flex;gap:.7cqw;height:.45cqh}
+.b129.b13-v2-s16-sales3 .sv-progress i{flex:1;background:var(--sv-line)}
+.b129.b13-v2-s16-sales3 .sv-progress .on{background:#fdd506}
+.b129.b13-v2-s16-sales3 .sv-proof{position:absolute;left:7cqw;right:7cqw;top:36cqh;bottom:20cqh;border-radius:1.6cqw;overflow:hidden}
+.b129.b13-v2-s16-sales3 .sv-proof .sv-media{background:#15130f}
+.b129.b13-v2-s16-sales3 .sv-fan{height:100%;display:flex;gap:2cqw;align-items:center}
+.b129.b13-v2-s16-sales3 .sv-fan img{width:calc((100% - 4cqw)/3);height:88%;object-fit:cover;object-position:top;border:1px solid var(--sv-line);border-radius:1cqw;box-shadow:0 1cqh 2cqw #0003}
+.b129.b13-v2-s16-sales3 .sv-fan img:nth-child(2){height:100%}
+.b129.b13-v2-s16-sales3 .sv-agent-list{position:absolute;left:7cqw;right:7cqw;top:40cqh;bottom:19cqh;display:grid;grid-template-columns:1fr 1fr;gap:1.8cqw 3cqw}
+.b129.b13-v2-s16-sales3 .sv-agent-list>div{display:grid;grid-template-columns:3cqw 1fr;gap:1cqw;border-bottom:1px solid var(--sv-line);padding:1cqh 0}
+.b129.b13-v2-s16-sales3 .sv-agent-list span{font-size:1.5cqw;color:var(--sv-soft)}
+.b129.b13-v2-s16-sales3 .sv-agent-list b{font:500 2.05cqw/1.25 Manrope,sans-serif}
+.b129.b13-v2-s16-sales3 .sv-agent-list strong{grid-column:2;font:500 2.65cqw/1 Unbounded,sans-serif}
+.b129.b13-v2-s16-sales3 .sv-element-lines{position:absolute;left:7cqw;top:30cqh;width:47cqw;z-index:3}
+.b129.b13-v2-s16-sales3 .sv-element-lines p{padding:2cqh 0;border-top:1px solid var(--sv-line);font-size:2.6cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U047) .sv-object{left:54cqw;width:42cqw;height:48cqh;top:29cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U047) .sv-object img{left:-97%;top:-82%;width:200%;height:200%}
+.b129.b13-v2-s16-sales3 .sv-discount{position:absolute;left:7cqw;top:44cqh;font:500 16cqw/1 Unbounded,sans-serif;letter-spacing:-.07em;color:#fdd506;z-index:2}
+.b129.b13-v2-s16-sales3 .sv-discount span{font-size:8cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U036) .sv-object{left:46cqw;width:49cqw;top:35cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U039) .sv-drawing{position:absolute;top:37cqh;left:0;height:36cqh;width:100%;z-index:2;color:#988441}
+.b129.b13-v2-s16-sales3 .sv-places{position:absolute;left:7cqw;right:7cqw;top:35cqh;bottom:20cqh;display:grid;grid-template-columns:1fr 1fr;gap:1cqh 4cqw}
+.b129.b13-v2-s16-sales3 .sv-places>div{border-bottom:1px solid var(--sv-line);padding:1.2cqh 0}
+.b129.b13-v2-s16-sales3 .sv-places b{font:500 2.65cqw/1.2 Unbounded,sans-serif;display:block}
+.b129.b13-v2-s16-sales3 .sv-places span{font:400 2.15cqw/1.35 Manrope,sans-serif;display:block;margin-top:.7cqh;color:var(--sv-soft)}
+/* Value ledger: full content, two columns, clearer total. */
+.b129.b13-v2-s16-sales3:has(.sv-package) .b13-head h1{font-size:4.2cqw}
+.b129.b13-v2-s16-sales3 .sv-ledger{position:absolute;left:7cqw;right:7cqw;top:23cqh;bottom:19cqh;display:grid;grid-template-columns:1fr 1fr;gap:5cqw}
+.b129.b13-v2-s16-sales3 .sv-ledger-row{display:grid;grid-template-columns:2.5cqw 1fr auto;gap:1cqw;padding:1.05cqh 0;border-bottom:1px solid var(--sv-line);font:500 1.65cqw/1.28 Manrope,sans-serif}
+.b129.b13-v2-s16-sales3 .sv-ledger-row>small{font-size:1.2cqw;padding-top:.2cqh}
+.b129.b13-v2-s16-sales3 .sv-ledger-row>b{font-weight:600;white-space:nowrap}
+.b129.b13-v2-s16-sales3 .sv-ledger-sub{grid-column:2/4;font:400 1.25cqw/1.3 Manrope,sans-serif;color:var(--sv-soft)}
+.b129.b13-v2-s16-sales3 .sv-ledger-sub>div{display:flex;justify-content:space-between;gap:1cqw;padding:.3cqh 0}
+.b129.b13-v2-s16-sales3 .sv-ledger .off{color:var(--sv-soft);opacity:.7}
+.b129.b13-v2-s16-sales3 .sv-ledger-row.off>span{text-decoration:line-through;text-decoration-color:#a89d84}
+.b129.b13-v2-s16-sales3 .sv-total{position:absolute;left:7cqw;right:7cqw;bottom:5cqh;display:flex;align-items:center;justify-content:space-between;border-top:2px solid #fdd506;padding-top:2cqh}
+.b129.b13-v2-s16-sales3 .sv-total span{font:500 2.1cqw/1.4 Manrope,sans-serif;max-width:35cqw}
+.b129.b13-v2-s16-sales3 .sv-total b{font:500 7.3cqw/1.2 Unbounded,sans-serif;letter-spacing:-.04em;color:#fdd506}
+.b129.b13-v2-s16-sales3:has(.sv-light) .sv-total b{color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3 .sv-packages{position:absolute;top:25cqh;left:7cqw;right:7cqw;bottom:20cqh;display:grid;grid-template-columns:repeat(3,1fr);gap:2cqw;align-items:stretch}
+.b129.b13-v2-s16-sales3 .sv-packages article{padding:2.4cqw 2cqw;background:var(--sv-panel);border:1px solid var(--sv-line);border-radius:1.5cqw}
+.b129.b13-v2-s16-sales3 .sv-packages article.p2{border-color:#ac9232;box-shadow:0 0 5cqw #fdd50613;background:linear-gradient(150deg,#463c1c,#15130d)}
+.b129.b13-v2-s16-sales3:has(.sv-light) .sv-packages article.p2{background:#fdd506;box-shadow:none}
+.b129.b13-v2-s16-sales3 .sv-pack-top small{min-height:3cqh;font-size:1.2cqw}
+.b129.b13-v2-s16-sales3 .sv-pack-top h3{font-size:3.1cqw;margin-bottom:2.4cqh}
+.b129.b13-v2-s16-sales3 .sv-pack-value{font:500 3.3cqw/1.2 Unbounded,sans-serif;margin:1cqh 0 4cqh;letter-spacing:-.04em}
+.b129.b13-v2-s16-sales3 .sv-pack-metric{display:flex;gap:1cqw;justify-content:space-between;border-top:1px solid var(--sv-line);padding:1.9cqh 0;font:400 1.8cqw/1.3 Manrope,sans-serif}
+.b129.b13-v2-s16-sales3 .sv-pack-metric b{font-weight:600;max-width:12cqw;text-align:right}
+.b129.b13-v2-s16-sales3 .sv-pack-count{font:500 6.6cqw/1.2 Unbounded,sans-serif;color:#fdd506;margin-bottom:2cqh}
+.b129.b13-v2-s16-sales3 .sv-pack-count small{font-size:1.8cqw;margin-top:1cqh}
+.b129.b13-v2-s16-sales3 .sv-pack-chip{font-size:1.8cqw;padding:.7cqh 0;border-top:1px solid var(--sv-line)}
+/* Concept dashboard preserved, hierarchy enlarged and mock status visible. */
+.b129.b13-v2-s16-desk:has(.sv-marker) .sl2-desk{top:34cqh;bottom:13cqh;grid-template-columns:25cqw 1fr 22cqw;border-radius:1.5cqw;box-shadow:0 2cqh 8cqw #0008}
+.b129.b13-v2-s16-desk:has(.sv-marker) .sl2-desk .you{font-size:6cqw}
+.b129.b13-v2-s16-desk:has(.sv-marker) .sl2-final{font-size:2.5cqw;bottom:5cqh}
+.b129.b13-v2-s16-desk .sv-mock-label{position:absolute;right:8cqw;top:32cqh;color:#a59a80;font:400 1.1cqw/1 Manrope,sans-serif}
+/* Finite entry: no oscillation, zoom or incessant count animation. */
+@keyframes sv-reveal{from{opacity:0;transform:translateY(1.8cqh)}to{opacity:1;transform:none}}
+.b129.b13-v2-s16-sales3.s16-play .b13-head,.b129.b13-v2-s16-sales3.s16-play .sv-value,.b129.b13-v2-s16-sales3.s16-play .sv-end{animation:sv-reveal .65s ease-out both}
+.b129.b13-v2-s16-sales3.s16-play .sv-value,.b129.b13-v2-s16-sales3.s16-play .sv-end{animation-delay:.4s}
+.b129.b13-v2-s16-sales3.s16-play .sv-modules>div,.b129.b13-v2-s16-sales3.s16-play .sv-cards>article,.b129.b13-v2-s16-sales3.s16-play .sv-services>article{animation:sv-reveal .65s ease-out both;animation-delay:.15s}
+.b129.b13-v2-s16-sales3.s16-play .sv-modules>div:nth-child(2),.b129.b13-v2-s16-sales3.s16-play .sv-cards>article:nth-child(2),.b129.b13-v2-s16-sales3.s16-play .sv-services>article:nth-child(2){animation-delay:.3s}
+.b129.b13-v2-s16-sales3.s16-play .sv-modules>div:nth-child(3),.b129.b13-v2-s16-sales3.s16-play .sv-cards>article:nth-child(3),.b129.b13-v2-s16-sales3.s16-play .sv-services>article:nth-child(3){animation-delay:.45s}
+@media(prefers-reduced-motion:reduce){.b129.b13-v2-s16-sales3 *{animation:none!important;transition:none!important}}
+/* Keep the complete object inside the scene; source illustrations have large built-in margins. */
+.b129.b13-v2-s16-sales3 .sv-object img{left:-40cqw;top:-38cqw;width:100cqw;height:100cqw;object-fit:contain}
+.b129.b13-v2-s16-sales3 .sv-object{mask-image:linear-gradient(transparent,#000 5%,#000 93%,transparent)}
+.b129.b13-v2-s16-sales3:has(.sv-U047) .sv-object img{left:-48cqw;top:-43cqw;width:110cqw;height:110cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U036) .sv-object img{left:-43cqw;top:-40cqw;width:105cqw;height:105cqw}
+.slide.foundation.b129.b13-v2-s16-sales3{background:var(--sv-bg)!important}
+.b129.b13-v2-s16-sales3 b,.b129.b13-v2-s16-sales3 strong{color:inherit}
+.b129.b13-v2-s16-sales3 .sv-income b{color:#19160b}
+.b129.b13-v2-s16-sales3 .sv-value>div:first-child b,.b129.b13-v2-s16-sales3 .sv-total b,.b129.b13-v2-s16-sales3 .sv-service-copy strong,.b129.b13-v2-s16-sales3 .sv-modules strong,.b129.b13-v2-s16-sales3 .sv-result>b,.b129.b13-v2-s16-sales3 .sv-steps b,.b129.b13-v2-s16-sales3 .sv-pack-count{color:#fdd506}
+.b129.b13-v2-s16-sales3:has(.sv-light) .sv-value>div:first-child b,.b129.b13-v2-s16-sales3:has(.sv-light) .sv-total b,.b129.b13-v2-s16-sales3:has(.sv-light) .sv-result>b{color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3 .sv-chapter-art img{position:absolute;width:125%;height:125%;top:-22%;left:-12%}
+.b129.b13-v2-s16-sales3:has(.sv-U009) .sv-chapter-art{top:35cqh;left:3cqw;width:36cqw;height:40cqh;border-radius:1.5cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U010) .sv-chapter-art{top:35cqh;left:4cqw;width:35cqw;height:38cqh;border-radius:1.5cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U010) .sv-chapter-art img{width:100%;height:100%;top:0;left:0;object-fit:cover;object-position:top}
+.b129.b13-v2-s16-sales3:has(.sv-U024) .sv-chapter-art{top:37cqh;left:3cqw;width:36cqw;height:37cqh;mask-image:linear-gradient(transparent,#000 8%,#000 90%,transparent)}
+.b129.b13-v2-s16-sales3:has(.sv-U028) .sv-chapter-art img{width:100cqw;height:100cqw;left:-48cqw;top:-53cqw;object-fit:contain}
+.b129.b13-v2-s16-sales3 .sv-result,.b129.b13-v2-s16-sales3 .sv-element-lines{color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3 .sv-packages article{min-width:0}
+.b129.b13-v2-s16-sales3 .sv-pack-count{font-size:8cqw;line-height:1}
+.b129.b13-v2-s16-sales3 .sv-pack-count>span{font:500 2.3cqw/1.2 Manrope,sans-serif;display:block;margin-top:1cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-packages{top:28cqh;bottom:22cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-count small{font-size:1.3cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-chip{font-size:1.6cqw;padding:.65cqh 0}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-top small{font-size:1.05cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U008) .sv-compare{top:30cqh;bottom:10cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U008) .sv-compare-art{height:19cqh;margin-bottom:2cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U008) .sv-list-row{font-size:2.85cqw;padding:1.8cqh 0}
+.b129.b13-v2-s16-sales3:has(.sv-U054) .sv-compare-art{height:19cqh;margin-bottom:2cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U054) .sv-compare h3{min-height:0}
+.b129.b13-v2-s16-sales3:has(.sv-U047) .sv-object{left:50cqw;width:45cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U047) .sv-object img{width:92cqw;height:92cqw;left:-43cqw;top:-33cqw}
+.b129.b13-v2-s16-sales3 .sv-ledger-row{font-size:1.85cqw;padding:1.05cqh 0}
+.b129.b13-v2-s16-sales3 .sv-ledger-sub{font-size:1.35cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U036) .sv-object{left:51cqw;top:35cqh;width:42cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U036) .sv-object img{left:-42cqw;top:-39cqw;width:92cqw;height:92cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-packages article{min-height:0;padding:2cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-top small{min-height:2cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-top h3{margin-bottom:1.5cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-count{font-size:6cqw;margin-bottom:1cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-count>span{font-size:2.1cqw;margin-top:.5cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-count small:empty{display:none}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-chip{font-size:1.6cqw;line-height:1.2;padding:.5cqh 0}
+.b129.b13-v2-s16-sales3 .sv-demo-caption{font:400 1.05cqw/1.2 Manrope,sans-serif;padding:.8cqw 1.5cqw;background:#2b261b;color:#c4bbab;display:flex;flex-wrap:wrap;gap:.5cqw}
+.b129.b13-v2-s16-sales3 .sv-demo-caption small{font-size:.85cqw;width:100%;color:#a89877}
+.b129.b13-v2-s16-sales3 .sv-demo-caption span+span:before{content:'· ';opacity:.5}
+.b129.b13-v2-s16-sales3:has(.sv-U025) .sv-services .sv-media{height:20cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U025) .sv-service-copy{padding:1.5cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U025) .sv-service-copy p{font-size:1.8cqw}
+.b129.b13-v2-s16-sales3 .sv-conveyor-lines{position:absolute;left:7cqw;right:7cqw;top:38cqh;bottom:8cqh;pointer-events:none}
+.b129.b13-v2-s16-sales3:has(.sv-light) .sv-result p{color:var(--sv-fg)}
+
+/* U003: offer + first-slide film, then the full working desk. */
+.b129 .sv-substage{position:absolute;right:7cqw;top:6.5cqh;font:500 1.4cqw/1 Manrope,sans-serif;color:#a89e88;letter-spacing:.15em;z-index:5}
+.b129.b13-v2-s16-sales3:has(.sv-desk-intro) .b13-head h1{font-size:6.5cqw}
+.b129 .sv-offer-copy{position:absolute;left:7cqw;right:7cqw;top:21cqh}
+.b129 .sv-offer-copy p{font:400 2.5cqw/1.4 Manrope,sans-serif;color:#f1ede4;margin:0 0 1.7cqh}
+.b129 .sv-offer-copy p+p{font-size:2.2cqw;color:#bdb6a9}
+.b129 .sv-offer-video{position:absolute;left:7cqw;right:7cqw;top:35cqh;height:49cqh;border-radius:1.5cqw;overflow:hidden;border:1px solid #5b4b1d}
+.b129 .sv-offer-video video{width:100%;height:100%;object-fit:cover;object-position:center top}
+.b129 .sv-offer-final{position:absolute;left:7cqw;right:7cqw;top:88cqh;margin:0;font:500 2.25cqw/1.4 Manrope,sans-serif;color:#fdd506;text-align:center}
+.b129.b13-v2-s16-desk:has(.sv-desk-expanded) .sl2-desk{top:25cqh;bottom:10cqh}
+.b129.b13-v2-s16-desk:has(.sv-desk-expanded) .sv-mock-label{top:auto;bottom:6.5cqh;left:7cqw;right:auto;font-size:1.4cqw}
+
+/* Theme follows sections: programme dark, all 17 value elements ivory, tariffs dark. */
+.b129.b13-v2-s16-sales3:has(.sv-element.sv-light) .sv-object{background:#0b0907;border-radius:1.6cqw;isolation:isolate;border:1px solid #d0c4aa}
+.b129.b13-v2-s16-sales3:has(.sv-element.sv-light) .sv-object img{mix-blend-mode:normal}
+.b129.b13-v2-s16-sales3:has(.sv-element.sv-light) .sv-discount{color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3:has(.sv-element.sv-light) .sv-progress .on{background:#a17b08}
+.b129.b13-v2-s16-sales3:not(:has(.sv-light)) .sv-kit-art{border-radius:1.6cqw}
+.b129.b13-v2-s16-sales3:has(.sv-element.sv-light) .sv-element-lines p{color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3:has(.sv-U047.sv-light) .sv-element-lines{width:42cqw}
+
+/* U003 offer: three benefits at left, audience at right. */
+.b129.b13-v2-s16-sales3 .sv-offer-copy{top:21cqh;display:grid;grid-template-columns:1.35fr 1fr;gap:5cqw;align-items:start}
+.b129.b13-v2-s16-sales3 .sv-offer-points{list-style:none;margin:0;padding:0;display:grid;gap:1.2cqh}
+.b129.b13-v2-s16-sales3 .sv-offer-points li{position:relative;padding-left:2.2cqw;font:400 2.35cqw/1.35 Manrope,sans-serif;color:#f1ede4}
+.b129.b13-v2-s16-sales3 .sv-offer-points li:before{content:'';position:absolute;left:0;top:.8cqh;width:.65cqw;height:.65cqw;background:#fdd506;border-radius:50%}
+.b129.b13-v2-s16-sales3 .sv-offer-audience{border-left:1px solid #6b5b27;padding-left:3cqw}
+.b129.b13-v2-s16-sales3 .sv-offer-audience p{font:400 2.35cqw/1.42 Manrope,sans-serif;color:#c5beb0;margin:0}
+.b129.b13-v2-s16-sales3:has(.sv-desk-intro) .sv-offer-video{top:41cqh;height:43cqh}
+/* 22.09 Мирослав: U003 intro — заголовок меньше, без 01/02, аудитория справа сверху, видео выше и больше */
+.b129.b13-v2-s16-sales3:has(.sv-desk-intro) .b13-head h1{font-size:5.3cqw}
+.b129.b13-v2-s16-sales3:has(.sv-desk-intro) .sv-substage{display:none}
+.b129.b13-v2-s16-sales3:has(.sv-desk-intro) .sv-offer-copy{display:block;top:0;left:0;right:0}
+.b129.b13-v2-s16-sales3:has(.sv-desk-intro) .sv-offer-points{display:none}
+.b129.b13-v2-s16-sales3:has(.sv-desk-intro) .sv-offer-audience{position:absolute;top:6cqh;right:7cqw;width:38cqw;z-index:5;border-left:1px solid #6b5b27;padding-left:3cqw}
+.b129.b13-v2-s16-sales3:has(.sv-desk-intro) .sv-offer-audience p{font:400 2.3cqw/1.42 Manrope,sans-serif;color:#c5beb0;margin:0}
+.b129.b13-v2-s16-sales3:has(.sv-desk-intro) .sv-offer-video{top:22cqh;height:62cqh}
+
+/* 22.09 · 250 (U031 «Полная система»): світлий кадр на весь слайд як фон */
+.b129.b13-v2-s16-sales3:has(.sv-U031) .sv-object{position:absolute;inset:0;left:0;top:0;width:100%;height:100%;z-index:0;background:transparent;overflow:hidden}
+.b129.b13-v2-s16-sales3:has(.sv-U031) .sv-object img{position:absolute;left:0;top:0;width:100%;height:100%;max-width:none;object-fit:cover;mix-blend-mode:normal}
+.b129.b13-v2-s16-sales3:has(.sv-U031) .sv-object:after{content:"";position:absolute;inset:0;background:linear-gradient(103deg,#f0ece3 0%,#f0ece3f2 30%,#f0ece3b8 48%,#f0ece300 72%)}
+/* 22.09 Мирослав: U053 три набора — баннер сверху (Влад + агенты) и цвет тира, как на lp.kovcheg.ai/ticket-to-kovcheg */
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-packages{top:22cqh;bottom:19cqh;gap:1.8cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-packages article{--tier:#c47a2c;--tier-soft:#c47a2c2e;padding:0 0 2cqw;overflow:hidden;border-radius:1.8cqw;border:1px solid var(--tier-soft);background:linear-gradient(180deg,#1b1610,#110e0a);box-shadow:none;display:flex;flex-direction:column}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-packages article.p1{--tier:#d9dde3;--tier-soft:#d9dde32e}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-packages article.p2{--tier:#fdd506;--tier-soft:#fdd50666;border-color:var(--tier-soft);box-shadow:0 0 6cqw #fdd50618}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-banner{height:17cqh;overflow:hidden;position:relative;flex:none}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-banner img{width:100%;height:100%;object-fit:cover;display:block}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-banner:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#110e0a 100%)}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-top,.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-value,.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-metric{margin-left:2cqw;margin-right:2cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-top{margin-top:1.4cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-top small{display:none}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-top h3{font-size:2.7cqw;margin-bottom:.6cqh;color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-value{font-size:3.2cqw;margin:0 2cqw 2cqh;color:var(--tier)}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-metric{padding:1.35cqh 0;border-top:1px solid #ffffff14;font-size:1.75cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-metric b{color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3:has(.sv-U053) .sv-pack-metric:first-of-type{border-top-color:var(--tier-soft)}
+
+/* 22.09 Мирослав: 285 «Реальная цена» і 286 «Цена для тех, кто сегодня в эфире» у каркасі 276 (sv-tiers = копія правил U053) + блок цін */
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-packages{top:22cqh;bottom:19cqh;gap:1.8cqw}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-packages article{--tier:#c47a2c;--tier-soft:#c47a2c2e;padding:0 0 2cqw;overflow:hidden;border-radius:1.8cqw;border:1px solid var(--tier-soft);background:linear-gradient(180deg,#1b1610,#110e0a);box-shadow:none;display:flex;flex-direction:column}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-packages article.p1{--tier:#d9dde3;--tier-soft:#d9dde32e}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-packages article.p2{--tier:#fdd506;--tier-soft:#fdd50666;border-color:var(--tier-soft);box-shadow:0 0 6cqw #fdd50618}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-banner{height:17cqh;overflow:hidden;position:relative;flex:none}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-banner img{width:100%;height:100%;object-fit:cover;display:block}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-banner:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#110e0a 100%)}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-top,.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-value,.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-metric{margin-left:2cqw;margin-right:2cqw}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-top{margin-top:1.4cqh}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-top small{display:none}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-top h3{font-size:2.7cqw;margin-bottom:.6cqh;color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-value{font-size:3.2cqw;margin:0 2cqw 2cqh;color:var(--tier)}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-metric{padding:1.35cqh 0;border-top:1px solid #ffffff14;font-size:1.75cqw}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-metric b{color:var(--sv-fg)}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-metric:first-of-type{border-top-color:var(--tier-soft)}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-prices{margin:0 2cqw 2cqh;display:flex;flex-direction:column;gap:.3cqh}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-prices s{font:500 2cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em;color:var(--sv-soft);opacity:.55;text-decoration:line-through}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-prices b{font:500 4.2cqw/1.1 Unbounded,sans-serif;letter-spacing:-.04em;color:var(--tier);margin-top:.6cqh}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-metric{display:block;font-size:1.75cqw}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-metric span{display:block;color:var(--sv-soft);margin-bottom:.4cqh}
+.b129.b13-v2-s16-sales3:has(.sv-tiers) .sv-pack-metric b{display:block;max-width:none;text-align:left;font-size:1.9cqw;line-height:1.3}
+.b129.b13-v2-s16-sales3:has(.sv-P285) .sv-packages{bottom:19cqh}
+.b129.b13-v2-s16-sales3:has(.sv-P286) .sv-packages{bottom:9cqh}
+/* 22.09 · «46 готовых задач»: живой сайт вместо скрина */
+.sv-media.sv-media-live{position:relative;overflow:hidden;background:#0b0907}
+.sv-media.sv-media-live iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+/* 22.09 · «Шаблоны договоров»: скрин реального договора вместо стоковой сцены */
+.b129.b13-v2-s16-sales3 .sv-object.sv-doc{overflow:visible}
+.b129.b13-v2-s16-sales3 .sv-object.sv-doc img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:top;mix-blend-mode:normal;border-radius:1cqw;box-shadow:0 1.6cqw 4cqw rgba(60,45,20,.28)}
+/* 22.09 Мирослав: 237 — концепция.png на весь слайд; 254 — фото базы кейсов вместо трёх постеров */
+.b129.b13-v2-s16-sales3:has(.sv-fullimg) .b13-head,.b129.b13-v2-s16-sales3:has(.sv-fullimg) .sv-substage{display:none}
+.b129.b13-v2-s16-sales3 .sv-fullimg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:5}
+.b129.b13-v2-s16-sales3 .sv-proof-photo{height:100%;display:flex;align-items:center;justify-content:center}
+.b129.b13-v2-s16-sales3 .sv-proof-photo img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block}
+.b129.b13-v2-s16-sales3 .sv-fullimg-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:0;z-index:5;background:#0b0907}
+/* 22.09 · «Связки топовых локаций»: список строк, первая открыта, остальные под замком */
+.b129.b13-v2-s16-sales3 .sv-places.sv-places-list{display:flex;flex-direction:column;gap:1.1cqh;top:33cqh;bottom:21cqh;left:10cqw;right:10cqw}
+.b129.b13-v2-s16-sales3 .sv-places-list>div{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:0 1.6cqw;padding:0 2.4cqw;height:100%;min-height:0;border:1px solid #d9d2c3;border-radius:1cqw;background:#fbf8f1;box-shadow:0 .4cqh 1.6cqh rgba(60,45,20,.06)}
+.b129.b13-v2-s16-sales3 .sv-places-list>div.open{background:#fdf1b3;border-color:#e9cf3a;box-shadow:0 .6cqh 2cqh rgba(233,207,58,.35)}
+.b129.b13-v2-s16-sales3 .sv-places-list i{font-style:normal;font-size:2.4cqw;line-height:1}
+.b129.b13-v2-s16-sales3 .sv-places-list b{font:600 2.55cqw/1.2 Unbounded,sans-serif;margin:0}
+.b129.b13-v2-s16-sales3 .sv-places-list span{font:500 2cqw/1.3 Manrope,sans-serif;margin:0;color:#6a6152;text-align:right}
+.b129.b13-v2-s16-sales3 .sv-places-list>div.open span{color:#7a5d00}
+.b129.b13-v2-s16-sales3 .sv-places-list>div:not(.open) span{filter:blur(.45cqw);opacity:.55;user-select:none}
+.b129.b13-v2-s16-sales3 .sv-places-list em{font-style:normal;font-size:1.9cqw;line-height:1;opacity:.7}
+/* gold-onecol-2209 · Мирослав: Gold в одну колонку как в ТЗ; U052 чипы новых агентов жёлтые */
+.b129.b13-v2-s16-sales3:has(.sv-U049) .sv-ledger{grid-template-columns:1fr;gap:0;top:17.5cqh;bottom:17cqh;align-content:start;overflow:hidden}
+.b129.b13-v2-s16-sales3:has(.sv-U049) .sv-ledger-row{font-size:1.6cqw;line-height:1.2;padding:.45cqh 0;grid-template-columns:3cqw 1fr auto}
+.b129.b13-v2-s16-sales3:has(.sv-U049) .sv-ledger-row>b{color:#fdd506}
+.b129.b13-v2-s16-sales3:has(.sv-U049) .sv-ledger-sub{font-size:1.25cqw;line-height:1.2;padding-left:0}
+.b129.b13-v2-s16-sales3:has(.sv-U049) .sv-ledger-sub>div{padding:.1cqh 0}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-chip.new{color:#fdd506;font-weight:600;border-top-color:#fdd50666}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-chip{color:#c5beb0}
+/* 22.09 · рендеры целиком (без 225% зума): «Скрипты продаж», «Страт-сессии» */
+.b129.b13-v2-s16-sales3 .sv-object.sv-render{overflow:visible}
+.b129.b13-v2-s16-sales3 .sv-object.sv-render img,.b129.b13-v2-s16-sales3:has(.sv-U047) .sv-object.sv-render img{position:absolute;inset:0;left:0;top:0;width:100%;height:100%;max-width:none;object-fit:contain;mix-blend-mode:normal;border-radius:1.2cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U047) .sv-object.sv-render img{object-fit:cover}
+/* 22.09 · список локаций поверх полиша U045 */
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places.sv-places-list{display:flex;flex-direction:column;gap:1.1cqh;top:33cqh;bottom:21.5cqh;left:10cqw;right:10cqw}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places.sv-places-list>div,.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places.sv-places-list>div:last-child{display:grid;grid-template-columns:auto 1fr auto auto;flex-direction:row;align-items:center;gap:0 1.6cqw;padding:0 2.4cqw;flex:1;min-height:0;border:1px solid #d9d2c3;border-radius:1cqw;background:#fbf8f1}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places.sv-places-list>div::before{content:none}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places.sv-places-list>div.open{background:#fdf1b3;border-color:#e9cf3a}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places.sv-places-list>div.win:not(.open){background:#fbf8f1;border-color:#d9d2c3}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places.sv-places-list b{font:600 2.55cqw/1.2 Unbounded,sans-serif;margin:0;display:block}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places.sv-places-list span{font:500 2cqw/1.3 Manrope,sans-serif;margin:0;color:#6a6152;text-align:right;display:block}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places.sv-places-list>div.open span{color:#7a5d00}
+/* 22.09 Мирослав: 252 фото скиллов + кнопка на сайт; 257 blurcontract; 266 выравнивание карточек и радиусы */
+.b129.b13-v2-s16-sales3 .sv-proof-skills{background:#0b0907}
+.b129.b13-v2-s16-sales3 .sv-proof-skills img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.b129.b13-v2-s16-sales3 .sv-site-btn{position:absolute;right:2cqw;bottom:2cqh;z-index:4;display:inline-flex;align-items:center;background:#fdd506;color:#0b0907;font:600 1.9cqw/1 Manrope,sans-serif;padding:1.4cqh 2.2cqw;border-radius:999px;text-decoration:none;box-shadow:0 1cqh 3cqw rgba(0,0,0,.45)}
+.b129.b13-v2-s16-sales3:has(.sv-U038) .sv-object.sv-doc img{object-fit:cover;object-position:center top}
+.b129.b13-v2-s16-sales3:has(.sv-U047.sv-light) .sv-element-lines{top:29cqh;height:48cqh;width:42cqw;display:flex;flex-direction:column;gap:1.6cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U047.sv-light) .sv-element-lines p{flex:1;display:flex;align-items:center;margin:0;border-radius:1.6cqw;padding:1.5cqh 2.2cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U047.sv-light) .sv-object{left:52cqw;width:41cqw;top:29cqh;height:48cqh;overflow:hidden;border-radius:1.6cqw;mask-image:none}
+.b129.b13-v2-s16-sales3:has(.sv-U047.sv-light) .sv-object.sv-render img{border-radius:0;object-fit:cover}
+.b129.b13-v2-s16-sales3:has(.sv-U033) .sv-description{left:7cqw;right:7cqw;width:auto;max-width:none;top:23cqh;text-align:center}
+.b129.b13-v2-s16-sales3:has(.sv-U033) .sv-proof{left:7cqw;right:7cqw;width:auto;top:35cqh;bottom:20cqh;height:auto;border-radius:1.6cqw}
+/* 22.09 · «Чем наборы отличаются» (U052): фото тарифов в карточках, как на U053 */
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-packages article{padding:0 0 2cqw;overflow:hidden;display:flex;flex-direction:column}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-banner{height:15cqh;overflow:hidden;position:relative;flex:none;margin-bottom:1.6cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-banner img{width:100%;height:100%;object-fit:cover;display:block}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-banner:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#15130d 100%)}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-packages article.p2 .sv-pack-banner:after{background:linear-gradient(180deg,transparent 55%,#3b3218 100%)}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-top,.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-count,.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-chip{margin-left:2cqw;margin-right:2cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-banner{height:11.5cqh;margin-bottom:1.2cqh}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-chip{padding:.42cqh 0;font-size:1.55cqw}
+.b129.b13-v2-s16-sales3:has(.sv-U052) .sv-pack-count{margin-bottom:.4cqh}
+/* 22.09 Мирослав: 255 — фото барига вместо рендера, с радиусом */
+.b129.b13-v2-s16-sales3:has(.sv-U036) .sv-proof.sv-bariga{position:absolute;left:7cqw;right:7cqw;top:34cqh;bottom:21.5cqh;border-radius:2cqw;overflow:hidden;background:#0b0907}
+.b129.b13-v2-s16-sales3:has(.sv-U036) .sv-proof.sv-bariga img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}

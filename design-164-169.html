@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>164–169 · розкадровка й макети</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--panel:#15110d}
+*{box-sizing:border-box}
+body{margin:0;background:#141210;color:var(--cream);font:400 14px/1.45 Manrope,sans-serif;padding:28px 32px 80px}
+h1{font:500 22px/1.2 Unbounded,sans-serif;margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 26px;max-width:1000px}
+.row{max-width:1400px;margin:0 auto 46px}
+.row>h2{font:500 16px/1.3 Unbounded,sans-serif;margin:0 0 12px}
+.row>h2 small{font:400 12px Manrope,sans-serif;color:var(--dim);margin-left:12px}
+.two{display:grid;grid-template-columns:560px 1fr;gap:28px;align-items:start}
+.sq{position:relative;aspect-ratio:1;container-type:size;overflow:hidden;background:var(--bg);border:1px solid #5a4a10}
+.sq .k{position:absolute;top:5cqh;left:7cqw;right:7cqw;font:500 2.4cqw/1 Manrope,sans-serif;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}
+.sq h3{margin:0;font:500 4.4cqw/1.22 Unbounded,sans-serif;letter-spacing:-.03em}
+.sq h3 em{font-style:normal;color:var(--yellow)}
+.sq p{margin:0;font:400 2.8cqw/1.42 Manrope,sans-serif;color:var(--muted)}
+.sq p.c{color:var(--cream);font-weight:500}
+.sq .t{position:absolute;left:7cqw;right:7cqw}
+.sq .top{top:11cqh}.sq .bot{bottom:6cqh}
+.note{color:var(--muted);line-height:1.5}
+.note h4{margin:0 0 8px;font:600 14px Manrope,sans-serif;color:var(--cream)}
+.note ol,.note ul{margin:0 0 14px;padding-left:20px}
+.note li{margin:4px 0}
+.note code{background:#0b0907;border:1px solid var(--rule);padding:1px 6px;border-radius:4px;font:12px 'JetBrains Mono',monospace;color:#e0b64a}
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:10px 0 16px}
+.board figure{margin:0;background:var(--panel);border:1px solid var(--rule)}
+.board img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;filter:brightness(.9)}
+.board figcaption{padding:8px 10px;font-size:12px}
+.board figcaption b{display:block;color:var(--yellow);font-weight:600}
+.prompt{background:#0b0907;border:1px solid var(--rule);padding:12px 14px;font:12px/1.5 'JetBrains Mono',monospace;color:#cfc6b2;white-space:pre-wrap;margin:0 0 14px}
+.cost{display:inline-block;background:var(--yellow);color:var(--bg);font-weight:700;padding:3px 9px;border-radius:4px}
+/* 164 mock */
+.m164 .vid{position:absolute;left:7cqw;right:7cqw;top:23cqh;height:38cqh;background:#000;border:1px solid #3a3129;overflow:hidden}
+.m164 .vid img{width:100%;height:100%;object-fit:cover;opacity:.85}
+.m164 .vid .tc{position:absolute;right:1.5cqw;bottom:1.2cqh;font:600 2cqw 'JetBrains Mono',monospace;color:var(--yellow);background:#0b0907cc;padding:.4cqh 1cqw}
+.m164 .st{position:absolute;left:7cqw;right:7cqw;top:64cqh;display:grid;grid-template-columns:repeat(4,1fr);gap:1.4cqw}
+.m164 .st div{background:var(--panel);border:1px solid var(--rule);padding:1.2cqh 1.4cqw;opacity:.45}
+.m164 .st div.on{opacity:1;border-color:var(--yellow)}
+.m164 .st img{width:100%;aspect-ratio:1;object-fit:cover;display:block;margin-bottom:1cqh}
+.m164 .st b{display:block;font:500 2.4cqw Unbounded,sans-serif;color:var(--cream)}
+.m164 .st small{font:400 1.9cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+/* 165 */
+.m165 .layers{position:absolute;left:7cqw;top:26cqh;width:50cqw;display:flex;flex-direction:column;gap:1cqh}
+.m165 .layers div{background:var(--panel);border:1px solid #3a3129;padding:1.3cqh 2cqw;display:grid;grid-template-columns:5cqw 1fr;gap:1.4cqw;align-items:baseline;opacity:.9}
+.m165 .layers b{font:500 2.4cqw Unbounded,sans-serif;color:var(--yellow)}
+.m165 .layers span{font:600 2.6cqw Manrope,sans-serif;color:var(--cream);display:block}
+.m165 .layers small{font:400 2cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+.m165 .img{position:absolute;right:0;top:14cqh;width:46cqw;height:70cqh}
+.m165 .img img{width:100%;height:100%;object-fit:cover;object-position:center}
+/* 166 */
+.m166 .mx{position:absolute;left:6cqw;right:6cqw;top:24cqh;display:grid;grid-template-columns:repeat(4,1fr);gap:1.4cqw}
+.m166 .mx div{border:1px solid var(--rule);padding:1cqh 1cqw;background:var(--panel)}
+.m166 .mx img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.m166 .mx b{display:block;font:500 2.4cqw Unbounded,sans-serif;margin:1cqh 0;color:var(--cream)}
+.m166 .mx i{display:block;height:2cqh;background:#2a2420;margin-bottom:.6cqh;border-left:.6cqw solid var(--yellow);font:500 1.5cqw/2cqh Manrope,sans-serif;color:var(--dim);padding-left:.8cqw;font-style:normal}
+/* 167 */
+.m167 img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shade-top{position:absolute;left:0;right:0;top:0;height:55%;background:linear-gradient(180deg,#0b0907 0%,#0b0907d9 40%,transparent 100%)}
+.shade-bot{position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(0deg,#0b0907 0%,#0b0907cc 45%,transparent 100%)}
+/* 168 */
+.m168 .items{position:absolute;left:7cqw;right:7cqw;top:30cqh;display:grid;grid-template-columns:repeat(3,1fr);gap:1.4cqw}
+.m168 .items div{background:var(--panel);border:1px solid var(--rule);padding:1cqh;text-align:center;opacity:.5}
+.m168 .items div.on{opacity:1;border-color:var(--yellow)}
+.m168 .items img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.m168 .items b{display:block;font:500 2.2cqw Unbounded,sans-serif;margin-top:.8cqh;color:var(--cream)}
+.m168 .items small{font:400 1.8cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+.price{display:inline-block;border:1px solid var(--yellow);color:var(--yellow);font:600 2.4cqw Manrope,sans-serif;padding:.8cqh 2cqw}
+/* 169 */
+.m169 .list{position:absolute;left:7cqw;right:7cqw;top:24cqh;display:grid;grid-template-columns:1fr 1fr;gap:1.2cqh 1.6cqw}
+.m169 .list div{background:var(--panel);border:1px solid var(--rule);padding:1.2cqh 1.6cqw;display:flex;gap:1.6cqw;align-items:center;font:500 2.3cqw/1.25 Manrope,sans-serif;color:var(--cream)}
+.m169 .list svg{width:5cqw;height:5cqw;flex:none;stroke:var(--yellow);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+</style></head><body>
+<h1>164–169 · відео-розкадровка, візуалізації, іконки</h1>
+<p class="sub">Усі картинки нижче вже згенеровані (GPT Image 2.5, у стилі «темний метал + латунь + жовтий»). Відео для 164 — ще не генерувалось: спочатку розкадровка й вартість.</p>
+
+<!-- 164 -->
+<section class="row"><h2>164 · Конвейер — відео + синхронне підсвічування етапів <small>g409d4d20be6_0_314</small></h2>
+<div class="two">
+<div class="sq m164"><span class="k">Конвейер</span><div class="t top"><h3>Разбить на этапы. На каждый — свой <em>мастер</em></h3></div>
+<div class="vid"><img src="assets/gen-164-213/st-mix.webp" alt=""><span class="tc">00:04 / 00:12</span></div>
+<div class="st"><div><img src="assets/gen-164-213/st-recipe.webp" alt=""><b>Рецепт</b><small>изучает нишу и соседей</small></div><div class="on"><img src="assets/gen-164-213/st-mix.webp" alt=""><b>Замес</b><small>строит структуру, которая продаёт</small></div><div><img src="assets/gen-164-213/st-assemble.webp" alt=""><b>Сборка</b><small>пишет тексты, ставит блоки</small></div><div><img src="assets/gen-164-213/st-decorate.webp" alt=""><b>Украшение</b><small>доводит до готовой ссылки</small></div></div>
+<div class="t bot"><p class="c" style="font-size:2.5cqw">Никто не печёт весь торт. Каждый делает свой этап и передаёт дальше</p></div></div>
+<div class="note">
+<h4>Як працює слайд</h4>
+<ul><li>Відео 16:9 у верхній частині, 12 секунд, без звуку, автоплей при вході на слайд.</li><li>Під ним 4 картки етапів. JS слухає <code>timeupdate</code>: секунди 0–3 → «Рецепт», 3–6 → «Замес», 6–9 → «Сборка», 9–12 → «Украшение». Активна картка спалахує жовтою рамкою, решта притемнена.</li><li>Клік по картці перемотує відео на її секунду (Влад може повернутися до будь-якого етапу). Стрілка → після 12 с іде на наступний слайд.</li><li>Мініатюри карток — уже згенеровані 3D-іконки етапів (ті самі, що в 166).</li></ul>
+<h4>Розкадровка (Seedance 2.5, один безперервний план, камера їде вздовж стійки зліва направо)</h4>
+<div class="board">
+<figure><img src="assets/gen-164-213/st-recipe.webp" alt=""><figcaption><b>0–3 с · Рецепт</b>Розгорнутий блокнот із рецептом, поруч мед і мука. Рука перегортає сторінку.</figcaption></figure>
+<figure><img src="assets/gen-164-213/st-mix.webp" alt=""><figcaption><b>3–6 с · Замес</b>Сталева миска, дерев'яна ложка складає тісто, легкий пил муки.</figcaption></figure>
+<figure><img src="assets/gen-164-213/st-assemble.webp" alt=""><figcaption><b>6–9 с · Сборка</b>Коржі лягають один на один, крем між ними, верхній ще у повітрі.</figcaption></figure>
+<figure><img src="assets/gen-164-213/st-decorate.webp" alt=""><figcaption><b>9–12 с · Украшение</b>Кондитерський мішок, крихта, мед стікає — готовий медовик під теплим світлом.</figcaption></figure>
+</div>
+<div class="prompt">Continuous 12-second cinematic shot, dark warm bakery counter, camera slowly dollies from left to right along four workstations, no cuts. Station 1 (0–3s): an open recipe notebook, a hand turns a page, honey jar and flour bowl beside it. Station 2 (3–6s): a steel bowl, a wooden spoon folds dough, a little flour dust in the air. Station 3 (6–9s): thin round cake layers are stacked with cream, the top layer settles into place. Station 4 (9–12s): a piping bag decorates a finished layered honey cake, crumbs and a honey drizzle, warm spotlight. Photoreal, shallow depth of field, matte dark surfaces, single warm key light, subtle yellow rim glow, no people’s faces (hands only), no text, no logos.</div>
+<p>Параметри: <code>seedance_2_5 · t2v · 12s · 16:9 · 1080p</code> — <span class="cost">108 кредитів</span> (720p — 78). Можна дати 4 ключові кадри як референси (<code>omni_reference</code>) — тоді відео точніше збігатиметься з іконками карток. Після твого «ок» генерую; якщо перша спроба поламає таймінги етапів — друга спроба ще стільки ж.</p>
+</div></div></section>
+
+<!-- 165 -->
+<section class="row"><h2>165 · Мастера не нанимают. Его собирают <small>g409d4d20be6_0_318</small></h2>
+<div class="two">
+<div class="sq m165"><span class="k">Что внутри одного мастера</span><div class="t top" style="right:48cqw"><h3>Мастера не нанимают.<br>Его <em>собирают</em></h3></div>
+<div class="img"><img src="assets/gen-164-213/s165-layers.webp" alt=""></div>
+<div class="layers"><div><b>01</b><div><span>Инструкция</span><small>что делает, шаг за шагом</small></div></div><div><b>02</b><div><span>Как можно</span><small>примеры работ, на которые равняется</small></div></div><div><b>03</b><div><span>Как нельзя</span><small>ошибки, которые он уже совершил</small></div></div><div><b>04</b><div><span>Проверка</span><small>по чему понимает, что этап готов</small></div></div><div><b>05</b><div><span>Передача</span><small>что и кому отдаёт дальше</small></div></div></div>
+<div class="t bot" style="right:48cqw"><p class="c" style="font-size:2.5cqw">Уберите эти слои — и останется обычный чат</p></div></div>
+<div class="note"><h4>Ідея</h4><ul><li>Праворуч — 3D «розібраний» стос із п'яти пластин: буквально «мастера собирают». Верхня пластина світиться жовтим.</li><li>Ліворуч — п'ять шарів списком; на вході кожен шар з'являється знизу вгору синхронно з пластиною (0.15 с крок). При кліку по «Уберите эти слои» пластини розлітаються і гаснуть — залишається один тьмяний контур чату. Це один клік, не приховані підетапи.</li><li>Текст — повний, як у джерелі.</li></ul></div>
+</div></section>
+
+<!-- 166 -->
+<section class="row"><h2>166 · А это был всего один мастер — варіант А з картинками <small>g409d4d20be6_0_322</small></h2>
+<div class="two">
+<div class="sq m166"><div class="t top" style="top:8cqh"><h3>А это был всего <em>один</em> мастер</h3></div>
+<div class="mx"><div><img src="assets/gen-164-213/st-recipe.webp" alt=""><b>Рецепт</b><i>инструкция</i><i>как можно</i><i>как нельзя</i><i>проверка</i><i>передача</i></div><div><img src="assets/gen-164-213/st-mix.webp" alt=""><b>Замес</b><i>инструкция</i><i>как можно</i><i>как нельзя</i><i>проверка</i><i>передача</i></div><div><img src="assets/gen-164-213/st-assemble.webp" alt=""><b>Сборка</b><i>инструкция</i><i>как можно</i><i>как нельзя</i><i>проверка</i><i>передача</i></div><div><img src="assets/gen-164-213/st-decorate.webp" alt=""><b>Украшение</b><i>инструкция</i><i>как можно</i><i>как нельзя</i><i>проверка</i><i>передача</i></div></div>
+<div class="t bot" style="bottom:4cqh"><p style="font-size:2.3cqw">Пять слоёв × четыре этапа — и это только один торт</p><p class="c" style="font-size:2.4cqw;margin-top:.8cqh">Внутри каждого агента — часы работы и обучения на каждый этап</p></div></div>
+<div class="note"><h4>Ідея</h4><ul><li>Чотири колонки = чотири етапи з 164, кожна з власною 3D-іконкою зверху. Під іконкою 5 шарів із 165 — підписані, тому матриця читається без пояснень.</li><li>Анімація: шари підсвічуються хвилею зліва направо (20 спалахів за 2 с), потім з'являється підсумок «5 × 4».</li><li>Ті самі іконки, що в 164 → глядач упізнає етапи.</li></ul></div>
+</div></section>
+
+<!-- 167 -->
+<section class="row"><h2>167 · Сотни часов и куча денег — А + Влад <small>g3f9b3adf0b8_0_2950</small></h2>
+<div class="two">
+<div class="sq m167"><img class="bg" src="assets/gen-164-213/s167-vlad.webp" alt=""><div class="shade-top" style="height:60%"></div><div class="shade-bot"></div><span class="k">Сколько это стоило</span><div class="t top" style="top:12cqh"><h3 style="font-size:5cqw">Сотни часов и куча денег.<br><em>Мои, не ваши</em></h3></div>
+<div class="t bot"><p style="font-size:2.5cqw">Один такой агент — это больше ста часов моей работы: пишешь, ломаешь, смотришь, где он ошибся, переписываешь. И так по каждому.</p><p class="c" style="font-size:2.7cqw;margin-top:1cqh">Вам его собирать не надо. Он уже собран</p></div></div>
+<div class="note"><h4>Ідея</h4><ul><li>Влад (за референсом vlad-avatar.jpg) вночі за столом серед ноутбуків, роздруківок і стікерів. Заголовок зверху, абзац і висновок внизу.</li><li>Якщо схожість не влаштує — перегенерую з іншим ракурсом або з двома референсами.</li></ul></div>
+</div></section>
+
+<!-- 168 -->
+<section class="row"><h2>168 · AI-сайты — 6 предметів, крок за кроком <small>g3f9b3adf0b8_0_2876</small></h2>
+<div class="two">
+<div class="sq m168"><span class="k">Услуга 1 из 8</span><div class="t top" style="top:10cqh"><h3 style="font-size:4.6cqw">AI-сайты, которые <em>приводят клиентов</em></h3></div>
+<div class="items"><div class="on"><img src="assets/gen-164-213/s168-site.webp" alt=""><b>Сайт</b><small>который продаёт</small></div><div><img src="assets/gen-164-213/s168-landing.webp" alt=""><b>Лендинг</b><small>который продаёт</small></div><div><img src="assets/gen-164-213/s168-quiz.webp" alt=""><b>Квиз</b><small>сам квалифицирует заявку</small></div><div><img src="assets/gen-164-213/s168-forms.webp" alt=""><b>Формы</b><small>вечер вместо недель</small></div><div><img src="assets/gen-164-213/s168-analytics.webp" alt=""><b>Аналитика</b><small>вечер вместо недель</small></div><div><img src="assets/gen-164-213/s168-domain.webp" alt=""><b>Домен</b><small>вечер вместо недель</small></div></div>
+<div class="t bot" style="bottom:4cqh"><span class="price">$250–$1.200 · за пакет · сложность лёгкая</span><p style="font-size:2cqw;margin-top:1cqh;color:var(--dim)">call-summary-landing.vercel.app — собран агентом за вечер</p></div></div>
+<div class="note"><h4>Ідея</h4><ul><li>Шість 3D-предметів: сайт, лендинг, квиз, формы, аналитика, домен. Усі видно одразу (притемнені), клік підсвічує наступний — 6 кроків, як просив. Підписи — слова джерела («сайт или лендинг, который продаёт», «квиз, который сам квалифицирует заявку», «формы, аналитика, домен — вечер вместо недель»).</li><li>Той самий макет-«картка послуги» потім для 189, 194, 205 — зі своїми предметами.</li><li>У Google тут були 2 картинки (див. інвентар) — перевір, чи одна з них не важливіша за іконки.</li></ul></div>
+</div></section>
+
+<!-- 169 -->
+<section class="row"><h2>169 · Что делает агент по сайтам — В з іконками <small>g409d4d20be6_0_13</small></h2>
+<div class="two">
+<div class="sq m169"><div class="t top" style="top:8cqh"><h3>Что делает агент <em>по сайтам</em></h3></div>
+<div class="list">
+<div><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>Изучает конкурентов</div>
+<div><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-4 3-6 6-6s6 2 6 6M15 15c3 0 6 1.5 6 5"/></svg>Изучает аудиторию, кому продавать</div>
+<div><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg>Создаёт маркетинговую стратегию</div>
+<div><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zm0 0a2 2 0 0 0 2 2h13"/></svg>Обучен на лучших методиках мира</div>
+<div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5h4a1.5 1.5 0 0 1 0 3h-3a1.5 1.5 0 0 0 0 3h4"/></svg>Создал сайты, на которые уже потрачено $100 000+ рекламы</div>
+<div><svg viewBox="0 0 24 24"><path d="M4 20h16M6 16l10-10 2 2L8 18H6z"/></svg>Пишет продающие тексты</div>
+<div><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h5"/><circle cx="16" cy="14" r="1"/></svg>Создаёт интерактивные опросники</div>
+<div><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 18v3M16 18v3"/></svg>База 100+ сайтов с готовым дизайном</div>
+<div><svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="10" rx="1.5"/><rect x="17" y="8" width="4" height="9" rx="1"/><path d="M6 19h7"/></svg>Адаптирует под мобильные и компьютер</div>
+<div><svg viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></svg>Размещает и публикует</div>
+</div></div>
+<div class="note"><h4>Ідея</h4><ul><li>Десять контейнерів у два стовпці, у кожному лінійна SVG-іконка жовтим + текст. Без генерації, іконки одного стилю (той самий stroke).</li><li>На вході контейнери з'являються каскадом 60 мс. Той самий макет потім на 190, 198, 206 («Что делает агент») — своїми іконками.</li></ul></div>
+</div></section>
+</body></html>

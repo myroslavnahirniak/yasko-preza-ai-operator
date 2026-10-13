@@ -1,0 +1,51 @@
+/* Google123: the operator and three agents. Decorative depth never crosses text or SVG. */
+.foundation.fd-ag-orbit .fd-shell{padding:6.8cqh 7cqw;gap:0;}
+.foundation.fd-ag-orbit .fd-header{position:relative;z-index:5;}
+.foundation.fd-ag-orbit .fd-header h1{font-size:4.45cqw;line-height:1.25;letter-spacing:-.045em;}
+.foundation.fd-ag-orbit .fd-content,.foundation.fd-ag-orbit .fd-body{position:static;}
+.foundation.fd-ag-orbit .oc-scene{position:absolute;inset:0;isolation:isolate;}
+.foundation.fd-ag-orbit .oc-wires{position:absolute;inset:0;width:100%;height:100%;z-index:0;overflow:visible;fill:none;stroke:#FDD506;pointer-events:none;}
+.foundation.fd-ag-orbit .oc-orbit{stroke-opacity:.25;stroke-width:1.3;}
+.foundation.fd-ag-orbit .oc-link{stroke-opacity:.3;stroke-width:1.8;stroke-linecap:round;transition:stroke-opacity .4s,stroke-width .4s;}
+.foundation.fd-ag-orbit .oc-scene[data-step="1"] .oc-link-1,.foundation.fd-ag-orbit .oc-scene[data-step="2"] .oc-link-2,.foundation.fd-ag-orbit .oc-scene[data-step="3"] .oc-link-3,.foundation.fd-ag-orbit .oc-scene.is-final .oc-link{stroke-opacity:.8;stroke-width:2.4;}
+.foundation.fd-ag-orbit .oc-card{position:absolute;width:40cqw;top:26cqh;z-index:3;overflow:visible;transform-style:flat;}
+.foundation.fd-ag-orbit .oc-card[data-step="1"]{left:7cqw;--oc-from-x:15cqw;--oc-from-y:12cqh;--oc-delay:.12s;}
+.foundation.fd-ag-orbit .oc-card[data-step="2"]{right:7cqw;--oc-from-x:-15cqw;--oc-from-y:12cqh;--oc-delay:.27s;}
+.foundation.fd-ag-orbit .oc-surface{position:relative;min-height:28.7cqh;padding:2.7cqh 2.8cqw 2.8cqh;border:1px solid #5A4C31;border-radius:1.6cqw;background:linear-gradient(145deg,#2B2519,#17140E 76%);box-shadow:0 .65cqh 0 #15110B,0 .8cqh 0 #5D4D2D,0 2.3cqh 3.8cqw #0007;overflow:visible;isolation:isolate;transform-style:flat;transition:border-color .45s,box-shadow .45s;}
+.foundation.fd-ag-orbit .oc-mark{position:relative;display:flex;align-items:center;justify-content:space-between;height:6.5cqh;margin-bottom:1.8cqh;}
+.foundation.fd-ag-orbit .oc-emblem{position:relative;display:grid;place-items:center;width:5.8cqw;height:5.8cqh;isolation:isolate;overflow:visible;transform-style:flat;}
+/* The tilted plate is flattened behind the icon. No preserve-3d on a shared icon plane. */
+.foundation.fd-ag-orbit .oc-emblem:before{content:'';position:absolute;inset:0;z-index:0;border:1px solid #9A8349;border-radius:1.25cqw;background:linear-gradient(135deg,#51452B,#211B10);transform:perspective(30cqw) rotateX(14deg) rotateY(-18deg);box-shadow:.35cqw .55cqh 0 #100D08,.4cqw .62cqh 0 #59482A;}
+.foundation.fd-ag-orbit .oc-emblem svg{position:relative;z-index:2;display:block;width:3.05cqw;height:3.05cqh;overflow:visible;fill:none;stroke:#FDD506;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;transform:none;}
+.foundation.fd-ag-orbit .oc-number{display:grid;place-items:center;width:4.7cqw;height:4.7cqh;border:1px solid #74602C;border-radius:50%;color:#FDD506;background:#1B170D;font:500 1.7cqw/1 Unbounded,sans-serif;transition:background .45s,color .45s,border-color .45s;}
+.foundation.fd-ag-orbit .oc-copy h3{margin:0 0 1cqh;font:600 3.05cqw/1.25 Manrope,sans-serif;letter-spacing:-.018em;color:#F5F3EE;text-wrap:initial;}
+.foundation.fd-ag-orbit .oc-copy p{margin:0;font:400 2.65cqw/1.42 Manrope,sans-serif;color:#D2CCC2;text-wrap:initial;}
+.foundation.fd-ag-orbit .oc-card[data-step="3"]{left:22cqw;top:67cqh;width:56cqw;--oc-from-x:0cqw;--oc-from-y:-9cqh;--oc-delay:.42s;}
+.foundation.fd-ag-orbit .oc-card[data-step="3"] .oc-surface{display:grid;grid-template-columns:8cqw minmax(0,1fr);gap:2.2cqw;align-items:center;min-height:13.2cqh;padding:1.8cqh 2.8cqw;}
+.foundation.fd-ag-orbit .oc-card[data-step="3"] .oc-mark{position:static;height:auto;display:grid;justify-content:start;gap:1cqh;margin:0;}
+.foundation.fd-ag-orbit .oc-card[data-step="3"] .oc-emblem{width:5.5cqw;height:5.5cqh;}
+.foundation.fd-ag-orbit .oc-card[data-step="3"] .oc-number{position:absolute;right:2.3cqw;top:1.8cqh;width:4cqw;height:4cqh;font-size:1.5cqw;z-index:4;}
+.foundation.fd-ag-orbit .oc-card[data-step="3"] .oc-copy h3{padding-right:4cqw;}
+.foundation.fd-ag-orbit .oc-card[data-step="3"] .oc-copy h3{font-size:3.05cqw;margin-bottom:.7cqh;}
+.foundation.fd-ag-orbit .oc-card[data-step="3"] .oc-copy p{font-size:2.65cqw;}
+.foundation.fd-ag-orbit .oc-hub{position:absolute;left:43cqw;top:57cqh;width:14cqw;height:8cqh;z-index:4;display:grid;place-items:center;border-radius:50%;border:1px solid #E8CA60;background:linear-gradient(150deg,#FFE992,#FDD506 62%,#B49107);box-shadow:0 .75cqh 0 #927414,0 .9cqh 0 #C8A52A,0 0 7cqw #FDD50616;color:#171207;font:500 3.05cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;}
+.foundation.fd-ag-orbit .oc-footer{position:absolute;left:7cqw;right:7cqw;top:85.7cqh;z-index:5;border-top:1px solid #655326;padding-top:2.1cqh;transition:border-color .4s;}
+.foundation.fd-ag-orbit .oc-footer span{display:block;color:#C6C1B9;font:400 2.25cqw/1.3 Manrope,sans-serif;margin-bottom:.8cqh;}
+.foundation.fd-ag-orbit .oc-footer strong{display:block;font:500 3.22cqw/1.32 Unbounded,sans-serif;letter-spacing:-.045em;color:#FDD506;white-space:nowrap;}
+.foundation.fd-ag-orbit .ag-stepper .oc-card,.foundation.fd-ag-orbit .ag-stepper .oc-footer{opacity:1;visibility:visible;filter:none;}
+.foundation.fd-ag-orbit .ag-stepper .oc-card.is-current{transform:translateY(-.65cqh);}
+.foundation.fd-ag-orbit .oc-card.is-current .oc-surface{border-color:#BDA046;box-shadow:0 .65cqh 0 #15110B,0 .8cqh 0 #A98C37,0 2.3cqh 3.8cqw #0007;}
+.foundation.fd-ag-orbit .oc-card.is-current .oc-number,.foundation.fd-ag-orbit .oc-scene.is-final .oc-number{background:#FDD506;color:#171207;border-color:#FDD506;}
+.foundation.fd-ag-orbit .oc-scene.is-final .oc-footer{border-color:#FDD506;}
+.foundation.fd-ag-orbit.on .oc-surface{animation:oc-unfold 1.35s cubic-bezier(.2,.75,.2,1) both;animation-delay:var(--oc-delay,0s);}
+.foundation.fd-ag-orbit.on .oc-hub{animation:oc-hub-in 1.1s .05s cubic-bezier(.2,.75,.2,1) both;}
+.foundation.fd-ag-orbit .oc-surface:has(.oc-select:focus-visible){outline:2px solid #FDD506;outline-offset:5px;}
+.foundation.fd-ag-orbit .oc-select{position:absolute;inset:0;z-index:6;border:0;background:none;color:inherit;cursor:pointer;border-radius:inherit;padding:0;}
+.foundation.fd-ag-orbit .oc-select:focus-visible{outline:none;}
+.foundation.fd-ag-orbit .oc-select::-moz-focus-inner{border:0;}
+@keyframes oc-unfold{from{opacity:.12;transform:perspective(110cqw) translate(var(--oc-from-x),var(--oc-from-y)) rotateX(18deg) rotateY(-14deg) scale(.65);}to{opacity:1;transform:perspective(110cqw) translate(0,0) rotateX(0deg) rotateY(0deg) scale(1);}}
+@keyframes oc-hub-in{from{opacity:.3;transform:translateY(6cqh) scale(.55);}to{opacity:1;transform:translateY(0) scale(1);}}
+@media(prefers-reduced-motion:reduce){.foundation.fd-ag-orbit *{animation:none!important;transition:none!important;}}
+/* 03.10 · кроки 01 → 02 → фінал: на фіналі загоряються всі три картки разом */
+.foundation.fd-ag-orbit .ag-stepper.is-final .oc-card{transform:translateY(-.65cqh);}
+.foundation.fd-ag-orbit .oc-scene.is-final .oc-card .oc-surface{border-color:#BDA046;box-shadow:0 .65cqh 0 #15110B,0 .8cqh 0 #A98C37,0 2.3cqh 3.8cqw #0007;}

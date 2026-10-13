@@ -1,0 +1,71 @@
+/* Two centered text groups; the instruction and privacy note enter together. */
+.slide.opening.op-participation-cue {
+  background: #0B0907;
+  color: #F5F3EE;
+  text-align: center;
+  --participation-ease: cubic-bezier(.2, .8, .24, 1);
+}
+.op-participation-cue .participation-copy {
+  position: absolute;
+  inset: 0;
+  padding: 8cqh 7cqw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8cqh;
+}
+.slide.opening.op-participation-cue h1.participation-heading {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  font: 500 5cqh/1.2 var(--font-heading, 'Unbounded', sans-serif);
+  letter-spacing: -.04em;
+  color: #F5F3EE;
+  opacity: 1;
+  animation: none;
+}
+.participation-heading > span { display: block; }
+.op-participation-cue .participation-instruction { width: 100%; }
+.slide.opening.op-participation-cue .participation-action {
+  max-width: none;
+  margin: 0;
+  font: 600 3.75cqh/1.35 var(--font-b, Manrope, sans-serif);
+  letter-spacing: -.025em;
+  color: #FDD506;
+  opacity: 1;
+  animation: none;
+}
+.slide.opening.op-participation-cue .participation-privacy {
+  max-width: 38ch;
+  margin: 1.6cqh auto 0;
+  font: 400 3cqh/1.45 var(--font-b, Manrope, sans-serif);
+  letter-spacing: -.015em;
+  text-wrap: balance;
+  color: #BEB9B0;
+  opacity: 1;
+  animation: none;
+}
+.slide.opening.op-participation-cue.on .participation-heading,
+.slide.opening.op-participation-cue.on .participation-instruction {
+  animation: participation-copy-in .62s var(--participation-ease) both;
+}
+.slide.opening.op-participation-cue.on .participation-heading { animation-delay: .08s; }
+.slide.opening.op-participation-cue.on .participation-instruction { animation-delay: .2s; }
+.slide.opening.op-participation-cue.on.op-return .participation-heading,
+.slide.opening.op-participation-cue.on.op-return .participation-instruction {
+  animation-duration: .18s;
+  animation-delay: 0s;
+}
+@keyframes participation-copy-in {
+  from { opacity: 0; transform: translateY(1.2cqh); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .slide.opening.op-participation-cue.on .participation-heading,
+  .slide.opening.op-participation-cue.on .participation-instruction {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+}

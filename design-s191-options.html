@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>191 · Продающие AI-видео · три варианта + видео</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.kick{display:block}
+.h1{font-size:5.2cqw;margin-top:1.2cqh}
+.claim{font:500 2.5cqw/1.3 Manrope,sans-serif;color:var(--cream)}
+.price{display:inline-block;border:1px solid var(--yellow);color:var(--yellow);font:600 2.2cqw/1 Manrope,sans-serif;padding:1.1cqh 2cqw;border-radius:100cqw;white-space:nowrap}
+.list{display:grid;gap:1cqh 1.6cqw}
+.list>div{background:rgba(21,17,13,.9);border:1px solid var(--rule);padding:1.2cqh 1.5cqw}
+.list b{display:block;font:500 2.2cqw/1.2 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--cream)}
+.list span{display:block;margin-top:.5cqh;font:400 1.85cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+/* плеєр: контейнер = пропорція відео, без чорних смуг */
+.player{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden;cursor:pointer;border:1px solid #3a3129;z-index:5;transition:none}
+.player video{display:block;width:100%;height:100%;object-fit:cover}
+.player .hint{position:absolute;right:1.4cqw;bottom:1.2cqh;font:500 1.5cqw/1 'JetBrains Mono',monospace;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.45);padding:.8cqh 1.2cqw;border:1px solid rgba(255,255,255,.25);pointer-events:none}
+/* клік → відео на весь слайд (16:9 по ширині, решта — фон слайда, не чорний контейнер) */
+.is-full .player{position:absolute!important;left:0!important;right:0!important;top:50%!important;bottom:auto!important;width:100cqw!important;height:56.25cqw!important;transform:translateY(-50%)!important;border:0;z-index:40;background:transparent}
+.is-full .player video{object-fit:contain}
+.is-full .player .hint{display:none}
+.is-full .txt,.is-full .fx-up,.is-full .list,.is-full .bottom{opacity:0!important;visibility:hidden}
+.is-full{background:var(--bg)}
+/* А · кино-кадр: видео сверху, текст снизу */
+.v-A .player{position:absolute;left:7cqw;right:7cqw;top:7cqh}
+.v-A .txt{position:absolute;left:7cqw;right:7cqw;top:57.5cqh;z-index:3}
+.v-A .h1{font-size:4.2cqw;margin-top:.6cqh}
+.v-A .claim{margin-top:.9cqh;font-size:2cqw;color:var(--muted)}
+.v-A .list{position:absolute;left:7cqw;right:7cqw;top:73cqh;grid-template-columns:repeat(4,1fr);gap:1cqw;z-index:3}
+.v-A .list>div{padding:1cqh 1.1cqw}
+.v-A .list b{font-size:1.65cqw}.v-A .list span{font-size:1.4cqw}
+.v-A .bottom{position:absolute;right:7cqw;bottom:4.5cqh;z-index:3}
+.v-A .price{font-size:1.75cqw;padding:.9cqh 1.6cqw}
+/* Б · видео на фоне */
+.v-B .player{position:absolute;inset:0;aspect-ratio:auto;border:0}
+.v-B .player:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,9,7,.94) 0%,rgba(11,9,7,.82) 48%,rgba(11,9,7,.25) 100%);pointer-events:none}
+.v-B.is-full .player:after{display:none}
+.v-B .player .hint{right:auto;left:auto;bottom:3.5cqh;right:7cqw}
+.v-B .txt{position:absolute;left:7cqw;top:7cqh;width:56cqw;z-index:6;pointer-events:none}
+.v-B .list{position:absolute;left:7cqw;top:29cqh;width:48cqw;grid-template-columns:1fr;z-index:6;pointer-events:none}
+.v-B .list>div{background:rgba(11,9,7,.55);border-color:rgba(255,255,255,.12)}
+.v-B .bottom{position:absolute;left:7cqw;right:7cqw;bottom:7cqh;z-index:6;display:flex;justify-content:space-between;align-items:center;gap:2cqw;pointer-events:none}
+.v-B .claim{font-size:2.2cqw;max-width:48cqw}
+/* В · сплит с 3D-наклоном */
+.v-C .txt{position:absolute;left:7cqw;top:7cqh;width:40cqw;z-index:3}
+.v-C .h1{font-size:4.6cqw}
+.v-C .list{position:absolute;left:7cqw;top:30cqh;width:40cqw;grid-template-columns:1fr;gap:.8cqh;z-index:3}
+.v-C .list>div{padding:1cqh 1.3cqw}.v-C .list b{font-size:1.9cqw}.v-C .list span{font-size:1.6cqw}
+.v-C .stage{position:absolute;left:51cqw;right:4cqw;top:22cqh;bottom:22cqh;perspective:120cqw;display:flex;align-items:center;z-index:3}
+.v-C .player{width:100%;transform:rotateY(-14deg);box-shadow:-2cqw 2cqh 6cqh rgba(0,0,0,.7),0 0 0 1px rgba(253,213,6,.25);transition:transform .5s ease}
+.v-C.is-full .stage{position:static;perspective:none}
+.v-C .bottom{position:absolute;left:7cqw;right:7cqw;bottom:7cqh;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:2cqw}
+.v-C .claim{font-size:2.1cqw;max-width:52cqw}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Кино-кадр: видео сверху, текст снизу</button><button role="tab" data-v="B">Б · Видео на фоне</button><button role="tab" data-v="C">В · Сплит с 3D-наклоном</button></div>
+<p class="description"></p>
+<p class="note">Видео IMG_7847 (57 с, 16:9, перекодировано в H.264 720p) играет само, без звука. Клик по видео — на весь слайд (16:9 по ширине, со звуком), клик ещё раз — назад. Контейнер плеера равен пропорции видео — без чёрных полос. Полный текст источника. Клавиши: ←/→ вариант.</p>
+<div class="actions"><button id="replay">↻ Повторить анимацию</button></div>
+</nav>
+<script>
+const V='assets/video/vlad-1409/img-7847-720.mp4', P='assets/video/vlad-1409/img-7847-720-poster.jpg';
+const ITEMS=[['Товары','ролик под карточку и под рекламу'],['Одежда','модель в кадре создана нейросетью'],['Услуги и клиники','показать, как всё проходит'],['Офлайн-объекты','показать помещение, которого ещё нет']];
+const LIST='<div class="list fx-up">'+ITEMS.map(i=>'<div><b>'+i[0]+'</b><span>'+i[1]+'</span></div>').join('')+'</div>';
+const PLAYER='<div class="player"><video src="'+V+'" poster="'+P+'" muted autoplay loop playsinline preload="metadata"></video><div class="hint">▶ на весь слайд</div></div>';
+const TXT='<div class="txt fx-up"><span class="kick">Услуга 3 из 7</span><h1 class="h1">Продающие <em>AI-видео</em></h1></div>';
+const CLAIM='В кадре не актёр. Никто не приезжал на площадку', PRICE='$300–$1.200 · за пакет 8–12 роликов · сложность лёгкая';
+function wire(s){const p=s.querySelector('.player'),v=p.querySelector('video');v.play().catch(()=>{});p.onclick=()=>{const full=s.classList.toggle('is-full');v.muted=!full;if(full){v.currentTime=0;}v.play().catch(()=>{});};}
+window.VARIANTS={
+A:{html:PLAYER+'<div class="txt fx-up"><span class="kick">Услуга 3 из 7</span><h1 class="h1">Продающие <em>AI-видео</em></h1><p class="claim">'+CLAIM+'</p></div><div class="bottom fx-up"><span class="price">'+PRICE+'</span></div>'+LIST,onRender:wire,
+   desc:'Кино-кадр: видео во всю ширину сверху, ниже заголовок, тезис «В кадре не актёр…», цена и четыре типа роликов в ряд. Клик по видео — на весь слайд со звуком.'},
+B:{html:PLAYER+TXT+LIST+'<div class="bottom"><p class="claim fx-up">'+CLAIM+'</p><span class="price fx-up">'+PRICE+'</span></div>',onRender:wire,
+   desc:'Видео играет на всём фоне слайда (затемнено слева под текст), текст и четыре типа роликов поверх. Клик — видео раскрывается на весь слайд без затемнения, со звуком. Самый кинематографичный. Рекомендация.'},
+C:{html:TXT+LIST+'<div class="stage">'+PLAYER+'</div><div class="bottom"><p class="claim fx-up">'+CLAIM+'</p><span class="price fx-up">'+PRICE+'</span></div>',onRender:wire,
+   desc:'Сплит: слева заголовок и список, справа видео-карточка с лёгким 3D-наклоном и жёлтой кромкой. Клик — карточка разворачивается на весь слайд.'}};
+window.ORDER=['B','A','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

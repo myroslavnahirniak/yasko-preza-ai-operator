@@ -1,0 +1,83 @@
+/* The slide owns the outer .reaction-media position and dimensions. */
+.reaction-media {
+  min-width: 0;
+  min-height: 0;
+  isolation: isolate;
+}
+.reaction-media .reaction-media__frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.2cqw;
+  background: #151310;
+  border: 1px solid #302C22;
+  box-sizing: border-box;
+}
+.reaction-media .reaction-media__frame:not(.reaction-media__frame--empty) {
+  border: 0;
+}
+.reaction-media .reaction-media__frame--contain:not(.reaction-media__frame--empty) {
+  background: transparent;
+  border-color: transparent;
+}
+.reaction-media .reaction-media__asset,
+.reaction-media .reaction-media__still {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: cover;
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+.reaction-media .reaction-media__frame--contain .reaction-media__asset,
+.reaction-media .reaction-media__frame--contain .reaction-media__still {
+  object-fit: contain;
+}
+.reaction-media .reaction-media__still {
+  display: none;
+}
+.reaction-media .reaction-media__empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(6px, .8cqw, 12px);
+  color: #827862;
+  user-select: none;
+}
+.reaction-media .reaction-media__icon {
+  display: block;
+  width: clamp(24px, 3.5cqw, 46px);
+  height: auto;
+  overflow: visible;
+  fill: none;
+  stroke: none;
+}
+.reaction-media .reaction-media__label {
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: clamp(10px, 1.4cqw, 16px);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: .16em;
+  color: #92866B;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reaction-media .reaction-media__frame--has-still .reaction-media__asset {
+    display: none;
+  }
+  .reaction-media .reaction-media__frame--has-still .reaction-media__still {
+    display: block;
+  }
+}

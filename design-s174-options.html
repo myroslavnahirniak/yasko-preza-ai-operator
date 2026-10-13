@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>174 · Посчитаем — 2D / 3D / 4D</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--panel:#15110d;--controls:150px}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding-bottom:var(--controls);background:#000;color:var(--cream);font:400 14px/1.4 Manrope,sans-serif}
+.slide{position:relative;width:min(100vw,calc(100dvh - var(--controls)));aspect-ratio:1;container-type:size;overflow:hidden;background:radial-gradient(ellipse at 50% 100%,rgba(253,213,6,.06),transparent 60%),var(--bg)}
+.slide h1,.slide p{margin:0}
+.k{position:absolute;left:0;right:0;top:6cqh;text-align:center;font:500 2.4cqw/1 Manrope,sans-serif;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}
+h1{position:absolute;left:7cqw;right:7cqw;top:10cqh;text-align:center;font:500 4.6cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em}
+h1 em{font-style:normal;color:var(--yellow)}
+.eq{position:absolute;left:7cqw;right:7cqw;bottom:9cqh;display:flex;align-items:baseline;justify-content:center;gap:2.4cqw;font:500 4cqw/1 Unbounded,sans-serif;color:var(--muted)}
+.eq b{font:500 4.6cqw/1 Unbounded,sans-serif;color:var(--cream)}
+.eq .sum{font:500 9cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:var(--yellow)}
+.eq small{font:400 2.2cqw Manrope,sans-serif;color:var(--dim);margin-left:.6cqw}
+.sub{position:absolute;left:0;right:0;bottom:4cqh;text-align:center;font:400 2.4cqw Manrope,sans-serif;color:var(--muted)}
+/* A · 2D */
+.vA .grid{position:absolute;left:12cqw;right:12cqw;top:28cqh;height:38cqh;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;gap:2cqh 3cqw}
+.vA .cl{position:relative;display:flex;align-items:center;justify-content:center;opacity:0;transform:scale(.6)}
+.vA .cl svg{width:12cqw;height:12cqw}
+.vA .cl .tag{position:absolute;bottom:-1.6cqh;font:600 2cqw/1 Manrope,sans-serif;color:var(--bg);background:var(--yellow);padding:.6cqh 1.2cqw;border-radius:1cqw;opacity:0;transform:translateY(-1cqh)}
+.vA.play .cl{animation:pop .5s cubic-bezier(.3,1.5,.5,1) forwards}
+.vA.play .cl .tag{animation:tagin .35s .3s forwards}
+/* B · 3D */
+.vB .stage{position:absolute;left:0;right:0;top:24cqh;height:46cqh;perspective:120cqw;perspective-origin:50% 30%}
+.vB .floor{position:absolute;left:50%;top:50%;width:70cqw;height:40cqh;transform:translate(-50%,-50%) rotateX(58deg) rotateZ(-38deg);transform-style:preserve-3d}
+.vB .tile{position:absolute;width:14cqw;height:14cqw;background:linear-gradient(135deg,#221c16,#120e0a);border:1px solid #4a3f33;transform-style:preserve-3d;opacity:0}
+.vB .tile:before{content:'';position:absolute;inset:14%;background:#0b0907;border:1px solid #3a3129}
+.vB .tile:after{content:'';position:absolute;left:24%;top:26%;width:40%;height:8%;background:var(--yellow)}
+.vB .tile i{position:absolute;left:24%;top:44%;width:52%;height:6%;background:#3a3129;box-shadow:0 1.6cqh 0 #3a3129,0 3.2cqh 0 #3a3129;font-style:normal}
+.vB .tile b{position:absolute;left:0;right:0;top:-2cqh;text-align:center;font:600 2.2cqw Manrope,sans-serif;color:var(--yellow);transform:translateZ(6cqw) rotateZ(38deg) rotateX(-58deg);opacity:0}
+.vB.play .tile{animation:rise .7s cubic-bezier(.2,.8,.2,1) forwards}
+.vB.play .tile b{animation:fade .4s .5s forwards}
+.vB .sum3d{position:absolute;left:0;right:0;top:32cqh;text-align:center;font:500 11cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:var(--yellow);transform:perspective(60cqw) rotateX(20deg) translateZ(4cqw);opacity:0;text-shadow:0 2cqh 4cqw rgba(253,213,6,.25)}
+.vB.play .sum3d{animation:sumin .8s 3.2s cubic-bezier(.2,.8,.2,1) forwards}
+/* C · 4D */
+.vC .stage{position:absolute;left:0;right:0;top:24cqh;height:44cqh;perspective:100cqw;perspective-origin:50% 20%}
+.vC .rail{position:absolute;left:50%;top:50%;width:86cqw;height:22cqh;transform:translate(-50%,-50%) rotateX(62deg);transform-style:preserve-3d;background:linear-gradient(90deg,#15110d,#1c1713);border:1px solid #3a3129;overflow:visible}
+.vC .day{position:absolute;top:0;bottom:0;width:1px;background:#2a2420}
+.vC .day span{position:absolute;bottom:-3.2cqh;left:-2cqw;width:4cqw;text-align:center;font:400 1.6cqw Manrope,sans-serif;color:var(--dim)}
+.vC .cursor{position:absolute;top:-1cqh;bottom:-1cqh;width:.5cqw;background:var(--yellow);left:0;box-shadow:0 0 2cqw rgba(253,213,6,.6)}
+.vC .p{position:absolute;bottom:50%;width:3.6cqw;height:3.6cqw;border-radius:50%;background:var(--yellow);transform:rotateX(-62deg) translateZ(1cqw) scale(0);box-shadow:0 0 3cqw rgba(253,213,6,.5)}
+.vC .p span{position:absolute;left:50%;top:-3.4cqh;transform:translateX(-50%);white-space:nowrap;font:600 1.9cqw Manrope,sans-serif;color:var(--yellow)}
+.vC .counter{position:absolute;left:0;right:0;top:30cqh;text-align:center;font:500 10cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:var(--yellow);transform:perspective(60cqw) rotateX(16deg)}
+.vC .cap{position:absolute;left:0;right:0;top:44cqh;text-align:center;font:400 2.3cqw Manrope,sans-serif;color:var(--muted)}
+@keyframes pop{to{opacity:1;transform:scale(1)}}
+@keyframes tagin{to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateZ(-8cqw)}to{opacity:1;transform:translateZ(0)}}
+@keyframes fade{to{opacity:1}}
+@keyframes sumin{from{opacity:0;transform:perspective(60cqw) rotateX(60deg) translateZ(-6cqw)}to{opacity:1;transform:perspective(60cqw) rotateX(20deg) translateZ(4cqw)}}
+/* controls */
+.controls{position:fixed;bottom:0;left:0;right:0;height:var(--controls);background:#0c0a08f5;border-top:1px solid #292319;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:10px}
+.tabs,.actions{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap}
+button{font:400 13px/1.3 Manrope,sans-serif;cursor:pointer;border:1px solid #504735;border-radius:7px;background:#17130d;color:#ddd5c6;padding:7px 12px}
+button[aria-selected="true"]{color:var(--yellow);border-color:var(--yellow);background:#27210e}
+.description{font-size:12px;text-align:center;color:#c8bfad;max-width:900px;margin:0}
+.note{font-size:11px;color:#a49a84;text-align:center;margin:0}
+</style></head><body>
+<main class="slide vA" id="slide"></main>
+<nav class="controls"><div class="tabs" role="tablist"><button role="tab" data-v="A">2D · Вісім клієнтів + рівняння</button><button role="tab" data-v="B">3D · Ізометрична підлога сайтів</button><button role="tab" data-v="C">4D · Місяць у часі</button></div><p class="description"></p><div class="actions"><button id="replay">↻ Програти знову</button><span class="note">← → перемикають варіанти</span></div></nav>
+<script>
+const H='<span class="k">Посчитаем</span><h1>Посчитаем, сколько можно на этом <em>заработать</em></h1>';
+const EQ=(sum)=>`<div class="eq"><b>8</b><small>клиентов</small><span>×</span><b>$250</b><small>обычный чек</small><span>=</span><span class="sum" id="sum">${sum}</span></div><p class="sub">один сайт — один раз</p>`;
+const AV='<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#15110d" stroke="#3a3129"/><circle cx="24" cy="19" r="7" fill="#c4bdb1"/><path d="M11 39c1-8 7-11 13-11s12 3 13 11" fill="#c4bdb1"/></svg>';
+let timers=[];const T=(f,ms)=>timers.push(setTimeout(f,ms));const clr=()=>{timers.forEach(clearTimeout);timers=[]};
+function countUp(el,to,ms,from=0,pre='$'){const t0=performance.now();const step=n=>{const k=Math.min(1,(n-t0)/ms);const e=1-Math.pow(1-k,3);el.textContent=pre+Math.round(from+(to-from)*e).toLocaleString('ru-RU').replace(/ /g,'.');if(k<1)requestAnimationFrame(step);};requestAnimationFrame(step);}
+const V={
+A:{desc:'2D: вісім клієнтів-аватарів з’являються по черзі (0,25 с крок), під кожним «пригає» ярлик $250, потім рівняння внизу і лічильник докручує $2.000 за секунду. Плоска, дуже читабельна інфографіка з джерела, без зайвого.',
+ html:()=>H+`<div class="grid">${Array.from({length:8},(_,i)=>`<div class="cl" style="animation-delay:${.3+i*.25}s">${AV}<span class="tag" style="animation-delay:${.6+i*.25}s">$250</span></div>`).join('')}</div>`+EQ('$0'),
+ run:()=>{T(()=>countUp(document.getElementById('sum'),2000,1100),2500);}},
+B:{desc:'3D: ізометрична підлога, з якої по черзі виростають вісім сайтів-плиток з ярликом $250 над кожним; коли всі на місці — з підлоги «встає» тривимірне $2.000 і зависає над ними. Рівняння внизу лишається як текст.',
+ html:()=>H+`<div class="stage"><div class="floor">${Array.from({length:8},(_,i)=>`<div class="tile" style="left:${(i%4)*17}cqw;top:${Math.floor(i/4)*17+3}cqh;animation-delay:${.3+i*.3}s"><i></i><b style="animation-delay:${.7+i*.3}s">$250</b></div>`).join('')}</div></div><div class="sum3d">$2.000</div>`+EQ('$2.000'),run:()=>{}},
+C:{desc:'4D — 3D + час: перед нами лежить місяць (30 днів) у перспективі, жовтий курсор іде по днях; на 8 днях спалахують клієнти з $250, а лічильник над рейкою росте в реальному часі до $2.000. Наприкінці — «один сайт — один раз». Показує не тільки «скільки», а й «як це накопичується».',
+ html:()=>H+`<div class="counter" id="cnt">$0</div><p class="cap" id="cap">день 1 из 30</p><div class="stage"><div class="rail">${Array.from({length:31},(_,i)=>`<div class="day" style="left:${i/30*100}%">${i%5===0?`<span>${i||1}</span>`:''}</div>`).join('')}${[3,6,9,12,16,20,24,28].map((d,i)=>`<div class="p" id="p${i}" style="left:${d/30*100}%"><span>$250</span></div>`).join('')}<div class="cursor" id="cur"></div></div></div>`+EQ('$2.000'),
+ run:()=>{const cur=document.getElementById('cur'),cnt=document.getElementById('cnt'),cap=document.getElementById('cap');const days=[3,6,9,12,16,20,24,28];const dur=7000;const t0=performance.now();let got=0;const step=n=>{const k=Math.min(1,(n-t0)/dur);const day=k*30;cur.style.left=(k*100)+'%';cap.textContent='день '+Math.max(1,Math.round(day))+' из 30';while(got<days.length&&day>=days[got]){const p=document.getElementById('p'+got);p.style.transition='transform .4s cubic-bezier(.3,1.5,.5,1)';p.style.transform='rotateX(-62deg) translateZ(1cqw) scale(1)';got++;cnt.textContent='$'+(got*250).toLocaleString('ru-RU').replace(/ /g,'.');}if(k<1)requestAnimationFrame(step);else cap.textContent='один сайт — один раз · 30 дней';};requestAnimationFrame(step);}}
+};
+const slide=document.getElementById('slide');let cur='A';
+function render(){clr();slide.className='slide v'+cur;slide.innerHTML=V[cur].html();document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.v===cur)));document.querySelector('.description').textContent=V[cur].desc;setTimeout(()=>{slide.classList.add('play');V[cur].run();},80);}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{cur=b.dataset.v;render()});
+document.getElementById('replay').onclick=render;
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')cur=cur==='A'?'B':cur==='B'?'C':'A';else if(e.key==='ArrowLeft')cur=cur==='A'?'C':cur==='B'?'A':'B';else return;render();});
+cur=new URLSearchParams(location.search).get('v')||'A';if(!V[cur])cur='A';render();
+</script></body></html>

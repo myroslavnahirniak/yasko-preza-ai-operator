@@ -1,0 +1,137 @@
+/* Fixed-composition scenes 21–24. Container units are relative to the square stage. */
+.slide.opening.op-chapter .chapter-format{position:absolute;inset:0;background:#0B0907;color:#F5F3EE;overflow:hidden;--cf-ease:cubic-bezier(.22,.8,.24,1);font-family:var(--font-b,"Manrope",sans-serif)}
+.slide.opening.op-chapter .chapter-format h1,.slide.opening.op-chapter .chapter-format h2,.slide.opening.op-chapter .chapter-format p{margin:0;opacity:1;animation:none;transform:none;max-width:none;text-shadow:none;text-transform:none}
+.slide.opening.op-chapter .chapter-format .cf-heading{position:absolute;top:8cqh;left:8cqw;width:84cqw;font:500 5.65cqw/1.18 "Unbounded","Manrope",sans-serif;letter-spacing:-.045em;text-align:center;text-wrap:balance}
+.slide.opening.op-chapter .chapter-format .cf-heading span{display:block}
+.slide.opening.op-chapter .chapter-format .cf-heading em{font:inherit;font-style:normal;color:#FDD506}
+.slide.opening.op-chapter .chapter-format .cf-icon{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.slide.opening.op-chapter .chapter-format .cf-icon *{vector-effect:non-scaling-stroke}
+.slide.opening.op-chapter .chapter-format .cf-rail{position:absolute;display:flex;align-items:center;justify-content:space-between}
+.slide.opening.op-chapter .chapter-format .cf-symbol{color:#F5F3EE;opacity:.25;transform:scale(.8);transition:opacity .48s ease,color .48s ease,transform .6s var(--cf-ease);transform-origin:center}
+.slide.opening.op-chapter .chapter-format .cf-symbol.is-current{color:#FDD506;opacity:1;transform:scale(1)}
+.slide.opening.op-chapter .chapter-format .cf-panels{position:absolute;left:8cqw;width:84cqw;text-align:center}
+.slide.opening.op-chapter .chapter-format .cf-panel{position:absolute;inset:0;opacity:0;visibility:hidden;transform:translateY(1.1cqh);transition:opacity .38s ease,transform .5s var(--cf-ease),visibility .38s;pointer-events:none}
+.slide.opening.op-chapter .chapter-format .cf-panel.is-current{opacity:1;visibility:visible;transform:translateY(0);transition-delay:.1s}
+.slide.opening.op-chapter .chapter-format .cf-panel h2{font:500 5cqw/1.21 "Unbounded","Manrope",sans-serif;letter-spacing:-.045em;text-wrap:balance;color:#F5F3EE}
+.slide.opening.op-chapter .chapter-format .cf-panel p{font:400 3.35cqw/1.45 "Manrope",sans-serif;letter-spacing:-.025em;color:#C8C3BB;max-width:37ch;margin:2.9cqh auto 0;text-wrap:balance}
+.slide.opening.op-chapter .chapter-format .cf-progress{position:absolute;bottom:7cqh;left:0;width:100%;display:flex;justify-content:center;align-items:center;gap:1.15cqw}
+.slide.opening.op-chapter .chapter-format .cf-progress i{width:1.05cqw;height:1.05cqw;display:block;border-radius:50%;background:#F5F3EE;opacity:.18;transition:opacity .4s ease,background-color .4s ease}
+.slide.opening.op-chapter .chapter-format .cf-progress i.is-current{opacity:1;background:#FDD506}
+.slide.opening.op-chapter .chapter-format .cf-progress i.is-complete{opacity:.45;background:#FDD506}
+
+/* Three commitments: only one full rule takes focus at a time. */
+.slide.opening.op-chapter .cf-rules .cf-heading{font-size:5.05cqw;transition:opacity .35s ease}
+.slide.opening.op-chapter .cf-rules-rail{left:13cqw;right:13cqw;top:35.5cqh;height:17cqh}
+.slide.opening.op-chapter .cf-rules-rail .cf-symbol{width:17cqw;height:17cqh}
+.slide.opening.op-chapter .cf-rules-panels{top:60cqh;height:26cqh}
+.slide.opening.op-chapter .cf-rules .cf-guarantee{position:absolute;inset:29cqh 7cqw;box-sizing:border-box;padding:4cqh 3cqw;border:1px solid rgba(253,213,6,.65);border-radius:1.2cqw;background:rgba(11,9,7,.97);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3.8cqh;text-align:center;opacity:0;visibility:hidden;transform:translateY(1cqh);transition:opacity .45s ease,transform .55s var(--cf-ease),visibility .45s}
+.slide.opening.op-chapter .cf-rules .cf-guarantee.is-current{opacity:1;visibility:visible;transform:translateY(0);transition-delay:.18s}
+.slide.opening.op-chapter .cf-rules .cf-guarantee-lead{font:400 3.5cqw/1.35 "Manrope",sans-serif;letter-spacing:-.025em;color:#C8C3BB}
+.slide.opening.op-chapter .cf-rules .cf-guarantee-body{font:500 4.65cqw/1.25 "Unbounded","Manrope",sans-serif;letter-spacing:-.045em;color:#FDD506;text-wrap:balance}
+.slide.opening.op-chapter .cf-rules[data-step="4"] .cf-heading{opacity:0}
+.slide.opening.op-chapter .cf-rules[data-step="4"] .cf-symbol{opacity:.07}
+
+/* A single clock owns attention; media stays quiet around it. */
+.slide.opening.op-chapter .cf-attention .cf-heading{font-size:5.45cqw}
+.slide.opening.op-chapter .cf-attention-visual{position:absolute;left:9cqw;top:39cqh;width:82cqw;height:31cqh}
+.slide.opening.op-chapter .cf-attention-visual>div{position:absolute;top:50%;transform:translateY(-50%)}
+.slide.opening.op-chapter .cf-distraction{width:18cqw;height:18cqh;color:#F5F3EE;opacity:.3}
+.slide.opening.op-chapter .cf-tv{left:0}
+.slide.opening.op-chapter .cf-play{right:0}
+.slide.opening.op-chapter .cf-time{left:28cqw;width:26cqw;height:26cqh;color:#FDD506;background:#0B0907}
+.slide.opening.op-chapter .cf-connection{position:absolute;inset:0;width:100%;height:100%;stroke:#F5F3EE;stroke-width:.22;stroke-dasharray:.8 1.6;opacity:.25}
+.slide.opening.op-chapter .cf-attention .cf-support{position:absolute;top:76cqh;left:11cqw;width:78cqw;font:400 3.7cqw/1.43 "Manrope",sans-serif;text-align:center;letter-spacing:-.025em;color:#C8C3BB;text-wrap:balance}
+
+/* The format change gets one clean pause. */
+.slide.opening.op-chapter .chapter-format.cf-pause{background:#FDD506;color:#0B0907}
+.slide.opening.op-chapter .cf-pause .cf-stop-mark{position:absolute;top:19cqh;left:41cqw;width:18cqw;height:18cqh}
+.slide.opening.op-chapter .cf-pause .cf-icon{stroke-width:3.8}
+.slide.opening.op-chapter .cf-pause .cf-heading{top:45cqh;left:7cqw;width:86cqw;font-size:8.25cqw;line-height:1.13;color:#0B0907;letter-spacing:-.045em}
+.slide.opening.op-chapter .cf-pause .cf-heading span:first-child{font-size:4.25cqw;line-height:1.4;letter-spacing:-.035em;margin-bottom:3cqh}
+.slide.opening.op-chapter .cf-pause .cf-heading em{color:#0B0907}
+
+/* The five deliverables keep their left-to-right order. */
+.slide.opening.op-chapter .cf-live .cf-heading{font-size:5.2cqw;line-height:1.18}
+.slide.opening.op-chapter .cf-live .cf-live-intro{position:absolute;top:26cqh;left:10cqw;width:80cqw;font:400 3.15cqw/1.43 "Manrope",sans-serif;letter-spacing:-.025em;text-align:center;color:#C8C3BB;text-wrap:balance}
+.slide.opening.op-chapter .cf-live-rail{left:8cqw;right:8cqw;top:51.5cqh;height:15cqh}
+.slide.opening.op-chapter .cf-live-rail .cf-symbol{width:13.2cqw;height:13.2cqh;transform:scale(.84);opacity:.27}
+.slide.opening.op-chapter .cf-live-rail .cf-symbol.is-current{transform:scale(1.12);opacity:1}
+.slide.opening.op-chapter .cf-live-panels{top:75cqh;height:15cqh}
+.slide.opening.op-chapter .cf-live .cf-panel h2{font-size:5.65cqw;color:#FDD506}
+
+/* Entrances settle; there is no continuous decorative motion. */
+.slide.opening.op-chapter.on .chapter-format>.cf-heading,.slide.opening.op-chapter.on .chapter-format>.cf-live-intro,.slide.opening.op-chapter.on .chapter-format>.cf-support{animation:cf-enter .65s var(--cf-ease) both}
+.slide.opening.op-chapter.on .chapter-format>.cf-live-intro,.slide.opening.op-chapter.on .chapter-format>.cf-support{animation-delay:.1s}
+.slide.opening.op-chapter.on .chapter-format>.cf-rail,.slide.opening.op-chapter.on .chapter-format>.cf-attention-visual,.slide.opening.op-chapter.on .chapter-format>.cf-stop-mark{animation:cf-enter .7s var(--cf-ease) .12s both}
+.slide.opening.op-chapter.on .cf-rules[data-step="4"]>.cf-heading{animation:none;opacity:0}
+.slide.opening.op-chapter.op-return .chapter-format>*{animation-duration:.18s!important;animation-delay:0s!important}
+@keyframes cf-enter{from{opacity:0;translate:0 1.2cqh}to{opacity:1;translate:0 0}}
+@media(prefers-reduced-motion:reduce){
+  .slide.opening.op-chapter .chapter-format *{animation:none!important;transition:none!important;translate:none!important}
+}
+
+/* Supplied crossroads photograph: an uninterrupted scene, then readable copy. */
+.slide.opening.op-chapter .cf-attention-photo{position:absolute;inset:0;overflow:hidden}
+.slide.opening.op-chapter .cf-attention-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.slide.opening.op-chapter .cf-attention-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,0) 30%,rgba(11,9,7,.18) 43%,rgba(11,9,7,.88) 61%,#0B0907 88%)}
+.slide.opening.op-chapter .cf-attention-copy{position:absolute;left:8cqw;right:8cqw;bottom:7cqh;display:flex;flex-direction:column;gap:3cqh}
+.slide.opening.op-chapter .cf-attention-cinematic .cf-eyebrow{font:500 1.9cqh/1.3 var(--font-b);letter-spacing:.12em;text-transform:uppercase;color:#C8C3BB}
+.slide.opening.op-chapter .cf-attention-cinematic .cf-heading{position:static;width:auto;left:auto;top:auto;font-size:5cqh;line-height:1.18;letter-spacing:-.04em;text-align:left;text-wrap:initial}
+.slide.opening.op-chapter .cf-attention-cinematic .cf-support{position:static;width:auto;left:auto;top:auto;font:400 3.1cqh/1.42 var(--font-b);letter-spacing:-.02em;text-align:left;text-wrap:initial;color:#D4CFC7;max-width:40ch}
+.slide.opening.op-chapter.on .cf-attention-photo{animation:cf-photo-enter .9s ease both}
+.slide.opening.op-chapter.on .cf-attention-copy>.cf-eyebrow,.slide.opening.op-chapter.on .cf-attention-copy>.cf-heading,.slide.opening.op-chapter.on .cf-attention-copy>.cf-support{animation:cf-enter .65s var(--cf-ease) .08s both}
+.slide.opening.op-chapter.on .cf-attention-copy>.cf-support{animation-delay:.18s}
+@keyframes cf-photo-enter{from{opacity:.4}to{opacity:1}}
+@container(min-aspect-ratio:6/5){
+ .slide.opening.op-chapter .cf-attention-cinematic .cf-attention-copy{left:7cqw;right:auto;width:48cqw;bottom:9cqh}
+ .slide.opening.op-chapter .cf-attention-photo::after{background:linear-gradient(90deg,rgba(11,9,7,.85),rgba(11,9,7,.7) 42%,transparent 76%)}
+}
+@media(prefers-reduced-motion:reduce){.slide.opening.op-chapter.on .cf-attention-photo{animation:none!important}}
+
+/* A restrained warm glow behind minimal diagrams, without moving light. */
+.slide.opening.op-chapter .chapter-roadmap:not(.chapter-bridge),
+.slide.opening.op-chapter .chapter-format.cf-rules,
+.slide.opening.op-chapter .chapter-format.cf-live{
+ background:radial-gradient(ellipse 55% 55% at 78% 67%,rgba(253,213,6,.065),transparent 82%),#0B0907;
+}
+
+/* Detailed pencil assets match the school roadmap; the three slots stay fixed. */
+.slide.opening.op-chapter .cf-rules-rail:has(.cf-sketch){left:7cqw;right:7cqw;top:33cqh;height:24cqh;mix-blend-mode:lighten}
+.slide.opening.op-chapter .cf-rules-rail .cf-symbol:has(.cf-sketch){width:26cqw;height:24cqh;mix-blend-mode:lighten;transform:scale(.9);opacity:.25}
+.slide.opening.op-chapter .cf-rules-rail .cf-symbol.is-current:has(.cf-sketch){transform:scale(1);opacity:1}
+.cf-sketch{display:block;width:100%;height:100%;object-fit:contain}
+.slide.opening.op-chapter .cf-rules[data-step="4"] .cf-symbol:has(.cf-sketch){opacity:.07}
+
+.cf-guarantee-body>span{display:block;white-space:nowrap}
+
+/* Slide26: photographic mystery prizes with independently editable type. */
+.cf-prize-photo{position:absolute;inset:0}
+.cf-prize-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.cf-prize-copy{position:absolute;top:12cqh;left:6cqw;right:6cqw;text-align:center}
+.slide.opening.op-chapter .cf-prizes .cf-prize-eyebrow{font:500 2cqh/1.4 var(--font-b);color:#CEC9C1;letter-spacing:.14em;text-transform:uppercase;margin-bottom:2.8cqh}
+.slide.opening.op-chapter .cf-prizes .cf-heading{position:static;width:auto;font-size:8.4cqw;line-height:1.16;text-wrap:initial;letter-spacing:-.045em}
+.slide.opening.op-chapter .cf-prizes .cf-heading span:first-child{font-size:5.6cqw;margin-bottom:.8cqh}
+.slide.opening.op-chapter.on .cf-prize-photo{animation:cf-prize-enter 1.1s ease both}
+.slide.opening.op-chapter.on .cf-prize-copy{animation:cf-enter .6s var(--cf-ease) .15s both}
+@keyframes cf-prize-enter{from{opacity:.25;transform:scale(1.025)}to{opacity:1;transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.slide.opening.op-chapter.on .cf-prize-photo,.slide.opening.op-chapter.on .cf-prize-copy{animation:none!important}}
+
+.cf-price-copy{position:absolute;top:6.5cqh;left:7cqw;right:7cqw;text-align:center}
+.slide.opening.op-chapter .cf-service-price .cf-heading{position:static;width:auto;font-size:4.05cqw;line-height:1.25}
+.slide.opening.op-chapter .cf-service-price p.cf-service-price{font:500 9.2cqw/1.15 var(--font-heading);letter-spacing:-.055em;color:#FDD506;margin:3cqh 0 2.5cqh;white-space:nowrap}
+.slide.opening.op-chapter .cf-price-support{font:400 2.6cqw/1.45 var(--font-b);color:#F5F3EE}
+.cf-price-support span{display:block}
+.cf-service-labels{position:absolute;inset:0;pointer-events:none}
+.cf-service-label{position:absolute;top:88.5cqh;transform:translateX(-50%);text-align:center;color:#F5F3EE;font:600 1.85cqw/1.4 var(--font-b);letter-spacing:-.015em;text-shadow:0 2px 12px #000}
+.cf-service-label span{display:block}
+.slide.opening.op-chapter.on .cf-price-copy{animation:cf-enter .65s var(--cf-ease) both}
+@media(prefers-reduced-motion:reduce){.slide.opening.op-chapter.on .cf-price-copy{animation:none!important}}
+
+/* Supplied photo on23; shade is localized beneath the title. */
+.slide.opening.op-chapter .chapter-format.cf-pause{background:#0B0907;color:#F5F3EE}
+.cf-pause-photo{position:absolute;inset:0}
+.cf-pause-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.cf-pause-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 46%,rgba(11,9,7,.12) 58%,rgba(11,9,7,.7) 77%,rgba(11,9,7,.78))}
+.slide.opening.op-chapter .cf-pause .cf-heading{top:65cqh;font-size:7.1cqw;color:#F5F3EE}
+.slide.opening.op-chapter .cf-pause .cf-heading span:first-child{font-size:3.2cqw;margin-bottom:1.8cqh}
+.slide.opening.op-chapter .cf-pause .cf-heading em{color:#FDD506}

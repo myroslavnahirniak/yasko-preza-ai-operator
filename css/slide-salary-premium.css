@@ -1,0 +1,16 @@
+/* g3f9b3adf0b8_0_2678: one statistic, one explanation, one quiet image. */
+.b129.b13-v2-salary-premium .b13-shell{padding:9cqh 7.5cqw;gap:0;justify-content:flex-start;}
+.b129.b13-v2-salary-premium .b13-head{position:relative;z-index:2;text-align:left;}
+.b129.b13-v2-salary-premium .b13-head h1{font:600 5.6cqw/1.18 Manrope,sans-serif;letter-spacing:-.035em;text-wrap:initial;}
+.b129.b13-v2-salary-premium .b13-head h1 em{font:inherit;color:#fdd506;}
+.b129.b13-v2-salary-premium .b13-body{position:static;padding:0;gap:0;}
+.b129.b13-v2-salary-premium .b13-art{inset:0;width:100%;height:100%;mix-blend-mode:normal;}
+.b129.b13-v2-salary-premium .b13-art img{object-fit:cover;}
+.b129.b13-v2-salary-premium .b13-art:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,9,7,.4),transparent 57%),linear-gradient(0deg,rgba(11,9,7,.65),transparent 24%);}
+.b129.b13-v2-salary-premium .salary-metric{position:absolute;left:7.5cqw;top:38cqh;width:45cqw;z-index:2;}
+.b129.b13-v2-salary-premium .big-num{display:flex;align-items:baseline;gap:1cqw;position:static;width:auto;margin:0;padding:0;border:0;background:none;opacity:1;transform:none;font:700 20cqw/1 Manrope,sans-serif;letter-spacing:-.06em;color:#fdd506;-webkit-text-fill-color:#fdd506;text-align:left;}
+.b129.b13-v2-salary-premium .big-num:before,.b129.b13-v2-salary-premium .big-num:after{display:none;}
+.b129.b13-v2-salary-premium .big-num>span{font:500 9cqw/1 Manrope,sans-serif;letter-spacing:-.04em;}
+.b129.b13-v2-salary-premium .salary-label{margin:1.8cqh 0 0;padding:0;font:500 3.2cqw/1.35 Manrope,sans-serif;letter-spacing:-.015em;color:#f5f3ee;text-align:left;}
+.b129.b13-v2-salary-premium .salary-explanation{margin:4cqh 0 0;padding:0;font:400 3.2cqw/1.42 Manrope,sans-serif;letter-spacing:-.015em;color:#d7d2c9;text-align:left;text-wrap:initial;}
+.b129.b13-v2-salary-premium .salary-explanation strong{font:inherit;color:#fdd506;}

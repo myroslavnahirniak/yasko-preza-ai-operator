@@ -1,0 +1,23 @@
+/* Two concrete outcomes; copy remains intact. */
+.b129.b13-v2-s16-salesv6:has(.payback-scene) .b13-shell{background:radial-gradient(ellipse at 72% 53%,#fdd5060c,transparent 55%),#0b0907}
+.b129.b13-v2-s16-salesv6:has(.payback-scene) .b13-head{top:7cqh;left:7cqw;right:7cqw;text-align:center}
+.b129.b13-v2-s16-salesv6:has(.payback-scene) .b13-head h1{font:500 4.3cqw/1.25 Unbounded,sans-serif;letter-spacing:-.035em;text-wrap:balance}
+.b129.b13-v2-s16-salesv6:has(.payback-scene) .b13-head em{display:block}
+.b129.b13-v2-s16-salesv6:has(.payback-scene) .b13-body{inset:23cqh 7cqw 6cqh;display:block}
+.sales-v6.payback-scene{height:100%;max-height:none;display:flex;justify-content:space-between;gap:2.8cqh;text-align:center}
+.sales-v6 .payback-intro{font:400 2.35cqw/1.5 Manrope,sans-serif;color:#c7c1b8;text-wrap:balance}
+.payback-intro strong{font-weight:600;color:#f5f3ee}
+.payback-comparison{display:grid;grid-template-columns:1fr 1fr;gap:2.2cqw;width:100%}
+.payback-card{position:relative;min-width:0;padding:1cqh 2.5cqw 2.8cqh;border:1px solid #c6bda333;border-radius:1.6cqw;background:linear-gradient(145deg,#231f17b3,#100e0bc9);overflow:hidden}
+.payback-card.payback-complete{border-color:#fdd50666;background:linear-gradient(145deg,#342a1590,#18140db3)}
+.payback-art{display:block;width:100%;height:22cqh;overflow:visible;margin:0 auto .4cqh}
+.sales-v6 .payback-card h2{font:500 2.55cqw/1.4 Unbounded,sans-serif;letter-spacing:-.035em;color:#f5f3ee;margin:0 0 1.5cqh;white-space:nowrap}
+.payback-card h2 em{font:inherit;font-style:normal;color:#fdd506}
+.sales-v6 .payback-card p{font:400 2.6cqw/1.43 Manrope,sans-serif;color:#ccc6bd;margin:0}
+.payback-card p strong{font-weight:600;color:#fdd506}
+.payback-meter{display:flex;gap:.6cqw;margin-top:2.5cqh;height:.65cqh}
+.payback-meter i{flex:1;border-radius:1cqw;background:#ffffff12}
+.payback-meter i:first-child,.payback-complete .payback-meter i{background:#fdd506}
+.payback-finale{width:100%;padding-top:2.4cqh;border-top:1px solid #ffffff1c}
+.sales-v6 .payback-finale p:first-child{font:400 2.1cqw/1.4 Manrope,sans-serif;color:#c7c1b8;margin:0 0 1.2cqh}
+.sales-v6 .payback-finale p:last-child{font:500 3.3cqw/1.28 Unbounded,sans-serif;color:#fdd506;letter-spacing:-.035em;margin:0}

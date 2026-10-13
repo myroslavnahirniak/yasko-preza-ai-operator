@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>rest 153 · «до 5% от этой выручки» · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.h{font:500 4cqw/1.22 Unbounded,sans-serif;letter-spacing:-.035em;text-wrap:balance}
+.p{font:400 2.5cqw/1.42 Manrope,sans-serif;color:var(--muted)}
+.end{position:absolute;left:7cqw;right:7cqw;bottom:6.5cqh;display:flex;align-items:center;gap:2cqw;font:500 2.35cqw/1.35 Manrope,sans-serif;color:var(--muted)}
+.end:before{content:"";flex:none;width:5cqw;height:2px;background:var(--yellow)}
+.big{font:600 1cqw/.92 Unbounded,sans-serif;letter-spacing:-.055em;color:var(--yellow)}
+
+/* А · типографика: два числа — что платите и к чему я иду */
+.v-A{background:radial-gradient(ellipse 60% 45% at 30% 30%,rgba(253,213,6,.07),transparent 70%),var(--bg)}
+.v-A .a-top{position:absolute;left:7cqw;right:7cqw;top:8cqh}
+.v-A .a-top .big{font-size:20cqw;margin:2.2cqh 0 1.6cqh -.6cqw;text-shadow:0 0 6cqw rgba(253,213,6,.18)}
+.v-A .a-top .big small{font-size:7cqw;letter-spacing:-.03em;margin-right:1.6cqw;vertical-align:.35em}
+.v-A .rule{position:absolute;left:7cqw;right:7cqw;top:55cqh;height:1px;background:var(--rule)}
+.v-A .a-goal{position:absolute;left:7cqw;right:7cqw;top:60cqh}
+.v-A .a-goal .big{font-size:9.5cqw;margin:1.4cqh 0 1.2cqh}
+.v-A .a-goal .big small{font:500 3.4cqw/1 Unbounded,sans-serif;letter-spacing:-.03em;color:var(--cream);margin-left:1.4cqw}
+.v-A .a-goal .p{color:var(--cream)}
+
+/* Б · схема: партнёры → платформа → цель */
+.v-B .b-head{position:absolute;left:9cqw;right:9cqw;top:7cqh;text-align:center}
+.v-B svg{position:absolute;left:5cqw;width:90cqw;top:27cqh;height:42cqh;overflow:visible}
+.v-B svg text{font-family:Manrope,sans-serif}
+.v-B .chip rect{fill:#15110d;stroke:#2a2420}
+.v-B .chip text{font-size:19px;fill:#b3a996;font-weight:500}
+.v-B .chip .ic{fill:none;stroke:#b3a996;stroke-width:1.6}
+.v-B .flow{fill:none;stroke:#fdd506;stroke-width:1.6;stroke-opacity:.75;stroke-dasharray:1;stroke-dashoffset:1}
+.v-B.play .flow{animation:draw 1.1s .35s cubic-bezier(.4,0,.2,1) forwards}
+.v-B .flow2{stroke-width:2.4;stroke-opacity:1}
+.v-B.play .flow2{animation-delay:1.1s;animation-duration:.6s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.v-B .node rect{fill:#15110d;stroke:#3a3129}
+.v-B .node.goal rect{fill:#fdd506;stroke:#fdd506}
+.v-B .k{font:500 14px 'JetBrains Mono',monospace;letter-spacing:.18em;fill:#b3a996}
+.v-B .n{font:600 46px Unbounded,sans-serif;letter-spacing:-2px;fill:#fdd506}
+.v-B .u{font-size:18px;fill:#c4bdb1}
+.v-B .goal .k,.v-B .goal .u{fill:#0b0907}
+.v-B .goal .n{fill:#0b0907;font-size:34px}
+.v-B .b-goal{position:absolute;left:12cqw;right:12cqw;top:73cqh;text-align:center;color:var(--cream)}
+
+/* В · лично: портрет Влада, цель крупно */
+.v-C .c-photo{position:absolute;right:0;top:24cqh;bottom:0;width:50cqw;overflow:hidden}
+.v-C .c-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block}
+.v-C .c-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0,rgba(11,9,7,.55) 18%,rgba(11,9,7,0) 42%),linear-gradient(0deg,var(--bg) 0,rgba(11,9,7,.7) 12%,rgba(11,9,7,0) 30%),linear-gradient(180deg,var(--bg) 0,rgba(11,9,7,0) 14%)}
+.v-C .c-head{position:absolute;left:7cqw;right:7cqw;top:7cqh}
+.v-C .c-goal{position:absolute;left:7cqw;width:47cqw;top:36cqh;padding:3.6cqh 3cqw 3.4cqh;border:1px solid rgba(253,213,6,.45);background:linear-gradient(160deg,rgba(253,213,6,.09),rgba(21,17,13,.92) 55%);border-radius:1.4cqw;box-shadow:0 0 7cqw rgba(253,213,6,.08)}
+.v-C .c-goal .p{color:var(--cream)}
+.v-C .c-goal .big{font-size:7.6cqw;white-space:nowrap;margin:1.6cqh 0 .6cqh}
+.v-C .c-goal .m{font:500 3.2cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em;color:var(--cream);margin-bottom:1.4cqh}
+.v-C .end{right:7cqw;z-index:2}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Два числа</button><button role="tab" data-v="B">Б · Схема: партнёры → платформа → цель</button><button role="tab" data-v="C">В · Лично: портрет и цель</button></div>
+<p class="description"></p>
+<p class="note">Текст слайда — дословно из Google (G428): три фразы, цифры только те, что в тексте. ←/→ — переключить вариант, R — повторить анимацию.</p>
+<div class="actions"><button id="replay">↻ Повторить анимацию</button></div>
+</nav>
+<script>
+const END='<p class="end fx-up" style="animation-delay:.5s">Теперь вы понимаете, для чего я провожу этот мастер-класс</p>';
+const PERSON='<g class="ic"><circle cx="30" cy="22" r="6"/><path d="M19 39c1.5-7 5.5-10 11-10s9.5 3 11 10"/></g>';
+function chip(y){return '<g class="chip" transform="translate(0 '+y+')"><rect x="0" y="0" width="190" height="56" rx="8"/>'+PERSON+'<text x="54" y="34">партнёр</text></g>';}
+const YS=[8,88,168,248,328];
+const FLOWS=YS.map(y=>'<path class="flow" pathLength="1" d="M190 '+(y+28)+' C300 '+(y+28)+' 300 200 380 200"/>').join('');
+const SVG='<svg viewBox="0 0 860 392" aria-hidden="true">'+YS.map(chip).join('')+FLOWS+
+ '<path class="flow flow2" pathLength="1" d="M600 200 L652 200"/><path class="flow flow2" pathLength="1" d="M640 190 L652 200 L640 210"/>'+
+ '<g class="node" transform="translate(380 118)"><rect width="220" height="164" rx="10"/><text class="k" x="110" y="36" text-anchor="middle">МОЯ ПЛАТФОРМА</text><text class="n" x="110" y="100" text-anchor="middle">до 5%</text><text class="u" x="110" y="134" text-anchor="middle">от выручки · в месяц</text></g>'+
+ '<g class="node goal" transform="translate(660 118)"><rect width="200" height="164" rx="10"/><text class="k" x="100" y="36" text-anchor="middle">ГЛОБАЛЬНАЯ ЦЕЛЬ</text><text class="n" x="100" y="98" text-anchor="middle">$15 000</text><text class="u" x="100" y="134" text-anchor="middle">в месяц</text></g></svg>';
+window.VARIANTS={
+A:{html:'<div class="a-top fx-up"><h1 class="h">И за это вы мне будете платить</h1><div class="big"><small>до</small>5%</div><h1 class="h"><em>от этой выручки</em> в месяц на мою платформу</h1></div>'+
+   '<i class="rule fx-fade" style="animation-delay:.3s"></i>'+
+   '<div class="a-goal fx-up" style="animation-delay:.35s"><p class="p">Моя глобальная цель — зарабатывать</p><div class="big">$15 000<small>в месяц,</small></div><p class="p">помогая своим партнёрам</p></div>'+END,
+   desc:'Типографический удар: «до 5%» — главная цифра на пол-слайда, под чертой — вторая цифра, цель $15 000 в месяц. Без картинок, только текст и два числа. Самый чистый и читаемый с экрана.'},
+B:{html:'<h1 class="h b-head fx-up">И за это вы мне будете платить <em>до 5% от этой выручки</em><br>в месяц на мою платформу</h1>'+SVG+
+   '<p class="p b-goal fx-up" style="animation-delay:.4s">Моя глобальная цель — зарабатывать <em>$15 000 в месяц</em>, помогая своим партнёрам</p>'+END,
+   desc:'Схема механики: от каждого партнёра тянется линия «до 5%» в платформу, из платформы — в цель $15 000 в месяц. Линии прорисовываются на входе (1,7 с), дальше статика. Объясняет «зачем я это делаю» как модель win-win. Рекомендация.'},
+C:{html:'<div class="c-photo fx-fade"><img src="assets/gen-rest-1006/r252-vlad-portrait-gold.webp" alt="Влад Ясько"></div>'+
+   '<h1 class="h c-head fx-up">И за это вы мне будете платить<br><em>до 5% от этой выручки</em> в месяц<br>на мою платформу</h1>'+
+   '<div class="c-goal fx-up" style="animation-delay:.35s"><p class="p">Моя глобальная цель — зарабатывать</p><div class="big">$15 000</div><div class="m">в месяц,</div><p class="p">помогая своим партнёрам</p></div>'+END,
+   desc:'Личный момент: портрет Влада в золоте (как на финальных слайдах) справа, слева — карточка цели с крупной суммой. Честное «вот мой интерес» лицом к лицу. Портрет уже есть в деке (rest 252).'}};
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

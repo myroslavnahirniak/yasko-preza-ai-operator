@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>27 · Приз №1 — весь этот эфир в одной инструкции · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<link rel="stylesheet" href="design-2430.css?v=2">
+</head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Настоящий холст (фото)</button><button role="tab" data-v="B">Б · Скетчи</button><button role="tab" data-v="C">В · Приз под клошем (фото-сцена)</button></div>
+<p class="description"></p>
+<p class="note nav-pages">Полный текст слайда, без шагов · Слайды: <a href="design-s24-options.html">24</a><a href="design-s27-options.html">27</a><a href="design-s31-options.html">31</a> · Клавиши: ←/→ вариант, ↓/Space шаг, ↑ назад.</p>
+<div class="actions"><button id="prev" class="stepbtn">◀ шаг</button><span id="stepinfo"></span><button id="next" class="stepbtn">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+</nav>
+<script>
+
+const IT=[['Калькулятор дохода','ваша личная цифра','calc'],['Услуги и цены','что покупают и почём','prices'],['Путь до клиента','6 шагов по порядку','path'],['Все промты эфира','копируются в один клик','prompts'],['Первое сообщение','готовый текст','message'],['Все ссылки и ресурсы','всё, что было в эфире','links']];
+const HD='<div class="hd l fx-up"><span class="kk">Приз №1 —</span><h1>весь этот эфир в <em>одной инструкции</em></h1><p>Интерактивный ХОЛСТ: всё, что я сегодня расскажу, — собрано в один документ, по которому можно идти по шагам.</p></div>';
+window.VARIANTS={
+A:{steps:0,cls:'v-A27',html:HD+'<span class="url">ai-operator-holst.vercel.app</span><div class="laptop fx-up"><div class="scr"><img src="assets/gen-2430/holst-desk-hero.webp" alt=""></div><div class="base"></div></div><div class="phone fx-up"><img src="assets/gen-2430/holst-mob-catalog.webp" alt=""></div><div class="items">'+IT.map((x,i)=>'<div class="it"><s>0'+(i+1)+'</s><div><b>'+x[0]+'</b><span>'+x[1]+'</span></div></div>').join('')+'</div>',
+  desc:'Фото-доказ: настоящий холст на ноутбуке (первый экран) и на телефоне (каталог 7 услуг) — это реальные скрины ai-operator-holst.vercel.app. Шесть пунктов — строкой снизу. Зал видит, что приз уже существует.'},
+B:{steps:0,html:HD+'<div class="cards">'+IT.map(x=>'<div class="cd"><img src="assets/gen-2430/s27-'+x[2]+'.webp" alt=""><div><b>'+x[0]+'</b><span>'+x[1]+'</span></div></div>').join('')+'</div>',
+  desc:'Скетчи: те же шесть карточек, но вместо линейных иконок — карандашные рисунки в стиле деки (калькулятор с лентой-графиком, ценник над карточками услуг, дорога с шестью флажками, ноутбук с кнопкой «копировать», конверт, цепь ссылок).'},
+C:{steps:0,cls:'v-C27 kb',html:'<div class="art"><img src="assets/gen-2430/s27-cloche.webp" alt=""></div>'+HD+'<div class="chips">'+IT.map(x=>'<div class="chip"><b>'+x[0]+'</b><span>'+x[1]+'</span></div>').join('')+'</div>',
+  desc:'Серия «три приза»: продолжение клошей со слайда 26 — средний клош поднят, под ним светится планшет с документом. Шесть пунктов — плашками снизу. Приз №3 (слайд 31, вариант Б) сделан в той же сцене.'}};
+
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

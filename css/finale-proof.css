@@ -1,0 +1,20 @@
+/* U117 — closing statement. Scoped to this exact authored scene. */
+.b129.b13-v2-s16-statement:has(.finale-proof) .b13-shell{position:absolute;inset:0;display:block;padding:0;background:none}
+.b129.b13-v2-s16-statement:has(.finale-proof) .b13-head{position:absolute;top:7cqh;left:7cqw;right:7cqw;width:auto;text-align:center;padding:0;margin:0}
+.b129.b13-v2-s16-statement:has(.finale-proof) .b13-head h1{font:400 3cqw/1.3 Unbounded,sans-serif;color:#f5f3ee;letter-spacing:-.025em}
+.b129.b13-v2-s16-statement:has(.finale-proof) .b13-head em{font:inherit;color:inherit;font-style:normal}
+.b129.b13-v2-s16-statement:has(.finale-proof) .b13-body{position:absolute;inset:0;display:block;padding:0;margin:0;width:auto;max-width:none}
+.b129.b13-v2-s16-statement:has(.finale-proof) .b13-art img{opacity:1;object-fit:cover;object-position:center center}
+.b129.b13-v2-s16-statement:has(.finale-proof) .b13-art:after{background:linear-gradient(180deg,#090807f7 0%,#090807df 20%,#090807a8 43%,#09080725 63%,#09080795 80%,#090807f5 100%)}
+.finale-proof{position:absolute;inset:0;color:#f5f3ee;text-align:center}
+.finale-proof .finale-statement{position:absolute;top:16cqh;left:7cqw;right:7cqw;display:flex;flex-direction:column;align-items:center;gap:1.7cqh}
+.finale-proof .finale-but{font:400 1.9cqw/1 Manrope,sans-serif;color:#c4bdb1;display:flex;align-items:center;gap:2cqw}
+.finale-proof .finale-but:before,.finale-proof .finale-but:after{content:'';width:7cqw;height:1px;background:#fdd50655}
+.finale-proof .finale-statement p{font:500 6.2cqw/1.27 Unbounded,sans-serif;letter-spacing:-.035em;color:#f5f3ee;margin:0;text-align:center}
+.finale-proof .finale-statement em{font:inherit;color:#fdd506;font-style:normal}
+.finale-proof .finale-without{color:#c3bdae}
+.finale-proof .finale-bottom{position:absolute;bottom:6cqh;left:13cqw;right:13cqw;display:flex;flex-direction:column;align-items:center;gap:2.3cqh}
+.finale-proof .finale-cta{width:100%;display:flex;align-items:center;justify-content:center;gap:4cqw;padding:2.2cqh 3cqw;border-radius:1.4cqw;background:#fdd506;color:#13100a;box-shadow:0 .5cqh 4cqh #0005}
+.finale-proof .finale-cta span{font:500 2.8cqw/1.3 Unbounded,sans-serif;letter-spacing:-.02em}
+.finale-proof .finale-cta svg{width:3.3cqw;height:3.3cqw;flex:none}
+.finale-proof .finale-bottom>p{font:400 2.2cqw/1.4 Manrope,sans-serif;color:#e1dacf;margin:0;text-align:center}

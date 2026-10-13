@@ -1,0 +1,20 @@
+/* One centred case: person, elapsed time, result, first-person quote. */
+.b129.b13-v2-s16-salesv6:has(.yura-case) .b13-shell{position:absolute;inset:0;padding:0;background:radial-gradient(ellipse at 50% 38%,#fdd5060e,transparent 50%),#0b0907}
+.b129.b13-v2-s16-salesv6:has(.yura-case) .b13-head{top:11cqh;left:8cqw;right:8cqw;text-align:center}
+.b129.b13-v2-s16-salesv6:has(.yura-case) .b13-head h1{font:500 5cqw/1.2 Unbounded,sans-serif;letter-spacing:-.035em}
+.b129.b13-v2-s16-salesv6:has(.yura-case) .b13-body{inset:0;display:block;margin:0;padding:0}
+.sales-v6.yura-case{position:absolute;inset:0;display:block;height:100%;max-height:none;text-align:center}
+.yura-kicker{position:absolute;top:6.8cqh;left:8cqw;right:8cqw;color:#b3a996;font:400 1.9cqw/1.3 Manrope,sans-serif}
+.yura-result{position:absolute;top:24cqh;left:8cqw;right:8cqw}
+.yura-number{font:500 15cqw/1.05 Unbounded,sans-serif;letter-spacing:-.06em;color:#fdd506}
+.yura-number span{font-size:8.5cqw;letter-spacing:-.05em}
+.sales-v6 .yura-outcome{font:500 3.2cqw/1.4 Manrope,sans-serif;color:#f5f3ee;margin:2.5cqh 0 0}
+.yura-four{display:flex;gap:1cqw;width:27cqw;height:.5cqh;margin:3.7cqh auto}
+.yura-four i{display:block;flex:1;border-radius:1cqw;background:#fdd506}
+.yura-four i:nth-child(1){opacity:.3}.yura-four i:nth-child(2){opacity:.5}.yura-four i:nth-child(3){opacity:.75}
+.sales-v6 .yura-before{font:400 2.7cqw/1.45 Manrope,sans-serif;color:#c5beb2;max-width:64cqw;margin:0 auto;text-wrap:balance}
+.yura-case .yura-quote{position:absolute;left:9cqw;right:9cqw;bottom:12cqh;margin:0;padding:3.8cqh 5cqw;border:1px solid #c6bda332;border-radius:1.5cqw;background:linear-gradient(140deg,#29221799,#15120e);font:500 2.8cqw/1.5 Manrope,sans-serif;color:#f5f3ee;text-wrap:balance}
+.yura-case .yura-quote:before{content:"";position:absolute;top:-1px;left:calc(50% - 5cqw);width:10cqw;height:2px;background:#fdd506}
+.yura-disc{position:absolute;bottom:6cqh;left:8cqw;right:8cqw;font:400 1.6cqw/1.4 Manrope,sans-serif;color:#9f9687}
+.b129.b13-v2-s16-salesv6 .sales-v6 .yura-before{width:64cqw;margin:0 auto;text-align:center}
+.b129.b13-v2-s16-salesv6 .sales-v6 .yura-outcome{margin:2.5cqh 0 0}

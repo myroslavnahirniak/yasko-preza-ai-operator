@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>178 · 7 услуг · видео Seedance + три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--panel:#15110d;--controls:190px}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding-bottom:var(--controls);background:#000;color:var(--cream);font:400 14px/1.4 Manrope,sans-serif}
+.slide{position:relative;width:min(100vw,calc(100dvh - var(--controls)));aspect-ratio:1;container-type:size;overflow:hidden;background:var(--bg)}
+.slide h1,.slide p{margin:0}
+.k{position:absolute;left:0;right:0;top:6cqh;text-align:center;font:500 2.4cqw/1 Manrope,sans-serif;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;z-index:4}
+h1{position:absolute;left:7cqw;right:7cqw;top:10cqh;text-align:center;font:500 4.6cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em;z-index:4;text-wrap:balance}
+h1 em{font-style:normal;color:var(--yellow)}
+.legend{position:absolute;left:7cqw;right:7cqw;bottom:4.5cqh;text-align:center;font:400 2.1cqw/1.3 Manrope,sans-serif;color:var(--dim);z-index:4}
+/* storyboard frame (stand-in for the Seedance video) */
+.sb{position:relative;background:#120e0a;overflow:hidden}
+.sb svg{position:absolute;inset:0;width:100%;height:100%;display:block;stroke:#b3a996;fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.sb svg .y{stroke:var(--yellow)}.sb svg .yf{fill:var(--yellow);stroke:none;opacity:.9}.sb svg .d{stroke:#4a4238}
+.sb .cap{position:absolute;left:4%;bottom:5%;right:4%;font:500 min(1.6cqw,12px)/1.2 Manrope,sans-serif;color:#8a8278;letter-spacing:.08em;text-transform:uppercase}
+.sb:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 70%,rgba(253,213,6,.12),transparent 60%)}
+/* A · cinema + one row */
+.vA .bg{position:absolute;inset:0;z-index:0;opacity:.5}
+.vA .bg .sb{position:absolute;inset:0;background:none}
+.vA .bg .sb svg{inset:22%;width:56%;height:56%;opacity:.55}
+.vA .bg .sb:before{display:none}
+.vA .bg:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#0b0907 0%,rgba(11,9,7,.85) 24%,rgba(11,9,7,.35) 50%,rgba(11,9,7,.85) 82%,#0b0907 100%)}
+.vA .card{position:absolute;left:12cqw;right:12cqw;top:30cqh;z-index:3;text-align:center;opacity:0;transform:translateY(2cqh)}
+.vA .card.on{animation:up .55s cubic-bezier(.2,.8,.2,1) forwards}
+.vA .card .n{font:500 2.2cqw/1 Manrope,sans-serif;color:var(--dim);letter-spacing:.16em;text-transform:uppercase}
+.vA .card b{display:block;margin-top:1.4cqh;font:500 4.2cqw/1.2 Unbounded,sans-serif;color:var(--cream);letter-spacing:-.02em;text-wrap:balance}
+.vA .card .pr{display:block;margin-top:2cqh;font:500 7.2cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:var(--yellow)}
+.vA .card .pm{display:block;margin-top:.8cqh;font:400 2.4cqw Manrope,sans-serif;color:var(--muted)}
+.vA .chips{display:flex;justify-content:center;gap:1.4cqw;margin-top:3cqh}
+.vA .chips span{border:1px solid #3a3129;background:rgba(21,17,13,.85);padding:1.1cqh 2cqw;font:500 2.2cqw/1 Manrope,sans-serif;color:var(--muted)}
+.vA .chips span b{display:inline;margin:0 0 0 .8cqw;font:600 2.4cqw/1 Manrope,sans-serif;color:var(--cream)}
+.vA .chips span.y b{color:var(--yellow)}
+.vA .table{position:absolute;left:7cqw;right:7cqw;top:24cqh;z-index:3;opacity:0}
+.vA .table.on{animation:up .6s forwards}
+.vA .table .row{display:grid;grid-template-columns:1.5fr 1fr .5fr .4fr .5fr;gap:1.2cqw;align-items:center;padding:1.05cqh 0;border-top:1px solid var(--rule);font:400 2.05cqw/1.25 Manrope,sans-serif;color:var(--cream)}
+.vA .table .row.h{color:var(--dim);font-size:1.7cqw;letter-spacing:.14em;text-transform:uppercase;border-top:0}
+.vA .table .row .pr{color:var(--yellow);font-weight:600;white-space:nowrap}.vA .table .row .pr small{display:block;color:var(--dim);font-weight:400;font-size:1.6cqw}
+.vA .table .row .m{font-weight:600}.vA .table .row .m.y{color:var(--yellow)}.vA .table .row .m.g{color:#8a8278}
+.vA .dots{position:absolute;left:0;right:0;bottom:9cqh;display:flex;justify-content:center;gap:1cqw;z-index:4}
+.vA .dots i{width:.6cqw;height:.6cqw;border-radius:50%;background:#857b513f}.vA .dots i.cur{width:2.2cqw;border-radius:1cqw;background:var(--yellow)}
+/* B · rows with frames */
+.vB .rows{position:absolute;left:7cqw;right:7cqw;top:23cqh;z-index:3;display:flex;flex-direction:column}
+.vB .row{display:grid;grid-template-columns:9cqw 1.55fr 1fr .55fr .55fr;gap:1.6cqw;align-items:center;padding:.9cqh 0;border-top:1px solid var(--rule);opacity:.62;transition:opacity .4s}
+.vB .row.h{opacity:1;grid-template-columns:9cqw 1.55fr 1fr .55fr .55fr;border-top:0;padding:.4cqh 0 .6cqh;font:500 1.7cqw/1 Manrope,sans-serif;color:var(--dim);letter-spacing:.14em;text-transform:uppercase}
+.vB .row.on,.vB .row.done{opacity:1}
+.vB .row .sb{width:9cqw;height:6cqw;border:1px solid #2f2822;border-radius:.8cqw}
+.vB .row.on .sb{border-color:#5a4a10;box-shadow:0 0 2cqw rgba(253,213,6,.18)}
+.vB .row .nm{font:500 2.35cqw/1.22 Manrope,sans-serif;color:var(--cream)}
+.vB .row .nm small{display:block;font:400 1.8cqw Manrope,sans-serif;color:var(--dim);margin-top:.3cqh}
+.vB .row .pr{font:600 2.5cqw/1 Unbounded,sans-serif;letter-spacing:-.03em;color:var(--yellow);white-space:nowrap}
+.vB .row .pr small{display:block;margin-top:.6cqh;font:400 1.7cqw/1 Manrope,sans-serif;color:var(--dim);letter-spacing:0}
+.vB .row .m{font:400 1.7cqw/1 Manrope,sans-serif;color:var(--dim);letter-spacing:.1em;text-transform:uppercase}
+.vB .row .m b{display:block;font:600 3cqw/1 Unbounded,sans-serif;letter-spacing:-.04em;color:var(--cream);margin-top:.5cqh}
+.vB .row .m.y b{color:var(--yellow)}.vB .row .m.g b{color:#8a8278}
+.vB .row .m i{display:block;height:.5cqw;margin-top:.7cqh;background:#2a2420;position:relative}
+.vB .row .m i:after{content:'';position:absolute;left:0;top:0;bottom:0;width:var(--v);background:var(--yellow)}
+.vB .row .m.g i:after{background:#6f685e}
+/* C · showcase left */
+.vC .frame{position:absolute;left:7cqw;top:24cqh;width:36cqw;height:64cqh;border-radius:2cqw;overflow:hidden;border:1px solid #2f2822;background:#000;z-index:3;box-shadow:0 2.5cqh 7cqw rgba(0,0,0,.65)}
+.vC .frame .sb{position:absolute;inset:0}
+.vC .frame .rm{position:absolute;inset:0;background:#000}
+.vC .frame .rm img,.vC .frame .rm video{width:100%;height:100%;object-fit:cover;display:block}
+.vC .frame .rm.tl img{object-position:left top}
+.vC .frame .rm .phone{position:absolute;inset:0;overflow:hidden;background:#fff}
+.vC .frame .rm .phone iframe{width:390px;border:0;transform-origin:0 0;display:block}
+.vC .frame .src{position:absolute;left:1.4cqw;bottom:1.2cqh;font:400 1.4cqw/1 Manrope,sans-serif;color:#8a8278;background:rgba(11,9,7,.75);padding:.5cqh .8cqw;z-index:2}
+.vC .frame .tag{position:absolute;left:2cqw;top:2cqh;font:600 1.7cqw/1 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#0b0907;background:var(--yellow);padding:.7cqh 1.2cqw;z-index:2}
+.vC .list{position:absolute;left:47cqw;right:7cqw;top:24cqh;z-index:3;display:flex;flex-direction:column}
+.vC .item{padding:.95cqh 0;border-top:1px solid var(--rule);opacity:.45;transition:opacity .4s}
+.vC .item.on{opacity:1}.vC .item.done{opacity:.85}
+.vC .item .top{display:flex;justify-content:space-between;align-items:baseline;gap:1.5cqw}
+.vC .item .nm{font:500 2.25cqw/1.2 Manrope,sans-serif;color:var(--cream)}
+.vC .item .pr{font:600 2.35cqw/1 Unbounded,sans-serif;letter-spacing:-.03em;color:var(--yellow);white-space:nowrap}
+.vC .item .more{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1cqw;max-height:0;overflow:hidden;transition:max-height .45s,margin .45s;margin-top:0}
+.vC .item.on .more{max-height:8cqh;margin-top:.9cqh}
+.vC .item .more span{font:400 1.6cqw/1 Manrope,sans-serif;color:var(--dim);letter-spacing:.08em;text-transform:uppercase}
+.vC .item .more span b{display:block;margin-top:.5cqh;font:600 2.2cqw/1 Manrope,sans-serif;letter-spacing:0;color:var(--cream);text-transform:none}
+.vC .item .more span.y b{color:var(--yellow)}.vC .item .more span.g b{color:#8a8278}
+/* storyboard strip page section */
+.strip{position:fixed;left:0;right:0;top:0;display:none}
+@keyframes up{to{opacity:1;transform:none}}
+.controls{position:fixed;bottom:0;left:0;right:0;height:var(--controls);background:#0c0a08f5;border-top:1px solid #292319;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:0 16px}
+.tabs,.actions{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap}
+button{font:400 13px/1.3 Manrope,sans-serif;cursor:pointer;border:1px solid #504735;border-radius:7px;background:#17130d;color:#ddd5c6;padding:7px 12px}
+button[aria-selected="true"]{color:var(--yellow);border-color:var(--yellow);background:#27210e}
+.description{font-size:12px;text-align:center;color:#c8bfad;max-width:960px;margin:0}
+.note{font-size:11px;color:#a49a84;text-align:center;margin:0;max-width:960px}
+/* storyboard view (tab S) */
+.vS .grid{position:absolute;left:7cqw;right:7cqw;top:22cqh;display:grid;grid-template-columns:repeat(4,1fr);gap:1.4cqw;z-index:3}
+.vS .grid .sb{aspect-ratio:1;border:1px solid #2f2822;border-radius:.8cqw}
+.vS .grid .sb svg{top:8%;height:52%}
+.vS .grid .sb .cap{left:0;right:0;bottom:0;padding:4% 5% 5%;background:linear-gradient(0deg,#120e0a 70%,transparent);text-transform:none;letter-spacing:0}
+.vS .grid .sb .t{position:absolute;left:5%;top:5%;font:600 1.6cqw/1 Manrope,sans-serif;color:var(--yellow);letter-spacing:.08em}
+.vS .grid .sb .cap{font-size:1.4cqw;line-height:1.25;color:var(--muted)}
+.vS .grid .sb.prm{display:flex;align-items:center;justify-content:center;padding:1.4cqw;text-align:center;font:400 1.55cqw/1.35 Manrope,sans-serif;color:var(--dim)}
+.vS .grid .sb.prm b{color:var(--muted);font-weight:500}
+</style></head><body>
+<main class="slide vA" id="slide"></main>
+<nav class="controls"><div class="tabs" role="tablist"><button role="tab" data-v="S">Раскадровка · 7 кадров / 12 с</button><button role="tab" data-v="A">А · Кино + одна строка за раз</button><button role="tab" data-v="B">Б · Строки с кадрами</button><button role="tab" data-v="C">В · Витрина слева (реальный контент), список справа ✓</button></div>
+<p class="description"></p><p class="note" id="note">Видео Seedance 2.5 ещё не сгенерировано — в макетах вместо него схематичные кадры раскадровки (те же 7 сцен). Полный текст источника во всех вариантах, включая легенду.</p>
+<div class="actions"><button id="replay">↻ Повторить</button><button id="next">→ Следующий шаг</button></div></nav>
+<script>
+const H='<span class="k">Каталог</span><h1>7 услуг, которые агенты <em>делают целиком</em></h1>';
+const LEG='<p class="legend">Жёлтое — сильная сторона. Серое — то, о чём надо знать заранее</p>';
+const S=[
+ ['AI-сайты, которые приводят клиентов','$250–$1.200','за пакет','лёгкая',9,8],
+ ['AI-дизайн','$250–$900','за пакет','лёгкая',8,7],
+ ['Продающие AI-видео','$300–$1.200','за 8–12 роликов','лёгкая',10,5],
+ ['Контент-завод с AI-аватаром','$400–$1.400','в месяц','средняя',8,6],
+ ['AI-таргет (платная реклама)','$300–$800','в месяц','средняя',7,7],
+ ['AI-SEO (видимость в нейросетях)','$500','в месяц','средняя',7,1],
+ ['AI-продавец','$500–$2.000','за сборку и ведение','средняя',7,6]];
+/* storyboard sketches: 7 shots, one continuous dolly along a desk with 7 workstations */
+const SB=[
+ ['0–1.7 с · AI-сайты','<rect x="18" y="26" width="64" height="40" rx="2"/><path class="d" d="M12 70h76"/><rect class="yf" x="24" y="32" width="52" height="8"/><rect class="d" x="24" y="44" width="24" height="16"/><rect class="d" x="52" y="44" width="24" height="16"/>','ноутбук на тёмном столе; блоки сайта встают на экран один за другим'],
+ ['1.7–3.4 с · AI-дизайн','<rect x="14" y="30" width="40" height="46" rx="2" transform="rotate(-8 34 53)"/><rect x="34" y="26" width="40" height="46" rx="2"/><rect x="54" y="30" width="40" height="46" rx="2" transform="rotate(8 74 53)"/><rect class="yf" x="40" y="34" width="28" height="5"/>','страницы КП веером ложатся на стол под тёплым светом'],
+ ['3.4–5.1 с · AI-видео','<rect x="38" y="14" width="24" height="70" rx="4"/><path class="y" d="M46 44l10 6-10 6z"/><path class="d" d="M20 76h14M66 76h14"/>','вертикальный телефон на подставке, играет ролик с человеком в кадре'],
+ ['5.1–6.9 с · Контент-завод','<rect x="16" y="22" width="68" height="54" rx="2"/><path class="d" d="M16 36h68M39 22v54M61 22v54M16 50h68M16 63h68"/><rect class="yf" x="20" y="40" width="14" height="6"/><rect class="yf" x="43" y="53" width="14" height="6"/><rect class="yf" x="65" y="66" width="14" height="6"/>','сетка контент-календаря на экране заполняется карточками постов'],
+ ['6.9–8.6 с · AI-таргет','<rect x="14" y="22" width="72" height="54" rx="2"/><path class="d" d="M22 68h56"/><path class="y" d="M22 62c10-2 16-14 26-16s14 4 20-8 6-12 12-14"/><circle class="yf" cx="80" cy="24" r="3"/>','панель рекламного кабинета, кривая графика уходит вверх'],
+ ['8.6–10.3 с · AI-SEO','<path class="d" d="M10 30h80M10 50h80M10 70h80M30 12v76M50 12v76M70 12v76"/><circle class="yf" cx="30" cy="30" r="3"/><circle class="yf" cx="62" cy="52" r="3"/><circle class="yf" cx="44" cy="72" r="3"/><circle class="y" cx="62" cy="52" r="7"/>','тёмная карта города, загораются жёлтые пины'],
+ ['10.3–12 с · AI-продавец','<rect x="16" y="24" width="48" height="16" rx="6"/><rect x="36" y="46" width="48" height="16" rx="6"/><rect class="yf" x="16" y="68" width="40" height="12" rx="6"/><path class="y" d="M24 74l3 3 6-6"/>','в чате всплывают сообщения, последнее — подтверждение оплаты']];
+const RM=[
+ {phone:'assets/sites/zarmilkas/index.html',src:'живой сайт zarmilkas (собран агентом) · автопрокрутка'},
+ {video:'assets/vlad-1409/video/dizayn.mp4',poster:'assets/vlad-1409/video/dizayn-poster.jpg',src:'зипка Влада · именное КП · dizayn.mp4'},
+ {video:'assets/vlad-1409/video/avatar-1.mp4',poster:'assets/vlad-1409/video/avatar-1-poster.jpg',src:'зипка Влада · ролик с AI-аватаром · avatar-1.mp4'},
+ {img:'assets/vlad-1409/uslugi/kontent-dash.jpg',tl:1,src:'зипка Влада · панель клиента @ai.honeycove'},
+ {img:'assets/vlad-1409/uslugi/target-github.jpg',tl:1,src:'зипка Влада · код агента-рекламщика'},
+ {video:'assets/vlad-1409/video/ai-seo-reel.mp4',poster:'assets/vlad-1409/video/ai-seo-reel-poster.jpg',src:'зипка Влада · ai-seo-reel.mp4'},
+ {video:'assets/vlad-1409/video/tg-seller-voice.mp4',poster:'assets/vlad-1409/video/tg-seller-voice-poster.jpg',src:'зипка Влада · продавец голосом в Telegram'}];
+const real=i=>{const m=RM[i];return '<div class="rm'+(m.tl?' tl':'')+'">'+(m.phone?'<div class="phone"><iframe src="'+m.phone+'"></iframe></div>':m.video?'<video src="'+m.video+'" poster="'+m.poster+'" muted playsinline loop autoplay></video>':'<img src="'+m.img+'" alt="">')+'<span class="src">'+m.src+'</span></div>'};
+let scrollTok=null;
+function phoneFit(){const ph=document.querySelector('.vC .phone');if(!ph)return;const f=ph.querySelector('iframe');const k=ph.clientWidth/390;f.style.transform='scale('+k+')';f.style.height=(ph.clientHeight/k)+'px';
+ const tok=Symbol();scrollTok=tok;const start=()=>{const w=f.contentWindow;if(!w)return;let y=0,dir=1,last=performance.now();const step=now=>{if(scrollTok!==tok||!document.contains(f))return;const dt=Math.min(50,now-last);last=now;const max=Math.max(0,w.document.documentElement.scrollHeight-w.innerHeight);y+=dir*dt*0.09;if(y>=max){y=max;dir=-1}if(y<=0){y=0;dir=1}w.scrollTo(0,y);requestAnimationFrame(step)};setTimeout(()=>requestAnimationFrame(step),1200)};
+ if(f.contentDocument&&f.contentDocument.readyState==='complete'&&f.contentWindow.location.href!=='about:blank')start();else f.addEventListener('load',start,{once:true});}
+const frame=(i,cap)=>'<div class="sb" data-i="'+i+'"><svg viewBox="0 0 100 100">'+SB[i][1]+'</svg>'+(cap===false?'':'<span class="cap">'+(cap||SB[i][0])+'</span>')+'</div>';
+let timers=[];const T=(f,ms)=>timers.push(setTimeout(f,ms));const clr=()=>{timers.forEach(clearTimeout);timers=[]};
+let step=0;
+const V={
+S:{desc:'Один непрерывный проезд камеры слева направо вдоль длинного тёмного стола с семью рабочими местами (как конвейер на 164): по ~1,7 с на услугу, без склеек. Тёплый ключевой свет, жёлтые акценты, без читаемого текста и лиц. Формат 1:1 1080p 12 с (под квадратную деку), звук не нужен.',
+  html:()=>H+'<div class="grid">'+SB.map((s,i)=>'<div class="sb"><span class="t">'+String(i+1).padStart(2,'0')+'</span><svg viewBox="0 0 100 100">'+s[1]+'</svg><span class="cap">'+s[2]+'</span></div>').join('')+'<div class="sb prm"><b>Seedance 2.5 · t2v</b><br>1:1 · 1080p · 12 с<br>~108 кредитов<br>кадр = 1,71 с</div></div>',
+  run:()=>{},steps:1},
+A:{desc:'Видео на весь квадрат (приглушено), поверх — одна услуга за раз крупно: название, чек, три метки. Каждый клик — следующая строка, видео перематывается на её кадр. Последний шаг — вся таблица компактно (полный текст). Самый читаемый вариант с экрана зала.',
+  html:()=>H+'<div class="bg">'+frame(0,false)+'</div>'+S.map((s,i)=>'<div class="card" id="c'+i+'"><span class="n">услуга '+(i+1)+' из 7</span><b>'+s[0]+'</b><span class="pr">'+s[1]+'</span><span class="pm">'+s[2]+'</span><div class="chips"><span>сложность<b>'+s[3]+'</b></span><span class="y">спрос<b>'+s[4]+'</b></span><span class="'+(s[5]<=5?'y':'')+'">конкуренция<b>'+s[5]+'</b></span></div></div>').join('')+'<div class="table" id="tbl"><div class="row h"><span>Услуга</span><span>Ваш чек</span><span>Сложность</span><span>Спрос</span><span>Конкуренция</span></div>'+S.map(s=>'<div class="row"><span>'+s[0]+'</span><span class="pr">'+s[1]+'<small>'+s[2]+'</small></span><span>'+s[3]+'</span><span class="m y">'+s[4]+'</span><span class="m '+(s[5]<=5?'y':'g')+'">'+s[5]+'</span></div>').join('')+'</div><div class="dots">'+Array.from({length:8},(_,i)=>'<i id="d'+i+'"></i>').join('')+'</div>'+LEG,
+  steps:8,
+  show:i=>{document.querySelectorAll('.vA .card').forEach(c=>c.classList.remove('on'));const t=document.getElementById('tbl');t.classList.remove('on');document.querySelectorAll('.vA .dots i').forEach((d,k)=>d.classList.toggle('cur',k===i));const bg=document.querySelector('.vA .bg');if(i<7){document.getElementById('c'+i).classList.add('on');bg.innerHTML=frame(i,false);bg.style.opacity=.5}else{t.classList.add('on');bg.style.opacity=.18}}},
+B:{desc:'Таблица остаётся, но перевёрстана: у каждой строки слева свой кадр из видео (сегмент 1,7 с играет, когда строка в фокусе), чек в одну строку крупно, спрос/конкуренция — цифра + тонкая полоска. Строки появляются по клику, остальные притушены. Все 7 видны сразу — как сейчас, но читается.',
+  html:()=>H+'<div class="rows"><div class="row h"><span></span><span>Услуга</span><span>Ваш чек</span><span>Спрос</span><span>Конкуренция</span></div>'+S.map((s,i)=>'<div class="row" id="r'+i+'">'+frame(i,false)+'<span class="nm">'+s[0]+'<small>сложность '+s[3]+'</small></span><span class="pr">'+s[1]+'<small>'+s[2]+'</small></span><span class="m y">спрос<b>'+s[4]+'</b><i style="--v:'+s[4]*10+'%"></i></span><span class="m '+(s[5]<=5?'y':'g')+'">конкур.<b>'+s[5]+'</b><i style="--v:'+s[5]*10+'%"></i></span></div>').join('')+'</div>'+LEG,
+  steps:7,
+  show:i=>{document.querySelectorAll('.vB .row:not(.h)').forEach((r,k)=>{r.classList.toggle('on',k===i);r.classList.toggle('done',k<i)})}},
+C:{desc:'Выбрано. Слева вертикальная карточка с реальным результатом текущей услуги из материалов Влада (живой сайт с автопрокруткой, КП, ролик с аватаром, панель клиента, код агента, SEO-рилс, чат продавца), справа список из 7 — название и чек всегда видны, у строки в фокусе раскрываются сложность/спрос/конкуренция. Клик — следующая услуга. Видео Seedance при таком наполнении не обязательно.',
+  html:()=>H+'<div class="frame"><span class="tag" id="tag">1 / 7</span>'+real(0)+'</div><div class="list">'+S.map((s,i)=>'<div class="item" id="i'+i+'"><div class="top"><span class="nm">'+s[0]+'</span><span class="pr">'+s[1]+'</span></div><div class="more"><span>сложность<b>'+s[3]+'</b></span><span class="y">спрос<b>'+s[4]+' из 10</b></span><span class="'+(s[5]<=5?'y':'g')+'">конкуренция<b>'+s[5]+' из 10</b></span></div></div>').join('')+'</div>'+LEG,
+  steps:7,
+  show:i=>{document.querySelectorAll('.vC .item').forEach((r,k)=>{r.classList.toggle('on',k===i);r.classList.toggle('done',k<i)});const f=document.querySelector('.vC .frame');scrollTok=null;f.querySelector('.rm').outerHTML=real(i);document.getElementById('tag').textContent=(i+1)+' / 7';const v=f.querySelector('video');if(v)v.play().catch(()=>{});if(i===0)phoneFit()}}
+};
+const slide=document.getElementById('slide');let cur='A',initStep=0,hold=false;
+function render(){clr();step=initStep;initStep=0;slide.className='slide v'+cur;slide.innerHTML=V[cur].html();document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.v===cur)));document.querySelector('.description').textContent=V[cur].desc;if(V[cur].show)T(()=>V[cur].show(step),50);
+ // auto-advance in the demo
+ if(V[cur].steps>1&&step===0&&!hold){const n=V[cur].steps;let i=1;const tick=()=>{if(i>=n)return;step=i;V[cur].show(i);i++;T(tick,cur==='A'?2600:2000)};T(tick,2600)}}
+function next(){if(!V[cur].show)return;clr();step=(step+1)%V[cur].steps;V[cur].show(step)}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{cur=b.dataset.v;render()});
+document.getElementById('replay').onclick=render;document.getElementById('next').onclick=next;
+document.addEventListener('keydown',e=>{const o=['S','A','B','C'];let i=o.indexOf(cur);if(e.key==='ArrowRight')i=(i+1)%4;else if(e.key==='ArrowLeft')i=(i+3)%4;else if(e.key===' '){e.preventDefault();next();return}else return;cur=o[i];render();});
+const q=new URLSearchParams(location.search);if(V[q.get('v')])cur=q.get('v');if(q.has('step')){initStep=+q.get('step');hold=true}render();
+</script></body></html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>176 · АГЕНТ (кодовое слово) · три варіанти</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--panel:#15110d;--controls:150px}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding-bottom:var(--controls);background:#000;color:var(--cream);font:400 14px/1.4 Manrope,sans-serif}
+.slide{position:relative;width:min(100vw,calc(100dvh - var(--controls)));aspect-ratio:1;container-type:size;overflow:hidden;background:var(--bg)}
+.slide h1,.slide p{margin:0}
+/* shared */
+.k{position:absolute;left:7cqw;right:7cqw;text-align:center;font:500 2.4cqw/1 Manrope,sans-serif;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;opacity:0;transform:translateY(1cqh)}
+.play .k{animation:up .6s .1s forwards}
+.w{position:absolute;left:7cqw;right:7cqw;text-align:center;font:500 17cqw/1 Unbounded,sans-serif;letter-spacing:-.04em;color:var(--yellow);white-space:nowrap}
+.w span{display:inline-block;opacity:0;transform:scale(1.35) translateY(1cqh);filter:blur(.8cqw)}
+.play .w span{animation:letter .6s cubic-bezier(.2,.8,.2,1) forwards}
+.sub{position:absolute;left:11cqw;right:11cqw;text-align:center;font:400 3cqw/1.4 Manrope,sans-serif;color:var(--cream);opacity:0;transform:translateY(1cqh)}
+.play .sub{animation:up .7s 1.1s forwards}
+/* A · чат зліва + пульт справа */
+.vA .k{top:7cqh}
+.vA .w{top:11.5cqh;font-size:14cqw}
+.vA .sub{top:28.5cqh;font-size:2.8cqw}
+.vA .chat{position:absolute;left:7cqw;width:39cqw;top:41cqh;bottom:7cqh;display:flex;flex-direction:column;justify-content:flex-end;gap:1.6cqh}
+.vA .frame{position:absolute;right:7cqw;width:44cqw;top:41cqh;bottom:7cqh;border:1px solid #3a3129;background:#06090d;overflow:hidden;box-shadow:0 0 9cqw rgba(253,213,6,.12),0 2cqh 6cqh rgba(0,0,0,.6);opacity:0;transform:translateY(4cqh)}
+.play.vA .frame{animation:up .9s 1.5s forwards}
+.vA .frame img{display:block;width:100%;height:auto}
+.play.vA .frame img{animation:scrollB 16s ease-in-out 3s infinite alternate}
+.vA .frame:after{content:'';position:absolute;left:0;right:0;bottom:0;height:8cqh;background:linear-gradient(0deg,rgba(6,9,13,.9),transparent)}
+.vA .msgs{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:1.3cqh;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,transparent,#000 35%);mask-image:linear-gradient(180deg,transparent,#000 35%)}
+.vA .msg{display:flex;align-items:center;gap:1.8cqw;opacity:0;transform:translateY(2cqh);animation:up .45s forwards;flex:none}
+.vA .msg i{width:4.4cqw;height:4.4cqw;border-radius:50%;background:#1c1713;border:1px solid #3a3129;position:relative;flex:none}
+.vA .msg i:before{content:'';position:absolute;left:50%;top:24%;width:30%;height:30%;border-radius:50%;background:#7a726a;transform:translateX(-50%)}
+.vA .msg i:after{content:'';position:absolute;left:20%;right:20%;bottom:14%;height:30%;border-radius:50% 50% 0 0;background:#7a726a}
+.vA .msg span{font:400 2.8cqw/1 Manrope,sans-serif;color:var(--muted)}
+.vA .msg.me i{background:#2a2410;border-color:var(--yellow)}
+.vA .msg.me i:before,.vA .msg.me i:after{background:var(--yellow)}
+.vA .msg.me span{color:var(--cream);font-weight:500}
+.vA .input{height:8.5cqh;border:1px solid #3a3129;background:var(--panel);display:flex;align-items:center;padding:0 1.2cqw 0 2.6cqw;gap:2cqw;opacity:0;transform:translateY(1cqh);flex:none}
+.play.vA .input{animation:up .6s 1.5s forwards}
+.vA .txt{flex:1;font:400 3cqw/1 Manrope,sans-serif;color:var(--cream);display:flex;align-items:center}
+.vA .txt:empty:before{content:'Написать в чат…';color:var(--dim)}
+.vA .caret{width:.35cqw;height:3.4cqw;background:var(--yellow);margin-left:.4cqw;animation:blink 1s step-end infinite}
+.vA .send{width:6cqw;height:6cqw;border-radius:50%;background:#2a2420;display:grid;place-items:center;transition:background .3s}
+.vA .send svg{width:3cqw;height:3cqw;stroke:#7a726a;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s}
+.vA .send.ready{background:var(--yellow)}.vA .send.ready svg{stroke:#0b0907}
+.vA .send.go{animation:pop .4s}
+/* B · пульт у рамці */
+.vB .k{top:7cqh}
+.vB .w{top:11.5cqh;font-size:14cqw}
+.vB .sub{top:28.5cqh;font-size:2.8cqw}
+.vB .frame{position:absolute;left:7cqw;right:7cqw;top:41cqh;bottom:7cqh;border:1px solid #3a3129;background:#06090d;overflow:hidden;box-shadow:0 0 9cqw rgba(253,213,6,.13),0 2cqh 6cqh rgba(0,0,0,.6);opacity:0;transform:translateY(4cqh)}
+.play.vB .frame{animation:up .9s 1.5s forwards}
+.vB .frame img{display:block;width:100%;height:auto}
+.play.vB .frame img{animation:scrollB 18s ease-in-out 2.8s infinite alternate}
+.vB .frame:after{content:'';position:absolute;left:0;right:0;bottom:0;height:8cqh;background:linear-gradient(0deg,rgba(6,9,13,.9),transparent)}
+/* C · пульт на фон */
+.vC .bgp{position:absolute;inset:0;overflow:hidden}
+.vC .bgp img{position:absolute;left:0;width:100%;top:0;opacity:.24;mix-blend-mode:lighten;filter:saturate(.5)}
+.play.vC .bgp img{animation:scrollC 34s ease-in-out infinite alternate}
+.vC .bgp:after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 72% 44% at 50% 52%,rgba(11,9,7,.97) 0%,rgba(11,9,7,.82) 48%,rgba(11,9,7,.35) 80%,rgba(11,9,7,.85) 100%),linear-gradient(180deg,#0b0907 0%,transparent 16%,transparent 84%,#0b0907 100%)}
+.vC .k{top:30cqh}
+.vC .w{top:37cqh;font-size:19cqw;letter-spacing:-.045em}
+.play.vC .w{animation:glow 3s 1.8s ease-in-out infinite}
+.vC .w span{opacity:1;transform:none;filter:none;color:#4a4130}
+.play.vC .w span{animation:none}
+.vC .w span.set{color:var(--yellow)}
+.vC .line{position:absolute;left:38cqw;right:38cqw;top:59cqh;height:.5cqh;background:var(--yellow);transform:scaleX(0);transform-origin:50% 50%}
+.play.vC .line{animation:line .7s 1.5s cubic-bezier(.2,.8,.2,1) forwards}
+.vC .sub{top:63.5cqh;font-size:3cqw}
+.play.vC .sub{animation-delay:1.9s}
+@keyframes up{to{opacity:1;transform:none}}
+@keyframes letter{to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes blink{50%{opacity:0}}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(.8)}100%{transform:scale(1)}}
+@keyframes scrollB{to{transform:translateY(calc(52cqh - 100%))}}
+@keyframes scrollC{to{transform:translateY(calc(100cqh - 100%))}}
+@keyframes glow{0%,100%{text-shadow:0 0 2cqw rgba(253,213,6,.18)}50%{text-shadow:0 0 6cqw rgba(253,213,6,.5)}}
+@keyframes line{to{transform:scaleX(1)}}
+/* controls */
+.controls{position:fixed;bottom:0;left:0;right:0;height:var(--controls);background:#0c0a08f5;border-top:1px solid #292319;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:10px}
+.tabs,.actions{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap}
+button{font:400 13px/1.3 Manrope,sans-serif;cursor:pointer;border:1px solid #504735;border-radius:7px;background:#17130d;color:#ddd5c6;padding:7px 12px}
+button[aria-selected="true"]{color:var(--yellow);border-color:var(--yellow);background:#27210e}
+.description{font-size:12px;text-align:center;color:#c8bfad;max-width:900px;margin:0}
+.note{font-size:11px;color:#a49a84;text-align:center;margin:0}
+</style></head><body>
+<main class="slide vA" id="slide"></main>
+<nav class="controls"><div class="tabs" role="tablist"><button role="tab" data-v="A">А · Чат ефіру: слово набирається і летить у чат</button><button role="tab" data-v="B">Б · Пульт демо великим у рамці, живий скрол</button><button role="tab" data-v="C">В · Пульт на фон, слово «розшифровується» по центру</button></div><p class="description"></p><div class="actions"><button id="replay">↻ Програти знову</button><span class="note">← → перемикають варіанти</span></div></nav>
+<script>
+const PULT='assets/vlad-1409/pult/pult-7-knopok-column.png';
+const K='<p class="k">Ловите кодовое слово</p>';
+const W=d=>'<h1 class="w" aria-label="АГЕНТ">'+[...'АГЕНТ'].map((ch,i)=>`<span style="animation-delay:${(d+i*.09).toFixed(2)}s">${ch}</span>`).join('')+'</h1>';
+const SUB='<p class="sub">Пишите «агент» в чат — заберёте его в конце эфира вместе со ссылкой</p>';
+let timers=[];const T=(f,ms)=>timers.push(setTimeout(f,ms));const clr=()=>{timers.forEach(clearTimeout);timers=[]};
+const V={
+A:{desc:'Чат ефіру зліва + пульт справа. Зверху слово та інструкція. Зліва живий чат: курсор набирає «агент», кнопка стає жовтою, повідомлення летить у стрічку, далі одне за одним такі самі повідомлення від глядачів (сірі аватари, без імен). Справа — скрин пульта демо із зіпки Влада у рамці, повільно прокручується.',
+ html:()=>K+W(.35)+SUB+`<div class="chat"><div class="msgs" id="msgs"></div><div class="input"><div class="txt" id="txt"></div><div class="send" id="send"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></div></div></div><div class="frame"><img src="${PULT}" alt="Пульт демо — от сайта до клиентов"></div>`,
+ run:()=>{const txt=document.getElementById('txt'),send=document.getElementById('send'),msgs=document.getElementById('msgs');
+  const caret=document.createElement('b');caret.className='caret';
+  T(()=>txt.append(caret),1600);
+  const word='агент';[...word].forEach((ch,i)=>T(()=>{caret.before(document.createTextNode(ch));if(i===word.length-1)send.classList.add('ready');},2300+i*130));
+  const add=(text,me)=>{const m=document.createElement('div');m.className='msg'+(me?' me':'');m.innerHTML='<i></i><span></span>';m.lastChild.textContent=text;msgs.append(m);while(msgs.children.length>9)msgs.firstChild.remove();};
+  T(()=>{send.classList.add('go');txt.textContent='';add('агент',true);T(()=>{txt.append(caret);send.classList.remove('ready','go');},350);},3300);
+  const pool=['агент','Агент','агент','АГЕНТ','агент','агент','Агент','агент'];let n=0;
+  const next=()=>{add(pool[n%pool.length]);n++;T(next,n<6?520:900+Math.random()*900);};
+  T(next,4000);}},
+B:{desc:'Пульт великим. Текст зверху (слово, інструкція), нижню половину займає скрин пульта демо із зіпки Влада — вирізана центральна колонка, тому заголовок «Семь кнопок…» і перша кнопка читаються. Рамка з м’яким жовтим свіченням, зображення повільно їде вгору-вниз, як живий екран. Видно, що саме забирають за кодове слово.',
+ html:()=>K+W(.35)+SUB+`<div class="frame"><img src="${PULT}" alt="Пульт демо — от сайта до клиентов"></div>`,
+ run:()=>{}},
+C:{desc:'Пульт на фон. Скрин пульта на весь квадрат, притемнений і розмитий по краях, повільно пливе. По центру слово АГЕНТ «розшифровується»: літери перебирають випадкові знаки і по черзі стають жовтими, далі жовта риска і інструкція. Найближче до правила «зображення на фон + текст по центру».',
+ html:()=>`<div class="bgp"><img src="${PULT}" alt=""></div>`+K+W(0)+`<div class="line"></div>`+SUB,
+ run:()=>{const spans=[...document.querySelectorAll('.w span')];const G='АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЭЮЯ';
+  spans.forEach((s,i)=>{const orig='АГЕНТ'[i];let iv=setInterval(()=>{s.textContent=G[Math.floor(Math.random()*G.length)];},55);timers.push(iv);
+   T(()=>{clearInterval(iv);s.textContent=orig;s.classList.add('set');},420+i*200);});}}
+};
+const slide=document.getElementById('slide');let cur='A';
+function render(){clr();slide.className='slide v'+cur;slide.innerHTML=V[cur].html();document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.v===cur)));document.querySelector('.description').textContent=V[cur].desc;setTimeout(()=>{slide.classList.add('play');V[cur].run();},80);}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{cur=b.dataset.v;render()});
+document.getElementById('replay').onclick=render;
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')cur=cur==='A'?'B':cur==='B'?'C':'A';else if(e.key==='ArrowLeft')cur=cur==='A'?'C':cur==='B'?'A':'B';else return;render();});
+cur=new URLSearchParams(location.search).get('v')||'A';if(!V[cur])cur='A';render();
+</script></body></html>

@@ -1,0 +1,21 @@
+/* g3f9b3adf0b8_0_1320: one typeface, clear values over a quiet workplace image. */
+.b129.b13-v2-jobs .b13-shell{padding:8cqh 7cqw;gap:0;justify-content:flex-start;isolation:isolate;}
+.b129.b13-v2-jobs .b13-head{position:relative;z-index:1;}
+.b129.b13-v2-jobs .b13-head h1{font:600 4.8cqw/1.2 Manrope,sans-serif;letter-spacing:-.035em;}
+.b129.b13-v2-jobs .b13-head h1 em{font:inherit;color:#fdd506;}
+.b129.b13-v2-jobs .b13-body{position:static;padding:0;margin-top:17cqh;gap:4cqh;}
+.b129.b13-v2-jobs .jobs-photo{position:absolute;inset:0;z-index:-1;margin:0;overflow:hidden;pointer-events:none;}
+.b129.b13-v2-jobs .jobs-photo img{display:block;width:100%;height:100%;object-fit:cover;border:0;border-radius:0;}
+.b129.b13-v2-jobs .jobs-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,.12) 0%,rgba(11,9,7,.08) 32%,rgba(11,9,7,.18) 55%,rgba(11,9,7,.6) 82%,#0b0907 100%);}
+.b129.b13-v2-jobs .duo{position:relative;gap:2.5cqw;}
+.b129.b13-v2-jobs .duo .col{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:1.5cqh;min-height:31cqh;padding:3cqh 2.8cqw;opacity:1;border:1px solid #9a928166;border-radius:2cqw;background:rgba(11,9,7,.76);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);}
+.b129.b13-v2-jobs .duo .col.is-focus{border-color:#e6dfcba8;}
+.b129.b13-v2-jobs .duo .col.good{border-color:#fdd5066b;background:rgba(25,21,11,.78);}
+.b129.b13-v2-jobs .duo .col.good.is-focus{border-color:#fdd506;box-shadow:0 0 3cqw #fdd50612;}
+.b129.b13-v2-jobs .duo .col h5{margin:0;padding:0;border:0;font:500 2.55cqw/1.3 Manrope,sans-serif;letter-spacing:0;text-transform:none;color:#f5f3ee;}
+.b129.b13-v2-jobs .duo .col .big{display:flex;align-items:baseline;gap:1cqw;padding:0;margin:0;border:0;font:700 11.5cqw/1.12 Manrope,sans-serif;letter-spacing:-.055em;color:#f5f3ee;white-space:nowrap;}
+.b129.b13-v2-jobs .duo .big:after,.b129.b13-v2-jobs .duo .big:before{display:none;}
+.b129.b13-v2-jobs .duo .big small{font:500 3.5cqw/1 Manrope,sans-serif;letter-spacing:-.02em;}
+.b129.b13-v2-jobs .duo .col.good .big{color:#fdd506;}
+.b129.b13-v2-jobs .duo .col .jobs-caption{padding:0;border:0;font:400 2.55cqw/1.3 Manrope,sans-serif;color:#e1ddd4;}
+.b129.b13-v2-jobs .b13-body>.jobs-conclusion{position:relative;align-self:center;margin:0;padding:0;width:100%;font:500 3.35cqw/1.35 Manrope,sans-serif;letter-spacing:-.015em;color:#f5f3ee;text-align:center;text-shadow:0 2px 18px #0b0907;}

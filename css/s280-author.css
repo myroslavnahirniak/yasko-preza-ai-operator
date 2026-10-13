@@ -1,0 +1,18 @@
+/* Author's answer: centred typography, unobstructed face. */
+.b129.b13-v2-s16-salesv6:has(.v6-author-answer) .b13-shell{
+ background:linear-gradient(180deg,#0b090720 0%,#0b090710 35%,#0b090720 56%,#0b0907d9 77%,#0b0907f5 100%),url('../assets/gen-b243/s249-vlad.webp') center/cover no-repeat;
+}
+.b129.b13-v2-s16-salesv6:has(.v6-author-answer) .b13-head{
+ top:12cqh;left:7cqw;right:7cqw;text-align:center;
+}
+.b129.b13-v2-s16-salesv6:has(.v6-author-answer) .b13-head h1{
+ font:500 4.2cqw/1.27 Unbounded,sans-serif;letter-spacing:-.035em;text-wrap:balance;
+}
+.b129.b13-v2-s16-salesv6:has(.v6-author-answer) .b13-body{
+ inset:0;display:block;z-index:2;pointer-events:none;
+}
+.sales-v6.v6-author-answer{height:100%;display:block;text-align:center}
+.s280-question-label{position:absolute;top:7cqh;left:7cqw;right:7cqw;font:400 2.1cqw/1.4 Manrope,sans-serif;color:#c6c1b9}
+.s280-answer{position:absolute;left:12cqw;right:12cqw;bottom:8cqh;text-align:center}
+.sales-v6 .s280-yes{font:500 3.7cqw/1.3 Unbounded,sans-serif;letter-spacing:-.025em;color:#fdd506;margin:0 0 2cqh}
+.sales-v6 .s280-copy{font:400 2.8cqw/1.5 Manrope,sans-serif;color:#f5f3ee;text-wrap:balance;margin:0}

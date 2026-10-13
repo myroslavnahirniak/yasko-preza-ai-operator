@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>31 · Приз №3 — отдаю прямо сейчас · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<link rel="stylesheet" href="design-2430.css?v=2">
+</head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Барыга (готовый арт)</button><button role="tab" data-v="B">Б · Приз под клошем (фото-сцена)</button><button role="tab" data-v="C">В · «до 75%» крупно</button></div>
+<p class="description"></p>
+<p class="note nav-pages">Полный текст слайда, без шагов · Слайды: <a href="design-s24-options.html">24</a><a href="design-s27-options.html">27</a><a href="design-s31-options.html">31</a> · Клавиши: ←/→ вариант, ↓/Space шаг, ↑ назад.</p>
+<div class="actions"><button id="prev" class="stepbtn">◀ шаг</button><span id="stepinfo"></span><button id="next" class="stepbtn">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+</nav>
+<script>
+
+const H1='<h1>Приз №3 — отдаю прямо <em>сейчас</em></h1>';
+const BODY='<p>Место, где я, моя команда и ученики покупаем нейронки <b>до 75% дешевле</b>.</p><p class="mut">Это для тех, кто уверен, что работа с нейронками — дорого</p>';
+window.VARIANTS={
+A:{steps:0,cls:'v-A31 kb',html:'<div class="art"><img src="assets/photo/replace/bariga.webp" alt=""></div><div class="hd l fx-up">'+H1+BODY+'</div>',
+  desc:'Готовый арт «Барыга AI-подписок» из деки: продавец в плаще распахивает полы — внутри подписки на нейронки. Текст слева на затемнении. ⚠️ На картинке бейджи «−90%», а в тексте слайда «до 75%» — надо выбрать одно.'},
+B:{steps:0,cls:'v-B31 kb',html:'<div class="art"><img src="assets/gen-2430/s31-cloche.webp" alt=""></div><div class="hd fx-up">'+H1+BODY+'</div>',
+  desc:'Серия «три приза»: та же сцена с клошами, что на слайде 26 и в варианте В для приза №1 — поднят клош, под ним веер светящихся карт-подписок и монеты. Без логотипов и цифр на картинке, «до 75%» — живым текстом.'},
+C:{steps:0,cls:'v-C31',html:'<div class="art-r"><img src="assets/photo/replace/bariga.webp" alt=""></div><div class="hd l fx-up">'+H1+'</div><div class="huge fx-up"><b>до 75%</b><span>дешевле</span></div><div class="bottom fx-up">'+BODY+'</div>',
+  desc:'Типографический удар: огромное «до 75%» на фоне кадрированного Барыги (только лицо и плащ, бейджи «−90%» ушли в затемнение). Полный текст слайда внизу слева.'}};
+
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

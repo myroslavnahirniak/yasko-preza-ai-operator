@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>209 · Имея в арсенале 3 агента, она · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.h1{font-size:4.6cqw}
+.rows{display:grid;gap:1.1cqh}
+.row{display:grid;grid-template-columns:4.2cqw 1fr;gap:0 1cqw;align-items:baseline;padding:1.1cqh 0;border-top:1px solid var(--rule)}
+.row:first-child{border-top:0}
+.row i{font:500 2.2cqw/1.2 Unbounded,sans-serif;color:var(--yellow);font-style:normal}
+.row b{font:500 2.3cqw/1.25 Manrope,sans-serif;color:var(--cream)}
+.row.is-past{opacity:.6}
+/* ---- А · живой сайт в окне браузера ---- */
+.v-A .top{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3;display:grid;grid-template-columns:1fr 1.15fr;gap:3cqw;align-items:start}
+.v-A .rows{gap:.4cqh}.v-A .row{padding:.8cqh 0}.v-A .row b{font-size:2cqw}.v-A .row i{font-size:1.9cqw}
+.win{position:absolute;left:7cqw;right:7cqw;top:36cqh;bottom:7cqh;z-index:4;display:flex;flex-direction:column;background:#000;border:1px solid #3a3129;border-radius:1cqw;overflow:hidden;box-shadow:0 1.5cqh 4cqw rgba(0,0,0,.6)}
+.bar{flex:none;height:4.4cqh;background:#1c1713;border-bottom:1px solid #2f2822;display:flex;align-items:center;gap:.9cqw;padding:0 1.6cqw}
+.bar i{width:1.1cqw;height:1.1cqw;border-radius:50%;background:#3a3129;flex:none}
+.url{flex:1;margin:0 8cqw 0 1.6cqw;height:2.7cqh;background:#0f0c09;border:1px solid #2a2420;border-radius:.6cqw;display:flex;align-items:center;justify-content:center;font:500 1.85cqw/1 Manrope,sans-serif;color:#8a8278}
+.view{flex:1;min-height:0;position:relative;overflow:hidden;background:#06080a}
+.view iframe{position:absolute;left:0;top:0;width:1100px;height:2000px;border:0;transform-origin:0 0}
+.view img{position:absolute;left:0;top:0;width:100%;display:block}
+.play .view img.scroll{animation:scroll 26s linear 1.2s forwards}
+@keyframes scroll{to{transform:translateY(calc(-100% + 56cqh))}}
+/* ---- Б · квест-карточка (стиль 163) ---- */
+.v-B .art:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.55) 30%,transparent 55%)}
+.v-B .text{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3;text-align:center}
+.v-B .kick{display:block;margin-bottom:1.2cqh}
+.ticket{position:absolute;left:9cqw;top:26cqh;width:50cqw;z-index:5;background:#f5f0e6;color:#1b1612;padding:2.6cqh 2.4cqw 2.2cqh;box-shadow:0 2cqh 6cqh rgba(0,0,0,.55);transform:rotate(-2.5deg);border-top:1.4cqh solid #e5dccb}
+.ticket h4{margin:0 0 1.4cqh;font:500 1.7cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:#6b615a;border-bottom:1px dashed #b9ae9c;padding-bottom:1.2cqh}
+.ticket .r{display:flex;align-items:center;gap:1.2cqw;padding:1.1cqh 0;font:500 2.3cqw/1.25 Manrope,sans-serif;position:relative}
+.ticket .box{width:2.6cqw;height:2.6cqw;border:.25cqw solid #8a7f72;border-radius:.3cqw;flex:none;position:relative;background:#fff}
+.ticket .r.is-now .box,.ticket .r.is-past .box{background:var(--yellow);border-color:#b39600}
+.ticket .r.is-now .box:after,.ticket .r.is-past .box:after{content:'';position:absolute;left:.7cqw;top:.2cqw;width:.7cqw;height:1.3cqw;border:solid #1b1612;border-width:0 .3cqw .3cqw 0;transform:rotate(45deg)}
+.ticket .r[data-step].is-future{opacity:.35!important;visibility:visible;transform:none}
+.stamp{position:absolute;right:-3cqw;bottom:-2cqh;z-index:6;font:700 3.6cqw/1 Unbounded,sans-serif;color:#c6000c;border:.45cqw solid #c6000c;padding:.8cqh 1.4cqw;transform:rotate(-14deg);letter-spacing:.04em;opacity:0}
+.stamp.is-now{animation:stamp .5s cubic-bezier(.2,1.6,.4,1) forwards}
+@keyframes stamp{from{opacity:0;transform:rotate(-14deg) scale(2)}to{opacity:1;transform:rotate(-14deg) scale(1)}}
+.v-B .badges{position:absolute;right:7cqw;top:30cqh;width:26cqw;z-index:5;display:grid;gap:1.4cqh}
+.badge{background:rgba(21,17,13,.85);border:1px solid #3a3129;padding:1.2cqh 1.2cqw;display:flex;gap:1cqw;align-items:center;font:500 1.6cqw/1.25 Manrope,sans-serif;color:var(--muted)}
+.badge svg{width:4.2cqw;height:4.2cqw;flex:none;stroke:#b3a996;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;background:#1c1713;border:1px solid #2f2822;border-radius:.8cqw;padding:.8cqw;box-sizing:border-box}
+.badge.is-now,.badge.is-past{color:var(--cream)}.badge.is-now svg{stroke:var(--yellow);border-color:rgba(253,213,6,.6)}
+.v-B .site{position:absolute;left:7cqw;right:7cqw;bottom:7cqh;height:26cqh;z-index:5;border:1px solid #3a3129;overflow:hidden;background:#000}
+.v-B .site img{width:100%;display:block}
+/* ---- В · сплит: список слева, полная страница листается справа ---- */
+.v-C .left{position:absolute;left:7cqw;top:7cqh;width:38cqw;z-index:3}
+.v-C .rows{margin-top:3cqh}
+.v-C .frame{position:absolute;left:50cqw;right:7cqw;top:7cqh;bottom:7cqh;z-index:4;display:flex;flex-direction:column;background:#000;border:1px solid #3a3129;border-radius:1cqw;overflow:hidden;box-shadow:0 1.5cqh 4cqw rgba(0,0,0,.6)}
+.v-C .frame .bar{height:3.6cqh}.v-C .url{font-size:1.5cqw;margin-right:2cqw}
+.v-C .cap{position:absolute;left:7cqw;width:38cqw;bottom:7cqh;z-index:3;font:400 2cqw/1.4 Manrope,sans-serif;color:var(--muted)}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Живой сайт в окне браузера</button><button role="tab" data-v="B">Б · Квест-карточка (как 163)</button><button role="tab" data-v="C">В · Сплит: список + страница листается</button></div>
+<p class="description"></p>
+<p class="note">Полный текст источника: заголовок + три пункта + lono-next.vercel.app. В деке для А сделаем локальную копию сайта с покроковой прокруткой (как 193). Клавиши: ←/→ вариант, ↓/Space шаг.</p>
+<div class="actions"><button id="prev" class="stepbtn">◀ шаг</button><span id="stepinfo"></span><button id="next" class="stepbtn">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+</nav>
+<script>
+const ROWS=['начинала с AI-дизайна','продала сайт за $1000','создала контент-завод для соц сетей'];
+const H='<h1 class="h1">Имея в арсенале <em>3 агента</em>, она:</h1>';
+const rows=()=>'<div class="rows">'+ROWS.map((r,i)=>'<div class="row" data-step="'+(i+1)+'"><i>0'+(i+1)+'</i><b>'+r+'</b></div>').join('')+'</div>';
+const BAR='<div class="bar"><i></i><i></i><i></i><div class="url">lono-next.vercel.app</div></div>';
+const ICONS=['<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="8.5" cy="10" r="1.2"/><circle cx="12" cy="7.5" r="1.2"/><circle cx="15.5" cy="10" r="1.2"/><path d="M12 21c-2 0-3-1.5-2-3s3-1 4-2 3-1 4 1"/></svg>','<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/><path d="M9 17l3-4 3 4M12 13v-1"/></svg>','<svg viewBox="0 0 24 24"><path d="M4 9h16v11H4zM4 9l2-4h12l2 4M8 5l2 4M14 5l2 4"/><path d="M10 13l4 2.5-4 2.5z"/></svg>'];
+window.VARIANTS={
+A:{steps:3,html:'<div class="top fx-up"><div>'+H+'</div>'+rows()+'</div><div class="win fx-up"><div class="bar"><i></i><i></i><i></i><div class="url">lono-next.vercel.app</div></div><div class="view"><iframe src="https://lono-next.vercel.app/" title="LONO" loading="lazy"></iframe></div></div>',
+   onRender(s){const v=s.querySelector('.view'),f=v.querySelector('iframe');const fit=()=>{const k=v.clientWidth/1100;f.style.transform='scale('+k+')';f.style.height=(v.clientHeight/k)+'px';};fit();window.addEventListener('resize',fit);},
+   desc:'Заголовок и три пункта в верхней трети, ниже — окно браузера с живым сайтом LONO (в деке: локальная копия с покроковой прокруткой, как на 193 «Услуги»; в этом превью — просто iframe). Сразу видно, что это настоящий сайт, а не картинка. Рекомендация.'},
+B:{steps:3,cls:'kb',html:'<div class="art"><img src="assets/gen-184-188/s209-quest.webp" alt=""></div><div class="text fx-up"><span class="kick">Кейс · Женя</span>'+H+'</div><div class="ticket fx-up"><h4>Достижения</h4>'+ROWS.map((r,i)=>'<div class="r" data-step="'+(i+1)+'"><span class="box"></span>'+r+'</div>').join('')+'<div class="stamp" data-step="3">3 АГЕНТА</div></div><div class="badges">'+['AI-дизайн','AI-сайты','Контент-завод'].map((b,i)=>'<div class="badge" data-step="'+(i+1)+'">'+ICONS[i]+b+'</div>').join('')+'</div>',
+   desc:'В духе слайда 163 (пекарня): иллюстрация — девушка за ноутбуком, над ней три «ачивки»; чек-лист достижений на бумажной карточке, галочки ставятся по шагам, на третьем — печать «3 АГЕНТА». Справа три бейджа агентов (иконки в стиле деки). Игровой, тёплый.'},
+C:{steps:3,html:'<div class="left fx-up">'+H+rows()+'</div><div class="frame fx-up">'+BAR+'<div class="view"><img class="scroll" src="assets/vlad-1409/uslugi/sajty-lono-full.jpg" alt=""></div></div><p class="cap fx-up">lono-next.vercel.app</p>',
+   desc:'Сплит: слева заголовок и три пункта по шагам, справа высокое окно браузера, в котором вся страница LONO медленно листается сверху вниз (полный скрин сайта из зипа Влада). Без живого iframe — работает офлайн.'}};
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

@@ -1,0 +1,16 @@
+# Three commitments — pencil illustrations
+
+Generated with built-in imagegen, using `assets/sketches/roadmap-school-pencil-v1.png` as style reference. Saved unchanged in `assets/sketches/rules-{quiet,watch,door}-pencil-v1.png`.
+
+## quiet
+
+Create one square presentation illustration. Reference image is STYLE ONLY, do not depict a school. Match its highly detailed hand-drawn engraving / graphite and ivory colored-pencil crosshatching, substantial black object volumes, sharp cream edge highlights and restrained bright yellow colored-pencil accents. Rich tactile material details, not a flat vector icon, not a photo or 3D render. Single centered isolated still-life filling 82% of square with clean margins, consistent three-quarter perspective. Uniform solid near-black #080706 background all the way to edges, NO checkerboard, no ground scene, no text, no watermark. Subject: a modern smartphone lying diagonally face-up, a detailed black glass screen and machined rim, beside a small physical brass bell with one bold yellow diagonal cancellation stroke across the bell. Phone screen dark, notifications off. Clear simple silhouette, the phone is dominant and bell secondary. Express silence and putting away the phone. No floating UI, no hands.
+
+## watch
+
+Create one square presentation illustration. Reference image is STYLE ONLY, do not depict a school. Match its highly detailed hand-drawn engraving / graphite and ivory colored-pencil crosshatching, substantial black object volumes, sharp cream edge highlights and restrained bright yellow colored-pencil accents. Rich tactile material details, not a flat vector icon, not a photo or 3D render. Single centered isolated still-life filling 82% of square with clean margins, consistent three-quarter perspective. Uniform solid near-black #080706 background all the way to edges, NO checkerboard, no ground scene, no text, no watermark. Subject: an elegant wide desktop monitor in three-quarter perspective on a substantial stand, detailed engraved metal and black glass; on the screen one beautifully drawn ivory human eye with bright yellow iris, signifying watch attentively. Screen has no words or interface, only the large eye. Entire monitor and stand visible. No keyboard, no room.
+
+## door
+
+Create one square presentation illustration. Reference image is STYLE ONLY, do not depict a school. Match its highly detailed hand-drawn engraving / graphite and ivory colored-pencil crosshatching, substantial black object volumes, sharp cream edge highlights and restrained bright yellow colored-pencil accents. Rich tactile material details, not a flat vector icon, not a photo or 3D render. Single centered isolated still-life filling 82% of square with clean margins, consistent three-quarter perspective. Uniform solid near-black #080706 background all the way to edges, NO checkerboard, no ground scene, no text, no watermark. Subject: a substantial closed wooden door with ornate but restrained panel joinery, thick architectural frame, detailed grain and ivory pencil edge highlights, polished yellow brass handle and a small blank yellow door-hanger on the handle. Three-quarter perspective, complete frame and doorstep visible. Door is closed, signifying do not disturb. No text, no surrounding wall or room.
+

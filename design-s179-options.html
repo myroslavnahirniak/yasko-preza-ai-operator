@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>179 · И под каждую есть свои сотрудники · 4 слайда × 2 агента · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--panel:#15110d;--controls:190px}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding-bottom:var(--controls);background:#000;color:var(--cream);font:400 14px/1.4 Manrope,sans-serif}
+.slide{position:relative;width:min(100vw,calc(100dvh - var(--controls)));aspect-ratio:1;container-type:size;overflow:hidden;background:var(--bg)}
+.slide h1,.slide p{margin:0}
+.k{position:absolute;left:7cqw;top:7cqw;font:500 2.2cqw/1 Manrope,sans-serif;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;z-index:4}
+.k:before{content:'';display:inline-block;width:2.4cqw;height:.3cqw;background:var(--yellow);vertical-align:middle;margin-right:1.4cqw}
+h1{position:absolute;left:7cqw;right:7cqw;top:12.5cqh;font:500 4.4cqw/1.18 Unbounded,sans-serif;letter-spacing:-.03em;z-index:4}
+h1 em{font-style:normal;color:var(--yellow)}
+.sub{position:absolute;left:7cqw;top:25.5cqh;font:500 2.3cqw/1 Manrope,sans-serif;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;z-index:4}
+.sub b{color:var(--yellow);font-weight:500}
+.ic{width:5.2cqw;height:5.2cqw;flex:none;stroke:#b3a996;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;background:#1c1713;border:1px solid #2f2822;border-radius:1cqw;padding:1.2cqw}
+.media{position:relative;background:#000;overflow:hidden}
+.media img,.media video{width:100%;height:100%;object-fit:cover;display:block}
+.media.fit img,.media.fit video{object-fit:contain}
+.media.light img{object-fit:cover;object-position:top}
+.media .fan{position:absolute;inset:0}
+.media .fan img{position:absolute;width:62%;height:auto;object-fit:contain;border:1px solid #3a3129;box-shadow:0 1cqh 3cqw rgba(0,0,0,.6)}
+.media .fan img:nth-child(1){left:2%;top:8%}.media .fan img:nth-child(2){left:20%;top:26%}.media .fan img:nth-child(3){left:38%;top:44%}
+.media .src{position:absolute;right:1cqw;bottom:.8cqh;font:400 1.4cqw/1 Manrope,sans-serif;color:#6f685e;background:rgba(11,9,7,.7);padding:.5cqh .8cqw}
+.team{position:absolute;left:7cqw;right:7cqw;bottom:4.2cqh;display:flex;gap:.8cqw;z-index:4}
+.team i{flex:1;height:.5cqw;background:#2a2420}.team i.on{background:var(--yellow)}.team i.done{background:#6f685e}
+/* A · two cards */
+.vA .cards{position:absolute;left:7cqw;right:7cqw;top:31cqh;bottom:9cqh;display:grid;grid-template-columns:1fr 1fr;gap:2cqw;z-index:3}
+.vA .card{background:var(--panel);border:1px solid var(--rule);border-radius:1.4cqw;overflow:hidden;display:flex;flex-direction:column;opacity:0;transform:translateY(2cqh)}
+.vA.play .card{animation:up .6s cubic-bezier(.2,.8,.2,1) forwards}.vA.play .card:nth-child(2){animation-delay:.25s}
+.vA .card .media{flex:1;min-height:0;border-bottom:1px solid var(--rule)}
+.vA .card .txt{display:flex;gap:1.6cqw;align-items:center;padding:1.6cqh 1.8cqw}
+.vA .card b{display:block;font:500 2.6cqw/1.15 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--cream)}
+.vA .card small{display:block;margin-top:.5cqh;font:400 2cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+/* B · desk: list left, screen right */
+.vB .list{position:absolute;left:7cqw;top:31cqh;width:30cqw;z-index:3;display:flex;flex-direction:column;gap:1.4cqh}
+.vB .ag{display:flex;gap:1.4cqw;align-items:center;padding:1.6cqh 1.4cqw;border:1px solid var(--rule);background:var(--panel);border-radius:1.2cqw;opacity:.45;transition:opacity .4s,border-color .4s;cursor:pointer}
+.vB .ag.on{opacity:1;border-color:#5a4a10}
+.vB .ag b{display:block;font:500 2.3cqw/1.15 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--cream)}
+.vB .ag small{display:block;margin-top:.4cqh;font:400 1.9cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+.vB .screen{position:absolute;left:40cqw;right:7cqw;top:31cqh;bottom:9cqh;border:1px solid #2f2822;border-radius:1.4cqw;overflow:hidden;background:#000;z-index:3;box-shadow:0 2cqh 6cqw rgba(0,0,0,.6)}
+.vB .screen .media{position:absolute;inset:0;opacity:0;transition:opacity .5s}.vB .screen .media.on{opacity:1}
+.vB .screen .cap{position:absolute;left:0;right:0;bottom:0;padding:1.4cqh 1.8cqw;background:linear-gradient(0deg,rgba(11,9,7,.92),transparent);font:500 2cqw/1.2 Manrope,sans-serif;color:var(--cream);z-index:2}
+.vB .screen .cap b{color:var(--yellow);font-weight:500}
+/* C · full-bleed crossfade */
+.vC .bg{position:absolute;inset:0;z-index:0}
+.vC .bg .media{position:absolute;inset:0;opacity:0;transition:opacity .8s}.vC .bg .media.on{opacity:1}
+.vC .bg:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#0b0907 0%,rgba(11,9,7,.9) 24%,rgba(11,9,7,.25) 55%,rgba(11,9,7,.9) 84%,#0b0907 100%)}
+.vC .cap{position:absolute;left:7cqw;right:7cqw;bottom:11cqh;z-index:3;display:flex;gap:2cqw;align-items:center}
+.vC .cap .ic{width:7cqw;height:7cqw;padding:1.7cqw}
+.vC .cap b{display:block;font:500 4.2cqw/1.1 Unbounded,sans-serif;letter-spacing:-.03em;color:var(--cream)}
+.vC .cap small{display:block;margin-top:.8cqh;font:400 2.6cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+.vC .cap>div{opacity:0;transform:translateY(1.5cqh)}.vC .cap>div.on{animation:up .55s cubic-bezier(.2,.8,.2,1) forwards}
+.vC .pair{position:absolute;right:7cqw;top:26cqh;z-index:4;display:flex;gap:.8cqw}
+.vC .pair span{font:500 1.9cqw/1 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding:.8cqh 1.2cqw;border:1px solid var(--rule)}
+.vC .pair span.on{color:var(--yellow);border-color:#5a4a10}
+@keyframes up{to{opacity:1;transform:none}}
+.controls{position:fixed;bottom:0;left:0;right:0;height:var(--controls);background:#0c0a08f5;border-top:1px solid #292319;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:0 16px}
+.tabs,.actions{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap}
+button{font:400 13px/1.3 Manrope,sans-serif;cursor:pointer;border:1px solid #504735;border-radius:7px;background:#17130d;color:#ddd5c6;padding:7px 12px}
+button[aria-selected="true"]{color:var(--yellow);border-color:var(--yellow);background:#27210e}
+.description{font-size:12px;text-align:center;color:#c8bfad;max-width:960px;margin:0}
+.note{font-size:11px;color:#a49a84;text-align:center;margin:0;max-width:960px}
+</style></head><body>
+<main class="slide vA" id="slide"></main>
+<nav class="controls"><div class="tabs" role="tablist"><button role="tab" data-v="A">А · Две карточки с результатом</button><button role="tab" data-v="B">Б · Стол агента: список + экран</button><button role="tab" data-v="C">В · Результат на весь экран</button></div>
+<div class="tabs" id="pairs"></div>
+<p class="description"></p><p class="note">Один Google-слайд → 4 слайда по 2 агента (механика presentationParts, как 145). Визуалы — из зипки Влада (uslugi/umeete/video) + карта «Охотника» (GPT Image). Заголовок и «Ваша команда · 8 задач» — на каждом из четырёх.</p>
+<div class="actions"><button id="replay">↻ Повторить</button><button id="next">→ Следующая пара</button></div></nav>
+<script>
+const I={hunt:'<circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6M8 11h6"/>',chat:'<path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/>',site:'<rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 18v3M16 18v3"/>',design:'<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16M12 12v8"/>',video:'<rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3z"/>',content:'<path d="M4 20h16M6 16l10-10 2 2L8 18H6z"/>',ads:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>',seo:'<circle cx="12" cy="12" r="9"/><path d="m15 9-2 6-4 2 2-6z"/>'};
+const ic=k=>'<svg class="ic" viewBox="0 0 24 24">'+I[k]+'</svg>';
+/* 8 agents (full source text) + result visual */
+const A=[
+ ['AI-Охотник','ищет клиентов','hunt',{img:'assets/gen-164-213/s179-hunter-map.webp',src:'GPT Image · карта с найденными точками'}],
+ ['AI-Продавец','ведёт до оплаты','chat',{video:'assets/vlad-1409/video/tg-seller-voice.mp4',poster:'assets/vlad-1409/video/tg-seller-voice-poster.jpg',fit:1,src:'зипка Влада · tg-seller-voice.mp4'}],
+ ['AI-Сайты','сайты под ключ','site',{fan:['assets/vlad-1409/brands/zarmilkas.webp','assets/vlad-1409/brands/maesta.webp','assets/vlad-1409/brands/bioswiss.webp'],src:'зипка Влада · brands/*.webp'}],
+ ['AI-Дизайн','КП, баннеры, макеты','design',{video:'assets/vlad-1409/video/dizayn.mp4',poster:'assets/vlad-1409/video/dizayn-poster.jpg',src:'зипка Влада · uslugi/dizayn.mp4'}],
+ ['AI-Видео','ролики с аватаром','video',{video:'assets/vlad-1409/video/avatar-1.mp4',poster:'assets/vlad-1409/video/avatar-1-poster.jpg',src:'зипка Влада · avatar-1.mp4'}],
+ ['AI-Контент','посты и рилз','content',{img:'assets/vlad-1409/uslugi/kontent-dash.jpg',light:1,src:'зипка Влада · kontent-dash.jpg (панель клиента)'}],
+ ['AI-Таргет','реклама и связки','ads',{img:'assets/vlad-1409/uslugi/target-github.jpg',light:1,src:'зипка Влада · target-github.jpg (код агента)'}],
+ ['AI-Видимость','выдача в нейросетях','seo',{video:'assets/vlad-1409/video/ai-seo-reel.mp4',poster:'assets/vlad-1409/video/ai-seo-reel-poster.jpg',src:'зипка Влада · ai-seo-reel.mp4'}]];
+const media=(m,cls)=>'<div class="media '+(cls||'')+(m.fit?' fit':'')+(m.light?' light':'')+'">'+(m.video?'<video src="'+m.video+'" poster="'+m.poster+'" muted playsinline loop autoplay></video>':m.fan?'<div class="fan">'+m.fan.map(s=>'<img src="'+s+'" alt="">').join('')+'</div>':'<img src="'+m.img+'" alt="">')+'<span class="src">'+m.src+'</span></div>';
+const H=p=>'<span class="k">Пять отделов</span><h1>И под каждую есть <em>свои сотрудники</em></h1><p class="sub">Ваша команда · 8 задач · <b>'+(p*2+1)+'–'+(p*2+2)+'</b></p>';
+const team=(p,sub)=>'<div class="team">'+A.map((_,i)=>'<i class="'+(i===p*2+(sub||0)?'on':i<p*2+(sub||0)?'done':'')+'"></i>').join('')+'</div>';
+let timers=[];const T=(f,ms)=>timers.push(setTimeout(f,ms));const clr=()=>{timers.forEach(clearTimeout);timers=[]};
+let pair=0,sub=0;
+const V={
+A:{desc:'Слайд = две крупные карточки рядом: сверху реальный результат (видео/скрин), снизу иконка, имя агента и задача. Обе появляются с задержкой. Внизу полоска команды 8 сегментов — видно, где мы в восьмёрке. 4 слайда подряд, заголовок один.',
+  html:()=>H(pair)+'<div class="cards">'+[0,1].map(k=>{const a=A[pair*2+k];return '<div class="card">'+media(a[3])+'<div class="txt">'+ic(a[2])+'<div><b>'+a[0]+'</b><small>'+a[1]+'</small></div></div></div>'}).join('')+'</div>'+team(pair,1).replace('class="on"','class="on"').replace(/<i class="(done|on|)"><\/i>/g,(m,c,o)=>m)},
+B:{desc:'«Стол агента»: слева два агента слайда (иконка, имя, задача), справа большой экран с результатом того, кто в фокусе. Первый клик — переключить на второго агента, второй — следующий слайд. Экран крупный, результат рассматривается.',
+  html:()=>H(pair)+'<div class="list">'+[0,1].map(k=>{const a=A[pair*2+k];return '<div class="ag'+(k===sub?' on':'')+'" data-k="'+k+'">'+ic(a[2])+'<div><b>'+a[0]+'</b><small>'+a[1]+'</small></div></div>'}).join('')+'</div><div class="screen">'+[0,1].map(k=>{const a=A[pair*2+k];return media(a[3],k===sub?'on':'')}).join('')+'<div class="cap" id="bcap"><b>'+A[pair*2+sub][0]+'</b> · '+A[pair*2+sub][1]+'</div></div>'+team(pair,sub)},
+C:{desc:'Кинематографично: результат агента — фон на весь квадрат (приглушён по краям), внизу крупно имя и задача. Клик — кроссфейд на второго агента пары. Текста минимум, картинка максимум. Для светлых скринов (панель, GitHub) фон будет светлее остальных — это минус варианта.',
+  html:()=>H(pair)+'<div class="bg">'+[0,1].map(k=>media(A[pair*2+k][3],k===sub?'on':'')).join('')+'</div><div class="pair">'+[0,1].map(k=>'<span class="'+(k===sub?'on':'')+'">'+A[pair*2+k][0]+'</span>').join('')+'</div><div class="cap">'+ic(A[pair*2+sub][2])+'<div class="on"><b>'+A[pair*2+sub][0]+'</b><small>'+A[pair*2+sub][1]+'</small></div></div>'+team(pair,sub)}
+};
+const slide=document.getElementById('slide');let cur='A';
+function render(){clr();slide.className='slide v'+cur;slide.innerHTML=V[cur].html();document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.v===cur)));document.querySelector('.description').textContent=V[cur].desc;
+ document.getElementById('pairs').innerHTML=[0,1,2,3].map(p=>'<button data-p="'+p+'" '+(p===pair?'aria-selected="true"':'')+'>слайд '+(p+1)+' из 4 · '+A[p*2][0]+' + '+A[p*2+1][0]+'</button>').join('');
+ document.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{pair=+b.dataset.p;sub=0;render()});
+ document.querySelectorAll('.vB .ag').forEach(n=>n.onclick=()=>{sub=+n.dataset.k;render()});
+ requestAnimationFrame(()=>requestAnimationFrame(()=>slide.classList.add('play')));
+ slide.querySelectorAll('video').forEach(v=>v.play().catch(()=>{}));
+ if(cur!=='A'&&sub===0)T(()=>{sub=1;render()},3200);}
+function next(){if(cur==='A'){pair=(pair+1)%4}else{if(sub===0)sub=1;else{sub=0;pair=(pair+1)%4}}render()}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{cur=b.dataset.v;sub=0;render()});
+document.getElementById('replay').onclick=()=>{sub=0;render()};document.getElementById('next').onclick=next;
+document.addEventListener('keydown',e=>{const o=['A','B','C'];let i=o.indexOf(cur);if(e.key==='ArrowRight')i=(i+1)%3;else if(e.key==='ArrowLeft')i=(i+2)%3;else if(e.key===' '){e.preventDefault();next();return}else return;cur=o[i];sub=0;render();});
+const q=new URLSearchParams(location.search);if(V[q.get('v')])cur=q.get('v');if(q.has('p'))pair=+q.get('p');if(q.has('sub'))sub=+q.get('sub');render();
+</script></body></html>

@@ -1,0 +1,9 @@
+from pathlib import Path
+import json,html
+R=Path.cwd();data=json.loads((R/'source/sales-v6-20260921/parts.json').read_text())['slides'];native=[(i+1,s) for i,s in enumerate(data) if s['foundation'].get('block129',{}).get('layout')=='s16-salesv6']
+p='''<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="css/sales-v6-source.css"><link rel="stylesheet" href="css/sales-v6.css"><style>body{margin:20px;background:#222;color:#eee;font:14px sans-serif}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.qa-frame{position:relative;aspect-ratio:1;container-type:size;background:#0b0907}.b129{position:absolute;inset:0}.qa-label{padding:8px}#qa-summary{padding:20px} </style><div id="qa-summary">Checking…</div><div class="grid" aria-hidden="true">'''
+for n,s in native:
+ p+=f'<article><div class="qa-label">{n} · source {s["salesV6Source"]} · {html.escape(s["salesV6Label"])}</div><div class="qa-frame" data-n="{n}"><div class="b129 b13-v2-s16-salesv6"><div class="b13-shell"><div class="b13-head"><h1>{s["t"]}</h1></div><div class="b13-body">{s["b"]}</div></div></div></div></article>'
+p+='''</div><script src="js/sales-v6.js"></script><script>document.fonts.ready.then(()=>setTimeout(()=>{let errors=[];document.querySelectorAll('.qa-frame').forEach(f=>{let a=f.getBoundingClientRect(),bad=[];f.querySelectorAll('p,b,span,td,h1,.mb-r').forEach(e=>{let r=e.getBoundingClientRect();if(r.width&&r.height&&(r.bottom>a.bottom+2||r.top<a.top-2||r.right>a.right+2||r.left<a.left-2))bad.push(e.textContent.trim().slice(0,65))});if(bad.length)errors.push('Part '+f.dataset.n+': '+[...new Set(bad)].join(' / '))});document.getElementById('qa-summary').textContent='Checked '+document.querySelectorAll('.qa-frame').length+' native compositions. Boundary errors: '+errors.length+'; '+errors.join('; ');},500));</script>'''
+(R/'sales-v6-qa.html').write_text(p)
+print(len(native),'native compositions')

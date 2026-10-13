@@ -1,0 +1,63 @@
+{
+  "created_at": "2026-09-21T14:34:22.324474Z",
+  "display_name": "Seedance 2.5",
+  "id": "b6d6d266-df4f-46ec-b295-bbe64015a355",
+  "job_type": "seedance_2_5",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "duration": 10,
+    "extension_mode": null,
+    "generate_audio": true,
+    "genre": "auto",
+    "height": 1080,
+    "medias": [
+      {
+        "data": {
+          "id": "edf76c7d-a534-4246-a8fb-7c1b5b8ad560",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/edf76c7d-a534-4246-a8fb-7c1b5b8ad560.png"
+        },
+        "role": "start_image"
+      },
+      {
+        "data": {
+          "id": "680b3baf-ff06-401a-8920-837fff6b42d2",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/680b3baf-ff06-401a-8920-837fff6b42d2.png"
+        },
+        "role": "end_image"
+      },
+      {
+        "data": {
+          "id": "a5188991-f44b-4e40-bc0e-5ab07c01deb0",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/a5188991-f44b-4e40-bc0e-5ab07c01deb0.png"
+        },
+        "role": "image"
+      },
+      {
+        "data": {
+          "id": "3f6af49c-537f-4325-ac45-d815f03fe4d3",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/3f6af49c-537f-4325-ac45-d815f03fe4d3.png"
+        },
+        "role": "image"
+      }
+    ],
+    "model": "default",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Create one continuous cinematic 10-second square shot based on the supplied approved storyboard. Warm almost-black studio, elegant muted golden light, photorealistic platinum-haired bearded man Vlad in plain black clothes, black lounge chair, small coffee table at image left. Preserve the same man's recognizable face, age, beard, hair and outfit throughout. Start_image is the opening seating pose; end_image is the relaxed coffee pose. Additional image references show the intermediate finger snap and the three-dimensional orbit composition, in that order. Do not turn these references into a slideshow; animate natural continuous action.\n0-2 seconds: Vlad completes sitting down in the lounge chair, using its armrests naturally. Exactly seven distinct floating gold-rimmed rectangular service panels are stationary around him.\n2-3 seconds: he raises his right hand and clearly snaps his fingers once. A single small warm gold pulse from his fingertips activates the panels. No strobe or full-screen flash.\n3-7 seconds: he lowers his hand as all seven panels begin one coherent slow three-dimensional elliptical orbit around his torso, traveling approximately one third of a revolution. Panels really change position and perspective, not a rotating flat picture. Near panels pass below chest level, slightly larger, far panels move behind his shoulders and are occluded by his body; side panels turn slightly edge-on. Always keep his face and snap gesture visible. Exactly seven persistent panels: website, visual design, video, avatar, advertising, search, sales, represented by simple distinct interface graphics without lettering. No new panels spawning, no merging, no vanishing except natural occlusion. Restrained gold illumination.\n7-10 seconds: Vlad leans back comfortably, reaches naturally for the single coffee mug and holds it in his left hand, with a subtle satisfied smile, ending close to the supplied end frame. Panels continue their slow orbit. One mug only, realistic hands and physically continuous pickup. Camera mostly locked with a very gentle easing dolly backward in the ending; no cuts, no scene changes, no fast zooms. Composition fills the square edge to edge, reserve dark lower foreground for a separately added heading. No generated typography, subtitles, words, numbers, logos, watermarks. Natural cloth, breathing and body motion. No talking. Sound: quiet room ambience, one gentle finger snap and a subtle activation whoosh, no music or voiceover.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "1080p",
+    "speedramp": "auto",
+    "width": 1080
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_143422_b6d6d266-df4f-46ec-b295-bbe64015a355.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_143422_b6d6d266-df4f-46ec-b295-bbe64015a355_thumbnail.webp"
+}

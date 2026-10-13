@@ -1,0 +1,681 @@
+/* 01.10 · нові слайди після зуму з Владом (Google 1–185). Дані — source/google-2026-10-01/_patch_new.py.
+   .b13-g30NN = googleNumber 3000 + номер сторінки в Google. */
+
+/* Скрін у вікні браузера: «Офис агента» (G2), кабінет $82.350 (копія на 4-му місці) */
+.b129.b13-v2-s16-frame .s16-view.g1001-shot{display:flex;align-items:center;justify-content:center}
+.b129.b13-v2-s16-frame .s16-view.g1001-shot img{display:block;width:100%;height:100%;object-fit:contain}
+.b129.b13-v2-s16-frame .s16-view.g1001-top img{object-fit:cover;object-position:top center}
+.slide .g1001-open{position:absolute;right:2cqw;bottom:2.4cqh;z-index:6;font:600 1.9cqw/1 Manrope,sans-serif;color:#0b0907;background:#fdd506;padding:1.4cqh 2.2cqw;border-radius:99px;text-decoration:none;box-shadow:0 1cqh 3cqw rgba(0,0,0,.55)}
+
+/* G19 · «Запустим рекламу»: три телефони з рекламними постами */
+.b129.b13-g3019 .b13-head{position:absolute;left:7cqw;right:7cqw;top:8cqh;text-align:center}
+.b129.b13-g3019 .b13-head h1{font-size:5.2cqw}
+.g1001-phones{position:absolute;left:5cqw;right:5cqw;top:23cqh;bottom:5cqh;display:flex;align-items:center;justify-content:center;gap:3cqw;z-index:3}
+.g1001-phone{width:26cqw;background:#0f0c09;border:1px solid #3a3129;border-radius:3cqw;padding:3.6cqh 1.2cqw 1.8cqh;box-shadow:0 2cqh 6cqw rgba(0,0,0,.6);position:relative;display:flex;flex-direction:column;gap:1.1cqh}
+.g1001-phone:before{content:'';position:absolute;top:1.2cqh;left:50%;width:7cqw;height:1.1cqh;border-radius:99px;background:#1f1a15;transform:translateX(-50%)}
+.g1001-phone:nth-child(2){width:29cqw;margin-bottom:4cqh;border-color:#6b5a2c}
+.g1001-pbar{display:flex;align-items:center;gap:.8cqw;font:600 1.35cqw/1.1 Manrope,sans-serif;color:#f5f3ee}
+.g1001-pbar i{width:2.6cqw;height:2.6cqw;border-radius:50%;background:linear-gradient(135deg,#fdd506,#6b4e0c);flex:none}
+.g1001-pbar span{margin-left:auto;font:500 1.15cqw/1 Manrope,sans-serif;color:#8a8278}
+.g1001-phone img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:.5cqw}
+.g1001-pact{display:flex;gap:1cqw}
+.g1001-pact i{width:1.9cqw;height:1.9cqw;border:2px solid #8a8278;border-radius:50%}
+.g1001-pcta{display:flex;justify-content:space-between;align-items:center;background:#1c1713;border:1px solid #3a3129;border-radius:.5cqw;padding:1.1cqh 1.2cqw;font:600 1.4cqw/1 Manrope,sans-serif;color:#f5f3ee}
+.g1001-pcta span{color:#b3a996;font-size:2cqw;line-height:.6}
+.b129.b13-g3019.s16-play .g1001-phone{animation:s16-up .8s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-g3019.s16-play .g1001-phone:nth-child(2){animation-delay:.25s}
+.b129.b13-g3019.s16-play .g1001-phone:nth-child(3){animation-delay:.5s}
+
+/* G21 · відео-консультант на сайті клієнта */
+.b129.b13-g3021 .b13-head,.b129.b13-g3021 .b13-eyebrow{display:none}
+.g1001-site{position:absolute;left:6cqw;right:6cqw;top:7cqh;bottom:7cqh;z-index:3;background:#0f0c09;border:1px solid #3a3129;border-radius:1.4cqw;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2cqh 8cqw rgba(0,0,0,.6)}
+.g1001-sbar{flex:none;height:4.6cqh;background:#1c1713;border-bottom:1px solid #2f2822;display:flex;align-items:center;gap:.9cqw;padding:0 1.8cqw;font:500 1.35cqw/1 'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:#8a8278}
+.g1001-sbar i{width:1.1cqw;height:1.1cqw;border-radius:50%;background:#3a3129}
+.g1001-sbar span{margin-left:1cqw}
+.g1001-sbar b{margin-left:auto;color:#fdd506;font-weight:500}
+.g1001-sbody{flex:1;display:grid;grid-template-columns:1fr 1.1fr;grid-template-rows:minmax(0,1fr);gap:3cqw;padding:3.6cqh 3cqw;min-height:0}
+.g1001-page{display:flex;flex-direction:column;gap:1.8cqh;padding-top:2cqh}
+.g1001-page small{font:500 1.3cqw/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#8a8278}
+.g1001-page h3{margin:0 0 1cqh;font:500 3.5cqw/1.2 Unbounded,sans-serif;letter-spacing:-.04em;color:#f5f3ee}
+.g1001-page i{display:block;height:1.3cqh;background:#2a2420;border-radius:99px;width:92%}
+.g1001-page i.s{width:58%}
+.g1001-page em{margin-top:auto;align-self:flex-start;font:600 1.8cqw/1 Manrope,sans-serif;font-style:normal;color:#0b0907;background:#fdd506;padding:1.4cqh 2.6cqw;border-radius:99px}
+.g1001-call{position:relative;border-radius:1.2cqw;overflow:hidden;background:#000;border:1px solid #3a3129;min-height:0}
+.g1001-call video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;cursor:pointer}
+.g1001-snd{position:absolute;left:50%;top:1.6cqh;transform:translateX(-50%);font:500 1.2cqw/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#f5f3ee;background:rgba(11,9,7,.72);padding:.9cqh 1.4cqw;border-radius:99px;pointer-events:none;transition:opacity .3s}
+.g1001-call.snd .g1001-snd{opacity:0}
+.g1001-log{flex:none;margin:0;padding:2.2cqh 3cqw 2.6cqh;list-style:none;border-top:1px solid #2f2822;display:grid;grid-template-columns:1fr 1fr;gap:1cqh 3cqw;font:500 1.5cqw/1.3 'JetBrains Mono',monospace;color:#b3a996}
+.g1001-log p{margin:0;opacity:1}
+.g1001-log p:before{content:'› ';color:#6f675e}
+.g1001-log p.ok{color:#f5f3ee}
+.g1001-log p.ok:before{content:'✓ ';color:#fdd506}
+
+/* G29 · фото Влада в грязі: заголовок унизу, обличчя відкрите */
+.b129.b13-g3029 .b13-head{position:absolute;left:7cqw;right:7cqw;top:auto;bottom:7cqh;text-align:center;z-index:4}
+.b129.b13-g3029 .b13-head h1{font-size:6.4cqw}
+.b129.b13-g3029 .b13-art:after{background:linear-gradient(0deg,#0b0907 0%,rgba(11,9,7,.82) 16%,transparent 38%)}
+
+/* Числа, що не влазять у 19cqw */
+.b129.b13-g3031 .s16-num{font-size:14cqw}
+.b129.b13-g3031 .s16-lead{font-size:4.2cqw}
+.b129 .s16-num.g1001-range{font-size:8.6cqw;letter-spacing:-.04em}
+.b129.b13-g3174 .s16-num{font-size:15cqw}
+
+/* G34 · кіт + «ГОТОВ» */
+/* Мирослав 01.10: гіфка менша й заокруглена, «Напишите «ГОТОВ»» — у жовтій рамці */
+.b129.b13-g3034 .s16-player{top:23cqh;bottom:auto;left:50%;right:auto;width:48cqh;height:48cqh;transform:translateX(-50%);border:0;border-radius:2cqw;box-shadow:0 2.4cqh 7cqw rgba(0,0,0,.6)}
+.b129.b13-g3034 .g1001-cta{left:50%;right:auto;bottom:9cqh;transform:translateX(-50%);white-space:nowrap;padding:2.6cqh 4.4cqw;border:.35cqw solid #fdd506;border-radius:1.6cqw}
+.b129.b13-g3034 .s16-player video{width:100%;height:100%;object-fit:cover;max-width:none;max-height:none}
+.b129 .g1001-cta{position:absolute;left:0;right:0;bottom:8.5cqh;margin:0;text-align:center;font:500 4.4cqw/1 Unbounded,sans-serif;letter-spacing:-.04em;color:#f5f3ee;z-index:4}
+.b129 .g1001-cta em{font-style:normal;color:#fdd506}
+
+
+/* G153 · метод із трьох шагів + мем */
+.g1001-sub{position:absolute;left:12cqw;right:12cqw;top:22cqh;margin:0;text-align:center;font:400 2.4cqw/1.4 Manrope,sans-serif;color:#c4bdb1;z-index:4}
+.b129.b13-g3153 .s16-player{top:36cqh;bottom:8cqh}
+.b129.b13-g3153 .s16-player video{width:100%;height:100%;object-fit:contain}
+
+/* G172 · «Сегодня одна цель»: три «ни …» */
+.b129.b13-v2-s16-icons .s16-list.g1001-three{top:37cqh;left:9cqw;right:9cqw;grid-template-columns:repeat(3,1fr);gap:2.4cqw}
+.b129.b13-v2-s16-icons .s16-list.g1001-three>div{flex-direction:column;align-items:flex-start;padding:3.4cqh 2.4cqw;gap:2.4cqh;font:500 2.7cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em}
+/* 02.10 QA: картки були дрібні в порожньому квадраті — більші іконки, кегль і висота */
+.b129.b13-v2-s16-icons .s16-list.g1001-three{top:35cqh}
+.b129.b13-v2-s16-icons .s16-list.g1001-three>div{min-height:27cqh;justify-content:space-between;padding:4cqh 2.8cqw;font-size:3.3cqw;border-radius:1.6cqw;background:linear-gradient(160deg,#1b1611,#120e0b);border-color:#3a3129}
+.b129.b13-v2-s16-icons .s16-list.g1001-three svg{width:8cqw;height:8cqw;padding:2cqw;border-radius:1.4cqw}
+.g1001-foot{position:absolute;left:12cqw;right:12cqw;bottom:13cqh;margin:0;text-align:center;font:400 2.6cqw/1.45 Manrope,sans-serif;color:#c4bdb1;z-index:3}
+
+/* Копія AI-продавця без фото Валюші: сцена по центру */
+.b129.b13-v2-s16-seller .s16-scene.g1001-solo{left:calc(50% - 28cqw)}
+
+/* Копія $82.350 (googleNumber 124 у копії; оригінал — editorial, тож правило діє лише на копію): заголовок на 3 рядки */
+.b129.b13-v2-s16-frame.b13-g124 .b13-head h1{font-size:4.2cqw}
+.b129.b13-v2-s16-frame.b13-g124 .s16-frame{top:34cqh;bottom:auto;height:auto}
+.b129.b13-v2-s16-frame .s16-view.g1001-full-shot{flex:none;aspect-ratio:1692/930}
+.b129.b13-v2-s16-frame .s16-view.g1001-full-shot img{object-fit:contain}
+/* 173–174: число нижче заголовка з надзаголовком */
+.b129.b13-g3173 .s16-text,.b129.b13-g3174 .s16-text{top:31cqh}
+
+/* G15 · «Актёров тоже нет»: AI-ролик фоном, заголовок унизу */
+.b129.b13-g3015 .g1001-bgv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.b129.b13-g3015 .g1001-shade{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(0deg,rgba(11,9,7,.94) 0%,rgba(11,9,7,.6) 26%,transparent 52%),linear-gradient(180deg,rgba(11,9,7,.55) 0%,transparent 16%)}
+.b129.b13-g3015 .b13-head{position:absolute;left:7cqw;right:7cqw;top:auto;bottom:8cqh;text-align:left;z-index:3}
+.b129.b13-g3015 .b13-head h1{font-size:6.6cqw;line-height:1.08}
+
+/* Копія колажу AI-дизайну без шапки: колаж на весь квадрат */
+.b129.b13-v2-s16-mosaic .s16-scene.g1001-full{top:9cqh;bottom:9cqh}
+
+/* ── Правки Влада з Google 01.10 ── */
+/* s31 «Приз №3»: текст зверху, картинка Влада знизу */
+/* Мирослав 01.10: усе по центру, як заголовок; лід білим із жовтим «до 75% дешевле», друга фраза тихіше */
+.b129.b13-g32 .s16-bottom{top:22cqh;bottom:auto;left:11cqw;right:11cqw;text-align:center}
+.b129.b13-g32 .s16-bottom p{margin:0;font:500 2.75cqw/1.42 Manrope,sans-serif;color:#f5f3ee;text-wrap:balance}
+.b129.b13-g32 .s16-bottom em{font-style:normal;color:#fdd506;font-weight:700;white-space:nowrap}
+.b129.b13-g32 .s16-bottom .s16-mut{margin-top:1.8cqh;font-size:2.2cqw;font-weight:400;color:#b3a996}
+.b129.b13-g32 .b13-art:after{background:linear-gradient(180deg,#0b0907 0%,rgba(11,9,7,.6) 34%,transparent 50%)}
+/* s57: логотип Claude без фону (оригінальна SVG-зірка, Мирослав 01.10) — без плашки й рамки, м'яке тепле сяйво під ним */
+.foundation .fd-meme-picture:has(.g1001-claude){position:relative;overflow:visible;border-radius:0;display:grid;place-items:center;aspect-ratio:1}
+.foundation .fd-meme-picture:has(.g1001-claude):before{content:'';position:absolute;inset:4%;border-radius:50%;background:radial-gradient(circle,rgba(217,119,87,.26) 0%,rgba(217,119,87,.08) 45%,rgba(217,119,87,0) 70%)}
+.foundation .fd-meme-picture img.g1001-claude{position:relative;width:70%;height:auto;padding:0;background:none;filter:drop-shadow(0 0 2.4cqw rgba(217,119,87,.35))}
+/* s112 «Прозрение 2»: рядок без ланцюжка */
+.b129 .g1001-q,.slide .g1001-q{margin:4cqh auto 0;max-width:70cqw;text-align:center;font:400 2.6cqw/1.4 Manrope,sans-serif;color:#c4bdb1}
+/* s139: на останньому кроці («Разный опыт») без заголовка і підсумку «Включились не все…» */
+.b129.b13-g135:has(.ps-experience:not([hidden])) .b13-head{opacity:0}
+.b129.b13-g135 .ps-experience .ps-closing{display:none}
+/* Переходи на сайти (s28 холст, s99 сайт) */
+.slide .g1001-open-slide{position:absolute;right:7cqw;bottom:6cqh;z-index:40}
+.slide.fp .fp-body:has(.g1001-open-slide){position:static}
+
+.b129.b13-g3015 .b13-body{z-index:1}
+
+/* G19 v2 · «Запустим рекламу»: реалістичні iPhone зі стрічкою Instagram (формат із Google), у пості — креативи Влада */
+.ig-row{position:absolute;left:4cqw;right:4cqw;top:21cqh;bottom:3cqh;display:flex;align-items:center;justify-content:center;gap:2.6cqw;z-index:3}
+.ig-phone{width:27cqw;aspect-ratio:9/19.3;background:#111;border-radius:4.2cqw;padding:.9cqw;box-sizing:border-box;position:relative;
+  box-shadow:0 0 0 .25cqw #3b3b3d,0 0 0 .45cqw #1a1a1a,0 3cqh 7cqw rgba(0,0,0,.65)}
+.ig-phone:nth-child(2){width:29cqw;margin-bottom:2cqh}
+.ig-screen{width:100%;height:100%;background:#fff;border-radius:3.4cqw;overflow:hidden;display:flex;flex-direction:column;color:#000;font-family:-apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif}
+.ig-screen svg{width:1.9cqw;height:1.9cqw;fill:none;stroke:#000;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ig-status{flex:none;height:3.6cqw;display:flex;align-items:center;justify-content:space-between;padding:0 2.2cqw;font-size:1.15cqw;position:relative}
+.ig-status b{font-weight:600}
+.ig-island{position:absolute;left:50%;top:.7cqw;width:7.4cqw;height:2.1cqw;border-radius:2cqw;background:#000;transform:translateX(-50%)}
+.ig-status i{width:2.2cqw;height:1cqw;border:1.5px solid #000;border-radius:.3cqw;position:relative}
+.ig-status i:after{content:'';position:absolute;inset:1px;right:30%;background:#000;border-radius:1px}
+.ig-top{flex:none;height:3.6cqw;display:flex;align-items:center;justify-content:space-between;padding:0 1.4cqw;border-bottom:1px solid #efefef}
+.ig-logo{display:block;height:1.75cqw;width:auto}
+.ig-head{flex:none;display:flex;align-items:center;gap:.9cqw;padding:1cqw 1.2cqw}
+.ig-ava{width:2.8cqw;height:2.8cqw;border-radius:50%;object-fit:cover;box-shadow:0 0 0 .18cqw #fff,0 0 0 .34cqw #d62976}
+.ig-head div{display:flex;flex-direction:column;line-height:1.15}
+.ig-head b{font-size:1.2cqw;font-weight:600}
+.ig-head small{font-size:1cqw;color:#262626}
+.ig-more{margin-left:auto;font-size:1.1cqw;letter-spacing:.1em}
+.ig-media{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;flex:none}
+.ig-cta{flex:none;display:flex;justify-content:space-between;align-items:center;background:#3797f0;color:#fff;font-size:1.2cqw;font-weight:600;padding:.85cqw 1.3cqw}
+.ig-cta span{font-size:1.8cqw;line-height:.6}
+.ig-act{flex:none;display:flex;align-items:center;gap:1.3cqw;padding:1cqw 1.3cqw .5cqw}
+.ig-act .ig-r{margin-left:auto;display:flex}
+.ig-cap{margin:0;padding:.3cqw 1.3cqw 0;font-size:1.1cqw;line-height:1.35;color:#000;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ig-cap b{font-weight:600}
+.ig-nav{margin-top:auto;flex:none;height:4.4cqw;display:flex;align-items:center;justify-content:space-around;border-top:1px solid #efefef;padding-bottom:.6cqw}
+.ig-nav img{width:2cqw;height:2cqw;border-radius:50%;object-fit:cover}
+.b129.b13-g3019.s16-play .ig-phone{animation:s16-up .8s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-g3019.s16-play .ig-phone:nth-child(2){animation-delay:.2s}
+.b129.b13-g3019.s16-play .ig-phone:nth-child(3){animation-delay:.4s}
+.b129 .ig-screen b,.b129 .ig-screen small,.b129 .ig-screen span,.b129 .ig-screen p{color:#000!important;opacity:1!important;text-shadow:none!important}
+.b129 .ig-screen p.ig-cap{font:400 1.1cqw/1.35 -apple-system,'SF Pro Text','Helvetica Neue',Arial,sans-serif!important;letter-spacing:0!important;max-width:none!important;margin:0!important}
+.b129 .ig-screen p.ig-cap b{font-weight:600!important}
+.b129 .ig-screen .ig-cta,.b129 .ig-screen .ig-cta span{color:#fff!important}
+.b129 .ig-screen .ig-head small{color:#262626!important}
+
+/* G3 · насичений фон (v3a: бірюза + помаранч): легша накладка, щоб не гасити кольори; тінь під текстом для читабельності */
+.b129.b13-g3003 .b13-art:after{background:linear-gradient(180deg,rgba(6,8,14,.93) 0%,rgba(6,8,14,.8) 32%,rgba(6,8,14,.5) 48%,rgba(6,8,14,.18) 64%,rgba(6,8,14,.35) 100%)}
+.b129.b13-g3003 .b13-head h1{text-shadow:0 .4cqw 2.4cqw rgba(0,0,0,.55)}
+/* Копія колажу на весь квадрат (сцена 7–93cqw × 9–91cqh, картка 42×40): наближення рівно в центр і без виходу за край */
+.b129.b13-v2-s16-mosaic[data-b13-step="1"] .s16-scene.g1001-full .s16-card.k1{transform:translate(22cqw,21cqh) rotateY(var(--tx,0deg)) rotateX(var(--ty,0deg)) scale(1.85)}
+.b129.b13-v2-s16-mosaic[data-b13-step="2"] .s16-scene.g1001-full .s16-card.k2{transform:translate(-22cqw,21cqh) rotateY(var(--tx,0deg)) rotateX(var(--ty,0deg)) scale(1.85)}
+.b129.b13-v2-s16-mosaic[data-b13-step="3"] .s16-scene.g1001-full .s16-card.k3{transform:translate(22cqw,-21cqh) rotateY(var(--tx,0deg)) rotateX(var(--ty,0deg)) scale(1.85)}
+.b129.b13-v2-s16-mosaic[data-b13-step="4"] .s16-scene.g1001-full .s16-card.k4{transform:translate(-22cqw,-21cqh) rotateY(var(--tx,0deg)) rotateX(var(--ty,0deg)) scale(1.85)}
+
+/* Копія AI-продавця (слайд 20): кружок Влада + iPhone 16 Pro Max із відео чату бота */
+.b129 .g1001-seller{position:absolute;left:0;right:0;top:25cqh;height:48cqh;display:flex;align-items:center;justify-content:center;gap:6cqw;z-index:3}
+.g1001-krug{width:27cqw;aspect-ratio:1/1;border-radius:50%;overflow:hidden;position:relative;cursor:pointer;flex:none;
+  box-shadow:0 0 0 .45cqw #0b0907,0 0 0 .75cqw #5c5248,0 2.4cqh 7cqw rgba(0,0,0,.65)}
+.g1001-krug.snd{box-shadow:0 0 0 .45cqw #0b0907,0 0 0 .75cqw #fdd506,0 2.4cqh 7cqw rgba(0,0,0,.65)}
+.g1001-krug video{width:100%;height:100%;object-fit:cover;display:block}
+.g1001-iphone{height:48cqh;aspect-ratio:77.6/163;flex:none;border-radius:5.2cqw;padding:.5cqw;box-sizing:border-box;position:relative;
+  background:linear-gradient(145deg,#dcd7cf 0%,#8f8981 28%,#cfc9c0 52%,#7a746d 78%,#c2bcb3 100%);box-shadow:0 3cqh 8cqw rgba(0,0,0,.7),inset 0 0 .2cqw rgba(255,255,255,.5)}
+.g1001-iscreen{width:100%;height:100%;border-radius:4.75cqw;background:#000;padding:.42cqw;box-sizing:border-box;overflow:hidden}
+.g1001-iscreen video{width:100%;height:100%;object-fit:cover;border-radius:4.35cqw;display:block}
+.g1001-btn{position:absolute;width:.32cqw;border-radius:.2cqw;background:linear-gradient(90deg,#6f6a63,#bdb7ae)}
+.g1001-btn.a{left:-.26cqw;top:15%;height:3.4%}
+.g1001-btn.b{left:-.26cqw;top:23%;height:7.5%}
+.g1001-btn.c{left:-.26cqw;top:32.5%;height:7.5%}
+.g1001-btn.d{right:-.26cqw;top:27%;height:11%}
+.b129.b13-v2-s16-seller.s16-play .g1001-krug{animation:s16-up .8s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-v2-s16-seller.s16-play .g1001-iphone{animation:s16-up .8s .2s cubic-bezier(.2,.8,.2,1) both}
+
+/* s60 «Информационная война» (лінія життя, без заголовка): скрін чату великий, картка Федорова менша в кутку */
+.life-story.ls-evidence-focus .ls-content{inset:7cqh 7cqw 19cqh}
+.life-story.ls-evidence-focus .ls-gallery{display:block;position:relative;flex:1;width:100%;height:100%;max-height:none}
+.life-story.ls-evidence-focus .ls-photo:nth-child(1){position:absolute;right:0;top:0;width:68cqw;height:50cqh}
+.life-story.ls-evidence-focus .ls-photo:nth-child(2){position:absolute;left:0;bottom:0;width:34cqw;height:27cqh;z-index:2;transform:rotate(-2.2deg);filter:drop-shadow(0 2cqh 3cqw rgba(0,0,0,.7))}
+
+/* s=112 «Написал пост в моем Телеграм канале»: заголовок зверху, кроп поста (шапка + текст) на всю ширину — читається зі стріму */
+.slide.fd-editorial:has(.g1001-post) .fd-shell{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.4cqh;padding:0 7cqw 8cqh;box-sizing:border-box}
+.slide.fd-editorial:has(.g1001-post) .fd-header{position:static;width:100%;height:auto;text-align:center;margin:0;grid-area:auto}
+.slide.fd-editorial:has(.g1001-post) .fd-header h1{font-size:4.8cqw;max-width:none;text-align:center}
+.slide.fd-editorial:has(.g1001-post) .fd-content{position:static;width:100%;height:auto;margin:0;display:block;grid-area:auto}
+.slide.fd-editorial:has(.g1001-post) .fd-body{display:flex;flex-direction:column;align-items:center;gap:4cqh;width:100%}
+.slide.fd-editorial:has(.g1001-post) .fd-body>p{text-align:center;margin:0;font-size:2.6cqw}
+.slide.fd-editorial:has(.g1001-post) .ag-doc.g1001-post{position:static;width:100%;height:auto;display:block;transform:none;margin:0;padding:0;background:none;border:0;box-shadow:none;inset:auto}
+.slide.fd-editorial:has(.g1001-post) .ag-doc.g1001-post img{display:block;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain;border-radius:1.6cqw;border:1px solid #3a3129;box-shadow:0 2.4cqh 7cqw rgba(0,0,0,.6)}
+
+/* Слоти під відео (з'являються самі, коли файл є: assets/video/slots/*.mp4; немає файлу — видно поточний кадр) */
+.slide .g1001-slot{position:absolute;z-index:4;opacity:0;pointer-events:none;transition:opacity .4s;background:#000;overflow:hidden;cursor:pointer}
+.slide.slot-ready .g1001-slot{opacity:1;pointer-events:auto}
+.slide .g1001-slot video{display:block;width:100%;height:100%;object-fit:cover}
+/* s=139 «А теперь примерьте на себя»: квадратне відео future pacing «три кнопки» (1080×1080) ліворуч цілим кадром, клік — звук;
+   «Вечером/Утром» колонкою праворуч, питання в чат знизу по центру. Без файлу — стара смуга-фото і два стовпці під нею */
+.b129.b13-g131 .g1001-fp{left:6cqw;top:18cqh;width:58cqw;height:58cqh;border-radius:1.2cqw;border:1px solid #3a3129;box-shadow:0 2.4cqh 7cqw rgba(0,0,0,.6)}
+.b129.b13-g131.slot-ready .b13-art{opacity:0}
+.b129.b13-g131.slot-ready .b13-daynight{position:absolute;left:68cqw;right:6cqw;top:18cqh;height:58cqh;display:flex;flex-direction:column;justify-content:center;gap:5cqh}
+.b129.b13-g131.slot-ready .b13-daynight p{font-size:2.3cqw;line-height:1.45}
+.b129.b13-g131.slot-ready .b13-conclusion{position:absolute;left:6cqw;right:6cqw;top:84cqh;text-align:center;font-size:3cqw}
+
+/* s=145 крок «Первые деньги» (ps-phone-mode): ліворуч метрика й кільце, праворуч iPhone; у телефоні скрін чату, а коли є
+   assets/video/slots/zolotoy-dozhd.mp4 — вертикальний скринкаст «Золотой дождь» замість скріна */
+.participant-story .ps-income.ps-phone-mode{display:block;text-align:left}
+.participant-story .ps-phone-mode .ps-copy{position:absolute;left:0;top:7cqh;width:46cqw;text-align:left}
+.participant-story .ps-phone-mode .ps-metric{font-size:12.5cqw}
+.participant-story .ps-phone-mode .ps-caption{margin:2.2cqh 0 0;max-width:44cqw;text-align:left}
+.participant-story .ps-phone-mode .ps-visual{position:static;display:block;width:auto;height:auto;margin:0}
+.participant-story .ps-phone-mode .ps-income-ring{position:absolute;left:0;top:38cqh;width:15cqw;height:15cqh}
+.participant-story .ps-iphone{position:absolute;right:2cqw;top:-4cqh;height:66cqh;aspect-ratio:77.6/163;border-radius:7cqh;padding:.68cqh;box-sizing:border-box;
+  background:linear-gradient(145deg,#dcd7cf 0%,#8f8981 28%,#cfc9c0 52%,#7a746d 78%,#c2bcb3 100%);box-shadow:0 3cqh 8cqw rgba(0,0,0,.7),inset 0 0 .2cqw rgba(255,255,255,.5)}
+.participant-story .ps-iscreen{position:relative;width:100%;height:100%;border-radius:6.4cqh;background:#000;overflow:hidden;border:.55cqh solid #000;box-sizing:border-box}
+.participant-story .ps-iscreen img,.participant-story .ps-iscreen video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;border-radius:5.9cqh}
+.participant-story .ps-iscreen video{opacity:0;transition:opacity .4s}
+.participant-story .ps-iscreen.has-video video{opacity:1}
+.participant-story .ps-iscreen.has-video img{opacity:0}
+.participant-story .ps-btn{position:absolute;width:.42cqh;border-radius:.3cqh;background:linear-gradient(90deg,#6f6a63,#bdb7ae)}
+.participant-story .ps-btn.a{left:-.34cqh;top:15%;height:3.4%}
+.participant-story .ps-btn.b{left:-.34cqh;top:23%;height:7.5%}
+.participant-story .ps-btn.c{left:-.34cqh;top:32.5%;height:7.5%}
+.participant-story .ps-btn.d{right:-.34cqh;top:27%;height:11%}
+.participant-story .ps-iscreen img{object-position:left top}
+
+.b129.b13-g3003 .b13-art img{filter:brightness(.64) saturate(.92) contrast(1.05)}
+
+/* G24 (слайд 21) · «поток клиентов»: схема AI-агенти → потік заявок → будь-який бізнес */
+.b129.b13-g3024 .b13-head{position:absolute;left:7cqw;right:7cqw;top:9cqh;text-align:center}
+.b129.b13-g3024 .b13-head h1{font-size:4.6cqw;line-height:1.22;text-wrap:balance}
+.g24{position:absolute;left:6cqw;right:6cqw;top:40cqh;height:51cqh;z-index:3}
+.g24-flow{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.g24-line{fill:none;stroke:#3a3129;stroke-width:2;stroke-dasharray:4 7}
+.g24-dot{fill:#fdd506;filter:drop-shadow(0 0 6px rgba(253,213,6,.85))}
+.g24-agents{position:absolute;left:0;top:0;bottom:0;height:fit-content;margin:auto 0;width:22cqw;background:#15110d;border:1px solid #3a3129;border-radius:1.4cqw;padding:2.2cqh 1.8cqw;box-sizing:border-box;display:flex;flex-direction:column;gap:1.5cqh}
+.g24-agents small{font:500 1.35cqw/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#fdd506;margin-bottom:.6cqh}
+.g24-agents div{display:flex;align-items:center;gap:1.1cqw;font:500 1.75cqw/1.2 Manrope,sans-serif;color:#f5f3ee}
+.g24-biz{position:absolute;right:0;top:0;bottom:0;width:40cqw;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(4,1fr);gap:1.4cqh 1.4cqw}
+.g24-biz div{display:flex;align-items:center;gap:1.1cqw;background:#15110d;border:1px solid #2a2420;border-radius:1cqw;padding:0 1.4cqw;font:500 1.75cqw/1.2 Manrope,sans-serif;color:#f5f3ee;animation:g24pulse 2.4s ease-in-out infinite;animation-delay:calc(var(--r) * .3s + 2.2s)}
+.g24 svg:not(.g24-flow){width:2.4cqw;height:2.4cqw;flex:none;fill:none;stroke:#b3a996;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+@keyframes g24pulse{0%,70%,100%{border-color:#2a2420;box-shadow:none}82%{border-color:rgba(253,213,6,.7);box-shadow:0 0 2cqw rgba(253,213,6,.18)}}
+.b129.b13-g3024.s16-play .g24-agents{animation:s16-up .7s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-g3024.s16-play .g24-biz{animation:s16-up .7s .2s cubic-bezier(.2,.8,.2,1) both}
+
+/* G30 (слайд 27) · «Это не лекция, а взаимодействие»: світлі картки з міні-ілюстраціями */
+.b129.b13-g3030 .b13-head{position:absolute;left:7cqw;right:7cqw;top:8cqh;text-align:center}
+.b129.b13-g3030 .b13-head h1{font-size:5cqw;line-height:1.18}
+.g30{position:absolute;left:7cqw;right:7cqw;top:29cqh;bottom:7cqh;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2.4cqw;z-index:3}
+.g30 article{position:relative;background:linear-gradient(160deg,#fbf7ef 0%,#efe7d8 100%);border-radius:2cqw;padding:2.4cqh 2.4cqw 2.2cqh;display:flex;flex-direction:column;justify-content:flex-end;color:#15110d;box-shadow:0 1.6cqh 5cqw rgba(0,0,0,.45);overflow:hidden}
+.g30 .g30-n{position:absolute;right:2cqw;top:1.8cqh;font:600 1.5cqw/1 'JetBrains Mono',monospace;letter-spacing:.1em;color:#15110d;background:#fdd506;border-radius:99px;padding:.7cqh 1.1cqw}
+.b129 .g30 h3{margin:0;font:600 2.7cqw/1.15 Unbounded,sans-serif;letter-spacing:-.03em;color:#15110d!important}
+.b129 .g30 p{margin:.9cqh 0 0;font:400 2cqw/1.3 Manrope,sans-serif;color:#5a5249!important;max-width:none}
+.g30-ill{flex:1;display:flex;align-items:center;gap:1.4cqw;min-height:0}
+/* 01 LIVE */
+.g30-rec{display:inline-flex;align-items:center;gap:.8cqw;background:#e11d2e;color:#fff;font:700 1.9cqw/1 Manrope,sans-serif;letter-spacing:.08em;padding:1cqh 1.6cqw;border-radius:.8cqw}
+.g30-rec i{width:1.1cqw;height:1.1cqw;border-radius:50%;background:#fff;animation:g30blink 1.2s ease-in-out infinite}
+.g30-bar{flex:1;height:.7cqh;border-radius:99px;background:#d9cfbd;overflow:hidden}
+.g30-bar b{display:block;height:100%;width:62%;background:#e11d2e}
+@keyframes g30blink{50%{opacity:.25}}
+/* 02 AI тупит */
+.g30-bub{display:inline-flex;align-items:center;gap:.5cqw;background:#15110d;color:#fdd506;font:600 1.6cqw/1 'JetBrains Mono',monospace;padding:1.1cqh 1.4cqw;border-radius:1.2cqw 1.2cqw 1.2cqw .2cqw}
+.g30-bub i{width:.7cqw;height:.7cqw;border-radius:50%;background:#f5f3ee;animation:g30dot 1.2s ease-in-out infinite}
+.g30-bub i:nth-child(2){animation-delay:.2s}.g30-bub i:nth-child(3){animation-delay:.4s}
+@keyframes g30dot{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-.4cqh)}}
+.g30-load{flex:1;height:.7cqh;border-radius:99px;background:#d9cfbd;overflow:hidden;position:relative}
+.g30-load b{position:absolute;left:0;top:0;bottom:0;width:38%;background:repeating-linear-gradient(90deg,#15110d 0 .8cqw,#fdd506 .8cqw 1.6cqw);animation:g30stuck 2.6s ease-in-out infinite}
+@keyframes g30stuck{0%{width:12%}55%,100%{width:38%}}
+/* 03 ? → лампочка */
+.g30-q{display:grid;place-items:center;width:5cqw;height:5cqw;border-radius:50%;background:#15110d;color:#f5f3ee;font:600 2.8cqw/1 Unbounded,sans-serif}
+.g30-idea>svg:not(.g30-bulb){width:6cqw;height:2cqw;fill:none;stroke:#8a8070;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.g30-bulb{width:5.4cqw;height:5.4cqw;fill:#fdd506;stroke:#15110d;stroke-width:1.4;stroke-linejoin:round;filter:drop-shadow(0 0 1.4cqw rgba(253,213,6,.7))}
+/* 04 опитування */
+.g30-poll{flex-direction:column;align-items:stretch;justify-content:center;gap:.9cqh;position:relative;padding-right:3cqw}
+.g30-poll span{display:flex;align-items:center;gap:1cqw}
+.g30-poll em{font:600 1.4cqw/1 'JetBrains Mono',monospace;font-style:normal;color:#5a5249;width:1.6cqw}
+.g30-poll span b{display:block;height:1.6cqh;border-radius:99px;background:#15110d;width:var(--w)}
+.g30-poll span:first-child b{background:#fdd506;box-shadow:inset 0 0 0 1px #15110d}
+.g30-cur{position:absolute;right:4cqw;top:26%;width:2.6cqw;height:2.6cqw;fill:#fff;stroke:#15110d;stroke-width:1.3;stroke-linejoin:round}
+.b129.b13-g3030.s16-play .g30 article{animation:s16-up .7s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-g3030.s16-play .g30 article:nth-child(2){animation-delay:.12s}
+.b129.b13-g3030.s16-play .g30 article:nth-child(3){animation-delay:.24s}
+.b129.b13-g3030.s16-play .g30 article:nth-child(4){animation-delay:.36s}
+.b129.b13-g3030.s16-play .g30-poll span b{animation:g30fill 1.1s .6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes g30fill{from{width:0}}
+
+/* ── G30 варіанти (слайд 27) ── */
+/* маркери пунктів */
+.g30a i,.g30b i,.g30a-chip>i{font-style:normal}
+.m-live{width:1.4cqw;height:1.4cqw;border-radius:50%;background:#ff3b4a;box-shadow:0 0 0 .5cqw rgba(255,59,74,.25);animation:g30blink 1.2s ease-in-out infinite;flex:none}
+.m-spin{width:1.8cqw;height:1.8cqw;border-radius:50%;border:.35cqw solid rgba(255,255,255,.25);border-top-color:#fdd506;animation:g30rot 1s linear infinite;flex:none}
+@keyframes g30rot{to{transform:rotate(360deg)}}
+.m-q{display:grid;place-items:center;width:2.2cqw;height:2.2cqw;border-radius:50%;background:#fdd506;color:#15110d;font:700 1.4cqw/1 Unbounded,sans-serif;flex:none}
+.m-poll{display:flex;align-items:flex-end;gap:.25cqw;height:2cqw;flex:none}
+.m-poll b{width:.55cqw;background:#fdd506;border-radius:.2cqw}.m-poll b:nth-child(1){height:100%}.m-poll b:nth-child(2){height:60%;opacity:.7}.m-poll b:nth-child(3){height:35%;opacity:.5}
+
+/* A · фото-герой з наліпками */
+.b129.b13-g3030 .g30a{position:absolute;left:6cqw;top:34cqh;width:47cqw;display:flex;flex-direction:column;gap:2cqh;z-index:4}
+.g30a-chip{display:flex;align-items:center;gap:1.8cqw;padding:2.2cqh 2.2cqw;border-radius:1.6cqw;background:rgba(18,14,12,.55);border:1px solid rgba(255,255,255,.18);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 1cqh 3cqw rgba(0,0,0,.35)}
+.b129 .g30a-chip h3{margin:0;font:600 2.75cqw/1.15 Unbounded,sans-serif;letter-spacing:-.03em;color:#fff!important}
+.b129 .g30a-chip p{margin:.6cqh 0 0;font:400 2.05cqw/1.3 Manrope,sans-serif;color:rgba(255,255,255,.82)!important}
+.b129.b13-g3030:has(.g30a) .b13-head{position:absolute;left:6cqw;right:40cqw;top:8cqh;text-align:left}
+.b129.b13-g3030:has(.g30a) .b13-head h1{font-size:4.4cqw;line-height:1.15;text-shadow:0 .4cqw 2cqw rgba(0,0,0,.5)}
+.b129.b13-g3030:has(.g30a) .b13-art:after{background:linear-gradient(90deg,rgba(10,8,7,.55) 0%,rgba(10,8,7,.2) 45%,transparent 65%),linear-gradient(180deg,rgba(10,8,7,.55) 0%,transparent 30%)}
+/* маркери різної ширини → вирівняти текст плашок по одній лінії (колонка 2.4cqw) */
+.g30a-chip>.m-live{margin:0 .5cqw}.g30a-chip>.m-spin{margin:0 .3cqw}.g30a-chip>.m-q{margin:0 .1cqw}.g30a-chip>.m-poll{margin:0 .12cqw}
+.b129.b13-g3030.s16-play .g30a-chip{animation:s16-up .6s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-g3030.s16-play .g30a-chip:nth-child(2){animation-delay:.15s}.b129.b13-g3030.s16-play .g30a-chip:nth-child(3){animation-delay:.3s}.b129.b13-g3030.s16-play .g30a-chip:nth-child(4){animation-delay:.45s}
+
+/* B · екран ефіру з чатом */
+.b129.b13-g3030:has(.g30b) .b13-head{position:absolute;left:7cqw;right:7cqw;top:7cqh;text-align:center}
+.b129.b13-g3030:has(.g30b) .b13-head h1{font-size:4.6cqw;line-height:1.15}
+.g30b{position:absolute;left:5cqw;right:5cqw;top:25cqh;bottom:6cqh;display:grid;grid-template-columns:1.45fr 1fr;gap:0;border-radius:1.8cqw;overflow:hidden;background:#141110;border:1px solid #3a3129;box-shadow:0 2.4cqh 7cqw rgba(0,0,0,.6);z-index:3}
+.g30b-video{position:relative;min-height:0}
+.g30b-video img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% center}
+.g30b-live{position:absolute;left:1.6cqw;top:1.6cqh;display:inline-flex;align-items:center;gap:.7cqw;background:#e11d2e;color:#fff;font:700 1.5cqw/1 Manrope,sans-serif;letter-spacing:.08em;padding:.8cqh 1.2cqw;border-radius:.6cqw}
+.g30b-live i{width:.9cqw;height:.9cqw;border-radius:50%;background:#fff;animation:g30blink 1.2s infinite}
+.g30b-chat{display:flex;flex-direction:column;gap:1.3cqh;padding:2cqh 1.6cqw;background:#f7f2e9;color:#15110d;min-height:0}
+.g30b-chat small{font:600 1.25cqw/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#8a8070;margin-bottom:.4cqh}
+.g30b-msg{display:flex;gap:.9cqw;align-items:flex-start}
+.g30b-msg img{width:2.8cqw;height:2.8cqw;border-radius:50%;object-fit:cover;flex:none}
+.g30b-msg div{background:#fff;border-radius:.4cqw 1.2cqw 1.2cqw 1.2cqw;padding:.9cqh 1.1cqw;box-shadow:0 .3cqh 1cqw rgba(0,0,0,.08)}
+.b129 .g30b-msg b{display:block;font:700 1.15cqw/1.2 Manrope,sans-serif;color:#b8860b!important}
+.b129 .g30b-msg span{display:block;font:400 1.55cqw/1.3 Manrope,sans-serif;color:#15110d!important}
+.b129 .g30b-msg em{font-style:normal;font-weight:700}
+.g30b-poll{margin-top:auto;background:#15110d;border-radius:1.2cqw;padding:1.4cqh 1.2cqw;color:#f5f3ee}
+.b129 .g30b-poll>b{display:block;font:600 1.6cqw/1.2 Unbounded,sans-serif;color:#fdd506!important}
+.b129 .g30b-poll>span{display:block;font:400 1.4cqw/1.3 Manrope,sans-serif;color:#cec9c1!important;margin:.3cqh 0 1cqh}
+.g30b-poll div{display:flex;flex-direction:column;gap:.7cqh}
+.g30b-poll div i{display:block;font:600 1.1cqw/1 'JetBrains Mono',monospace;font-style:normal;color:#15110d;background:#fdd506;border-radius:.4cqw;padding:.55cqh .7cqw;width:var(--w);box-sizing:border-box}
+.g30b-poll div i:not(:first-child){background:#4a4038;color:#f5f3ee}
+.b129.b13-g3030.s16-play .g30b-msg{animation:s16-up .5s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-g3030.s16-play .g30b-msg:nth-of-type(2){animation-delay:.25s}.b129.b13-g3030.s16-play .g30b-msg:nth-of-type(3){animation-delay:.5s}
+.b129.b13-g3030.s16-play .g30b-poll{animation:s16-up .5s .75s cubic-bezier(.2,.8,.2,1) both}
+
+/* C · чотири фото-сцени */
+.b129.b13-g3030:has(.g30c) .b13-head{position:absolute;left:7cqw;right:7cqw;top:7cqh;text-align:center}
+.b129.b13-g3030:has(.g30c) .b13-head h1{font-size:4.6cqw;line-height:1.15}
+.g30c{position:absolute;left:6cqw;right:6cqw;top:24cqh;bottom:5cqh;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2cqw;z-index:3}
+.g30c article{position:relative;border-radius:1.8cqw;overflow:hidden;background:#15110d;box-shadow:0 1.6cqh 5cqw rgba(0,0,0,.5)}
+.g30c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.g30c article>div{position:absolute;left:0;right:0;bottom:0;padding:5cqh 1.8cqw 1.8cqh;background:linear-gradient(0deg,rgba(10,8,7,.92) 0%,rgba(10,8,7,.75) 55%,transparent 100%)}
+.g30c article>div>b{position:absolute;left:1.8cqw;top:1.2cqh;font:600 1.3cqw/1 'JetBrains Mono',monospace;color:#15110d;background:#fdd506;border-radius:99px;padding:.6cqh 1cqw}
+.b129 .g30c h3{margin:0;font:600 2.4cqw/1.15 Unbounded,sans-serif;letter-spacing:-.03em;color:#fff!important}
+.b129 .g30c p{margin:.5cqh 0 0;font:400 1.7cqw/1.3 Manrope,sans-serif;color:rgba(255,255,255,.82)!important}
+.b129.b13-g3030.s16-play .g30c article{animation:s16-up .6s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-g3030.s16-play .g30c article:nth-child(2){animation-delay:.12s}.b129.b13-g3030.s16-play .g30c article:nth-child(3){animation-delay:.24s}.b129.b13-g3030.s16-play .g30c article:nth-child(4){animation-delay:.36s}
+/* кадр g030-hero2b: голова Влада на 54cqw впиралась у заголовок → зум від лівого краю зсуває його вправо */
+.b129.b13-g3030:has(.g30a) .b13-art img{transform:scale(1.1);transform-origin:0 30%}
+/* A з новим кадром (g030-hero2*): фото на весь кадр (раніше зсув left:22cqw давав світлу смугу через заголовок), лівий край приглушений під плашки */
+.b129.b13-g3030:has(.g30a) .b13-art:after{background:linear-gradient(90deg,rgba(11,9,7,.8) 0%,rgba(11,9,7,.5) 38%,transparent 62%),linear-gradient(180deg,rgba(11,9,7,.6) 0%,transparent 30%)}
+.b129 .g30b-msg em{color:#15110d!important}
+.b129 .g30b-msg img{display:block!important;width:2.8cqw!important;height:2.8cqw!important;opacity:1!important;position:static!important}
+.b129.b13-g3030:has(.g30a) .b13-head{right:26cqw}
+
+/* G31 (слайд 28) · «Здесь мы 1,5 часа мяса…»: одна читабельна ієрархія над стейком */
+.b129.b13-g3031 .b13-head{display:none}
+.g31{position:absolute;left:7cqw;right:7cqw;top:9cqh;text-align:center;z-index:3}
+.b129 .g31 p{margin:0;max-width:none}
+.b129 .g31 .g31-pre{font:500 4.4cqw/1.1 Unbounded,sans-serif;letter-spacing:-.04em;color:#f5f3ee!important}
+.b129 .g31 .g31-big{margin-top:2.4cqh;font:600 13.5cqw/.92 Unbounded,sans-serif;letter-spacing:-.06em;color:#f5f3ee!important;text-shadow:0 1cqw 4cqw rgba(0,0,0,.55)}
+.b129 .g31 .g31-big em{font-style:normal;color:#fdd506}
+.b129 .g31 .g31-sub{margin-top:3.4cqh;font:500 3.3cqw/1.3 Manrope,sans-serif;color:#f5f3ee!important;text-shadow:0 .3cqw 1.6cqw rgba(0,0,0,.7)}
+.b129 .g31 .g31-sub b{color:#fdd506;font-weight:700}
+.b129.b13-g3031 .b13-art:after{background:linear-gradient(180deg,#0b0907 0%,rgba(11,9,7,.9) 40%,rgba(11,9,7,.45) 60%,rgba(11,9,7,.1) 78%,transparent 100%)}
+.b129.b13-g3031.s16-play .g31>*{animation:s16-up .7s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-g3031.s16-play .g31-big{animation-delay:.15s!important}.b129.b13-g3031.s16-play .g31-sub{animation-delay:.35s!important}
+
+/* s=51 «Приз №1» — легші варіанти */
+.b129.b13-g28:has(.g51) .b13-eyebrow{display:none}
+.g51{position:absolute;inset:0;z-index:3}
+.b129 .g51 .g51-lead{margin:0;font:400 2.4cqw/1.45 Manrope,sans-serif;color:#cec9c1!important;max-width:none}
+/* 1 · телефон */
+.b129.b13-g28:has(.g51-phone) .b13-head{position:absolute;left:7cqw;right:44cqw;top:9cqh;text-align:left}
+.b129.b13-g28:has(.g51-phone) .b13-head h1{font-size:4.6cqw;line-height:1.16;text-align:left}
+.g51-phone .g51-lead{position:absolute;left:7cqw;width:46cqw;top:33cqh}
+.g51-list{position:absolute;left:7cqw;width:46cqw;top:50cqh;margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:2cqh}
+.b129 .g51-list span{display:flex;align-items:center;gap:1.4cqw;font:600 2.5cqw/1.2 Manrope,sans-serif;color:#f5f3ee}
+.g51-list span i{width:2.2cqw;height:2.2cqw;border-radius:50%;background:#fdd506;flex:none;position:relative}
+.g51-list span i:after{content:'';position:absolute;left:.72cqw;top:.38cqw;width:.55cqw;height:1cqw;border:solid #15110d;border-width:0 .28cqw .28cqw 0;transform:rotate(45deg)}
+.g51-iphone{position:absolute;right:8cqw;top:12cqh;height:78cqh;aspect-ratio:77.6/163;border-radius:8cqh;padding:.8cqh;box-sizing:border-box;
+  background:linear-gradient(145deg,#dcd7cf 0%,#8f8981 28%,#cfc9c0 52%,#7a746d 78%,#c2bcb3 100%);box-shadow:0 3cqh 8cqw rgba(0,0,0,.7)}
+.g51-iscreen{width:100%;height:100%;border-radius:7.3cqh;background:#000;border:.6cqh solid #000;box-sizing:border-box;overflow:hidden}
+.g51-iscreen img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;border-radius:6.7cqh}
+.b129.b13-g28.s16-play .g51-list span{animation:s16-up .5s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-g28.s16-play .g51-list span:nth-child(2){animation-delay:.08s}.b129.b13-g28.s16-play .g51-list span:nth-child(3){animation-delay:.16s}.b129.b13-g28.s16-play .g51-list span:nth-child(4){animation-delay:.24s}.b129.b13-g28.s16-play .g51-list span:nth-child(5){animation-delay:.32s}.b129.b13-g28.s16-play .g51-list span:nth-child(6){animation-delay:.4s}
+.b129.b13-g28.s16-play .g51-iphone{animation:s16-up .8s .2s cubic-bezier(.2,.8,.2,1) both}
+/* 2 · вітрина */
+.b129.b13-g28:has(.g51-show) .b13-head{position:absolute;left:7cqw;right:7cqw;top:7cqh;text-align:center}
+.b129.b13-g28:has(.g51-show) .b13-head h1{font-size:4.6cqw;line-height:1.16}
+.g51-show .g51-lead{position:absolute;left:13cqw;right:13cqw;top:21cqh;text-align:center}
+.g51-win{position:absolute;left:12cqw;right:12cqw;top:33cqh;border-radius:1.4cqw;overflow:hidden;border:1px solid #3a3129;box-shadow:0 3cqh 8cqw rgba(0,0,0,.65);transform:perspective(120cqw) rotateX(8deg);transform-origin:50% 0}
+.g51-bar{height:3.6cqh;background:#1c1713;display:flex;align-items:center;gap:.8cqw;padding:0 1.4cqw;font:500 1.3cqw/1 'JetBrains Mono',monospace;color:#8a8278}
+.g51-bar i{width:1cqw;height:1cqw;border-radius:50%;background:#3a3129}
+.g51-bar span{margin-left:1cqw}
+.g51-win img{display:block;width:100%;height:auto}
+.g51-chips{position:absolute;left:5cqw;right:5cqw;bottom:6cqh;margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:1cqh 1cqw}
+.b129 .g51-chips span{font:600 1.6cqw/1 Manrope,sans-serif;color:#15110d;background:#f5f0e6;border-radius:99px;padding:1.1cqh 1.5cqw}
+.b129 .g51-chips span:first-child{background:#fdd506}
+.b129.b13-g28.s16-play .g51-win{animation:s16-up .8s .15s cubic-bezier(.2,.8,.2,1) both}
+
+/* s=8 «Сегодня — реалити-шоу AI-агентов» v2: ролик у власному чистому вікні (Мирослав 01.10: «не видно ні візуалізації, ні Влада») */
+.slide.opening.op-chapter.op-bgv .chapter-format{background:transparent}
+.slide.opening.op-chapter.op-bgv .op-bgvideo{position:absolute;left:11cqw;right:11cqw;top:28.5cqh;height:46cqh;z-index:0;overflow:hidden;border-radius:2.2cqw;
+  border:1px solid rgba(253,213,6,.28);box-shadow:0 3cqh 8cqw rgba(0,0,0,.7),0 0 6cqw rgba(253,213,6,.08);background:#0b0907}
+.slide.opening.op-chapter.op-bgv .op-bgvideo video{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.slide.opening.op-chapter.op-bgv .cf-live .cf-heading{top:5.5cqh;font-size:4.8cqw}
+.slide.opening.op-chapter.op-bgv .cf-live .cf-live-intro{top:18.6cqh;left:9cqw;width:82cqw;font-size:2.15cqw;line-height:1.42;color:#d9d3c8}
+.slide.opening.op-chapter.op-bgv .cf-live-rail{top:76.5cqh;height:9cqh;left:14cqw;right:14cqw}
+.slide.opening.op-chapter.op-bgv .cf-live-rail .cf-symbol{width:8.5cqw;height:8.5cqh;opacity:.32}
+.slide.opening.op-chapter.op-bgv .cf-live-rail .cf-symbol.is-current{opacity:1;filter:drop-shadow(0 0 1.4cqw rgba(253,213,6,.45))}
+.slide.opening.op-chapter.op-bgv .cf-live-panels{top:86cqh;height:7cqh}
+.slide.opening.op-chapter.op-bgv .cf-live .cf-panel h2{font-size:3.8cqw}
+.slide.opening.op-chapter.op-bgv .cf-progress{bottom:2.6cqh}
+/* s=31: «Напишите «ГОТОВ»» — центр без transform (анімація появи перебивала translateX(-50%) → плашка стрибала вправо) */
+.b129 .g1001-cta{left:0!important;right:0!important;margin:0 auto!important;width:fit-content!important;max-width:86cqw;transform:none!important;animation:g1001fade .6s .3s ease both!important}
+@keyframes g1001fade{from{opacity:0}to{opacity:1}}
+
+/* s=139 «А теперь примерьте на себя» v3: фокус на відео future pacing, без фону, мінімум тексту (Мирослав 01.10) */
+.b129.b13-g131 .b13-art{display:none!important}
+.b129.b13-g131 .g1001-fp{left:21cqw!important;right:auto!important;width:58cqw!important;top:16cqh!important;height:58cqh!important;border-radius:1.8cqw!important;
+  border:1px solid rgba(253,213,6,.25)!important;box-shadow:0 3cqh 9cqw rgba(0,0,0,.7)!important;-webkit-mask-image:none!important;mask-image:none!important}
+.b129.b13-g131 .g139-caps{position:absolute;left:8cqw;right:8cqw;top:77.5cqh;display:grid;grid-template-columns:1fr 1fr;gap:3cqw;z-index:4}
+.b129.b13-g131 .g139-caps p{margin:0;font:400 2.25cqw/1.35 Manrope,sans-serif;color:#e9e4da!important;text-align:center;max-width:none}
+.b129.b13-g131 .g139-caps b{font:600 2.25cqw/1.35 Unbounded,sans-serif;color:#fdd506;letter-spacing:-.02em}
+.b129.b13-g131 .b13-conclusion{position:absolute!important;left:6cqw;right:6cqw;top:88.5cqh!important;text-align:center;font-size:2.5cqw!important}
+
+/* s=227 AI-таргет (Google 296–297, Влад 02.10): крок 1 — картка «AI-реклама в Instagram под ключ» замість схеми;
+   крок 2 — $400.000+ і три айфони з рекламними Stories (reels-креативи Влада) замість скріна GitHub */
+.b129.b13-v2-s16-ads .s213-card{position:absolute;left:7cqw;right:7cqw;top:23cqh;height:43cqh;box-sizing:border-box;padding:4.6cqh 4.6cqw;display:flex;flex-direction:column;justify-content:center;gap:3.4cqh;background:linear-gradient(160deg,#1b1611 0%,#120e0b 100%);border:1px solid #3a3129;border-radius:1.8cqw;box-shadow:0 2.4cqh 7cqw rgba(0,0,0,.5)}
+.b129.b13-v2-s16-ads .s213-card h3{margin:0;font:500 3.6cqw/1.2 Unbounded,sans-serif;letter-spacing:-.04em;color:#f5f3ee}
+.b129.b13-v2-s16-ads .s213-card h3 em{font-style:normal;color:#fdd506}
+.b129.b13-v2-s16-ads .s213-card .g2-ls{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:2.2cqh}
+.b129.b13-v2-s16-ads .s213-card .it{display:flex;align-items:center;gap:2cqw;font:400 2.45cqw/1.4 Manrope,sans-serif;color:#e9e3d8}
+.b129.b13-v2-s16-ads .s213-card .it i{flex:none;display:grid;place-items:center;width:5.2cqw;height:5.2cqw;border-radius:1.2cqw;background:#211b15;border:1px solid #3a3129}
+.b129.b13-v2-s16-ads .s213-card .it svg{width:2.6cqw;height:2.6cqw;fill:none;stroke:#b3a996;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.b129.b13-v2-s16-ads .s215-budget{top:20cqh}
+.b129.b13-v2-s16-ads .s213-phones{position:absolute;left:7cqw;right:7cqw;top:37cqh;height:42cqh;display:flex;align-items:flex-end;justify-content:center;gap:2.6cqw}
+.b129.b13-v2-s16-ads .s213-phones .ig-phone{width:auto;height:92%;aspect-ratio:9/19.3;border-radius:2.8cqw;padding:.6cqw}
+.b129.b13-v2-s16-ads .s213-phones .ig-phone.mid{height:100%}
+.b129.b13-v2-s16-ads .s213-story{position:relative;border-radius:2.3cqw;background:#000}
+.b129.b13-v2-s16-ads .s213-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.b129.b13-v2-s16-ads .s213-story:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,transparent 18%,transparent 78%,rgba(0,0,0,.55) 100%)}
+.b129.b13-v2-s16-ads .s213-bars{position:absolute;left:.8cqw;right:.8cqw;top:1.4cqw;display:flex;gap:.3cqw;z-index:2}
+.b129.b13-v2-s16-ads .s213-bars i{flex:1;height:.25cqw;border-radius:9px;background:rgba(255,255,255,.45)}
+.b129.b13-v2-s16-ads .s213-bars i:first-child{background:#fff}
+.b129.b13-v2-s16-ads .s213-head{position:absolute;left:.9cqw;right:.9cqw;top:2.2cqw;display:flex;align-items:center;gap:.6cqw;z-index:2}
+.b129.b13-v2-s16-ads .s213-head img{width:2.2cqw;height:2.2cqw;border-radius:50%;object-fit:cover}
+.b129 .s213-head b,.b129 .s213-head small{color:#fff!important;font:600 1cqw/1.1 -apple-system,'Helvetica Neue',Arial,sans-serif!important}
+.b129 .s213-head small{font-weight:400!important;opacity:.85!important}
+.b129.b13-v2-s16-ads .s213-cta{position:absolute;left:1.2cqw;right:1.2cqw;bottom:1.4cqw;z-index:2;padding:.9cqh 0;border-radius:.8cqw;background:#fff;color:#000!important;text-align:center;font:600 1.1cqw/1.2 -apple-system,'Helvetica Neue',Arial,sans-serif}
+.b129.b13-v2-s16-ads.s16-play[data-b13-step="1"] .s213-phone{animation:s16-up .7s cubic-bezier(.2,.8,.2,1) both}
+.b129.b13-v2-s16-ads.s16-play[data-b13-step="1"] .s213-phone.mid{animation-delay:.15s}
+.b129.b13-v2-s16-ads.s16-play[data-b13-step="1"] .s213-phone:last-child{animation-delay:.3s}
+
+/* ── s=8 варіанти «ролик на весь екран» (02.10): .op-skin-a | b | c ── */
+.slide.opening.op-chapter.op-bgv[class*="op-skin-"] .op-bgvideo{left:0;right:0;top:0;bottom:0;height:auto;border:0;border-radius:0;box-shadow:none}
+.slide.opening.op-chapter.op-bgv[class*="op-skin-"] .op-bgvideo video{object-position:50% 50%}
+.slide.opening.op-chapter.op-bgv[class*="op-skin-"] .cf-progress{display:none}
+.slide.opening.op-chapter.op-bgv[class*="op-skin-"] .cf-live .cf-heading,.slide.opening.op-chapter.op-bgv[class*="op-skin-"] .cf-live .cf-live-intro{text-align:left;text-shadow:0 .3cqw 2cqw rgba(0,0,0,.6)}
+.slide.opening.op-chapter.op-bgv[class*="op-skin-"] .cf-live-panels{text-align:left}
+
+/* A · кіно-титр: чистий кадр, текст у нижній третині */
+.op-skin-a .op-bgvideo:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(11,9,7,.95) 0%,rgba(11,9,7,.78) 22%,rgba(11,9,7,.3) 40%,transparent 55%),linear-gradient(180deg,rgba(11,9,7,.35) 0%,transparent 14%)}
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-heading{top:auto;bottom:21cqh;left:6cqw;width:58cqw;font-size:4.4cqw}
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-live-intro{top:auto;bottom:11.5cqh;left:6cqw;width:54cqw;font-size:1.8cqw;line-height:1.45;color:#e2ddd3}
+.slide.opening.op-chapter.op-skin-a .cf-live-rail{top:auto;bottom:3.6cqh;left:6cqw;right:auto;width:46cqw;height:6.5cqh}
+.slide.opening.op-chapter.op-skin-a .cf-live-rail .cf-symbol{width:5.6cqw;height:5.6cqh;opacity:.4}
+.slide.opening.op-chapter.op-skin-a .cf-live-panels{top:auto;bottom:4.5cqh;left:auto;right:6cqw;width:34cqw;height:6cqh;text-align:right}
+.slide.opening.op-chapter.op-skin-a .cf-live .cf-panel h2{font-size:3.4cqw}
+
+/* B · видошукач камери: кути рамки, ● REC, іконки колонкою справа */
+.op-skin-b .op-bgvideo:after{content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(11,9,7,.88) 0%,rgba(11,9,7,.5) 30%,transparent 52%),linear-gradient(0deg,rgba(11,9,7,.85) 0%,transparent 26%),linear-gradient(270deg,rgba(11,9,7,.6) 0%,transparent 18%)}
+.op-skin-b .op-bgvideo:before{content:'';position:absolute;inset:4.5cqw;z-index:2;pointer-events:none;
+  background:linear-gradient(#fdd506,#fdd506) left top/5cqw 3px no-repeat,linear-gradient(#fdd506,#fdd506) left top/3px 5cqw no-repeat,
+  linear-gradient(#fdd506,#fdd506) right top/5cqw 3px no-repeat,linear-gradient(#fdd506,#fdd506) right top/3px 5cqw no-repeat,
+  linear-gradient(#fdd506,#fdd506) left bottom/5cqw 3px no-repeat,linear-gradient(#fdd506,#fdd506) left bottom/3px 5cqw no-repeat,
+  linear-gradient(#fdd506,#fdd506) right bottom/5cqw 3px no-repeat,linear-gradient(#fdd506,#fdd506) right bottom/3px 5cqw no-repeat}
+.slide.opening.op-chapter.op-skin-b .chapter-format:before{content:'● REC';position:absolute;left:8cqw;top:7.5cqh;z-index:3;font:600 1.6cqw/1 'JetBrains Mono',monospace;letter-spacing:.14em;color:#ff3b4a;animation:g30blink 1.4s ease-in-out infinite}
+.slide.opening.op-chapter.op-skin-b .cf-live .cf-heading{top:12cqh;left:8cqw;width:52cqw;font-size:4.4cqw}
+.slide.opening.op-chapter.op-skin-b .cf-live .cf-live-intro{top:30.5cqh;left:8cqw;width:44cqw;font-size:1.85cqw;line-height:1.45;color:#e2ddd3}
+.slide.opening.op-chapter.op-skin-b .cf-live-rail{flex-direction:column;top:24cqh;left:auto;right:8cqw;width:8cqw;height:56cqh}
+.slide.opening.op-chapter.op-skin-b .cf-live-rail .cf-symbol{width:6.4cqw;height:6.4cqh;opacity:.45}
+.slide.opening.op-chapter.op-skin-b .cf-live-panels{top:auto;bottom:9cqh;left:8cqw;width:60cqw;height:7cqh}
+.slide.opening.op-chapter.op-skin-b .cf-live .cf-panel h2{font-size:4.2cqw}
+
+/* C · скляна картка в лівому нижньому куті */
+.op-skin-c .op-bgvideo:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(11,9,7,.45) 0%,transparent 40%)}
+.slide.opening.op-chapter.op-skin-c .chapter-format{z-index:1}
+.slide.opening.op-chapter.op-skin-c .chapter-format:after{content:'';position:absolute;left:5cqw;width:57cqw;top:45cqh;bottom:5cqh;z-index:-1;border-radius:2cqw;
+  background:rgba(14,11,9,.62);-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);border:1px solid rgba(255,255,255,.12);box-shadow:0 2cqh 6cqw rgba(0,0,0,.45)}
+.slide.opening.op-chapter.op-skin-c .cf-live .cf-heading{top:48.5cqh;left:8.5cqw;width:50cqw;font-size:3.8cqw;text-shadow:none}
+.slide.opening.op-chapter.op-skin-c .cf-live .cf-live-intro{top:64.5cqh;left:8.5cqw;width:50cqw;font-size:1.72cqw;line-height:1.45;color:#e2ddd3;text-shadow:none}
+.slide.opening.op-chapter.op-skin-c .cf-live-rail{top:75.5cqh;left:8.5cqw;right:auto;width:50cqw;height:6.5cqh}
+.slide.opening.op-chapter.op-skin-c .cf-live-rail .cf-symbol{width:5.6cqw;height:5.6cqh;opacity:.4}
+.slide.opening.op-chapter.op-skin-c .cf-live-panels{top:84cqh;left:8.5cqw;width:50cqw;height:6cqh}
+.slide.opening.op-chapter.op-skin-c .cf-live .cf-panel h2{font-size:3cqw}
+
+/* s=51 · «Приз №1» жовтою плашкою над заголовком (03.10), кегль як у пунктів списку */
+.b129 .g51-phone .g51-badge{position:absolute;left:7cqw;top:9cqh;display:inline-block;background:#fdd506;color:#15110d;font:700 2.5cqw/1 Manrope,sans-serif;letter-spacing:.01em;padding:1.1cqh 1.6cqw;border-radius:.9cqw}
+.b129.b13-g28:has(.g51-phone) .b13-head{top:16.5cqh}
+.b129.b13-g28:has(.g51-phone) .b13-head h1{font-size:4.8cqw}
+.g51-phone .g51-lead{top:36cqh}
+.g51-phone .g51-list{top:53cqh}
+.b129.b13-g28.s16-play .g51-badge{animation:s16-up .5s cubic-bezier(.2,.8,.2,1) both}
+
+/* ── Призи №2/№3 у стилі Приз №1 (s=54, s=55; 03.10): ліва колонка в потоці (заголовок будь-якої довжини не наїжджає) ── */
+.b129:has(.gp) .b13-eyebrow,.b129:has(.gp) .b13-head{display:none}
+.gp{position:absolute;inset:0;z-index:3}
+.gp-col{position:absolute;left:7cqw;top:9cqh;width:44cqw;display:flex;flex-direction:column;align-items:flex-start;gap:2.6cqh}
+.b129 .gp .gp-badge{display:inline-block;background:#fdd506;color:#15110d;font:700 2.5cqw/1 Manrope,sans-serif;padding:1.1cqh 1.6cqw;border-radius:.9cqw}
+.b129 .gp .gp-title{margin:0 0 .6cqh;font:500 4.8cqw/1.16 Unbounded,sans-serif;letter-spacing:-.045em;color:#f5f3ee;text-wrap:balance}
+.b129 .gp .gp-title em{font-style:normal;color:#fdd506}
+.b129 .gp p{margin:0;max-width:none}
+.b129 .gp .gp-lead{font:400 2.4cqw/1.45 Manrope,sans-serif;color:#e9e4da!important}
+.b129 .gp .gp-lead em{font-style:normal;color:#fdd506;font-weight:600}
+.b129 .gp .gp-mut{font:400 2cqw/1.45 Manrope,sans-serif;color:#a39b8f!important}
+.b129 .gp .gp-take{margin-top:1.4cqh;font:600 2.1cqw/1 Manrope,sans-serif;color:#fdd506!important;border:1px solid rgba(253,213,6,.55);border-radius:99px;padding:1.4cqh 2cqw}
+/* №2 · чат у iPhone */
+.gp-phone{right:8cqw;top:12cqh;height:78cqh}
+.gp-chat{display:flex;flex-direction:column;background:#0e1621!important}
+.gp-chead{flex:none;display:flex;align-items:center;gap:1cqw;padding:5.4cqh 1.8cqw 1.4cqh;background:#17212b;border-bottom:1px solid #0b1118}
+.gp-chead i{width:3.2cqw;height:3.2cqw;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff6b0,#fdd506 45%,#8a6d05);flex:none}
+.b129 .gp-chead b{font:600 1.7cqw/1.1 Manrope,sans-serif;color:#fff}
+.b129 .gp-chead span{margin-left:auto;font:500 1.25cqw/1 Manrope,sans-serif;color:#6ab3f3}
+.gp-msgs{flex:1;display:flex;flex-direction:column;gap:1.2cqh;padding:2cqh 1.4cqw;justify-content:flex-end}
+.b129 .gp-msgs p{max-width:82%;font:400 1.6cqw/1.35 Manrope,sans-serif;padding:1cqh 1.3cqw;border-radius:1.4cqw}
+.b129 .gp-msgs .me{align-self:flex-end;background:#2b5278;color:#fff!important;border-bottom-right-radius:.3cqw}
+.b129 .gp-msgs .ai{align-self:flex-start;background:#182533;color:#e8edf2!important;border-bottom-left-radius:.3cqw}
+.b129 .gp-msgs .gp-site{padding:.5cqw;width:70%}
+.gp-site img{display:block;width:100%;border-radius:1cqw}
+.gp-typing{display:flex!important;gap:.5cqw;width:auto!important}
+.gp-typing i{width:.8cqw;height:.8cqw;border-radius:50%;background:#8aa0b4;animation:g30dot 1.2s ease-in-out infinite}
+.gp-typing i:nth-child(2){animation-delay:.2s}.gp-typing i:nth-child(3){animation-delay:.4s}
+.b129.s16-play .gp-msgs p{animation:s16-up .45s cubic-bezier(.2,.8,.2,1) both}
+.b129.s16-play .gp-msgs p:nth-child(2){animation-delay:.5s}.b129.s16-play .gp-msgs p:nth-child(3){animation-delay:1.1s}.b129.s16-play .gp-msgs p:nth-child(4){animation-delay:1.6s}
+/* №3 · картка-візуал */
+.gp-card{position:absolute;right:6cqw;top:20cqh;width:42cqw;height:45.7cqw;margin:0;border-radius:2.2cqw;overflow:hidden;border:1px solid rgba(253,213,6,.22);box-shadow:0 3cqh 8cqw rgba(0,0,0,.65)}
+.gp-card img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block}
+.b129.s16-play .gp-card,.b129.s16-play .gp-phone{animation:s16-up .8s .2s cubic-bezier(.2,.8,.2,1) both}
+.b129.s16-play .gp-col>*{animation:s16-up .5s cubic-bezier(.2,.8,.2,1) both}
+.b129 .gp .gp-take{white-space:nowrap;font-size:1.9cqw}
+
+/* Приз №3 (s=55): фото на весь слайд донизу, текст зверху на затемненні (03.10) */
+.gp-bg{position:absolute;inset:0;margin:0;z-index:0}
+.gp-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 100%;display:block}
+.gp-bg:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#0b0907 0%,rgba(11,9,7,.85) 30%,rgba(11,9,7,.2) 46%,transparent 58%)}
+.gp:has(.gp-bg) .gp-col{z-index:2;width:62cqw}
+.b129.s16-play .gp-bg img{animation:g1001fade .9s ease both}
+
+/* s=85 «Смерть меня тогда не пугала» (без заголовка) v2: твердження зверху → скетч гаманця по центру → цитата під ним (03.10) */
+.life-story.ls-treatment-v2 .ls-content{inset:8cqh 7cqw 20cqh;display:block}
+#slides .life-story.ls-treatment-v2 .ls-body p:first-child{position:absolute;left:4cqw;right:4cqw;top:0;margin:0 auto;max-width:none;text-align:center;font:500 3.7cqw/1.24 var(--font-d);letter-spacing:-.045em;color:#f5f3ee;text-wrap:balance}
+#slides .life-story.ls-treatment-v2 .ls-body p:last-child{position:absolute;left:0;right:0;top:auto;bottom:0;width:auto;margin:0;text-align:center;font:500 3.1cqw/1.32 var(--font-d);letter-spacing:-.04em;color:#cfc8bc;text-wrap:balance}
+#slides .life-story.ls-treatment-v2 .ls-body p:last-child .ls-quote-accent{color:#fdd506;font-style:normal}
+.life-story.ls-treatment-v2 .ls-gallery{position:absolute;left:50%;right:auto;top:15cqh;width:40cqh;height:40cqh;transform:translateX(-50%);display:block;margin:0;mix-blend-mode:lighten}
+.life-story.ls-treatment-v2 .ls-photo{width:100%;height:100%}
+.life-story.ls-treatment-v2 .ls-photo-frame{border:0;border-radius:0;background:transparent}
+.life-story.ls-treatment-v2 .ls-gallery{-webkit-mask-image:radial-gradient(closest-side,#000 72%,transparent 100%);mask-image:radial-gradient(closest-side,#000 72%,transparent 100%);width:46cqh;height:46cqh;top:13cqh}
+/* 03.10 · s124 «Прозрение 2»: скетч робота з послугою зверху, кікер + питання + підпис знизу */
+.foundation.fd-ag-bg-bottom:has(.g1001-qart) .fd-shell{padding:0 7cqw 6.5cqh;gap:2.2cqh}
+.foundation.fd-ag-bg-bottom .ag-art.g1001-qart{left:50%;right:auto;top:0;width:69cqh;height:69cqh;transform:translateX(-50%);-webkit-mask-image:radial-gradient(ellipse 58% 60% at 50% 47%,#000 72%,transparent 100%);mask-image:radial-gradient(ellipse 58% 60% at 50% 47%,#000 72%,transparent 100%)}
+.foundation.fd-ag-bg-bottom .ag-art.g1001-qart img{object-fit:contain;filter:none}
+.foundation.fd-ag-bg-bottom .ag-art.g1001-qart:after{display:none}
+.foundation.fd-ag-bg-bottom:has(.g1001-qart) .fd-header{display:grid;gap:2.2cqh;justify-items:center}
+.foundation.fd-ag-bg-bottom:has(.g1001-qart) .fd-kicker{display:inline-block;margin:0;background:#fdd506;color:#15110d;font:700 2.5cqw/1 Manrope,sans-serif;letter-spacing:0;text-transform:none;padding:1.1cqh 1.6cqw;border-radius:.9cqw}
+.foundation.fd-ag-bg-bottom:has(.g1001-qart) .fd-kicker:before{display:none}
+.foundation.fd-ag-bg-bottom:has(.g1001-qart) .fd-header h1{font-size:4.2cqw;line-height:1.2;max-width:84cqw}
+.foundation.fd-ag-bg-bottom:has(.g1001-qart) .g1001-q{margin:0 auto;font-size:2.4cqw}
+/* 03.10 · s125 мем g153: плеєр за пропорцією відео (без чорних смуг), заокруглення */
+.b129.b13-v2-s16-video:has(video[src*="g153-smirk"]) .s16-player{left:50%;right:auto;top:auto;bottom:9cqh;width:86cqw;height:auto;aspect-ratio:480/264;transform:translateX(-50%);background:transparent;border:0;border-radius:2.4cqw}
+.b129.b13-v2-s16-video:has(video[src*="g153-smirk"]) .s16-player video{width:100%;height:100%;object-fit:cover;max-width:none;max-height:none;border-radius:inherit}
+/* 03.10 · s138 «Бро, это ии?»: рамки під 9:16 (раніше вужчі — відео обрізало з боків) */
+.foundation .mc-videos2:has(video[src*="g133-"]){gap:3.5cqw}
+.foundation .mc-videos2:has(video[src*="g133-"]) .ag-phone{width:auto;height:68cqh;max-height:none;aspect-ratio:9/16;flex:none}
+.foundation .mc-videos2:has(video[src*="g133-"]) .ag-phone video{width:100%;height:100%;object-fit:cover}
+/* 03.10 · s139: клік по відео — розгортається на весь слайд (зі звуком), повторний клік — плавно назад */
+.b129.b13-g131 .g1001-fp{transition:opacity .4s,left .7s cubic-bezier(.65,0,.25,1),top .7s cubic-bezier(.65,0,.25,1),width .7s cubic-bezier(.65,0,.25,1),height .7s cubic-bezier(.65,0,.25,1),border-radius .7s cubic-bezier(.65,0,.25,1),border-color .7s,box-shadow .7s;z-index:30}
+.b129.b13-g131 .g1001-fp.is-full{left:0!important;top:0!important;width:100cqw!important;height:100cqh!important;border-radius:0!important;border-color:transparent!important;box-shadow:none!important}
+/* 03.10 · s145 крок «Разный опыт»: порівняння мама 42 / син Влада 14 — дві портретні картки з великим віком */
+.b129.b13-g135 .ps-experience{inset:7cqh 7cqw 15cqh}
+.b129.b13-g135 .ps-experience .ps-visual{width:72cqw;height:61cqh;margin:0}
+.b129.b13-g135 .ps-experience .ps-photo-pair{display:grid!important;grid-template-columns:1fr 1fr;gap:4cqw;width:100%;height:100%}
+.b129.b13-g135 .ps-experience .ps-photo{width:100%!important;height:100%!important;border:1px solid rgba(253,213,6,.28);border-radius:1.8cqw;box-shadow:0 2.4cqh 7cqw rgba(0,0,0,.6)}
+.b129.b13-g135 .ps-experience .ps-photo img{width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:50% 25%}
+.b129.b13-g135 .ps-experience .ps-photo:after{content:'';position:absolute;inset:48% 0 0;background:linear-gradient(0deg,rgba(11,9,7,.94),rgba(11,9,7,.6) 45%,transparent)}
+.b129.b13-g135 .ps-tag{position:absolute;left:2.6cqw;right:2.6cqw;bottom:2.6cqh;z-index:2;display:flex;flex-direction:column;gap:.8cqh;margin:0;text-align:left}
+.b129.b13-g135 .ps-tag b{font:500 9cqw/.9 Unbounded,sans-serif;letter-spacing:-.06em;color:#fdd506}
+.b129.b13-g135 .ps-tag span{font:400 2.1cqw/1.3 Manrope,sans-serif;color:#f5f3ee}
+.b129.b13-g135 .ps-experience .ps-people{margin:4.5cqh auto 0;font-size:2.8cqw;text-align:center;color:#e9e4da;text-wrap:balance;max-width:74cqw}
+/* 03.10 · s146 «Секрет №1 · Что продавать»: надзаголовок — жовта плашка, як «Приз №N» / «Прозрение 2» */
+.slide.b129.b13-v2-studio-loop .b13-head .b13-eyebrow{display:inline-block;width:auto;background:#fdd506;color:#15110d;font:700 2.5cqw/1 Manrope,sans-serif;letter-spacing:0;text-transform:none;padding:1.1cqh 1.6cqw;border-radius:.9cqw;margin:0 auto 2.4cqh}
+.slide.b129.b13-v2-studio-loop .b13-head .b13-eyebrow:before,.slide.b129.b13-v2-studio-loop .b13-head .b13-eyebrow:after{display:none}
+/* 03.10 · s159 «Сейчас таких единицы»: нижня фраза — жовтий контейнер, чорний текст */
+.slide.b129.b13-g3202 .g2-fin{left:50%;right:auto;bottom:8cqh;transform:translateX(-50%);width:max-content;max-width:86cqw;box-sizing:border-box;background:#fdd506;color:#15110d;padding:1.8cqh 3cqw;border-radius:1cqw;font:600 3.1cqw/1.3 Manrope,sans-serif}
+.slide.b129.b13-g3202 .g2-fin em{color:#15110d;font-weight:800}
+/* 03.10 · s175 «Вам нужно нанять повара»: гіфка з Рататуєм (Ремі у волоссі Лінгвіні керує ним) у темній зоні між заголовком і кухнею */
+.b129 .g234-gif{position:absolute;left:50%;top:25cqh;width:60cqw;aspect-ratio:480/194;margin:0;translate:-50% 0;z-index:5;border-radius:1.8cqw;overflow:hidden;border:1px solid rgba(253,213,6,.35);box-shadow:0 2.4cqh 7cqw rgba(0,0,0,.75)}
+.b129 .g234-gif video{display:block;width:100%;height:100%;object-fit:cover}
+/* 05.10 · s54 «Приз №2»: заголовок у 3 рядки (ширша колонка, телефон правіше); у чаті сайт у рамці браузера замість фото Землі, без «друкує…» */
+.b129 .gp:has(.gp-chat) .gp-col{width:52cqw}
+.gp-phone{right:5cqw;top:14cqh;height:72cqh}
+.b129 .gp-chat .gp-msgs{padding-bottom:4.5cqh}
+.b129 .gp-msgs .gp-site{width:88%;max-width:88%}
+.gp-site .gp-bar{display:flex;align-items:center;gap:.45cqw;padding:.8cqh .9cqw;background:#e9e7e3;border-radius:1cqw 1cqw 0 0}
+.gp-site .gp-bar i{width:.75cqw;height:.75cqw;border-radius:50%;background:#ff5f57;flex:none}
+.gp-site .gp-bar i:nth-child(2){background:#febc2e}.gp-site .gp-bar i:nth-child(3){background:#28c840}
+.gp-site .gp-bar u{flex:1;height:1.4cqh;margin-left:.6cqw;background:#fff;border-radius:99px;text-decoration:none}
+.gp-site .gp-bar+img{border-radius:0 0 1cqw 1cqw}
+/* 05.10 · s54: робот унизу ліворуч показує на телефон із чатом (заповнює порожній кут) */
+.b129 .gp .gp-robot{position:absolute;left:3cqw;bottom:0;width:44cqw;margin:0;z-index:2;pointer-events:none}
+.b129 .gp .gp-robot img{display:block;width:100%;height:auto}
+/* 05.10 · s120 «Прозрение 1»: жовта плашка, чорний текст — як «Прозрение 2» на 124 */
+.foundation.fd-ag-independence .fd-header h1 span{display:inline-block;background:#fdd506;color:#15110d;font:700 2.5cqw/1 Manrope,sans-serif;letter-spacing:0;padding:1.1cqh 1.6cqw;border-radius:.9cqw}
+.foundation.fd-ag-independence .fd-header h1 span em{color:#15110d;font-style:normal}
+/* 05.10 · s73 «Информационная война»: акцент у тексті life-story — жовтим, без курсиву */
+#slides .life-story .ls-copy em{font-style:normal;color:#fdd506}
+/* 05.10 · s160 діаграма «Качественно / быстро / дёшево» (Google 219): жовтий центр-«утопія» зі світінням, підсвічені пари, тонкі золоті кола */
+.slide.b129.b13-g3219 .g2-venn2{left:10cqw;width:80cqw;top:7cqh;height:86cqh}
+.slide.b129.b13-g3219 .g2-venn2 circle.c{fill:url(#v219f);stroke:none}
+.slide.b129.b13-g3219 .g2-venn2 circle.pair{fill:rgba(253,213,6,.09);stroke:none}
+.slide.b129.b13-g3219 .g2-venn2 circle.ring{fill:none;stroke:rgba(253,213,6,.5);stroke-width:1.6}
+.slide.b129.b13-g3219 .g2-venn2 .glow circle{fill:#fdd506;opacity:.55}
+.slide.b129.b13-g3219 .g2-venn2 .core circle{fill:#fdd506;stroke:none}
+.slide.b129.b13-g3219 .g2-venn2 text.big{font:600 23px Unbounded,sans-serif;letter-spacing:-.4px;fill:#f5f3ee}
+.slide.b129.b13-g3219 .g2-venn2 text.pl{font:500 23px Manrope,sans-serif;fill:#d8cfc0}
+.slide.b129.b13-g3219 .g2-venn2 text.mid{font:700 23px Unbounded,sans-serif;letter-spacing:-.4px;fill:#15110d;filter:none}
+/* 05.10 · s172 «Вам нужно нанять повара»: фон темніше, заголовок і гіфка по центру, гіфка більша */
+.b129:has(.g234-gif) .b13-art img{filter:brightness(.38) saturate(.85)}
+.b129:has(.g234-gif) .b13-shell{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4.5cqh}
+.b129:has(.g234-gif) .b13-head{position:static;margin:0;text-align:center}
+.b129:has(.g234-gif) .b13-body{position:static;width:100%;margin:0;padding:0;display:flex;justify-content:center}
+.b129 .g234-gif{position:relative;left:auto;top:auto;translate:none;width:84cqw}
+/* 05.10 · s12 «Актёров тоже нет»: без тексту — прибрано затемнення під ним (звук вмикає block129.sound) */
+.b129.b13-g3015 .g1001-shade{display:none}
+/* 05.10 · s137 «А теперь примерьте на себя»: лише відео на весь слайд, без написів; клік — звук */
+.b129.b13-g131 .g1001-fp{left:0!important;top:0!important;width:100cqw!important;height:100cqh!important;border-radius:0!important;border:0!important;box-shadow:none!important}
+.b129.b13-g131 .b13-head{display:none}
+/* 06.10 · нові сторінки Влада в Секреті 2 (G325–G336): текстові слайди по центру (.g6-say), плашка «Секрет №2», жовта CTA, фото-слайди з ¼ */
+.b129:has(.g6-say):not(:has(.g6-photo)) .b13-shell{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4.5cqh;padding:8cqh 8cqw}
+.b129:has(.g6-say):not(:has(.g6-photo)) .b13-head{position:static;margin:0;text-align:center}
+.b129:has(.g6-say) .b13-head h1{font-size:5.2cqw;line-height:1.2;text-wrap:balance;max-width:84cqw;margin:0 auto}
+.b129:has(.g6-say):not(:has(.g6-photo)) .b13-body{position:static;width:100%;margin:0;padding:0}
+.b129 .g6-say{display:flex;flex-direction:column;align-items:center;gap:3cqh}
+.b129 .g6-say p{margin:0 auto;text-align:center;max-width:76cqw}
+.b129 .g6-say .g6-sub{font:400 2.7cqw/1.45 Manrope,sans-serif;color:#c4bdb1!important;text-wrap:balance}
+.b129 .g6-say .g6-sub b{color:#fdd506;font-weight:600}
+.b129 .b13-head .g6-pre{display:block;font:400 2.7cqw/1.4 Manrope,sans-serif;color:#c4bdb1;letter-spacing:0;margin-bottom:2.4cqh}
+.b129 .b13-head .g6-badge{display:table;margin:0 auto 3cqh;background:#fdd506;color:#15110d;font:700 2.5cqw/1 Manrope,sans-serif;letter-spacing:0;padding:1.1cqh 1.6cqw;border-radius:.9cqw}
+.b129 .g6-say .g6-cta{background:#fdd506;color:#15110d!important;font:500 4.2cqw/1.25 Unbounded,sans-serif;letter-spacing:-.04em;padding:3.2cqh 4.4cqw;border-radius:1.6cqw;max-width:84cqw}
+.b129.b13-g3334 .b13-head h1{font-size:4.4cqw}
+.b129:has(.g6-photo) .b13-head{position:absolute;left:7cqw;right:7cqw;top:8cqh;margin:0;text-align:center;z-index:3}
+.b129:has(.g6-photo) .b13-head h1{font-size:4.5cqw;text-shadow:0 2px 24px #0b0907}
+.b129:has(.g6-photo) .b13-art{inset:0;width:100%;height:100%}
+.b129:has(.g6-photo) .b13-art img{width:100%;height:100%;object-fit:cover;filter:brightness(.85)}
+.b129:has(.g6-quarter) .b13-art img{filter:brightness(.35) saturate(.8)}
+.b129 .g6-say .g6-quarter{position:absolute;left:0;right:0;top:40cqh;margin:0;font:600 30cqw/1 Unbounded,sans-serif;letter-spacing:-.06em;color:#fdd506!important;text-shadow:0 0 8cqw rgba(253,213,6,.35);max-width:none;z-index:3}
+.slide.b129.b13-g3327 .b13-head h1{font-size:8cqw;line-height:1.1}
+.slide.b129.b13-g3327 .b13-head .g6-badge{font-size:2.8cqw;margin-bottom:3.6cqh}
+.slide.b129.b13-g3327 .g6-say .g6-sub{font-size:3cqw;max-width:72cqw}
+.slide.b129.b13-g3325 .b13-head h1{font-size:6cqw}
+.slide.b129.b13-g3325 .b13-head .g6-pre,.slide.b129.b13-g3325 .g6-say .g6-sub{font-size:3cqw}

@@ -1,0 +1,33 @@
+/* Source g3f9b3adf0b8_0_2742: two readable choices, one clear takeaway. */
+.b129.b13-v2-roads .b13-shell{padding:7cqh 6cqw 8cqh;gap:1.2cqh;justify-content:center;}
+.b129.b13-v2-roads .b13-head h1{font-size:4.3cqw;}
+.b129.b13-v2-roads .b13-body{gap:2cqh;padding:0;}
+.b129.b13-v2-roads .b13-road-fork{height:6.5cqh;margin:0 0 -.6cqh;flex:none;overflow:visible;stroke:#756f63;}
+.b129.b13-v2-roads .b13-road-fork .b13-yellow{stroke-width:3;}
+.b129.b13-v2-roads .duo{gap:3cqw;align-items:stretch;}
+.b129.b13-v2-roads .duo .col{height:49cqh;min-height:0;display:grid;grid-template-rows:9cqh repeat(3,minmax(0,1fr));gap:0;padding:0 2.6cqw 1cqh;overflow:hidden;border:1px solid #514939;border-radius:2cqw;background:linear-gradient(145deg,#211d17,#12100c);opacity:1;box-shadow:0 1.2cqh 3cqh #0003;}
+.b129.b13-v2-roads .duo .col.is-focus{border-color:#a99e84;}
+.b129.b13-v2-roads .duo .col h5{display:flex;align-items:center;gap:1.3cqw;margin:0 -2.6cqw;padding:0 2.6cqw;border:0;background:#ffffff05;font:600 2.35cqw/1.2 Manrope,sans-serif;letter-spacing:0;color:#e6e1d7;}
+.b129.b13-v2-roads .roads-symbol{flex:none;width:4.2cqw;height:4.2cqw;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+.b129.b13-v2-roads .duo .col .roads-row{display:flex;align-items:center;gap:1.5cqw;margin:0;padding:1.5cqh 0;border:0;border-top:1px solid #ffffff12;font:400 2.5cqw/1.36 Manrope,sans-serif;color:#c5c0b7;}
+.b129.b13-v2-roads .roads-row>svg{flex:none;width:2.3cqw;height:2.3cqw;fill:none;stroke:#8f887a;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.b129.b13-v2-roads .roads-row>span{min-width:0;}
+.b129.b13-v2-roads .duo .roads-ai{border-color:#d6b623;background:linear-gradient(150deg,#302815,#17130b);box-shadow:0 0 4cqw #fdd50609,0 1.2cqh 3cqh #0003;}
+.b129.b13-v2-roads .duo .roads-ai h5{background:#fdd506;color:#191407;font-weight:700;}
+.b129.b13-v2-roads .duo .roads-ai .roads-row{color:#f5f3ee;border-top-color:#fdd50624;}
+.b129.b13-v2-roads .roads-ai .roads-row>svg,.b129.b13-v2-roads .roads-ai strong{color:#fdd506;stroke:#fdd506;}
+.b129.b13-v2-roads .roads-ai strong{font-weight:600;}
+.b129.b13-v2-roads[data-b13-step="1"] .duo .roads-stay{opacity:.8;}
+.b129.b13-v2-roads .duo .roads-ai.is-focus{border-color:#fdd506;box-shadow:0 0 0 1px #fdd506,0 0 5cqw #fdd50617;}
+.b129.b13-v2-roads .b13-body>.roads-takeaway{display:grid;gap:1.2cqh;margin:1cqh 0 0;padding:0;text-align:center;max-width:none;}
+.b129.b13-v2-roads .roads-takeaway>span{font:400 2.25cqw/1.3 Manrope,sans-serif;color:#c5c0b7;}
+.b129.b13-v2-roads .roads-takeaway>strong{display:block;padding:1.8cqh 2cqw;border-radius:1.3cqw;background:#fdd506;font:500 3cqw/1.25 Unbounded,sans-serif;letter-spacing:-.04em;color:#191407;}
+/* 05.10 Влад: «показано лише один шлях» — крок 1 підсвічує ПЕРШУ дорогу (ліва колонка + ліва гілка), права ледь видна; крок 2 — друга дорога, ліва притухає */
+.b129.b13-v2-roads .duo .col,.b129.b13-v2-roads .roads-takeaway,.b129.b13-v2-roads .b13-road-fork path{transition:opacity .45s,filter .45s,border-color .45s,box-shadow .45s,stroke .45s}
+.b129.b13-v2-roads[data-b13-step="0"] .duo .roads-stay{opacity:1;border-color:#e9e2d2;box-shadow:0 0 0 1px #e9e2d2,0 0 5cqw #ffffff10}
+.b129.b13-v2-roads[data-b13-step="0"] .duo .roads-stay h5,.b129.b13-v2-roads[data-b13-step="0"] .duo .roads-stay .roads-row{color:#f5f3ee}
+.b129.b13-v2-roads[data-b13-step="0"] .duo .roads-ai{opacity:.14;filter:grayscale(1)}
+.b129.b13-v2-roads[data-b13-step="0"] .roads-takeaway{opacity:0}
+.b129.b13-v2-roads[data-b13-step="0"] .b13-road-fork path:not(.b13-yellow){stroke:#f5f3ee;stroke-width:3}
+.b129.b13-v2-roads[data-b13-step="0"] .b13-road-fork .b13-yellow{stroke:#3a342c}
+.b129.b13-v2-roads[data-b13-step="1"] .duo .roads-stay{opacity:.45}

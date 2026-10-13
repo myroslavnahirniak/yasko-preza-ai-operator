@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>186 · AI-дизайн · три варианта (подслайды)</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.pad{position:absolute;left:7cqw;right:7cqw;top:7cqh;bottom:7cqh;z-index:3}
+.kick{display:block}
+.h1{font-size:6.2cqw;margin-top:1.4cqh}
+.sub{margin-top:2.2cqh;font:500 2cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.rows{margin-top:1.8cqh}
+.row{display:grid;grid-template-columns:5cqw 1fr;gap:0 1cqw;padding:1.5cqh 0;border-top:1px solid var(--rule)}
+.row:first-child{border-top:0}
+.row i{font:500 2.4cqw/1.2 Unbounded,sans-serif;color:var(--yellow);font-style:normal}
+.row b{display:block;font:500 2.4cqw/1.2 Manrope,sans-serif;color:var(--cream)}
+.row span{display:block;margin-top:.4cqh;font:400 1.95cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+.row.is-past{opacity:.45}
+.concl{font:500 2.7cqw/1.3 Unbounded,sans-serif;letter-spacing:-.02em;text-wrap:balance}
+.price{display:inline-block;margin-top:1.6cqh;border:1px solid var(--yellow);color:var(--yellow);font:600 2.3cqw/1 Manrope,sans-serif;padding:1.2cqh 2.2cqw;border-radius:100cqw}
+/* картинки: групи */
+.g{position:absolute;inset:0;display:grid;gap:1.6cqw;align-content:center}
+.g img{display:block;width:100%;height:100%;object-fit:cover;border:1px solid #2a2420;background:#000}
+.g1{grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto}
+.g1 img.hero{grid-column:1/-1;aspect-ratio:1097/341}
+.g1 img.sm{aspect-ratio:413/271}
+.g2{grid-template-columns:repeat(3,1fr)}.g2 img{aspect-ratio:1}
+.g3{grid-template-columns:1fr 1fr}
+.g3 img.hero{grid-column:1/-1;aspect-ratio:1176/280}
+.g3 img.sm{aspect-ratio:589/300}
+.g4{grid-template-columns:repeat(3,1fr)}.g4 img{aspect-ratio:328/596}
+.gall{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}.gall img{aspect-ratio:auto;height:100%;object-fit:contain;background:#000;border-color:#1c1713}
+/* ---------- А · список + кадр ---------- */
+.v-A .left{position:absolute;left:7cqw;top:7cqh;width:34cqw;z-index:3}
+.v-A .h1{font-size:5.4cqw}
+.v-A .row b{font-size:2.15cqw}.v-A .row span{font-size:1.8cqw}.v-A .row i{font-size:2.1cqw}
+.v-A .row{grid-template-columns:4.2cqw 1fr;padding:1.3cqh 0}
+.v-A .stage{position:absolute;left:46cqw;right:7cqw;top:14cqh;bottom:14cqh;z-index:3}
+.v-A .g{opacity:0;transition:opacity .5s ease}
+.v-A .g.is-now{opacity:1}
+.v-A .g.is-future,.v-A .g.is-past{visibility:hidden}
+.v-A .final{position:absolute;left:7cqw;width:34cqw;bottom:7cqh;z-index:3}
+.v-A .concl{font-size:2.05cqw}
+.v-A .price{font-size:1.8cqw;padding:1cqh 1.6cqw}
+/* ---------- Б · кадры на весь квадрат ---------- */
+.v-B .art:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,.9) 0%,rgba(11,9,7,.72) 40%,rgba(11,9,7,.35) 100%)}
+.v-B .intro{position:absolute;left:7cqw;right:7cqw;top:9cqh;z-index:3;text-align:left}
+.v-B .intro .rows{margin-top:2.4cqh;display:grid;grid-template-columns:1fr 1fr;gap:0 4cqw}
+.v-B .intro .row{padding:1.2cqh 0;border-top:1px solid rgba(255,255,255,.12)}
+.v-B .intro .row:nth-child(2){border-top:0}
+.v-B .frame{position:absolute;left:7cqw;right:7cqw;top:7cqh;bottom:7cqh;z-index:4}
+.v-B .frame .head{position:absolute;left:0;top:0;font:500 1.9cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.v-B .frame .head em{color:var(--yellow)}
+.v-B .frame .stage{position:absolute;left:0;right:0;top:6cqh;bottom:15cqh}
+.v-B .frame .cap{position:absolute;left:0;right:0;bottom:0;display:grid;grid-template-columns:6cqw 1fr;gap:0 1.2cqw;align-items:baseline;padding-top:1.6cqh;border-top:1px solid var(--rule)}
+.v-B .frame .cap i{font:500 3cqw/1 Unbounded,sans-serif;color:var(--yellow);font-style:normal}
+.v-B .frame .cap b{display:block;font:500 3cqw/1.15 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--cream)}
+.v-B .frame .cap span{display:block;margin-top:.6cqh;font:400 2.2cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+.v-B .frame{opacity:0;visibility:hidden;transition:opacity .45s ease}
+.v-B .frame.is-now{opacity:1;visibility:visible}
+.v-B .intro.is-future,.v-B .intro.is-past{opacity:0!important;visibility:hidden}
+.v-B .final{position:absolute;left:7cqw;right:7cqw;top:50%;transform:translateY(-50%);z-index:3;text-align:center}
+.v-B .final .concl{font-size:3.6cqw}
+.v-B .final .price{margin-top:3cqh;font-size:2.4cqw}
+.v-B .final.is-future{transform:translateY(calc(-50% + 1.4cqh))}
+.v-B[data-step="1"] .art,.v-B[data-step="2"] .art,.v-B[data-step="3"] .art,.v-B[data-step="4"] .art{opacity:0}
+.v-B .art{transition:opacity .5s ease}
+/* ---------- В · 3D-мозаика ---------- */
+.v-C .top{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3;display:flex;justify-content:space-between;align-items:flex-end}
+.v-C .h1{font-size:5.4cqw;margin-top:.8cqh}
+.v-C .scene{position:absolute;left:7cqw;right:7cqw;top:26cqh;bottom:18cqh;z-index:3;perspective:160cqw}
+.v-C .plane{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2cqw;transform-style:preserve-3d;transform:rotateX(10deg) rotateY(-8deg)}
+.v-C .card{position:relative;background:var(--panel);border:1px solid var(--rule);padding:1.4cqh 1.4cqw 1.2cqh;display:flex;flex-direction:column;gap:1cqh;transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .4s,opacity .4s;transform-style:preserve-3d}
+.v-C .card .g{position:relative;inset:auto;flex:1;min-height:0;gap:.8cqw}
+.v-C .card .g img{border-color:#3a3129}
+.v-C .card .lab{display:grid;grid-template-columns:3.6cqw 1fr;gap:0 .8cqw;align-items:baseline}
+.v-C .card .lab i{font:500 1.9cqw/1 Unbounded,sans-serif;color:var(--yellow);font-style:normal}
+.v-C .card .lab b{display:block;font:500 1.9cqw/1.2 Manrope,sans-serif;color:var(--cream)}
+.v-C .card .lab span{display:block;font:400 1.55cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+.v-C .card.is-now{transform:translateZ(6cqw) scale(1.04);border-color:rgba(253,213,6,.75);box-shadow:0 2cqh 6cqh rgba(0,0,0,.6);z-index:2}
+.v-C .card.is-past{opacity:.6}
+.v-C .card.is-future{opacity:.22!important;visibility:visible;transform:none}
+.v-C .final{position:absolute;left:7cqw;right:7cqw;bottom:6cqh;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:3cqw}
+.v-C .final .concl{font-size:2.2cqw;max-width:52cqw}
+.v-C .final .price{margin-top:0;font-size:1.9cqw;white-space:nowrap}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="B">А · Кадры на весь квадрат</button><button role="tab" data-v="A">Б · Список слева, кадр справа</button><button role="tab" data-v="C">В · 3D-мозаика</button></div>
+<p class="description"></p>
+<p class="note">Полный текст источника разбит на подслайды: 0 — заголовок и список, 1–4 — по одному пункту с его макетами (вырезаны из скринов Google: КП, креативы, YouTube, Reels), 5 — вывод и цена. Клавиши: ←/→ вариант, ↓/Space шаг, ↑ назад.</p>
+<div class="actions"><button id="prev" class="stepbtn">◀ шаг</button><span id="stepinfo"></span><button id="next" class="stepbtn">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+</nav>
+<script>
+const D='assets/vlad-1409/dizayn/';
+const ITEMS=[['Коммерческие предложения','именные, под конкретную сделку'],['Рекламные объявления','десятками, чтобы было что тестировать'],['Обложки для YouTube','под каждый ролик, в одном стиле'],['Обложки Reels и TikTok','под каждую серию, пачкой']];
+const GROUPS=[
+ '<div class="g g1"><img class="hero" src="'+D+'kp-hero.webp" alt=""><img class="sm" src="'+D+'kp-1.webp" alt=""><img class="sm" src="'+D+'kp-2.webp" alt=""><img class="sm" src="'+D+'kp-3.webp" alt=""></div>',
+ '<div class="g g2"><img src="'+D+'creative-a.webp" alt=""><img src="'+D+'creative-b.webp" alt=""><img src="'+D+'creative-c.webp" alt=""></div>',
+ '<div class="g g3"><img class="hero" src="'+D+'yt-1.webp" alt=""><img class="sm" src="'+D+'yt-2.webp" alt=""><img class="sm" src="'+D+'yt-3.webp" alt=""></div>',
+ '<div class="g g4"><img src="'+D+'reels-1.webp" alt=""><img src="'+D+'reels-2.webp" alt=""><img src="'+D+'reels-3.webp" alt=""></div>'];
+const ALL='<div class="g gall"><img src="'+D+'kp-hero.webp" alt=""><img src="'+D+'creative-a.webp" alt=""><img src="'+D+'yt-1.webp" alt=""><img src="'+D+'reels-2.webp" alt=""></div>';
+const num=i=>'0'+(i+1);
+const rows=(cls)=>'<div class="rows">'+ITEMS.map((it,i)=>'<div class="row '+(cls||'')+'" data-step="'+(i+1)+'"><i>'+num(i)+'</i><div><b>'+it[0]+'</b><span>'+it[1]+'</span></div></div>').join('')+'</div>';
+const CONCL='Всё в одном стиле — за минуты, без дизайнера и без студии', PRICE='$250–$900 · за пакет · сложность лёгкая';
+window.VARIANTS={
+B:{steps:5,cls:'kb',html:()=>'<div class="art"><img src="assets/gen-184-188/s186-studio.webp" alt=""></div>'
+   +'<div class="intro fx-up" data-step="0"><span class="kick">Услуга 2 из 7</span><h1 class="h1">AI-дизайн</h1><p class="sub">Что выходит из агента</p>'+rows()+'</div>'
+   +ITEMS.map((it,i)=>'<div class="frame" data-step="'+(i+1)+'"><div class="head">AI-дизайн · <em>что выходит из агента</em></div><div class="stage">'+GROUPS[i]+'</div><div class="cap"><i>'+num(i)+'</i><div><b>'+it[0]+'</b><span>'+it[1]+'</span></div></div></div>').join('')
+   +'<div class="final" data-step="5"><p class="concl">'+CONCL+'</p><br><span class="price">'+PRICE+'</span></div>',
+   onRender(s){ /* intro rows show all four at step 0 */ s.querySelectorAll('.intro .row').forEach(r=>r.removeAttribute('data-step')); },
+   desc:'Подслайд 0: заголовок и список на фоне 3D-студии дизайнера. Подслайды 1–4: каждый пункт получает весь квадрат — макеты крупно (КП: первый слайд и три под ним; три креатива; обложки YouTube; три обложки Reels), подпись с номером внизу. Подслайд 5: вывод и цена по центру. Максимальный размер картинок — рекомендация.'},
+A:{steps:5,html:()=>'<div class="left fx-up"><span class="kick">Услуга 2 из 7</span><h1 class="h1">AI-дизайн</h1><p class="sub">Что выходит из агента</p>'+rows()+'</div>'
+   +'<div class="stage">'+GROUPS.map((g,i)=>g.replace('class="g ','data-step="'+(i+1)+'" class="g ')).join('')+ALL.replace('class="g ','data-step="5" class="g ')+'</div>'
+   +'<div class="final" data-step="5"><p class="concl">'+CONCL+'</p><span class="price">'+PRICE+'</span></div>',
+   desc:'Список слева (пункты появляются по шагам, текущий подсвечен), справа — макеты текущего пункта, сменяются перелистыванием. Подслайд 5: вывод и цена под списком, справа — по одному кадру из каждой группы. Всё на одном экране, но картинки меньше, чем в А.'},
+C:{steps:5,html:()=>'<div class="top fx-up"><div><span class="kick">Услуга 2 из 7</span><h1 class="h1">AI-дизайн</h1></div><p class="sub">Что выходит из агента</p></div>'
+   +'<div class="scene"><div class="plane">'+ITEMS.map((it,i)=>'<div class="card" data-step="'+(i+1)+'">'+GROUPS[i]+'<div class="lab"><i>'+num(i)+'</i><div><b>'+it[0]+'</b><span>'+it[1]+'</span></div></div></div>').join('')+'</div></div>'
+   +'<div class="final" data-step="5"><p class="concl">'+CONCL+'</p><span class="price">'+PRICE+'</span></div>',
+   desc:'Четыре карточки-группы в лёгкой 3D-перспективе (CSS), все макеты видны сразу; по шагам активная карточка выходит вперёд и подсвечивается, остальные приглушены. Подслайд 5: вывод и цена внизу. Эффектно, но картинки самые мелкие.'}};
+window.ORDER=['B','A','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

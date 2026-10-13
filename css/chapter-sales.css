@@ -1,0 +1,201 @@
+/* Окрема дека «Предложение» — Google 316–352 (sales.html), 14.09.2026.
+   Базові варіанти беруться з css/chapter-agents.css (fd-ag-*), тут лише доповнення fd-sl-*. */
+.foundation[class*="fd-sl-"]{--ag-line:rgba(253,213,6,.3);--ag-rule:#393124;--ag-radius:1.4cqw;--ag-card:#14110C;--ag-card-line:#3A3222;}
+.foundation[class*="fd-sl-"] .fd-body .ag-final.ag-plain{display:block;border:0;padding:0;margin-top:1.4cqh;color:#FDD506;font:500 3.4cqw/1.3 Unbounded,sans-serif;letter-spacing:-.04em;}
+
+/* 317: арт ліворуч, текст праворуч */
+.foundation.fd-sl-art-left .fd-shell{display:grid;grid-template-columns:50cqw minmax(0,1fr);column-gap:3cqw;row-gap:2.6cqh;align-content:center;align-items:start;padding:7cqh 7cqw;text-align:left;background:radial-gradient(ellipse at 84% 88%,rgba(253,213,6,.055),transparent 55%),#0B0907;}
+.foundation.fd-sl-art-left .fd-header,.foundation.fd-sl-art-left .fd-content{grid-column:2;position:relative;z-index:2;}
+.foundation.fd-sl-art-left .fd-content,.foundation.fd-sl-art-left .fd-body{position:static;flex:none;}
+.foundation.fd-sl-art-left .fd-header h1{font-size:4.6cqw;}
+.foundation.fd-sl-art-left .fd-body{max-width:none;font-size:2.55cqw;text-align:left;}
+.foundation.fd-sl-art-left .fd-body p{text-wrap:pretty;}
+.foundation.fd-sl-art-left .ag-art{left:0;right:auto;width:100cqw;height:100cqh;}
+.foundation.fd-sl-art-left .ag-art img{object-fit:cover;object-position:0% 50%;}
+.foundation.fd-sl-art-left .ag-art:after{background:linear-gradient(270deg,#0B0907 0%,rgba(11,9,7,.96) 40%,rgba(11,9,7,.5) 52%,transparent 62%),linear-gradient(0deg,#0B0907 0%,transparent 12%),linear-gradient(180deg,#0B0907 0%,transparent 10%);}
+
+/* 318, 341, 352: фото на весь кадр з текстом під заголовком */
+.foundation.fd-sl-stage .ag-bg img{object-position:22% 50%;}
+.foundation.fd-sl-office .ag-bg img{object-position:0% 50%;}
+.foundation.fd-sl-crowd .ag-bg img{object-position:50% 40%;}
+.foundation.fd-ag-full-photo.fd-sl-photo-text .fd-shell{justify-content:center;gap:0;}
+.foundation.fd-ag-full-photo.fd-sl-photo-text .fd-header{padding-bottom:1.6cqh;}
+.foundation.fd-ag-full-photo.fd-sl-photo-text .fd-header h1{font-size:5cqw;}
+.foundation.fd-ag-full-photo.fd-sl-photo-text .fd-content{position:static;width:50cqw;}
+.foundation.fd-ag-full-photo.fd-sl-photo-text .fd-body>*:not(.ag-bg){position:relative;z-index:2;}
+.foundation.fd-ag-full-photo.fd-sl-photo-text .fd-body{width:100%;max-width:none;font-size:2.45cqw;line-height:1.45;color:#F5F3EE;text-shadow:0 2px 18px #0B0907,0 0 40px #0B0907;}
+.foundation.fd-ag-full-photo.fd-sl-photo-text .fd-body p{margin:0 0 1.6cqh;text-wrap:pretty;}
+.foundation.fd-ag-full-photo.fd-sl-photo-text .fd-body p:last-child{margin:0;}
+.foundation.fd-ag-full-photo.fd-sl-photo-text .ag-bg:before{top:14%;height:72%;width:52%;}
+.foundation.fd-ag-full-photo.fd-sl-photo-text .ag-bg:after{background:linear-gradient(180deg,#0B0907 0%,rgba(11,9,7,.6) 9%,transparent 22%),linear-gradient(0deg,#0B0907 0%,rgba(11,9,7,.85) 6%,transparent 18%),linear-gradient(90deg,rgba(11,9,7,.85) 0%,rgba(11,9,7,.6) 40%,transparent 62%);}
+.foundation.fd-ag-full-photo.fd-sl-photo-text .fd-header:before{left:-10cqw;right:-2cqw;top:-10cqh;bottom:-10cqh;}
+.foundation.fd-sl-big-title.fd-ag-full-photo .fd-header h1{font-size:6.4cqw;}
+
+/* 320: стек цінності, рядки з'являються самі, сума рахується */
+.foundation.fd-sl-stack .fd-shell{justify-content:center;gap:2.2cqh;padding:5.5cqh 7cqw;}
+.foundation.fd-sl-stack .fd-content{flex:none;}
+.foundation.fd-sl-stack .fd-header h1{font-size:4.1cqw;}
+.foundation .sl-stack{display:grid;gap:0;}
+.foundation .sl-stack>div{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;column-gap:3cqw;padding:.95cqh 0;border-top:1px solid var(--ag-rule);font:400 2.15cqw/1.3 Manrope,sans-serif;color:#F5F3EE;}
+.foundation .sl-stack>div:first-child{border-top:0;}
+.foundation .sl-stack>div b{font:500 2.15cqw/1 Unbounded,sans-serif;color:#CEC9C1;letter-spacing:-.02em;font-variant-numeric:tabular-nums;}
+.foundation .sl-stack>div.sl-total{margin-top:1cqh;padding-top:2cqh;border-top:1px solid var(--ag-line);font:600 2.3cqw/1.3 Manrope,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#CEC9C1;}
+.foundation .sl-stack>div.sl-total b{font-size:4.8cqw;color:#FDD506;}
+
+/* 328: велика сума-лічильник */
+.foundation.fd-sl-value .fd-shell{justify-content:center;align-items:center;text-align:center;gap:1.4cqh;}
+.foundation.fd-sl-value .fd-content{flex:none;align-items:center;}
+.foundation.fd-sl-value .fd-header h1{font-size:4cqw;color:#CEC9C1;}
+.foundation .fd-body .sl-big{display:block;font:500 13cqw/1 Unbounded,sans-serif;letter-spacing:-.06em;color:#FDD506;font-variant-numeric:tabular-nums;margin:0 0 3cqh;}
+.foundation.fd-sl-value .fd-body{max-width:80cqw;font-size:2.65cqw;}
+.foundation.fd-sl-value .fd-body p{text-wrap:balance;}
+.foundation.fd-sl-value .fd-body .ag-conclusion{font-size:3.4cqw;margin-top:2cqh;}
+
+/* 329: стовпчики 18 → 21 → 27 */
+.foundation.fd-sl-ceiling .fd-shell{justify-content:center;gap:2.4cqh;}
+.foundation.fd-sl-ceiling .fd-content{flex:none;}
+.foundation.fd-sl-ceiling .fd-header{text-align:center;}
+.foundation.fd-sl-ceiling .fd-kicker,.foundation.fd-sl-packages .fd-kicker,.foundation.fd-sl-paths .fd-kicker{display:inline-block;padding-left:0;margin-bottom:1.4cqh;color:#FDD506;font-size:1.9cqw;letter-spacing:.12em;text-transform:uppercase;}
+.foundation.fd-sl-ceiling .fd-kicker:before,.foundation.fd-sl-packages .fd-kicker:before,.foundation.fd-sl-paths .fd-kicker:before{display:none;}
+.foundation .sl-bars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4cqw;align-items:end;height:40cqh;margin:1cqh 6cqw 3.4cqh;}
+.foundation .sl-bars>div{position:relative;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;gap:1.4cqh;}
+.foundation .sl-bars i{display:block;width:100%;height:var(--h);border-radius:1cqw 1cqw 0 0;background:linear-gradient(180deg,rgba(253,213,6,.95),rgba(253,213,6,.18));transform-origin:50% 100%;transform:scaleY(0);position:relative;}
+.foundation .sl-bars i:before{content:'';position:absolute;left:-1.2cqw;right:-1.2cqw;top:0;height:.35cqh;background:#FDD506;border-radius:.2cqh;box-shadow:0 0 1.4cqw rgba(253,213,6,.6);}
+.foundation.on .sl-bars i{animation:sl-grow .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(.5s + var(--i,0)*.4s);}
+@keyframes sl-grow{to{transform:scaleY(1)}}
+.foundation .sl-bars b{font:500 2.7cqw/1.2 Unbounded,sans-serif;color:#F5F3EE;letter-spacing:-.03em;white-space:nowrap;}
+.foundation .sl-bars .sl-arrow{position:absolute;right:-3.4cqw;bottom:6cqh;width:2.8cqw;height:2.8cqw;fill:none;stroke:#FDD506;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.foundation.fd-sl-ceiling .fd-body .ag-sub{text-align:center;max-width:80cqw;margin:0 auto;font-size:2.6cqw;}
+
+/* 330: три набори */
+.foundation.fd-sl-packages .fd-shell{justify-content:center;gap:2.2cqh;padding:6cqh 6cqw;}
+.foundation.fd-sl-packages .fd-content{flex:none;}
+.foundation.fd-sl-packages .fd-header{text-align:center;}
+.foundation.fd-sl-packages .fd-header h1{font-size:4.3cqw;}
+.foundation .sl-packs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.8cqw;margin:0 0 2.8cqh;}
+.foundation .sl-pack{padding:3.4cqh 2.4cqw 3cqh;border:1px solid var(--ag-card-line);border-radius:var(--ag-radius);background:var(--ag-card);display:grid;gap:1.1cqh;align-content:start;min-width:0;}
+.foundation .sl-pack.sl-mid{border-color:var(--ag-line);background:linear-gradient(180deg,rgba(253,213,6,.07),transparent 60%),var(--ag-card);}
+.foundation .sl-pack h5{margin:0;font:500 2.6cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em;color:#F5F3EE;min-height:2.9cqw;}
+.foundation .sl-pack .sl-price{font:500 5.2cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:#FDD506;margin:.2cqh 0 .6cqh;}
+.foundation .sl-pack span{display:block;font:400 2.2cqw/1.35 Manrope,sans-serif;color:#CEC9C1;padding-top:1.4cqh;border-top:1px solid var(--ag-rule);text-wrap:pretty;}
+.foundation .sl-pack span.sl-pot{color:#F5F3EE;font-weight:600;}
+.foundation.fd-sl-packages .fd-body .ag-sub{text-align:center;font-size:2.35cqw;max-width:86cqw;margin:0 auto;}
+
+/* 331: ціна */
+.foundation.fd-sl-price .fd-shell{justify-content:center;align-items:center;text-align:center;gap:1.6cqh;}
+.foundation.fd-sl-price .fd-content{flex:none;align-items:center;}
+.foundation.fd-sl-price .fd-header h1{font-size:16cqw;line-height:1;letter-spacing:-.06em;}
+.foundation.fd-sl-price .fd-header h1 em{color:#FDD506;}
+.foundation.fd-sl-price .fd-body{max-width:80cqw;font-size:2.8cqw;}
+.foundation .sl-eq{display:flex;align-items:center;justify-content:center;gap:2.4cqw;margin:.6cqh 0 2.8cqh;}
+.foundation .sl-eq .sl-site{position:relative;width:19cqw;aspect-ratio:4/3;border:1px solid var(--ag-line);border-radius:1cqw;background:var(--ag-card);display:grid;align-content:end;justify-items:start;padding:1.4cqw;gap:.5cqh;}
+.foundation .sl-eq .sl-site:before{content:'';position:absolute;left:1.4cqw;right:1.4cqw;top:1.4cqw;height:.7cqw;border-radius:.3cqw;background:#3A3222;}
+.foundation .sl-eq .sl-site:after{content:'';position:absolute;left:1.4cqw;width:7cqw;top:3cqw;height:.5cqw;border-radius:.3cqw;background:#3A3222;}
+.foundation .sl-eq .sl-site b{font:500 2.7cqw/1 Unbounded,sans-serif;color:#FDD506;letter-spacing:-.03em;}
+.foundation .sl-eq .sl-site span{font:400 1.7cqw/1.2 Manrope,sans-serif;color:#8D877E;}
+.foundation .sl-eq .sl-op{font:500 4cqw/1 Unbounded,sans-serif;color:#8D877E;}
+.foundation .fd-body .sl-perday{display:inline-block;margin-top:1.2cqh;padding:1.6cqh 3.6cqw;border:1px solid var(--ag-line);border-radius:100cqw;font:500 2.9cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em;color:#F5F3EE;}
+
+/* 332: кнопка броні над артом */
+.foundation.fd-sl-cta .fd-header h1{font-size:4.3cqw;}
+.foundation .sl-cta-wrap{display:flex;justify-content:center;margin:.6cqh 0 2.4cqh;}
+.foundation .sl-cta-btn{display:inline-flex;align-items:center;gap:1.4cqw;padding:2.2cqh 4.4cqw 2.2cqh 5.4cqw;border-radius:100cqw;background:#FDD506;color:#0B0907;font:700 3.8cqw/1 Manrope,sans-serif;letter-spacing:-.02em;text-decoration:none;box-shadow:0 1.2cqh 6cqw rgba(253,213,6,.35),inset 0 1px 1px rgba(255,255,255,.5);}
+.foundation.on .sl-cta-btn{animation:sl-pulse 2.4s 1.4s ease-in-out infinite;}
+@keyframes sl-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+.foundation .sl-cta-btn .cic{display:flex;align-items:center;justify-content:center;width:1.45em;height:1.45em;border-radius:50%;background:rgba(11,9,7,.14);font-size:.8em;}
+.foundation .sl-conds{display:flex;justify-content:center;gap:1.4cqw;flex-wrap:wrap;max-width:88cqw;margin:0 auto;}
+.foundation .sl-conds span{padding:1.3cqh 2.4cqw;border:1px solid var(--ag-card-line);border-radius:100cqw;background:rgba(20,17,12,.86);font:500 2.1cqw/1.3 Manrope,sans-serif;color:#F5F3EE;}
+.foundation.fd-sl-cta .ag-art img{object-position:50% 100%;}
+.foundation.fd-sl-cta .ag-art:after{background:linear-gradient(180deg,rgba(11,9,7,.96) 0%,rgba(11,9,7,.86) 34%,rgba(11,9,7,.25) 55%,transparent 70%);}
+
+/* 333: шлях оплати + зона під запис екрана */
+.foundation.fd-sl-screen .fd-shell{gap:3cqh;}
+.foundation.fd-sl-screen .ag-flow p{font-size:2.5cqw;}
+.foundation.fd-sl-screen .fd-body .ag-sub{text-align:center;margin-top:2cqh;font-size:2.5cqw;}
+.foundation.fd-sl-screen .ag-gif{width:66cqw;margin:2.4cqh auto 0;}
+
+/* 336: панелі стовпчиком біля арту */
+.foundation.fd-sl-stackpanels .ag-panels{grid-template-columns:1fr;gap:1.4cqh;margin:0 0 2.4cqh;}
+.foundation.fd-sl-stackpanels .ag-panel{min-height:0;padding:2.2cqh 2.6cqw;gap:.8cqh;}
+.foundation.fd-sl-stackpanels .ag-panel h5{font-size:2.7cqw;}
+.foundation.fd-sl-stackpanels .ag-panel p{font-size:2.3cqw;}
+.foundation.fd-sl-stackpanels .fd-body p{font-size:2.4cqw;margin:0 0 1.4cqh;}
+.foundation.fd-sl-stackpanels .fd-body p.ag-sub{color:#8D877E;font-size:2.1cqw;}
+.foundation.fd-sl-stackpanels .fd-header h1{font-size:5.4cqw;}
+
+/* 327, 340: дві панелі над приглушеним артом */
+.foundation.fd-sl-bg-dim .fd-shell{background:radial-gradient(ellipse at 84% 88%,rgba(253,213,6,.055),transparent 55%),#0B0907;}
+.foundation.fd-sl-bg-dim .fd-header,.foundation.fd-sl-bg-dim .fd-body>*:not(.ag-art){position:relative;z-index:2;}
+.foundation.fd-sl-bg-dim .fd-content,.foundation.fd-sl-bg-dim .fd-body{position:static;}
+.foundation.fd-sl-bg-dim .ag-art{left:0;right:auto;width:100cqw;height:100cqh;}
+.foundation.fd-sl-bg-dim .ag-art img{object-fit:cover;object-position:50% 100%;opacity:.62;}
+.foundation.fd-sl-bg-dim .ag-art:after{background:linear-gradient(180deg,rgba(11,9,7,.97) 0%,rgba(11,9,7,.85) 34%,rgba(11,9,7,.35) 58%,rgba(11,9,7,.55) 100%);}
+.foundation.fd-sl-bg-dim .ag-panel{background:rgba(20,17,12,.9);backdrop-filter:blur(3px);}
+.foundation.fd-sl-bg-dim .ag-panel.ag-win{background:linear-gradient(160deg,rgba(253,213,6,.09),transparent 60%),rgba(20,17,12,.92);}
+.foundation.fd-sl-paths .fd-header{text-align:center;}
+.foundation.fd-sl-paths .fd-header h1{font-size:5.6cqw;}
+.foundation.fd-sl-paths .ag-panel{min-height:22cqh;}
+
+/* 343: чотири вузли */
+.foundation.fd-sl-flow4 .ag-flow{grid-template-columns:repeat(4,minmax(0,1fr));gap:1.4cqw;}
+.foundation.fd-sl-flow4 .ag-flow:before{left:12%;right:12%;}
+.foundation.fd-sl-flow4 .ag-flow p{font-size:2.2cqw;}
+.foundation.fd-sl-flow4 .ag-flow>div{padding:3cqh 1.6cqw 2.4cqh;}
+
+/* 345: вибір із двох */
+.foundation.fd-sl-choice .fd-body>p{text-align:center;font:500 3cqw/1.3 Unbounded,sans-serif;letter-spacing:-.04em;color:#CEC9C1;margin:0 0 2.4cqh;}
+.foundation.fd-sl-choice .ag-panel{min-height:0;padding:3.4cqh 3cqw;}
+.foundation.fd-sl-choice .ag-panel h5{font-size:3.1cqw;}
+
+/* 347: заперечення → відповідь */
+.foundation.fd-sl-answers .fd-shell{justify-content:center;gap:3cqh;}
+.foundation.fd-sl-answers .fd-content{flex:none;}
+.foundation .sl-answers{display:grid;gap:0;}
+.foundation .sl-answers>div{display:grid;grid-template-columns:29cqw minmax(0,1fr);column-gap:3cqw;align-items:baseline;padding:2.8cqh 0;border-top:1px solid var(--ag-rule);}
+.foundation .sl-answers>div:first-child{border-top:0;}
+.foundation .sl-answers b{font:500 3cqw/1.25 Unbounded,sans-serif;letter-spacing:-.04em;color:#FDD506;}
+.foundation .sl-answers span{font:400 2.6cqw/1.42 Manrope,sans-serif;color:#F5F3EE;text-wrap:pretty;}
+
+/* 348: після 45 днів */
+.foundation.fd-sl-after .fd-shell{justify-content:center;gap:2.4cqh;}
+.foundation.fd-sl-after .fd-content{flex:none;}
+.foundation.fd-sl-after .fd-body p{margin:0 0 1.6cqh;font-size:2.6cqw;}
+.foundation.fd-sl-after .fd-body p b{color:#FDD506;font-weight:500;font-family:Unbounded,sans-serif;font-size:2.9cqw;letter-spacing:-.03em;}
+.foundation .sl-chips{display:flex;flex-wrap:wrap;gap:1.2cqw;margin:0 0 3cqh;}
+.foundation .sl-chips span{padding:1.3cqh 2.2cqw;border:1px solid var(--ag-line);border-radius:100cqw;font:500 2.3cqw/1.3 Manrope,sans-serif;color:#F5F3EE;}
+.foundation.fd-sl-after .ag-panels{margin:0 0 2.6cqh;}
+.foundation.fd-sl-after .ag-panel{min-height:0;padding:2.6cqh 2.6cqw;}
+.foundation.fd-sl-after .ag-panel p{font-size:2.45cqw;}
+.foundation.fd-sl-after .fd-body p.ag-sub{margin:0;color:#8D877E;font-size:2.3cqw;}
+
+/* 350: п'ять артефактів (зони під скріни) */
+.foundation.fd-sl-five .fd-shell{justify-content:center;align-items:center;text-align:center;gap:2.2cqh;padding:7cqh 6cqw;}
+.foundation.fd-sl-five .fd-content{flex:none;width:100%;align-items:center;}
+.foundation.fd-sl-five .fd-body{max-width:none;width:100%;font-size:2.7cqw;}
+.foundation .sl-five{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1.4cqw;margin:2.2cqh 0 3cqh;}
+.foundation .sl-five>div{aspect-ratio:3/4;border:1px dashed rgba(253,213,6,.35);border-radius:var(--ag-radius);display:grid;align-content:end;justify-items:center;padding:1.6cqh 1cqw;gap:.8cqh;background:radial-gradient(ellipse at 50% 30%,rgba(253,213,6,.05),transparent 70%);}
+.foundation .sl-five b{font:500 2cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em;color:#F5F3EE;}
+.foundation .sl-five span{font:400 1.5cqw/1.3 Manrope,sans-serif;color:#8D877E;}
+
+/* 351: екран відповідей */
+.foundation.fd-sl-qa .fd-shell{justify-content:center;gap:3cqh;}
+.foundation.fd-sl-qa .fd-content{flex:none;}
+.foundation .sl-qa{display:grid;gap:0;margin:0 0 3.4cqh;}
+.foundation .sl-qa>div{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;column-gap:3cqw;padding:2.1cqh 0;border-top:1px solid var(--ag-rule);font:400 2.6cqw/1.35 Manrope,sans-serif;color:#F5F3EE;}
+.foundation .sl-qa>div:first-child{border-top:0;}
+.foundation .sl-qa>div b{font:500 3.2cqw/1 Unbounded,sans-serif;letter-spacing:-.03em;color:#CEC9C1;font-variant-numeric:tabular-nums;white-space:nowrap;}
+.foundation .sl-qa>div.sl-today{border-top:1px solid var(--ag-line);font-weight:600;padding-top:2.6cqh;}
+.foundation .sl-qa>div.sl-today b{font-size:5.6cqw;color:#FDD506;}
+.foundation.fd-sl-qa .sl-cta-wrap{justify-content:flex-start;margin:0;}
+
+@media(prefers-reduced-motion:reduce){.foundation .sl-bars i{transform:none;animation:none!important;}.foundation.on .sl-cta-btn{animation:none!important;}}
+
+/* пауза з артом: невеликий відступ тексту від арту */
+.foundation.fd-ag-pause.fd-ag-side-art .fd-body{padding-right:2cqw;}
+/* 320: швидша поява рядків, щоб підсумок і лічильник встигали */
+.foundation.fd-sl-stack.on .ag-stepper.is-auto [data-step]{animation-delay:calc(.2s + var(--ag-i,0)*.2s)!important;}
+/* 317: текст над артом; 318: назва в один рядок */
+.foundation.fd-sl-art-left .fd-header,.foundation.fd-sl-art-left .fd-body>*:not(.ag-art){position:relative;z-index:2;}
+.foundation.fd-sl-big-title.fd-ag-full-photo .fd-header h1{font-size:5.8cqw;white-space:nowrap;}
+.foundation.fd-sl-art-left .ag-art{z-index:-1;}
+.foundation.fd-sl-art-left .fd-header{z-index:6;}

@@ -1,0 +1,25 @@
+/* Remote #396 / local #391: three visible half-hour sessions. */
+.b129:has(.week-redesign) .b13-shell{position:absolute;inset:0;display:block;padding:0;background:radial-gradient(ellipse at 50% 55%,#fdd5060b,transparent 65%),#0b0907}
+.b129:has(.week-redesign) .b13-head{position:absolute;top:8cqh;left:7cqw;right:7cqw;text-align:center;padding:0;margin:0}
+.b129:has(.week-redesign) .b13-head h1{font:500 3.7cqw/1.3 Unbounded,sans-serif;letter-spacing:-.03em;color:#f5f3ee;margin:0}
+.b129:has(.week-redesign) .b13-body{position:absolute;inset:20cqh 7cqw 7cqh;display:block;padding:0;margin:0}
+.week-redesign{height:100%;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;font-family:Manrope,sans-serif}
+.week-redesign .week-promise{font:500 4.7cqw/1.25 Unbounded,sans-serif;letter-spacing:-.035em;color:#f5f3ee;margin:0}
+.week-promise em{font:inherit;font-style:normal;color:#fdd506}
+.week-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:1.1cqw;width:100%;padding:3cqh 2cqw;box-sizing:border-box;border:1px solid #b3a99630;border-radius:2cqw;background:linear-gradient(140deg,#231e16aa,#0f0d0a)}
+.week-session{position:relative;height:25cqh;display:flex;flex-direction:column;align-items:center;padding:2cqh .6cqw;box-sizing:border-box;border:1px solid transparent;border-radius:1.25cqw}
+.week-session.is-session{background:linear-gradient(150deg,#fdd50616,#fdd50605);border-color:#fdd50666;box-shadow:0 1cqh 3cqw #0003}
+.week-day{font:500 2cqw/1.3 Manrope,sans-serif;color:#f5f3ee;margin-bottom:2.7cqh}
+.is-rest .week-day{color:#8e887e}
+.week-clock{position:relative;width:8.5cqw;height:8.5cqw;display:grid;place-items:center}
+.week-clock svg{position:absolute;inset:0;width:100%;height:100%}
+.week-clock b{font:500 3.7cqw/1 Unbounded,sans-serif;color:#fdd506;letter-spacing:-.06em}
+.week-minutes{font:400 1.9cqw/1.2 Manrope,sans-serif;color:#ded7c6;margin-top:1.6cqh}
+.week-rest{display:block;width:1.8cqw;height:2px;background:#625c5066;margin-top:4.2cqh}
+.week-resume{position:relative;width:76cqw;display:grid;grid-template-columns:7cqw 1fr;gap:1.5cqh 2cqw;text-align:left;align-items:center;padding:2.6cqh 3cqw 2.7cqh;box-sizing:border-box;border-radius:1.4cqw;background:#1b1711;border:1px solid #ffffff12}
+.week-resume-mark{width:7cqw;height:7cqw;border:1px solid #b3a99630;border-radius:50%;display:grid;place-items:center}
+.week-resume-mark svg{width:85%;height:85%}
+.week-redesign .week-resume p{font:400 2.8cqw/1.4 Manrope,sans-serif;color:#f5f3ee;margin:0}
+.week-progress{grid-column:2;position:relative;height:.4cqh;background:#ffffff12;border-radius:1cqw;margin-top:.3cqh}
+.week-progress i{display:block;width:42%;height:100%;border-radius:inherit;background:#fdd506}
+.week-progress span{position:absolute;left:42%;top:50%;width:.9cqw;height:.9cqw;transform:translate(-50%,-50%);border-radius:50%;background:#fdd506;box-shadow:0 0 1.5cqw #fdd50633}

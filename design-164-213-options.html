@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="uk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>164–213 · три варіанти на слайд</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--panel:#15110d}
+*{box-sizing:border-box}
+body{margin:0;background:#141210;color:var(--cream);font:400 14px/1.45 Manrope,sans-serif;padding:28px 32px 80px}
+header.page{max-width:1400px;margin:0 auto 26px}
+header.page h1{font:500 22px/1.2 Unbounded,sans-serif;margin:0 0 6px}
+header.page p{margin:0 0 6px;color:var(--muted);font-size:13px;max-width:1000px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--dim);margin-top:8px}
+.legend span b{color:var(--muted);font-weight:600}
+.row{max-width:1400px;margin:0 auto 40px}
+.row>h2{font:500 15px/1.3 Unbounded,sans-serif;margin:0 0 10px;display:flex;gap:14px;align-items:baseline}
+.row>h2 small{font:400 11px Manrope,sans-serif;color:var(--dim)}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+figure{margin:0;display:flex;flex-direction:column;gap:8px}
+figcaption{font-size:12.5px;color:var(--muted);line-height:1.4;padding:0 4px}
+figcaption b{display:block;color:var(--cream);font-weight:600;margin-bottom:1px}
+figure.rec figcaption b:after{content:'рекомендовано';margin-left:8px;font:600 10px Manrope,sans-serif;color:var(--bg);background:var(--yellow);padding:2px 7px;border-radius:3px;vertical-align:middle}
+.sq{position:relative;aspect-ratio:1;container-type:size;overflow:hidden;background:var(--bg);border:1px solid var(--rule)}
+figure.rec .sq{border-color:#5a4a10}
+.sq .k{position:absolute;top:5cqh;left:7cqw;right:7cqw;font:500 2.5cqw/1 Manrope,sans-serif;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+.sq .k.c{text-align:center}
+.sq h3{margin:0;font:500 4.4cqw/1.22 Unbounded,sans-serif;letter-spacing:-.03em}
+.sq h3 em{font-style:normal;color:var(--yellow)}
+.sq p{margin:0;font:400 2.9cqw/1.4 Manrope,sans-serif;color:var(--muted)}
+.sq p.c{color:var(--cream);font-weight:500}
+.sq .t{position:absolute;left:7cqw;right:7cqw}
+.sq .top{top:11cqh}.sq .top.nk{top:7cqh}.sq .bot{bottom:6cqh}
+.sq .center{text-align:center}
+.body{position:absolute;left:7cqw;right:7cqw}
+/* placeholders */
+.ph{position:absolute;background:linear-gradient(150deg,#221c16,#0f0c09 70%);border:1px solid #3a3129;display:flex;align-items:flex-end;justify-content:center;padding:1.5cqh;font:500 2.1cqw/1.3 Manrope,sans-serif;color:#8a7746;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.ph.bg{inset:0;border:0;align-items:flex-end;padding-bottom:2cqh}
+.ph.bg:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 80%,#fdd50614,transparent 60%)}
+.ph.screen{border-color:#5a4f3f;background:#0e0b09;border-radius:1cqw}
+.ph.screen:before{content:'';position:absolute;top:0;left:0;right:0;height:5cqh;background:#1c1712;border-bottom:1px solid #3a3129}
+.ph.phone{border-radius:4cqw;border-color:#5a4f3f}
+.ph.photo{border-radius:50%}
+.shade-top{position:absolute;left:0;right:0;top:0;height:55%;background:linear-gradient(180deg,#0b0907 0%,#0b0907d9 45%,transparent 100%)}
+/* components */
+.steps{display:flex;flex-direction:column;gap:1.2cqh}
+.steps>div{display:grid;grid-template-columns:8cqw 1fr;gap:2cqw;align-items:baseline;border-top:1px solid var(--rule);padding-top:1cqh}
+.steps>div b{font:500 3cqw Unbounded,sans-serif;color:var(--yellow)}
+.steps>div span{font:500 2.9cqw Manrope,sans-serif;color:var(--cream)}
+.steps>div small{display:block;font:400 2.4cqw/1.35 Manrope,sans-serif;color:var(--muted);margin-top:.3cqh}
+.flow{display:grid;gap:1.6cqw;align-items:stretch}
+.flow>div{position:relative;background:var(--panel);border:1px solid var(--rule);padding:1.6cqh 1.8cqw;min-height:16cqh}
+.flow>div b{display:block;font:500 2.7cqw Unbounded,sans-serif;color:var(--cream);margin-bottom:.8cqh}
+.flow>div small{font:400 2.2cqw/1.35 Manrope,sans-serif;color:var(--muted)}
+.flow>div:not(:last-child):after{content:'';position:absolute;right:-1.5cqw;top:50%;width:1.4cqw;height:1.4cqw;border-top:.3cqw solid var(--yellow);border-right:.3cqw solid var(--yellow);transform:translateY(-50%) rotate(45deg)}
+.flow>div.on{border-color:var(--yellow)}
+.grid{display:grid;gap:1.6cqw}
+.grid>div{background:var(--panel);border:1px solid var(--rule);padding:1.6cqh 2cqw;position:relative}
+.grid>div b{display:block;font:500 2.7cqw Unbounded,sans-serif;color:var(--cream)}
+.grid>div small{display:block;font:400 2.2cqw/1.35 Manrope,sans-serif;color:var(--muted);margin-top:.6cqh}
+.grid>div i{position:absolute;top:1cqh;right:1.6cqw;font:500 2.2cqw Manrope,sans-serif;color:var(--yellow);font-style:normal}
+.grid>div.on{border-color:var(--yellow)}
+.grid>div.dim{opacity:.4}
+.grid>div.ph2{min-height:14cqh;background:linear-gradient(150deg,#221c16,#0f0c09 70%);display:flex;align-items:flex-end;font:500 2cqw Manrope,sans-serif;color:#8a7746;text-transform:uppercase;letter-spacing:.06em}
+.layers{display:flex;flex-direction:column;gap:.9cqh}
+.layers>div{background:var(--panel);border:1px solid #3a3129;padding:1.3cqh 2.4cqw;display:grid;grid-template-columns:7cqw 26cqw 1fr;gap:2cqw;align-items:baseline;box-shadow:0 .6cqh 0 #0b0907}
+.layers>div b{font:500 2.6cqw Unbounded,sans-serif;color:var(--yellow)}
+.layers>div span{font:600 2.7cqw Manrope,sans-serif;color:var(--cream)}
+.layers>div small{font:400 2.2cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+.big{font:500 15cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:var(--yellow)}
+.big.m{font-size:10cqw}
+.price{display:inline-block;border:1px solid var(--yellow);color:var(--yellow);font:600 2.6cqw Manrope,sans-serif;padding:.9cqh 2.2cqw}
+table.tb{width:100%;border-collapse:collapse;font:400 2.3cqw/1.3 Manrope,sans-serif}
+table.tb th{font:500 2cqw Manrope,sans-serif;color:var(--dim);text-align:left;letter-spacing:.08em;text-transform:uppercase;padding:.8cqh 1cqw;border-bottom:1px solid #3a3129}
+table.tb td{padding:1cqh 1cqw;border-bottom:1px solid var(--rule);color:var(--cream)}
+table.tb td:first-child{font-weight:600}
+table.tb td.y{color:var(--yellow);font-weight:600}
+.math{display:flex;align-items:baseline;gap:2.5cqw;flex-wrap:wrap}
+.math b{font:500 9cqw Unbounded,sans-serif;letter-spacing:-.04em}
+.math b.y{color:var(--yellow)}
+.math span{font:400 3.2cqw Manrope,sans-serif;color:var(--muted)}
+.dots{display:flex;gap:2.2cqw;justify-content:center}
+.dots i{width:8cqw;height:8cqw;border-radius:50%;border:.4cqw solid #3a3129}
+.dots i.on{background:var(--yellow);border-color:var(--yellow)}
+.matrix{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6cqw}
+.matrix>div{border:1px solid var(--rule);padding:1.2cqh 1.2cqw}
+.matrix>div b{display:block;font:500 2.6cqw Unbounded,sans-serif;margin-bottom:1cqh;color:var(--cream)}
+.matrix>div i{display:block;height:2.2cqh;background:#2a2420;margin-bottom:.7cqh;border-left:.6cqw solid var(--yellow)}
+.chat{border:.35cqw solid #5a4f3f;background:#110d0a;border-radius:2cqw;padding:2.4cqh 3cqw;display:flex;align-items:center;justify-content:space-between}
+.chat b{font:500 8cqw Unbounded,sans-serif;color:var(--yellow);letter-spacing:.02em}
+.chat i{width:8cqw;height:8cqw;border-radius:50%;background:var(--yellow);display:block}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:3cqw}
+.cols2>div{border-top:.5cqw solid #3a3129;padding-top:1.4cqh}
+.cols2>div.y{border-top-color:var(--yellow)}
+.cols2 h4{margin:0 0 1.2cqh;font:500 2.4cqw Manrope,sans-serif;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
+.cols2 .li{display:flex;justify-content:space-between;gap:1cqw;font:400 2.5cqw/1.3 Manrope,sans-serif;color:var(--cream);padding:.9cqh 0;border-bottom:1px solid var(--rule)}
+.cols2 .li em{font-style:normal;color:var(--yellow);font-weight:600;white-space:nowrap}
+.wave{position:absolute;left:10cqw;right:10cqw;bottom:14cqh;height:12cqh;display:flex;align-items:center;gap:.9cqw}
+.wave i{flex:1;background:var(--yellow);opacity:.8}
+.need{color:#e0b64a}
+</style></head><body>
+
+<header class="page">
+<h1>Слайди 164–213 · три варіанти на кожен</h1>
+<p>Базові композиційні макети 1:1 у реальних шрифтах і з текстом слайда. Умовні позначки: <b class="need">СКРИН</b> — потрібен реальний матеріал (скриншот сайту, рілс, переписка), генерацією не підміняємо; <b>ФОН</b> — сцена під Higgsfield (як 155–161); <b>ФОТО</b> — реальне фото людини з кейсу. Жовта плашка — рекомендація, не рішення.</p>
+<div class="legend"><span><b>Принцип блоку:</b> тут ідуть «послуги» і «кейси», тому багато слайдів мають однакову функцію — картка послуги, «що робить агент», екран-приклад, кейс людини, розрахунок. Рекомендації підібрано так, щоб однакові функції мали однаковий макет, а між ними чергувались пауза-текст і фон.</span></div>
+</header>
+
+<div id="app"></div>
+
+<script>
+const D=[
+{n:164,id:'g…',k:'Конвейер',t:'Разбить на этапы. На каждый — свой <em>мастер</em>',items:[['Рецепт','изучает нишу и соседей'],['Замес','строит структуру, которая продаёт'],['Сборка','пишет тексты, ставит блоки'],['Украшение','доводит до готовой ссылки']],concl:'Никто не печёт весь торт. Каждый делает свой этап и передаёт дальше',
+ v:[{tpl:'flow',rec:1,cols:4,note:'Чотири етапи в ряд зі стрілками, під ними висновок. Продовження метафори торта з 163 — ті самі назви етапів.'},{tpl:'steps',note:'Вертикальний список 01–04, кожен етап — рядок. Спокійніше, більше повітря на пояснення.'},{tpl:'split',ph:'ФОН · конвеєр кондитерської',note:'Список ліворуч, праворуч 3D-конвеєр із чотирма станціями. Higgsfield.'}]},
+{n:165,k:'Что внутри одного мастера',t:'Мастера не нанимают. Его <em>собирают</em>',items:[['Инструкция','что делает, шаг за шагом'],['Как можно','примеры работ, на которые равняется'],['Как нельзя','ошибки, которые он уже совершил'],['Проверка','по чему понимает, что этап готов'],['Передача','что и кому отдаёт дальше']],concl:'Уберите эти слои — и останется обычный чат',
+ v:[{tpl:'layers',rec:1,note:'П’ять «шарів» стосом із тінню — буквально «його збирають». Висновок під стосом.'},{tpl:'steps',note:'Список 01–05 з поясненнями. Найчитабельніший, без метафори.'},{tpl:'grid',cols:2,note:'П’ять карток 2+2+1. Більше повітря, гірша послідовність.'}]},
+{n:166,t:'А это был всего <em>один</em> мастер',cols4:['Рецепт','Замес','Сборка','Украшение'],concl:'Пять слоёв × четыре этапа — и это только один торт. Внутри каждого агента — часы работы и обучения на каждый этап',
+ v:[{tpl:'matrix',rec:1,note:'Матриця 4 етапи × 5 шарів — видно масштаб одним поглядом. Шари підсвічуються хвилею.'},{tpl:'mathc',eq:[['5','слоёв'],['×',''],['4','этапа'],['=',''],['20','']],note:'Велике «5 × 4 = 20» по центру, висновок під ним. Швидко, без схеми.'},{tpl:'center',sub:'Пять слоёв × четыре этапа — и это только один торт',note:'Чистий текст по центру — пауза після щільної 165.'}]},
+{n:167,k:'Сколько это стоило',t:'Сотни часов и куча денег. <em>Мои, не ваши</em>',sub:'Один такой агент — это больше ста часов моей работы: пишешь, ломаешь, смотришь, где он ошибся, переписываешь. И так по каждому. Вам его собирать не надо. Он уже собран',
+ v:[{tpl:'bg',rec:1,ph:'ФОН · нічне робоче місце, ноутбук, чернетки',note:'Текст по центру зверху, внизу фон робочого місця вночі. Той самий прийом, що 155/157.'},{tpl:'stat',big:'100+',cap:'часов моей работы на одного агента',note:'Велике «100+ часов» як центр, повний абзац нижче.'},{tpl:'center',note:'Тільки текст по центру, без фону — пауза перед каталогом послуг.'}]},
+{n:168,k:'Услуга 1 из 8',t:'AI-сайты, которые <em>приводят клиентов</em>',items:[['Сайт или лендинг','который продаёт'],['Квиз','который сам квалифицирует заявку'],['Формы, аналитика, домен','вечер вместо недель']],price:'$250–$1.200 · за пакет · сложность лёгкая',link:'call-summary-landing.vercel.app — собран агентом за вечер',
+ v:[{tpl:'service',rec:1,note:'«Картка послуги»: kicker, назва, що збирає агент, ціна в рамці. Цей самий макет повторюємо для 189, 194, 205 — послуги впізнаються.'},{tpl:'screen',ph:'СКРИН · call-summary-landing.vercel.app',note:'Половину квадрата займає реальний скрин лендингу, список і ціна компактно.'},{tpl:'split',ph:'СКРИН · сайт у ноутбуці',note:'Список ліворуч, скрин у ноутбуці праворуч.'}]},
+{n:169,t:'Что делает агент <em>по сайтам</em>',items:[['Изучает конкурентов'],['Изучает аудиторию'],['Создаёт маркетинговую стратегию'],['Обучен на лучших методиках мира'],['Создал сайты с $100 000+ рекламного бюджета'],['Пишет продающие тексты'],['Создаёт интерактивные опросники'],['База 100+ сайтов с готовым дизайном'],['Адаптирует под мобильные и компьютер'],['Размещает и публикует']],
+ v:[{tpl:'grid',rec:1,cols:2,note:'10 пунктів у два стовпці карток. Макет «що робить агент» — повторюємо на 190, 198, 206.'},{tpl:'flow',cols:5,rows:2,note:'Конвеєр у два ряди по 5 — як 164, але щільніше.'},{tpl:'steps',note:'Нумерований список 01–10. Дрібно, але однорідно.'}]},
+{n:170,t:'У AI-агента есть больше <em>1000+</em> шаблонов вау-сайтов под разные ниши',
+ v:[{tpl:'stat',rec:1,big:'1000+',cap:'шаблонов вау-сайтов под разные ниши',mosaic:1,note:'Велике 1000+, за ним притемнена мозаїка мініатюр сайтів (реальні скрини motionsites).'},{tpl:'center',note:'Тільки заголовок по центру.'},{tpl:'screen',ph:'СКРИН · сітка шаблонів motionsites.ai',note:'Заголовок зверху, скрин сітки шаблонів нижче.'}]},
+{n:171,t:'Шаблоны <em>вау-сайтов</em>',sub:'motionsites.ai — библиотека шаблонов',
+ v:[{tpl:'screen',rec:1,ph:'СКРИН · motionsites.ai',big:1,note:'Один великий скрин на 75% квадрата, підпис знизу. Реальний матеріал.'},{tpl:'mosaic',note:'Мозаїка 3×3 мініатюр шаблонів, одна підсвічена.'},{tpl:'split',ph:'СКРИН · шаблон',note:'Заголовок + лінк ліворуч, скрин праворуч.'}]},
+{n:172,k:'Кто уже так делает',t:'Антон <em>Тысячник</em>',quote:'«Никогда не делал сайты — ноль, полный ноль» — его слова',items:[['Первый месяц','делал знакомым — просто тренировался, без заказов и без денег'],['Первые двое заплатили по $250','не прайс — просто как знак «спасибо»'],['$2.000 за два месяца','это его собственные слова']],
+ v:[{tpl:'person',rec:1,note:'Фото Антона ліворуч, ім’я, цитата, три кроки. Макет «кейс людини» — повторюємо на 210–213 (Света).'},{tpl:'steps',note:'Цитата зверху, кроки списком, без фото.'},{tpl:'stat',big:'$2.000',cap:'за два месяца — его собственные слова',note:'Велика цифра результату, кроки дрібніше під нею.'}]},
+{n:173,k:'Экран',t:'Вот что <em>собирает</em> этот агент',items:[['LONO','протокол здоровья'],['Roma','система именного КП'],['ClearPoint · New Level Coffee',''],['Kotsur GEO','']],concl:'Каждый сайт — до часа времени',
+ v:[{tpl:'grid',rec:1,cols:2,ph:1,note:'2×2 реальні скрини сайтів із підписами, внизу «до часа». Макет «екран-приклади» — той самий на 174, 191, 193.'},{tpl:'screen',ph:'СКРИН · один сайт, карусель',note:'Один великий скрин за раз, перемикання кліком.'},{tpl:'steps',note:'Список назв із мініатюрами.'}]},
+{n:174,k:'Экран',t:'Вот сайты, которые он <em>сделал</em>',items:[['Mozart Cafe-Bar','бронь в Telegram'],['ClearPoint','Лондон'],['New Level Coffee','Флорида'],['RELAX Мебель','Астана']],concl:'Четыре из восьми. Разные ниши, разные страны — ни одного он не верстал руками',
+ v:[{tpl:'grid',rec:1,cols:2,ph:1,note:'2×2 скрини з містом у підписі. Той самий макет, що 173.'},{tpl:'bg',ph:'ФОН · карта світу з 4 точками (Лондон, Флорида, Астана…)',note:'Карта світу з чотирма точками, назви поруч. Підкреслює «разные страны».'},{tpl:'mosaic',note:'Мозаїка 8 мініатюр, 4 підсвічені — «четыре из восьми».'}]},
+{n:175,k:'Посчитаем',t:'Посчитаем, сколько можно на этом <em>заработать</em>',eq:[['8','клиентов'],['×',''],['$250','обычный чек'],['=',''],['$2.000','']],concl:'один сайт — один раз',
+ v:[{tpl:'mathc',rec:1,note:'Велике рівняння по центру, підписи під числами. Макет «розрахунок» — повторюємо на 187.'},{tpl:'stat',big:'$2.000',cap:'8 клиентов × $250 · один сайт — один раз',note:'Тільки результат великим, формула дрібно.'},{tpl:'grid',cols:4,eight:1,note:'8 маленьких карток «$250» → сума. Наочно, але дрібно.'}]},
+{n:176,k:'И это только начало',t:'Один клиент — <em>не одна продажа</em>',sub:'Даже если из восьми скажет «да» только каждый третий',items:[['AI-продавец','отвечает на заявки с этого сайта · $500–$2.000 ведение'],['AI-SEO','чтобы сайт находили без рекламы · $500 в месяц'],['Реклама','чтобы на сайт кто-то приходил · $300–$800 в месяц']],concl:'Сайт продаётся один раз. Эти три — каждый месяц',
+ v:[{tpl:'grid',rec:1,cols:3,price:1,note:'Три картки послуг із цінами в ряд, висновок під ними.'},{tpl:'flow',cols:4,first:'AI-сайт · один раз',note:'Сайт → три щомісячні послуги стрілками.'},{tpl:'steps',note:'Список 01–03 із цінами.'}]},
+{n:177,k:'Экономика',t:'Один клиент платит дважды. Потом — <em>каждый месяц</em>',once:[['AI-сайт','$250']],monthly:[['AI-продавец','$500'],['AI-SEO','$500'],['с того же клиента, ежемесячно','$1.000']],concl:'Даже если так делает только каждый третий из восьми — это $3.000 в месяц',
+ v:[{tpl:'cols2',rec:1,note:'Два стовпці «Один раз / Каждый месяц» із сумами. Висновок $3.000 внизу.'},{tpl:'stat',big:'$3.000',cap:'в месяц — если так делает только каждый третий из восьми',note:'Результат великим, розклад дрібно.'},{tpl:'bars',note:'12 стовпчиків-місяців: перший $250, далі по $1.000. Видно накопичення.'}]},
+{n:178,t:'<span style="color:#6f685e">(порожній слайд у даних)</span>',
+ v:[{tpl:'screen',rec:1,ph:'СКРИН · кейс/скрин, який тут мався на увазі',note:'У даних слайд без тексту, тип media. Ймовірно, тут був скрин. Потрібен матеріал або рішення.'},{tpl:'center',sub:'Об’єднати з 179',note:'Прибрати як дубль і перейти одразу до «100+ кейсов».'},{tpl:'bg',ph:'ФОН · пауза',note:'Залишити як візуальну паузу з фоном без тексту.'}]},
+{n:179,t:'Таких кейсов у меня <em>100+</em>',
+ v:[{tpl:'stat',rec:1,big:'100+',cap:'кейсов',mosaic:1,note:'Велике 100+ поверх притемненої мозаїки реальних скринів кейсів.'},{tpl:'bg',ph:'ФОН · стіна екранів',note:'Заголовок по центру, фон — стіна моніторів із сайтами (Higgsfield).'},{tpl:'mosaic',note:'Щільна мозаїка 4×4 скринів, заголовок поверх.'}]},
+{n:180,t:'Кейсы <em>с графикой</em>',sub:'otz-grafika.p-r-o-art.workers.dev — видеоотзывы учеников',
+ v:[{tpl:'screen',rec:1,big:1,ph:'СКРИН · сторінка відеовідгуків',note:'Великий скрин сторінки відгуків, підпис знизу.'},{tpl:'grid',cols:3,ph:1,note:'3×2 кадри з відеовідгуків (стоп-кадри).'},{tpl:'center',note:'Заголовок + лінк по центру.'}]},
+{n:181,t:'Сайт готов и <em>опубликован</em>',sub:'Ссылку дам в конце эфира: посмотрите его сами, вместе со всеми материалами',
+ v:[{tpl:'screen',rec:1,ph:'СКРИН · готовий сайт із демо',note:'Скрин щойно зібраного сайту в рамці, текст зверху.'},{tpl:'bg',ph:'ФОН · ноутбук із сайтом',note:'Текст по центру, фон — ноутбук.'},{tpl:'center',note:'Тільки текст.'}]},
+{n:182,k:'Ловите кодовое слово',t:'<em>АГЕНТ</em>',sub:'Пишите «агент» в чат — заберёте его в конце эфира вместе со ссылкой',link:'Пульт демо — от сайта до клиентов',
+ v:[{tpl:'chat',rec:1,note:'Слово АГЕНТ у полі чату з кнопкою надсилання — та сама мова, що 161.'},{tpl:'center',hero:1,note:'Величезне АГЕНТ по центру, інструкція під ним.'},{tpl:'split',ph:'СКРИН · пульт демо',note:'Слово ліворуч, скрин пульта праворуч.'}]},
+{n:183,t:'Это была <em>одна</em> услуга из 7',sub:'Сайт — самая понятная. Но точно так же AI-агенты закрывают ещё 6. И каждую бизнес покупает отдельно',
+ v:[{tpl:'dots',rec:1,note:'Сім кружечків у ряд, перший жовтий. Прогрес-індикатор блоку послуг.'},{tpl:'center',note:'Тільки текст.'},{tpl:'grid',cols:4,seven:1,note:'Сім карток-назв послуг, перша підсвічена, решта притемнена.'}]},
+{n:184,k:'Каталог',t:'7 услуг, которые агенты делают <em>целиком</em>',rows:[['AI-сайты','$250–$1.200','лёгкая','9','8'],['AI-дизайн','$250–$900','лёгкая','8','7'],['Продающие AI-видео','$300–$1.200','лёгкая','10','5'],['Контент-завод','$400–$1.400 /мес','средняя','8','6'],['AI-таргет','$300–$800 /мес','средняя','7','7'],['AI-SEO','$500 /мес','средняя','7','1'],['AI-продавец','$500+','средняя','9','4']],
+ v:[{tpl:'table',rec:1,note:'Таблиця 7 рядків × 4 колонки, чек жовтим. Найчесніший спосіб показати каталог.'},{tpl:'grid',cols:2,seven:1,price:1,note:'Сім карток із ціною, 2 колонки.'},{tpl:'steps',note:'Список 01–07 з ціною праворуч.'}]},
+{n:185,k:'Пять отделов',t:'И под каждую есть свои <em>сотрудники</em>',items:[['AI-Охотник','ищет клиентов'],['AI-Продавец','ведёт до оплаты'],['AI-Сайты','сайты под ключ'],['AI-Дизайн','КП, баннеры, макеты'],['AI-Видео','ролики с аватаром'],['AI-Контент','посты и рилз'],['AI-Таргет','реклама и связки'],['AI-Видимость','выдача в нейросетях']],
+ v:[{tpl:'grid',rec:1,cols:4,note:'8 «співробітників» 4×2, як оргструктура. Kicker «Ваша команда · 8 задач».'},{tpl:'flow',cols:4,rows:2,note:'Оргчарт: «Вы» зверху, 8 ролей під ним.'},{tpl:'steps',note:'Список 01–08.'}]},
+{n:186,t:'Сейчас ещё сделаем <em>несколько услуг</em>',items:[['Продавец в переписке и по телефону','AI-продавец'],['Рекламное видео с моим лицом','AI-контент'],['Рекламные объявления','AI-дизайнер'],['Реклама в соц сетях','AI-таргет']],
+ v:[{tpl:'steps',rec:1,note:'Список 01–04 — план наступного демо. Читається як чекліст.'},{tpl:'grid',cols:2,note:'Чотири картки 2×2.'},{tpl:'center',note:'Заголовок + чотири рядки по центру.'}]},
+{n:187,t:'Одной кнопкой окажу услуг ещё примерно на <em>$1500</em>',lines:[['AI-продавец','от $500'],['Рекламное видео с моим лицом','от $250'],['Рекламные объявления','от $250'],['Реклама в соц сетях','от $500']],total:'$1500',
+ v:[{tpl:'sum',rec:1,note:'Чотири рядки з цінами й підсумок $1500 під рискою — як чек.'},{tpl:'stat',big:'$1500',cap:'услуг одной кнопкой',note:'Результат великим, розклад дрібно.'},{tpl:'grid',cols:2,price:1,note:'Чотири картки з ціною + сума.'}]},
+{n:188,t:'Каждая следующая услуга — <em>одна короткая команда ртом</em>',
+ v:[{tpl:'wave',rec:1,note:'Текст по центру, під ним звукова хвиля — «команда ртом». SVG, без генерації.'},{tpl:'bg',ph:'ФОН · мікрофон крупно',note:'Фон із мікрофоном.'},{tpl:'center',note:'Тільки текст.'}]},
+{n:189,k:'Услуга 2 из 7',t:'<em>AI-дизайн</em>',items:[['Коммерческие предложения','именные, под конкретную сделку'],['Рекламные объявления','десятками, чтобы было что тестировать'],['Обложки для YouTube','под каждый ролик, в одном стиле'],['Обложки Reels и TikTok','под каждую серию, пачкой']],price:'$250–$900 · за пакет · сложность лёгкая',concl:'Всё в одном стиле — за минуты, без дизайнера и без студии',
+ v:[{tpl:'service',rec:1,note:'Картка послуги — той самий макет, що 168.'},{tpl:'grid',cols:2,ph:1,note:'2×2 реальні приклади робіт із підписами + ціна.'},{tpl:'split',ph:'СКРИН · приклад КП',note:'Список ліворуч, приклад праворуч.'}]},
+{n:190,k:'AI-дизайн',t:'Что делает <em>агент</em>',items:[['анализирует аудиторию'],['знает, куда ведём'],['вызывает сценариста'],['фотограф'],['дизайнер']],
+ v:[{tpl:'flow',rec:1,cols:5,note:'П’ять кроків стрілками — макет «що робить агент», як 169.'},{tpl:'screen',ph:'СКРИН · артефакт Claude (потрібен доступ)',note:'Реальний скрин артефакту, якщо дадуть доступ.'},{tpl:'steps',note:'Список 01–05.'}]},
+{n:191,t:'На выходе — <em>рекламные объявления</em>',sub:'Реклама в Instagram и Facebook · 3 креатива для теста',
+ v:[{tpl:'grid',rec:1,cols:3,ph:1,tall:1,note:'Три креативи в ряд (реальні), підпис знизу.'},{tpl:'screen',big:1,ph:'СКРИН · один креатив',note:'Один креатив великим.'},{tpl:'bg',ph:'ФОН · стрічка Instagram',note:'Креативи в мокапі телефона.'}]},
+{n:192,t:'Коммерческие <em>предложения</em>',
+ v:[{tpl:'screen',rec:1,big:1,ph:'СКРИН · сторінка КП',note:'Один великий скрин КП.'},{tpl:'grid',cols:2,ph:1,tall:1,note:'Два КП поруч.'},{tpl:'center',note:'Тільки заголовок (якщо КП показується живцем).'}]},
+{n:193,t:'Обложки <em>YouTube, Reels и TikTok</em>',
+ v:[{tpl:'mosaic',rec:1,note:'Мозаїка обкладинок: 2 горизонтальні YouTube + 4 вертикальні Reels/TikTok.'},{tpl:'screen',big:1,ph:'СКРИН · канал YouTube',note:'Скрин каналу з обкладинками в одному стилі.'},{tpl:'split',ph:'СКРИН · обкладинки',note:'Текст + мозаїка праворуч.'}]},
+{n:194,k:'Услуга 3 из 7',t:'Продающие <em>AI-видео</em>',items:[['Товары','ролик под карточку и под рекламу'],['Одежда','модель в кадре создана нейросетью'],['Услуги и клиники','показать, как всё проходит'],['Офлайн-объекты','показать помещение, которого ещё нет']],price:'$300–$1.200 · за пакет 8–12 роликов',concl:'В кадре не актёр. Никто не приезжал на площадку',
+ v:[{tpl:'service',rec:1,note:'Картка послуги — як 168/189.'},{tpl:'grid',cols:2,ph:1,note:'2×2 стоп-кадри з роликів по категоріях.'},{tpl:'split',ph:'СКРИН · кадр ролика',note:'Список + кадр.'}]},
+{n:195,t:'Ролики <em>для товаров</em>',sub:'instagram.com/reels/DdMC9KlNLw1',
+ v:[{tpl:'phone',rec:1,note:'Один телефон 9:16 по центру з рілсом (стоп-кадр або відео), заголовок зверху. Макет «рілс» — повторюємо на 197, 201, 209.'},{tpl:'phones3',note:'Три телефони в ряд.'},{tpl:'bg',ph:'ФОН · продукт',note:'Кадр ролика на весь квадрат.'}]},
+{n:196,t:'<em>Услуги</em>',sub:'roma-kp-site.vercel.app',
+ v:[{tpl:'screen',rec:1,big:1,ph:'СКРИН · roma-kp-site',note:'Скрин сайту великим.'},{tpl:'split',ph:'СКРИН',note:'Текст + скрин.'},{tpl:'center',note:'Тільки заголовок.'}]},
+{n:197,t:'Ролики <em>для одежды</em>',sub:'instagram.com/reels/DcI63cOTcbd',
+ v:[{tpl:'phone',rec:1,note:'Телефон 9:16 — як 195.'},{tpl:'phones3',note:'Три телефони.'},{tpl:'bg',ph:'ФОН · модель',note:'Кадр на весь квадрат.'}]},
+{n:198,k:'AI-видео',t:'Что делает <em>агент</em>',items:[['анализирует аудиторию'],['ищет лучшие идеи'],['пишет сценарий'],['раскадровка'],['фотограф'],['съёмка видео'],['звук'],['монтаж']],
+ v:[{tpl:'flow',rec:1,cols:4,rows:2,note:'8 кроків у два ряди зі стрілками.'},{tpl:'steps',note:'Список 01–08.'},{tpl:'screen',ph:'СКРИН · артефакт Claude',note:'Скрин артефакту.'}]},
+{n:199,t:'А вот этого агента взял <em>Женя</em>',sub:'Видео от Влада: AI-агент «Реклама недвижимости»',
+ v:[{tpl:'screen',rec:1,big:1,ph:'ВІДЕО · кадр із відео Влада',note:'Кадр відео на 70% квадрата з кнопкою play.'},{tpl:'person',name:'Женя',note:'Фото Жені + підпис.'},{tpl:'center',note:'Тільки текст.'}]},
+{n:200,t:'Женя <em>в Instagram</em>',sub:'instagram.com/evgeniy_yanchenko · создаёт AI-визуализации для бизнесов и недвижимости',
+ v:[{tpl:'phone',rec:1,note:'Телефон зі скрином профілю.'},{tpl:'person',name:'Женя',note:'Фото + опис, як кейс людини.'},{tpl:'split',ph:'СКРИН · профіль',note:'Текст + скрин.'}]},
+{n:201,t:'Научился делать <em>такие ролики</em>',sub:'231 тыс. просмотров · instagram.com/reel/DSxtMitjJAa',
+ v:[{tpl:'phonestat',rec:1,big:'231 тыс.',cap:'просмотров',note:'Телефон із рілсом + велике «231 тыс.» поруч.'},{tpl:'phone',note:'Тільки телефон.'},{tpl:'stat',big:'231 тыс.',cap:'просмотров',note:'Тільки цифра.'}]},
+{n:202,t:'Сделал <em>себе сайт</em>',sub:'evgeniyyanchenko.netlify.app',
+ v:[{tpl:'screen',rec:1,big:1,ph:'СКРИН · сайт Жені',note:'Скрин сайту великим.'},{tpl:'split',ph:'СКРИН',note:'Текст + скрин.'},{tpl:'center',note:'Тільки текст.'}]},
+{n:203,t:'Постить <em>видосы</em>',
+ v:[{tpl:'phones3',rec:1,note:'Три телефони з рілсами в ряд.'},{tpl:'screen',big:1,ph:'СКРИН · сітка рілсів у профілі',note:'Скрин сітки профілю.'},{tpl:'center',note:'Тільки текст.'}]},
+{n:204,t:'Продаёт 30-сек ролик по $450 — на <em>$7.000 в месяц</em>',sub:'переписка с Женей',
+ v:[{tpl:'chatstat',rec:1,big:'$7.000',cap:'в месяц · 30-сек ролик по $450',ph:'СКРИН · переписка',note:'Скрин переписки ліворуч, велике $7.000 праворуч. Доказ + цифра.'},{tpl:'stat',big:'$7.000',cap:'в месяц · 30-сек ролик по $450',note:'Тільки цифра великим.'},{tpl:'screen',big:1,ph:'СКРИН · переписка',note:'Тільки переписка великим.'}]},
+{n:205,k:'Услуга 4 из 7',t:'Контент-завод <em>с AI-аватаром</em>',items:[['Контент-план','под площадку'],['Посты, сценарии, Reels','с аватаром'],['Выкладка по расписанию','аккаунт живёт без вас']],price:'$400–$1.400 · за пакет в месяц · сложность средняя',concl:'Готовый контент для соцсетей, который приносит подписчиков и клиентов',
+ v:[{tpl:'service',rec:1,note:'Картка послуги — як 168/189/194.'},{tpl:'grid',cols:3,ph:1,note:'Три приклади контенту + ціна.'},{tpl:'split',ph:'СКРИН · аватар у рілсі',note:'Список + кадр з аватаром.'}]},
+{n:206,k:'Контент-завод',t:'Что делает <em>агент</em>',items:[['ищет лучшие идеи'],['создаёт контент-план'],['подключает AI-аватара'],['Reels / Shorts / TikTok'],['посты в Telegram'],['карусели'],['сторис'],['выкладывает сам']],
+ v:[{tpl:'flow',rec:1,cols:4,rows:2,note:'8 кроків у два ряди — як 198.'},{tpl:'steps',note:'Список 01–08.'},{tpl:'screen',ph:'СКРИН · артефакт Claude',note:'Скрин артефакту.'}]},
+{n:207,t:'Умеет делать вирусные <em>карусели и гайды</em>',
+ v:[{tpl:'mosaic',rec:1,note:'Мозаїка 3×2 реальних каруселей.'},{tpl:'phone',note:'Телефон із каруселлю.'},{tpl:'center',note:'Тільки текст.'}]},
+{n:208,t:'Имеет базу <em>100+ каруселей</em>',
+ v:[{tpl:'stat',rec:1,big:'100+',cap:'каруселей в базе',mosaic:1,note:'100+ поверх притемненої мозаїки каруселей.'},{tpl:'screen',ph:'СКРИН · артефакт із базою',note:'Скрин бази.'},{tpl:'center',note:'Тільки текст.'}]},
+{n:209,t:'Автомонтаж старых видео <em>за 10 минут</em>',sub:'ИИ-агент Reelo · instagram.com/reels/DdEbBEbR7Hn',
+ v:[{tpl:'phonestat',rec:1,big:'10 мин',cap:'автомонтаж старого видео',note:'Телефон із рілсом + «10 мин» великим.'},{tpl:'phone',note:'Тільки телефон.'},{tpl:'split',ph:'СКРИН · до/після',note:'До/після монтажу.'}]},
+{n:210,t:'Света, <em>мама 10-летнего</em>',sub:'Пыталась создать свой бизнес по производству веганских йогуртов, но прогорела',
+ v:[{tpl:'person',rec:1,name:'Света',note:'Фото Свєти + історія. Макет «кейс людини» — як 172; 210–213 = одна серія.'},{tpl:'bg',ph:'ФОТО · Света на весь квадрат',note:'Фото на весь квадрат, текст на затемненні.'},{tpl:'center',note:'Тільки текст.'}]},
+{n:211,t:'Не работала ни одного дня <em>в маркетинге и соц сетях</em>',sub:'Устроилась на работу ассистентом маркетолога за $750/мес, имея только $20 подписку на Claude и старый ноутбук',
+ v:[{tpl:'person',rec:1,name:'Света',note:'Той самий макет, що 210 — серія читається як одна історія.'},{tpl:'center',note:'Текст по центру.'},{tpl:'stat',big:'$750',cap:'в месяц · $20 подписка на Claude и старый ноутбук',note:'Цифра + пояснення.'}]},
+{n:212,t:'Имея в арсенале <em>3 агента</em>, она:',items:[['Начинала с AI-дизайна'],['Продала сайт за $1000'],['Создала контент-завод для соц сетей','lono-next.vercel.app']],
+ v:[{tpl:'person',rec:1,name:'Света',steps:1,note:'Фото + три кроки — як 172 (Антон).'},{tpl:'steps',note:'Список 01–03 без фото.'},{tpl:'grid',cols:3,note:'Три картки в ряд.'}]},
+{n:213,t:'+ 8.000 подписчиков <em>за 2 месяца</em>',
+ v:[{tpl:'phonestat',rec:1,big:'+8.000',cap:'подписчиков за 2 месяца',note:'Телефон зі скрином профілю + цифра великим. Фінал серії про Свєту.'},{tpl:'stat',big:'+8.000',cap:'подписчиков за 2 месяца',note:'Тільки цифра.'},{tpl:'screen',big:1,ph:'СКРИН · профіль із графіком підписників',note:'Скрин статистики.'}]}
+];
+
+const esc=s=>s||'';
+const kk=(d,c)=>d.k?`<span class="k${c?' c':''}">${d.k}</span>`:'';
+const title=(d,extra='',cls='top')=>`<div class="t ${cls}${d.k?'':' nk'} ${extra}"><h3>${d.t}</h3>${d.sub&&extra.includes('withsub')?`<p style="margin-top:1.4cqh">${d.sub}</p>`:''}</div>`;
+const items=(d)=>(d.items||[]).map(i=>Array.isArray(i)?i:[i]);
+const T={
+center(d,v){return kk(d,1)+`<div class="t center" style="top:${v.hero?'30':'34'}cqh"><h3 style="font-size:${v.hero?'20cqw':'5.6cqw'};line-height:1.15">${d.t}</h3>${d.sub||v.sub?`<p style="margin-top:2.4cqh;font-size:3cqw">${d.sub||v.sub}</p>`:''}</div>`},
+bg(d,v){return `<div class="ph bg">${v.ph}</div><div class="shade-top" style="height:70%"></div>`+kk(d,1)+`<div class="t center" style="top:${d.k?'12':'10'}cqh"><h3 style="font-size:5cqw">${d.t}</h3>${d.sub?`<p style="margin-top:2cqh;font-size:2.8cqw">${d.sub}</p>`:''}</div>`},
+steps(d,v){const it=items(d);return kk(d)+title(d)+`<div class="body steps" style="top:${d.k?'28':'24'}cqh">${it.map((i,n)=>`<div><b>${String(n+1).padStart(2,'0')}</b><div><span>${i[0]}</span>${i[1]?`<small>${i[1]}</small>`:''}</div></div>`).join('')}</div>`+(d.concl?`<div class="t bot"><p class="c">${d.concl}</p></div>`:'')},
+flow(d,v){let it=items(d);if(v.first)it=[[v.first,''],...it];const cols=v.cols||it.length;return kk(d)+title(d)+`<div class="body flow" style="top:${d.k?'30':'26'}cqh;grid-template-columns:repeat(${cols},1fr)">${it.map(i=>`<div><b>${i[0]}</b>${i[1]?`<small>${i[1]}</small>`:''}</div>`).join('')}</div>`+(d.concl?`<div class="t bot"><p class="c">${d.concl}</p></div>`:'')},
+grid(d,v){let it=items(d);if(v.eight)it=Array.from({length:8},()=>['$250','']);if(v.seven&&d.rows)it=d.rows.map(r=>[r[0],r[1]]);if(v.seven&&!d.rows)it=['AI-сайты','AI-дизайн','AI-видео','Контент-завод','AI-таргет','AI-SEO','AI-продавец'].map(x=>[x,'']);const cols=v.cols||2;return kk(d)+title(d)+`<div class="body grid" style="top:${d.k?'28':'24'}cqh;grid-template-columns:repeat(${cols},1fr)">${it.map((i,n)=>`<div class="${v.ph?'ph2':''} ${v.seven&&n>0?'dim':''} ${v.seven&&n===0?'on':''}" ${v.tall?'style="min-height:34cqh"':''}>${v.ph?`<span>СКРИН · ${i[0]}</span>`:`<b>${i[0]}</b>${i[1]?`<small>${i[1]}</small>`:''}`}</div>`).join('')}</div>`+(d.price?`<div class="t bot"><span class="price">${d.price}</span></div>`:d.concl?`<div class="t bot"><p class="c">${d.concl}</p></div>`:d.sub?`<div class="t bot"><p>${d.sub}</p></div>`:'')},
+layers(d,v){const it=items(d);return kk(d)+title(d)+`<div class="body layers" style="top:26cqh">${it.map((i,n)=>`<div><b>${String(n+1).padStart(2,'0')}</b><span>${i[0]}</span><small>${i[1]}</small></div>`).join('')}</div><div class="t bot"><p class="c">${d.concl}</p></div>`},
+matrix(d,v){return title(d)+`<div class="body matrix" style="top:24cqh">${d.cols4.map(c=>`<div><b>${c}</b>${'<i></i>'.repeat(5)}</div>`).join('')}</div><div class="t bot"><p style="font-size:2.5cqw">${d.concl}</p></div>`},
+mathc(d,v){const eq=v.eq||d.eq;return kk(d)+title(d)+`<div class="body math" style="top:40cqh">${eq.map(e=>`<div><b class="${/\$|20/.test(e[0])&&e[0].length>1?'y':''}">${e[0]}</b>${e[1]?`<br><span>${e[1]}</span>`:''}</div>`).join('')}</div>`+(d.concl?`<div class="t bot"><p class="c">${d.concl}</p></div>`:'')},
+stat(d,v){return (v.mosaic?`<div class="ph bg" style="opacity:.55;background:repeating-linear-gradient(90deg,#1a1510 0 22cqw,#0b0907 22cqw 24cqw),repeating-linear-gradient(0deg,#1a1510 0 22cqh,#0b0907 22cqh 24cqh)">мозаїка скринів</div><div class="shade-top" style="height:100%;background:radial-gradient(circle at 50% 45%,#0b0907f2,#0b090780)"></div>`:'')+kk(d,1)+`<div class="t center" style="top:${v.mosaic?'26':'22'}cqh"><div class="big">${v.big}</div><p class="c" style="margin-top:1.6cqh;font-size:3.2cqw">${v.cap}</p>${d.sub&&!v.mosaic?`<p style="margin-top:2cqh;font-size:2.6cqw;max-width:80cqw;margin-left:auto;margin-right:auto">${d.sub}</p>`:''}</div>`+(!v.mosaic&&d.items?`<div class="body steps" style="top:58cqh;font-size:2cqw">${items(d).slice(0,3).map((i,n)=>`<div><b>${String(n+1).padStart(2,'0')}</b><span>${i[0]}</span></div>`).join('')}</div>`:'')},
+service(d,v){const it=items(d);return kk(d)+`<div class="t top"><h3 style="font-size:5.4cqw">${d.t}</h3></div><p style="position:absolute;left:7cqw;top:28cqh;font:500 2.3cqw Manrope,sans-serif;color:var(--dim);letter-spacing:.12em;text-transform:uppercase">Что ${d.n===168?'собирает':'выходит из'} агент${d.n===168?'':'а'}</p><div class="body steps" style="top:33cqh">${it.map((i,n)=>`<div><b>${String(n+1).padStart(2,'0')}</b><div><span>${i[0]}</span>${i[1]?`<small>${i[1]}</small>`:''}</div></div>`).join('')}</div><div class="t bot"><span class="price">${d.price}</span>${d.concl?`<p style="margin-top:1.4cqh;font-size:2.4cqw">${d.concl}</p>`:''}${d.link?`<p style="margin-top:1cqh;font-size:2.2cqw;color:var(--dim)">${d.link}</p>`:''}</div>`},
+screen(d,v){const big=v.big;return kk(d)+`<div class="t top"><h3 style="font-size:${big?'4.4':'4.2'}cqw">${d.t}</h3></div><div class="ph screen" style="left:7cqw;right:7cqw;top:${d.k?'28':'23'}cqh;bottom:${big?'12':'40'}cqh">${v.ph}</div>`+(big?(d.sub?`<div class="t bot"><p style="font-size:2.4cqw">${d.sub}</p></div>`:''):`<div class="body" style="top:64cqh">${d.items?`<div class="steps">${items(d).slice(0,3).map((i,n)=>`<div><b>${String(n+1).padStart(2,'0')}</b><span>${i[0]}</span></div>`).join('')}</div>`:d.sub?`<p>${d.sub}</p>`:''}</div>`+(d.price?`<div class="t bot"><span class="price">${d.price}</span></div>`:''))},
+split(d,v){return kk(d)+`<div class="t top" style="right:52cqw"><h3 style="font-size:4.2cqw">${d.t}</h3>${d.items?`<div class="steps" style="margin-top:2.4cqh">${items(d).slice(0,5).map((i,n)=>`<div style="grid-template-columns:6cqw 1fr"><b style="font-size:2.4cqw">${String(n+1).padStart(2,'0')}</b><span style="font-size:2.4cqw">${i[0]}</span></div>`).join('')}</div>`:d.sub?`<p style="margin-top:2cqh;font-size:2.6cqw">${d.sub}</p>`:''}</div><div class="ph screen" style="left:52cqw;right:6cqw;top:${d.k?'20':'16'}cqh;bottom:16cqh">${v.ph}</div>`+(d.price?`<div class="t bot" style="right:52cqw"><span class="price" style="font-size:2.2cqw">${d.price}</span></div>`:'')},
+person(d,v){const name=v.name||d.t;const it=items(d);return kk(d)+`<div class="ph photo" style="left:7cqw;top:${d.k?'14':'10'}cqh;width:30cqw;height:30cqw">ФОТО</div><div class="t" style="left:42cqw;top:${d.k?'15':'11'}cqh"><h3 style="font-size:5cqw">${d.t}</h3>${d.quote?`<p style="margin-top:1.6cqh;font-size:2.5cqw">${d.quote}</p>`:d.sub?`<p style="margin-top:1.6cqh;font-size:2.6cqw">${d.sub}</p>`:''}</div>`+(it.length?`<div class="body steps" style="top:52cqh">${it.map((i,n)=>`<div><b>${String(n+1).padStart(2,'0')}</b><div><span>${i[0]}</span>${i[1]?`<small>${i[1]}</small>`:''}</div></div>`).join('')}</div>`:'')},
+mosaic(d,v){return `<div class="body grid" style="top:24cqh;bottom:8cqh;grid-template-columns:repeat(3,1fr);grid-auto-rows:1fr">${Array.from({length:6},(_,i)=>`<div class="ph2 ${i===0?'on':''}">скрин</div>`).join('')}</div><div class="shade-top" style="height:34%"></div>`+kk(d)+title(d)},
+cols2(d,v){return kk(d)+title(d)+`<div class="body cols2" style="top:30cqh"><div><h4>Один раз</h4>${d.once.map(l=>`<div class="li"><span>${l[0]}</span><em>${l[1]}</em></div>`).join('')}</div><div class="y"><h4>Каждый месяц</h4>${d.monthly.map(l=>`<div class="li"><span>${l[0]}</span><em>${l[1]}</em></div>`).join('')}</div></div><div class="t bot"><p class="c">${d.concl}</p></div>`},
+bars(d,v){return kk(d)+title(d)+`<div class="body" style="top:34cqh;height:34cqh;display:flex;align-items:flex-end;gap:1.2cqw">${Array.from({length:12},(_,i)=>`<i style="flex:1;background:${i?'var(--yellow)':'#7a726a'};height:${i?25+i*5:25}%"></i>`).join('')}</div><div class="t" style="top:70cqh;display:flex;justify-content:space-between;font-size:2.2cqw;color:var(--dim)"><span>месяц 1 · $250</span><span>месяц 12 · +$1.000/мес</span></div><div class="t bot"><p class="c">${d.concl}</p></div>`},
+chat(d,v){return kk(d,1)+`<div class="t center" style="top:14cqh"><p class="c" style="font-size:3.4cqw">${d.sub}</p></div><div class="body chat" style="top:40cqh"><b>${d.t.replace(/<[^>]+>/g,'')}</b><i></i></div><div class="t bot center"><p style="font-size:2.4cqw">${d.link||''}</p></div>`},
+dots(d,v){return `<div class="t center" style="top:16cqh"><h3 style="font-size:5.2cqw">${d.t}</h3></div><div class="body dots" style="top:44cqh"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="t bot center"><p style="font-size:2.7cqw">${d.sub}</p></div>`},
+table(d,v){return kk(d)+title(d)+`<div class="body" style="top:28cqh"><table class="tb"><tr><th>Услуга</th><th>Ваш чек</th><th>Сложн.</th><th>Спрос</th><th>Конк.</th></tr>${d.rows.map(r=>`<tr><td>${r[0]}</td><td class="y">${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`).join('')}</table></div>`},
+sum(d,v){return title(d)+`<div class="body" style="top:32cqh">${d.lines.map(l=>`<div class="cols2"><div class="li" style="grid-column:1/-1;border-top:0"><span>${l[0]}</span><em>${l[1]}</em></div></div>`).join('')}<div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:2.4cqh;border-top:.4cqw solid var(--yellow);padding-top:1.6cqh"><span style="font:500 3cqw Manrope,sans-serif">Итого</span><b style="font:500 8cqw Unbounded,sans-serif;color:var(--yellow)">${d.total}</b></div></div>`},
+wave(d,v){return `<div class="t center" style="top:22cqh"><h3 style="font-size:5.2cqw">${d.t}</h3></div><div class="wave">${Array.from({length:28},(_,i)=>`<i style="height:${20+Math.abs(Math.sin(i*.9))*80}%"></i>`).join('')}</div>`},
+phone(d,v){return `<div class="t top nk"><h3 style="font-size:4.2cqw">${d.t}</h3></div><div class="ph phone" style="left:31cqw;width:38cqw;top:22cqh;bottom:9cqh">РІЛС · 9:16</div>`+(d.sub?`<div class="t" style="bottom:3cqh;text-align:center"><p style="font-size:2cqw;color:var(--dim)">${d.sub}</p></div>`:'')},
+phones3(d,v){return `<div class="t top nk"><h3 style="font-size:4.2cqw">${d.t}</h3></div><div class="body" style="top:24cqh;bottom:8cqh;display:grid;grid-template-columns:repeat(3,1fr);gap:3cqw">${Array.from({length:3},()=>`<div class="ph phone" style="position:relative;inset:auto;height:100%">РІЛС</div>`).join('')}</div>`},
+phonestat(d,v){return `<div class="t top nk"><h3 style="font-size:4.2cqw">${d.t}</h3></div><div class="ph phone" style="left:7cqw;width:36cqw;top:24cqh;bottom:9cqh">${v.ph||'РІЛС · 9:16'}</div><div class="t" style="left:50cqw;top:40cqh;right:6cqw"><div class="big m" style="font-size:11cqw">${v.big}</div><p class="c" style="margin-top:1.4cqh;font-size:2.8cqw">${v.cap}</p></div>`},
+chatstat(d,v){return `<div class="t top nk"><h3 style="font-size:4.2cqw">${d.t}</h3></div><div class="ph screen" style="left:7cqw;width:40cqw;top:26cqh;bottom:9cqh">${v.ph}</div><div class="t" style="left:54cqw;top:40cqh;right:6cqw"><div class="big m" style="font-size:12cqw">${v.big}</div><p class="c" style="margin-top:1.4cqh;font-size:2.8cqw">${v.cap}</p></div>`},
+};
+const L=['А','Б','В'];
+document.getElementById('app').innerHTML=D.map(d=>`<section class="row" id="s${d.n}"><h2>${d.n} · ${d.t.replace(/<[^>]+>/g,'')}${d.k?` <small>${d.k}</small>`:''}</h2><div class="opts">${d.v.map((v,i)=>`<figure class="${v.rec?'rec':''}"><div class="sq">${(T[v.tpl]||T.center)(d,v)}</div><figcaption><b>${L[i]} · ${v.tpl}</b>${v.note}</figcaption></figure>`).join('')}</div></section>`).join('');
+</script>
+</body></html>

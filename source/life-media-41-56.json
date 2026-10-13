@@ -1,0 +1,333 @@
+[
+  {
+    "google": 41,
+    "photos": [
+      {
+        "src": "assets/google-source/g041-g3fadf66108e_0_278.jpg",
+        "width": 1800,
+        "height": 1520,
+        "role": "photo",
+        "fit": "cover",
+        "crop": [
+          0.125,
+          0.21095484826054775,
+          0.7875,
+          0.6994818652849741
+        ]
+      },
+      {
+        "src": "assets/google-source/g041-g3fadf66108e_0_279.jpg",
+        "width": 1276,
+        "height": 956,
+        "role": "photo",
+        "fit": "cover"
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "2 native photos. Crop first removes outer white margin and money emoji; preserves Vlad, laptop and BRAND U! sign. Crop is normalized [x,y,w,h] on original source. Equal rounded frames, centered copy."
+  },
+  {
+    "google": 42,
+    "photos": [
+      {
+        "src": "assets/google-source/g042-g3fadf66108e_0_288.png",
+        "width": 800,
+        "height": 671,
+        "role": "photo",
+        "fit": "cover"
+      },
+      {
+        "src": "assets/google-source/g042-g3fadf66108e_0_289.png",
+        "width": 2048,
+        "height": 2048,
+        "role": "photo",
+        "fit": "cover"
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "2 native photos: office before/after. Show both simultaneously with equal visual weight; match Vlad positions, no black letterboxing."
+  },
+  {
+    "google": 43,
+    "photos": [],
+    "layoutSuggestion": "text",
+    "notes": "Native Google43 has ZERO photos and no video element, but explicit service marker «тут видео». Keep existing assets/video/vlad-story.mp4 as video with poster if renderer supports it; do not display «тут видео» to audience. Other text is exact content. No fabricated replacement photos."
+  },
+  {
+    "google": 44,
+    "photos": [
+      {
+        "src": "assets/google-source/g044-g3fadf66108e_0_305.jpg",
+        "width": 1800,
+        "height": 880,
+        "role": "photo",
+        "fit": "contain",
+        "crop": [
+          0.015555555555555555,
+          0.13636363636363635,
+          0.43666666666666665,
+          0.8329545454545455
+        ]
+      },
+      {
+        "src": "assets/google-source/g044-g3fadf66108e_0_305.jpg",
+        "width": 1800,
+        "height": 880,
+        "role": "photo",
+        "fit": "contain",
+        "crop": [
+          0.4711111111111111,
+          0.21022727272727273,
+          0.4677777777777778,
+          0.759090909090909
+        ]
+      }
+    ],
+    "layoutSuggestion": "collage",
+    "notes": "1 native JPEG contains TWO distinct car photos plus factual price $37 000. Listed twice with normalized crop windows to separate both photographs and remove white surround. Second window excludes partial baked price label; render exact $37 000 as separate HTML badge. Original source must be retained."
+  },
+  {
+    "google": 45,
+    "photos": [
+      {
+        "src": "assets/google-source/g045-g3fadf66108e_0_318.png",
+        "width": 1227,
+        "height": 1545,
+        "role": "photo",
+        "fit": "cover"
+      },
+      {
+        "src": "assets/google-source/g045-g3fadf66108e_0_319.png",
+        "width": 1537,
+        "height": 1524,
+        "role": "photo",
+        "fit": "cover"
+      },
+      {
+        "src": "assets/google-source/g045-g3fadf66108e_0_320.png",
+        "width": 1225,
+        "height": 1403,
+        "role": "photo",
+        "fit": "cover"
+      }
+    ],
+    "layoutSuggestion": "collage",
+    "notes": "Exactly3 native travel photos: Paris, Bali gate, Times Square. Display all3 together in balanced portrait collage; do not reuse these forGoogle46."
+  },
+  {
+    "google": 46,
+    "photos": [
+      {
+        "src": "assets/google-source/g046-g3fadf66108e_0_329.png",
+        "width": 2048,
+        "height": 1158,
+        "role": "evidence",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "Native title repeats «Путешествия.» but raster content differs: 1 photograph (three partners/cars),1 house rendering and1 property plan, with baked text «Строим с партнерами свою деревню, инвестируя $360.000». Keep complete evidence composite so all3 visuals and factual text remain. Overlapping source items cannot be separated without inventing obscured pixels."
+  },
+  {
+    "google": 47,
+    "photos": [
+      {
+        "src": "assets/google-source/g047-g3fadf66108e_0_335.jpg",
+        "width": 1800,
+        "height": 1199,
+        "role": "photo",
+        "fit": "cover"
+      },
+      {
+        "src": "assets/google-source/g047-g3fadf66108e_0_339.png",
+        "width": 1688,
+        "height": 810,
+        "role": "photo",
+        "fit": "cover",
+        "crop": [
+          0.011007463,
+          0.016812507,
+          0.621890567,
+          0.983187493
+        ]
+      },
+      {
+        "src": "assets/google-source/g047-g3fadf66108e_0_340.png",
+        "width": 2048,
+        "height": 1367,
+        "role": "photo",
+        "fit": "cover"
+      }
+    ],
+    "layoutSuggestion": "collage",
+    "notes": "3 native photographs: speaker onstage, conference audience fromInstagram, performance onstage. Second uses nativeGoogle crop to remove Instagram UI/text column. All3 simultaneously, preferably one large+two supporting."
+  },
+  {
+    "google": 48,
+    "photos": [
+      {
+        "src": "assets/google-source/g048-g3fadf66108e_0_348.png",
+        "width": 2048,
+        "height": 1201,
+        "role": "evidence",
+        "fit": "contain",
+        "crop": [
+          0,
+          0.04806972,
+          1,
+          0.937031503
+        ]
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "1 native raster contains7 overlapping publicity images (suit/roses, Witcher, romantic-car poster, SquidGame, giftedSUV, Instagram costume, red costume illustration). Preserve whole composite and all7 images as one evidence panel; do not silently replace with one selected photo. NativeGooglecrop trimsonlyexternal empty margins."
+  },
+  {
+    "google": 49,
+    "photos": [
+      {
+        "src": "assets/google-source/g049-g3fadf66108e_0_357.png",
+        "width": 930,
+        "height": 936,
+        "role": "photo",
+        "fit": "contain"
+      },
+      {
+        "src": "assets/google-source/g049-g3fadf66108e_0_358.png",
+        "width": 933,
+        "height": 940,
+        "role": "photo",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "collage",
+    "notes": "2 native publicity photos/posters; show both sideby side using their near-square aspect, no blank black bands."
+  },
+  {
+    "google": 50,
+    "photos": [
+      {
+        "src": "assets/google-source/g050-g3fadf66108e_0_368.png",
+        "width": 2048,
+        "height": 1194,
+        "role": "evidence",
+        "fit": "contain",
+        "crop": [
+          0.03342771,
+          0.05786478,
+          0.913325434,
+          0.862366324
+        ]
+      },
+      {
+        "src": "assets/google-source/g050-g3fadf66108e_0_369.png",
+        "width": 1898,
+        "height": 1384,
+        "role": "evidence",
+        "fit": "contain",
+        "crop": [
+          0.048706237,
+          0.046917737,
+          0.951293703395355,
+          0.7013114629999999
+        ]
+      }
+    ],
+    "layoutSuggestion": "collage",
+    "notes": "2 native website screenshots. Use native crops as supplied in Google source, preserving both screens and their typography. Both shown simultaneously."
+  },
+  {
+    "google": 51,
+    "photos": [
+      {
+        "src": "assets/google-source/g051-g3fadf66108e_0_378.png",
+        "width": 1892,
+        "height": 1055,
+        "role": "evidence",
+        "fit": "contain"
+      },
+      {
+        "src": "assets/google-source/g051-g3fadf66108e_0_379.png",
+        "width": 1864,
+        "height": 1050,
+        "role": "evidence",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "collage",
+    "notes": "2 native proposal/document screenshots. White is actual document background; preserve it. Natural aspect ratio, samewidth rounded paper panels, no black outer frames."
+  },
+  {
+    "google": 52,
+    "photos": [],
+    "layoutSuggestion": "text",
+    "notes": "ZERO native images. Centered typography or nativeHTML process marks, not unrelated photos."
+  },
+  {
+    "google": 53,
+    "photos": [
+      {
+        "src": "assets/google-source/g053-g3fadf66108e_0_393.jpg",
+        "width": 1800,
+        "height": 1355,
+        "role": "photo",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "split",
+    "notes": "1 group photograph; preserve whole group, avoidcover crop cutting people. Centered title/body and photographbelow or split at dense copy."
+  },
+  {
+    "google": 54,
+    "photos": [
+      {
+        "src": "assets/google-source/g054-g3fadf66108e_0_400.jpg",
+        "width": 1800,
+        "height": 837,
+        "role": "photo",
+        "fit": "contain",
+        "crop": [
+          0.008333333333333333,
+          0.016726403823178016,
+          0.5222222222222223,
+          0.942652329749104
+        ]
+      },
+      {
+        "src": "assets/google-source/g054-g3fadf66108e_0_400.jpg",
+        "width": 1800,
+        "height": 837,
+        "role": "photo",
+        "fit": "contain",
+        "crop": [
+          0.5544444444444444,
+          0.016726403823178016,
+          0.43277777777777776,
+          0.942652329749104
+        ]
+      }
+    ],
+    "layoutSuggestion": "split",
+    "notes": "1 native composite includesTWO office photographs already seen onGoogle42. Split using listed normalizedcrop windows to remove white outer surround while keeping both photographs. Dense copy merits split/diagram above matched photo row."
+  },
+  {
+    "google": 55,
+    "photos": [],
+    "layoutSuggestion": "text",
+    "notes": "ZERO native images. «фото офис снаряд» is author instruction, not visible content. Use text-centered restrained scene until real office-shell photograph available; never generate documentary damage image."
+  },
+  {
+    "google": 56,
+    "photos": [
+      {
+        "src": "assets/google-source/g056-g3fadf66108e_0_418.png",
+        "width": 1176,
+        "height": 1529,
+        "role": "photo",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "1 native vertical photograph showing emptiedoffice and Vlad. Centered compact copy aboveportrait or portraitleft/text right; preserve original photo, no overlay icon or invented cross-out needed."
+  }
+]

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>rest 197 · Что входит целиком · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.slide em{font-style:normal;color:var(--yellow)}
+.h{position:absolute;left:6cqw;right:6cqw;top:5cqh;margin:0;text-align:center;font:500 4.6cqw/1.15 Unbounded,sans-serif;letter-spacing:-.04em}
+.tot{position:absolute;left:6cqw;right:6cqw;bottom:4.5cqh;display:flex;align-items:center;justify-content:space-between;padding:2cqh 3cqw;border-radius:1.4cqw;background:#fdd506;color:#0b0907}
+.tot span{font:600 2.2cqw/1 Manrope,sans-serif}
+.tot b{font:700 5cqw/1 Unbounded,sans-serif;letter-spacing:-.05em}
+/* A · 6 карток категорій із підсумком */
+.v-A .grid{position:absolute;left:5cqw;right:5cqw;top:15cqh;bottom:17cqh;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1.25fr 1fr;gap:1.6cqw}
+.v-A .c{display:flex;flex-direction:column;padding:2cqh 1.8cqw;border:1px solid #2e2620;border-radius:1.4cqw;background:linear-gradient(180deg,#17120d,#0f0c09)}
+.v-A .c .k{font:600 1.3cqw/1.2 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#fdd506}
+.v-A .c .r{display:flex;justify-content:space-between;gap:1cqw;padding:.9cqh 0;border-bottom:1px solid #221c17;font:500 1.75cqw/1.3 Manrope,sans-serif;color:#e3dfd8}
+.v-A .c .r b{flex:none;font-weight:700;color:#f5f3ee}
+.v-A .c .r i{font-style:normal;color:#8d8576;margin-right:.6cqw}
+.v-A .c .sub{margin-top:auto;padding-top:1.2cqh;display:flex;justify-content:space-between;font:700 2.2cqw/1 Unbounded,sans-serif;letter-spacing:-.03em;color:#fdd506}
+.v-A .c .sub small{font:500 1.3cqw/1 Manrope,sans-serif;color:#8d8576;letter-spacing:0;align-self:center}
+/* B · смуга вартості + список у дві колонки */
+.v-B .bar{position:absolute;left:6cqw;right:6cqw;top:15.5cqh;height:5.4cqh;display:flex;border-radius:1cqw;overflow:hidden}
+.v-B .bar i{display:flex;align-items:center;justify-content:center;font:700 1.45cqw/1 Manrope,sans-serif;font-style:normal;color:#0b0907;white-space:nowrap;overflow:hidden}
+.v-B .leg{position:absolute;left:6cqw;right:6cqw;top:22.5cqh;display:flex;flex-wrap:wrap;gap:.6cqh 2.2cqw;font:500 1.45cqw/1.2 Manrope,sans-serif;color:#c4bdb1}
+.v-B .leg span:before{content:"";display:inline-block;width:1.1cqw;height:1.1cqw;border-radius:.3cqw;margin-right:.7cqw;vertical-align:-.1em;background:var(--c)}
+.v-B .list{position:absolute;left:6cqw;right:6cqw;top:30cqh;bottom:17cqh;columns:2;column-gap:4cqw}
+.v-B .r{break-inside:avoid;display:grid;grid-template-columns:3.4cqw 1fr auto;align-items:baseline;gap:.8cqw;padding:.85cqh 0;border-bottom:1px solid #221c17;font:500 1.75cqw/1.3 Manrope,sans-serif;color:#e3dfd8}
+.v-B .r i{font:600 1.3cqw/1 'JetBrains Mono',monospace;font-style:normal;color:#8d8576;border-left:.35cqw solid var(--c);padding-left:.7cqw}
+.v-B .r b{font-weight:700;color:#f5f3ee}
+/* C · 6 плиток: категорія, сума, назви без цін */
+.v-C .grid{position:absolute;left:5cqw;right:5cqw;top:15cqh;bottom:17cqh;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:1.6cqw}
+.v-C .c{display:flex;flex-direction:column;gap:1.2cqh;padding:2.4cqh 2cqw;border:1px solid #2e2620;border-radius:1.4cqw;background:radial-gradient(ellipse 90% 60% at 0 0,rgba(253,213,6,.08),transparent 70%),#120e0b}
+.v-C .c .k{font:600 1.35cqw/1.2 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#b3a996}
+.v-C .c .s{font:700 4.4cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:#fdd506}
+.v-C .c .n{font:600 1.4cqw/1 Manrope,sans-serif;color:#8d8576}
+.v-C .c ul{margin:1.2cqh 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.7cqh}
+.v-C .c li{position:relative;padding-left:1.8cqw;font:500 1.75cqw/1.3 Manrope,sans-serif;color:#e3dfd8}
+.v-C .c li:before{content:"";position:absolute;left:0;top:.45em;width:.8cqw;height:.8cqw;border-radius:.2cqw;background:#fdd506}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · 6 карток з підсумком</button><button role="tab" data-v="B">Б · Смуга вартості + список</button><button role="tab" data-v="C">В · 6 плиток: сума і склад</button></div>
+<p class="description"></p>
+<div class="actions"><button id="replay">↻ Повторить анимацию</button></div>
+<p class="note">Пункти й ціни — дослівно з поточного слайда (17 пунктів, разом $21.350). «98 готовых задач», «11 модулей».</p>
+</nav>
+<script>
+const CAT=[
+ {k:'Система и агенты',c:'#fdd506',it:[['01','Полная система: 11 модулей',1500],['02','Агенты под 7 трендовых услуг',5200],['03','98 готовых задач под ваши услуги',4800]]},
+ {k:'Готовые базы',c:'#f2a900',it:[['04','База шаблонов сайтов по нишам',600],['05','База кейсов под все услуги',400]]},
+ {k:'Чтобы продавать',c:'#e3dfd8',it:[['06','Настройки агента-продавца',1200],['07','Скрипты продаж и шаблоны КП',400],['08','Договоры и приём оплаты',350]]},
+ {k:'Чтобы находить клиентов',c:'#b3a996',it:[['09','Связки топовых локаций',500],['10','Каталог связок + новые связки',600]]},
+ {k:'Инструменты',c:'#8d8576',it:[['11','Нейросети со скидкой до −75%',900],['12','Обновления агентов',500]]},
+ {k:'Люди рядом',c:'#5d564e',it:[['13','Куратор проверяет каждый шаг',1100],['14','Закрытый чат и рейтинг',300],['15','Доска объявлений: работа и клиенты',600],['16','Живые Q&A · 10 сессий',900],['17','Групповые страт-сессии · 4 сессии',1500]]}];
+const f=n=>'$'+n.toLocaleString('de-DE');
+const sum=c=>c.it.reduce((a,x)=>a+x[2],0), TOTAL=CAT.reduce((a,c)=>a+sum(c),0);
+const H='<h1 class="h fx-up">Что входит <em>целиком</em></h1>', T='<div class="tot fx-up" style="animation-delay:.4s"><span>Ценность целиком</span><b>'+f(TOTAL)+'</b></div>';
+window.VARIANTS={
+A:{html:H+'<div class="grid fx-up" style="animation-delay:.15s">'+CAT.map(c=>'<div class="c"><span class="k">'+c.k+'</span>'+c.it.map(x=>'<div class="r"><span><i>'+x[0]+'</i>'+x[1]+'</span><b>'+f(x[2])+'</b></div>').join('')+'<div class="sub"><small>итого</small>'+f(sum(c))+'</div></div>').join('')+'</div>'+T,
+   desc:'6 карток за категоріями (система й агенти, бази, продажі, клієнти, інструменти, люди). У кожній — пункти з цінами й підсумок категорії жовтим; унизу загальна сума. Чітка структура замість суцільного списку; чіпи з цінами агентів прибрано (сума агентів — в одному рядку).'},
+B:{html:H+'<div class="bar fx-up" style="animation-delay:.1s">'+CAT.map(c=>'<i style="flex:'+sum(c)+';background:'+c.c+'">'+(sum(c)>1500?f(sum(c)):'')+'</i>').join('')+'</div><div class="leg fx-up" style="animation-delay:.15s">'+CAT.map(c=>'<span style="--c:'+c.c+'">'+c.k+' · '+f(sum(c))+'</span>').join('')+'</div><div class="list fx-up" style="animation-delay:.25s">'+CAT.map(c=>c.it.map(x=>'<div class="r" style="--c:'+c.c+'"><i>'+x[0]+'</i><span>'+x[1]+'</span><b>'+f(x[2])+'</b></div>').join('')).join('')+'</div>'+T,
+   desc:'Зверху — смуга, з чого складається $21.350 (частка кожної категорії видно одразу), під нею легенда. Нижче всі 17 пунктів у дві колонки, кольорова позначка = категорія. Найбільше цифр, але порядок у них.'},
+C:{html:H+'<div class="grid fx-up" style="animation-delay:.15s">'+CAT.map(c=>'<div class="c"><span class="k">'+c.k+'</span><span class="s">'+f(sum(c))+'</span><span class="n">'+c.it.length+' '+(c.it.length===1?'пункт':c.it.length<5?'пункта':'пунктов')+'</span><ul>'+c.it.map(x=>'<li>'+x[1]+'</li>').join('')+'</ul></div>').join('')+'</div>'+T,
+   desc:'6 плиток: категорія, велика сума категорії і склад без окремих цін. Найлегше читається з екрана — глядач бачить 6 сум і загальну, деталі Влад проговорює голосом. Рекомендація.'}};
+window.ORDER=['C','A','B'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

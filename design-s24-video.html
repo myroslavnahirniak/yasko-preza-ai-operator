@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>24 · Реалити-шоу AI-агентов · живой макет + моушн-выноски</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+/* 30.09 · прототип слайда 24: фонове відео «живий макет» (Seedance) + моушн-виноски по кліку.
+   Вступ 0–6 с грає сам і стає на паузу; кожен клік програє відрізок, де вмикається наступна «станція», і малює виноску. */
+.slide video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.shade{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(11,9,7,.9) 0%,rgba(11,9,7,.7) 18%,transparent 30%),linear-gradient(0deg,rgba(11,9,7,.94) 0%,rgba(11,9,7,.7) 20%,transparent 36%)}
+.hd{position:absolute;left:7cqw;right:7cqw;top:4.5cqh;z-index:3;text-align:center}
+.hd h1{font:500 4.3cqw/1.12 Unbounded,sans-serif;letter-spacing:-.03em;text-wrap:balance}
+.hd p{margin:1.6cqh auto 0;max-width:76cqw;font:400 2cqw/1.4 Manrope,sans-serif;color:var(--muted);text-wrap:balance}
+.lines{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none;overflow:visible}
+.lines path{fill:none;stroke:#fdd506;stroke-width:.18;stroke-dasharray:1;stroke-dashoffset:1;opacity:.9;transition:stroke-dashoffset .7s cubic-bezier(.2,.8,.2,1)}
+.lines circle{fill:#fdd506;opacity:0;transform-box:fill-box;transform-origin:center;transition:opacity .3s .55s}
+.lines circle.halo{fill:rgba(253,213,6,.28)}
+.lines .on path{stroke-dashoffset:0}
+.lines .on circle{opacity:1}
+.lines .now circle.halo{animation:halo 1.6s ease-out .6s infinite}
+@keyframes halo{0%{transform:scale(1);opacity:.9}100%{transform:scale(3.2);opacity:0}}
+.lines .past path{stroke:#cfc6b4;opacity:.55}
+.lines .past circle:not(.halo){fill:#cfc6b4}
+.call{position:absolute;z-index:3;top:80cqh;width:17cqw;transform:translateX(-50%);text-align:center;opacity:0;translate:0 1.2cqh;transition:opacity .45s .35s,translate .45s .35s,color .4s}
+.call b{display:block;font:500 2.2cqw/1.15 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--yellow)}
+.call i{display:block;margin-top:.8cqh;font:500 1.25cqw/1 'JetBrains Mono',monospace;font-style:normal;letter-spacing:.18em;color:var(--dim)}
+.call.on{opacity:1;translate:0 0}
+.call.past b{color:var(--cream)}
+.hint{position:absolute;right:3cqw;bottom:2.4cqh;z-index:3;font:500 1.2cqw/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#6f685e}
+</style></head><body>
+<main class="slide" id="slide">
+  <video id="v" src="assets/gen-2430/sb24/diorama/video24-B-draft.mp4" muted playsinline preload="auto" poster="assets/gen-2430/sb24/diorama/k6dark.webp"></video>
+  <div class="shade"></div>
+  <div class="hd"><h1>Сегодня — реалити&#8209;шоу <em>AI&#8209;агентов</em></h1><p>Покажу вам свою команду AI-агентов: возьму случайный бизнес из чата — и при вас они окажут ему полный пакет выхода в онлайн.</p></div>
+  <svg class="lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+  <div id="calls"></div>
+  <span class="hint" id="hint"></span>
+</main>
+<nav class="controls">
+  <p class="description">Вариант B (камера неподвижна): 0–2 с тихая жизнь улочки и пауза на тёмном макете. Каждый клик — включается следующая «станция» и рисуется выноска. После пятой — пациенты заходят, касса.</p>
+  <p class="note">Клавиши: ↓ / Space / → — следующий шаг, ← — назад, R — сначала. Таймкоды и точки выносок подстраиваются в массиве STATIONS.</p>
+  <div class="actions"><button id="prev">◀ шаг</button><span id="stepinfo"></span><button id="next">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+</nav>
+<script>
+// t — конец отрезка, где станция уже включилась; x,y — точка на объекте (% кадра); lx — центр подписи (% ширины)
+const INTRO_END = 2.2;   // 0–2 с: тихе життя вулички, машинка проїжджає — і пауза на темному макеті
+const STATIONS = [
+  {name:'Трендовый сайт',      t:3.6,  x:21, y:53, lx:13},
+  {name:'Объявление',          t:5.6,  x:36, y:54, lx:31},
+  {name:'Реклама',             t:7.0,  x:54, y:33, lx:50},
+  {name:'Голосовой ассистент', t:9.6,  x:58, y:54, lx:69},
+  {name:'AI-продавец',         t:15.0, x:76, y:57, lx:87},
+];
+const LABEL_Y = 78.5;
+const v = document.getElementById('v'), svg = document.querySelector('.lines'), calls = document.getElementById('calls');
+svg.innerHTML = STATIONS.map((s, i) =>
+  `<g data-i="${i}"><path pathLength="1" d="M${s.lx} ${LABEL_Y} L${s.lx} ${LABEL_Y - 4} L${s.x} ${s.y + 2.2}"/><circle class="halo" cx="${s.x}" cy="${s.y}" r=".9"/><circle cx="${s.x}" cy="${s.y}" r=".75"/></g>`).join('');
+calls.innerHTML = STATIONS.map((s, i) => `<div class="call" style="left:${s.lx}cqw"><b>${s.name}</b><i>0${i + 1} / 05</i></div>`).join('');
+const G = [...svg.querySelectorAll('g')], C = [...calls.children];
+let step = 0, stopAt = null, tick = 0;
+// зупинка на таймкоді: таймер 40 мс + timeupdate (rAF не працює у фонових вкладках)
+function check(){ if (stopAt != null && v.currentTime >= stopAt - 0.03){ v.pause(); stopAt = null; clearInterval(tick); tick = 0; } }
+function playTo(t){ stopAt = t; if (v.currentTime >= t - 0.03){ check(); return; } const p = v.play(); if (p && p.catch) p.catch(()=>{}); clearInterval(tick); tick = setInterval(check, 40); }
+v.addEventListener('timeupdate', check);
+function paint(){
+  G.forEach((g, i) => { g.classList.toggle('on', i < step); g.classList.toggle('now', i === step - 1); g.classList.toggle('past', i < step - 1); });
+  C.forEach((c, i) => { c.classList.toggle('on', i < step); c.classList.toggle('past', i < step - 1); });
+  document.getElementById('stepinfo').textContent = 'шаг ' + step + ' / 5';
+  document.getElementById('hint').textContent = step < 5 ? 'клик — дальше' : '';
+}
+function restart(){ step = 0; paint(); v.currentTime = 0; playTo(INTRO_END); }
+function next(){ if (step >= 5) return; step++; paint(); playTo(STATIONS[step - 1].t); }
+function prev(){ if (step <= 0) return; step--; paint(); stopAt = null; clearInterval(tick); v.pause(); v.currentTime = step ? STATIONS[step - 1].t : INTRO_END; }
+document.getElementById('next').onclick = next; document.getElementById('prev').onclick = prev; document.getElementById('replay').onclick = restart;
+document.getElementById('slide').onclick = next;
+document.addEventListener('keydown', e => {
+  if (['ArrowDown', 'ArrowRight', ' '].includes(e.key)){ e.preventDefault(); next(); }
+  else if (['ArrowUp', 'ArrowLeft'].includes(e.key)){ e.preventDefault(); prev(); }
+  else if (e.key === 'r') restart();
+});
+const SRC = v.getAttribute('src'); v.removeAttribute('src'); v.load();
+fetch(SRC).then(r => r.blob()).then(b => { v.src = URL.createObjectURL(b); v.addEventListener('loadeddata', restart, { once: true }); });
+paint();
+</script>
+</body></html>

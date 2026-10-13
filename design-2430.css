@@ -1,0 +1,105 @@
+/* 30.09 · варіанти слайдів 24 / 27 / 31 (спільні стилі поверх design-options-base.css) */
+.hd{position:absolute;left:7cqw;right:7cqw;top:6.5cqh;z-index:4;text-align:center}
+.hd.l{text-align:left}
+.hd .kk{display:block;margin-bottom:1.4cqh;font:500 2cqw/1 Manrope,sans-serif;color:var(--yellow)}
+.hd h1{font:500 4.6cqw/1.12 Unbounded,sans-serif;letter-spacing:-.03em;text-wrap:balance}
+.hd p{margin:2.2cqh auto 0;max-width:74cqw;font:400 2.3cqw/1.45 Manrope,sans-serif;color:var(--muted);text-wrap:balance}
+.hd.l p{margin-left:0}
+.hd p b{color:var(--yellow);font-weight:600}
+.hd p.mut{color:#8f877b;margin-top:1.4cqh}
+.art:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.6) 26%,transparent 44%)}
+.nav-pages a{color:#fdd506;text-decoration:none;margin:0 4px}
+
+/* ── 24 · А · скетчи ── */
+.sk-row{position:absolute;left:4cqw;right:4cqw;top:37cqh;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1cqw;z-index:3}
+.sk{text-align:center;opacity:.3;filter:grayscale(.7) brightness(.8);transition:opacity .45s,filter .45s,transform .45s cubic-bezier(.2,.8,.2,1)}
+.sk img{width:100%;aspect-ratio:1;object-fit:cover;mix-blend-mode:lighten;display:block}
+.sk b{display:block;margin-top:.6cqh;font:500 1.75cqw/1.25 Manrope,sans-serif;color:var(--muted)}
+.sk.on{opacity:1;filter:none;transform:translateY(-1.2cqh) scale(1.12)}
+.sk.on b{color:var(--yellow)}
+.bigname{position:absolute;left:7cqw;right:7cqw;top:67cqh;text-align:center;z-index:3}
+.bigname b{display:block;font:500 5cqw/1.1 Unbounded,sans-serif;letter-spacing:-.03em;color:var(--yellow)}
+.bigname i{display:block;margin-top:1.4cqh;font:500 1.6cqw/1 'JetBrains Mono',monospace;font-style:normal;letter-spacing:.2em;color:var(--dim)}
+.dots{position:absolute;left:0;right:0;bottom:12cqh;display:flex;justify-content:center;gap:1cqw;z-index:3}
+.dots i{width:1cqw;height:1cqw;border-radius:50%;background:#4a4133}
+.dots i.on{background:var(--yellow)}
+
+/* ── 24 · Б · режиссёрский пульт ── */
+.v-B24{background:radial-gradient(ellipse at 50% 55%,#1b150e 0%,#0b0907 62%)}
+.mon{position:absolute;left:17cqw;right:17cqw;top:31cqh;aspect-ratio:16/10;border-radius:1.2cqw;overflow:hidden;background:#000;
+  border:.35cqw solid #2a241c;box-shadow:0 3cqh 9cqw rgba(0,0,0,.7),0 0 0 .15cqw rgba(253,213,6,.3),0 0 7cqw rgba(253,213,6,.12);z-index:3}
+.mon img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s}
+.mon img.on{opacity:1}
+.onair{position:absolute;left:1.4cqw;top:1.4cqw;z-index:2;display:flex;align-items:center;gap:.7cqw;font:500 1.35cqw/1 'JetBrains Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:rgba(11,9,7,.72);border:1px solid rgba(255,255,255,.2);padding:.7cqw 1cqw;border-radius:.6cqw}
+.onair i{width:1cqw;height:1cqw;border-radius:50%;background:#c6000c;box-shadow:0 0 1.2cqw #c6000c;animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.35}}
+.mon .lab{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:6cqh 2.4cqw 2cqh;background:linear-gradient(transparent,rgba(0,0,0,.88));font:500 3cqw/1.1 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--yellow)}
+.strip{position:absolute;left:7cqw;right:7cqw;top:76cqh;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1.2cqw;z-index:3}
+.th{position:relative}
+.th .scr{position:relative;aspect-ratio:16/10;border-radius:.7cqw;overflow:hidden;border:.2cqw solid #2c2620;opacity:.5;transition:opacity .4s,border-color .4s}
+.th img{width:100%;height:100%;object-fit:cover;display:block}
+.th .cam{position:absolute;left:.5cqw;top:.5cqw;font:500 1cqw/1 'JetBrains Mono',monospace;letter-spacing:.12em;color:#ddd;background:rgba(0,0,0,.65);padding:.35cqw .5cqw;border-radius:.3cqw}
+.th b{display:block;margin-top:.9cqh;font:500 1.55cqw/1.2 Manrope,sans-serif;color:#8f877b;text-align:center;transition:color .4s}
+.th.on .scr{opacity:1;border-color:var(--yellow)}
+.th.on .cam{background:#c6000c;color:#fff}
+.th.on b{color:var(--yellow)}
+
+/* ── 24 · В · студия ── */
+.v-C24 .art:after{background:linear-gradient(180deg,rgba(11,9,7,.9) 0%,rgba(11,9,7,.55) 24%,transparent 40%),linear-gradient(0deg,rgba(11,9,7,.85) 0%,transparent 26%)}
+.booth-glow{position:absolute;z-index:2;top:55cqh;width:24cqw;height:30cqh;transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(closest-side,rgba(253,213,6,.34),rgba(253,213,6,.1) 55%,transparent);mix-blend-mode:screen;opacity:0;transition:opacity .45s,left .45s cubic-bezier(.2,.8,.2,1)}
+.booth-glow.on{opacity:1}
+.blab{position:absolute;z-index:4;top:71cqh;width:17cqw;transform:translateX(-50%);text-align:center;font:500 1.75cqw/1.25 Manrope,sans-serif;color:#9d9486;transition:color .4s}
+.blab:before{content:'';display:block;width:1px;height:3cqh;margin:0 auto 1cqh;background:linear-gradient(180deg,transparent,#5a5040)}
+.blab.on{color:var(--yellow)}
+.blab.on:before{background:linear-gradient(180deg,transparent,#fdd506)}
+
+/* ── 27 · А · настоящий холст ── */
+.v-A27{background:radial-gradient(ellipse at 40% 62%,#1c160e 0%,#0b0907 60%)}
+.laptop{position:absolute;left:6cqw;top:35cqh;width:64cqw;z-index:3}
+.laptop .scr{aspect-ratio:16/10;border-radius:1.4cqw 1.4cqw 0 0;border:.7cqw solid #1b1814;border-bottom-width:1.4cqw;overflow:hidden;background:#000;box-shadow:0 0 5cqw rgba(253,213,6,.1)}
+.laptop .scr img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.laptop .base{height:1.5cqh;margin:0 -4cqw;border-radius:0 0 1.5cqw 1.5cqw;background:linear-gradient(#35302a,#16130f)}
+.phone{position:absolute;right:7cqw;top:39cqh;width:19cqw;aspect-ratio:390/844;border-radius:2.6cqw;border:.6cqw solid #1b1814;overflow:hidden;background:#000;z-index:4;box-shadow:-2cqw 2cqh 5cqw rgba(0,0,0,.7)}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.url{position:absolute;left:6cqw;top:30.5cqh;z-index:4;font:500 1.45cqw/1 'JetBrains Mono',monospace;letter-spacing:.08em;color:var(--yellow)}
+.items{position:absolute;left:7cqw;right:7cqw;top:81cqh;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.6cqh 3cqw;z-index:4}
+.it{display:flex;gap:1cqw;align-items:baseline}
+.it s{text-decoration:none;font:500 1.3cqw/1 'JetBrains Mono',monospace;color:var(--yellow)}
+.it b{font:600 1.75cqw/1.2 Manrope,sans-serif;color:var(--cream)}
+.it span{display:block;font:400 1.45cqw/1.3 Manrope,sans-serif;color:#8f877b;margin-top:.3cqh}
+
+/* ── 27 · Б · скетчи ── */
+.cards{position:absolute;left:7cqw;right:7cqw;top:33cqh;bottom:5cqh;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:1fr 1fr;gap:1.8cqw;z-index:3}
+.cd{position:relative;border:1px solid #2a2420;border-radius:1.4cqw;background:linear-gradient(180deg,#15110d,#0e0b08);overflow:hidden;display:flex;flex-direction:column}
+.cd img{width:100%;flex:1;min-height:0;object-fit:cover;mix-blend-mode:lighten;display:block}
+.cd div{padding:0 1.6cqw 1.8cqh}
+.cd b{display:block;font:500 2cqw/1.2 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--cream)}
+.cd span{display:block;margin-top:.6cqh;font:400 1.55cqw/1.3 Manrope,sans-serif;color:#8f877b}
+
+/* ── 27 · В · клош ── */
+.v-C27 .art:after,.v-B31 .art:after{background:linear-gradient(180deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.55) 26%,transparent 42%),linear-gradient(0deg,rgba(11,9,7,.92) 0%,rgba(11,9,7,.6) 16%,transparent 30%)}
+.chips{position:absolute;left:6cqw;right:6cqw;bottom:5.5cqh;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2cqw;z-index:4}
+.chip{border:1px solid rgba(253,213,6,.35);border-radius:1cqw;background:rgba(11,9,7,.72);padding:1.2cqh 1.3cqw}
+.chip b{display:block;font:600 1.7cqw/1.2 Manrope,sans-serif;color:var(--cream)}
+.chip span{display:block;margin-top:.3cqh;font:400 1.4cqw/1.3 Manrope,sans-serif;color:#8f877b}
+
+/* ── 31 · А · барыга ── */
+.v-A31 .art img{transform:translateX(24cqw) scale(1.12)}
+.v-A31 .art:after{background:linear-gradient(90deg,#0b0907 0%,#0b0907 22%,rgba(11,9,7,.78) 40%,rgba(11,9,7,.15) 60%,transparent 72%)}
+.v-A31 .hd{top:auto;bottom:auto;top:50%;transform:translateY(-50%);right:auto;width:46cqw}
+.v-A31 .hd h1{font-size:4.8cqw}
+
+/* ── 31 · В · типографика ── */
+.v-C31 .art-r{position:absolute;right:0;top:0;width:56cqw;height:100cqh;overflow:hidden;z-index:1}
+.v-C31 .art-r img{position:absolute;height:175cqh;width:175cqh;max-width:none;left:-54cqw;top:3cqh;filter:brightness(.75)}
+.v-C31 .art-r:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#0b0907 0%,rgba(11,9,7,.4) 30%,transparent 60%),linear-gradient(0deg,#0b0907 18%,rgba(11,9,7,.35) 45%,transparent 62%)}
+.v-C31 .hd{right:44cqw;top:8cqh}
+.huge{position:absolute;left:7cqw;top:40cqh;z-index:4}
+.huge b{display:block;font:500 15cqw/.95 Unbounded,sans-serif;letter-spacing:-.06em;color:var(--yellow);text-shadow:0 0 6cqw rgba(253,213,6,.25)}
+.huge span{display:block;margin-top:1cqh;font:500 4.2cqw/1 Unbounded,sans-serif;letter-spacing:-.03em;color:var(--cream)}
+.v-C31 .bottom{position:absolute;left:7cqw;right:44cqw;bottom:8cqh;z-index:4;font:400 2.2cqw/1.45 Manrope,sans-serif;color:var(--muted)}
+.v-C31 .bottom p+p{margin-top:1.4cqh;color:#8f877b}
+.v-C31 .bottom b{color:var(--yellow);font-weight:600}
+.v-B31 .art img{transform:translateY(9cqh) scale(1.06);transform-origin:50% 100%}
+.v-B31.play.kb .art img{animation:none}

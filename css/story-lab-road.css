@@ -1,0 +1,38 @@
+.road-demo{background:radial-gradient(ellipse at 60% 75%,rgba(253,213,6,.055),transparent 63%),#0b0907;overflow:hidden;}
+.road-demo .road-intro,.road-demo .road-scene{position:absolute;inset:0;transition:opacity 450ms ease,transform 650ms cubic-bezier(.22,.72,.2,1);}
+.road-demo .road-intro{z-index:4;opacity:0;pointer-events:none;transform:translateX(-5cqw);}
+.road-demo.road-at-intro .road-intro{opacity:1;transform:none;pointer-events:auto;}
+.road-demo.road-at-intro .road-scene{opacity:0;transform:translateX(8cqw);pointer-events:none;}
+.road-demo .road-copy{position:absolute;left:8cqw;right:8cqw;top:8cqw;z-index:3;text-align:center;}
+.road-demo .road-copy .lab-title{font-size:4.8cqw;line-height:1.25;margin:0;text-wrap:balance;}
+.road-demo .road-copy .lab-body{font-size:2.55cqw;line-height:1.5;max-width:81cqw;margin:2.5cqw auto 0;text-wrap:balance;}
+.road-demo .road-window{position:absolute;inset:0;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);}
+.road-demo .road-world{position:absolute;top:0;left:0;width:600cqw;height:100cqw;transform:translate3d(0,0,0);transition:transform 680ms cubic-bezier(.25,.75,.18,1),opacity 450ms ease;}
+.road-demo .road-episode{position:absolute;top:38cqw;width:70cqw;height:41cqw;opacity:.14;transform:scale(.94);transform-origin:center;transition:opacity 580ms ease,transform 680ms cubic-bezier(.25,.75,.18,1);}
+.road-demo .road-episode.is-current{opacity:1;transform:scale(1);}
+.road-demo .road-episode.is-neighbor{opacity:.22;}
+.road-demo .road-episode .road-art{inset:0;width:100%;height:100%;border-radius:2cqw;overflow:hidden;background:transparent;}
+.road-demo .road-track{position:absolute;inset:0;width:600cqw;height:100cqw;overflow:visible;fill:none;stroke-width:2;}
+.road-demo .road-track-base{stroke:rgba(253,213,6,.22);}
+.road-demo .road-track-progress{stroke:#fdd506;stroke-dasharray:1000;transition:stroke-dashoffset 680ms cubic-bezier(.25,.75,.18,1);}
+.road-demo .road-node{position:absolute;top:82.7cqw;transform:translateX(-50%);padding:0;border:0;width:20cqw;height:11cqw;background:transparent;color:#aaa49a;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:1.4cqw;font:inherit;}
+.road-demo .road-node-dot{display:block;flex:none;width:4.6cqw;height:4.6cqw;box-sizing:border-box;border:1px solid #766315;border-radius:50%;background:#0b0907;box-shadow:0 0 0 .6cqw #0b0907;transition:background 350ms,border-color 350ms,transform 350ms;}
+.road-demo .road-node-label{font-size:2.15cqw;line-height:1.4;white-space:nowrap;transition:color 350ms;}
+.road-demo .road-node.is-current .road-node-dot{background:#fdd506;border-color:#fdd506;transform:scale(1.05);}
+.road-demo .road-node.is-past .road-node-dot{background:#fdd506;border-color:#fdd506;}
+.road-demo .road-node.is-current .road-node-label{color:#fdd506;}
+.road-demo .road-node:focus-visible{outline:2px solid #fdd506;outline-offset:1cqw;border-radius:1cqw;}
+.road-demo .road-overview{position:absolute;inset:0;opacity:0;pointer-events:none;transform:scale(.92);transition:opacity 500ms ease,transform 650ms cubic-bezier(.25,.75,.18,1);}
+.road-demo.road-at-final .road-world{opacity:0;}
+.road-demo.road-at-final .road-overview{opacity:1;transform:scale(1);pointer-events:auto;}
+.road-demo.road-at-final .road-copy{top:8cqw;}
+.road-demo .road-overview-path{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:#fdd506;stroke-width:1.7;opacity:.65;}
+.road-demo .road-memory{position:absolute;width:36cqw;height:29cqw;appearance:none;border:0;color:#f5f3ee;background:transparent;padding:0;cursor:pointer;}
+.road-demo .road-memory .road-memory-photo{top:0;left:0;width:100%;height:24cqw;border-radius:1.4cqw;overflow:hidden;}
+.road-demo .road-memory>span{position:absolute;top:25.5cqw;left:0;width:100%;font:500 2.2cqw/1.4 Manrope,sans-serif;text-align:center;background:#0b0907;}
+.road-demo .road-memory-0{left:8cqw;top:29cqw;}
+.road-demo .road-memory-1{left:56cqw;top:29cqw;}
+.road-demo .road-memory-2{left:8cqw;top:64cqw;}
+.road-demo .road-memory-3{left:56cqw;top:64cqw;}
+.road-demo.road-no-motion *, .road-demo.road-no-motion{transition:none!important;}
+@media(prefers-reduced-motion:reduce){.road-demo *, .road-demo{transition:none!important;animation:none!important;}}

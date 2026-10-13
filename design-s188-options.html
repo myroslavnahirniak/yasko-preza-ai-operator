@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>188 · На выходе — рекламные объявления · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.text{position:absolute;left:7cqw;right:7cqw;z-index:3;text-align:center}
+.text h1{font:500 5cqw/1.15 Unbounded,sans-serif;letter-spacing:-.03em;text-wrap:balance}
+.text p{margin-top:2.2cqh;font:400 2.5cqw/1.35 Manrope,sans-serif;color:var(--muted)}
+.cr{position:absolute;left:7cqw;right:7cqw;z-index:3;display:grid;grid-template-columns:repeat(3,1fr);gap:2cqw}
+.v-A .cr{left:4cqw;right:4cqw;gap:1.6cqw}
+.v-A .cr .l{display:none}
+.cr img{display:block;width:100%;aspect-ratio:1;object-fit:cover;background:#000;border:1px solid #2a2420;opacity:0;transform:translateY(2cqh)}
+.play .cr img{animation:up .7s cubic-bezier(.2,.8,.2,1) forwards}
+.play .cr img:nth-child(1){animation-delay:.15s}.play .cr img:nth-child(2){animation-delay:.3s}.play .cr img:nth-child(3){animation-delay:.45s}
+.cr .l{font:500 1.8cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;color:var(--dim);text-align:center;margin-top:1.2cqh}
+/* А · креативы сверху, текст снизу */
+.v-A .cr{top:8cqh}
+.v-A .text{top:44cqh;bottom:14cqh;display:flex;flex-direction:column;justify-content:center}
+.v-A .text h1{font-size:5.4cqw}
+/* Б · текст сверху, креативы снизу */
+.v-B .text{top:8cqh}
+.v-B .cr{top:36cqh}
+/* В · 3D-веер */
+.v-C .text{top:7cqh}
+.v-C .fan{position:absolute;left:0;right:0;top:34cqh;bottom:8cqh;z-index:3;perspective:140cqw;display:flex;align-items:center;justify-content:center}
+.v-C .fan img{position:absolute;width:36cqw;aspect-ratio:1;object-fit:cover;border:1px solid #3a3129;box-shadow:0 2cqh 6cqh rgba(0,0,0,.65);opacity:0}
+.play.v-C .fan img{animation:fade .7s ease forwards}
+.v-C .fan img.a{transform:translateX(-30cqw) rotateY(28deg) scale(.86);animation-delay:.35s;filter:brightness(.8)}
+.v-C .fan img.b{transform:translateZ(6cqw) scale(1.06);z-index:2;animation-delay:.15s}
+.v-C .fan img.c{transform:translateX(30cqw) rotateY(-28deg) scale(.86);animation-delay:.55s;filter:brightness(.8)}
+.v-C .cap{position:absolute;left:7cqw;right:7cqw;bottom:6cqh;z-index:3;text-align:center;font:400 2.3cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Креативы сверху, текст снизу</button><button role="tab" data-v="B">Б · Текст сверху, креативы снизу</button><button role="tab" data-v="C">В · 3D-веер</button></div>
+<p class="description"></p>
+<p class="note">Три креатива вырезаны из скрина Google по отдельности (без рамки «AI-агент») и увеличены (Bytedance Upscale 2k). Полный текст: заголовок + подпись «Реклама в Instagram и Facebook · 3 креатива для теста». Клавиши: ←/→ вариант.</p>
+<div class="actions"><button id="replay">↻ Повторить анимацию</button></div>
+</nav>
+<script>
+const D='assets/vlad-1409/dizayn/';
+const H='<h1>На выходе — <em>рекламные объявления</em></h1>', P='<p>Реклама в Instagram и Facebook · 3 креатива для теста</p>';
+const CR='<div class="cr"><img src="'+D+'creative-a.webp" alt=""><img src="'+D+'creative-b.webp" alt=""><img src="'+D+'creative-c.webp" alt=""><div class="l">A</div><div class="l">B</div><div class="l">C</div></div>';
+window.VARIANTS={
+A:{html:CR+'<div class="text fx-up">'+H+P+'</div>',desc:'Как просил Мирослав: три креатива крупно в верхней части, ниже — заголовок и подпись вместе, по центру. Креативы выезжают по очереди. Рекомендация.'},
+B:{html:'<div class="text fx-up">'+H+P+'</div>'+CR,desc:'Классика: заголовок и подпись сверху, три креатива под ними в ряд.'},
+C:{html:'<div class="text fx-up">'+H+'</div><div class="fan"><img class="a" src="'+D+'creative-a.webp" alt=""><img class="b" src="'+D+'creative-b.webp" alt=""><img class="c" src="'+D+'creative-c.webp" alt=""></div><div class="cap fx-up">Реклама в Instagram и Facebook · 3 креатива для теста</div>',desc:'Три креатива веером в 3D: средний спереди и крупнее, боковые развёрнуты вглубь. Заголовок сверху, подпись внизу.'}};
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

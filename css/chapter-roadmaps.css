@@ -1,0 +1,105 @@
+/* All milestones keep the same coordinates while the route and focus accumulate. */
+.slide.opening.op-chapter { background: #0B0907; }
+.op-chapter .chapter-roadmap { position: absolute; inset: 0; color: #F5F3EE; --chapter-ease: cubic-bezier(.22, 1, .36, 1); }
+.op-chapter .chapter-heading { position: absolute; top: 7.3cqh; left: 7.5cqw; right: 7.5cqw; z-index: 2; }
+.op-chapter .chapter-eyebrow { margin-bottom: 2.2cqh; color: #BEB9B0; font: 500 2.15cqh/1.3 var(--font-b); }
+.slide.opening.op-chapter h1.chapter-title { margin: 0; width: 100%; max-width: none; color: #F5F3EE; font: 500 4.65cqh/1.19 var(--font-heading); letter-spacing: -.043em; opacity: 1; animation: none; text-wrap: initial; }
+.chapter-title > span { display: block; }
+.slide.opening.op-chapter h1.chapter-title em { color: #FDD506; font-weight: inherit; font-style: normal; }
+.op-chapter .chapter-route, .op-chapter .chapter-path, .op-chapter .chapter-items { position: absolute; inset: 0; width: 100%; height: 100%; }
+.op-chapter .chapter-route { transition: opacity .48s var(--chapter-ease); }
+.op-chapter .chapter-items { list-style: none; padding: 0; margin: 0; }
+.op-chapter .chapter-path { overflow: visible; stroke: none; fill: none; }
+.op-chapter .chapter-path .chapter-guide { stroke: #FDD506; stroke-width: .2; opacity: .11; }
+.op-chapter .chapter-path .chapter-trace { stroke: #FDD506; stroke-width: .3; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset .65s var(--chapter-ease); }
+.op-chapter .chapter-trace[data-drawn="true"] { stroke-dashoffset: 0; }
+.op-chapter .chapter-node { opacity: .24; transition: opacity .4s ease; }
+.op-chapter .chapter-node circle { fill: #0B0907; stroke: #81732B; stroke-width: .23; transition: fill .4s ease, stroke .4s ease; }
+.op-chapter .chapter-node text { fill: #F5F3EE; font: 600 2.05px "Manrope", sans-serif; text-anchor: middle; dominant-baseline: middle; stroke: none; }
+.op-chapter .chapter-node[data-state="active"], .op-chapter .chapter-node[data-state="past"] { opacity: 1; }
+.op-chapter .chapter-node[data-state="active"] circle, .op-chapter .chapter-node[data-state="past"] circle { fill: #FDD506; stroke: #FDD506; }
+.op-chapter .chapter-node[data-state="active"] text, .op-chapter .chapter-node[data-state="past"] text { fill: #0B0907; }
+.op-chapter .chapter-node[data-state="past"] { opacity: 1; }
+.op-chapter .chapter-item { position: absolute; left: 7.5cqw; width: 60cqw; opacity: 0; transition: opacity .46s var(--chapter-ease); }
+.op-chapter .chapter-item[data-state="active"] { opacity: 1; }
+.op-chapter .chapter-item[data-state="past"] { opacity: .52; }
+.slide.opening.op-chapter .chapter-item-title, .slide.opening.op-chapter .chapter-item-detail { margin: 0; width: 100%; max-width: none; opacity: 1; animation: none; }
+.slide.opening.op-chapter .chapter-item-title { font: 500 3.8cqh/1.34 var(--font-b); color: #F5F3EE; letter-spacing: -.025em; }
+.slide.opening.op-chapter .chapter-item-title em { color: #FDD506; font-weight: inherit; font-style: normal; }
+.slide.opening.op-chapter .chapter-item-detail { margin-top: .75cqh; font: 400 2.45cqh/1.3 var(--font-b); color: #BEB9B0; letter-spacing: -.015em; }
+.chapter-roadmap15 .chapter-item-1 { top: 35.1cqh; }
+.chapter-roadmap15 .chapter-item-2 { top: 54.4cqh; }
+.chapter-roadmap15 .chapter-item-3 { top: 74.4cqh; }
+.slide.opening.op-chapter .chapter-roadmap15 .chapter-item-3 .chapter-item-title { font-size: 3.45cqh; }
+/* Personal photos accumulate along the route; originals are cropped only in CSS. */
+.chapter-photos { position: absolute; inset: 0; pointer-events: none; }
+.chapter-photo { position: absolute; margin: 0; padding: .3cqw; box-sizing: border-box; background: #E6E0D5; box-shadow: 0 1.2cqh 3cqh #0008; opacity: 0; visibility: hidden; transform: translate(-50%, calc(-50% + 1.4cqh)) rotate(var(--photo-tilt)) scale(.97); transition: opacity .42s ease, transform .5s var(--chapter-ease), visibility .42s; }
+.chapter-roadmap15 .chapter-photo-1 { left: 60.5cqw; top: 40.2cqh; width: 16.5cqw; height: 22cqh; --photo-tilt: -30deg; }
+.chapter-roadmap15 .chapter-photo-2 { left: 66.5cqw; top: 79cqh; width: 18cqw; height: 27cqh; --photo-tilt: 30deg; }
+.chapter-photo-crop { position: relative; width: 100%; height: 100%; overflow: hidden; }
+.chapter-photo-crop img { position: absolute; display: block; max-width: none; object-fit: fill; }
+.chapter-photo[data-state="active"], .chapter-photo[data-state="past"] { visibility: visible; transform: translate(-50%, -50%) rotate(var(--photo-tilt)); }
+.chapter-photo[data-state="active"] { opacity: 1; }
+.chapter-photo[data-state="past"] { opacity: .76; }
+.op-chapter .chapter-roadmap17 .chapter-heading { top: 7.4cqh; }
+.slide.opening.op-chapter .chapter-roadmap17 h1.chapter-title { font-size: 4.5cqh; }
+.chapter-roadmap17 .chapter-item { left: 20cqw; width: 72cqw; }
+.chapter-roadmap17 .chapter-item-1 { top: 29.2cqh; }
+.chapter-roadmap17 .chapter-item-2 { top: 40.7cqh; }
+.chapter-roadmap17 .chapter-item-3 { top: 52.7cqh; }
+.chapter-roadmap17 .chapter-item-4 { top: 64.7cqh; }
+.chapter-roadmap17 .chapter-item-5 { top: 77.6cqh; }
+.slide.opening.op-chapter .chapter-roadmap17 .chapter-item-title { font: 500 3.7cqh/1.2 var(--font-b); }
+.op-chapter .chapter-summary { position: absolute; top: 29cqh; left: 7.5cqw; right: 7.5cqw; opacity: 0; pointer-events: none; transition: opacity .5s var(--chapter-ease); }
+.slide.opening.op-chapter .chapter-summary p { margin: 0; max-width: none; width: 100%; opacity: 1; animation: none; }
+.slide.opening.op-chapter .chapter-summary-lead { color: #FDD506; font: 500 4.2cqh/1.22 var(--font-heading); letter-spacing: -.04em; }
+.slide.opening.op-chapter .chapter-summary-old { margin-top: 5cqh; color: #C6C0B8; font: 400 3.35cqh/1.43 var(--font-b); letter-spacing: -.018em; }
+.slide.opening.op-chapter .chapter-summary-now { margin-top: 4.3cqh; color: #F5F3EE; font: 500 3.35cqh/1.43 var(--font-b); letter-spacing: -.018em; }
+.op-chapter .chapter-summary em { font-weight: inherit; font-style: normal; color: #FDD506; }
+.op-chapter .chapter-final .chapter-route { opacity: .08; }
+.op-chapter .chapter-final .chapter-summary { opacity: 1; transition-delay: .18s; }
+.op-chapter .chapter-bridge-copy { position: absolute; left: 7.5cqw; right: 7.5cqw; top: 27cqh; text-align: center; }
+.op-chapter .chapter-rule { display: block; margin: 0 auto 5.8cqh; width: 8cqw; height: .3cqh; background: #FDD506; }
+.slide.opening.op-chapter .chapter-bridge h1.chapter-title { font-size: 5.4cqh; line-height: 1.25; }
+.slide.opening.op-chapter .chapter-bridge-support { margin: 2.2cqh 0 0; width: 100%; max-width: none; opacity: 1; animation: none; font: 400 3.05cqh/1.4 var(--font-b); color: #BEB9B0; }
+.op-chapter .chapter-bridge-has-media .chapter-bridge-copy { top: 10cqh; }
+.op-chapter .chapter-bridge-has-media .chapter-rule { display: none; }
+.slide.opening.op-chapter .chapter-bridge-has-media h1.chapter-title { font-size: 4.8cqh; line-height: 1.22; }
+.op-chapter .chapter-bridge-media { position: absolute; left: 10cqw; top: 49cqh; width: 80cqw; height: 45cqh; margin: 0; overflow: hidden; border-radius: 1.2cqw; }
+.op-chapter .chapter-bridge-media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.slide.opening.op-chapter.on .chapter-heading, .slide.opening.op-chapter.on .chapter-bridge-copy { animation: chapter-entry .6s var(--chapter-ease) .06s both; }
+.slide.opening.op-chapter.on .chapter-route { animation: chapter-entry .68s var(--chapter-ease) .12s backwards; }
+.slide.opening.op-chapter.on.op-return .chapter-heading, .slide.opening.op-chapter.on.op-return .chapter-bridge-copy, .slide.opening.op-chapter.on.op-return .chapter-route { animation-duration: .16s; animation-delay: 0s; }
+@keyframes chapter-entry { from { opacity: 0; transform: translateY(1.2cqh); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  .slide.opening.op-chapter .chapter-roadmap *, .slide.opening.op-chapter.on .chapter-heading, .slide.opening.op-chapter.on .chapter-bridge-copy, .slide.opening.op-chapter.on .chapter-route { animation: none !important; transition: none !important; }
+}
+
+/* Illustrations stay aligned to their milestones as the speaker advances. */
+.chapter-roadmap17 .chapter-item{width:54cqw}
+.chapter-illustrations{position:absolute;inset:0;pointer-events:none}
+.chapter-illustration{position:absolute;left:80cqw;width:11cqw;height:9cqh;color:#BEB9B0;opacity:.12;transition:opacity .4s ease,color .4s ease}
+.chapter-illustration-1{top:27.5cqh}.chapter-illustration-2{top:39.5cqh}.chapter-illustration-3{top:51.5cqh}.chapter-illustration-4{top:63.5cqh}.chapter-illustration-5{top:75.5cqh}
+.slide.opening.op-chapter .chapter-illustration svg{width:100%;height:100%;stroke:currentColor;stroke-width:2.2;fill:none}
+.chapter-illustration .road-art-wash{fill:currentColor;fill-opacity:.08;stroke:none}
+.chapter-illustration[data-state="active"]{color:#FDD506;opacity:1}
+.chapter-illustration[data-state="past"]{opacity:.3}
+/* The takeaway has its own quiet central frame. */
+.op-chapter .chapter-roadmap17 .chapter-summary{top:50%;left:8cqw;right:8cqw;transform:translateY(-50%);padding:5.5cqh 5cqw;box-sizing:border-box;border:1px solid rgba(253,213,6,.65);border-radius:1.2cqw;background:rgba(11,9,7,.96);text-align:center;z-index:3}
+.slide.opening.op-chapter .chapter-roadmap17 .chapter-summary-old{margin-top:3cqh;font-size:3.15cqh;line-height:1.45}
+.slide.opening.op-chapter .chapter-roadmap17 .chapter-summary-lead{font-size:4.2cqh}
+.slide.opening.op-chapter .chapter-roadmap17.chapter-final .chapter-heading{opacity:.16;animation:none}
+.op-chapter .chapter-roadmap17.chapter-final .chapter-route{opacity:.055}
+@media(prefers-reduced-motion:reduce){.chapter-illustration{transition:none}}
+
+/* One large ink sketch replaces the previous sketch at each milestone. */
+.chapter-roadmap17:has(.chapter-sketches) .chapter-item{width:34cqw}
+.slide.opening.op-chapter .chapter-roadmap17:has(.chapter-sketches) .chapter-item-title{font-size:3.3cqh;line-height:1.2}
+.slide.opening.op-chapter .chapter-roadmap17:has(.chapter-sketches) .chapter-item-detail{font-size:2.15cqh;margin-top:.55cqh}
+.chapter-sketches .chapter-illustration{left:53cqw;top:29cqh;width:45cqw;height:57cqh;opacity:0;visibility:hidden;transition:opacity .18s ease,visibility .18s;}
+.chapter-sketches .chapter-illustration img{display:block;width:100%;height:100%;object-fit:contain}
+/* Dark-backed pencil assets merge into the slide's ambient glow. */
+.chapter-sketches .chapter-illustration:has(img[src*="-pencil-"],img[data-src*="-pencil-"]){mix-blend-mode:lighten}
+.chapter-sketches .chapter-illustration[data-state="past"],.chapter-sketches .chapter-illustration[data-state="future"]{opacity:0;visibility:hidden}
+.chapter-sketches .chapter-illustration[data-state="active"]{opacity:1;visibility:visible;transition:opacity .32s ease .18s,visibility 0s .18s}
+@media(prefers-reduced-motion:reduce){.chapter-sketches .chapter-illustration{transition:none!important}}

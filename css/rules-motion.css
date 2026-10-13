@@ -1,0 +1,72 @@
+/* One workflow sequence per slide entry. Default styles are the still final frame. */
+/* Quick automatic entrance: heading, 1, 2, diagram, then both supporting lines. */
+.slide.opening.op-chapter.on .cv-single-screen :is(.cv-phase-title,[data-route-step],.cv-workflow,.cv-body,.cv-closing){animation:rules-reveal .32s cubic-bezier(.22,1,.36,1) var(--rules-reveal-delay,0s) both}
+.cv-single-screen .cv-phase-title{--rules-reveal-delay:0s}
+.cv-single-screen [data-route-step="1"]{--rules-reveal-delay:.16s}
+.cv-single-screen [data-route-step="2"]{--rules-reveal-delay:.32s}
+.cv-single-screen .cv-workflow{--rules-reveal-delay:.48s}
+.cv-single-screen .cv-body{--rules-reveal-delay:.8s}
+.cv-single-screen .cv-closing{--rules-reveal-delay:.96s}
+@keyframes rules-reveal{from{opacity:0;transform:translateY(.8cqh)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.slide.opening.op-chapter.on .cv-single-screen :is(.cv-phase-title,[data-route-step],.cv-workflow,.cv-body,.cv-closing){animation:none!important;opacity:1;transform:none}}
+.cv-workflow{position:absolute;top:39cqh;left:5cqw;right:5cqw;height:25cqh;pointer-events:none}
+.slide.opening.op-chapter .cv-workflow svg{display:block;width:100%;height:100%;overflow:visible;stroke:#F5F3EE;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.slide.opening.op-chapter .cv-single-screen:has(.cv-workflow) .cv-circuit{display:none}
+.cv-workflow .wf-guide{stroke:#F5F3EE;opacity:.1}
+.cv-workflow .wf-trace{stroke:#FDD506;stroke-width:2.3;stroke-dasharray:1;stroke-dashoffset:0;opacity:.65}
+.cv-workflow .wf-port{fill:#FDD506;stroke:none;opacity:.6}
+.cv-workflow .wf-input{opacity:.6}
+.cv-workflow .wf-card{fill:#15130D;stroke:#BEB9B0;stroke-opacity:.5}
+.cv-workflow .wf-input-mark{stroke:#FDD506;stroke-width:2}
+.cv-workflow .wf-textline{stroke:#F5F3EE;stroke-width:3.8;stroke-dasharray:1;opacity:.65}
+.cv-workflow .wf-send circle{stroke:#FDD506;fill:#FDD506;fill-opacity:.1}
+.cv-workflow .wf-send path{stroke:#FDD506}
+.cv-workflow .wf-engine-frame{fill:#17150C;stroke:#FDD506;stroke-opacity:.7;stroke-width:2}
+.cv-workflow .wf-core{fill:#0B0907;stroke:#FDD506;stroke-opacity:.3}
+.cv-workflow .wf-pins{stroke:#FDD506;opacity:.4;stroke-width:2.4}
+.cv-workflow .wf-ai{font:500 43px var(--font-heading);text-anchor:middle;fill:#FDD506;stroke:none;letter-spacing:-2px}
+.cv-workflow .wf-scan{stroke:none;opacity:0}
+.cv-workflow .wf-meter{fill:#FDD506;stroke:none;opacity:.4}
+.cv-workflow .wf-page-back{fill:#0B0907;stroke:#F5F3EE;stroke-opacity:.16;transform:translate(7px,2px) rotate(4deg);transform-origin:680px 120px}
+.cv-workflow .wf-page{fill:#14130E;stroke:#F5F3EE;stroke-opacity:.8}
+.cv-workflow .wf-fold{stroke-opacity:.45}
+.cv-workflow .wf-result-title{stroke-width:4;stroke-dasharray:1}
+.cv-workflow .wf-result-row{stroke-width:3;stroke-dasharray:1;stroke-opacity:.5}
+.cv-workflow .wf-check{stroke:#FDD506;stroke-width:2.8;stroke-dasharray:1}
+.cv-workflow .wf-payment{transform-origin:745px 197px}
+.cv-workflow .wf-payment rect{fill:#19170B;stroke:#FDD506;stroke-opacity:.8}
+.cv-workflow .wf-payment .wf-coin{stroke:#FDD506;stroke-opacity:.7;fill:#FDD506;fill-opacity:.08}
+.cv-workflow .wf-currency{stroke:#FDD506;stroke-width:1.5}
+.cv-workflow .wf-pay-check{stroke:#FDD506;stroke-width:3.5;stroke-dasharray:1}
+
+.slide.on .cv-workflow .wf-input{animation:wf-input-settle 3s ease both}
+.slide.on .cv-workflow .wf-type-1{animation:wf-draw .5s ease .15s both}
+.slide.on .cv-workflow .wf-type-2{animation:wf-draw .5s ease .35s both}
+.slide.on .cv-workflow .wf-type-3{animation:wf-draw .4s ease .6s both}
+.slide.on .cv-workflow .wf-send{animation:wf-send .65s ease .85s both}
+.slide.on .cv-workflow .wf-trace-in{animation:wf-draw .75s cubic-bezier(.4,0,.2,1) 1s both}
+.slide.on .cv-workflow .wf-engine-frame{animation:wf-engine 3.2s ease 1.25s both}
+.slide.on .cv-workflow .wf-scan{animation:wf-scan 1s ease 1.45s 2 both}
+.slide.on .cv-workflow .wf-meter-1{animation:wf-meter .7s ease 1.45s 3 both}
+.slide.on .cv-workflow .wf-meter-2{animation:wf-meter .7s ease 1.6s 3 both}
+.slide.on .cv-workflow .wf-meter-3{animation:wf-meter .7s ease 1.75s 3 both}
+.slide.on .cv-workflow .wf-trace-out{animation:wf-draw .7s cubic-bezier(.4,0,.2,1) 3.1s both}
+.slide.on .cv-workflow .wf-output{animation:wf-output .65s cubic-bezier(.22,1,.36,1) 3.35s both}
+.slide.on .cv-workflow .wf-result-title{animation:wf-draw .45s ease 3.55s both}
+.slide.on .cv-workflow .wf-result-row-1{animation:wf-draw .4s ease 3.8s both}
+.slide.on .cv-workflow .wf-result-row-2{animation:wf-draw .4s ease 4s both}
+.slide.on .cv-workflow .wf-result-row-3{animation:wf-draw .4s ease 4.2s both}
+.slide.on .cv-workflow .wf-check-1{animation:wf-draw .25s ease 4.05s both}
+.slide.on .cv-workflow .wf-check-2{animation:wf-draw .25s ease 4.25s both}
+.slide.on .cv-workflow .wf-check-3{animation:wf-draw .25s ease 4.45s both}
+.slide.on .cv-workflow .wf-payment{animation:wf-payment .65s cubic-bezier(.22,1,.36,1) 4.7s both}
+.slide.on .cv-workflow .wf-pay-check{animation:wf-draw .4s ease 5.1s both}
+@keyframes wf-draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes wf-input-settle{0%,45%{opacity:1}100%{opacity:.6}}
+@keyframes wf-send{0%{opacity:.25}45%{opacity:1;transform:translateX(3px)}100%{opacity:1;transform:none}}
+@keyframes wf-engine{0%{stroke-opacity:.35}20%,65%{stroke-opacity:1;filter:drop-shadow(0 0 6px #FDD50644)}100%{stroke-opacity:.7;filter:none}}
+@keyframes wf-scan{0%{opacity:0;transform:translateY(-40px)}18%{opacity:1}80%{opacity:1}100%{opacity:0;transform:translateY(158px)}}
+@keyframes wf-meter{0%,100%{opacity:.4}45%{opacity:1}}
+@keyframes wf-output{from{opacity:.12;transform:translateX(9px)}to{opacity:1;transform:none}}
+@keyframes wf-payment{from{opacity:0;transform:translateY(9px) scale(.96)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.slide.on .cv-workflow *{animation:none!important;transition:none!important}}

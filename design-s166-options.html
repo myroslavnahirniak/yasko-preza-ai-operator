@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>166 · А это был всего один мастер — три варіанти</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--panel:#15110d;--controls:150px}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding-bottom:var(--controls);background:#000;color:var(--cream);font:400 14px/1.4 Manrope,sans-serif}
+.slide{position:relative;width:min(100vw,calc(100dvh - var(--controls)));aspect-ratio:1;container-type:size;overflow:hidden;background:var(--bg)}
+.slide h1,.slide p{margin:0}
+h1{position:absolute;top:8cqh;left:7cqw;right:7cqw;text-align:center;font:500 4.6cqw/1.22 Unbounded,sans-serif;letter-spacing:-.03em}
+h1 em{font-style:normal;color:var(--yellow)}
+.copy{position:absolute;left:7cqw;right:7cqw;bottom:5cqh;text-align:center}
+.copy p{font:400 2.4cqw/1.42 Manrope,sans-serif;color:var(--muted)}
+.copy p.c{color:var(--cream);font-weight:500;font-size:2.6cqw;margin-top:.8cqh}
+/* ---------- A · чотири стоси ---------- */
+.vA .stacks{position:absolute;left:7cqw;right:7cqw;top:24cqh;height:56cqh;display:grid;grid-template-columns:repeat(4,1fr);gap:2cqw}
+.vA .stack{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}
+.vA .stack svg{width:100%;height:36cqh;overflow:visible}
+.vA .plate{fill:#2a2420;stroke:#5a4f3f;stroke-width:1;opacity:0;transform:translateY(-6px);transition:opacity .35s,transform .35s,fill .35s,stroke .35s}
+.vA.play .plate{opacity:1;transform:none}
+.vA .plate.top{fill:#3a3020;stroke:var(--yellow)}
+.vA .lbl{margin-top:1.4cqh;font:500 2.6cqw Unbounded,sans-serif;color:var(--cream)}
+.vA .layers{margin-top:.8cqh;font:400 1.8cqw/1.5 Manrope,sans-serif;color:var(--dim);text-align:center}
+.vA .cnt{position:absolute;left:0;right:0;top:82cqh;text-align:center;font:500 3cqw Unbounded,sans-serif;color:var(--yellow);opacity:0;transition:opacity .5s 2.2s}
+.vA.play .cnt{opacity:1}
+.vA .cnt small{font:400 2cqw Manrope,sans-serif;color:var(--muted);margin-left:1cqw}
+/* ---------- B · матриця 5×4 ---------- */
+.vB .grid{position:absolute;left:7cqw;right:7cqw;top:23cqh;display:grid;grid-template-columns:22cqw repeat(4,1fr);gap:.8cqh 1cqw;align-items:center}
+.vB .hd{text-align:center}
+.vB .hd img{width:11cqw;height:11cqw;object-fit:cover;border-radius:.6cqw;display:block;margin:0 auto .6cqh}
+.vB .hd b{font:500 2cqw Unbounded,sans-serif;color:var(--cream)}
+.vB .rl{font:500 2.1cqw Manrope,sans-serif;color:var(--muted);padding-right:1cqw}
+.vB .cell{height:5.2cqh;border:1px solid var(--rule);background:var(--panel);border-radius:.5cqw;display:flex;align-items:center;justify-content:center}
+.vB .cell i{width:2.2cqw;height:2.2cqw;border-radius:50%;background:#3a3129;transform:scale(.3);opacity:0;transition:transform .3s cubic-bezier(.3,1.5,.5,1),opacity .3s,background .3s}
+.vB.play .cell i{transform:scale(1);opacity:1;background:var(--yellow)}
+.vB .sum{position:absolute;left:7cqw;right:7cqw;top:78cqh;display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--rule);padding-top:1.4cqh}
+.vB .sum span{font:400 2.2cqw Manrope,sans-serif;color:var(--dim)}
+.vB .sum b{font:500 5cqw Unbounded,sans-serif;color:var(--yellow)}
+/* ---------- C · розріз одного торта ---------- */
+.vC .hero{position:absolute;left:7cqw;top:20cqh;width:40cqw;height:58cqh;display:flex;align-items:center;justify-content:center}
+.vC .hero img{width:100%;height:100%;object-fit:cover;border-radius:1cqw;mask-image:radial-gradient(ellipse at center,#000 55%,transparent 80%)}
+.vC .bignum{position:absolute;left:52cqw;top:22cqh;font:500 16cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:var(--yellow)}
+.vC .eq{position:absolute;left:52cqw;top:41cqh;font:400 2.8cqw/1.4 Manrope,sans-serif;color:var(--cream)}
+.vC .eq small{display:block;font-size:2.2cqw;color:var(--dim);margin-top:.4cqh}
+.vC .row{position:absolute;left:52cqw;right:7cqw;top:56cqh;display:grid;grid-template-columns:repeat(4,1fr);gap:1cqw}
+.vC .row div{text-align:center}
+.vC .row img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:.6cqw;display:block;opacity:0;transform:translateY(8px);transition:opacity .4s,transform .4s}
+.vC.play .row img{opacity:1;transform:none}
+.vC .row b{display:block;margin-top:.8cqh;font:500 1.7cqw Manrope,sans-serif;color:var(--muted)}
+.vC .row small{display:block;font:400 1.5cqw Manrope,sans-serif;color:var(--dim)}
+/* controls */
+.controls{position:fixed;bottom:0;left:0;right:0;height:var(--controls);background:#0c0a08f5;border-top:1px solid #292319;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:10px}
+.tabs,.actions{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap}
+button{font:400 13px/1.3 Manrope,sans-serif;cursor:pointer;border:1px solid #504735;border-radius:7px;background:#17130d;color:#ddd5c6;padding:7px 12px}
+button[aria-selected="true"]{color:var(--yellow);border-color:var(--yellow);background:#27210e}
+.description{font-size:12px;text-align:center;color:#c8bfad;max-width:900px;margin:0}
+.note{font-size:11px;color:#a49a84;text-align:center;margin:0}
+</style></head><body>
+<main class="slide vA" id="slide"></main>
+<nav class="controls"><div class="tabs" role="tablist"><button role="tab" data-v="A">А · Чотири стоси (мова слайда 165)</button><button role="tab" data-v="B">Б · Матриця 5×4</button><button role="tab" data-v="C">В · Один торт · 20</button></div><p class="description"></p><div class="actions"><button id="replay">↻ Програти знову</button><span class="note">← → перемикають варіанти</span></div></nav>
+<script>
+const G='assets/gen-164-213/';
+const ST=[['Рецепт','st-recipe'],['Замес','st-mix'],['Сборка','st-assemble'],['Украшение','st-decorate']];
+const L=['инструкция','как можно','как нельзя','проверка','передача'];
+const H='<h1>А это был всего <em>один</em> мастер</h1>';
+const COPY='<div class="copy"><p>Пять слоёв × четыре этапа — и это только один торт</p><p class="c">Внутри каждого агента — часы работы и обучения на каждый этап</p></div>';
+function stackSVG(k){let s='';for(let i=0;i<5;i++){const y=150-i*28;const d=(k*5+i)*90;s+=`<path class="plate${i===4?' top':''}" style="transition-delay:${d}ms" d="M10 ${y} L100 ${y-40} L190 ${y} L100 ${y+40} Z"/><path class="plate" style="transition-delay:${d}ms;fill:#1a1510" d="M10 ${y} L100 ${y+40} L100 ${y+48} L10 ${y+8} Z"/><path class="plate" style="transition-delay:${d}ms;fill:#120e0b" d="M190 ${y} L100 ${y+40} L100 ${y+48} L190 ${y+8} Z"/>`;}return `<svg viewBox="0 0 200 210">${s}</svg>`;}
+const V={
+A:{desc:'Продовження мови 165: кожен майстер — стос із п’яти пластин. Чотири стоси виростають один за одним (20 пластин, по 90 мс), верхня в кожному підсвічена. Під стосами — назва етапу і «5 слоёв». Внизу проявляється лічильник 5 × 4 = 20. Мінімум кольору, багато повітря, але повітря структуроване.',
+ html:()=>H+`<div class="stacks">${ST.map(([n],k)=>`<div class="stack">${stackSVG(k)}<div class="lbl">${n}</div><div class="layers">${L.join('<br>')}</div></div>`).join('')}</div><div class="cnt">5 × 4 = 20<small>слоёв в одном агенте</small></div>`+COPY},
+B:{desc:'Буквальна матриця: зверху чотири етапи з картинками, зліва п’ять шарів, у клітинках жовті крапки заповнюються хвилею зліва-направо, зверху-вниз. Під матрицею — підсумковий рядок із великим «20». Найчитабельніший спосіб показати «5 × 4».',
+ html:()=>H+`<div class="grid"><div></div>${ST.map(([n,f])=>`<div class="hd"><img src="${G}${f}.webp" alt=""><b>${n}</b></div>`).join('')}${L.map((l,r)=>`<div class="rl">${l}</div>`+ST.map((_,c)=>`<div class="cell"><i style="transition-delay:${(r*4+c)*70+300}ms"></i></div>`).join('')).join('')}</div><div class="sum"><span>пять слоёв × четыре этапа</span><b>20</b></div>`+COPY},
+C:{desc:'Плакат: зліва великий готовий медовик, справа величезне «20» і рівняння «5 слоёв × 4 этапа», під ним чотири мініатюри етапів з підписом «×5 слоёв». Один погляд — і зрозуміло, скільки всього всередині одного майстра. Найменше елементів, найбільший акцент.',
+ html:()=>H+`<div class="hero"><img src="${G}st-decorate.webp" alt=""></div><div class="bignum">20</div><div class="eq">слоёв в одном мастере<small>5 слоёв × 4 этапа</small></div><div class="row">${ST.map(([n,f],k)=>`<div><img src="${G}${f}.webp" alt="" style="transition-delay:${400+k*150}ms"><b>${n}</b><small>× 5 слоёв</small></div>`).join('')}</div>`+COPY}
+};
+const slide=document.getElementById('slide');let cur='A';
+function render(){slide.className='slide v'+cur;slide.innerHTML=V[cur].html();document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.v===cur)));document.querySelector('.description').textContent=V[cur].desc;setTimeout(()=>slide.classList.add("play"),60);}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{cur=b.dataset.v;render()});
+document.getElementById('replay').onclick=render;
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')cur=cur==='A'?'B':cur==='B'?'C':'A';else if(e.key==='ArrowLeft')cur=cur==='A'?'C':cur==='B'?'A':'B';else return;render();});
+cur=new URLSearchParams(location.search).get('v')||'A';if(!V[cur])cur='A';render();
+</script></body></html>

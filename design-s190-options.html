@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>190 · Обложки YouTube, Reels и TikTok · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.text{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3;text-align:center}
+.text h1{font:500 5cqw/1.15 Unbounded,sans-serif;letter-spacing:-.03em;text-wrap:balance}
+.lab{font:500 1.8cqw/1 'JetBrains Mono',monospace;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);text-align:center}
+img{display:block;width:100%;object-fit:cover;background:#000;border:1px solid #2a2420}
+.set{position:absolute;left:7cqw;right:7cqw;z-index:3;display:grid;gap:1.8cqw;transition:opacity .45s ease}
+.set.yt{grid-template-columns:1fr 1fr}
+.set.yt .wide{grid-column:1/-1;aspect-ratio:1176/280}
+.set.yt .sm{aspect-ratio:589/300}
+.set.rl{grid-template-columns:repeat(3,1fr)}
+.set.rl img{aspect-ratio:328/596}
+.set .lab{grid-column:1/-1;margin-top:.4cqh}
+.set img{opacity:0;transform:translateY(1.6cqh)}
+.play .set img{animation:up .7s cubic-bezier(.2,.8,.2,1) forwards}
+.play .set img:nth-child(1){animation-delay:.1s}.play .set img:nth-child(2){animation-delay:.3s}.play .set img:nth-child(3){animation-delay:.45s}
+/* А · два шага */
+.v-A .set.yt{top:22cqh}
+.v-A .set.rl{top:20cqh;left:11cqw;right:11cqw}
+.v-A .set.is-future,.v-A .set.is-past{opacity:0!important;visibility:hidden}
+/* Б · всё на одном: Reels крупно, YouTube полосой снизу */
+.v-B .set.rl{top:19cqh;left:19cqw;right:19cqw;gap:1.4cqw}
+.v-B .set.rl .lab{display:none}
+.v-B .set.yt{top:69cqh;grid-template-columns:2.1fr 1fr 1fr;gap:1.2cqw}
+.v-B .set.yt .wide{grid-column:auto;aspect-ratio:auto;height:100%}
+.v-B .set.yt .sm{aspect-ratio:auto;height:100%}
+.v-B .set.yt{height:22cqh}
+.v-B .set.yt .lab{display:none}
+.v-B .labs{position:absolute;left:7cqw;right:7cqw;bottom:3.2cqh;z-index:3;display:flex;justify-content:space-between}
+/* В · 3D-полка */
+.v-C .scene{position:absolute;left:0;right:0;top:20cqh;bottom:5cqh;z-index:3;perspective:150cqw}
+.v-C .plane{position:absolute;left:7cqw;right:7cqw;top:0;bottom:0;transform-style:preserve-3d;transform:rotateX(14deg) rotateY(-6deg)}
+.v-C .plane img{position:absolute;box-shadow:0 2cqh 5cqh rgba(0,0,0,.65);border-color:#3a3129;opacity:0}
+.play.v-C .plane img{animation:fade .7s ease forwards}
+.v-C .y1{left:0;width:50cqw;top:0;aspect-ratio:1176/280;transform:translateZ(3cqw);animation-delay:.1s}
+.v-C .y2{left:52cqw;width:17cqw;top:0;aspect-ratio:589/300;transform:translateZ(1cqw);animation-delay:.25s}
+.v-C .y3{left:70cqw;width:16cqw;top:0;aspect-ratio:552/300;transform:translateZ(0);animation-delay:.35s}
+.v-C .r1{left:6cqw;width:22cqw;top:17cqh;aspect-ratio:328/596;transform:translateZ(6cqw) rotateY(12deg);animation-delay:.5s}
+.v-C .r2{left:32cqw;width:22cqw;top:15cqh;aspect-ratio:328/596;transform:translateZ(9cqw);animation-delay:.6s}
+.v-C .r3{left:58cqw;width:22cqw;top:17cqh;aspect-ratio:328/596;transform:translateZ(6cqw) rotateY(-12deg);animation-delay:.7s}
+.v-C .labs{position:absolute;left:7cqw;right:7cqw;bottom:3.2cqh;z-index:3;display:flex;justify-content:space-between}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Два шага: YouTube → Reels</button><button role="tab" data-v="B">Б · Reels крупно, YouTube полосой</button><button role="tab" data-v="C">В · 3D-полка</button></div>
+<p class="description"></p>
+<p class="note">Каждая обложка вырезана из скринов Google по отдельности (3 YouTube + 3 Reels/TikTok), увеличена. Заголовок — полный текст источника. Клавиши: ←/→ вариант, ↓/Space шаг.</p>
+<div class="actions"><button id="prev" class="stepbtn">◀ шаг</button><span id="stepinfo"></span><button id="next" class="stepbtn">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+</nav>
+<script>
+const D='assets/vlad-1409/dizayn/';
+const H='<div class="text fx-up"><h1>Обложки YouTube, <em>Reels и TikTok</em></h1></div>';
+const YT=(step)=>'<div class="set yt"'+(step!==undefined?' data-step="'+step+'"':'')+'><img class="wide" src="'+D+'yt-1.webp" alt=""><img class="sm" src="'+D+'yt-2.webp" alt=""><img class="sm" src="'+D+'yt-3.webp" alt=""><div class="lab">Обложки для YouTube · под каждое видео и Shorts</div></div>';
+const RL=(step)=>'<div class="set rl"'+(step!==undefined?' data-step="'+step+'"':'')+'><img src="'+D+'reels-1.webp" alt=""><img src="'+D+'reels-2.webp" alt=""><img src="'+D+'reels-3.webp" alt=""><div class="lab">Обложки для Reels и TikTok · первый кадр, который держит</div></div>';
+window.VARIANTS={
+A:{steps:1,html:H+YT(0)+RL(1),desc:'Шаг 0: три обложки YouTube (широкая сверху, две под ней). Шаг 1: три обложки Reels/TikTok в ряд, во всю высоту. Каждая обложка — максимально крупно. Рекомендация.'},
+B:{html:H+RL()+YT()+'<div class="labs"><span class="lab">Reels и TikTok</span><span class="lab">YouTube</span></div>',desc:'Всё на одном экране: три вертикальные обложки Reels крупно в центре, три обложки YouTube полосой внизу.'},
+C:{html:H+'<div class="scene"><div class="plane"><img class="y1" src="'+D+'yt-1.webp" alt=""><img class="y2" src="'+D+'yt-2.webp" alt=""><img class="y3" src="'+D+'yt-3.webp" alt=""><img class="r1" src="'+D+'reels-1.webp" alt=""><img class="r2" src="'+D+'reels-2.webp" alt=""><img class="r3" src="'+D+'reels-3.webp" alt=""></div></div><div class="labs"><span class="lab">YouTube — верхний ряд</span><span class="lab">Reels и TikTok — нижний</span></div>',desc:'Все шесть обложек на наклонной 3D-плоскости: YouTube верхним рядом, Reels «стоят» ближе к зрителю. Эффектно, но мельче.'}};
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

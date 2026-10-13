@@ -1,0 +1,49 @@
+:root{color-scheme:dark;--font-b:Manrope,Arial,sans-serif;--font-m:"JetBrains Mono",monospace;--yellow:#FDD506}
+*{box-sizing:border-box}
+body{margin:0;background:#141310;color:#F5F3EE;font-family:var(--font-b);-webkit-font-smoothing:antialiased}
+button,a{-webkit-tap-highlight-color:transparent}
+button{font:inherit;cursor:pointer;color:inherit}
+button:disabled{cursor:default;opacity:.4}
+button:focus-visible,a:focus-visible,.s3-canvas:focus-visible{outline:2px solid #FDD506;outline-offset:4px}
+svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.lab{display:grid;grid-template-columns:300px minmax(0,1fr);gap:32px;min-height:100svh;padding:32px;max-width:1560px;margin:auto;align-items:start}
+.lab-sidebar{padding:8px 0;display:flex;flex-direction:column;min-height:min(770px,calc(100svh - 64px))}
+.lab-brand{display:flex;justify-content:space-between;align-items:center;gap:12px;color:#F5F3EE;text-decoration:none;font-size:14px;font-weight:700}
+.lab-brand span{font:400 11px var(--font-m);color:#ADA99F}
+.lab-sidebar>h1{font-size:35px;font-weight:600;letter-spacing:-.05em;line-height:1.13;margin:42px 0 12px}
+.lab-intro{font-size:14px;line-height:1.6;color:#ADA99F;margin:0 0 28px;max-width:29ch}
+.lab-description{font-size:13px;line-height:1.6;color:#BFB9AC;margin:22px 0 24px;min-height:63px}
+.lab-controls{margin-top:auto}
+.lab-step-caption{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#D9D3C8;margin-bottom:12px}
+.lab-format{font:400 11px var(--font-m);color:#ADA99F}
+.lab-step-buttons{display:flex;gap:8px}
+.lab-step-buttons button{border:1px solid #3A362E;background:#1D1B17;border-radius:6px;min-height:48px;display:flex;align-items:center;justify-content:center;gap:12px;padding:0 14px}
+.lab-step-buttons button.lab-primary{flex:1;background:#FDD506;color:#0B0907;border-color:#FDD506;font-size:13px;font-weight:700}
+.lab-secondary-controls{display:flex;gap:8px;margin-top:9px}
+.lab-secondary-controls button{flex:1;border:1px solid #3A362E;border-radius:6px;background:none;font-size:12px;min-height:44px;display:flex;align-items:center;justify-content:center;gap:8px}
+.lab-secondary-controls button[aria-pressed=true]{border-color:#FDD506;color:#FDD506}
+.lab-secondary-controls svg{width:15px;height:15px}
+.lab-restart{width:100%;background:none;border:0;color:#BBB5A8;font-size:12px;min-height:40px}
+.lab-help{font-size:11px;line-height:1.6;color:#AAA396;margin:17px 0 0}
+.lab-preview{position:sticky;top:20px;min-width:0;display:flex;flex-direction:column;align-items:center}
+.lab-preview-top{width:min(100%,calc(100svh - 90px));height:40px;display:flex;justify-content:space-between;align-items:flex-start;color:#BEB8AB;font-size:12px}
+.lab-preview-top button{background:none;border:0;padding:0 4px;color:#BEB8AB}
+.s3-canvas{position:relative;width:min(100%,calc(100svh - 90px));aspect-ratio:1/1;background:#0B0907;overflow:hidden;container-type:size;cursor:pointer;box-shadow:0 16px 80px #0005;isolation:isolate}
+.s3-design{position:absolute;inset:0;animation:lab-appear .42s ease both;font-family:var(--font-b)}
+.s3-design h1,.s3-design h2,.s3-design p{font-family:var(--font-b)}
+.s3-design svg{stroke:none;stroke-width:1;stroke-linecap:initial;stroke-linejoin:initial}
+.s3-design img{display:block}
+.s3-canvas:fullscreen{width:min(100vw,100vh);height:min(100vw,100vh);margin:auto;box-shadow:none}
+.s3-canvas:fullscreen::backdrop{background:#000}
+@keyframes lab-appear{from{opacity:0}to{opacity:1}}
+@media(max-width:850px){
+ .lab{grid-template-columns:1fr;padding:20px;gap:20px;max-width:680px}
+ .lab-sidebar{min-height:0;padding:0;display:contents}
+ .lab-brand{grid-row:1}
+ .lab-sidebar>h1,.lab-intro,.lab-description,.lab-help{display:none}
+ .lab-preview{grid-row:2;position:static}
+ .lab-preview-top{width:100%;height:28px;font-size:11px}
+ .s3-canvas{width:100%;max-width:none}
+ .lab-controls{grid-row:3;margin:0}
+}
+@media(prefers-reduced-motion:reduce){.s3-design{animation:none}*{scroll-behavior:auto}}

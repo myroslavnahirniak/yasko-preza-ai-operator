@@ -1,0 +1,63 @@
+/* 22.09: display 250–271 only; 252–256 intentionally excluded via opt-in marker. */
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light){--sv-bg:#f0ece3;--sv-fg:#25221b;--sv-soft:#625d52;--sv-line:#d2cabc;--sv-panel:#faf7f0}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .b13-head{top:5.5cqh;left:7cqw;right:7cqw;text-align:center}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .b13-head h1{font-size:3.85cqw;line-height:1.27;letter-spacing:-.035em;text-wrap:balance}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .b13-eyebrow{font-size:1.4cqw;letter-spacing:.12em;margin-bottom:2.1cqh}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-description{top:23cqh;left:10cqw;right:10cqw;font-size:2.55cqw;line-height:1.45;text-align:center;text-wrap:balance}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-extra{top:23cqh;left:10cqw;right:10cqw;font-size:2.45cqw;line-height:1.4;text-align:center;text-wrap:balance}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-object{top:33cqh;left:10cqw;width:80cqw;height:45cqh;background:transparent;border:0;border-radius:2.4cqw;mask-image:none;overflow:hidden}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-object img{position:absolute;inset:0;width:100%;height:100%;max-width:100%;object-fit:contain;mix-blend-mode:multiply;transform:none;mask-image:none}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-value{left:7cqw;right:7cqw;bottom:5.2cqh;height:12cqh;padding:0;border:0;gap:2cqw;background:none;display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-value>div:not(.sv-progress){padding:2cqh 2.8cqw;border:1px solid #d4cbbc;background:#faf7f0;border-radius:1.6cqw;text-align:left;display:flex;flex-direction:column;justify-content:center}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-value>div:nth-child(2){background:#f9e7a2;border-color:#e9d279}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-value small{font-size:1.65cqw;line-height:1.3;margin-bottom:1cqh;color:#625942}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-value b{font-size:4.15cqw;line-height:1.05;color:#25221b}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-progress{bottom:-2.3cqh;height:.45cqh;gap:.7cqw}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-progress i{border-radius:1cqw;background:#d8d0c1}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-progress .on{background:#ad9033}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-proof{left:7cqw;right:7cqw;top:34cqh;bottom:21.5cqh;overflow:hidden;border-radius:2cqw;background:#e6dfd2;border:1px solid #d4cbbc;box-shadow:0 1cqh 2.8cqw #4d3f2510}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-proof .sv-media{background:#e6dfd2;border-radius:0}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-fan{gap:2cqw;padding:1.5cqw;box-sizing:border-box;align-items:stretch}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-light) .sv-fan img{width:calc((100% - 4cqw)/3);height:100%;border-radius:1cqw;box-shadow:0 .5cqh 1.4cqw #33281118;object-fit:cover;object-position:top}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U031) .sv-object{top:31.5cqh;left:26cqw;width:48cqw;height:48cqh}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U032) .sv-agent-list{top:34cqh;bottom:21cqh;left:7cqw;right:7cqw;display:flex;flex-direction:column;gap:.55cqh}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U032) .sv-agent-list>div{flex:1;display:grid;grid-template-columns:4cqw 1fr 14cqw;gap:1.5cqw;align-items:center;min-height:0;background:#faf7f0;border:1px solid #d9d0c1;border-radius:1.1cqw;padding:.65cqh 1.8cqw}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U032) .sv-agent-list span{font-size:1.6cqw;color:#93805a}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U032) .sv-agent-list b{font-size:2.2cqw;line-height:1.18}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U032) .sv-agent-list strong{grid-column:auto;text-align:right;font-size:2.65cqw;line-height:1;white-space:nowrap}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U033) .sv-extra{top:31cqh;font-size:1.35cqw}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U033) .sv-proof{top:35cqh}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U036) .sv-discount{top:47cqh;left:8cqw;font-size:13cqw;color:#25221b;letter-spacing:-.075em}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U036) .sv-discount span{font-size:7cqw}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U036) .sv-object{top:34cqh;left:45cqw;width:50cqw;height:44cqh}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U039) .sv-drawing{display:none}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places{top:34cqh;bottom:21.5cqh;gap:1.3cqh 1.5cqw;grid-template-columns:1fr 1fr}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places>div{position:relative;padding:1.7cqh 2cqw 1.7cqh 5.2cqw;background:#faf7f0;border:1px solid #d4cbbc;border-radius:1.3cqw;display:flex;flex-direction:column;justify-content:center;opacity:1}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places>div::before{content:'↗';position:absolute;left:1.8cqw;top:2cqh;color:#8d7643;font-size:2.4cqw}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places>.dim::before{content:'—';color:#a19a8a}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places>.win{background:#f7eab9;border-color:#dbc887}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places b{font-size:2.35cqw;color:#29251e}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places span{font-size:1.9cqw;line-height:1.3;margin-top:.65cqh}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places>div:last-child{grid-column:1 / -1;flex-direction:row;align-items:center;justify-content:flex-start;gap:2cqw}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U045) .sv-places>div:last-child span{margin:0}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U047) .sv-element-lines{top:30cqh;left:7cqw;width:42cqw;display:flex;flex-direction:column;gap:2cqh}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U047) .sv-element-lines p{padding:1.8cqh 2cqw;border:1px solid #d4cbbc;border-radius:1.2cqw;background:#faf7f0;font-size:2.4cqw;line-height:1.45}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U047) .sv-element-lines p:first-child{background:#f7eab9;border-color:#dbc887;font-weight:600}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U047) .sv-object{left:50cqw;top:31cqh;width:47cqw;height:45cqh}
+
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U031) .sv-object:after{display:none}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U031) .sv-object img{max-width:none;width:150%;height:150%;left:-65%;top:-30%;object-fit:cover}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U033) .sv-proof{left:7cqw;right:7cqw;top:35cqh;bottom:21.5cqh}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U033) .sv-description{top:23cqh;left:10cqw;right:10cqw;text-align:center;font-size:2.55cqw;line-height:1.45;text-wrap:balance}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U033) .sv-extra{top:66cqh;left:7cqw;right:49cqw;text-align:left;font-size:1.5cqw}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U034) .sv-fan{display:grid;grid-template-columns:1.5fr 1fr;grid-template-rows:1fr 1fr;gap:1.5cqw}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U034) .sv-fan img{width:100%;height:100%;min-height:0;object-fit:contain;background:#faf7f0;object-position:center}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U034) .sv-fan img:nth-child(3){grid-column:2;grid-row:1 / 3;object-fit:cover;object-position:top}
+
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U043) .b13-head em{white-space:nowrap}
+/* Uploaded rating screenshot: narrower, no crop or overlap with copy. */
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-rating-upload) .sv-object{left:28cqw;top:33cqh;width:44cqw;height:44cqh;border-radius:1.5cqw;overflow:hidden}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-rating-upload) .sv-object img{inset:0;width:100%;height:100%;object-fit:contain;mix-blend-mode:normal;transform:none;mask-image:none}
+/* 22.09 барига: фото в стандартной рамке proof, не перекрывает ценность */
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U036) .sv-proof.sv-bariga{left:7cqw;right:7cqw;top:34cqh;bottom:21.5cqh;height:auto;width:auto;border-radius:2cqw;overflow:hidden;background:#e6dfd2;border:1px solid #d4cbbc}
+.b129.b13-v2-s16-sales3:has(.sv-polished.sv-U036) .sv-proof.sv-bariga img{position:static;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center 30%;mix-blend-mode:normal}

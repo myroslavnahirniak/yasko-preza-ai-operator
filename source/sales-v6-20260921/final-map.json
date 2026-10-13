@@ -1,0 +1,1046 @@
+[
+  {
+    "source": 3,
+    "label": "AI-Оператор",
+    "firstPart": 1,
+    "lastPart": 2,
+    "mode": "preserved layout",
+    "displayStart": 239,
+    "displayEnd": 240
+  },
+  {
+    "source": 4,
+    "label": "Доступ, а не курс",
+    "firstPart": 3,
+    "lastPart": 3,
+    "mode": "preserved layout",
+    "displayStart": 241,
+    "displayEnd": 241
+  },
+  {
+    "source": 5,
+    "label": "Как устроено",
+    "firstPart": 4,
+    "lastPart": 4,
+    "mode": "preserved layout",
+    "displayStart": 242,
+    "displayEnd": 242
+  },
+  {
+    "source": 6,
+    "label": "Не кнопка, а понимание",
+    "firstPart": 5,
+    "lastPart": 5,
+    "mode": "source copy in brand style",
+    "displayStart": 243,
+    "displayEnd": 243
+  },
+  {
+    "source": 7,
+    "label": "Блок 1 · Фундамент",
+    "firstPart": 6,
+    "lastPart": 6,
+    "mode": "source copy in brand style",
+    "displayStart": 244,
+    "displayEnd": 244
+  },
+  {
+    "source": 8,
+    "label": "Блок 2 · маркетинг 7",
+    "firstPart": 7,
+    "lastPart": 7,
+    "mode": "source copy in brand style",
+    "displayStart": 245,
+    "displayEnd": 245
+  },
+  {
+    "source": 9,
+    "label": "Блок 2 · сайты 9",
+    "firstPart": 8,
+    "lastPart": 8,
+    "mode": "source copy in brand style",
+    "displayStart": 246,
+    "displayEnd": 246
+  },
+  {
+    "source": 10,
+    "label": "Блок 3 · Контент-завод",
+    "firstPart": 9,
+    "lastPart": 9,
+    "mode": "source copy in brand style",
+    "displayStart": 247,
+    "displayEnd": 247
+  },
+  {
+    "source": 11,
+    "label": "Блок 4 · Привлечение клиентов",
+    "firstPart": 10,
+    "lastPart": 10,
+    "mode": "source copy in brand style",
+    "displayStart": 248,
+    "displayEnd": 248
+  },
+  {
+    "source": 12,
+    "label": "Блок 5 · Продажи и масштаб",
+    "firstPart": 11,
+    "lastPart": 11,
+    "mode": "source copy in brand style",
+    "displayStart": 249,
+    "displayEnd": 249
+  },
+  {
+    "source": 13,
+    "label": "Элемент 1",
+    "firstPart": 12,
+    "lastPart": 12,
+    "mode": "preserved layout",
+    "displayStart": 250,
+    "displayEnd": 250
+  },
+  {
+    "source": 14,
+    "label": "Элемент 2",
+    "firstPart": 13,
+    "lastPart": 18,
+    "mode": "preserved layout",
+    "displayStart": 251,
+    "displayEnd": 256
+  },
+  {
+    "source": 15,
+    "label": "Элемент 3",
+    "firstPart": 19,
+    "lastPart": 19,
+    "mode": "preserved layout",
+    "displayStart": 257,
+    "displayEnd": 257
+  },
+  {
+    "source": 16,
+    "label": "Элемент 4",
+    "firstPart": 20,
+    "lastPart": 20,
+    "mode": "preserved layout",
+    "displayStart": 258,
+    "displayEnd": 258
+  },
+  {
+    "source": 17,
+    "label": "Элемент 5",
+    "firstPart": 21,
+    "lastPart": 21,
+    "mode": "preserved layout",
+    "displayStart": 259,
+    "displayEnd": 259
+  },
+  {
+    "source": 18,
+    "label": "Элемент 6",
+    "firstPart": 22,
+    "lastPart": 22,
+    "mode": "preserved layout",
+    "displayStart": 260,
+    "displayEnd": 260
+  },
+  {
+    "source": 19,
+    "label": "Элемент 7",
+    "firstPart": 23,
+    "lastPart": 23,
+    "mode": "preserved layout",
+    "displayStart": 261,
+    "displayEnd": 261
+  },
+  {
+    "source": 20,
+    "label": "Элемент 8",
+    "firstPart": 24,
+    "lastPart": 24,
+    "mode": "preserved layout",
+    "displayStart": 262,
+    "displayEnd": 262
+  },
+  {
+    "source": 21,
+    "label": "Элемент 9",
+    "firstPart": 25,
+    "lastPart": 25,
+    "mode": "preserved layout",
+    "displayStart": 263,
+    "displayEnd": 263
+  },
+  {
+    "source": 22,
+    "label": "Элемент 10",
+    "firstPart": 26,
+    "lastPart": 26,
+    "mode": "preserved layout",
+    "displayStart": 264,
+    "displayEnd": 264
+  },
+  {
+    "source": 23,
+    "label": "Элемент 11",
+    "firstPart": 27,
+    "lastPart": 27,
+    "mode": "preserved layout",
+    "displayStart": 265,
+    "displayEnd": 265
+  },
+  {
+    "source": 24,
+    "label": "Элемент 12",
+    "firstPart": 28,
+    "lastPart": 28,
+    "mode": "preserved layout",
+    "displayStart": 266,
+    "displayEnd": 266
+  },
+  {
+    "source": 25,
+    "label": "Элемент 13",
+    "firstPart": 29,
+    "lastPart": 29,
+    "mode": "preserved layout",
+    "displayStart": 267,
+    "displayEnd": 267
+  },
+  {
+    "source": 26,
+    "label": "Элемент 14",
+    "firstPart": 30,
+    "lastPart": 30,
+    "mode": "preserved layout",
+    "displayStart": 268,
+    "displayEnd": 268
+  },
+  {
+    "source": 27,
+    "label": "Элемент 15",
+    "firstPart": 31,
+    "lastPart": 31,
+    "mode": "preserved layout",
+    "displayStart": 269,
+    "displayEnd": 269
+  },
+  {
+    "source": 28,
+    "label": "Элемент 16",
+    "firstPart": 32,
+    "lastPart": 32,
+    "mode": "preserved layout",
+    "displayStart": 270,
+    "displayEnd": 270
+  },
+  {
+    "source": 29,
+    "label": "Элемент 17",
+    "firstPart": 33,
+    "lastPart": 33,
+    "mode": "preserved layout",
+    "displayStart": 271,
+    "displayEnd": 271
+  },
+  {
+    "source": 30,
+    "label": "Почему не когда угодно",
+    "firstPart": 34,
+    "lastPart": 34,
+    "mode": "preserved layout",
+    "displayStart": 272,
+    "displayEnd": 272
+  },
+  {
+    "source": 31,
+    "label": "Набор Gold",
+    "firstPart": 35,
+    "lastPart": 35,
+    "mode": "preserved layout",
+    "displayStart": 273,
+    "displayEnd": 273
+  },
+  {
+    "source": 32,
+    "label": "Набор Silver",
+    "firstPart": 36,
+    "lastPart": 36,
+    "mode": "preserved layout",
+    "displayStart": 274,
+    "displayEnd": 274
+  },
+  {
+    "source": 33,
+    "label": "Набор Bronze",
+    "firstPart": 37,
+    "lastPart": 37,
+    "mode": "preserved layout",
+    "displayStart": 275,
+    "displayEnd": 275
+  },
+  {
+    "source": 34,
+    "label": "Три набора",
+    "firstPart": 38,
+    "lastPart": 38,
+    "mode": "preserved layout",
+    "displayStart": 276,
+    "displayEnd": 276
+  },
+  {
+    "source": 35,
+    "label": "If-all 3",
+    "firstPart": 39,
+    "lastPart": 39,
+    "mode": "preserved layout",
+    "displayStart": 277,
+    "displayEnd": 277
+  },
+  {
+    "source": 36,
+    "label": "Анкоринг",
+    "firstPart": 40,
+    "lastPart": 40,
+    "mode": "source copy in brand style",
+    "displayStart": 278,
+    "displayEnd": 278
+  },
+  {
+    "source": 37,
+    "label": "Два пути автора",
+    "firstPart": 41,
+    "lastPart": 41,
+    "mode": "preserved layout",
+    "displayStart": 279,
+    "displayEnd": 279
+  },
+  {
+    "source": 38,
+    "label": "Почему не сам",
+    "firstPart": 42,
+    "lastPart": 42,
+    "mode": "source copy in brand style",
+    "displayStart": 280,
+    "displayEnd": 280
+  },
+  {
+    "source": 39,
+    "label": "Bronze: описание",
+    "firstPart": 43,
+    "lastPart": 43,
+    "mode": "source copy in brand style",
+    "displayStart": 281,
+    "displayEnd": 281
+  },
+  {
+    "source": 40,
+    "label": "Silver: описание",
+    "firstPart": 44,
+    "lastPart": 44,
+    "mode": "source copy in brand style",
+    "displayStart": 282,
+    "displayEnd": 282
+  },
+  {
+    "source": 41,
+    "label": "Gold: описание",
+    "firstPart": 45,
+    "lastPart": 45,
+    "mode": "source copy in brand style",
+    "displayStart": 283,
+    "displayEnd": 283
+  },
+  {
+    "source": 42,
+    "label": "Стек целиком",
+    "firstPart": 46,
+    "lastPart": 46,
+    "mode": "preserved layout",
+    "displayStart": 284,
+    "displayEnd": 284
+  },
+  {
+    "source": 43,
+    "label": "Реальная цена",
+    "firstPart": 47,
+    "lastPart": 47,
+    "mode": "source copy in brand style",
+    "displayStart": 285,
+    "displayEnd": 285
+  },
+  {
+    "source": 44,
+    "label": "Витрина цен",
+    "firstPart": 48,
+    "lastPart": 48,
+    "mode": "preserved layout",
+    "displayStart": 286,
+    "displayEnd": 286
+  },
+  {
+    "source": 45,
+    "label": "Главная арифметика",
+    "firstPart": 49,
+    "lastPart": 49,
+    "mode": "source copy in brand style",
+    "displayStart": 287,
+    "displayEnd": 287
+  },
+  {
+    "source": 46,
+    "label": "Бронь 10",
+    "firstPart": 50,
+    "lastPart": 50,
+    "mode": "source copy in brand style",
+    "displayStart": 288,
+    "displayEnd": 288
+  },
+  {
+    "source": 47,
+    "label": "Что фиксирует десятка",
+    "firstPart": 51,
+    "lastPart": 51,
+    "mode": "preserved layout",
+    "displayStart": 289,
+    "displayEnd": 289
+  },
+  {
+    "source": 48,
+    "label": "Путь оплаты",
+    "firstPart": 52,
+    "lastPart": 52,
+    "mode": "source copy in brand style",
+    "displayStart": 290,
+    "displayEnd": 290
+  },
+  {
+    "source": 49,
+    "label": "Не выбирайте набор",
+    "firstPart": 53,
+    "lastPart": 53,
+    "mode": "preserved layout",
+    "displayStart": 291,
+    "displayEnd": 291
+  },
+  {
+    "source": 50,
+    "label": "CTA 1",
+    "firstPart": 54,
+    "lastPart": 54,
+    "mode": "preserved layout",
+    "displayStart": 292,
+    "displayEnd": 292
+  },
+  {
+    "source": 51,
+    "label": "Б1 · После брони",
+    "firstPart": 55,
+    "lastPart": 55,
+    "mode": "preserved layout",
+    "displayStart": 293,
+    "displayEnd": 293
+  },
+  {
+    "source": 52,
+    "label": "Б1 · Гарантия",
+    "firstPart": 56,
+    "lastPart": 56,
+    "mode": "source copy in brand style",
+    "displayStart": 294,
+    "displayEnd": 294
+  },
+  {
+    "source": 53,
+    "label": "Б1 · Кейс Аня",
+    "firstPart": 57,
+    "lastPart": 65,
+    "mode": "moved content",
+    "displayStart": 295,
+    "displayEnd": 303
+  },
+  {
+    "source": 54,
+    "label": "Б1 · CTA 1",
+    "firstPart": 66,
+    "lastPart": 66,
+    "mode": "preserved layout",
+    "displayStart": 304,
+    "displayEnd": 304
+  },
+  {
+    "source": 55,
+    "label": "Б2 · Не один",
+    "firstPart": 67,
+    "lastPart": 67,
+    "mode": "preserved layout",
+    "displayStart": 305,
+    "displayEnd": 305
+  },
+  {
+    "source": 56,
+    "label": "Б2 · Кейс Антон",
+    "firstPart": 68,
+    "lastPart": 71,
+    "mode": "moved content",
+    "displayStart": 306,
+    "displayEnd": 309
+  },
+  {
+    "source": 57,
+    "label": "Б3 · Не ещё одна информация",
+    "firstPart": 72,
+    "lastPart": 72,
+    "mode": "preserved layout",
+    "displayStart": 310,
+    "displayEnd": 310
+  },
+  {
+    "source": 58,
+    "label": "Б3 · А что после",
+    "firstPart": 73,
+    "lastPart": 73,
+    "mode": "source copy in brand style",
+    "displayStart": 311,
+    "displayEnd": 311
+  },
+  {
+    "source": 59,
+    "label": "Б3 · Кейс Юра",
+    "firstPart": 74,
+    "lastPart": 74,
+    "mode": "source copy in brand style",
+    "displayStart": 312,
+    "displayEnd": 312
+  },
+  {
+    "source": 60,
+    "label": "Б3 · CTA 2",
+    "firstPart": 75,
+    "lastPart": 75,
+    "mode": "preserved layout",
+    "displayStart": 313,
+    "displayEnd": 313
+  },
+  {
+    "source": 61,
+    "label": "Б4 · Внутри агента",
+    "firstPart": 76,
+    "lastPart": 79,
+    "mode": "source copy in brand style",
+    "displayStart": 314,
+    "displayEnd": 317
+  },
+  {
+    "source": 62,
+    "label": "Б5 · Окупаемость",
+    "firstPart": 80,
+    "lastPart": 80,
+    "mode": "source copy in brand style",
+    "displayStart": 318,
+    "displayEnd": 318
+  },
+  {
+    "source": 63,
+    "label": "Б6 · CTA 3",
+    "firstPart": 81,
+    "lastPart": 81,
+    "mode": "source copy in brand style",
+    "displayStart": 319,
+    "displayEnd": 319
+  },
+  {
+    "source": 64,
+    "label": "Б7 · Я не особенный",
+    "firstPart": 82,
+    "lastPart": 82,
+    "mode": "preserved layout",
+    "displayStart": 320,
+    "displayEnd": 320
+  },
+  {
+    "source": 65,
+    "label": "Б8 · Агенты блока 3",
+    "firstPart": 83,
+    "lastPart": 83,
+    "mode": "source copy in brand style",
+    "displayStart": 321,
+    "displayEnd": 321
+  },
+  {
+    "source": 66,
+    "label": "Б8 · Дизайн и креативы",
+    "firstPart": 84,
+    "lastPart": 91,
+    "mode": "moved content",
+    "displayStart": 322,
+    "displayEnd": 329
+  },
+  {
+    "source": 67,
+    "label": "Б8 · Дизайн и креативы",
+    "firstPart": 92,
+    "lastPart": 94,
+    "mode": "moved content",
+    "displayStart": 330,
+    "displayEnd": 332
+  },
+  {
+    "source": 68,
+    "label": "Б8 · Дизайн и креативы",
+    "firstPart": 95,
+    "lastPart": 95,
+    "mode": "source copy in brand style",
+    "displayStart": 333,
+    "displayEnd": 333
+  },
+  {
+    "source": 69,
+    "label": "Б9 · Сценарий А",
+    "firstPart": 96,
+    "lastPart": 96,
+    "mode": "source copy in brand style",
+    "displayStart": 334,
+    "displayEnd": 334
+  },
+  {
+    "source": 70,
+    "label": "Б9 · Сценарий Б",
+    "firstPart": 97,
+    "lastPart": 97,
+    "mode": "source copy in brand style",
+    "displayStart": 335,
+    "displayEnd": 335
+  },
+  {
+    "source": 71,
+    "label": "Б9 · Саша и Наталья",
+    "firstPart": 98,
+    "lastPart": 98,
+    "mode": "source copy in brand style",
+    "displayStart": 336,
+    "displayEnd": 336
+  },
+  {
+    "source": 72,
+    "label": "Б9 · CTA 4",
+    "firstPart": 99,
+    "lastPart": 99,
+    "mode": "preserved layout",
+    "displayStart": 337,
+    "displayEnd": 337
+  },
+  {
+    "source": 73,
+    "label": "Б10 · Продающие AI-видео",
+    "firstPart": 100,
+    "lastPart": 104,
+    "mode": "moved content",
+    "displayStart": 338,
+    "displayEnd": 342
+  },
+  {
+    "source": 74,
+    "label": "Б10 · Продающие AI-видео",
+    "firstPart": 105,
+    "lastPart": 110,
+    "mode": "moved content",
+    "displayStart": 343,
+    "displayEnd": 348
+  },
+  {
+    "source": 75,
+    "label": "Б10 · Продающие AI-видео",
+    "firstPart": 111,
+    "lastPart": 111,
+    "mode": "source copy in brand style",
+    "displayStart": 349,
+    "displayEnd": 349
+  },
+  {
+    "source": 76,
+    "label": "Б11 · Половина результата",
+    "firstPart": 112,
+    "lastPart": 112,
+    "mode": "source copy in brand style",
+    "displayStart": 350,
+    "displayEnd": 350
+  },
+  {
+    "source": 77,
+    "label": "Б11 · CTA 5",
+    "firstPart": 113,
+    "lastPart": 113,
+    "mode": "preserved layout",
+    "displayStart": 351,
+    "displayEnd": 351
+  },
+  {
+    "source": 78,
+    "label": "Б12 · Агенты блока 4",
+    "firstPart": 114,
+    "lastPart": 122,
+    "mode": "source copy in brand style",
+    "displayStart": 352,
+    "displayEnd": 360
+  },
+  {
+    "source": 79,
+    "label": "Б12 · Реклама агентами",
+    "firstPart": 123,
+    "lastPart": 124,
+    "mode": "moved content",
+    "displayStart": 361,
+    "displayEnd": 362
+  },
+  {
+    "source": 80,
+    "label": "Б12 · Реклама агентами",
+    "firstPart": 125,
+    "lastPart": 125,
+    "mode": "moved content",
+    "displayStart": 363,
+    "displayEnd": 363
+  },
+  {
+    "source": 81,
+    "label": "Б12 · Реклама агентами",
+    "firstPart": 126,
+    "lastPart": 127,
+    "mode": "source copy in brand style",
+    "displayStart": 364,
+    "displayEnd": 365
+  },
+  {
+    "source": 82,
+    "label": "Б13 · Сравнить наборы",
+    "firstPart": 128,
+    "lastPart": 128,
+    "mode": "preserved layout",
+    "displayStart": 366,
+    "displayEnd": 366
+  },
+  {
+    "source": 83,
+    "label": "Б13 · Кому подходит",
+    "firstPart": 129,
+    "lastPart": 129,
+    "mode": "preserved layout",
+    "displayStart": 367,
+    "displayEnd": 367
+  },
+  {
+    "source": 84,
+    "label": "Б14 · Агент блока 5",
+    "firstPart": 130,
+    "lastPart": 130,
+    "mode": "source copy in brand style",
+    "displayStart": 368,
+    "displayEnd": 368
+  },
+  {
+    "source": 85,
+    "label": "Б14 · AI-продавцы",
+    "firstPart": 131,
+    "lastPart": 132,
+    "mode": "moved content",
+    "displayStart": 369,
+    "displayEnd": 370
+  },
+  {
+    "source": 86,
+    "label": "Б14 · AI-продавцы",
+    "firstPart": 133,
+    "lastPart": 133,
+    "mode": "moved content",
+    "displayStart": 371,
+    "displayEnd": 371
+  },
+  {
+    "source": 87,
+    "label": "Б14 · AI-продавцы",
+    "firstPart": 134,
+    "lastPart": 134,
+    "mode": "source copy in brand style",
+    "displayStart": 372,
+    "displayEnd": 372
+  },
+  {
+    "source": 88,
+    "label": "Б15 · Эти деньги и так уйдут",
+    "firstPart": 135,
+    "lastPart": 135,
+    "mode": "source copy in brand style",
+    "displayStart": 373,
+    "displayEnd": 373
+  },
+  {
+    "source": 89,
+    "label": "Б15 · Рассрочка",
+    "firstPart": 136,
+    "lastPart": 136,
+    "mode": "source copy in brand style",
+    "displayStart": 374,
+    "displayEnd": 374
+  },
+  {
+    "source": 90,
+    "label": "Б16 · Контент и AI-аватар",
+    "firstPart": 137,
+    "lastPart": 141,
+    "mode": "moved content",
+    "displayStart": 375,
+    "displayEnd": 379
+  },
+  {
+    "source": 91,
+    "label": "Б16 · Контент и AI-аватар",
+    "firstPart": 142,
+    "lastPart": 143,
+    "mode": "moved content",
+    "displayStart": 380,
+    "displayEnd": 381
+  },
+  {
+    "source": 92,
+    "label": "Б16 · Контент и AI-аватар",
+    "firstPart": 144,
+    "lastPart": 144,
+    "mode": "source copy in brand style",
+    "displayStart": 382,
+    "displayEnd": 382
+  },
+  {
+    "source": 93,
+    "label": "Б17 · Под ключ",
+    "firstPart": 145,
+    "lastPart": 145,
+    "mode": "source copy in brand style",
+    "displayStart": 383,
+    "displayEnd": 383
+  },
+  {
+    "source": 94,
+    "label": "Б17 · Под ключ · что уже поставили",
+    "firstPart": 146,
+    "lastPart": 146,
+    "mode": "source copy in brand style",
+    "displayStart": 384,
+    "displayEnd": 384
+  },
+  {
+    "source": 95,
+    "label": "Б18 · Умеете после блока 2",
+    "firstPart": 147,
+    "lastPart": 147,
+    "mode": "source copy in brand style",
+    "displayStart": 385,
+    "displayEnd": 385
+  },
+  {
+    "source": 96,
+    "label": "Б18 · Блок 2 в цифрах",
+    "firstPart": 148,
+    "lastPart": 148,
+    "mode": "source copy in brand style",
+    "displayStart": 386,
+    "displayEnd": 386
+  },
+  {
+    "source": 97,
+    "label": "Б18 · Пять задач",
+    "firstPart": 149,
+    "lastPart": 149,
+    "mode": "preserved layout",
+    "displayStart": 387,
+    "displayEnd": 387
+  },
+  {
+    "source": 98,
+    "label": "Б19 · С кем работали",
+    "firstPart": 150,
+    "lastPart": 150,
+    "mode": "preserved layout",
+    "displayStart": 388,
+    "displayEnd": 388
+  },
+  {
+    "source": 99,
+    "label": "Б20 · Кейсы внедрения",
+    "firstPart": 151,
+    "lastPart": 151,
+    "mode": "source copy in brand style",
+    "displayStart": 389,
+    "displayEnd": 389
+  },
+  {
+    "source": 100,
+    "label": "Б21 · Подарки",
+    "firstPart": 152,
+    "lastPart": 152,
+    "mode": "preserved layout",
+    "displayStart": 390,
+    "displayEnd": 390
+  },
+  {
+    "source": 101,
+    "label": "Б21 · Карта не путешествие",
+    "firstPart": 153,
+    "lastPart": 153,
+    "mode": "preserved layout",
+    "displayStart": 391,
+    "displayEnd": 391
+  },
+  {
+    "source": 102,
+    "label": "Б21 · CTA 6",
+    "firstPart": 154,
+    "lastPart": 154,
+    "mode": "preserved layout",
+    "displayStart": 392,
+    "displayEnd": 392
+  },
+  {
+    "source": 103,
+    "label": "Б21 · Легализация QA",
+    "firstPart": 155,
+    "lastPart": 155,
+    "mode": "preserved layout",
+    "displayStart": 393,
+    "displayEnd": 393
+  },
+  {
+    "source": 104,
+    "label": "Б21 · Экран Q&A · старт",
+    "firstPart": 156,
+    "lastPart": 156,
+    "mode": "preserved layout",
+    "displayStart": 394,
+    "displayEnd": 394
+  },
+  {
+    "source": 105,
+    "label": "Б21 · Q&A 1",
+    "firstPart": 157,
+    "lastPart": 157,
+    "mode": "preserved layout",
+    "displayStart": 395,
+    "displayEnd": 395
+  },
+  {
+    "source": 106,
+    "label": "Б21 · Q&A 2",
+    "firstPart": 158,
+    "lastPart": 158,
+    "mode": "preserved layout",
+    "displayStart": 396,
+    "displayEnd": 396
+  },
+  {
+    "source": 107,
+    "label": "Б21 · Q&A 3",
+    "firstPart": 159,
+    "lastPart": 159,
+    "mode": "preserved layout",
+    "displayStart": 397,
+    "displayEnd": 397
+  },
+  {
+    "source": 108,
+    "label": "Б21 · Q&A 4",
+    "firstPart": 160,
+    "lastPart": 160,
+    "mode": "preserved layout",
+    "displayStart": 398,
+    "displayEnd": 398
+  },
+  {
+    "source": 109,
+    "label": "Б21 · Q&A 5",
+    "firstPart": 161,
+    "lastPart": 161,
+    "mode": "source copy in brand style",
+    "displayStart": 399,
+    "displayEnd": 399
+  },
+  {
+    "source": 110,
+    "label": "Б21 · Q&A 6",
+    "firstPart": 162,
+    "lastPart": 162,
+    "mode": "preserved layout",
+    "displayStart": 400,
+    "displayEnd": 400
+  },
+  {
+    "source": 111,
+    "label": "Б21 · Q&A 7",
+    "firstPart": 163,
+    "lastPart": 163,
+    "mode": "preserved layout",
+    "displayStart": 401,
+    "displayEnd": 401
+  },
+  {
+    "source": 112,
+    "label": "Б21 · Q&A 8",
+    "firstPart": 164,
+    "lastPart": 164,
+    "mode": "preserved layout",
+    "displayStart": 402,
+    "displayEnd": 402
+  },
+  {
+    "source": 113,
+    "label": "Б21 · Q&A 9",
+    "firstPart": 165,
+    "lastPart": 165,
+    "mode": "preserved layout",
+    "displayStart": 403,
+    "displayEnd": 403
+  },
+  {
+    "source": 114,
+    "label": "Б21 · Q&A 10",
+    "firstPart": 166,
+    "lastPart": 166,
+    "mode": "preserved layout",
+    "displayStart": 404,
+    "displayEnd": 404
+  },
+  {
+    "source": 115,
+    "label": "Б21 · Q&A 11",
+    "firstPart": 167,
+    "lastPart": 167,
+    "mode": "preserved layout",
+    "displayStart": 405,
+    "displayEnd": 405
+  },
+  {
+    "source": 116,
+    "label": "Б21 · Цена ожидания",
+    "firstPart": 168,
+    "lastPart": 168,
+    "mode": "source copy in brand style",
+    "displayStart": 406,
+    "displayEnd": 406
+  },
+  {
+    "source": 117,
+    "label": "Б21 · Финал",
+    "firstPart": 169,
+    "lastPart": 169,
+    "mode": "preserved layout",
+    "displayStart": 407,
+    "displayEnd": 407
+  },
+  {
+    "source": 118,
+    "label": "Б21 · Экран Q&A",
+    "firstPart": 170,
+    "lastPart": 170,
+    "mode": "preserved layout",
+    "displayStart": 408,
+    "displayEnd": 408
+  }
+]

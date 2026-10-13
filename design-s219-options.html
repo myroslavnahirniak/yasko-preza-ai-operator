@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>219 · Как теперь ищут бизнес · три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.kick{display:block;text-align:center}
+.h1{font-size:5cqw;text-align:center}
+.sub{margin-top:1.6cqh;text-align:center;font:400 2.3cqw/1.35 Manrope,sans-serif;color:var(--muted)}
+.n{font:500 1.7cqw/1 'JetBrains Mono',monospace;font-style:normal;letter-spacing:.18em;color:var(--yellow)}
+/* ---------- А · три карточки в ряд ---------- */
+.v-A .top{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3}
+.v-A .cards{position:absolute;left:5cqw;right:5cqw;top:33cqh;bottom:9cqh;align-items:start;z-index:3;display:grid;grid-template-columns:repeat(3,1fr);gap:2.2cqw}
+.v-A .card{display:flex;flex-direction:column;background:#100c09;border:1px solid #2a2420;border-radius:1.4cqw;overflow:hidden;transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .4s,opacity .4s,box-shadow .4s}
+.v-A .card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.v-A .card .tx{padding:1.8cqh 1.6cqw 2cqh}
+.v-A .card b{display:block;margin-top:.8cqh;font:500 2.3cqw/1.18 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--cream)}
+.v-A .card span{display:block;margin-top:.9cqh;font:400 1.8cqw/1.35 Manrope,sans-serif;color:var(--muted)}
+.v-A .card.is-future{opacity:.55}
+.v-A .card.is-now{transform:translateY(-1.6cqh);border-color:rgba(253,213,6,.7);box-shadow:0 2.4cqh 7cqh rgba(0,0,0,.75)}
+.v-A .card:hover{transform:translateY(-1.6cqh) scale(1.02);border-color:rgba(253,213,6,.55)}
+.v-A .arrow{position:absolute;top:47cqh;width:3cqw;height:3cqw;z-index:4;opacity:.5}
+.v-A .arrow.a1{left:32.4cqw}.v-A .arrow.a2{left:64.2cqw}
+.v-A .arrow svg{width:100%;height:100%;stroke:var(--yellow);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* ---------- Б · кино-кадр на весь квадрат ---------- */
+.v-B .shot{position:absolute;inset:0;z-index:1;opacity:0;transition:opacity .7s ease}
+.v-B .shot img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.06);animation:kb 18s linear forwards}
+.v-B .shot:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,.93) 0%,rgba(11,9,7,.5) 28%,rgba(11,9,7,.15) 45%,rgba(11,9,7,.88) 72%,#0b0907 100%)}
+.v-B[data-step="0"] .shot.s0,.v-B[data-step="1"] .shot.s1,.v-B[data-step="2"] .shot.s2{opacity:1}
+.v-B .top{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3}
+.v-B .prog{position:absolute;left:7cqw;right:7cqw;top:26cqh;z-index:3;display:grid;grid-template-columns:repeat(3,1fr);gap:1.4cqw}
+.v-B .prog i{display:block;height:.45cqh;background:#2a2420;transition:background .4s}
+.v-B[data-step="0"] .prog i:nth-child(1),.v-B[data-step="1"] .prog i:nth-child(-n+2),.v-B[data-step="2"] .prog i{background:var(--yellow)}
+.v-B .step{position:absolute;left:7cqw;right:7cqw;bottom:8cqh;z-index:3;opacity:0;visibility:hidden;transform:translateY(1.6cqh);transition:opacity .5s ease,transform .5s ease}
+.v-B[data-step="0"] .step.s0,.v-B[data-step="1"] .step.s1,.v-B[data-step="2"] .step.s2{opacity:1;visibility:visible;transform:none}
+.v-B .step b{display:block;margin-top:1cqh;font:500 5.2cqw/1.1 Unbounded,sans-serif;letter-spacing:-.03em;color:var(--cream)}
+.v-B .step span{display:block;margin-top:1.6cqh;max-width:70cqw;font:400 2.5cqw/1.4 Manrope,sans-serif;color:var(--muted)}
+/* ---------- В · 3D-поток по диагонали ---------- */
+.v-C{background:radial-gradient(ellipse at 50% 35%,#171210 0%,#0b0907 65%)}
+.v-C .top{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3}
+.v-C .flow{position:absolute;left:0;right:0;top:30cqh;bottom:6cqh;z-index:3;perspective:150cqw}
+.v-C .tilt{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(var(--ty,6deg)) rotateY(var(--tx,0deg));transition:transform .4s ease-out}
+.v-C .pic{position:absolute;width:34cqw;border-radius:1.4cqw;overflow:hidden;border:1px solid #3a3129;box-shadow:0 2.4cqh 7cqh rgba(0,0,0,.8);transition:transform .55s cubic-bezier(.2,.8,.2,1),border-color .4s,opacity .4s}
+.v-C .pic img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.v-C .pic .cap{position:absolute;left:0;right:0;bottom:0;padding:1.4cqh 1.2cqw;background:linear-gradient(180deg,transparent,rgba(11,9,7,.94) 55%)}
+.v-C .pic b{display:block;margin-top:.4cqh;font:500 2cqw/1.15 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--cream)}
+.v-C .p0{left:4cqw;top:2cqh;transform:translateZ(0) rotateY(10deg)}
+.v-C .p1{left:33cqw;top:12cqh;transform:translateZ(5cqw)}
+.v-C .p2{right:4cqw;top:22cqh;transform:translateZ(0) rotateY(-10deg)}
+.v-C .pic.is-now{border-color:rgba(253,213,6,.75);transform:translateZ(11cqw) scale(1.03);z-index:4}
+.v-C .pic.is-future{opacity:.5}
+.v-C .desc{position:absolute;left:7cqw;right:7cqw;bottom:2cqh;z-index:5;opacity:0;visibility:hidden;transition:opacity .4s}
+.v-C[data-step="0"] .desc.d0,.v-C[data-step="1"] .desc.d1,.v-C[data-step="2"] .desc.d2{opacity:1;visibility:visible}
+.v-C .desc span{font:400 2.2cqw/1.35 Manrope,sans-serif;color:var(--muted)}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="B">А · Кино-кадр на весь квадрат</button><button role="tab" data-v="A">Б · Три карточки в ряд</button><button role="tab" data-v="C">В · 3D-поток по диагонали</button></div>
+<p class="description"></p>
+<p class="note">Полный текст источника: «Услуга 7 из 7 · AI-SEO», «Как теперь ищут бизнес», «Три шага — и клиент уже на сайте» и три шага с подписями. Кадры — уже сгенерированные 3D-сцены. Клавиши: ←/→ вариант, ↓/Space шаг.</p>
+<div class="actions"><button id="prev" class="stepbtn">◀ шаг</button><span id="stepinfo"></span><button id="next" class="stepbtn">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+</nav>
+<script>
+const G='assets/gen-184-188/';
+const ST=[['Человек спрашивает','у ChatGPT, Gemini или Perplexity: где купить, кого выбрать','s219-ask'],
+          ['Нейросеть отвечает','и называет сайт вашего клиента','s219-answer'],
+          ['Человек приходит','уже готовый, его не надо уговаривать','s219-arrive']];
+const TOP='<div class="top fx-up"><span class="kick">Услуга 7 из 7 · AI-SEO</span><h1 class="h1">Как теперь <em>ищут бизнес</em></h1><p class="sub">Три шага — и клиент уже на сайте</p></div>';
+const AR='<svg viewBox="0 0 24 24"><path d="M4 12h15M14 6l6 6-6 6"/></svg>';
+window.VARIANTS={
+B:{steps:2,html:ST.map((s,i)=>'<div class="shot s'+i+'"><img src="'+G+s[2]+'.webp" alt=""></div>').join('')+TOP
+   +'<div class="prog"><i></i><i></i><i></i></div>'
+   +ST.map((s,i)=>'<div class="step s'+i+'"><span class="n">0'+(i+1)+'</span><b>'+s[0]+'</b><span>'+s[1]+'</span></div>').join(''),
+   desc:'Каждый шаг — своя 3D-сцена на весь квадрат с лёгким наездом камеры, сверху заголовок и полоса прогресса из трёх сегментов, внизу крупно название шага и подпись. Максимум воздуха, текст читается издалека. Рекомендация.'},
+A:{steps:2,html:TOP+'<div class="cards">'+ST.map((s,i)=>'<div class="card" data-step="'+i+'"><img src="'+G+s[2]+'.webp" alt=""><div class="tx"><span class="n">0'+(i+1)+'</span><b>'+s[0]+'</b><span>'+s[1]+'</span></div></div>').join('')+'</div><div class="arrow a1">'+AR+'</div><div class="arrow a2">'+AR+'</div>',
+   desc:'Три равные карточки в ряд: кадр сверху, номер, название и подпись под ним, между карточками жёлтые стрелки. По шагам активная карточка поднимается и подсвечивается, следующие приглушены. Всё видно сразу.'},
+C:{steps:2,html:TOP+'<div class="flow"><div class="tilt">'+ST.map((s,i)=>'<div class="pic p'+i+'" data-step="'+i+'"><img src="'+G+s[2]+'.webp" alt=""><div class="cap"><span class="n">0'+(i+1)+'</span><b>'+s[0]+'</b></div></div>').join('')+'</div></div>'
+   +ST.map((s,i)=>'<div class="desc d'+i+'"><span>'+s[1]+'</span></div>').join(''),
+   desc:'Три кадра лесенкой по диагонали в 3D-перспективе, активный выходит вперёд, остальные приглушены; подпись текущего шага внизу. При наведении вся сцена слегка наклоняется за курсором.',
+   onRender(s){const f=s.querySelector('.flow'),t=s.querySelector('.tilt');f.addEventListener('mousemove',e=>{const r=f.getBoundingClientRect();const dx=(e.clientX-r.left)/r.width-.5,dy=(e.clientY-r.top)/r.height-.5;t.style.setProperty('--tx',(dx*9).toFixed(2)+'deg');t.style.setProperty('--ty',(6-dy*7).toFixed(2)+'deg');});f.addEventListener('mouseleave',()=>{t.style.removeProperty('--tx');t.style.removeProperty('--ty');});}}};
+window.ORDER=['B','A','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>217 · AI-таргет · три варианта SVG-анимации</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.kick{display:block}
+.h1{font-size:4.6cqw;margin-top:1cqh}
+.txt{position:absolute;left:7cqw;right:7cqw;top:6cqh;z-index:3;text-align:center}
+.out{display:grid;gap:1cqw}
+.out>div{background:#15110d;border:1px solid var(--rule);padding:1.1cqh 1.3cqw;display:flex;flex-direction:column;justify-content:center}
+.out i{display:block;font:500 1.3cqw/1 'JetBrains Mono',monospace;color:var(--yellow);letter-spacing:.12em;font-style:normal;margin-bottom:.7cqh}
+.out b{display:block;font:500 1.7cqw/1.25 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--cream)}
+.out span{display:block;margin-top:.4cqh;font:400 1.45cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+.big{font:500 5.2cqw/1 Unbounded,sans-serif;letter-spacing:-.04em;color:var(--yellow);white-space:nowrap}
+.big small{display:block;margin-top:.8cqh;font:400 1.6cqw/1.3 Manrope,sans-serif;color:var(--muted);letter-spacing:0;white-space:normal}
+.claim{font:400 2cqw/1.3 Manrope,sans-serif;color:var(--cream)}
+.price{display:inline-block;border:1px solid var(--yellow);color:var(--yellow);font:600 1.55cqw/1 Manrope,sans-serif;padding:.9cqh 1.4cqw;white-space:nowrap}
+.git{position:absolute;z-index:3}
+.git .win{background:#000;border:1px solid #3a3129;border-radius:.8cqw;overflow:hidden;box-shadow:0 1.5cqh 4cqh rgba(0,0,0,.6)}
+.git .bar{height:2.6cqh;background:#1c1713;border-bottom:1px solid #2f2822;display:flex;align-items:center;gap:.5cqw;padding:0 .9cqw}
+.git .bar i{width:.7cqw;height:.7cqw;border-radius:50%;background:#3a3129}
+.git .bar span{flex:1;margin-left:.5cqw;height:1.6cqh;background:#0f0c09;border:1px solid #2a2420;border-radius:.3cqw;font:500 1cqw/1.6cqh Manrope,sans-serif;color:#8a8278;text-align:center;white-space:nowrap;overflow:hidden}
+.git img{display:block;width:100%;height:auto}
+.git .cap{margin-top:.8cqh;font:400 1.35cqw/1.3 Manrope,sans-serif;color:var(--muted);text-align:center}
+.svgbox{position:absolute;z-index:3}
+.svgbox svg{display:block;width:100%;height:100%;overflow:visible}
+.bottom{position:absolute;left:7cqw;right:7cqw;bottom:5cqh;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:2cqw}
+/* А · пульт кампаний */
+.v-A .svgbox{left:5cqw;top:22cqh;width:56cqw;height:40cqh}
+.v-A .side{position:absolute;left:64cqw;right:6cqw;top:22cqh;z-index:3}
+.v-A .git{left:64cqw;right:6cqw;top:37cqh}
+.v-A .out{position:absolute;left:7cqw;right:7cqw;top:69cqh;grid-template-columns:repeat(3,1fr);z-index:3}
+.v-A .out>div{min-height:11cqh}
+/* Б · конвейер объявлений */
+.v-B .txt{text-align:left;right:auto;width:60cqw}
+.v-B .h1{font-size:4.2cqw}
+.v-B .out{position:absolute;left:7cqw;top:23cqh;width:33cqw;grid-template-columns:1fr;gap:.8cqh;z-index:3}
+.v-B .out>div{padding:1cqh 1.2cqw}
+.v-B .stage{position:absolute;left:43cqw;right:5cqw;top:20cqh;height:17.2cqw;z-index:3;perspective:120cqw}
+.v-B .cards{position:absolute;inset:0;display:flex;align-items:stretch;justify-content:space-between;gap:2.6cqw;transform-style:preserve-3d;transform:rotateY(-8deg)}
+.v-B .cards figure{aspect-ratio:auto}
+.v-B .cards figure{position:relative;flex:1;aspect-ratio:1;border:1px solid #3a3129;overflow:hidden;background:#000;box-shadow:0 2cqh 5cqh rgba(0,0,0,.6);transition:box-shadow .5s,border-color .5s}
+.v-B .cards figure img{display:block;width:100%;height:100%;object-fit:cover}
+.v-B .cards figure.win{border-color:var(--yellow);box-shadow:0 0 0 .3cqw rgba(253,213,6,.35),0 2cqh 5cqh rgba(0,0,0,.6)}
+.v-B .cards figure.off img{filter:grayscale(1) brightness(.45)}
+.v-B .overlay{position:absolute;inset:0;pointer-events:none}
+.v-B .pipe{left:43cqw;right:5cqw;top:39.5cqh;height:16cqh}
+.v-B .big{position:absolute;left:7cqw;top:57cqh;width:34cqw;z-index:3;font-size:4.4cqw}
+.v-B .big small{font-size:1.5cqw}
+.v-B .git{right:5cqw;top:59cqh;width:30cqw}
+.v-B .git .bar{height:2.2cqh}
+.v-B .bottom{left:7cqw;right:auto;bottom:6cqh;flex-direction:column;align-items:flex-start;gap:1cqh}
+.v-B .claim{font-size:1.75cqw}
+/* В · сутки агента */
+.v-C .svgbox{left:2cqw;top:19cqh;width:56cqw;height:56cqh}
+.v-C .side{position:absolute;left:61cqw;right:6cqw;top:22cqh;z-index:3}
+.v-C .out{grid-template-columns:1fr;gap:.8cqh;margin-top:2.4cqh}
+.v-C .out>div{padding:1cqh 1.2cqw}
+.v-C .git{right:6cqw;width:24cqw;top:64cqh}
+.v-C .git .bar{height:2.2cqh}
+.v-C .bottom{justify-content:center;flex-direction:column;gap:1cqh;bottom:4cqh}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Пульт кампаний</button><button role="tab" data-v="B">Б · Конвейер объявлений</button><button role="tab" data-v="C">В · Сутки агента</button></div>
+<p class="description"></p>
+<div class="actions"><button id="replay">↻ replay (R)</button></div>
+<p class="note">←/→ варианты · R повтор · все анимации — SVG/SMIL, без видео</p>
+</nav>
+<script>
+const KICK='Услуга 6 из 7', H1='AI-таргет <em>(платная реклама)</em>';
+const TXT='<div class="txt fx-up"><span class="kick">'+KICK+'</span><h1 class="h1">'+H1+'</h1></div>';
+const ITEMS=[['01','Facebook и Instagram','настраивает и запускает кампании'],['02','Объявления','создаёт и тестирует десятками'],['03','24/7','ведёт и переключает без выходных']];
+const OUT='<div class="out fx-up">'+ITEMS.map(i=>'<div><i>'+i[0]+'</i><b>'+i[1]+'</b><span>'+i[2]+'</span></div>').join('')+'</div>';
+const BIG='<div class="big"><span class="cnt" data-to="400000">$0</span>+<small>рекламного бюджета уже прошло через этого агента</small></div>';
+const CLAIM='Заменяет работу полноценного таргетолога', PRICE='$300–$800 · в месяц · сложность средняя';
+const GIT='<div class="git fx-up"><div class="win"><div class="bar"><i></i><i></i><i></i><span>github.com · ai-ads-agent</span></div><img src="assets/vlad-1409/uslugi/target-github.jpg" alt=""></div><p class="cap">движок агента-рекламщика, открытый код</p></div>';
+const Y='#fdd506',CR='#f5f3ee',MU='#c4bdb1',DM='#6f685e',RL='#2a2420',PN='#15110d',RD='#c6000c',GN='#39d353';
+/* глифы: f и камера */
+const FB=(x,y,s=1)=>`<g transform="translate(${x} ${y}) scale(${s})"><circle r="17" fill="${PN}" stroke="#3a3129"/><path d="M3 10 V0 H8 V-5 H3 V-8 c0-2 1-3 3-3 h2 V-15 H5 c-5 0-7 3-7 7 v3 H-5 V0 H-2 V10 Z" fill="${CR}"/></g>`;
+const IG=(x,y,s=1)=>`<g transform="translate(${x} ${y}) scale(${s})"><rect x="-17" y="-17" width="34" height="34" rx="10" fill="${PN}" stroke="#3a3129"/><rect x="-9.5" y="-9.5" width="19" height="19" rx="6" fill="none" stroke="${CR}" stroke-width="1.8"/><circle r="4.3" fill="none" stroke="${CR}" stroke-width="1.8"/><circle cx="5.8" cy="-5.8" r="1.3" fill="${CR}"/></g>`;
+const CHIP=(x,y)=>`<g transform="translate(${x} ${y})"><rect x="-30" y="-22" width="60" height="44" rx="8" fill="${PN}" stroke="${Y}"/><circle r="7" fill="${Y}"><animate attributeName="r" values="6;9;6" dur="1.6s" repeatCount="indefinite"/></circle><circle r="7" fill="none" stroke="${Y}" opacity=".5"><animate attributeName="r" values="7;18" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0" dur="1.6s" repeatCount="indefinite"/></circle><text y="34" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" letter-spacing="2" fill="${DM}">АГЕНТ</text></g>`;
+const flow=(d,delay=0)=>`<path d="${d}" fill="none" stroke="${RL}" stroke-width="1.5"/><path d="${d}" fill="none" stroke="${Y}" stroke-width="1.5" stroke-dasharray="6 10" opacity=".8"><animate attributeName="stroke-dashoffset" from="64" to="0" dur="1.4s" begin="${delay}s" repeatCount="indefinite"/></path>`;
+const once=(attr,vals,dur,begin)=>`<animate attributeName="${attr}" values="${vals}" dur="${dur}s" begin="${begin}s" fill="freeze" calcMode="spline" keySplines="${vals.split(';').slice(1).map(()=>'.2 .8 .2 1').join(';')}"/>`;
+function countUp(s){s.querySelectorAll('.cnt').forEach(n=>{const to=+n.dataset.to,t0=performance.now()+700,dur=1800;const tick=()=>{const k=Math.min(1,(performance.now()-t0)/dur);if(k<0){requestAnimationFrame(tick);return;}const e=1-Math.pow(1-k,3);n.textContent='$'+String(Math.round(to*e)).replace(/\B(?=(\d{3})+(?!\d))/g,'.');if(k<1)requestAnimationFrame(tick);};requestAnimationFrame(tick);});}
+
+/* ─── А · пульт кампаний: 12 объявлений тестируются, слабые выключаются, бюджет перетекает в сильные ─── */
+function svgA(){
+  const W=600,H=400;let s=`<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">`;
+  s+=`<rect x="0" y="0" width="${W}" height="${H}" rx="14" fill="#0f0c09" stroke="${RL}"/>`;
+  s+=`<rect x="0" y="0" width="${W}" height="34" rx="14" fill="${PN}"/><rect x="0" y="20" width="${W}" height="14" fill="${PN}"/><line x1="0" y1="34" x2="${W}" y2="34" stroke="${RL}"/>`;
+  s+=`<circle cx="22" cy="17" r="4" fill="${GN}"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle><text x="34" y="21" font-family="JetBrains Mono,monospace" font-size="10" letter-spacing="2" fill="${MU}">ADS MANAGER</text>`;
+  s+=`<text x="${W-16}" y="21" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="10" letter-spacing="2" fill="${Y}">24/7</text>`;
+  s+=FB(60,150,1.15)+IG(60,270,1.15)+CHIP(160,210);
+  s+=flow('M80 150 C115 150 115 210 130 210',0)+flow('M80 270 C115 270 115 210 130 210',.5);
+  // grid 3x3, крупные карточки
+  const cols=3,rows=3,cw=104,ch=88,gx=232,gy=58,gap=14;
+  const losers=[1,3,5,6,7],winners=[0,4,8];
+  const vals=[88,18,42,22,92,15,20,12,74];
+  let k=0;
+  for(let r=0;r<rows;r++)for(let c=0;c<cols;c++,k++){
+    const x=gx+c*(cw+gap),y=gy+r*(ch+gap),t=.5+k*.16,isL=losers.includes(k),isW=winners.includes(k);
+    s+=`<g opacity="0">${once('opacity','0;1',.4,t)}`;
+    s+=`<rect x="${x}" y="${y}" width="${cw}" height="${ch}" rx="8" fill="${PN}" stroke="#3a3129"/>`;
+    s+=`<rect x="${x+10}" y="${y+10}" width="38" height="30" rx="4" fill="#221b16"/><rect x="${x+56}" y="${y+13}" width="38" height="5" rx="2.5" fill="#3a3129"/><rect x="${x+56}" y="${y+25}" width="26" height="5" rx="2.5" fill="#3a3129"/>`;
+    s+=`<rect x="${x+10}" y="${y+58}" width="${cw-20}" height="9" rx="4.5" fill="#221b16"/><rect x="${x+10}" y="${y+58}" width="0" height="9" rx="4.5" fill="${isW?Y:MU}">${once('width','0;'+((cw-20)*vals[k]/100).toFixed(1),.9,t+1.2)}</rect>`;
+    if(isL){s+=`<g opacity="0">${once('opacity','0;1',.3,3.6+k*.1)}<rect x="${x}" y="${y}" width="${cw}" height="${ch}" rx="8" fill="#0b0907" opacity=".74"/><g transform="translate(${x+cw/2} ${y+ch/2})"><circle r="13" fill="${RD}"/><path d="M-5 -5 L5 5 M5 -5 L-5 5" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></g></g>`;}
+    if(isW){s+=`<rect x="${x-2}" y="${y-2}" width="${cw+4}" height="${ch+4}" rx="10" fill="none" stroke="${Y}" stroke-width="2.5" opacity="0">${once('opacity','0;1',.4,4.6)}</rect><g opacity="0">${once('opacity','0;1',.3,5)}<rect x="${x+cw-64}" y="${y-10}" width="70" height="20" rx="10" fill="${Y}"/><text x="${x+cw-29}" y="${y+4}" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9.5" font-weight="700" letter-spacing="1" fill="#0b0907">+БЮДЖЕТ</text></g>`;}
+    s+=`</g>`;
+  }
+  winners.forEach((k,i)=>{const c=k%cols,r=Math.floor(k/cols),x=gx+c*(cw+gap),y=gy+r*(ch+gap)+ch/2;const d=`M190 210 C215 210 205 ${y} ${x} ${y}`;
+    s+=`<g opacity="0">${once('opacity','0;1',.5,4.8+i*.2)}${flow(d,i*.3)}</g>`;});
+  s+=`<text x="${gx}" y="${H-16}" font-family="Manrope,sans-serif" font-size="11" fill="${MU}">9 объявлений в тесте · <tspan fill="${RD}">5 выключил</tspan> · <tspan fill="${Y}" font-weight="700">3 масштабирует</tspan></text>`;
+  return s+'</svg>';
+}
+
+/* ─── Б · конвейер: три креатива, сканер, тумблеры, поток $ от FB/IG через агента ─── */
+function svgBover(){
+  // overlay over 3 cards (viewBox 0 0 600 200): scan line + badge + toggle per card
+  const W=600,H=200,cw=180,g=30;let s=`<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">`;
+  const cpl=['$3.9','$11.4','$4.6'],off=[false,true,false];
+  for(let i=0;i<3;i++){const x=i*(cw+g),t=.6+i*.9;
+    s+=`<rect x="${x}" y="0" width="${cw}" height="3" fill="${Y}" opacity="0"><animate attributeName="y" values="0;${H-3}" dur=".9s" begin="${t}s" fill="freeze"/><animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.1;.9;1" dur=".9s" begin="${t}s" fill="freeze"/></rect>`;
+    s+=`<g opacity="0">${once('opacity','0;1',.3,t+1)}<rect x="${x+10}" y="${H-38}" width="86" height="24" rx="12" fill="#0b0907" stroke="${off[i]?RD:Y}"/><text x="${x+53}" y="${H-22}" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" font-weight="700" fill="${off[i]?RD:Y}">CPL ${cpl[i]}</text></g>`;
+    // toggle
+    s+=`<g opacity="0">${once('opacity','0;1',.3,t+1)}<rect x="${x+cw-52}" y="${H-36}" width="42" height="20" rx="10" fill="${off[i]?'#221b16':Y}">${off[i]?`<animate attributeName="fill" values="${Y};${Y};#221b16" keyTimes="0;.6;1" dur="1s" begin="${t+1.6}s" fill="freeze"/>`:''}</rect><circle cx="${x+cw-20}" cy="${H-26}" r="8" fill="#0b0907">${off[i]?`<animate attributeName="cx" values="${x+cw-20};${x+cw-20};${x+cw-42}" keyTimes="0;.6;1" dur="1s" begin="${t+1.6}s" fill="freeze"/><animate attributeName="fill" values="#0b0907;#0b0907;${RD}" keyTimes="0;.6;1" dur="1s" begin="${t+1.6}s" fill="freeze"/>`:''}</circle></g>`;
+  }
+  return s+'</svg>';
+}
+function svgBpipe(){
+  const W=600,H=140;let s=`<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">`;
+  s+=FB(30,50,.9)+IG(30,100,.9)+CHIP(150,75);
+  s+=flow('M46 50 C90 50 90 75 120 75',0)+flow('M46 100 C90 100 90 75 120 75',.6);
+  const ends=[[300,30],[300,75],[300,120]];
+  ends.forEach((e,i)=>{const d=`M180 75 C230 75 230 ${e[1]} ${e[0]} ${e[1]}`;s+=flow(d,i*.4);
+    s+=`<g><animateMotion path="${d}" dur="2.2s" begin="${i*.7}s" repeatCount="indefinite"/><circle r="7" fill="${Y}"/><text y="3.5" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" fill="#0b0907">$</text></g>`;});
+  s+=`<text x="330" y="34" font-family="Manrope,sans-serif" font-size="11" fill="${CR}">объявление A · <tspan fill="${Y}" font-weight="700">масштабируем</tspan></text>`;
+  s+=`<text x="330" y="79" font-family="Manrope,sans-serif" font-size="11" fill="${MU}">объявление B · <tspan fill="${RD}" font-weight="700">выключено в 02:14</tspan></text>`;
+  s+=`<text x="330" y="124" font-family="Manrope,sans-serif" font-size="11" fill="${CR}">объявление C · <tspan fill="${Y}" font-weight="700">бюджет +40%</tspan></text>`;
+  s+=`<rect x="330" y="40" width="0" height="4" rx="2" fill="${Y}">${once('width','0;230',1.6,3.6)}</rect><rect x="330" y="85" width="0" height="4" rx="2" fill="${RD}">${once('width','0;60',1,3.8)}</rect><rect x="330" y="130" width="0" height="4" rx="2" fill="${Y}">${once('width','0;170',1.6,4)}</rect>`;
+  return s+'</svg>';
+}
+
+/* ─── В · сутки агента: 24-часовое кольцо, стрелка, события ─── */
+function svgC(){
+  const W=560,H=520,cx=250,cy=255,R=150,D=16;let s=`<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">`;
+  s+=`<defs><radialGradient id="cg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="${Y}" stop-opacity=".14"/><stop offset="1" stop-color="${Y}" stop-opacity="0"/></radialGradient></defs>`;
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R+30}" fill="url(#cg)"/><circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${RL}" stroke-width="10"/>`;
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${Y}" stroke-width="10" stroke-dasharray="${(2*Math.PI*R).toFixed(1)}" stroke-dashoffset="${(2*Math.PI*R).toFixed(1)}" stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"><animate attributeName="stroke-dashoffset" from="${(2*Math.PI*R).toFixed(1)}" to="0" dur="${D}s" repeatCount="indefinite"/></circle>`;
+  for(let i=0;i<24;i++){const a=i*15*Math.PI/180,big=i%6===0;s+=`<line x1="${(cx+(R-14)*Math.sin(a)).toFixed(1)}" y1="${(cy-(R-14)*Math.cos(a)).toFixed(1)}" x2="${(cx+(R-(big?24:19))*Math.sin(a)).toFixed(1)}" y2="${(cy-(R-(big?24:19))*Math.cos(a)).toFixed(1)}" stroke="${big?MU:RL}" stroke-width="${big?2:1}"/>`;
+    if(big)s+=`<text x="${(cx+(R-40)*Math.sin(a)).toFixed(1)}" y="${(cy-(R-40)*Math.cos(a)+4).toFixed(1)}" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10" fill="${DM}">${String(i).padStart(2,'0')}:00</text>`;}
+  // hand
+  s+=`<g><animateTransform attributeName="transform" type="rotate" from="0 ${cx} ${cy}" to="360 ${cx} ${cy}" dur="${D}s" repeatCount="indefinite"/><line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy-R+6}" stroke="${Y}" stroke-width="2" stroke-linecap="round" opacity=".9"/><circle cx="${cx}" cy="${cy-R}" r="7" fill="${Y}"/></g>`;
+  // center: FB+IG → agent core
+  s+=FB(cx-70,cy-10,.85)+IG(cx+70,cy-10,.85);
+  s+=flow(`M${cx-53} ${cy-10} L${cx-30} ${cy-10}`,0)+flow(`M${cx+53} ${cy-10} L${cx+30} ${cy-10}`,.4);
+  s+=`<circle cx="${cx}" cy="${cy-10}" r="26" fill="${PN}" stroke="${Y}"/><circle cx="${cx}" cy="${cy-10}" r="9" fill="${Y}"><animate attributeName="r" values="8;12;8" dur="1.6s" repeatCount="indefinite"/></circle><circle cx="${cx}" cy="${cy-10}" r="26" fill="none" stroke="${Y}"><animate attributeName="r" values="26;44" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0" dur="1.6s" repeatCount="indefinite"/></circle>`;
+  s+=`<text x="${cx}" y="${cy+42}" text-anchor="middle" font-family="Unbounded,sans-serif" font-size="30" font-weight="500" letter-spacing="-1" fill="${CR}">24/7</text><text x="${cx}" y="${cy+60}" text-anchor="middle" font-family="Manrope,sans-serif" font-size="11" fill="${MU}">ведёт и переключает без выходных</text>`;
+  // events: [hour, label, sub, color]
+  const EV=[[2,'02:10 · выключил слабое','объявление #7 сливало бюджет',RD],[7,'07:00 · перекинул бюджет','на объявление с лучшей ценой заявки',Y],[12,'12:00 · запустил 12 новых','варианты текста и картинки',CR],[19,'19:30 · отчёт цифрами','заявки ×3.1 · CPL −23%',Y]];
+  EV.forEach(([h,l,sub,col])=>{const a=h*15*Math.PI/180,px=cx+(R+2)*Math.sin(a),py=cy-(R+2)*Math.cos(a);const right=Math.sin(a)>=0;const bx=right?px+16:px-16-150,by=py-16;const t0=h/24,t1=Math.min(.985,t0+.28);
+    s+=`<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;${t0.toFixed(3)};${(t0+.02).toFixed(3)};${t1.toFixed(3)};${(t1+.02).toFixed(3)};1" dur="${D}s" repeatCount="indefinite"/>`;
+    s+=`<circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="9" fill="${col}"/><rect x="${bx}" y="${by}" width="150" height="34" rx="6" fill="#0b0907" stroke="${col}"/><text x="${bx+8}" y="${by+14}" font-family="Manrope,sans-serif" font-size="10" font-weight="700" fill="${col}">${l}</text><text x="${bx+8}" y="${by+27}" font-family="Manrope,sans-serif" font-size="9" fill="${MU}">${sub}</text></g>`;});
+  return s+'</svg>';
+}
+
+window.VARIANTS={
+A:{html:TXT+'<div class="svgbox fx-up">'+svgA()+'</div><div class="side fx-up">'+BIG+'</div>'+GIT+OUT+'<div class="bottom fx-up"><p class="claim">'+CLAIM+'</p><span class="price">'+PRICE+'</span></div>',onPlay:countUp,
+   desc:'Пульт кампаний (упрощён): из Facebook и Instagram поток идёт в агента, он выкладывает 9 объявлений, у каждого растёт полоска результата, пять слабых гаснут с красным крестом, три сильных получают жёлтую рамку и «+БЮДЖЕТ», к ним перетекает бюджет. Одна строка итога под сеткой. Справа счётчик $400.000+ и окно GitHub. Три выхода агента и цена внизу.'},
+B:{html:TXT+OUT+'<div class="stage fx-up"><div class="cards"><figure><img src="assets/vlad-1409/dizayn/creative-a.webp" alt=""></figure><figure class="mid"><img src="assets/vlad-1409/dizayn/creative-b.webp" alt=""></figure><figure><img src="assets/vlad-1409/dizayn/creative-c.webp" alt=""></figure></div><div class="overlay">'+svgBover()+'</div></div><div class="svgbox pipe fx-up">'+svgBpipe()+'</div>'+GIT+BIG+'<div class="bottom fx-up"><p class="claim">'+CLAIM+'</p><span class="price">'+PRICE+'</span></div>',
+   onPlay(s){countUp(s);const f=s.querySelectorAll('.cards figure');setTimeout(()=>{f[1].classList.add('off');f[0].classList.add('win');f[2].classList.add('win');},3300);},
+   desc:'Конвейер объявлений: три реальных креатива в 3D-ряду, по каждому проходит жёлтый сканер и выставляется CPL, у слабого тумблер сам щёлкает в «выкл» и креатив гаснет, сильные получают жёлтую рамку. Ниже — поток «$» из Facebook/Instagram через агента к объявлениям с решениями: масштабируем / выключено в 02:14 / бюджет +40%. Слева три выхода агента, справа GitHub, внизу $400.000+, тезис и цена.'},
+C:{html:TXT+'<div class="svgbox fx-up">'+svgC()+'</div><div class="side fx-up">'+BIG+OUT+'</div>'+GIT+'<div class="bottom fx-up"><p class="claim">'+CLAIM+'</p><span class="price">'+PRICE+'</span></div>',onPlay:countUp,
+   desc:'Сутки агента: 24-часовое кольцо, стрелка проходит круг за 16 секунд и заливает его жёлтым; когда она проходит 02:10, 07:00, 12:00 и 19:30, всплывают события — выключил слабое, перекинул бюджет, запустил 12 новых, отчёт цифрами. В центре Facebook и Instagram питают ядро агента с пульсом и «24/7». Справа $400.000+, три выхода агента и GitHub. Самый «часовой» вариант, продаёт именно круглосуточность.'}};
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

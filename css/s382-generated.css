@@ -1,0 +1,6 @@
+/* User-requested single raster slide, full bleed. */
+.b129:has(.s382-generated-slide) .b13-shell{position:absolute;inset:0;padding:0;display:block;background:#0b0907}
+.b129:has(.s382-generated-slide) .b13-head,.b129:has(.s382-generated-slide) .b13-art{display:none!important}
+.b129:has(.s382-generated-slide) .b13-body{position:absolute;inset:0;margin:0;padding:0;display:block;max-width:none;max-height:none}
+.s382-generated-slide{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
+.s382-generated-slide img{display:block;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;border:0;border-radius:0;margin:0;padding:0}

@@ -1,0 +1,153 @@
+/* Google object g3f9b3adf0b8_0_2768: one complete, proportional comparison. */
+.b129.b13-v2-growth-summary .b13-shell {
+  padding: 7cqh 7cqw 6cqh;
+  justify-content: flex-start;
+  gap: 2cqh;
+}
+.b129.b13-v2-growth-summary .b13-head h1 {
+  font: 650 5.15cqw/1.16 Manrope, sans-serif;
+  letter-spacing: -.045em;
+  text-align: left;
+  text-wrap: initial;
+}
+.b129.b13-v2-growth-summary .b13-body {
+  gap: 2.6cqh;
+  color: #f5f3ee;
+  font-family: Manrope, sans-serif;
+}
+.b129.b13-v2-growth-summary .growth-comparison {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10cqw;
+  height: 46cqh;
+  margin: 0;
+  padding: 0 6cqw;
+}
+.b129.b13-v2-growth-summary .growth-grid {
+  position: absolute;
+  inset: 6cqh 0 5cqh;
+  z-index: -1;
+  border-bottom: 1px solid #605334;
+  background: repeating-linear-gradient(to top, transparent 0, transparent calc(8cqh - 1px), #e9dfc50c calc(8cqh - 1px), #e9dfc50c 8cqh);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.b129.b13-v2-growth-summary .growth-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 0;
+}
+.b129.b13-v2-growth-summary .growth-tower {
+  position: relative;
+  width: 24cqw;
+  height: var(--growth-height);
+}
+.b129.b13-v2-growth-summary .growth-value {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 2.1cqh);
+  width: 100%;
+  color: #fdd506;
+  font: 750 9cqw/.9 Manrope, sans-serif;
+  letter-spacing: -.065em;
+  text-align: center;
+}
+.b129.b13-v2-growth-summary .growth-value span {
+  font-size: .58em;
+  margin-left: .08em;
+  vertical-align: .06em;
+}
+.b129.b13-v2-growth-summary .growth-block {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, #ffe564, #fdd506 50%, #dfb800);
+  border: 1px solid #ffe970;
+  box-shadow: 0 1.4cqh 3cqw #0005;
+}
+.b129.b13-v2-growth-summary .growth-block::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: -1px;
+  width: calc(100% + 2cqw + 2px);
+  height: 1.5cqh;
+  background: #fff1a0;
+  clip-path: polygon(0 100%, 7.7% 0, 100% 0, 92.3% 100%);
+}
+.b129.b13-v2-growth-summary .growth-block::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 100%;
+  width: 2cqw;
+  height: calc(100% + 2px);
+  background: #a18404;
+  transform: skewY(-36.87deg);
+  transform-origin: left top;
+}
+.b129.b13-v2-growth-summary .growth-market { --growth-height: 4cqh; }
+.b129.b13-v2-growth-summary .growth-ai { --growth-height: 32cqh; }
+.b129.b13-v2-growth-summary .growth-market .growth-block {
+  background: linear-gradient(105deg, #817a6e, #625c52);
+  border-color: #948c7f;
+}
+.b129.b13-v2-growth-summary .growth-market .growth-block::before { background: #a59c8d; }
+.b129.b13-v2-growth-summary .growth-market .growth-block::after { background: #49443d; }
+.b129.b13-v2-growth-summary .growth-market .growth-value {
+  color: #c2bbae;
+  font-size: 6.5cqw;
+}
+.b129.b13-v2-growth-summary .growth-ai::before {
+  content: '';
+  position: absolute;
+  width: 47cqw;
+  height: 45cqh;
+  right: -2cqw;
+  bottom: 2cqh;
+  z-index: -1;
+  background: radial-gradient(ellipse, #fdd50610, transparent 67%);
+}
+.b129.b13-v2-growth-summary .growth-comparison figcaption {
+  height: 5cqh;
+  padding-top: 1.8cqh;
+  margin: 0;
+  font: 500 2.7cqw/1 Manrope, sans-serif;
+  color: #cec8be;
+  white-space: nowrap;
+}
+.b129.b13-v2-growth-summary .growth-ai figcaption { color: #fdd506; }
+.b129.b13-v2-growth-summary .b13-body > .growth-evidence {
+  margin: 0;
+  max-width: none;
+  padding: 0;
+  text-align: left;
+  color: #b9b3a9;
+  font: 400 2.25cqw/1.5 Manrope, sans-serif;
+  letter-spacing: 0;
+  text-wrap: initial;
+}
+.b129.b13-v2-growth-summary .growth-evidence strong {
+  font-weight: 500;
+  color: #e7e1d7;
+}
+.b129.b13-v2-growth-summary .growth-takeaway {
+  padding: 2.3cqh 3cqw;
+  border: 1px solid #fdd50650;
+  border-radius: 1.3cqw;
+  background: linear-gradient(105deg, #fdd50610, #fdd50604);
+}
+.b129.b13-v2-growth-summary .growth-takeaway p {
+  margin: 0;
+  font: 400 2.75cqw/1.4 Manrope, sans-serif;
+  letter-spacing: -.018em;
+  text-align: left;
+  text-wrap: initial;
+  color: #e7e1d7;
+}
+.b129.b13-v2-growth-summary .growth-takeaway strong {
+  color: #fdd506;
+  font-weight: 650;
+}

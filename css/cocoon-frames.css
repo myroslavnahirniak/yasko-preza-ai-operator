@@ -1,0 +1,34 @@
+/* Three approved stills, Google76–78. All words and threads remain separate
+   from Vlad's shared portrait so the same composition can later become video. */
+.foundation[class*="fd-cocoon-"] .fd-shell{padding:0;display:block}
+.foundation[class*="fd-cocoon-"] .fd-header{position:absolute;left:7cqw;top:8.8cqh;width:86cqw;z-index:5;text-align:center}
+.foundation[class*="fd-cocoon-"] .fd-header h1{font-size:4.7cqw;line-height:1.3;letter-spacing:-.047em}
+.foundation[class*="fd-cocoon-"] .fd-content,.foundation[class*="fd-cocoon-"] .fd-body{position:static;display:block}
+.foundation[class*="fd-cocoon-"] .cocoon-scene{position:absolute;inset:0;overflow:hidden}
+.foundation[class*="fd-cocoon-"] .cocoon-light{position:absolute;inset:18% 0 0;background:radial-gradient(ellipse at 50% 55%,#fdd5060b,transparent 65%)}
+.foundation[class*="fd-cocoon-"] .cocoon-portrait{position:absolute;left:14%;top:25%;width:72%;height:72%;max-height:none;border:0;border-radius:0;object-fit:contain;mix-blend-mode:lighten;mask-image:radial-gradient(ellipse at 50% 48%,#000 38%,#000c 55%,transparent 74%);z-index:2}
+.foundation[class*="fd-cocoon-"] .cocoon-threads{position:absolute;inset:0;width:100%;height:100%;overflow:visible;fill:none;stroke-linecap:round;stroke-linejoin:round;z-index:1}
+.foundation[class*="fd-cocoon-"] .cocoon-front{z-index:3;pointer-events:none}
+.foundation[class*="fd-cocoon-"] .cocoon-labels{position:absolute;inset:0;z-index:4}
+.foundation[class*="fd-cocoon-"] .cocoon-word{position:absolute;left:calc(var(--x)*1%);top:calc(var(--y)*1%);transform:translate(-50%,-50%);font:400 calc(var(--size)*1cqw)/1.15 Manrope,sans-serif;letter-spacing:-.035em;white-space:nowrap;color:#d8d3ca;text-shadow:0 2px 8px #0b0907,0 0 18px #0b0907,0 0 8px #0b0907;padding:.45cqh .8cqw}
+.foundation[class*="fd-cocoon-"] .cocoon-word.is-key{color:#fdd506;font-weight:500}
+.foundation.fd-cocoon-learn .cocoon-word:first-child{font-family:Unbounded,sans-serif;font-size:3.5cqw;letter-spacing:-.045em}
+.foundation.fd-cocoon-tools .cocoon-light{background:radial-gradient(ellipse at 50% 55%,#fdd50611,transparent 65%)}
+.foundation.fd-cocoon-tools .cocoon-word{font-weight:500;color:#f5f3ee;letter-spacing:-.04em}
+.foundation.fd-cocoon-tools .cocoon-word.is-key{color:#fdd506}
+.foundation .cocoon-memory{position:absolute;inset:0;z-index:1;opacity:.3}
+.foundation .cocoon-memory .cocoon-word{color:#c7c0b4;font-weight:400;font-size:1.85cqw;padding:0}
+.foundation.fd-cocoon-silence .fd-header{top:50%;left:7%;width:86%;transform:translateY(-50%);text-align:center}
+.foundation.fd-cocoon-silence .fd-header h1{font-size:5.8cqw;line-height:1.28}
+.foundation.fd-cocoon-silence .cocoon-portrait{opacity:.42;filter:saturate(.3)}
+.foundation.fd-cocoon-silence .cocoon-threads{opacity:.2}
+.foundation.fd-cocoon-silence .cocoon-memory{opacity:.085}
+.foundation.fd-cocoon-silence .cocoon-light{display:none}
+.foundation.fd-cocoon-silence .cocoon-scene:after{content:'';position:absolute;inset:0;background:linear-gradient(#0b0907 5%,#0b0907ee 24%,#0b0907ad 42%,transparent 60%);z-index:3;pointer-events:none}
+/* Stills are deliberately motionless until the user approves the video. */
+.foundation[class*="fd-cocoon-"],.foundation[class*="fd-cocoon-"] *,.foundation[class*="fd-cocoon-"]:before,.foundation[class*="fd-cocoon-"]:after{animation:none!important;transition:none!important;}
+.foundation[class*="fd-cocoon-"] .fd-header,.foundation[class*="fd-cocoon-"] .fd-body>*,.foundation[class*="fd-cocoon-"] .fd-header *,.foundation[class*="fd-cocoon-"] .cocoon-scene *{animation:none!important;transition:none!important;opacity:1;}
+.foundation.fd-cocoon-tools .cocoon-memory{opacity:.3}
+.foundation.fd-cocoon-silence .cocoon-portrait{opacity:.42}
+.foundation.fd-cocoon-silence .cocoon-threads{opacity:.2}
+.foundation.fd-cocoon-silence .cocoon-memory{opacity:.085}

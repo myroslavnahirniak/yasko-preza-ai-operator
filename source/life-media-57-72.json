@@ -1,0 +1,299 @@
+[
+  {
+    "google": 57,
+    "photos": [
+      {
+        "src": "assets/google-source/g057-g3fadf66108e_0_424.jpg",
+        "width": 1800,
+        "height": 1012,
+        "role": "evidence",
+        "fit": "contain"
+      },
+      {
+        "src": "assets/google-source/g057-g3fadf66108e_0_428.png",
+        "width": 1240,
+        "height": 1543,
+        "role": "evidence",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "collage",
+    "notes": "Two source evidence images: course landing page and wartime free-access announcement. Preserve text within both; no invented photos."
+  },
+  {
+    "google": 58,
+    "photos": [
+      {
+        "src": "assets/google-source/g058-g3fadf66108e_0_434.jpg",
+        "width": 1800,
+        "height": 1791,
+        "role": "photo",
+        "fit": "cover"
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "One square source photograph of Vlad beside the unfinished house. Short copy, centered."
+  },
+  {
+    "google": 59,
+    "photos": [
+      {
+        "src": "assets/google-source/g059-g3fadf66108e_0_443.jpg",
+        "width": 816,
+        "height": 1800,
+        "role": "evidence",
+        "fit": "contain"
+      },
+      {
+        "src": "assets/google-source/g059-g3fadf66108e_0_446.png",
+        "width": 567,
+        "height": 319,
+        "role": "evidence",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "collage",
+    "notes": "Two evidence items: tall channel post and wide TV screenshot. Asymmetric collage keeps both legible; preserve their full text and existing red annotations."
+  },
+  {
+    "google": 60,
+    "photos": [
+      {
+        "src": "assets/google-source/g060-g3fadf66108e_0_454.png",
+        "width": 1086,
+        "height": 323,
+        "role": "evidence",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "One wide car-sale listing. Show full listing, especially price and dates; do not fill a tall frame or create letterboxing."
+  },
+  {
+    "google": 61,
+    "photos": [
+      {
+        "src": "assets/google-source/g061-g3fadf66108e_0_460.jpg",
+        "width": 1800,
+        "height": 876,
+        "role": "evidence",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "One financial table. Keep whole table, all rows/columns and red circled value; center with enough width for legibility."
+  },
+  {
+    "google": 62,
+    "photos": [
+      {
+        "src": "assets/google-source/g062-g3fadf66108e_0_468.jpg",
+        "width": 1789,
+        "height": 1800,
+        "role": "photo",
+        "fit": "cover"
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "One almost-square original leisure photo. Center the long headline over the photograph; no body exists in source."
+  },
+  {
+    "google": 63,
+    "photos": [
+      {
+        "src": "assets/google-source/g063-g3fadf66108e_0_478.jpg",
+        "width": 1280,
+        "height": 879,
+        "role": "evidence",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "One source financial evidence panel. Preserve complete numbers; headline and two paragraphs remain visible."
+  },
+  {
+    "google": 64,
+    "photos": [
+      {
+        "src": "assets/google-source/g064-g3fadf66108e_0_484.jpg",
+        "width": 1800,
+        "height": 1350,
+        "role": "photo",
+        "fit": "contain",
+        "rotate": 90
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "One original surfing photo. Raw bitmap is sideways: native Google transform is clockwise90. Preserve complete portrait after rotation."
+  },
+  {
+    "google": 65,
+    "photos": [
+      {
+        "src": "assets/google-source/g065-g3fadf66108e_0_491.jpg",
+        "width": 1800,
+        "height": 1350,
+        "role": "photo",
+        "fit": "cover",
+        "rotate": 90
+      },
+      {
+        "src": "assets/google-source/g065-g3fadf66108e_0_494.jpg",
+        "width": 828,
+        "height": 1800,
+        "role": "photo",
+        "fit": "cover",
+        "crop": [
+          0,
+          0.13274397,
+          0.959784985,
+          0.68530701
+        ]
+      },
+      {
+        "src": "assets/google-source/g065-g3fadf66108e_0_495.png",
+        "width": 296,
+        "height": 505,
+        "role": "photo",
+        "fit": "cover",
+        "crop": [
+          0.02027027027027027,
+          0.09900990099009901,
+          0.9797297297297297,
+          0.900990099009901
+        ]
+      }
+    ],
+    "layoutSuggestion": "collage",
+    "notes": "Exactly three native photos, all visible together. First raw bitmap needs clockwise90; middle crop follows native Google source and removes phone UI. Third removes the partial black caption strip outside the portrait; do not generate faces."
+  },
+  {
+    "google": 66,
+    "photos": [
+      {
+        "src": "assets/google-source/g066-g3fadf66108e_0_504.png",
+        "width": 942,
+        "height": 2048,
+        "role": "photo",
+        "fit": "cover",
+        "crop": [
+          0,
+          0.193359375,
+          1,
+          0.61328125
+        ]
+      },
+      {
+        "src": "assets/google-source/g066-g3fadf66108e_0_505.png",
+        "width": 942,
+        "height": 2048,
+        "role": "photo",
+        "fit": "cover",
+        "crop": [
+          0,
+          0.193359375,
+          1,
+          0.61328125
+        ]
+      }
+    ],
+    "layoutSuggestion": "collage",
+    "notes": "Exactly two source capsule-hostel photos. Both source screenshots have identical photo window y396..1652; crop away phone white UI and thumbnail strip, leaving the complete photographs in equal portrait frames."
+  },
+  {
+    "google": 67,
+    "photos": [
+      {
+        "src": "assets/google-source/g067-g3fadf66108e_0_514.png",
+        "width": 750,
+        "height": 1249,
+        "role": "photo",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "split",
+    "notes": "One original mirror portrait screenshot. Text-heavy page: photo left, all existing text right; no invented medical imagery."
+  },
+  {
+    "google": 68,
+    "photos": [
+      {
+        "src": "assets/google-source/g068-g3fadf66108e_0_520.jpg",
+        "width": 1800,
+        "height": 1034,
+        "role": "evidence",
+        "fit": "contain",
+        "crop": [
+          0.0044444444444444444,
+          0.013539651837524178,
+          0.3761111111111111,
+          0.965183752417795
+        ]
+      },
+      {
+        "src": "assets/google-source/g068-g3fadf66108e_0_520.jpg",
+        "width": 1800,
+        "height": 1034,
+        "role": "photo",
+        "fit": "cover",
+        "crop": [
+          0.4083333333333333,
+          0.013539651837524178,
+          0.5766666666666667,
+          0.965183752417795
+        ]
+      }
+    ],
+    "layoutSuggestion": "collage",
+    "notes": "One source bitmap is a two-part collage: full father chat on left plus father/son photograph on right. Display these as two individually framed crops. All chat messages and both people retained."
+  },
+  {
+    "google": 69,
+    "photos": [
+      {
+        "src": "assets/google-source/g069-g3fadf66108e_0_529.jpg",
+        "width": 901,
+        "height": 1800,
+        "role": "evidence",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "split",
+    "notes": "One tall Instagram profile evidence screenshot. Preserve account name, follower count and profile detail; split layout for full text."
+  },
+  {
+    "google": 70,
+    "photos": [],
+    "layoutSuggestion": "text",
+    "notes": "Verified native source has ZERO images. Text-only centered emotional beat. Do not insert legacy photo or invented imagery."
+  },
+  {
+    "google": 71,
+    "photos": [
+      {
+        "src": "assets/google-source/g071-g3fadf66108e_0_1009.png",
+        "width": 1026,
+        "height": 869,
+        "role": "evidence",
+        "fit": "contain"
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "One screenshot of chat/payment transfer. Preserve payment amount, time and bottom message; no arbitrary crop."
+  },
+  {
+    "google": 72,
+    "photos": [
+      {
+        "src": "assets/google-source/g072-g3fadf66108e_0_557.jpg",
+        "width": 1800,
+        "height": 1350,
+        "role": "photo",
+        "fit": "contain",
+        "rotate": 90
+      }
+    ],
+    "layoutSuggestion": "center",
+    "notes": "One original workspace photo. Raw bitmap sideways: native transform clockwise90. Short headline, centered above full portrait after rotation."
+  }
+]

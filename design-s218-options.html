@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>218 · AI-SEO · три варианта с фото</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.kick{display:block}
+.h1{font-size:4.4cqw;margin-top:1cqh}
+.txt{position:absolute;left:7cqw;top:6cqh;width:62cqw;z-index:3}
+.art{z-index:0}
+.art:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,9,7,.55) 0%,rgba(11,9,7,.15) 40%,rgba(11,9,7,.2) 70%,rgba(11,9,7,.85) 100%),linear-gradient(90deg,rgba(11,9,7,.75) 0%,rgba(11,9,7,.25) 45%,rgba(11,9,7,0) 70%)}
+.out{display:grid;gap:.7cqh}
+.out>div{display:flex;gap:1cqw;align-items:baseline;font:400 1.75cqw/1.35 Manrope,sans-serif;color:var(--cream)}
+.out i{font:500 1.3cqw/1 'JetBrains Mono',monospace;color:var(--yellow);font-style:normal;letter-spacing:.12em;flex:none}
+.legend{font:500 1.35cqw/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#8a8278;margin:0 0 1.2cqh}
+.price{display:inline-block;border:1px solid var(--yellow);color:var(--yellow);font:600 1.45cqw/1.3 Manrope,sans-serif;padding:.8cqh 1.3cqw;white-space:nowrap}
+/* чат */
+.chat{position:absolute;z-index:4;display:flex;flex-direction:column;gap:1.2cqh;font:400 1.75cqw/1.4 Manrope,sans-serif}
+.chat .me{align-self:flex-end;max-width:92%;background:rgba(47,62,92,.92);color:#f5f3ee;border-radius:1.4cqw 1.4cqw .3cqw 1.4cqw;padding:1.1cqh 1.5cqw;backdrop-filter:blur(6px);min-height:3cqh}
+.chat .caret{display:inline-block;width:.15cqw;height:1.6cqw;background:#f5f3ee;vertical-align:-.2cqw;margin-left:.2cqw;animation:caret .8s steps(1) infinite}
+.done .chat .caret{display:none}
+@keyframes caret{50%{opacity:0}}
+.chat .ai{align-self:flex-start;max-width:96%;background:rgba(15,15,16,.9);border:1px solid #2a2420;border-radius:1.4cqw 1.4cqw 1.4cqw .3cqw;padding:1.2cqh 1.6cqw;backdrop-filter:blur(6px);color:#e8e6e1;opacity:0;transform:translateY(1cqh);transition:opacity .5s,transform .5s}
+.answered .chat .ai{opacity:1;transform:none}
+.chat .ai .hit{display:block;margin:.8cqh 0;padding:.8cqh 1cqw;border-left:.35cqw solid var(--yellow);background:rgba(253,213,6,.1);color:var(--yellow);font-weight:700}
+.chat .ai .link{display:inline-block;margin-top:.6cqh;border:1px solid var(--yellow);color:var(--yellow);padding:.5cqh .9cqw;border-radius:.4cqw;font-weight:600;animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 .6cqw rgba(253,213,6,.18)}}
+.chat .head{display:flex;align-items:center;gap:.7cqw;font:600 1.4cqw/1 Manrope,sans-serif;color:#c4bdb1;margin-bottom:.4cqh}
+.chat .head b{width:1.5cqw;height:1.5cqw;border-radius:50%;background:#f5f3ee;display:inline-block}
+.think{display:none;gap:.5cqw;align-self:flex-start;padding:.6cqh 1.2cqw;background:rgba(15,15,16,.9);border:1px solid #2a2420;border-radius:1.4cqw}
+.thinking .think{display:flex}
+.think i{width:.8cqw;height:.8cqw;border-radius:50%;background:#8a8278;animation:th .9s ease-in-out infinite}
+.think i:nth-child(2){animation-delay:.18s}.think i:nth-child(3){animation-delay:.36s}
+@keyframes th{50%{opacity:.25;transform:translateY(-.3cqh)}}
+/* екран ноута: маленький «дзеркальний» запит */
+.screen{position:absolute;z-index:3;font:500 .95cqw/1.3 Manrope,sans-serif;color:#fdd506;opacity:.9;pointer-events:none;text-shadow:0 0 .6cqw rgba(253,213,6,.6)}
+/* А · чат над ноутом (фото зі спини) */
+.v-A .chat{left:7cqw;width:46cqw;top:28cqh}
+.v-A .side{position:absolute;left:7cqw;bottom:7cqh;width:34cqw;z-index:3}
+.v-A .side .price{margin-top:1.8cqh}
+/* Б · скляна панель ліворуч (фото біля вікна) */
+.v-B .txt{width:50cqw}
+.v-B .chat{left:7cqw;width:44cqw;top:30cqh}
+.v-B .row{position:absolute;left:7cqw;right:7cqw;bottom:6cqh;z-index:3;display:flex;justify-content:space-between;align-items:flex-end;gap:2cqw}
+.v-B .out{grid-template-columns:repeat(3,1fr);gap:1.2cqw;flex:1}
+.v-B .out>div{flex-direction:column;gap:.5cqh;background:rgba(11,9,7,.6);border:1px solid #2a2420;padding:1cqh 1.2cqw;font-size:1.5cqw;backdrop-filter:blur(4px)}
+/* В · діалог як типографіка (фронтальне фото) */
+.v-C .txt{width:56cqw}
+.v-C .chat{left:7cqw;width:54cqw;top:29cqh;font-size:2.05cqw}
+.v-C .chat .me{background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:0;align-self:flex-start;padding:1.2cqh 1.6cqw;backdrop-filter:none}
+.v-C .chat .ai{background:transparent;border:0;padding:0;backdrop-filter:none}
+.v-C .chat .ai .hit{font:500 3cqw/1.15 Unbounded,sans-serif;letter-spacing:-.03em;background:none;border:0;padding:0;margin:1cqh 0}
+.v-C .side{position:absolute;left:7cqw;bottom:6cqh;width:44cqw;z-index:3}
+.v-C .side .price{margin-top:1.6cqh}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · Чат над ноутом</button><button role="tab" data-v="B">Б · Стеклянная панель у окна</button><button role="tab" data-v="C">В · Диалог как типографика</button></div>
+<p class="description"></p>
+<div class="actions"><button id="replay">↻ replay (R)</button></div>
+<p class="note">←/→ варианты · R повтор · фон — GPT Image 2.5 с референсом лица Влада; запрос печатается, ответ появляется после «думает»</p>
+</nav>
+<script>
+const KICK='Услуга 7 из 7', H1='AI-SEO <em>(видимость в нейросетях)</em>';
+const TXT='<div class="txt fx-up"><span class="kick">'+KICK+'</span><h1 class="h1">'+H1+'</h1></div>';
+const Q='Найди украинских экспертов по AI-маркетингу и AI-агентам. Только авторские курсы, не школы.';
+const A='<div class="head"><b></b>ChatGPT · веб-поиск</div>Отфильтровал крупные школы, искал украинских практиков с авторской программой. Самое точное попадание:<span class="hit">1. Влад Ясько — «AI-Маркетолог»</span>Система бизнеса на AI-агентах: Claude Code, ChatGPT, 66+ AI-сотрудников.<br><span class="link">Официальный сайт ↗</span>';
+const CHAT='<div class="chat fx-up"><div class="me"><span class="typed"></span><i class="caret"></i></div><div class="think"><i></i><i></i><i></i></div><div class="ai">'+A+'</div></div>';
+const ITEMS=[['01','бизнес находят в поиске и на картах'],['02','и в ответах нейросетей, когда спрашивают совет'],['03','без платной рекламы — трафик не выключается']];
+const OUT='<div class="out">'+ITEMS.map(i=>'<div><i>'+i[0]+'</i><span>'+i[1]+'</span></div>').join('')+'</div>';
+const PRICE='<span class="price">$400–$1.800 · за пакет в месяц · сложность средняя</span>';
+const BG=k=>'<div class="art"><img src="assets/gen-184-188/s218-vlad-'+k+'.webp" alt=""></div>';
+let timers=[];
+function run(s){timers.forEach(clearTimeout);timers=[];s.classList.remove('done','thinking','answered');const t=s.querySelector('.typed');if(!t)return;t.textContent='';let i=0;
+ const step=()=>{i++;t.textContent=Q.slice(0,i);if(i<Q.length)timers.push(setTimeout(step,26));else{s.classList.add('done','thinking');timers.push(setTimeout(()=>{s.classList.remove('thinking');s.classList.add('answered');},1100));}};
+ timers.push(setTimeout(step,700));}
+window.VARIANTS={
+A:{cls:'kb',html:BG('a')+TXT+CHAT+'<div class="side fx-up"><p class="legend">Что собирает агент</p>'+OUT+PRICE+'</div>',onPlay:run,
+   desc:'Фото Влада со спины за ноутбуком (ноут справа внизу). Чат висит над экраном: запрос печатается, «думает», ответ с жёлтым «Влад Ясько — AI-Маркетолог» и пульсирующей ссылкой. Слева внизу три выхода агента и цена. Текст диалога сокращён до трёх строк.'},
+B:{cls:'kb',html:BG('b')+TXT+CHAT+'<div class="row fx-up">'+OUT+PRICE+'</div><div class="screen" style="left:79cqw;top:62cqh;width:12cqw;transform:skewY(-4deg)">'+Q+'</div>',onPlay:run,
+   desc:'Влад у ночного окна, ноутбук справа внизу и на его экране мерцает тот же запрос мелким жёлтым текстом. Чат — стеклянная панель слева. Три выхода агента — рядом карточек внизу, цена справа.'},
+C:{cls:'kb',html:BG('c')+TXT+CHAT+'<div class="side fx-up"><p class="legend">Что собирает агент</p>'+OUT+PRICE+'</div>',onPlay:run,
+   desc:'Фронтальный кадр: Влад смотрит в экран, лицо подсвечено. Диалог набран крупно как типографика без пузырей: вопрос в тонкой рамке, ответ — «1. Влад Ясько — AI-Маркетолог» большим Unbounded, ссылка жёлтой кнопкой. Самый постерный вариант.'}};
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>177 · Это была одна услуга из 7 · три фона</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--panel:#15110d;--controls:150px}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding-bottom:var(--controls);background:#000;color:var(--cream);font:400 14px/1.4 Manrope,sans-serif}
+.slide{position:relative;width:min(100vw,calc(100dvh - var(--controls)));aspect-ratio:1;container-type:size;overflow:hidden;background:var(--bg)}
+.slide h1,.slide p{margin:0}
+.art{position:absolute;inset:0;z-index:0}
+.art img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.06);transform-origin:50% 100%}
+.play .art img{animation:kb 14s linear forwards}
+.art:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#0b0907 0%,rgba(11,9,7,.92) 26%,rgba(11,9,7,.45) 50%,transparent 68%)}
+.text{position:absolute;left:7cqw;right:7cqw;top:20cqh;z-index:3;text-align:center}
+h1{font:500 5.2cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em;text-wrap:balance}
+h1 em{font-style:normal;color:var(--yellow)}
+.text p{margin-top:2.4cqh;font:400 2.9cqw/1.4 Manrope,sans-serif;color:var(--muted)}
+.text p+p{margin-top:1.2cqh}
+.text p.final{margin-top:3.2cqh;font:500 3.4cqw/1.3 Unbounded,sans-serif;letter-spacing:-.02em;color:var(--yellow)}
+.text>*{opacity:0;transform:translateY(1.6cqh)}
+.play .text>*{animation:up .7s cubic-bezier(.2,.8,.2,1) forwards}
+.play .text>:nth-child(1){animation-delay:.15s}.play .text>:nth-child(2){animation-delay:.45s}.play .text>:nth-child(3){animation-delay:.65s}.play .text>:nth-child(4){animation-delay:1.1s}
+@keyframes up{to{opacity:1;transform:none}}
+@keyframes kb{to{transform:scale(1)}}
+.controls{position:fixed;bottom:0;left:0;right:0;height:var(--controls);background:#0c0a08f5;border-top:1px solid #292319;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:0 16px}
+.tabs,.actions{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap}
+button{font:400 13px/1.3 Manrope,sans-serif;cursor:pointer;border:1px solid #504735;border-radius:7px;background:#17130d;color:#ddd5c6;padding:7px 12px}
+button[aria-selected="true"]{color:var(--yellow);border-color:var(--yellow);background:#27210e}
+.description{font-size:12px;text-align:center;color:#c8bfad;max-width:900px;margin:0}
+.note{font-size:11px;color:#a49a84;text-align:center;margin:0}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls"><div class="tabs" role="tablist"><button role="tab" data-v="A1">А1 · Семь витрин с предметами (фронтально)</button><button role="tab" data-v="A2">А2 · Семь витрин с предметами (перспектива)</button><button role="tab" data-v="A">А0 · Семь пустых витрин</button><button role="tab" data-v="B">Б · Семь кнопок пульта</button><button role="tab" data-v="C">В · Семь ноутбуков (один открыт с сайтом)</button></div>
+<p class="description"></p><p class="note">Полный текст источника · фон GPT Image 2.5 (уже сгенерирован, 3 варианта) · текст поднят в тёмную верхнюю половину кадра, объект — внизу · лёгкий наезд камеры на фоне</p>
+<div class="actions"><button id="replay">↻ Повторить анимацию</button></div></nav>
+<script>
+const TEXT='<div class="text"><h1>Это была <em>одна услуга из 7</em></h1><p>Сайт — самая понятная.</p><p>Но точно так же AI-агенты закрывают ещё 6</p><p class="final">И каждую бизнес покупает отдельно</p></div>';
+const V={
+A1:{img:'assets/gen-164-213/s177-seven-showcases-a.webp',desc:'Семь витрин в ряд, фронтально, все одного размера. В первой (светится) ноутбук с сайтом; в остальных шести, по порядку каталога 178: стопка страниц КП (AI-дизайн), телефон с роликом (AI-видео), календарь с карточками постов (контент-завод), планшет с растущим графиком (AI-таргет), карта с пинами и лупой (AI-SEO), телефон с чатом (AI-продавец). Предметы читаются даже в затемнении.'},
+A2:{img:'assets/gen-164-213/s177-seven-showcases-b.webp',desc:'Те же семь витрин с теми же предметами, но с лёгкой перспективой слева направо: первая крупнее и ближе, остальные уходят вглубь. Больше «кино», предметы дальних витрин мельче.'},
+A:{img:'assets/gen-164-213/s177-seven-doors.webp',desc:'Витрина (Влад сам называет каталог «витриной»): семь стеклянных витрин в тёмном шоуруме, только первая подсвечена жёлтым. Читается как «одна из семи, остальные ещё покажем».'},
+B:{img:'assets/gen-164-213/s177-seven-keys.webp',desc:'Пульт: семь латунных кнопок, нажата/светится одна. Продолжает образ «пульта демо» со слайда 176 (кодовое слово) — тот же пульт, но взгляд сбоку.'},
+C:{img:'assets/gen-164-213/s177-seven-screens.webp',desc:'Самый буквальный: семь ноутбуков, открыт только первый — на экране сайт, который зал только что видел. Остальные шесть закрыты и ждут. Рекомендация: этот или А.'}};
+const slide=document.getElementById('slide');let cur='A1';
+function render(){slide.className='slide';slide.innerHTML='<div class="art"><img src="'+V[cur].img+'" alt=""></div>'+TEXT;document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.v===cur)));document.querySelector('.description').textContent=V[cur].desc;requestAnimationFrame(()=>requestAnimationFrame(()=>slide.classList.add('play')));}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{cur=b.dataset.v;render()});
+document.getElementById('replay').onclick=render;
+document.addEventListener('keydown',e=>{const o=['A1','A2','A','B','C'];let i=o.indexOf(cur);if(e.key==='ArrowRight')i=(i+1)%5;else if(e.key==='ArrowLeft')i=(i+4)%5;else return;cur=o[i];render();});
+const q=new URLSearchParams(location.search).get('v');if(q&&V[q])cur=q;render();
+</script></body></html>

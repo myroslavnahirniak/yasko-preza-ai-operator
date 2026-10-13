@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>175 · Один клиент — не одна продажа · три варіанти</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--panel:#15110d;--controls:150px}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding-bottom:var(--controls);background:#000;color:var(--cream);font:400 14px/1.4 Manrope,sans-serif}
+.slide{position:relative;width:min(100vw,calc(100dvh - var(--controls)));aspect-ratio:1;container-type:size;overflow:hidden;background:radial-gradient(ellipse at 50% 100%,rgba(253,213,6,.06),transparent 60%),var(--bg)}
+.slide h1,.slide p{margin:0}
+.k{position:absolute;left:0;right:0;top:6cqh;text-align:center;font:500 2.4cqw/1 Manrope,sans-serif;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}
+h1{position:absolute;left:7cqw;right:7cqw;top:10cqh;text-align:center;font:500 4.6cqw/1.2 Unbounded,sans-serif;letter-spacing:-.03em}
+h1 em{font-style:normal;color:var(--yellow)}
+.lead{position:absolute;left:10cqw;right:10cqw;top:22cqh;text-align:center;font:400 2.5cqw/1.4 Manrope,sans-serif;color:var(--muted)}
+.foot{position:absolute;left:7cqw;right:7cqw;bottom:5cqh;text-align:center;font:500 2.7cqw/1.35 Manrope,sans-serif;color:var(--cream)}
+.foot em{font-style:normal;color:var(--yellow)}
+.ic{width:5cqw;height:5cqw;stroke:#b3a996;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;background:#1c1713;border:1px solid #2f2822;border-radius:1cqw;padding:1.1cqw;box-sizing:border-box}
+/* A */
+.vA .eight{position:absolute;left:14cqw;right:14cqw;top:31cqh;display:flex;justify-content:space-between}
+.vA .eight i{width:7cqw;height:7cqw;border-radius:50%;background:#15110d;border:1px solid #3a3129;display:block;position:relative;transition:background .5s,border-color .5s,box-shadow .5s}
+.vA .eight i:before{content:'';position:absolute;left:50%;top:27%;width:32%;height:32%;border-radius:50%;background:#6f685e;transform:translateX(-50%)}
+.vA .eight i:after{content:'';position:absolute;left:18%;right:18%;bottom:14%;height:30%;border-radius:50% 50% 0 0;background:#6f685e}
+.vA .eight i.on{background:#2a2410;border-color:var(--yellow);box-shadow:0 0 2.5cqw rgba(253,213,6,.35)}
+.vA .eight i.on:before,.vA .eight i.on:after{background:var(--yellow)}
+.vA svg.flow{position:absolute;left:7cqw;right:7cqw;top:39cqh;height:16cqh;width:86cqw;overflow:visible}
+.vA svg.flow path{stroke:var(--yellow);stroke-width:2;fill:none;opacity:0;stroke-dasharray:1;stroke-dashoffset:1}
+.vA.play svg.flow path{animation:draw 1s forwards}
+.vA .cards{position:absolute;left:7cqw;right:7cqw;top:56cqh;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.6cqw}
+.vA .card{background:var(--panel);border:1px solid var(--rule);padding:1.8cqh 1.6cqw;text-align:center;opacity:0;transform:translateY(2cqh)}
+.vA.play .card{animation:up .6s forwards}
+.vA .card b{display:block;margin:1cqh 0 .4cqh;font:500 2.4cqw Unbounded,sans-serif;color:var(--cream)}
+.vA .card small{display:block;font:400 1.8cqw/1.3 Manrope,sans-serif;color:var(--muted);min-height:5cqh}
+.vA .card .pr{display:block;margin-top:1cqh;font:500 3cqw/1 Unbounded,sans-serif;color:var(--yellow)}
+.vA .card .pm{display:block;margin-top:.5cqh;font:500 1.7cqw Manrope,sans-serif;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
+.vA .card .pm.month{color:var(--yellow)}
+.vA .card .ping{position:absolute;right:1cqw;top:1cqh;font:600 1.7cqw Manrope,sans-serif;color:var(--bg);background:var(--yellow);padding:.4cqh .8cqw;border-radius:.6cqw;opacity:0}
+.vA.play .card .ping{animation:ping 2.4s 3.4s infinite}
+.vA .card{position:relative}
+/* B · 3D floors */
+.vB .stage{position:absolute;left:5cqw;top:30cqh;width:44cqw;height:50cqh;perspective:90cqw;perspective-origin:50% 30%}
+.vB .tower{position:absolute;left:50%;top:62%;width:30cqw;height:20cqh;transform:translate(-50%,-50%) rotateX(60deg) rotateZ(-35deg);transform-style:preserve-3d}
+.vB .floor{position:absolute;inset:0;background:linear-gradient(135deg,#2a2218,#15100b);border:1px solid #5a4f3f;box-shadow:0 0 0 1px #0b0907;opacity:0;transform-style:preserve-3d}
+.vB .floor.g{background:linear-gradient(135deg,#3a3020,#1c1610);border-color:#7a6300}
+.vB .floor:after{content:'';position:absolute;inset:18%;border:1px solid #3a3129}
+.vB.play .floor{animation:rise3 .8s cubic-bezier(.2,.8,.2,1) forwards}
+.vB .list{position:absolute;left:52cqw;right:7cqw;top:31cqh;display:flex;flex-direction:column-reverse;gap:1.2cqh}
+.vB .list>div{border-top:1px solid var(--rule);padding:1.2cqh 0;opacity:0;transform:translateX(1.5cqw)}
+.vB.play .list>div{animation:up .6s forwards}
+.vB .list b{display:block;font:500 2.5cqw Unbounded,sans-serif;color:var(--cream)}
+.vB .list small{display:block;font:400 1.9cqw/1.3 Manrope,sans-serif;color:var(--muted);margin:.3cqh 0 .5cqh}
+.vB .list .pr{font:500 2.8cqw/1 Unbounded,sans-serif;color:var(--yellow)}
+.vB .list .pr span{font:500 1.6cqw Manrope,sans-serif;color:var(--dim);letter-spacing:.12em;text-transform:uppercase;margin-left:.8cqw}
+.vB .list>div.g .pr{color:var(--cream)}
+/* C · 4D year */
+.vC .stage{position:absolute;left:0;right:0;top:27cqh;height:44cqh;perspective:100cqw;perspective-origin:50% 20%}
+.vC .plane{position:absolute;left:50%;top:50%;width:86cqw;height:26cqh;transform:translate(-50%,-50%) rotateX(58deg);transform-style:preserve-3d;background:linear-gradient(90deg,#15110d,#1c1713);border:1px solid #3a3129}
+.vC .m{position:absolute;top:0;bottom:0;width:1px;background:#2a2420}
+.vC .m span{position:absolute;bottom:-3.2cqh;left:-3cqw;width:6cqw;text-align:center;font:400 1.6cqw Manrope,sans-serif;color:var(--dim)}
+.vC .bar{position:absolute;bottom:50%;width:5cqw;transform-origin:bottom;transform:rotateX(-58deg);display:flex;flex-direction:column-reverse;gap:.3cqh}
+.vC .bar i{display:block;height:0;background:var(--yellow);opacity:.9;transition:height .35s cubic-bezier(.2,.8,.2,1)}
+.vC .bar i.site{background:#f5f3ee}
+.vC .bar i.seo{opacity:.7}.vC .bar i.ads{opacity:.5}
+.vC .counter{position:absolute;left:0;right:0;top:27cqh;text-align:center;font:500 8.6cqw/1 Unbounded,sans-serif;letter-spacing:-.05em;color:var(--yellow);transform:perspective(60cqw) rotateX(14deg)}
+.vC .cap{position:absolute;left:0;right:0;top:37cqh;text-align:center;font:400 2.2cqw Manrope,sans-serif;color:var(--muted)}
+.vC .leg{position:absolute;left:7cqw;right:7cqw;top:70cqh;display:grid;grid-template-columns:repeat(4,1fr);gap:1.4cqw;font:400 1.9cqw/1.3 Manrope,sans-serif;color:var(--muted)}
+.vC .leg div{border-top:1px solid var(--rule);padding-top:1cqh}
+.vC .leg b{display:block;color:var(--cream);font-weight:600}
+.vC .leg i{display:inline-block;width:1.4cqw;height:1.4cqw;margin-right:.8cqw;background:var(--yellow);vertical-align:middle;font-style:normal}
+.vC .leg .s i{background:#f5f3ee}.vC .leg .o i{opacity:.7}.vC .leg .a i{opacity:.5}
+@keyframes draw{to{opacity:1;stroke-dashoffset:0}}
+@keyframes up{to{opacity:1;transform:none}}
+@keyframes ping{0%{opacity:0;transform:translateY(.6cqh)}15%{opacity:1;transform:none}70%{opacity:1}100%{opacity:0}}
+@keyframes rise3{from{opacity:0;transform:translateZ(-10cqw)}to{opacity:1;transform:translateZ(var(--z))}}
+/* controls */
+.controls{position:fixed;bottom:0;left:0;right:0;height:var(--controls);background:#0c0a08f5;border-top:1px solid #292319;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:10px}
+.tabs,.actions{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap}
+button{font:400 13px/1.3 Manrope,sans-serif;cursor:pointer;border:1px solid #504735;border-radius:7px;background:#17130d;color:#ddd5c6;padding:7px 12px}
+button[aria-selected="true"]{color:var(--yellow);border-color:var(--yellow);background:#27210e}
+.description{font-size:12px;text-align:center;color:#c8bfad;max-width:900px;margin:0}
+.note{font-size:11px;color:#a49a84;text-align:center;margin:0}
+</style></head><body>
+<main class="slide vA" id="slide"></main>
+<nav class="controls"><div class="tabs" role="tablist"><button role="tab" data-v="A">А · Із восьми — троє → три потоки (2D)</button><button role="tab" data-v="B">Б · Поверхи над сайтом (3D)</button><button role="tab" data-v="C">В · Рік у часі (4D)</button></div><p class="description"></p><div class="actions"><button id="replay">↻ Програти знову</button><span class="note">← → перемикають варіанти</span></div></nav>
+<script>
+const H='<span class="k">И это только начало</span><h1>Один клиент — <em>не одна продажа</em></h1>';
+const LEAD='<p class="lead">Даже если из восьми скажет «да» только каждый третий</p>';
+const FOOT='<p class="foot">Сайт продаётся один раз. <em>Эти три — каждый месяц</em></p>';
+const IC={chat:'<svg class="ic" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>',seo:'<svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M8 11h6M11 8v6"/></svg>',ads:'<svg class="ic" viewBox="0 0 24 24"><path d="M4 10v4h3l6 4V6L7 10zM16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg>'};
+const S=[['AI-продавец','отвечает на заявки с этого сайта','$500–$2.000','ведение',IC.chat],['AI-SEO','чтобы сайт находили без рекламы','$500','в месяц',IC.seo],['Реклама','чтобы на сайт кто-то приходил','$300–$800','в месяц',IC.ads]];
+let timers=[];const T=(f,ms)=>timers.push(setTimeout(f,ms));const clr=()=>{timers.forEach(clearTimeout);timers=[]};
+const V={
+A:{desc:'2D, продовження 174: ті самі вісім клієнтів, троє з них спалахують («каждый третий»); від них лінії стікаються у три картки послуг з іконками і цінами. Далі картки живуть: раз на кілька секунд над кожною з’являється «+ в месяц» — видно повторюваність без слів.',
+ html:()=>H+LEAD+`<div class="eight">${Array.from({length:8},(_,i)=>`<i id="c${i}"></i>`).join('')}</div><svg class="flow" viewBox="0 0 860 160">${[1,4,7].map((c,k)=>[0,1,2].map(j=>`<path pathLength="1" style="animation-delay:${1.6+k*.2+j*.1}s" d="M${70+c*103} 0 C ${70+c*103} 90, ${143+j*287} 60, ${143+j*287} 160"/>`).join('')).join('')}</svg><div class="cards">${S.map((s,i)=>`<div class="card" style="animation-delay:${2.4+i*.2}s">${s[4]}<b>${s[0]}</b><small>${s[1]}</small><span class="pr">${s[2]}</span><span class="pm ${s[3]==='в месяц'?'month':''}">${s[3]}</span><span class="ping" style="animation-delay:${3.4+i*.8}s">+ каждый месяц</span></div>`).join('')}</div>`+FOOT,
+ run:()=>{[1,4,7].forEach((c,k)=>T(()=>document.getElementById('c'+c).classList.add('on'),900+k*250));}},
+B:{desc:'3D: клієнт — це «будинок». Внизу фундамент «Сайт · один раз», над ним по черзі виростають три поверхи: AI-продавец, AI-SEO, Реклама. Зліва — сама вежа в ізометрії, справа — підписи з цінами, синхронно з поверхами. Читається як «один клієнт = чотири доходи».',
+ html:()=>H+LEAD+`<div class="stage"><div class="tower"><div class="floor g" style="--z:0;animation-delay:.3s"></div>${S.map((s,i)=>`<div class="floor" style="--z:${(i+1)*7}cqw;animation-delay:${1+i*.6}s"></div>`).join('')}</div></div><div class="list"><div class="g" style="animation-delay:.3s"><b>Сайт</b><small>продаётся один раз</small><span class="pr">$250<span>один раз</span></span></div>${S.map((s,i)=>`<div style="animation-delay:${1+i*.6}s"><b>${s[0]}</b><small>${s[1]}</small><span class="pr">${s[2]}<span>${s[3]}</span></span></div>`).join('')}</div>`+FOOT,run:()=>{}},
+C:{desc:'4D — рік у часі: перспективна площина з 12 місяцями. У першому місяці виростає біла смужка «сайт» (один раз), а далі щомісяця на кожному стовпчику додаються три жовті шари — продавец, SEO, реклама; лічильник зверху росте. Наочно: сайт один раз, три послуги — щомісяця.',
+ html:()=>H+LEAD+`<div class="counter" id="cnt">$0</div><p class="cap" id="cap">месяц 1 из 12</p><div class="stage"><div class="plane">${Array.from({length:13},(_,i)=>`<div class="m" style="left:${i/12*100}%">${i<12?`<span>${i+1}</span>`:''}</div>`).join('')}${Array.from({length:12},(_,i)=>`<div class="bar" id="b${i}" style="left:calc(${(i+.5)/12*100}% - 2.5cqw)"><i class="site"></i><i class="sell"></i><i class="seo"></i><i class="ads"></i></div>`).join('')}</div></div><div class="leg"><div class="s"><i></i><b>Сайт</b>$250 · один раз</div><div><i></i><b>AI-продавец</b>$500–$2.000 ведение</div><div class="o"><i></i><b>AI-SEO</b>$500 в месяц</div><div class="a"><i></i><b>Реклама</b>$300–$800 в месяц</div></div>`+FOOT,
+ run:()=>{let m=0,total=0;const cnt=document.getElementById('cnt'),cap=document.getElementById('cap');const step=()=>{if(m>=12)return;const b=document.getElementById('b'+m);if(m===0){b.querySelector('.site').style.height='2.2cqh';total+=250;}b.querySelector('.sell').style.height='3.2cqh';b.querySelector('.seo').style.height='2.2cqh';b.querySelector('.ads').style.height='2.6cqh';total+=500+500+550;cnt.textContent='$'+total.toLocaleString('ru-RU').replace(/ /g,'.');cap.textContent='месяц '+(m+1)+' из 12';m++;T(step,520);};T(step,900);}}
+};
+const slide=document.getElementById('slide');let cur='A';
+function render(){clr();slide.className='slide v'+cur;slide.innerHTML=V[cur].html();document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.v===cur)));document.querySelector('.description').textContent=V[cur].desc;setTimeout(()=>{slide.classList.add('play');V[cur].run();},80);}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{cur=b.dataset.v;render()});
+document.getElementById('replay').onclick=render;
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')cur=cur==='A'?'B':cur==='B'?'C':'A';else if(e.key==='ArrowLeft')cur=cur==='A'?'C':cur==='B'?'A':'B';else return;render();});
+cur=new URLSearchParams(location.search).get('v')||'A';if(!V[cur])cur='A';render();
+</script></body></html>

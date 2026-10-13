@@ -1,0 +1,54 @@
+/* Google 36: one left-to-right road, continued across two square pages. */
+#slides .slide.reality-route {
+  --route-ink: #F5F3EE;
+  --route-yellow: #FDD506;
+  --route-ease: cubic-bezier(.22, .8, .2, 1);
+  padding: 0;
+  background: #0B0907;
+  color: var(--route-ink);
+  isolation: isolate;
+}
+.reality-route .rr-heading { position: absolute; left: 7.5cqw; right: 7.5cqw; top: 7.8cqh; text-align: left; }
+.reality-route .rr-eyebrow { margin-bottom: 2.4cqh; color: #BEB9B0; font: 500 1.85cqw/1.3 var(--font-b); letter-spacing: .1em; }
+#slides .reality-route .rr-title { width: 100%; max-width: none; margin: 0; color: var(--route-ink); font: 500 4.9cqw/1.2 var(--font-d); letter-spacing: -.04em; opacity: 1; animation: none; text-wrap: balance; }
+.reality-route .rr-road { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; pointer-events: none; }
+.reality-route .rr-accent { color: var(--route-yellow); }
+.reality-route .rr-guide, .reality-route .rr-trace { stroke: var(--route-yellow); stroke-width: .3; stroke-linecap: round; }
+.reality-route .rr-guide { opacity: .3; }
+.reality-route .rr-trace { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset .5s var(--route-ease); }
+.reality-route .rr-trace[data-drawn="true"] { stroke-dashoffset: 0; }
+#slides .reality-route .rr-items { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; list-style: none; margin: 0; padding: 0; }
+#slides .reality-route .rr-item { position: absolute; left: var(--route-x); top: 0; width: 27cqw; height: 82cqh; margin: 0; padding: 0; transform: translateX(-50%); opacity: 1; animation: none; mix-blend-mode: lighten; }
+.reality-route .rr-item::before { display: none; }
+.reality-route button { -webkit-appearance: none; appearance: none; margin: 0; padding: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.reality-route .rr-art { position: absolute; left: 1cqw; top: 28cqh; width: 25cqw; height: 25cqw; background: none; border: 0; border-radius: 0; outline-offset: .8cqw; mix-blend-mode: lighten; }
+.reality-route .rr-art img { display: block; width: 100%; height: 100%; object-fit: contain; opacity: .65; filter: grayscale(.4); transform: scale(.95); transition: opacity .36s ease, filter .36s ease, transform .42s var(--route-ease); }
+.reality-route .rr-item[data-state="active"] .rr-art img { opacity: 1; filter: none; transform: scale(1); }
+.reality-route .rr-item[data-state="past"] .rr-art img { opacity: .78; filter: grayscale(.2); transform: scale(.95); }
+.reality-route .rr-node { position: absolute; left: 50%; top: 56cqh; width: 5.4cqw; height: 5.4cqw; transform: translate(-50%, -50%); border-radius: 50%; border: .2cqw solid #777165; background: #0B0907; color: var(--route-ink); font: 600 2.15cqw/1 var(--font-b); transition: background .28s ease, color .28s ease, border-color .28s ease, box-shadow .28s ease; }
+.reality-route .rr-item[data-state="active"] .rr-node, .reality-route .rr-item[data-state="past"] .rr-node { background: var(--route-yellow); color: #0B0907; border-color: var(--route-yellow); }
+.reality-route .rr-item[data-state="active"] .rr-node { box-shadow: 0 0 0 .55cqw #FDD50616; }
+.reality-route .rr-art:focus-visible, .reality-route .rr-node:focus-visible { outline: .22cqw solid var(--route-ink); outline-offset: .65cqw; }
+.reality-route .rr-copy { position: absolute; top: 61.5cqh; left: 0; width: 100%; text-align: center; }
+#slides .reality-route .rr-item-title { margin: 0; min-height: 9.35cqh; color: var(--route-ink); font: 500 2.43cqw/1.28 var(--font-d); letter-spacing: -.025em; text-wrap: balance; transition: color .28s ease; }
+#slides .reality-route[data-route-part="1"] .rr-item-title { min-height: 6.25cqh; }
+#slides .reality-route .rr-item[data-state="active"] .rr-item-title { color: var(--route-yellow); }
+#slides .reality-route .rr-detail { width: 100%; max-width: none; margin: 1.05cqh 0 0; color: #D0CBC2; font: 400 2.25cqw/1.34 var(--font-b); letter-spacing: -.01em; opacity: 1; animation: none; text-wrap: balance; }
+#slides .reality-route .rr-takeaway { position: absolute; top: 85.5cqh; left: 7.5cqw; width: 85cqw; max-width: none; margin: 0; color: var(--route-ink); font: 500 3.05cqw/1.3 var(--font-b); letter-spacing: -.025em; text-align: center; opacity: 1; animation: none; }
+.reality-route .rr-takeaway strong { color: var(--route-yellow); font: 500 4.45cqw/1 var(--font-d); letter-spacing: -.05em; }
+/* Matched timing and edge geometry keep the road connected during the pan. */
+#slides .reality-route.rr-forward.on { animation: rrPageInForward .54s var(--route-ease) both; }
+#slides .reality-route.rr-forward.out { animation: rrPageOutForward .54s var(--route-ease) both; }
+#slides .reality-route.rr-backward.on { animation: rrPageInBackward .54s var(--route-ease) both; }
+#slides .reality-route.rr-backward.out { animation: rrPageOutBackward .54s var(--route-ease) both; }
+@keyframes rrPageInForward { from { transform: translateX(100%); opacity: 1; } to { transform: translateX(0); opacity: 1; } }
+@keyframes rrPageOutForward { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-100%); opacity: 1; } }
+@keyframes rrPageInBackward { from { transform: translateX(-100%); opacity: 1; } to { transform: translateX(0); opacity: 1; } }
+@keyframes rrPageOutBackward { from { transform: translateX(0); opacity: 1; } to { transform: translateX(100%); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  #slides .reality-route, #slides .reality-route * { animation: none !important; transition: none !important; }
+  #slides .reality-route.out { display: none; }
+}
+
+/* 03.10: миттєвий стан перед анімацією входу (js/reality-route.js enter) */
+.reality-route.rr-instant *, .reality-route.rr-instant *::before, .reality-route.rr-instant *::after { transition: none !important; }

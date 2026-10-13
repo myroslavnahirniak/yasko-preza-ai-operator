@@ -1,0 +1,21 @@
+/* Variant 02: growing photographic mosaic. Kept out of the production deck. */
+.mosaic-lab{position:absolute;inset:0;overflow:hidden;background:#0b0907;color:#f5f3ee;isolation:isolate;}
+.mosaic-lab::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 85% 90%,rgba(253,213,6,.045),transparent 65%);}
+.mosaic-intro{position:absolute;inset:0;z-index:4;opacity:0;pointer-events:none;transition:opacity .45s ease;}
+.mosaic-is-intro .mosaic-intro{opacity:1;}
+.mosaic-header{position:absolute;top:6cqw;left:6cqw;right:6cqw;z-index:3;transition:opacity .35s ease;}
+.mosaic-is-intro .mosaic-header{opacity:0;}
+.mosaic-header .lab-title{font-size:4.35cqw;line-height:1.24;letter-spacing:-.045em;font-weight:600;margin:0;max-width:87cqw;text-wrap:balance;}
+.mosaic-header .lab-title em{font-style:normal;color:#fdd506;}
+.mosaic-header .lab-body{margin:2.4cqw 0 0;font-size:2.55cqw;line-height:1.45;font-weight:400;color:#c8c3bc;max-width:83cqw;}
+.mosaic-canvas{position:absolute;inset:0;pointer-events:none;}
+.mosaic-card{position:absolute;overflow:hidden;border-radius:1.65cqw;transform:translateZ(0);transition:left .85s cubic-bezier(.22,.72,.16,1),top .85s cubic-bezier(.22,.72,.16,1),width .85s cubic-bezier(.22,.72,.16,1),height .85s cubic-bezier(.22,.72,.16,1),opacity .45s ease,filter .55s ease;filter:saturate(.62) brightness(.65);}
+.mosaic-card.mosaic-focused{filter:none;z-index:2;}
+.mosaic-card .lab-photo{position:absolute;inset:0;width:100%;height:100%;border-radius:inherit;overflow:hidden;}
+.mosaic-card .lab-photo>svg{display:block;width:100%;height:100%;}
+.mosaic-office-after{opacity:0;clip-path:inset(0 100% 0 0);transition:clip-path 1s cubic-bezier(.22,.72,.16,1),opacity .2s ease;}
+.mosaic-office-finished .mosaic-office-after{opacity:1;clip-path:inset(0 0 0 0);}
+.mosaic-is-final .mosaic-header{top:10cqw;}
+.mosaic-is-final .mosaic-header .lab-title{font-size:5.1cqw;}
+.mosaic-no-motion *, .mosaic-no-motion *::before{transition:none!important;animation:none!important;}
+@media(prefers-reduced-motion:reduce){.mosaic-lab *, .mosaic-lab *::before{transition:none!important;animation:none!important;}}

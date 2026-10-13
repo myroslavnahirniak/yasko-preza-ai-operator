@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>214–216 · Валюша, Владюша, цена · один слайд, три варианта</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+.h1{font-size:4.6cqw}
+.cap{font:400 2.2cqw/1.4 Manrope,sans-serif;color:var(--muted);text-wrap:balance}
+.tag{display:inline-block;font:500 1.7cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--yellow);border:1px solid rgba(253,213,6,.5);padding:.8cqh 1.2cqw;margin-bottom:1.6cqh}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:2cqw}
+.price{background:rgba(21,17,13,.92);border:1px solid #3a3129;padding:2cqh 2cqw}
+.price small{display:block;font:500 1.6cqw/1 'JetBrains Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:1.2cqh}
+.price b{display:block;font:500 5.2cqw/1 Unbounded,sans-serif;letter-spacing:-.04em;color:var(--yellow)}
+.price s{display:block;margin-top:.8cqh;font:400 2cqw/1 Manrope,sans-serif;color:var(--dim)}
+.price span{display:block;margin-top:1.2cqh;font:400 1.8cqw/1.35 Manrope,sans-serif;color:var(--muted)}
+[data-step].is-past.hide-past{opacity:0!important;visibility:hidden}
+/* ---- А · 3D-карточки дуэта ---- */
+.v-A .scene{position:absolute;inset:0;perspective:150cqw;z-index:2}
+.v-A .card{position:absolute;top:8cqh;width:42cqw;height:52cqh;overflow:hidden;border:1px solid #3a3129;box-shadow:0 2cqh 6cqh rgba(0,0,0,.7);transition:transform .8s cubic-bezier(.2,.8,.2,1),opacity .5s,left .8s,width .8s,height .8s,top .8s}
+.v-A .card img{width:100%;height:100%;object-fit:cover;display:block}
+.v-A .card.c1{left:7cqw;transform:rotateY(14deg) translateX(-8cqw)}
+.v-A .card.c2{left:51cqw;transform:rotateY(-14deg) translateX(8cqw)}
+.v-A .card.is-now{transform:rotateY(0) translateX(0)}
+.v-A[data-step="1"] .card.c1{left:7cqw;width:86cqw;height:52cqh;transform:none}
+.v-A[data-step="2"] .card.c1{transform:rotateY(14deg) translateX(-8cqw);opacity:.55}
+.v-A[data-step="2"] .card.c2{transform:none}
+.v-A[data-step="3"] .card{top:8cqh;height:40cqh;opacity:.35}
+.v-A[data-step="3"] .card.c1{transform:rotateY(18deg) translateX(-10cqw)}
+.v-A[data-step="3"] .card.c2{transform:rotateY(-18deg) translateX(10cqw)}
+.v-A .duo{position:absolute;left:17cqw;right:17cqw;top:6cqh;height:44cqh;z-index:3;overflow:hidden;border:1px solid rgba(253,213,6,.5);box-shadow:0 2cqh 7cqh rgba(0,0,0,.8);transform:translateY(2cqh)}
+.v-A .duo img{width:100%;height:100%;object-fit:cover;display:block}
+.v-A .txt{position:absolute;left:7cqw;right:7cqw;top:64cqh;z-index:4;transition:opacity .45s}
+.v-A .txt .h1{font-size:4.2cqw}.v-A .txt .cap{margin-top:1.4cqh;max-width:80cqw}
+.v-A .txt.is-past{opacity:0!important;visibility:hidden}
+.v-A .final{position:absolute;left:7cqw;right:7cqw;top:54cqh;z-index:4}
+.v-A .final .h1{font-size:4cqw;margin-bottom:2cqh}
+.v-A .final .price{padding:1.4cqh 1.6cqw}.v-A .final .price b{font-size:4.4cqw}
+/* ---- Б · кино-фон ---- */
+.v-B .bg{position:absolute;inset:0;transition:opacity .7s ease}
+.v-B .bg img{width:100%;height:100%;object-fit:cover;display:block}
+.v-B .bg:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(11,9,7,.55) 62%,rgba(11,9,7,.96) 100%)}
+.v-B .bg.is-past{opacity:0!important;visibility:hidden}
+.v-B .txt{position:absolute;left:7cqw;right:7cqw;bottom:7cqh;z-index:4}
+.v-B .txt.is-past{opacity:0!important;visibility:hidden}
+.v-B .txt .cap{margin-top:1.4cqh;max-width:78cqw}
+.v-B .final .prices{margin-top:2.4cqh}
+.v-B .final .price{padding:1.6cqh 1.6cqw;background:rgba(11,9,7,.78)}.v-B .final .price b{font-size:4.6cqw}
+/* ---- В · SVG звонок и чат ---- */
+.v-C{background:radial-gradient(ellipse at 50% 30%,#1a1410 0%,#0b0907 60%)}
+.v-C .top{position:absolute;left:7cqw;right:7cqw;top:7cqh;z-index:3;text-align:center;transition:opacity .4s}
+.v-C .top.is-past{opacity:0!important;visibility:hidden}
+.v-C .top .cap{margin-top:1.4cqh;max-width:80cqw;margin-left:auto;margin-right:auto}
+.v-C .stage{position:absolute;left:0;right:0;top:34cqh;bottom:8cqh;z-index:3}
+.v-C .ava{position:absolute;top:50%;width:30cqw;height:30cqw;border-radius:50%;overflow:hidden;border:.5cqw solid var(--yellow);box-shadow:0 0 4cqw rgba(253,213,6,.35);transform:translate(-50%,-50%);transition:left .8s cubic-bezier(.2,.8,.2,1),width .8s,height .8s,opacity .5s}
+.v-C .ava img{width:100%;height:100%;object-fit:cover;display:block}
+.v-C .ava.a1{left:50%}.v-C .ava.a2{left:50%}
+.v-C[data-step="1"] .ava.a2{opacity:0}
+.v-C[data-step="2"] .ava.a1{left:18cqw;width:18cqw;height:18cqw;opacity:.6}
+.v-C[data-step="2"] .ava.a2{left:56cqw}
+.v-C[data-step="3"] .ava.a1{left:37cqw;width:20cqw;height:20cqw;opacity:1;top:8cqh}
+.v-C[data-step="3"] .ava.a2{left:63cqw;width:20cqw;height:20cqw;top:8cqh}
+.v-C svg.fx{position:absolute;overflow:visible}
+.v-C .ring{left:50%;top:50%;width:46cqw;height:46cqw;transform:translate(-50%,-50%);opacity:0}
+.v-C[data-step="1"] .ring{opacity:1}
+.v-C .ring circle{fill:none;stroke:var(--yellow);stroke-width:1.2;transform-origin:50% 50%;animation:ring 2.2s ease-out infinite}
+.v-C .ring circle:nth-child(2){animation-delay:.7s}.v-C .ring circle:nth-child(3){animation-delay:1.4s}
+@keyframes ring{from{transform:scale(.62);opacity:.9}to{transform:scale(1.15);opacity:0}}
+.v-C .bubbles{position:absolute;left:34cqw;top:40%;width:14cqw;transform:translateY(-50%);opacity:0;transition:opacity .5s}
+.v-C[data-step="2"] .bubbles{opacity:1}
+.v-C .bubbles i{display:block;height:3.2cqh;border-radius:2cqw;background:#2a2420;margin-bottom:1.2cqh;width:80%;opacity:0;transform:translateY(1cqh);animation:up .5s forwards}
+.v-C .bubbles i:nth-child(2){width:60%;animation-delay:.5s}.v-C .bubbles i:nth-child(3){width:90%;background:var(--yellow);animation-delay:1s}
+.v-C .final{position:absolute;left:7cqw;right:7cqw;top:60cqh;z-index:4}
+.v-C .final .h1{font-size:3.8cqw;text-align:center;margin-bottom:2cqh}
+.v-C .final .price{padding:1.4cqh 1.6cqw}.v-C .final .price b{font-size:4.2cqw}
+</style></head><body>
+<main class="slide" id="slide"></main>
+<nav class="controls">
+<div class="tabs" role="tablist"><button role="tab" data-v="A">А · 3D-карточки: Валюша → Владюша → вместе + цена</button><button role="tab" data-v="B">Б · Кино-фон на весь квадрат</button><button role="tab" data-v="C">В · SVG: звонок → чат → тарифы</button></div>
+<p class="description"></p>
+<p class="note">Три слайда (214 Валюша, 215 Владюша, 216 цена) объединены в один с 3 шагами. Фото — оригиналы с valyusha-landing.vercel.app, тексты — полностью из источника. Клавиши: ←/→ вариант, ↓/Space шаг.</p>
+<div class="actions"><button id="prev" class="stepbtn">◀ шаг</button><span id="stepinfo"></span><button id="next" class="stepbtn">шаг ▶</button><button id="replay">↻ Сначала</button></div>
+</nav>
+<script>
+const V='assets/vlad-1409/valyusha/';
+const T1='Валюша — голос твоего бизнеса', C1='Отвечает на входящие звонки, консультирует голосом, фиксирует договорённости, отправляет счета на оплату и заносит данные в CRM';
+const T2='Владюша — её друг, продаёт в чатах', C2='Продаёт в чате как живой менеджер: квалифицирует, отрабатывает возражения и доводит до оплаты';
+const T3='Сколько стоит <em>Владюша</em>';
+const PRICES='<div class="prices"><div class="price"><small>Тариф 1 · инфобизнес</small><b>$1000</b><s>было $1500</s></div><div class="price"><small>Тариф 2 · любой продукт</small><b>$3000</b><s>было $4000</s></div></div>';
+const txt=(t,c,step,extra)=>'<div class="txt" data-step="'+step+'"><span class="tag">'+(step===1?'Голос':'Чаты')+'</span><h1 class="h1">'+t+'</h1><p class="cap">'+c+'</p></div>';
+window.VARIANTS={
+A:{steps:3,html:'<div class="scene"><div class="card c1" data-step="1"><img src="'+V+'hero.webp" alt=""></div><div class="card c2" data-step="2"><img src="'+V+'vladyusha.webp" alt=""></div></div>'
+   +'<div class="duo" data-step="3"><img src="'+V+'hero-duo.webp" alt=""></div>'
+   +txt(T1,C1,1)+txt(T2,C2,2)+'<div class="final" data-step="3"><h1 class="h1">'+T3+'</h1>'+PRICES+'</div>',
+   desc:'Шаг 1: карточка Валюши во всю ширину + заголовок и подпись. Шаг 2: карточка Валюши уходит влево в 3D, справа выезжает Владюша. Шаг 3: обе карточки отходят вглубь, по центру общее фото дуэта, ниже «Сколько стоит Владюша» и два тарифа. Рекомендация.'},
+B:{steps:3,html:'<div class="bg" data-step="1"><img src="'+V+'hero.webp" alt=""></div><div class="bg" data-step="2"><img src="'+V+'vladyusha.webp" alt=""></div><div class="bg" data-step="3"><img src="'+V+'hero-duo.webp" alt=""></div>'
+   +txt(T1,C1,1)+txt(T2,C2,2)+'<div class="txt final" data-step="3"><h1 class="h1">'+T3+'</h1>'+PRICES+'</div>',
+   desc:'Каждый шаг — фото на весь квадрат с затемнением снизу и текстом внизу: Валюша, Владюша, потом дуэт с тарифами. Самый простой и кинематографичный.'},
+C:{steps:3,html:'<div class="top" data-step="1"><span class="tag">Голос</span><h1 class="h1">'+T1+'</h1><p class="cap">'+C1+'</p></div><div class="top" data-step="2"><span class="tag">Чаты</span><h1 class="h1">'+T2+'</h1><p class="cap">'+C2+'</p></div>'
+   +'<div class="stage"><svg class="fx ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="44"/></svg><div class="bubbles"><i></i><i></i><i></i></div><div class="ava a1"><img src="'+V+'hero.webp" alt=""></div><div class="ava a2"><img src="'+V+'vladyusha.webp" alt=""></div></div>'
+   +'<div class="final" data-step="3"><h1 class="h1">'+T3+'</h1>'+PRICES+'</div>',
+   desc:'SVG-анимация: шаг 1 — Валюша в круге, вокруг расходятся кольца звонка; шаг 2 — Владюша с чат-пузырями, Валюша отступает; шаг 3 — оба аватара рядом сверху, ниже тарифы. Без больших фото, всё в стиле деки.'}};
+window.ORDER=['A','B','C'];
+</script>
+<script src="design-options-base.js"></script>
+</body></html>

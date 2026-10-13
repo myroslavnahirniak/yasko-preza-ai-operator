@@ -1,0 +1,1153 @@
+[
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><h2 class=\"dh sm\">Всё, что вы видели, — верхушка айсберга</h2><div class=\"iceberg\"><svg class=\"ice-art\" viewBox=\"0 0 420 460\" xmlns=\"http://www.w3.org/2000/svg\">\n  <defs>\n    <linearGradient id=\"ib-top\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n      <stop offset=\"0\" stop-color=\"#FFFFFF\"/><stop offset=\"1\" stop-color=\"#BFCEC6\"/>\n    </linearGradient>\n    <linearGradient id=\"ib-bot\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n      <stop offset=\"0\" stop-color=\"rgba(49,233,129,.40)\"/>\n      <stop offset=\"1\" stop-color=\"rgba(49,233,129,.05)\"/>\n    </linearGradient>\n  </defs>\n  <polygon points=\"138,152 282,152 330,430 90,430\" fill=\"url(#ib-bot)\"\n           stroke=\"rgba(49,233,129,.5)\" stroke-width=\"2\"/>\n  <polygon points=\"210,16 282,152 138,152\" fill=\"url(#ib-top)\"/>\n  <polygon points=\"210,16 282,152 210,152\" fill=\"rgba(0,0,0,.12)\"/>\n  <line x1=\"6\" y1=\"152\" x2=\"414\" y2=\"152\" stroke=\"#31E981\" stroke-width=\"2.5\"\n        stroke-dasharray=\"13 11\" opacity=\".8\"/>\n</svg><div class=\"ice-side\"><div class=\"ice-c dim\"><div class=\"ice-h\">Сверху — то, что вы видели</div><ul><li>Одна связка — сайты</li><li>Агент, который делает сайты</li><li>Агент-охотник</li></ul></div><div class=\"ice-c\"><div class=\"ice-h\">Под водой — где деньги</div><ul><li>Ещё 6 агентов на трендовые услуги</li><li>46 готовых задач под ваши услуги</li><li>Связки на поиск клиентов под каждую услугу</li></ul></div></div></div></div></div>",
+    "dirk": "Айсберг",
+    "note": "Показать глубину, не раскрывая её. Сверху — ровно то, что зал видел за эфир: одна связка, два агента. Под водой — перечислить и НЕ раскрывать: ещё шесть агентов, 96+ задач, 21 связка. Глубина продаётся, а не показывается."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Два пути</h2><div class=\"duo\"><div class=\"pane ghost\"><div class=\"pane-h\">Сам</div><ul><li>Собирать агентов по роликам из Ютуба</li><li>Расходы на нейронки</li><li>Тестировать на себе, что работает</li></ul></div><div class=\"pane\"><div class=\"pane-h\">с СИСТЕМОЙ «AI-ОПЕРАТОР»</div><ul><li>Агенты уже собраны</li><li>Пошаговая инструкция применения</li><li>Развитие навыка работы с AI</li><li>Умение создавать своих агентов</li><li>Куратор поможет с первым заказом</li></ul></div></div><p class=\"note center\">Готов показать, как мы это делаем</p></div></div>",
+    "dirk": "Два пути",
+    "note": "развилка «сам / за руку». Самостоятельный путь — уважительно, без обесценивания. «можно и самому — ютуб большой. Года за два разберётесь. Или — с системой, где всё уже собрано». Попросить написать слово в чат."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Предложение</div><h2 class=\"dh sm\">AI-Оператор</h2><p class=\"note center\"><b>АГЕНТЫ · ИНСТРУКЦИИ · ДОСТУПЫ</b></p><p class=\"note center\">Доступ к системе AI-агентов · инструкция, как ими управлять · навык работы с AI с нуля</p><p class='mut' style='font-size:2.4cqw;margin:0'>Для тех, кто хочет получить первых клиентов, не осваивая профессию</p><div class='sitewrap cabwrap'><div class='sitebar'><u></u><u></u><u></u><span class='caburl'>AI-Оператор · рабочий стол</span></div><div class='cab3'><div class='cbl'><div class='aghd'>Ваша команда<b>8 агентов</b></div><div class='ag run' style='animation-delay:0.30s'><i>🔎</i><span><b>AI-Охотник</b><em>ищет клиентов</em></span><u class='run'></u></div><div class='ag run' style='animation-delay:0.39s'><i>💬</i><span><b>AI-Продавец</b><em>ведёт до оплаты</em></span><u class='run'></u></div><div class='agsep'>делают услуги</div><div class='ag act' style='animation-delay:0.50s'><i>🌐</i><span><b>AI-Сайты</b><em>сайты под ключ</em></span><u class='act'></u></div><div class='ag ok' style='animation-delay:0.59s'><i>🎨</i><span><b>AI-Дизайн</b><em>КП, баннеры, макеты</em></span><u class='ok'></u></div><div class='ag ok' style='animation-delay:0.68s'><i>🎬</i><span><b>AI-Видео</b><em>ролики с аватаром</em></span><u class='ok'></u></div><div class='ag ok' style='animation-delay:0.77s'><i>✍️</i><span><b>AI-Контент</b><em>посты и рилз</em></span><u class='ok'></u></div><div class='ag ok' style='animation-delay:0.86s'><i>🎯</i><span><b>AI-Таргет</b><em>реклама и связки</em></span><u class='ok'></u></div><div class='ag ok' style='animation-delay:0.95s'><i>🧭</i><span><b>AI-Видимость</b><em>выдача в нейросетях</em></span><u class='ok'></u></div></div><div class='cbc'><div class='cthd'><i>🌐</i><div><b>AI-Сайты</b><em>Даёте задачу словами — собирает сайт под ключ</em></div></div><div class='cttask'><span class='lb'>Задача</span><span class='tx'>«собери сайт для студии маникюра, оффер — запись за 30 секунд»</span></div><div class='ctsteps'><div class='stp done' style='animation-delay:0.90s'><u></u><span>Изучил нишу и конкурентов</span><em>0:12</em></div><div class='stp done' style='animation-delay:1.18s'><u></u><span>Собрал структуру и заголовки</span><em>0:34</em></div><div class='stp done' style='animation-delay:1.46s'><u></u><span>Подобрал дизайн и картинки</span><em>0:20</em></div><div class='stp now' style='animation-delay:1.74s'><u></u><span>Верстает мобильную версию</span><em>—</em></div><div class='stp wait' style='animation-delay:2.02s'><u></u><span>Подключит опросник и заявки</span><em>—</em></div></div></div><div class='cbr'><div class='aghd'>Во главе<b>вы</b></div><div class='youbox'><div class='yhd'><i>👑</i><span><b>Ваш контроль</b><em>сайт на проверке</em></span></div><div class='yl'><u class='ok'></u>сделал агент</div><div class='yl'><u class='act'></u>ждёт вашего слова</div><div class='yl'><u class='wait'></u>уйдёт клиенту</div></div><div class='ybtn'>Отправить клиенту →</div><div class='aghd sm'>Лента событий</div><div class='fe' style='animation-delay:1.50s'><u>сейчас</u><span>Сайт собран и ждёт вас</span></div><div class='fe' style='animation-delay:1.72s'><u>0:34</u><span>Подобран дизайн и оффер</span></div><div class='fe' style='animation-delay:1.94s'><u>0:12</u><span>Задача принята в работу</span></div></div></div></div><p class='acc'>Охотник ищет · продавец продаёт · остальные делают. Решение всегда за вами</p><p class=\"lead center\" style=\"font-size:2.6cqw\">10 недель с кураторами, наставниками и мной — до первых продаж</p></div></div>",
+    "dirk": "AI-Оператор",
+    "note": "обложка программы: имя · срок · обещание в результате. Тон меняется — спикер открывает дверь. «не курс. Доступ к команде агентов и навык ими управлять». На экране живая консоль: слева охотник и продавец, под ними исполнители, справа вы; чек-лист заполняется на глазах — дать доиграть. ⚠️ Это макет — кабинета пока нет, доступ через SendPulse; в эфире говорить «так выглядит рабочий стол»."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"flag\"><h2 class=\"dh\">Это доступ к AI-агентам и навык ими управлять, а не курс</h2><p class=\"note\">Одни только тесты моделей стоят нам до $250 в день. Счета за эксперименты — наши</p></div></div>",
+    "dirk": "Доступ, а не курс",
+    "note": "переопределить покупку: не уроки, а доступ к живой системе, за которую платит автор. «каждый месяц мы жжём деньги на тесты моделей, чтобы вам не пришлось»."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><h2 class=\"dh sm\">Как это устроено</h2><div class=\"rail tight\"><span class=\"node\">Урок + инструкция</span><span class=\"arrow\">→</span><span class=\"node\">Доступ к агенту</span><span class=\"arrow\">→</span><span class=\"node\">Домашка</span><span class=\"arrow\">→</span><span class=\"node\">Куратор ✓</span></div><p class=\"note center\">И живые разборы: застряли в понедельник — в четверг вас вытащили</p><div class=\"shot-grid n1\"><div class=\"win \"><div class=\"win-bar\"><i></i><i></i><i></i></div><div class=\"shot ph-sh-lms\" style=\"aspect-ratio:1600/757;background-size:contain;background-color:#0A0F14\"></div></div></div></div></div>",
+    "dirk": "Как устроено",
+    "note": "снять страх «куплю и останусь один с записями». показать кабинет 10 секунд. «Это не PDF на почту. Это система, где на каждом шаге видно, что делать дальше».  Скрин воркшопа — пруфом прямо на этом слайде, отдельного экрана нет."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Я не только даю кнопку. Я учу, как она устроена</h2><div class=\"duo\"><div class=\"pane ghost\"><div class=\"pane-h\">Только кнопка</div><ul><li>Нажать и получить</li><li>Чужой инструмент навсегда</li></ul></div><div class=\"pane\"><div class=\"pane-h\">Понимание</div><ul><li>Как устроен каждый агент</li><li>Адаптировать его под себя</li><li>Собрать своего с нуля</li></ul></div></div><p class=\"note center\">Мои агенты — стартовый набор. Своих вы соберёте сами — и это останется с вами</p></div></div>",
+    "dirk": "Не кнопка, а понимание",
+    "note": "снять страх «куплю чужую кнопку и буду зависеть от автора». Кнопку я даю — готовых агентов. Но не только: «вы поймёте, как мои агенты устроены, научитесь адаптировать их под себя и собирать своих с нуля. Первого — уже на второй неделе»."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Блок 1 · недели 1–2</div><h2 class=\"dh sm\">Фундамент: ставить задачу и получать готовый результат</h2><div class=\"modlist-b\"><div class=\"mb-r\" data-x=\"1\"><span class=\"mb-c\">M0</span><span class=\"mb-n\"><b>AI-стек</b><small>30+ нейросетей и рабочее место, где они живут вместе</small></span><span class=\"mb-a\"><span class=\"mb-dots\"></span><em>—</em></span></div><div class=\"mb-x\"><div class=\"mbx-skill\"><i>Ключевой навык</i>Продвинутая работа с нейросетями: Claude Code, готовые инструкции, MCP, плагины</div><div class=\"mbx-tools\"><span class=\"tch\"><img src=\"assets/logo/claude.svg\" alt=\"\">Claude</span><span class=\"tch\"><img src=\"assets/logo/googlegemini.svg\" alt=\"\">Gemini</span><span class=\"tch\"><img src=\"assets/logo/openai.svg\" alt=\"\">ChatGPT</span><span class=\"tch\"><img src=\"assets/logo/perplexity.svg\" alt=\"\">Perplexity</span></div><div class=\"mbx-res\"><i>Результат</i>Разбираетесь во всех главных нейросетях. Настроенное рабочее место — первый результат в первый же вечер</div></div><div class=\"mb-r\" data-x=\"1\"><span class=\"mb-c\">M1</span><span class=\"mb-n\"><b>Свои AI-помощники</b><small>первого помощника собираете сами: запись звонка → список задач</small></span><span class=\"mb-a\"><span class=\"mb-dots\"></span><em>—</em></span></div><div class=\"mb-x\"><div class=\"mbx-skill\"><i>Ключевой навык</i>Собираете себе набор задач, которые AI делает за вас, и подключаете к почте, календарю, Telegram, GitHub, Drive</div><div class=\"mbx-tools\"><span class=\"tch\"><img src=\"assets/logo/claude.svg\" alt=\"\">Claude Code</span><span class=\"tch\"><img src=\"assets/logo/modelcontextprotocol.svg\" alt=\"\">MCP</span><span class=\"tch\"><img src=\"assets/logo/gmail.svg\" alt=\"\">Gmail</span><span class=\"tch\"><img src=\"assets/logo/googlecalendar.svg\" alt=\"\">Calendar</span><span class=\"tch\"><img src=\"assets/logo/telegram.svg\" alt=\"\">Telegram</span><span class=\"tch\"><img src=\"assets/logo/github.svg\" alt=\"\">GitHub</span></div><div class=\"mbx-res\"><i>Результат</i>Первый помощник собран своими руками: запись звонка → список задач</div></div><div class=\"mb-r\" data-x=\"1\"><span class=\"mb-c\">M2</span><span class=\"mb-n\"><b>Deep Research</b><small>глубокое исследование ниши: кто платит, за что и сколько</small></span><span class=\"mb-a\"><span class=\"mb-dots\"></span><em>—</em></span></div><div class=\"mb-x\"><div class=\"mbx-skill\"><i>Ключевой навык</i>Найти нишу, боль и идею продукта на данных, а не на догадках</div><div class=\"mbx-tools\"><span class=\"tch\"><img src=\"assets/logo/perplexity.svg\" alt=\"\">Perplexity</span><span class=\"tch txt\">Deep Research</span><span class=\"tch\"><img src=\"assets/logo/googlegemini.svg\" alt=\"\">Gemini</span><span class=\"tch txt\">Parallel AI</span><span class=\"tch\"><img src=\"assets/logo/notebooklm.svg\" alt=\"\">NotebookLM</span><span class=\"tch\"><img src=\"assets/logo/claude.svg\" alt=\"\">Claude</span></div><div class=\"mbx-res\"><i>Результат</i>Исследование рынка, конкурентов и клиентов за пару часов: кто платит, за что и сколько</div></div></div><p class=\"note center\">Задачи — со 2-го блока. Здесь навык и инструменты</p><div class=\"outcome\"><span>Результат блока</span><b>Уверенно пользуетесь нейронками, ставите им задачи словами и собираете свои</b></div></div></div>",
+    "dirk": "Блок 1 · Фундамент",
+    "note": "программа — это блоки с результатом на руках, а не список уроков. Первый блок снимает страх «я в этом ноль». Готовых задач здесь не выдаём — навык и инструменты; задачи начинаются со 2-го блока. ~20 сек. Раскрытие: клик по модулю или клавиши 1–3 — навык, нейронки логотипами, результат; на M3 и M4 — набор готовых задач."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "k": "Блок 2 · недели 3–4",
+    "t": "Маркетинг — 7 задач",
+    "b": "<div class='route'><div class='rt'><i>01</i><b>разобрать нишу</b><span>за что в ней реально платят</span></div><div class='rt'><i>02</i><b>понять клиента</b><span>кто он и что его бесит</span></div><div class='rt'><i>03</i><b>посмотреть конкурентов</b><span>как продают десять лучших</span></div><div class='rt'><i>04</i><b>назначить цену</b><span>сколько брать, чтобы брали</span></div><div class='rt'><i>05</i><b>собрать предложение</b><span>от которого глупо отказаться</span></div><div class='rt'><i>06</i><b>написать тексты</b><span>сайт, письмо, пост</span></div><div class='rt'><i>07</i><b>понять, почему покупают</b><span>и повторить это в каждой продаже</span></div></div><p class='mut'>Это не термины. Это то, что вы делаете руками агента в первую неделю</p>",
+    "dirk": "Блок 2 · маркетинг 7",
+    "note": "Семь строк читать быстро, не расшифровывать. Дословно сказать: «ребята, даже если вы сейчас не знаете, что это за услуга и для чего она вам нужна — клиенты за неё платят деньги». Страшных слов на экране нет намеренно."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "k": "Блок 2 · недели 3–4",
+    "t": "Сайты — 9 задач",
+    "b": "<div class='route'><div class='rt'><i>01</i><b>структура страницы</b><span>что за чем идёт</span></div><div class='rt'><i>02</i><b>дизайн</b><span>как это выглядит</span></div><div class='rt'><i>03</i><b>вёрстка</b><span>чтобы работало на телефоне</span></div><div class='rt'><i>04</i><b>картинки под ваш продукт</b><span>без стоков</span></div><div class='rt'><i>05</i><b>первый экран</b><span>который останавливает</span></div><div class='rt'><i>06</i><b>опросник</b><span>отсеивает не ваших</span></div><div class='rt'><i>07</i><b>подарок за контакт</b><span>чтобы оставили телефон</span></div><div class='rt'><i>08</i><b>заявки</b><span>чтобы кнопка реально писала вам</span></div><div class='rt'><i>09</i><b>редизайн старого сайта</b><span>если он уже есть</span></div></div><p class='acc'>7 + 9 = 16 задач блока. Все шестнадцать делает один агент</p>",
+    "dirk": "Блок 2 · сайты 9",
+    "note": "Девять строк так же быстро. Замок — арифметика: семь плюс девять, шестнадцать задач блока. Это то число, которое дальше сложится в 46 по всем блокам."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Блок 3 · недели 5–6</div><h2 class=\"dh sm\">Контент-завод: месяц контента за день</h2><div class=\"modlist-b\"><div class=\"mb-r\" data-x=\"1\"><span class=\"mb-c\">M5</span><span class=\"mb-n\"><b>16 форматов контента</b><small>Reels, сторис, посты, Telegram, Threads, Shorts, статьи, карусели</small></span><span class=\"mb-a\"><span class=\"mb-dots\"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><em>9</em></span></div><div class=\"mb-x\"><div class=\"mbx-skill\"><i>Ключевой навык</i>Осознанная система контента под запуск: что, когда и для кого</div><div class=\"mbx-tools\"><span class=\"tch\"><img src=\"assets/logo/claude.svg\" alt=\"\">Claude</span><span class=\"tch\"><img src=\"assets/logo/notebooklm.svg\" alt=\"\">NotebookLM</span></div><div class=\"mbx-team\"><div class=\"tm\"><b>Контент-стратег</b><small>что, когда и для кого выпускать</small></div><div class=\"tm\"><b>Хукмейкер</b><small>первые секунды и заголовки, за которые цепляются</small></div><div class=\"tm\"><b>Сценарист Reels и Shorts</b><small>вирусные сценарии под площадку</small></div><div class=\"tm\"><b>Автор постов и Threads</b><small>короткие тексты каждый день</small></div><div class=\"tm\"><b>Автор статей</b><small>лонгриды и Telegram-посты</small></div><div class=\"tm\"><b>Дизайнер каруселей</b><small>карусель из любого текста</small></div><div class=\"tm\"><b>Сторисмейкер</b><small>линии сторис по дням</small></div><div class=\"tm\"><b>Email-автор</b><small>письма и цепочки</small></div><div class=\"tm\"><b>Хранитель стиля</b><small>ваш tone of voice — не видно, что нейросеть</small></div></div><div class=\"mbx-res\"><i>Результат</i>16 форматов из одного файла: посты, сторис, рилсы, статьи, письма — в вашем стиле</div></div><div class=\"mb-r\" data-x=\"1\"><span class=\"mb-c\">M6</span><span class=\"mb-n\"><b>Видео, фото, голос, аватар</b><small>сценарий, съёмка без камеры, клон вашего голоса и лица</small></span><span class=\"mb-a\"><span class=\"mb-dots\"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><em>7</em></span></div><div class=\"mb-x\"><div class=\"mbx-skill\"><i>Ключевой навык</i>Фото, дизайн, карусели и видео нейросетями, клон голоса и лица</div><div class=\"mbx-tools\"><span class=\"tch txt\">Higgsfield</span><span class=\"tch txt\">Kling</span><span class=\"tch txt\">Midjourney</span><span class=\"tch\"><img src=\"assets/logo/google.svg\" alt=\"\">Nano Banana Pro</span><span class=\"tch\"><img src=\"assets/logo/claude.svg\" alt=\"\">Claude</span><span class=\"tch\"><img src=\"assets/logo/playwright.svg\" alt=\"\">Playwright</span></div><div class=\"mbx-team\"><div class=\"tm\"><b>Режиссёр</b><small>выбирает формат ролика и ведёт раскадровку</small></div><div class=\"tm\"><b>Сценарист кадра</b><small>описание под каждую сцену</small></div><div class=\"tm\"><b>Оператор без камеры</b><small>генерирует видео</small></div><div class=\"tm\"><b>Фотограф</b><small>фото и продуктовая съёмка</small></div><div class=\"tm\"><b>Двойник</b><small>ваш AI-аватар: лицо и голос</small></div><div class=\"tm\"><b>Дизайнер обложек</b><small>обложки и карусели из видео</small></div><div class=\"tm\"><b>Хранитель бренда</b><small>один стиль во всём визуале</small></div></div><div class=\"mbx-res\"><i>Результат</i>Профессиональные фото, ролики, карусели и говорящий AI-аватар — без фотографа и монтажёра</div></div><div class=\"mb-r\" data-x=\"1\"><span class=\"mb-c\">M7</span><span class=\"mb-n\"><b>AI-монтаж</b><small>длинное видео → готовые ролики</small></span><span class=\"mb-a\"><span class=\"mb-dots\"><i></i></span><em>1</em></span></div><div class=\"mb-x\"><div class=\"mbx-skill\"><i>Ключевой навык</i>Длинное видео → готовые ролики под площадки, по расписанию</div><div class=\"mbx-tools\"><span class=\"tch\"><img src=\"assets/logo/claude.svg\" alt=\"\">Claude Code</span><span class=\"tch txt\">Routines</span></div><div class=\"mbx-team one\"><div class=\"tm\"><b>Монтажёр</b></div><div class=\"tm fn\"><small>· режет длинное видео на ролики</small></div><div class=\"tm fn\"><small>· кладёт субтитры и графику</small></div><div class=\"tm fn\"><small>· подбирает музыку</small></div><div class=\"tm fn\"><small>· собирает версии под площадки</small></div></div><div class=\"mbx-res\"><i>Результат</i>Из одного эфира — неделя роликов без монтажёра</div></div></div><div class=\"mb-pack\"><span class=\"mb-pack-l\">Выдаём в этом блоке</span><span class=\"mb-pack-d\"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><b>17 задач</b></div><div class=\"outcome\"><span>Результат блока</span><b>Плюс три услуги в прайсе: дизайн, видео и контент-завод — месяц контента клиенту за день</b></div></div></div>",
+    "dirk": "Блок 3 · Контент-завод",
+    "note": "вторая услуга с регулярной оплатой — контент клиенту каждый месяц. Именно за этим идут в Silver. «16 форматов — это Reels, вирусный Reels, сторис, короткий пост, длинный пост, статья, карусель, карусель из видео, Threads, письмо, цитаты, хук-фразы, сценарий видео, описание к ролику, пост в Telegram и контент-план. Всё — из одного разговора с клиентом. Видео без камеры, голос и лицо — ваши клоны. Монтажёр режет длинное видео на ролики». Раскрытие: клик по модулю или клавиши 1–3 — навык, нейронки логотипами, результат; на M3 и M4 — набор готовых задач. В раскрытии каждого модуля — готовые задачи (из папок навыков, простым языком)."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Блок 4 · недели 7–8</div><h2 class=\"dh sm\">Привлечение: клиентов находит агент</h2><div class=\"modlist-b\"><div class=\"mb-r\" data-x=\"1\"><span class=\"mb-c\">M8</span><span class=\"mb-n\"><b>AI-таргетолог</b><small>реклама: объявления, креативы, оптимизация, отчёты</small></span><span class=\"mb-a\"><span class=\"mb-dots\"><i></i><i></i><i></i><i></i><i></i></span><em>5</em></span></div><div class=\"mb-x\"><div class=\"mbx-skill\"><i>Ключевой навык</i>Реклама, которая настраивается сама: креативы, кампании, оптимизация, отчёты</div><div class=\"mbx-tools\"><span class=\"tch\"><img src=\"assets/logo/claude.svg\" alt=\"\">Claude Code</span><span class=\"tch\"><img src=\"assets/logo/meta.svg\" alt=\"\">Meta Ads</span><span class=\"tch\"><img src=\"assets/logo/google.svg\" alt=\"\">Nano Banana Pro</span></div><div class=\"mbx-team\"><div class=\"tm\"><b>Стратег рекламы</b><small>цели, бюджет, структура кампаний</small></div><div class=\"tm\"><b>Таргетолог</b><small>аудитории и сегменты</small></div><div class=\"tm\"><b>Креативщик</b><small>объявления и картинки десятками под тест</small></div><div class=\"tm\"><b>Аналитик</b><small>что работает, а что сливает бюджет</small></div><div class=\"tm\"><b>Отчётчик</b><small>цифры и отчёт клиенту</small></div></div><div class=\"mbx-res\"><i>Результат</i>Собирает креативы и запускает кампании · сам считает, что работает · отключает лишнее и отчитывается цифрами</div></div><div class=\"mb-r\" data-x=\"1\"><span class=\"mb-c\">M9</span><span class=\"mb-n\"><b>AI-SEO</b><small>сайт виден в поиске и его рекомендует ChatGPT</small></span><span class=\"mb-a\"><span class=\"mb-dots\"><i></i><i></i><i></i></span><em>3</em></span></div><div class=\"mb-x\"><div class=\"mbx-skill\"><i>Ключевой навык</i>Бизнес находят в поиске, на картах и в ответах нейросетей</div><div class=\"mbx-tools\"><span class=\"tch\"><img src=\"assets/logo/claude.svg\" alt=\"\">Claude Code</span><span class=\"tch\"><img src=\"assets/logo/perplexity.svg\" alt=\"\">Perplexity</span><span class=\"tch\"><img src=\"assets/logo/openai.svg\" alt=\"\">ChatGPT</span><span class=\"tch\"><img src=\"assets/logo/google.svg\" alt=\"\">Google</span></div><div class=\"mbx-team\"><div class=\"tm\"><b>Аудитор сайта</b><small>что мешает быть видимым</small></div><div class=\"tm\"><b>Видимость в нейросетях</b><small>чтобы бизнес рекомендовал ChatGPT</small></div><div class=\"tm\"><b>Автор SEO-страниц</b><small>страницы под запросы клиентов</small></div></div><div class=\"mbx-res\"><i>Результат</i>Люди приходят без платной рекламы — и поток не выключается</div></div><div class=\"mb-r\" data-x=\"1\"><span class=\"mb-c\">M10</span><span class=\"mb-n\"><b>Агент-охотник</b><small>как он ищет клиентов на картах, как собрать своего и настроить под вашу услугу</small></span><span class=\"mb-a\"><span class=\"mb-dots\"><i></i><i></i><i></i><i></i></span><em>4</em></span></div><div class=\"mb-x\"><div class=\"mbx-skill\"><i>Ключевой навык</i>Сам находит клиентов под 7 услуг и пишет первое сообщение</div><div class=\"mbx-tools\"><span class=\"tch\"><img src=\"assets/logo/claude.svg\" alt=\"\">Claude Code</span><span class=\"tch\"><img src=\"assets/logo/google.svg\" alt=\"\">Google Карты</span><span class=\"tch\"><img src=\"assets/logo/telegram.svg\" alt=\"\">Telegram</span><span class=\"tch\"><img src=\"assets/logo/gmail.svg\" alt=\"\">Gmail</span></div><div class=\"mbx-team\"><div class=\"tm\"><b>Разведчик</b><small>находит бизнесы на картах и читает отзывы</small></div><div class=\"tm\"><b>Автор первого письма</b><small>пишет каждому про его боль</small></div><div class=\"tm\"><b>Напоминальщик</b><small>возвращается, пока не ответят</small></div><div class=\"tm\"><b>Дожимщик</b><small>доводит до разговора и демо</small></div></div><div class=\"mbx-res\"><i>Результат</i>Находит в картах → читает отзывы → пишет лично → напоминает → дожимает</div></div></div><div class=\"mb-pack\"><span class=\"mb-pack-l\">Выдаём в этом блоке</span><span class=\"mb-pack-d\"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><b>12 задач</b></div><div class=\"outcome\"><span>Результат блока</span><b>Плюс две услуги: таргет и SEO — и охотник, который приносит клиентов на всё, что вы уже умеете</b></div></div></div>",
+    "dirk": "Блок 4 · Привлечение клиентов",
+    "note": "закрывает главный страх «а клиенты откуда». Этот блок открывается с Gold — главный довод шагнуть выше Silver. «Семь трендовых услуг, под которые охотник ищет клиентов: сайты, дизайн, продающие видео, контент-завод с аватаром, продавец, таргет и AI-SEO. Он собирает бизнесы с карт, читает отзывы и пишет каждому про его боль. Таргетолог запускает рекламу, AI-SEO делает так, что сайт клиента рекомендует ChatGPT». Trial close: «напишите в чат, какой блок вам интереснее». Раскрытие: клик по модулю или клавиши 1–3 — навык, нейронки логотипами, результат; на M3 и M4 — набор готовых задач. В раскрытии каждого модуля — готовые задачи (из папок навыков, простым языком)."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Блок 5 · недели 9–10</div><h2 class=\"dh sm\">Продажи и масштаб: сделка закрывается без вас</h2><div class=\"modlist-b\"><div class=\"mb-r\" data-x=\"1\"><span class=\"mb-c\">M11</span><span class=\"mb-n\"><b>AI-продавец</b><small>живёт в Telegram / WhatsApp / Instagram, отвечает голосом и текстом, снимает возражения до оплаты</small></span><span class=\"mb-a\"><span class=\"mb-dots\"><i></i></span><em>1</em></span></div><div class=\"mb-x\"><div class=\"mbx-skill\"><i>Ключевой навык</i>Продажи без вашего участия: голосом и текстом, круглосуточно</div><div class=\"mbx-tools\"><span class=\"tch\"><img src=\"assets/logo/claude.svg\" alt=\"\">Claude</span><span class=\"tch\"><img src=\"assets/logo/telegram.svg\" alt=\"\">Telegram</span><span class=\"tch\"><img src=\"assets/logo/whatsapp.svg\" alt=\"\">WhatsApp</span><span class=\"tch\"><img src=\"assets/logo/instagram.svg\" alt=\"\">Instagram</span><span class=\"tch\"><img src=\"assets/logo/modelcontextprotocol.svg\" alt=\"\">MCP</span></div><div class=\"mbx-team one\"><div class=\"tm\"><b>Продавец</b></div><div class=\"tm fn\"><small>· отвечает на заявки круглосуточно</small></div><div class=\"tm fn\"><small>· консультирует и снимает сомнения</small></div><div class=\"tm fn\"><small>· доводит до оплаты — без вас и без выходных</small></div></div><div class=\"mbx-res\"><i>Результат</i>Отвечает на входящие · консультирует и снимает сомнения · доводит до оплаты без вас и без выходных</div></div><div class=\"mb-r\" data-x=\"1\"><span class=\"mb-c\">M12</span><span class=\"mb-n\"><b>Поиск клиентов и связки</b><small>платные и бесплатные методы поиска клиентов · как упаковать себя · услуга без возвратов · продление клиента</small></span><span class=\"mb-a\"><span class=\"mb-dots\"></span><em>—</em></span></div><div class=\"mb-x\"><div class=\"mbx-skill\"><i>Ключевой навык</i>Платные и бесплатные методы поиска клиентов · как упаковать себя · услуга без возвратов · продление клиента</div><div class=\"mbx-res\"><i>Результат</i>Связка «что · кому · как» — и клиент, который платит снова</div></div></div><div class=\"mb-pack\"><span class=\"mb-pack-l\">Задач в этом блоке</span><span class=\"mb-pack-d\"><i></i></span><b>1 задача</b></div><div class=\"outcome\"><span>Результат блока</span><b>Сделка закрывается без вас, клиент остаётся и платит снова</b></div></div></div>",
+    "dirk": "Блок 5 · Продажи и масштаб",
+    "note": "одна задача, но самая дорогая в стеке — продавец. И ответ на «а что потом»: удержание и масштаб. «Продавец — один, но он живёт там, где ваши клиенты пишут: Telegram, WhatsApp, Instagram. Отвечает голосом и текстом, снимает возражения и доводит до оплаты. Это третий уровень — Gold: в Silver контент приводит клиентов, а продаёте вы; здесь клиентов приводит реклама, а сделку закрывает агент. Дальше — продлить, допродать и включить второе направление». Раскрытие: клик по модулю или клавиши 1–3 — навык, нейронки логотипами, результат; на M3 и M4 — набор готовых задач. В раскрытии каждого модуля — готовые задачи (из папок навыков, простым языком)."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">01</div><div class=\"item-b\"><div class=\"item-ico\">🧭</div><div class=\"eyebrow\">Элемент 1 из 17</div><h2 class=\"dh md\">Полная система: 13 модулей · 10 недель</h2><p class=\"lead\">От первого помощника до сделки, которую закрывает агент. Контент, шаблоны, все обновления включены</p><div class=\"worth\"><span>Ценность</span><b>$1.500</b></div></div></div></div>",
+    "dirk": "Элемент 1",
+    "note": "первый элемент — вся система целиком. Задаёт масштаб: не «уроки», а путь до сделки. одной фразой, без пересказа подзаголовка. Ценность произносится ровно, без извинений."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Элемент 2 из 17</div><h2 class=\"dh sm\">Готовые агенты под 7 трендовых услуг</h2><table class=\"ledger\"><tbody><tr class=\"\"><td class=\"idx\">01</td><td>🌐 AI-сайты, которые приводят клиентов</td><td class=\"v\">$600</td></tr><tr class=\"\"><td class=\"idx\">02</td><td>🎨 AI-дизайн</td><td class=\"v\">$400</td></tr><tr class=\"\"><td class=\"idx\">03</td><td>🎬 Продающие AI-видео</td><td class=\"v\">$500</td></tr><tr class=\"\"><td class=\"idx\">04</td><td>✍️ Контент-завод с AI-аватаром</td><td class=\"v\">$700</td></tr><tr class=\"\"><td class=\"idx\">05</td><td>🎯 AI-таргет (платная реклама)</td><td class=\"v\">$1.000</td></tr><tr class=\"\"><td class=\"idx\">06</td><td>🧭 AI-SEO (видимость в нейросетях)</td><td class=\"v\">$1.000</td></tr><tr class=\"\"><td class=\"idx\">07</td><td>💬 AI-продавец</td><td class=\"v\">$1.000</td></tr><tr class=\"sum\"><td></td><td>Ценность</td><td class=\"v\">$5.200</td></tr></tbody></table><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"1500\" data-to=\"6700\" data-prefix=\"$\" data-dot=\"1\">$6.700</b></div><p class=\"note center\">Каждую услугу делает свой агент. Собрать такого у разработчика — от $400 за штуку</p></div></div>",
+    "dirk": "Элемент 2",
+    "note": "ядро продукта и валюта наборов: в первом наборе — один агент (AI-сайты), во втором — шесть, в третьем — все семь. Цена каждого — «собрать такого у разработчика». «каждую из семи услуг делает свой агент. Собрать одного такого у разработчика — от $400. Дальше вы увидите, что наборы отличаются в том числе тем, сколько из них вы получаете»."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item shots-v\"><div class=\"item-head\"><div class=\"item-ico\">🧩</div><div class=\"item-head-t\"><div class=\"eyebrow\">Элемент 3 из 17</div><h2 class=\"dh sm\">46 готовых задач под ваши услуги</h2></div></div><p class=\"lead\">Тексты, картинки, видео, письма, разборы, отчёты — на любой шаг есть готовый исполнитель</p><div class=\"shot-grid n1 wide\"><div class=\"win live\"><div class=\"win-bar\"><i></i><i></i><i></i><span class=\"win-hint\">живой сайт · клик по полоске — вернуть клавиши</span></div><div class=\"livewrap\"><div class=\"shot ph-sh-navigator\"></div><iframe data-src=\"https://skills-navigator-five.vercel.app/\" title=\"Навигатор ассистентов\" loading=\"lazy\"></iframe></div></div></div><div class=\"item-foot\"><div class=\"worth\"><span>Ценность</span><b>$4.800</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"6700\" data-to=\"11500\" data-prefix=\"$\" data-dot=\"1\">$11.500</b></div></div></div></div>",
+    "dirk": "Элемент 3",
+    "note": "живой сайт навигатора внутри слайда: можно кликать по фильтрам и открывать карточки прямо в эфире. Подложка — скрин, если интернета нет, останется он. Чтобы вернуть управление клавишами после кликов в сайте — клик по верхней полоске окна. ~30 сек: «96 готовых задач — вот они, живые». Число: 46 готовых задач идут в программу (из 96, которые обучил, — история в Секрете 1). В Bronze 16, в Silver 33."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item shots-v\"><div class=\"item-head\"><div class=\"item-ico\">🗂️</div><div class=\"item-head-t\"><div class=\"eyebrow\">Элемент 4 из 17 · бонус</div><h2 class=\"dh sm\">База шаблонов сайтов под разные ниши</h2></div></div><p class=\"lead\">Берёте шаблон под нишу клиента — агент подставляет его продукт и цены</p><div class=\"shot-grid n2 wide\"><div class=\"win \"><div class=\"win-bar\"><i></i><i></i><i></i></div><div class=\"shot scroll reveal\" style=\"background-image:url(assets/photo/tpl/stomatologia-full.webp)\"></div></div><div class=\"win \"><div class=\"win-bar\"><i></i><i></i><i></i></div><div class=\"shot scroll reveal\" style=\"background-image:url(assets/photo/tpl/detailing-full.webp);animation-delay:.35s,2.2s\"></div></div></div><div class=\"item-foot\"><div class=\"worth\"><span>Ценность</span><b>$600</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"11500\" data-to=\"12100\" data-prefix=\"$\" data-dot=\"1\">$12.100</b></div></div></div></div>",
+    "dirk": "Элемент 4",
+    "note": "снимает «я не умею делать сайты»: шаблон под нишу уже есть. одной фразой, без пересказа подзаголовка. Ценность произносится ровно, без извинений. Оба шаблона проявляются и листаются целиком сами (стоматология и детейлинг) — дать 10 секунд, не комментировать каждый экран. Стоп, не тараторить: «первый сайт вы не начинаете с пустого экрана — под нишу клиента уже есть каркас, вы подставляете его продукт». Пауза. Это бонус, которым сам горжусь."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">05</div><div class=\"item-b\"><div class=\"item-ico\">📁</div><div class=\"eyebrow\">Элемент 5 из 17 · закрывает «а вдруг не сработает»</div><h2 class=\"dh md\">Готовая база кейсов под все услуги</h2><p class=\"lead\">Есть что показать в первом разговоре, даже если своих работ ещё нет</p><div class=\"worth\"><span>Ценность</span><b>$400</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"12100\" data-to=\"12500\" data-prefix=\"$\" data-dot=\"1\">$12.500</b></div></div></div></div>",
+    "dirk": "Элемент 5",
+    "note": "снимает «у меня нет портфолио»: кейсы под все услуги выдаются. одной фразой, без пересказа подзаголовка. Ценность произносится ровно, без извинений. Назвать возражение вслух: «это против \"а вдруг не сработает\"» (канон 54). Стоп: «первый клиент спросит \"а покажите примеры\" — и у вас они уже есть, ещё до первого заказа». Пауза, посмотреть в камеру."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">06</div><div class=\"item-b\"><div class=\"item-ico\">🎟️</div><div class=\"eyebrow\">Элемент 6 из 17 · закрывает «нет денег на нейросети»</div><h2 class=\"dh md\">Нейросети и сервисы со скидкой до −75%</h2><p class=\"lead\">Доступы, на которых экономите каждый месяц, пока пользуетесь</p><div class=\"worth\"><span>Ценность</span><b>$900</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"12500\" data-to=\"13400\" data-prefix=\"$\" data-dot=\"1\">$13.400</b></div></div></div></div>",
+    "dirk": "Элемент 6",
+    "note": "экономия каждый месяц — строка, которая окупает вход сама по себе. одной фразой, без пересказа подзаголовка. Ценность произносится ровно, без извинений. Назвать возражение вслух: «это против \"нет денег на нейросети\"» (канон 56). Стоп: «экономите каждый месяц, пока пользуетесь — сотни долларов в год. Поделюсь сервисом, где нейронки дешевле» (нейтрально, без «мы покупаем»). Пауза. TRIAL CLOSE голосом, на экран не выносим: «Логично?»"
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">07</div><div class=\"item-b\"><div class=\"item-ico\">🎥</div><div class=\"eyebrow\">Элемент 7 из 17</div><h2 class=\"dh md\">Живые разборы ваших задач</h2><p class=\"lead\">Раз в неделю: приносите свой случай — уходите с решением</p><div class=\"worth\"><span>Ценность</span><b>$900</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"13400\" data-to=\"14300\" data-prefix=\"$\" data-dot=\"1\">$14.300</b></div></div></div></div>",
+    "dirk": "Элемент 7",
+    "note": "снимает «а если у меня не получится» — разбирают именно ваш проект. одной фразой, без пересказа подзаголовка. Ценность произносится ровно, без извинений."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">08</div><div class=\"item-b\"><div class=\"item-ico\">🧾</div><div class=\"eyebrow\">Элемент 8 из 17 · бонус</div><h2 class=\"dh md\">Шаблоны договоров и приём оплаты</h2><p class=\"lead\">Как принять деньги и не остаться без них</p><div class=\"worth\"><span>Ценность</span><b>$350</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"14300\" data-to=\"14650\" data-prefix=\"$\" data-dot=\"1\">$14.650</b></div></div></div></div>",
+    "dirk": "Элемент 8",
+    "note": "закрывает страх «обманут и не заплатят». одной фразой, без пересказа подзаголовка. Ценность произносится ровно, без извинений. Стоп: «чтобы деньги пришли и остались вашими — договор, счёт, приём оплаты готовы. Ни одного юриста». Пауза."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">09</div><div class=\"item-b\"><div class=\"item-ico\">🔄</div><div class=\"eyebrow\">Элемент 9 из 17 · бонус</div><h2 class=\"dh md\">Обновления агентов, пока пользуетесь</h2><p class=\"lead\">Модели меняются каждый месяц — агенты обновляются вместе с ними</p><div class=\"worth\"><span>Ценность</span><b>$500</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"14650\" data-to=\"15150\" data-prefix=\"$\" data-dot=\"1\">$15.150</b></div></div></div></div>",
+    "dirk": "Элемент 9",
+    "note": "снимает «устареет через полгода». одной фразой, без пересказа подзаголовка. Ценность произносится ровно, без извинений. Стоп: «модели меняются каждый месяц — ваши агенты обновляются сами, вам ничего не переделывать». Пауза."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">10</div><div class=\"item-b\"><div class=\"item-ico\">🧑‍🏫</div><div class=\"eyebrow\">Элемент 10 из 17 · закрывает «а я не смогу»</div><h2 class=\"dh md\">Куратор, который проверяет ваши шаги</h2><p class=\"lead\">Ошибку заметят раньше, чем она будет стоить денег</p><div class=\"worth\"><span>Ценность</span><b>$1.100</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"15150\" data-to=\"16250\" data-prefix=\"$\" data-dot=\"1\">$16.250</b></div></div></div></div>",
+    "dirk": "Элемент 10",
+    "note": "снимает «останусь один с записями». одной фразой, без пересказа подзаголовка. Ценность произносится ровно, без извинений. Назвать возражение вслух: «это против \"а я не смогу\"» (канон 55). TRIAL CLOSE голосом, на экран не выносим: «Видите себя внутри?»"
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">11</div><div class=\"item-b\"><div class=\"item-ico\">🏆</div><div class=\"eyebrow\">Элемент 11 из 17</div><h2 class=\"dh md\">Закрытый чат и рейтинг в игровой форме</h2><p class=\"lead\">Вопрос в 23:00 — ответ в 23:05. И таблица, где видно, кто на каком шаге</p><div class=\"worth\"><span>Ценность</span><b>$300</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"16250\" data-to=\"16550\" data-prefix=\"$\" data-dot=\"1\">$16.550</b></div></div></div></div>",
+    "dirk": "Элемент 11",
+    "note": "среда и азарт: рейтинг в игровой форме не даёт бросить. одной фразой, без пересказа подзаголовка. Ценность произносится ровно, без извинений."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "t": "",
+    "dirk": "Элемент 12",
+    "st": [
+      "new",
+      "доска объявлений — правка 8e"
+    ],
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">12</div><div class=\"item-b\"><div class=\"item-ico\">📋</div><div class=\"eyebrow\">Элемент 12 из 17 · бонус</div><h2 class=\"dh md\">Доска объявлений: работа и клиенты для учеников</h2><p class=\"lead\">Регулярные предложения от заказчиков и партнёров — только для тех, кто в программе</p><div class=\"worth\"><span>Ценность</span><b>$600</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"16550\" data-to=\"17150\" data-prefix=\"$\" data-dot=\"1\">$17.150</b></div></div></div></div>",
+    "note": "новый элемент по правке 8e: регулярные предложения о работе и клиентах для учеников. В Bronze не входит — с Silver. Одной фразой: «заказчики приходят к нам — мы отдаём их вам». Стоп: «заказчики и партнёры приходят к нам — мы отдаём их вам. Вы не один на рынке». Пауза."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">13</div><div class=\"item-b\"><div class=\"item-ico\">💬</div><div class=\"eyebrow\">Элемент 13 из 17</div><h2 class=\"dh md\">Настройки агента-продавца под ваши услуги</h2><p class=\"lead\">Как поставить его в Telegram, WhatsApp и Instagram, чтобы он продавал именно ваше</p><div class=\"worth\"><span>Ценность</span><b>$1.200</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"17150\" data-to=\"18350\" data-prefix=\"$\" data-dot=\"1\">$18.350</b></div></div></div></div>",
+    "dirk": "Элемент 13",
+    "note": "снимает «а что я скажу клиенту»: продавец настраивается под ваши услуги и живёт в мессенджерах. одной фразой, без пересказа подзаголовка. Ценность произносится ровно, без извинений."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">14</div><div class=\"item-b\"><div class=\"item-ico\">📜</div><div class=\"eyebrow\">Элемент 14 из 17</div><h2 class=\"dh md\">Скрипты продаж и шаблоны коммерческих предложений</h2><p class=\"lead\">От «здравствуйте» до «выставляю счёт», ответы на возражения и КП под каждую услугу</p><div class=\"worth\"><span>Ценность</span><b>$400</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"18350\" data-to=\"18750\" data-prefix=\"$\" data-dot=\"1\">$18.750</b></div></div></div></div>",
+    "dirk": "Элемент 14",
+    "note": "скрипты — на случай, когда продавец передал разговор человеку. одной фразой, без пересказа подзаголовка. Ценность произносится ровно, без извинений. TRIAL CLOSE голосом, на экран не выносим: «Всё ещё по-честному?»"
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item shots-v\"><div class=\"item-head\"><div class=\"item-ico\">📍</div><div class=\"item-head-t\"><div class=\"eyebrow\">Элемент 15 из 17 · бонус</div><h2 class=\"dh sm\">Связки топовых локаций для поиска клиентов</h2></div></div><p class=\"lead\">Города, где отвечают чаще. И города, куда лучше не заходить</p><div class=\"lockboard\"><div class=\"lb open\" style=\"--i:0\"><i>🇹🇷</i><b>Анталья</b><span>лучший баланс</span></div><div class=\"lb\" style=\"--i:1\"><i>🇦🇱</i><b>Тирана</b><span>пиковая конверсия</span><u>🔒</u></div><div class=\"lb\" style=\"--i:2\"><i>🇹🇷</i><b>Стамбул</b><span>вам пишут 50 агентств в день</span><u>🔒</u></div><div class=\"lb\" style=\"--i:3\"><i>🇺🇿</i><b>Ташкент</b><span>легче всего продать</span><u>🔒</u></div><div class=\"lb\" style=\"--i:4\"><i>🇬🇪</i><b>Тбилиси</b><span>рынок мелкий</span><u>🔒</u></div><div class=\"lb\" style=\"--i:5\"><i>🇭🇺</i><b>Будапешт</b><span>уже всё продано</span><u>🔒</u></div><div class=\"lb\" style=\"--i:6\"><i>🇦🇪</i><b>Дубай</b><span>вы там пятисотый в очереди</span><u>🔒</u></div></div><div class=\"item-foot\"><div class=\"worth\"><span>Ценность</span><b>$500</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"18750\" data-to=\"19250\" data-prefix=\"$\" data-dot=\"1\">$19.250</b></div></div></div></div>",
+    "dirk": "Элемент 15",
+    "note": "интрига, а не таблица: показываем только флаги и города, причина у всех под замком — открыта одна строка. Сказать: «Анталья — лучший баланс. Почему остальные шесть именно такие, разберём внутри». Не расшифровывать. Ценность $500 произносится ровно. Пауза."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">16</div><div class=\"item-b\"><div class=\"item-ico\">📖</div><div class=\"eyebrow\">Элемент 16 из 17 · бонус</div><h2 class=\"dh md\">Каталог связок под каждую услугу</h2><p class=\"lead\">Что продавать, кому и как — и настройка агентов под связку, пошагово</p><div class=\"worth\"><span>Ценность</span><b>$600</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"19250\" data-to=\"19850\" data-prefix=\"$\" data-dot=\"1\">$19.850</b></div></div></div></div>",
+    "dirk": "Элемент 16",
+    "note": "связка = что · кому · как (определена в Секрете 3). Каталог связок под каждую из 7 услуг + как настроить агентов под неё. «Не догадки — готовые связки». Стоп: «что продавать, кому и как — под каждую услугу. Связки, которые работают, и новые — по мере появления». Пауза."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"item\"><div class=\"item-ghost\">17</div><div class=\"item-b\"><div class=\"item-ico\">⭐</div><div class=\"eyebrow\">Элемент 17 из 17 · только Gold</div><h2 class=\"dh md\">Групповые страт-сессии со мной</h2><p class=\"lead\">Четыре живые сессии в малой группе<br>Разбираем ваш проект: ниша, цена, первые клиенты, что чинить<br>Между сессиями — ваши вопросы в чате набора</p><div class=\"worth\"><span>Ценность</span><b>$1.500</b></div><div class=\"sofar\"><span>Накоплено</span><b class=\"cnt\" data-from=\"19850\" data-to=\"21350\" data-prefix=\"$\" data-dot=\"1\">$21.350</b></div></div></div></div>",
+    "dirk": "Элемент 17",
+    "note": "эксклюзив Gold: четыре живые страт-сессии в малой группе — разбор проекта до первых денег, между сессиями вопросы в чате. Ценность $1.500 — решение Влада 10.09. Стоп: «зачем вам это» — «вы не гадаете, тот ли шаг делаете: раз в две недели мы смотрим на ваш проект вместе». Только в Gold."
+  },
+  {
+    "a": 0,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"flag\"><h2 class=\"dh\">Почему нельзя войти когда угодно</h2><p class=\"lead\">Поток ограничен людьми — беру столько, скольким успеваю помочь дойти до первого клиента. Стартуем одной датой</p><p class=\"note\">Здесь нет таймера и «осталось три места»</p></div></div>",
+    "dirk": "Почему не когда угодно",
+    "note": "обосновать дефицит пропускной способностью и заранее снять подозрение в манипуляции. дословно: «для вас спешка — признак развода. Я это знаю». ---"
+  },
+  {
+    "a": 0,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Привлечение и продажи · 7 агентов · 13 модулей · 10 недель</div><h2 class=\"dh sm\">Набор «Gold»: всё целиком</h2><table class=\"ledger dense\"><tbody><tr class=\"\"><td class=\"idx\">01</td><td>Полная система: 13 модулей</td><td class=\"v\">$1.500</td></tr><tr class=\"\"><td class=\"idx\">02</td><td>Агенты под 7 трендовых услуг</td><td class=\"v\">$5.200</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🌐 AI-сайты</td><td class=\"v\">$600</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🎨 AI-дизайн</td><td class=\"v\">$400</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🎬 Продающие AI-видео</td><td class=\"v\">$500</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>✍️ Контент-завод с AI-аватаром</td><td class=\"v\">$700</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🎯 AI-таргет</td><td class=\"v\">$1.000</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🧭 AI-SEO</td><td class=\"v\">$1.000</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>💬 AI-продавец</td><td class=\"v\">$1.000</td></tr><tr class=\"\"><td class=\"idx\">03</td><td>46 готовых задач под ваши услуги</td><td class=\"v\">$4.800</td></tr><tr class=\"\"><td class=\"idx\">04</td><td>База шаблонов сайтов по нишам</td><td class=\"v\">$600</td></tr><tr class=\"\"><td class=\"idx\">05</td><td>База кейсов под все услуги</td><td class=\"v\">$400</td></tr><tr class=\"\"><td class=\"idx\">06</td><td>Нейросети со скидкой до −75%</td><td class=\"v\">$900</td></tr><tr class=\"\"><td class=\"idx\">07</td><td>Живые разборы · 10 сессий</td><td class=\"v\">$900</td></tr><tr class=\"\"><td class=\"idx\">08</td><td>Договоры и приём оплаты</td><td class=\"v\">$350</td></tr><tr class=\"\"><td class=\"idx\">09</td><td>Обновления агентов</td><td class=\"v\">$500</td></tr><tr class=\"\"><td class=\"idx\">10</td><td>Куратор проверяет каждый шаг</td><td class=\"v\">$1.100</td></tr><tr class=\"\"><td class=\"idx\">11</td><td>Закрытый чат и рейтинг</td><td class=\"v\">$300</td></tr><tr class=\"\"><td class=\"idx\">12</td><td>Доска объявлений: работа и клиенты</td><td class=\"v\">$600</td></tr><tr class=\"\"><td class=\"idx\">13</td><td>Настройки агента-продавца</td><td class=\"v\">$1.200</td></tr><tr class=\"\"><td class=\"idx\">14</td><td>Скрипты продаж и шаблоны КП</td><td class=\"v\">$400</td></tr><tr class=\"\"><td class=\"idx\">15</td><td>Связки топовых локаций для поиска клиентов</td><td class=\"v\">$500</td></tr><tr class=\"\"><td class=\"idx\">16</td><td>Каталог связок + новые связки по мере появления</td><td class=\"v\">$600</td></tr><tr class=\"\"><td class=\"idx\">17</td><td>Групповые страт-сессии · 4 сессии</td><td class=\"v\">$1.500</td></tr><tr class=\"sum\"><td></td><td>Ценность</td><td class=\"v\">$21.350</td></tr></tbody></table></div></div>",
+    "dirk": "Набор Gold",
+    "note": "третий леджер: догорают последние пять. «Здесь не остаётся — здесь всё». Пауза на итоге $21.350.",
+    "st": [
+      "new",
+      "третий леджер — по слову Влада"
+    ]
+  },
+  {
+    "a": 0,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Контент-завод · 4 агента · 8 модулей · 6 недель</div><h2 class=\"dh sm\">Набор «Silver»: что добавляется</h2><table class=\"ledger dense\"><tbody><tr class=\"\"><td class=\"idx\">01</td><td>Полная система: 8 модулей</td><td class=\"v\">$1.500</td></tr><tr class=\"\"><td class=\"idx\">02</td><td>Агенты под 4 трендовые услуги</td><td class=\"v\">$2.200</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🌐 AI-сайты</td><td class=\"v\">$600</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🎨 AI-дизайн</td><td class=\"v\">$400</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🎬 Продающие AI-видео</td><td class=\"v\">$500</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>✍️ Контент-завод с AI-аватаром</td><td class=\"v\">$700</td></tr><tr class=\"sub soon\"><td class=\"idx\">·</td><td>🎯 AI-таргет</td><td class=\"v\">$1.000</td></tr><tr class=\"sub soon\"><td class=\"idx\">·</td><td>🧭 AI-SEO</td><td class=\"v\">$1.000</td></tr><tr class=\"sub soon\"><td class=\"idx\">·</td><td>💬 AI-продавец</td><td class=\"v\">$1.000</td></tr><tr class=\"\"><td class=\"idx\">03</td><td>33 готовые задачи под ваши услуги</td><td class=\"v\">$3.400</td></tr><tr class=\"\"><td class=\"idx\">04</td><td>База шаблонов сайтов по нишам</td><td class=\"v\">$600</td></tr><tr class=\"\"><td class=\"idx\">05</td><td>База кейсов под все услуги</td><td class=\"v\">$400</td></tr><tr class=\"\"><td class=\"idx\">06</td><td>Нейросети со скидкой до −75%</td><td class=\"v\">$900</td></tr><tr class=\"\"><td class=\"idx\">07</td><td>Живые разборы · 6 сессий</td><td class=\"v\">$540</td></tr><tr class=\"\"><td class=\"idx\">08</td><td>Договоры и приём оплаты</td><td class=\"v\">$350</td></tr><tr class=\"\"><td class=\"idx\">09</td><td>Обновления агентов</td><td class=\"v\">$500</td></tr><tr class=\"\"><td class=\"idx\">10</td><td>Куратор проверяет каждый шаг</td><td class=\"v\">$1.100</td></tr><tr class=\"\"><td class=\"idx\">11</td><td>Закрытый чат и рейтинг</td><td class=\"v\">$300</td></tr><tr class=\"\"><td class=\"idx\">12</td><td>Доска объявлений: работа и клиенты</td><td class=\"v\">$600</td></tr><tr class=\"soon\"><td class=\"idx\">13</td><td>Настройки агента-продавца</td><td class=\"v\">$1.200</td></tr><tr class=\"soon\"><td class=\"idx\">14</td><td>Скрипты продаж и шаблоны КП</td><td class=\"v\">$400</td></tr><tr class=\"soon\"><td class=\"idx\">15</td><td>Связки топовых локаций для поиска клиентов</td><td class=\"v\">$500</td></tr><tr class=\"soon\"><td class=\"idx\">16</td><td>Каталог связок + новые связки по мере появления</td><td class=\"v\">$600</td></tr><tr class=\"soon\"><td class=\"idx\">17</td><td>Групповые страт-сессии · 4 сессии</td><td class=\"v\">$1.500</td></tr><tr class=\"sum\"><td></td><td>Ценность</td><td class=\"v\">$12.390</td></tr></tbody></table></div></div>",
+    "dirk": "Набор Silver",
+    "note": "второй леджер: те же строки на тех же местах — загорается ещё пять. «Добавляем договоры, обновления, куратора, чат и доску». Итог $12.390."
+  },
+  {
+    "a": 0,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Фундамент и сайты · 1 агент · 5 модулей · 4 недели</div><h2 class=\"dh sm\">Набор «Bronze»: с чего начинаете</h2><table class=\"ledger dense\"><tbody><tr class=\"\"><td class=\"idx\">01</td><td>Полная система: 5 модулей</td><td class=\"v\">$1.500</td></tr><tr class=\"\"><td class=\"idx\">02</td><td>Агент под услугу «AI-сайты»</td><td class=\"v\">$600</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🌐 AI-сайты</td><td class=\"v\">$600</td></tr><tr class=\"sub soon\"><td class=\"idx\">·</td><td>🎨 AI-дизайн</td><td class=\"v\">$400</td></tr><tr class=\"sub soon\"><td class=\"idx\">·</td><td>🎬 Продающие AI-видео</td><td class=\"v\">$500</td></tr><tr class=\"sub soon\"><td class=\"idx\">·</td><td>✍️ Контент-завод с AI-аватаром</td><td class=\"v\">$700</td></tr><tr class=\"sub soon\"><td class=\"idx\">·</td><td>🎯 AI-таргет</td><td class=\"v\">$1.000</td></tr><tr class=\"sub soon\"><td class=\"idx\">·</td><td>🧭 AI-SEO</td><td class=\"v\">$1.000</td></tr><tr class=\"sub soon\"><td class=\"idx\">·</td><td>💬 AI-продавец</td><td class=\"v\">$1.000</td></tr><tr class=\"\"><td class=\"idx\">03</td><td>16 готовых задач под ваши услуги</td><td class=\"v\">$1.700</td></tr><tr class=\"\"><td class=\"idx\">04</td><td>База шаблонов сайтов по нишам</td><td class=\"v\">$600</td></tr><tr class=\"\"><td class=\"idx\">05</td><td>База кейсов под все услуги</td><td class=\"v\">$400</td></tr><tr class=\"\"><td class=\"idx\">06</td><td>Нейросети со скидкой до −75%</td><td class=\"v\">$900</td></tr><tr class=\"\"><td class=\"idx\">07</td><td>Живые разборы · 4 сессии</td><td class=\"v\">$360</td></tr><tr class=\"soon\"><td class=\"idx\">08</td><td>Договоры и приём оплаты</td><td class=\"v\">$350</td></tr><tr class=\"soon\"><td class=\"idx\">09</td><td>Обновления агентов</td><td class=\"v\">$500</td></tr><tr class=\"soon\"><td class=\"idx\">10</td><td>Куратор проверяет каждый шаг</td><td class=\"v\">$1.100</td></tr><tr class=\"soon\"><td class=\"idx\">11</td><td>Закрытый чат и рейтинг</td><td class=\"v\">$300</td></tr><tr class=\"soon\"><td class=\"idx\">12</td><td>Доска объявлений: работа и клиенты</td><td class=\"v\">$600</td></tr><tr class=\"soon\"><td class=\"idx\">13</td><td>Настройки агента-продавца</td><td class=\"v\">$1.200</td></tr><tr class=\"soon\"><td class=\"idx\">14</td><td>Скрипты продаж и шаблоны КП</td><td class=\"v\">$400</td></tr><tr class=\"soon\"><td class=\"idx\">15</td><td>Связки топовых локаций для поиска клиентов</td><td class=\"v\">$500</td></tr><tr class=\"soon\"><td class=\"idx\">16</td><td>Каталог связок + новые связки по мере появления</td><td class=\"v\">$600</td></tr><tr class=\"soon\"><td class=\"idx\">17</td><td>Групповые страт-сессии · 4 сессии</td><td class=\"v\">$1.500</td></tr><tr class=\"sum\"><td></td><td>Ценность</td><td class=\"v\">$6.060</td></tr></tbody></table></div></div>",
+    "dirk": "Набор Bronze",
+    "note": "первый леджер — база. Семь строк горят, остальные погашены: это не «вычеркнули», а «пока нет». Идти сверху вниз. Итог $6.060."
+  },
+  {
+    "a": 0,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Три набора</h2><div class=\"plans trio\"><div class=\"plan\"><div class=\"plan-n\">Bronze</div><div class=\"now\">$6.060</div><div class=\"pspec\"><div class=\"prow\"><span>услуг</span><b>1</b></div><div class=\"prow\"><span>агентов</span><b>1</b></div><div class=\"prow\"><span>модулей</span><b>5</b></div><div class=\"prow\"><span>недель</span><b>4</b></div></div></div><div class=\"plan\"><div class=\"plan-n\">Silver</div><div class=\"now\">$12.390</div><div class=\"pspec\"><div class=\"prow\"><span>услуг</span><b>4</b></div><div class=\"prow\"><span>агентов</span><b>4</b></div><div class=\"prow\"><span>модулей</span><b>8</b></div><div class=\"prow\"><span>недель</span><b>6</b></div></div></div><div class=\"plan\"><div class=\"plan-n\">Gold</div><div class=\"now\">$21.350</div><div class=\"pspec\"><div class=\"prow\"><span>услуг</span><b>7</b></div><div class=\"prow\"><span>агентов</span><b>7 · с продавцом</b></div><div class=\"prow\"><span>модулей</span><b>13</b></div><div class=\"prow\"><span>недель</span><b>10</b></div></div></div></div><p class=\"note center\">Это ценность каждого набора. Сколько стоит вход — через минуту</p></div></div>",
+    "dirk": "Три набора",
+    "note": "зритель узнаёт о существовании наборов ДО цены. Суммы потенциала не показываем — рядом с ценностью их читают как прайс, проговариваем голосом. Trial close: «сам, с куратором или агентство?»  Сетка «услуги / агенты / модули / недели» — здесь же, отдельного экрана нет."
+  },
+  {
+    "a": 0,
+    "lv": 9,
+    "t": "",
+    "dirk": "If-all 3",
+    "st": [
+      "new",
+      "по канону 61 — проверить формулировку"
+    ],
+    "b": "<div class='tl2'><div class=\"flag\"><h2 class=\"dh\">А если бы это просто сняло вопрос «а я потяну?»</h2><p class=\"lead\">Ремесло делает агент, клиентов находит агент. Вам остаётся выбрать, включить и забрать</p><p class=\"note\">Сколько бы это стоило именно для вас? Подумайте цифру</p></div></div>",
+    "note": "if-all №3 — третий угол: страх «не потяну» (Секрет 2). Спросить «сколько бы это стоило именно для вас?» и ЗАМОЛЧАТЬ на 3 секунды. Не отвечать за зал: цифру он напишет на следующем слайде."
+  },
+  {
+    "a": 0,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Как думаете, сколько стоит вход?</h2><div class=\"anchor-w\"><div class=\"anchor-line\"><span class=\"a-l\">$0</span><span class=\"a-q\">?</span><span class=\"a-r\">$21.350<small>ценность на столе</small></span></div></div><p class=\"note center\">Напишите цифру в чат</p></div></div>",
+    "dirk": "Анкоринг",
+    "note": "социальный анкоринг — зал сам ставит якорь сверху. дать 10–15 секунд, читать цифры вслух. «Вижу ваши ответы». ---"
+  },
+  {
+    "a": 0,
+    "lv": 10,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">У меня было два пути</h2><div class=\"duo\"><div class=\"pane ghost\"><div class=\"pane-h\">Первый</div><ul><li>Срезать всё живое</li><li>Продавать запись подешевле</li></ul></div><div class=\"pane\"><div class=\"pane-h\">Второй</div><ul><li>Отдать полную систему</li><li>Агентов, связки, разборы</li><li>И найти честный формат входа</li></ul></div></div></div></div>",
+    "dirk": "Два пути автора",
+    "note": "логика цены до её появления. не извиняться за цену. Ровно."
+  },
+  {
+    "a": 0,
+    "lv": 10,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"flag\"><div class=\"eyebrow\">Вы спросите</div><h2 class=\"dh\">«Если система работает — почему вы не заработаете всё сами?»</h2><p class=\"lead\">Пользуюсь. Я и всё сообщество каждый день собираем новые связки и улучшаем старые</p></div></div>",
+    "dirk": "Почему не сам",
+    "note": "самая частая скрытая объекция к автору. Проговорить её самому — до того, как её напишут в чат. «Вы спросите: если у меня есть система по зарабатыванию денег, почему я не пользуюсь ей сам? Пользуюсь. Я и всё моё сообщество каждый день разрабатываем новые связки и улучшаем существующие». Пауза — и на следующий слайд.  Второй абзац: «И честно — физически я все деньги не заработаю»."
+  },
+  {
+    "a": 0,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><div class=\"eyebrow\">Набор «Bronze» · $490</div><h2 class=\"dh md\">Bronze — если делаете сами</h2><p class=\"lead\">Разобраться руками, собрать первый сайт и найти первого клиента среди знакомых</p><div class=\"blkr\"><span class=\"blk nw\"><i>🧭</i>Фундамент</span><span class=\"blk nw\"><i>🛒</i>Маркетинг и сайты</span></div><div class=\"achips\"><span class=\"ach new\" style=\"--d:0.50s\"><i>🌐</i>AI-сайты</span></div><div class=\"disc\">результаты индивидуальны</div></div></div>",
+    "dirk": "Bronze: описание",
+    "note": "идёт сразу за своим набором: для кого он и что человек уносит. помочь выбрать за три секунды: блоки — что внутри, чипы — какие агенты, внизу потолок дохода. Потолок дохода проговорить голосом, на слайде его нет."
+  },
+  {
+    "a": 0,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><div class=\"eyebrow\">Набор «Silver» · $749</div><h2 class=\"dh md\">Silver — если хотите, чтобы контент работал за вас</h2><p class=\"lead\">Четыре услуги в прайсе и контент-завод с вашим двойником — услуга с оплатой каждый месяц</p><div class=\"blkr\"><span class=\"blk\"><i>🧭</i>Фундамент</span><span class=\"blk\"><i>🛒</i>Маркетинг и сайты</span><span class=\"blk nw\"><i>🎬</i>Контент-завод</span></div><div class=\"achips\"><span class=\"ach\" style=\"--d:0.50s\"><i>🌐</i>AI-сайты</span><span class=\"ach new\" style=\"--d:0.57s\"><i>🎨</i>AI-дизайн</span><span class=\"ach new\" style=\"--d:0.64s\"><i>🎬</i>AI-видео</span><span class=\"ach new\" style=\"--d:0.71s\"><i>✍️</i>Контент-завод</span></div><div class=\"disc\">результаты индивидуальны</div></div></div>",
+    "dirk": "Silver: описание",
+    "note": "идёт сразу за своим набором: для кого он и что человек уносит. помочь выбрать за три секунды: блоки — что внутри, чипы — какие агенты, внизу потолок дохода. Потолок дохода проговорить голосом, на слайде его нет."
+  },
+  {
+    "a": 0,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><div class=\"eyebrow\">Набор «Gold» · $1.500</div><h2 class=\"dh md\">Gold — если продавать должен агент</h2><p class=\"lead\">Реклама приводит клиентов, агент закрывает сделку, а ваш проект мы разбираем на страт-сессиях</p><div class=\"blkr\"><span class=\"blk\"><i>🧭</i>Фундамент</span><span class=\"blk\"><i>🛒</i>Маркетинг и сайты</span><span class=\"blk\"><i>🎬</i>Контент-завод</span><span class=\"blk nw\"><i>🎯</i>Привлечение клиентов</span><span class=\"blk nw\"><i>💬</i>Продажи и связки</span></div><div class=\"achips\"><span class=\"ach\" style=\"--d:0.50s\"><i>🌐</i>AI-сайты</span><span class=\"ach\" style=\"--d:0.57s\"><i>🎨</i>AI-дизайн</span><span class=\"ach\" style=\"--d:0.64s\"><i>🎬</i>AI-видео</span><span class=\"ach\" style=\"--d:0.71s\"><i>✍️</i>Контент-завод</span><span class=\"ach new\" style=\"--d:0.78s\"><i>🎯</i>AI-таргет</span><span class=\"ach new\" style=\"--d:0.85s\"><i>🧭</i>AI-SEO</span><span class=\"ach new\" style=\"--d:0.92s\"><i>💬</i>AI-продавец</span><span class=\"ach new star\" style=\"--d:1.05s\"><i>⭐</i>страт-сессии</span></div><div class=\"disc\">результаты индивидуальны</div></div></div>",
+    "dirk": "Gold: описание",
+    "note": "идёт сразу за своим набором: для кого он и что человек уносит. помочь выбрать за три секунды: блоки — что внутри, чипы — какие агенты, внизу потолок дохода. Потолок дохода проговорить голосом, на слайде его нет."
+  },
+  {
+    "a": 0,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><h2 class=\"dh sm\">Что входит в Gold целиком</h2><table class=\"ledger dense\"><tbody><tr class=\"grp\"><td></td><td colspan=\"2\">Система и агенты</td></tr><tr class=\"\"><td class=\"idx\">01</td><td>Полная система: 13 модулей · 5 блоков</td><td class=\"v\">$1.500</td></tr><tr class=\"\"><td class=\"idx\">02</td><td>Агенты под 7 трендовых услуг</td><td class=\"v\">$5.200</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🌐 AI-сайты</td><td class=\"v\">$600</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🎨 AI-дизайн</td><td class=\"v\">$400</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🎬 Продающие AI-видео</td><td class=\"v\">$500</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>✍️ Контент-завод с AI-аватаром</td><td class=\"v\">$700</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🎯 AI-таргет</td><td class=\"v\">$1.000</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>🧭 AI-SEO</td><td class=\"v\">$1.000</td></tr><tr class=\"sub\"><td class=\"idx\">·</td><td>💬 AI-продавец</td><td class=\"v\">$1.000</td></tr><tr class=\"\"><td class=\"idx\">03</td><td>46 готовых задач под ваши услуги</td><td class=\"v\">$4.800</td></tr><tr class=\"grp\"><td></td><td colspan=\"2\">Готовые базы</td></tr><tr class=\"\"><td class=\"idx\">04</td><td>База шаблонов сайтов по нишам</td><td class=\"v\">$600</td></tr><tr class=\"\"><td class=\"idx\">05</td><td>База кейсов под все услуги</td><td class=\"v\">$400</td></tr><tr class=\"grp\"><td></td><td colspan=\"2\">Чтобы продавать</td></tr><tr class=\"\"><td class=\"idx\">06</td><td>Настройки агента-продавца</td><td class=\"v\">$1.200</td></tr><tr class=\"\"><td class=\"idx\">07</td><td>Скрипты продаж и шаблоны КП</td><td class=\"v\">$400</td></tr><tr class=\"\"><td class=\"idx\">08</td><td>Договоры и приём оплаты</td><td class=\"v\">$350</td></tr><tr class=\"grp\"><td></td><td colspan=\"2\">Чтобы находить клиентов</td></tr><tr class=\"\"><td class=\"idx\">09</td><td>Связки топовых локаций для поиска клиентов</td><td class=\"v\">$500</td></tr><tr class=\"\"><td class=\"idx\">10</td><td>Каталог связок + новые связки по мере появления</td><td class=\"v\">$600</td></tr><tr class=\"grp\"><td></td><td colspan=\"2\">Инструменты</td></tr><tr class=\"\"><td class=\"idx\">11</td><td>Нейросети со скидкой до −75%</td><td class=\"v\">$900</td></tr><tr class=\"\"><td class=\"idx\">12</td><td>Обновления агентов</td><td class=\"v\">$500</td></tr><tr class=\"grp\"><td></td><td colspan=\"2\">Люди рядом</td></tr><tr class=\"\"><td class=\"idx\">13</td><td>Куратор проверяет каждый шаг</td><td class=\"v\">$1.100</td></tr><tr class=\"\"><td class=\"idx\">14</td><td>Закрытый чат и рейтинг</td><td class=\"v\">$300</td></tr><tr class=\"\"><td class=\"idx\">15</td><td>Доска объявлений: работа и клиенты</td><td class=\"v\">$600</td></tr><tr class=\"\"><td class=\"idx\">16</td><td>Живые Q&amp;A · 10 сессий</td><td class=\"v\">$900</td></tr><tr class=\"\"><td class=\"idx\">17</td><td>Групповые страт-сессии · 4 сессии</td><td class=\"v\">$1.500</td></tr><tr class=\"sum\"><td></td><td>Ценность целиком</td><td class=\"v\"><b class=\"cnt\" data-from=\"0\" data-to=\"21350\" data-prefix=\"$\" data-dot=\"1\" data-dur=\"2400\">$21.350</b></td></tr></tbody></table></div></div>",
+    "dirk": "Стек целиком",
+    "note": "собрать всё на один экран: сумма набегает от нуля до $21.350 за 2,5 секунды — дать ей повиснуть. Слева шесть групп: система и агенты, базы, продажи, поиск клиентов, инструменты, люди. Цену не называть. В конце — 5 секунд тишины."
+  },
+  {
+    "a": 0,
+    "lv": 8,
+    "mvp": 1,
+    "k": "Сколько это стоит обычно",
+    "t": "Реальная цена",
+    "b": "<div class='chain'><div class='ch'><i>Bronze</i><u style='text-decoration:line-through;opacity:.45;font-size:clamp(13px,1.5cqw,20px)'>$6.060</u><b style='font-size:clamp(20px,3cqw,44px)'>$990</b><span>один агент · 5 модулей</span></div><div class='ch'><i>Silver</i><u style='text-decoration:line-through;opacity:.45;font-size:clamp(13px,1.5cqw,20px)'>$12.390</u><b style='font-size:clamp(20px,3cqw,44px)'>$1.490</b><span>четыре агента · 8 модулей</span></div><div class='ch pay'><i>Gold</i><u style='text-decoration:line-through;opacity:.45;font-size:clamp(13px,1.5cqw,20px)'>$21.350</u><b style='font-size:clamp(20px,3cqw,44px)'>$2.990</b><span>семь агентов · 13 модулей</span></div></div><p class='mut'>Столько набор стоит всегда — и столько он стоит на сайте прямо сейчас</p>",
+    "dirk": "Реальная цена",
+    "note": "Первый шаг цены. Ценность зачёркнута, поверх — обычная цена: $990, $1.490, $2.990. Сказать спокойно, как прайс, без объяснений и без «в стране кризис». Следующий слайд — цена для тех, кто сегодня в эфире."
+  },
+  {
+    "a": 0,
+    "lv": 10,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Цена для тех, кто сегодня в эфире</h2><div class=\"plans\"><div class=\"plan\"><div class=\"plan-n\">Bronze</div><div class=\"was\">$6.060</div><div class=\"was\">$990</div><div class=\"now\">$490</div><div class=\"plan-d\">1 агент — AI-сайты · 5 модулей</div></div><div class=\"plan\"><div class=\"plan-n\">Silver</div><div class=\"was\">$12.390</div><div class=\"was\">$1.490</div><div class=\"now\">$749</div><div class=\"plan-d\">4 агента: сайты, дизайн, видео, контент-завод · 8 модулей</div></div><div class=\"plan\"><div class=\"plan-n\">Gold</div><div class=\"was\">$21.350</div><div class=\"was\">$2.990</div><div class=\"now\">$1.500</div><div class=\"plan-d\">7 агентов + страт-сессии со мной · 13 модулей</div></div></div></div></div>",
+    "dirk": "Витрина цен",
+    "note": "Второй шаг цены: зачёркнуты и ценность, и реальная цена — поверх выходит цена эфира. Проговорить: «обычная цена — $990, сегодня для тех, кто в эфире, — $490»."
+  },
+  {
+    "a": 0,
+    "lv": 10,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"strike\"><div class=\"eyebrow big-eyebrow\">Главная арифметика вечера</div><div class=\"figure\">$490</div><p class=\"lead center\">Это два сайта по $250. Первые две сделки — и вход окуплен целиком</p></div></div>",
+    "dirk": "Главная арифметика",
+    "note": "самый важный логический слайд продажи. Здесь заканчивается вопрос «дорого». «вернитесь к слайду про первый сайт: $250. Две сделки — и вход отбит. А правило тридцати даёт три-четыре ответа в день». 10 секунд тишины.",
+    "disc": 1
+  },
+  {
+    "a": 0,
+    "lv": 10,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"strike\"><div class=\"eyebrow big-eyebrow\">Сегодня не надо платить ни $1.500, ни $749 и даже не $490</div><div class=\"figure\">$10</div><p class=\"lead center\">И не надо выбирать набор</p><p class=\"note center\">Столько стоит ваше решение сегодня</p></div></div>",
+    "dirk": "Бронь 10",
+    "note": "drop до решения. Меняет предмет покупки: сегодня покупается решение, не набор. Пройтись голосом по всем трём: «ни полторы тысячи, ни семьсот сорок девять, ни даже четыреста девяносто». Пауза перед десяткой. «единственное решение вечера: идёте вы или нет». Пауза."
+  },
+  {
+    "a": 0,
+    "lv": 10,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Что фиксирует ваша десятка</h2><div class=\"tiles\" style=\"--cols:2\"><div class=\"tile\"><b>Цену этого эфира</b><span>$490 / $749 / $1.500</span></div><div class=\"tile\"><b>Место в потоке</b><span>поток ограничен людьми</span></div><div class=\"tile\"><b>Все бонусы эфира</b><span>остаются в любом случае</span></div><div class=\"tile\"><b>Звонок с командой</b><span>в течение суток</span></div></div><p class=\"note center\">Полностью засчитывается в оплату · возвращается без единого вопроса</p></div></div>",
+    "dirk": "Что фиксирует десятка",
+    "note": "снять риск до нуля. «возвращается без единого вопроса» — произнести ГРОМКО. Это главный аргумент, а не мелкий шрифт."
+  },
+  {
+    "a": 0,
+    "lv": 10,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><div class=\"eyebrow\">Экран</div><h2 class=\"dh md\">Покажу путь оплаты</h2><div class=\"rail\"><span class=\"node\">Кнопка</span><span class=\"arrow\">→</span><span class=\"node\">Форма</span><span class=\"arrow\">→</span><span class=\"node\">Место зафиксировано</span></div><p class=\"note center\">В реальном времени, при вас</p></div></div>",
+    "dirk": "Путь оплаты",
+    "note": "зеркальные нейроны. Техническая неопределённость — тихий убийца конверсии на последнем метре. пройти клики вживую на экране. Сказать, что придёт после оплаты. `[НУЖНО: платёжка под европейские карты]`"
+  },
+  {
+    "a": 0,
+    "lv": 10,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"flag\"><h2 class=\"dh\">Сегодня вы выбираете не набор. Вы выбираете решение</h2><p class=\"lead\">Бронь $10 → звонок → набор под вашу ситуацию</p></div></div>",
+    "dirk": "Не выбирайте набор",
+    "note": "одно решение за раз конвертит выше. «не ломайте голову между Bronze и Silver — это нормально решить завтра, на спокойную голову, с человеком, который разберёт вашу ситуацию»."
+  },
+  {
+    "a": 0,
+    "lv": 10,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"photo\"><div class=\"img ph-p4\"></div><div class=\"tint\"></div><div class=\"scrim\"></div><div class=\"frameline\"></div><div class=\"copy\"><h2 class=\"dh md\">Если эти два часа что-то в вас сдвинули — нажмите сейчас</h2><p class=\"lead\">Поток ограничен людьми · бронь возвращается без вопросов</p><div class=\"bigbtn\"><span class=\"lbl\">Забронировать место — $10</span><span class=\"ic\">↗</span></div><div class=\"deadline\">условия эфира действуют до конца эфира + 30 минут</div></div></div></div>",
+    "dirk": "CTA 1",
+    "note": "первый полный призыв. С этого слайда кнопка не исчезает до конца эфира. ~60 сек, прямой взгляд в камеру. «Если сегодняшние два часа что-то в вас сдвинули — нажмите сейчас, пока это чувство живо». Дальше читать брони по именам. `[НУЖНО: CTA_URL]` ---",
+    "kind": "cta"
+  },
+  {
+    "a": 1,
+    "lv": 10,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Вот что будет после брони</h2><ol class=\"flow\"><li><i>01</i><div><b>Бронь $10</b><span>место и цена зафиксированы</span></div></li><li><i>02</i><div><b>Звонок в течение суток</b><span>менеджер отвечает на всё, без давления</span></div></li><li><i>03</i><div><b>Выбираете набор без спешки</b><span>Bronze, Silver или Gold</span></div></li><li><i>04</i><div><b>Доступ и первый разбор</b><span>на этой же неделе</span></div></li></ol></div></div>",
+    "dirk": "Б1 · После брони",
+    "note": "конкретика по срокам снимает страх неизвестности. читать по пунктам, не торопясь. «Ни одного дня вы не один».  [дожим 1 · сразу за кнопкой]  [дожим · блок 1: Гарантия первого клиента]  Ставится сразу за кнопкой: до неё дублировал «что фиксирует десятка», после — работает как ответ тем, кто уже нажал.",
+    "st": [
+      "edit",
+      "перенесён в дожим по ТЗ"
+    ]
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"cert\"><div class=\"cert-k\">🛡 Гарантия первого клиента</div><p class=\"cert-q\">Сделали все шаги программы — и нет результата?</p><div class=\"cert-big\">Возвращаем <b>100% оплаты</b></div><div class=\"cert-s\">Это в договоре, не в обещаниях</div></div><p class=\"disc\" style=\"text-align:center;max-width:none\">Бронь $10 возвращается всегда, без единого вопроса · не возвращаем тому, кто купил и не открыл</p></div></div><p class='tcq'>Справедливо?</p>",
+    "dirk": "Б1 · Гарантия",
+    "note": "перенести риск на себя. Одна карточка, как сертификат — референс сл. 139. гордо, не мелким шрифтом. «Вы рискуете десяткой, которая возвращается. Мы — сотнями часов команды и репутацией». TRIAL CLOSE (гарантия): «Справедливо?» — спросить с восходящей интонацией и дождаться чата.  [дожим · блок 1: Гарантия первого клиента]  ⚠️ СРОК НЕ ФИНАЛИЗИРОВАН: на слайде было 30 дней, Вова говорит 90 в договоре, в реальной оферте — 6 месяцев с даты завершения обучения. До эфира свести к одному числу."
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"case\"><div class=\"case-l\"><div class=\"eyebrow\">Кейс</div><h2 class=\"dh md\">Аня, Германия</h2><p class=\"note\">В месяц на AI-SEO. Было: релокация, «я в тупике, не знаю, куда идти». Через 3 месяца — своя фирма в Германии и налоговый номер. Доступ отбила</p><p class=\"pull\">«Я как на ракете стартанула. Открыла агентство, открыла фирму здесь, в Германии»</p><div class=\"disc\">результаты индивидуальны</div></div><div class=\"case-r\"><div class=\"portrait ph-anna\"></div><div class=\"figure sm\">4 × $500</div></div></div></div>",
+    "dirk": "Б1 · Кейс Аня",
+    "note": "доказать, что система вытаскивает того, кто пришёл без направления. Аня пришла на стратсессию «в депрессионной Германии, непонятно что» — вышла с фирмой. факты из базы кейсов (10-kejsy, видео 05): 8+ лет в digital, украинка в Германии с 2022. Клиент Артём — за 3 недели 73 цитирования нейронками, «с ИИ покупают на 40% больше, чем через платную рекламу», клиент продлил и заплатил. Контент-SEO-завод: в 21:00 четыре единицы контента, Threads-пост 112 лайков. Работала по 12 часов «и не сгорела». Сейчас — 4 клиента по $500 на AI-SEO (цифра Влада, 08.09). `[НУЖНО ОТ ВЛАДА]` возраст и есть ли дети — в базе кейсов этого нет.  [дожим · блок 1: Гарантия первого клиента]",
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"strike cta-slide\"><h2 class=\"dh md\">Я рискую десяткой. Команда рискует всем</h2><p class=\"note center\">Ваш риск — $10, и те возвращаются</p><div class=\"bigbtn\"><span class=\"lbl\">Забронировать место — $10</span><span class=\"ic\">↗</span></div><div class=\"deadline\">условия действуют до конца эфира + 30 минут</div></div></div>",
+    "dirk": "Б1 · CTA 1",
+    "note": "~20 сек. «Посчитайте риски ещё раз: ваши — десять долларов, которые возвращаются».  [дожим · блок 1: Гарантия первого клиента]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Вы ни одного дня не один</h2><div class=\"tiles\" style=\"--cols:3\"><div class=\"tile\"><b>Куратор</b><span>проверяет каждый ваш шаг</span></div><div class=\"tile\"><b>Живые разборы</b><span>приносите свой случай</span></div><div class=\"tile\"><b>Чат потока</b><span>вопрос в 23:00 — ответ в 23:05</span></div></div></div></div>",
+    "dirk": "Б2 · Не один",
+    "note": "одиночество — главная причина, почему бросают. «главная причина, почему люди бросают, — не сложность. Застряли на кнопке, спросить некого, закинули». Trial close: «кому важно, чтобы рядом был куратор, — плюс в чат».  [дожим · блок 2: Вы ни одного дня не один]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"case\"><div class=\"case-l\"><div class=\"eyebrow\">Кейс</div><h2 class=\"dh md\">Антон</h2><p class=\"note\">За два месяца. Было: сайты не делал никогда — ноль, полный ноль</p><p class=\"pull\">«Мне пришло два человека. Это не сильно много — но учитывая, что я в этом ноль…»</p><div class=\"disc\">результаты индивидуальны</div></div><div class=\"case-r\"><div class=\"figure sm\">$2.000</div></div></div></div>",
+    "dirk": "Б2 · Кейс Антон",
+    "note": "доказать, что сопровождение вытягивает даже полный ноль в теме. цитату прочитать дословно, медленно. Одна мысль: он не стал специалистом, он взял готовое и пошёл.  [дожим · блок 2: Вы ни одного дня не один]",
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"flag\"><h2 class=\"dh\">Это не ещё одна информация</h2><p class=\"lead\">У вас уже полсотни сохранённых роликов про нейронки. Пятьдесят первый ничего не изменит</p><p class=\"note\">Нужны агенты в руках и человек, который проверит ваш первый заказ</p></div></div>",
+    "dirk": "Б3 · Не ещё одна информация",
+    "note": "закрывание «поучусь сам». спокойно, почти сочувственно — зал узнаёт себя. Не обесценивать самообучение, а перенаправить.  [дожим · блок 3: Это не ещё одна информация]"
+  },
+  {
+    "a": 1,
+    "lv": 7,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><div class=\"eyebrow\">10 недель</div><h2 class=\"dh md\">А что после?</h2><div class=\"rail\"><span class=\"node\">Работающий агент</span><span class=\"arrow\">→</span><span class=\"node\">Портфолио</span><span class=\"arrow\">→</span><span class=\"node\">Первые сделки</span><span class=\"arrow\">→</span><span class=\"node\">Понимание, где брать следующих</span></div><p class=\"note center\">Дальше — углублять направление и поднимать чек или включать второе. Оно уже внутри</p></div></div>",
+    "dirk": "Б3 · А что после",
+    "note": "закрыть вопрос «а что потом» до того, как он возникнет в Q&A. «клуб и новые связки остаются с вами». ---  [дожим 3 · это не ещё одна информация]  [дожим · блок 3: Это не ещё одна информация]",
+    "st": [
+      "edit",
+      "перенесён в дожим по ТЗ"
+    ]
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"case\"><div class=\"case-l\"><div class=\"eyebrow\">Кейс</div><h2 class=\"dh md\">Юра</h2><p class=\"note\">От идеи до денег в кассе. Было: ни ниши, ни имени — просто решил начать</p><p class=\"pull\">«Я даже не понял, как это произошло — просто делал по схеме»</p><div class=\"disc\">результаты индивидуальны</div></div><div class=\"case-r\"><div class=\"figure sm\">4 дня</div></div></div></div>",
+    "dirk": "Б3 · Кейс Юра",
+    "note": "доказать, что результат появляется раньше, чем успеваешь бросить. цитата дословно. «Четыре дня. Не четыре месяца».  [дожим · блок 3: Это не ещё одна информация]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"strike cta-slide\"><h2 class=\"dh md\">Результат раньше, чем вы успеете бросить</h2><div class=\"bigbtn\"><span class=\"lbl\">Забронировать место — $10</span><span class=\"ic\">↗</span></div><div class=\"deadline\">условия действуют до конца эфира + 30 минут</div></div></div>",
+    "dirk": "Б3 · CTA 2",
+    "note": "коротко, на эмоции после кейса.  [дожим · блок 3: Это не ещё одна информация]"
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "t": "",
+    "dirk": "Б4 · Внутри агента",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Первый готовый агент — ваш после блока 2</div><h2 class=\"dh sm\">Агент «AI-Сайты»: один агент, внутри — конвейер</h2><div class=\"agentbox\"><div class=\"agentbox-l\">🤖 Агент AI-Сайты · 8 задач внутри</div><div class=\"stations\"><div class=\"st\" style=\"--i:0\"><svg class=\"rb\" viewBox=\"0 0 64 64\" aria-hidden=\"true\"><line x1=\"32\" y1=\"5\" x2=\"32\" y2=\"13\" stroke=\"rgba(49,233,129,.6)\" stroke-width=\"2\"/><circle class=\"ant\" cx=\"32\" cy=\"5\" r=\"3\"/><rect x=\"6\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect x=\"54\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect class=\"hd\" x=\"10\" y=\"13\" width=\"44\" height=\"36\" rx=\"10\"/><circle class=\"eye\" cx=\"23\" cy=\"29\" r=\"4.5\"/><circle class=\"eye\" cx=\"41\" cy=\"29\" r=\"4.5\"/><rect x=\"24\" y=\"39\" width=\"16\" height=\"3\" rx=\"1.5\" fill=\"rgba(49,233,129,.45)\"/></svg><i class=\"tool\">🔎</i><b>Аналитик</b><small>ниша и боль</small></div><div class=\"st\" style=\"--i:1\"><svg class=\"rb\" viewBox=\"0 0 64 64\" aria-hidden=\"true\"><line x1=\"32\" y1=\"5\" x2=\"32\" y2=\"13\" stroke=\"rgba(49,233,129,.6)\" stroke-width=\"2\"/><circle class=\"ant\" cx=\"32\" cy=\"5\" r=\"3\"/><rect x=\"6\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect x=\"54\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect class=\"hd\" x=\"10\" y=\"13\" width=\"44\" height=\"36\" rx=\"10\"/><circle class=\"eye\" cx=\"23\" cy=\"29\" r=\"4.5\"/><circle class=\"eye\" cx=\"41\" cy=\"29\" r=\"4.5\"/><rect x=\"24\" y=\"39\" width=\"16\" height=\"3\" rx=\"1.5\" fill=\"rgba(49,233,129,.45)\"/></svg><i class=\"tool\">📊</i><b>Маркетолог</b><small>стратегия, цена, тексты</small></div><div class=\"st\" style=\"--i:2\"><svg class=\"rb\" viewBox=\"0 0 64 64\" aria-hidden=\"true\"><line x1=\"32\" y1=\"5\" x2=\"32\" y2=\"13\" stroke=\"rgba(49,233,129,.6)\" stroke-width=\"2\"/><circle class=\"ant\" cx=\"32\" cy=\"5\" r=\"3\"/><rect x=\"6\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect x=\"54\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect class=\"hd\" x=\"10\" y=\"13\" width=\"44\" height=\"36\" rx=\"10\"/><circle class=\"eye\" cx=\"23\" cy=\"29\" r=\"4.5\"/><circle class=\"eye\" cx=\"41\" cy=\"29\" r=\"4.5\"/><rect x=\"24\" y=\"39\" width=\"16\" height=\"3\" rx=\"1.5\" fill=\"rgba(49,233,129,.45)\"/></svg><i class=\"tool\">📐</i><b>Архитектор</b><small>структура</small></div><div class=\"st\" style=\"--i:3\"><svg class=\"rb\" viewBox=\"0 0 64 64\" aria-hidden=\"true\"><line x1=\"32\" y1=\"5\" x2=\"32\" y2=\"13\" stroke=\"rgba(49,233,129,.6)\" stroke-width=\"2\"/><circle class=\"ant\" cx=\"32\" cy=\"5\" r=\"3\"/><rect x=\"6\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect x=\"54\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect class=\"hd\" x=\"10\" y=\"13\" width=\"44\" height=\"36\" rx=\"10\"/><circle class=\"eye\" cx=\"23\" cy=\"29\" r=\"4.5\"/><circle class=\"eye\" cx=\"41\" cy=\"29\" r=\"4.5\"/><rect x=\"24\" y=\"39\" width=\"16\" height=\"3\" rx=\"1.5\" fill=\"rgba(49,233,129,.45)\"/></svg><i class=\"tool\">🎨</i><b>Дизайнер</b><small>стиль</small></div><div class=\"st\" style=\"--i:4\"><svg class=\"rb\" viewBox=\"0 0 64 64\" aria-hidden=\"true\"><line x1=\"32\" y1=\"5\" x2=\"32\" y2=\"13\" stroke=\"rgba(49,233,129,.6)\" stroke-width=\"2\"/><circle class=\"ant\" cx=\"32\" cy=\"5\" r=\"3\"/><rect x=\"6\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect x=\"54\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect class=\"hd\" x=\"10\" y=\"13\" width=\"44\" height=\"36\" rx=\"10\"/><circle class=\"eye\" cx=\"23\" cy=\"29\" r=\"4.5\"/><circle class=\"eye\" cx=\"41\" cy=\"29\" r=\"4.5\"/><rect x=\"24\" y=\"39\" width=\"16\" height=\"3\" rx=\"1.5\" fill=\"rgba(49,233,129,.45)\"/></svg><i class=\"tool\">🖌️</i><b>Иллюстратор</b><small>картинки</small></div><div class=\"st\" style=\"--i:5\"><svg class=\"rb\" viewBox=\"0 0 64 64\" aria-hidden=\"true\"><line x1=\"32\" y1=\"5\" x2=\"32\" y2=\"13\" stroke=\"rgba(49,233,129,.6)\" stroke-width=\"2\"/><circle class=\"ant\" cx=\"32\" cy=\"5\" r=\"3\"/><rect x=\"6\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect x=\"54\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect class=\"hd\" x=\"10\" y=\"13\" width=\"44\" height=\"36\" rx=\"10\"/><circle class=\"eye\" cx=\"23\" cy=\"29\" r=\"4.5\"/><circle class=\"eye\" cx=\"41\" cy=\"29\" r=\"4.5\"/><rect x=\"24\" y=\"39\" width=\"16\" height=\"3\" rx=\"1.5\" fill=\"rgba(49,233,129,.45)\"/></svg><i class=\"tool\">💻</i><b>Разработчик</b><small>код</small></div><div class=\"st\" style=\"--i:6\"><svg class=\"rb\" viewBox=\"0 0 64 64\" aria-hidden=\"true\"><line x1=\"32\" y1=\"5\" x2=\"32\" y2=\"13\" stroke=\"rgba(49,233,129,.6)\" stroke-width=\"2\"/><circle class=\"ant\" cx=\"32\" cy=\"5\" r=\"3\"/><rect x=\"6\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect x=\"54\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect class=\"hd\" x=\"10\" y=\"13\" width=\"44\" height=\"36\" rx=\"10\"/><circle class=\"eye\" cx=\"23\" cy=\"29\" r=\"4.5\"/><circle class=\"eye\" cx=\"41\" cy=\"29\" r=\"4.5\"/><rect x=\"24\" y=\"39\" width=\"16\" height=\"3\" rx=\"1.5\" fill=\"rgba(49,233,129,.45)\"/></svg><i class=\"tool\">📈</i><b>Конверсионщик</b><small>заявки</small></div><div class=\"st\" style=\"--i:7\"><svg class=\"rb\" viewBox=\"0 0 64 64\" aria-hidden=\"true\"><line x1=\"32\" y1=\"5\" x2=\"32\" y2=\"13\" stroke=\"rgba(49,233,129,.6)\" stroke-width=\"2\"/><circle class=\"ant\" cx=\"32\" cy=\"5\" r=\"3\"/><rect x=\"6\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect x=\"54\" y=\"25\" width=\"4\" height=\"12\" rx=\"2\" fill=\"#2A3542\"/><rect class=\"hd\" x=\"10\" y=\"13\" width=\"44\" height=\"36\" rx=\"10\"/><circle class=\"eye\" cx=\"23\" cy=\"29\" r=\"4.5\"/><circle class=\"eye\" cx=\"41\" cy=\"29\" r=\"4.5\"/><rect x=\"24\" y=\"39\" width=\"16\" height=\"3\" rx=\"1.5\" fill=\"rgba(49,233,129,.45)\"/></svg><i class=\"tool\">🚀</i><b>Публикация</b><small>в сеть</small></div></div><div class=\"belt\"><div class=\"pkt\">🌐</div></div><div class=\"out\"><span>Задача словами</span><em>→</em><span class=\"hi\">сайт, который приводит клиентов</span></div></div><p class=\"note center\">Вы ставите задачу словами. Кто за кем работает — решает агент</p></div></div>",
+    "note": "конвейер: 8 задач внутри одного агента, пакет едет по ленте, станция вспыхивает, когда до неё доходит задача — дать доиграть один круг (12 с). Это первый готовый агент, который человек получает после блока 2 — агент конверсионных сайтов. Панели «внутри маркетолога» нет: семёрку зал уже видел в раскрытии M3. ~30 сек.  [дожим 4 · как работает команда агентов]  [дожим · блок 4: Как работает команда агентов]",
+    "st": [
+      "new",
+      "правка 7a — пайплайн внутри агента"
+    ]
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh sm\">Если бы это навсегда закрыло вопрос «где брать клиентов»</h2><div class=\"calc\"><div class=\"calc-r\"><span>4–12 сайтов в месяц</span></div><div class=\"calc-op\">×</div><div class=\"calc-r\"><span>чек $250</span></div><div class=\"calc-op\">=</div><div class=\"calc-r\"><span>$1.000–$3.000 в месяц</span></div></div><div class=\"calc-total\"><span>Только на сайтах</span><b>$1.000–$3.000</b></div><p class=\"note center\">Четыре сайта — это четыре сотни сообщений агента</p><p class=\"note center\">На старте это только сайты — одна услуга из семи. Сколько бы это стоило?</p></div></div>",
+    "dirk": "Б5 · Окупаемость",
+    "note": "блок дожима после кнопки: арифметика окупаемости. Счёт должен сходиться на калькуляторе: четыре сайта — тысяча, двенадцать — три тысячи. Обязательно проговорить, что на старте считаем ТОЛЬКО по сайтам, дальше услуг семь. Спросить «сколько бы это стоило» и МОЛЧАТЬ три секунды.  [дожим · блок 5: Если бы это закрыло вопрос клиентов]",
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "t": "",
+    "dirk": "Б6 · CTA 3",
+    "st": [
+      "new",
+      "повтор бонуса в момент решения — канон 68"
+    ],
+    "b": "<div class='tl2'><div class=\"fa2\"><div class=\"flag\"><div class=\"eyebrow\">Первым 20 броням этого эфира</div><h2 class=\"dh md\">Готовый AI-охотник — в подарок</h2><ul class=\"hbul\"><li>Идёт по картам и собирает бизнесы вашей ниши</li><li>Читает их сайты и отзывы</li><li>Отсеивает тех, кому вы не нужны</li><li>Подсказывает, кому что предложить</li><li>Пишет первое сообщение и ловит заказы в чатах</li></ul><p class=\"note\">Без таймера. Двадцать человек — дальше не вытяну. Хотите в двадцатку — напишите «20» в чат</p><div class=\"bval\"><span>ценность</span><b>$1.500</b><em>бесплатно первым 20</em></div></div><div class=\"hpanel\"><div class=\"hph\"><i></i>Поиск клиентов · стоматология, Киев</div><div class=\"hsteps\"><span class=\"hst\" style=\"--i:0\">Собираю места</span><span class=\"hst\" style=\"--i:1\">Смотрю сайты</span><span class=\"hst\" style=\"--i:2\">Читаю отзывы</span><span class=\"hst\" style=\"--i:3\">Делаю выводы</span><span class=\"hst\" style=\"--i:4\">Готовлю письма</span></div><div class=\"hnums\"><div><b class=\"cnt\" data-to=\"300\">300</b><small>посмотрел на картах</small></div><div class=\"dim\"><b class=\"cnt\" data-to=\"236\">236</b><small>не подошли</small></div><div class=\"ok\"><b class=\"cnt\" data-to=\"64\">64</b><small>годятся в работу</small></div></div><div class=\"hfind\"><div class=\"hf\" style=\"--i:0\"><b>52 из 64</b>запись и заявки принимают только руками</div><div class=\"hf\" style=\"--i:1\"><b>33 из 64</b>на сайте рекламные метки — за клиентов уже платят</div></div><div class=\"hout\"><i>✉️</i>64 письма готовы · и 3 заказа из чатов сегодня</div></div></div></div>",
+    "note": "повтор fast-action в момент решения (канон 68): готовый охотник первым 20 на Silver и Gold. Честный лимит по людям, без таймера. Прочитать «20» из чата по именам. Напомнить, что вживую его уже видели.  [дожим · блок 6: AI-охотник в подарок]  Привязку к Silver и Gold проговариваем на звонке: в момент брони набор ещё не выбран (это прямо сказано на «после брони» и «не набор, а решение»)."
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"photo\"><div class=\"img ph-p3\"></div><div class=\"tint\"></div><div class=\"scrim\"></div><div class=\"frameline\"></div><div class=\"copy\"><h2 class=\"dh md\">Я не особенный</h2><p class=\"lead\">Я полгода сидел по 50 часов в неделю, чтобы агенты заработали</p><p class=\"note\">Разница в том, что вам эти полгода проходить не надо — агенты уже собраны</p></div></div></div>",
+    "dirk": "Б7 · Я не особенный",
+    "note": "закрывание «неохотный герой». Снимает «у него получилось, потому что он такой». буднично, без героизма. Trial close: «кто узнал себя — напишите \"я\"».  [дожим · блок 7: Я не особенный]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "t": "",
+    "dirk": "Б8 · Агенты блока 3",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Блок 3 · что получаете</div><h2 class=\"dh sm\">Три агента — три услуги в прайсе</h2><div class=\"tiles\" style=\"--cols:3\"><div class=\"tile ag art\"><div class=\"artimg\" style=\"background-image:url(assets/photo/uslugi/prezentacii-kp.jpg)\"></div><b>🎨 AI-дизайн</b><span>коммерческие предложения, презентации и баннеры — в одном стиле, за минуты</span><em class=\"pr\">$250–$900</em></div><div class=\"tile ag art\"><div class=\"artimg vid\"><video src=\"assets/video/avatar-1-short.mp4\" poster=\"assets/video/avatar-1-poster.jpg\" autoplay loop muted playsinline></video></div><b>🎬 Продающие AI-видео</b><span>ролик с человеком в кадре, которого сняла нейросеть — без камеры и съёмочного дня</span><em class=\"pr\">$300–$1.200 · 8–12 роликов</em></div><div class=\"tile ag art\"><div class=\"artimg\" style=\"background-image:url(assets/photo/uslugi/kontent-dash.jpg)\"></div><b>✍️ Контент-завод с AI-аватаром</b><span>посты, сценарии и Reels по расписанию — аккаунт живёт без вас</span><em class=\"pr\">$400–$1.400 · в месяц</em></div></div><p class=\"note center\">17 задач внутри · каждый агент оказывает свою услугу целиком</p></div></div>",
+    "note": "после блока 3 — три агента и на какую сумму каждый оказывает услугу (вилки из каталога). Одной фразой на агента: что делает и чек. ~30 сек. На слайде по одной строке на агента — остальное проговариваем голосом.  [дожим 8/10/16 · разбить на дизайн, видео, контент-завод]  [дожим · блок 8: Дизайн и креативы — как создаётся]",
+    "st": [
+      "new",
+      "правка 8g — агенты блока 3"
+    ],
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "k": "Как работает агент-дизайнер",
+    "t": "Одна инструкция — готовые макеты",
+    "b": "<div class='route'><div class='rt'><i>01</i><b>изучает конкурентов</b><span>как выглядят десять лучших в нише</span></div><div class='rt'><i>02</i><b>изучает аудиторию</b><span>кому и что продаём</span></div><div class='rt'><i>03</i><b>строит стратегию</b><span>обучен на лучших методиках</span></div><div class='rt'><i>04</i><b>вызывает сценариста</b><span>что говорит каждый кадр</span></div><div class='rt'><i>05</i><b>подключает фотографа</b><span>картинки под ваш продукт, без стоков</span></div><div class='rt'><i>06</i><b>собирает дизайнера</b><span>макеты, презентации, баннеры</span></div></div><p class='acc'>Вы пишете задачу словами. Остальное собирается внутри</p>",
+    "dirk": "Б8 · Дизайн и креативы",
+    "note": "Шесть строк читать быстро. Это тот же конвейер, что зал видел у сайтов — только под дизайн.  [дожим · блок 8: Дизайн и креативы]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "k": "Кто уже так сделал",
+    "t": "Светлана",
+    "b": "<div class='duo'><div class='col'><h5>Было</h5><div>работала на фабрике мороженого, ассистентом на зарплате</div></div><div class='col good'><h5>Стало</h5><div>первый проданный сайт</div></div></div><div class='big-num' style='font-size:clamp(34px,5.4cqw,84px);margin:.4cqh 0'>$1.000</div><p class='quote'>«Взяла три агента — начала с дизайна»</p><p class='mut'>Светлана · три агента</p>",
+    "dirk": "Б8 · Дизайн и креативы",
+    "note": "Кейс из твоего рассказа на созвоне. ⚠️ Нужно письменное согласие Светланы на имя и цифру.  [дожим · блок 8: Дизайн и креативы]",
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "k": "",
+    "t": "Один макет окупает половину входа",
+    "b": "<p class='mut'>Дизайн — самая быстрая услуга на старте: результат виден в тот же вечер</p><a class='cta-btn' href='#ОПЛАТА' target='_blank' rel='noopener'>Забронировать место — $10<span class='cic'>↗</span></a>",
+    "dirk": "Б8 · Дизайн и креативы",
+    "note": "Короткий призыв, не задерживаться.  [дожим · блок 8: Дизайн и креативы]"
+  },
+  {
+    "a": 1,
+    "lv": 7,
+    "t": "",
+    "dirk": "Б9 · Сценарий А",
+    "st": [
+      "new",
+      "закрывание «два пути» — канон 70"
+    ],
+    "b": "<div class='tl2'><div class=\"stack-v\"><div class=\"eyebrow amber\">Сценарий А</div><h2 class=\"dh md\">Закрыть вкладку</h2><div class=\"rail\"><span class=\"node\">Сегодня — «подумаю»</span><span class=\"arrow\">→</span><span class=\"node\">Эта неделя — ещё три ролика про нейронки</span><span class=\"arrow\">→</span><span class=\"node\">Этот месяц — всё как было</span><span class=\"arrow\">→</span><span class=\"node\">Через год — на год старше, там же</span></div><p class=\"note center\">Стоит $0. И стоит года</p></div></div>",
+    "note": "закрывание «два пути» (канон 70): путь 1 — ничего не менять → последствие. Спокойная арифметика, без катастрофы и стыда. Ровным голосом, как прогноз погоды. Дальше сразу Сценарий Б.  [дожим · блок 9: Сценарий А / сценарий Б]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><div class=\"eyebrow\">Сценарий Б</div><h2 class=\"dh md\">Начать сегодня</h2><div class=\"rail\"><span class=\"node\">Сегодня бронь $10</span><span class=\"arrow\">→</span><span class=\"node\">Эта неделя — первый агент</span><span class=\"arrow\">→</span><span class=\"node\">Этот месяц — первый клиент</span><span class=\"arrow\">→</span><span class=\"node\">Полгода — второе направление</span></div><p class=\"note center\">Вторая история стоит десять долларов</p></div></div>",
+    "dirk": "Б9 · Сценарий Б",
+    "note": "«вторая история стоит десять долларов и начинается сегодня».  [дожим · блок 9: Сценарий А / сценарий Б]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Между ними 33 года. Система одна</h2><div class=\"duo\"><div class=\"pane\"><div class=\"pane-h\">Саша, 14</div><ul><li>$300 за выходные</li><li>Сейчас $1.500–$3.000 в месяц</li><li>Ему не мешал опыт</li></ul></div><div class=\"pane\"><div class=\"pane-h\">Наталья, 47</div><ul><li>$300 на пятый день</li><li>4 клиента на обслуживании</li><li>Ей опыт помог</li></ul></div></div><p class=\"note center\">результаты индивидуальны</p></div></div>",
+    "dirk": "Б9 · Саша и Наталья",
+    "note": "⚠️ ПЕРЕД ЭФИРОМ: правая колонка — выдуманный пример, заменить на реального человека 45+. снять и «мне рано», и «мне поздно» одним экраном. «Саше не мешал опыт. Наталье он помог: молодой быстрее нажимает кнопки, вы быстрее понимаете, что клиенту на самом деле нужно». Trial close: «кто узнал себя в Наталье — плюс в чат».  [дожим · блок 9: Сценарий А / сценарий Б]",
+    "disc": 1,
+    "st": [
+      "need",
+      "Наталья, 47 — ВЫДУМАННЫЙ ПРИМЕР. Пометка была в деке до 26.08 и потерялась при слиянии. В базе кейсов такой ученицы нет, цифры «$300 на пятый день» и «4 клиента» ничем не подтверждены. Заменить на реального человека 45+ или снять колонку"
+    ]
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"strike cta-slide\"><h2 class=\"dh md\">Выберите свой сценарий</h2><p class=\"note center\">Кто начинает сегодня — напишите «начинаю» в чат</p><div class=\"bigbtn\"><span class=\"lbl\">Забронировать место — $10</span><span class=\"ic\">↗</span></div><div class=\"deadline\">условия действуют до конца эфира + 30 минут</div></div></div>",
+    "dirk": "Б9 · CTA 4",
+    "note": "на эмоции после кейсов. Trial close: «кто начинает сегодня — напишите „начинаю“ в чат» — читать вслух по именам. Озвучить брони.  [дожим · блок 9: Сценарий А / сценарий Б]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "k": "Как работает агент-видеограф",
+    "t": "Ролик, в котором никто не снимался",
+    "b": "<div class='route'><div class='rt'><i>01</i><b>сценарист кадра</b><span>пишет, что будет в кадре</span></div><div class='rt'><i>02</i><b>режиссёр</b><span>решает формат и порядок кадров</span></div><div class='rt'><i>03</i><b>оператор без камеры</b><span>собирает изображение</span></div><div class='rt'><i>04</i><b>монтажёр</b><span>склейка, ритм, титры</span></div><div class='rt'><i>05</i><b>звук</b><span>музыка и озвучка</span></div><div class='rt'><i>06</i><b>хранитель бренда</b><span>чтобы всё было в вашем стиле</span></div></div><p class='acc'>Шесть ролей внутри одного агента. Ни камеры, ни съёмочной группы</p>",
+    "dirk": "Б10 · Продающие AI-видео",
+    "note": "Шесть ролей — это студия целиком. Сказать: «ни камеры, ни площадки, ни людей».  [дожим · блок 10: Продающие AI-видео]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "k": "Кто уже так сделал",
+    "t": "Женя",
+    "b": "<div class='duo'><div class='col'><h5>Было</h5><div>подписчиков почти нет, ролики набирают мало просмотров</div></div><div class='col good'><h5>Стало</h5><div>в месяц на роликах для объектов</div></div></div><div class='big-num' style='font-size:clamp(34px,5.4cqw,84px);margin:.4cqh 0'>$7.000</div><p class='quote'>«Продаёт 30-секундный ролик по $450»</p><p class='mut'>Женя · ролики для недвижимости</p>",
+    "dirk": "Б10 · Продающие AI-видео",
+    "note": "Кейс из editable #207 и твоего рассказа. Важно: $450 — цена за штучный ролик, наш пакет 8–12 роликов стоит $300–$1.200. Не путать. ⚠️ Нужно согласие Жени.  [дожим · блок 10: Продающие AI-видео]",
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "k": "",
+    "t": "Шестнадцать роликов — это один вечер",
+    "b": "<p class='mut'>Пока конкуренты ищут оператора, у вас уже смонтировано</p><a class='cta-btn' href='#ОПЛАТА' target='_blank' rel='noopener'>Забронировать место — $10<span class='cic'>↗</span></a>",
+    "dirk": "Б10 · Продающие AI-видео",
+    "note": "  [дожим · блок 10: Продающие AI-видео]"
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"flag\"><h2 class=\"dh\">Даже половина результата окупит вход</h2><p class=\"lead\">Один сайт за $250 — и половина входа уже отбилась. Два сайта — и вход окуплен целиком</p><p class=\"note\">Забудьте про 46 задач, охотника и куратора. Представьте, что всё, что вы вынесли, — один заказ</p><p class=\"note\">А теперь представьте: навсегда попрощаться с «где брать клиентов»</p></div></div>",
+    "dirk": "Б11 · Половина результата",
+    "note": "классический if-all — самая скромная математика. «забудьте про 96 ассистентов, охотника и куратора. Представьте, что всё, что вы отсюда вынесли, — один заказ. Он уже окупает половину входа». Вторая половина карточки 75 — «попрощаться с болью». Trial close: «кому хватит и одного клиента — напишите \"один\"».  [дожим · блок 11: Даже половина окупит вход]",
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"strike cta-slide\"><h2 class=\"dh md\">Мне достаточно и одного клиента</h2><p class=\"note center\">Всё, что сверху, — подарок</p><div class=\"bigbtn\"><span class=\"lbl\">Забронировать место — $10</span><span class=\"ic\">↗</span></div><div class=\"deadline\">условия действуют до конца эфира + 30 минут</div></div></div>",
+    "dirk": "Б11 · CTA 5",
+    "note": "одно предложение: «если даже самая скромная математика устраивает — тем более нажимайте. Всё, что сверху, — подарок».  [дожим · блок 11: Даже половина окупит вход]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "t": "",
+    "dirk": "Б12 · Агенты блока 4",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Блок 4 · что получаете</div><h2 class=\"dh sm\">Клиентов приводят агенты</h2><div class=\"tiles\" style=\"--cols:3\"><div class=\"tile ag art\"><div class=\"artimg mv mv2 mv-ad\"><div class=\"adc\"><div class=\"adimg\"></div><div class=\"adt\"><b>Первая чистка −30%</b><small>Стоматология рядом · запись за минуту</small></div><div class=\"adb\">Записаться</div></div><div class=\"adres\">заявок <b>↑</b> · цена заявки <b class=\"dn\">↓</b></div></div><b>🎯 AI-таргет</b><span>запускает рекламу, считает, что работает, и отключает то, что сливает бюджет</span><em class=\"pr\">$300–$800 · в месяц</em></div><div class=\"tile ag art\"><div class=\"artimg mv mv2 mv-seo\"><div class=\"sbox\"><i>🔍</i><span class=\"typed\">стоматолог рядом с домом</span></div><div class=\"sres\"><b>Ваш клиент</b><small>⭐ 4,9 · первый в выдаче</small></div><div class=\"sai\">🤖 «Рекомендую — <em>ваш клиент</em>»</div></div><b>🧭 AI-SEO</b><span>бизнес находят в поиске, на картах и в ответах нейросетей — без платной рекламы</span><em class=\"pr\">$500 · в месяц</em></div><div class=\"tile ag art\"><div class=\"artimg mv mv2 mv-map\"><div class=\"map\"><i class=\"pin\" style=\"--x:22%;--y:35%;--d:.2s\"></i><i class=\"pin\" style=\"--x:58%;--y:22%;--d:.9s\"></i><i class=\"pin\" style=\"--x:74%;--y:62%;--d:1.6s\"></i></div><div class=\"hmsg\"><b>Написал владельцу:</b>«Видел ваши отзывы. Записи онлайн нет — теряете клиентов. Покажу за 2 минуты?»</div></div><b>🏹 AI-охотник</b><span>находит на картах, читает отзывы и пишет каждому про его боль</span><em class=\"pr\">готовый — в подарок первым 20 на Silver и Gold</em></div></div><p class=\"note center\">12 задач внутри · набор Gold: потенциал $5.000+ в месяц</p></div></div>",
+    "note": "после блока 4 — два агента с чеком и охотник с функционалом (карты → отзывы → письмо → напоминание → дожим). Здесь граница набора Gold — назвать потенциал $5.000+. Про охотника: «готового отдаю первым 20». ~30 сек. На слайде по одной строке на агента — остальное проговариваем голосом.  [дожим 12 · разбить на таргет, SEO, охотник]  [дожим · блок 12: Реклама агентами — как настраивается]",
+    "st": [
+      "new",
+      "правка 8g — агенты блока 4"
+    ],
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "k": "Как работает агент-рекламщик",
+    "t": "Рекламу тоже настраивает агент",
+    "b": "<div class='route'><div class='rt'><i>01</i><b>изучает бизнес</b><span>что продаём и кому это нужно</span></div><div class='rt'><i>02</i><b>создаёт рабочие идеи</b><span>что писать в объявлении</span></div><div class='rt'><i>03</i><b>прогнозирует результат</b><span>сколько заявок ждать с бюджета</span></div><div class='rt'><i>04</i><b>расходует бюджет</b><span>так, чтобы не уйти в минус</span></div><div class='rt'><i>05</i><b>собирает объявления</b><span>тексты и картинки на выходе</span></div></div><p class='acc'>Вы пишете одну фразу: «запусти рекламу стоматологии в Киеве»</p>",
+    "dirk": "Б12 · Реклама агентами",
+    "note": "Пять задач из editable #225. Голосом: страшное слово «таргет» не произносим — говорим «реклама».  [дожим · блок 12: Реклама агентами]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "k": "Что получается",
+    "t": "Объявления, которые уже работают",
+    "b": "<p class='mut'>Готовые объявления в Instagram и Facebook — агент собирает их сам, из фактов о вашем бизнесе</p><p class='acc'>Реклама — услуга с оплатой каждый месяц, а не разовая. Один клиент платит, пока идут заявки</p>",
+    "dirk": "Б12 · Реклама агентами",
+    "note": "Главная мысль блока — помесячная оплата. Это то, что отличает рекламу от сайта.  [дожим · блок 12: Реклама агентами]"
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "k": "",
+    "t": "Реклама платит каждый месяц",
+    "b": "<p class='mut'>Сайт продаётся один раз. Реклама — двенадцать раз в год</p><a class='cta-btn' href='#ОПЛАТА' target='_blank' rel='noopener'>Забронировать место — $10<span class='cic'>↗</span></a>",
+    "dirk": "Б12 · Реклама агентами",
+    "note": "  [дожим · блок 12: Реклама агентами]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "t": "",
+    "dirk": "Б13 · Сравнить наборы",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><h2 class=\"dh sm\">Три набора глазами — на одном экране</h2><table class=\"cmp big\"><thead><tr><th></th><th>Bronze</th><th class=\"lead\">Silver</th><th>Gold</th></tr></thead><tbody><tr class=\"\"><td>Модулей программы</td><td>5</td><td>8</td><td>13</td></tr><tr class=\"\"><td>Недель обучения и живых разборов</td><td>4</td><td>6</td><td>10</td></tr><tr class=\"\"><td>Услуг в прайсе</td><td>1</td><td>4</td><td>7</td></tr><tr class=\"\"><td>AI-агентов</td><td>1 · сайты</td><td>4 · + контент</td><td>7 · + реклама и продавец</td></tr><tr class=\"\"><td>Готовых задач под ваши услуги</td><td>16</td><td>33</td><td>46</td></tr><tr class=\"\"><td>Базы шаблонов и кейсов, нейросети со скидкой</td><td class=\"ok\">✓</td><td class=\"ok\">✓</td><td class=\"ok\">✓</td></tr><tr class=\"\"><td>Куратор, чат, доска объявлений, договоры</td><td class=\"no\">—</td><td class=\"ok\">✓</td><td class=\"ok\">✓</td></tr><tr class=\"\"><td>Обновления агентов, пока пользуетесь</td><td class=\"no\">—</td><td class=\"ok\">✓</td><td class=\"ok\">✓</td></tr><tr class=\"\"><td>Реклама и видимость: AI-таргет и AI-SEO</td><td class=\"no\">—</td><td class=\"no\">—</td><td class=\"ok\">✓</td></tr><tr class=\"\"><td>Продавец: настройки, скрипты, шаблоны КП</td><td class=\"no\">—</td><td class=\"no\">—</td><td class=\"ok\">✓</td></tr><tr class=\"\"><td>Связки локаций и каталог связок</td><td class=\"no\">—</td><td class=\"no\">—</td><td class=\"ok\">✓</td></tr><tr class=\"\"><td>Страт-сессии со мной в малой группе</td><td class=\"no\">—</td><td class=\"no\">—</td><td>4 сессии</td></tr><tr class=\"hi\"><td>Ценность набора</td><td>$6.060</td><td>$12.390</td><td>$21.350</td></tr><tr class=\"hi\"><td>Цена сегодня</td><td>$490</td><td>$749</td><td>$1.500</td></tr></tbody></table></div></div>",
+    "note": "последний пакетный блок дожима: «выбирайте глазами». Пройтись только по строкам с различиями — реклама, продавец, связки, страт-сессии. Потолок дохода в таблице не показываем, проговариваем голосом. ~35 сек.  [дожим · блок 13: Три набора на одном экране]",
+    "st": [
+      "new",
+      "правка 8f — сравнительная таблица"
+    ],
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Кому здесь делать нечего</h2><div class=\"duo\"><div class=\"pane\"><div class=\"pane-h\">Вам сюда, если</div><ul><li>Есть три куска по полчаса в неделю</li><li>Готовы инвестировать $50/мес на нейронки</li><li>Хотите деньги, а не диплом</li></ul></div><div class=\"pane ghost\"><div class=\"pane-h\">Не сюда, если</div><ul><li>Ищете кнопку «бабло»</li><li>Не готовы написать ни одному бизнесу</li><li>Нужна гарантия точной суммы к дате</li></ul></div></div></div></div>",
+    "dirk": "Б13 · Кому подходит",
+    "note": "честная отсечка поднимает ценность и отсекает будущие разочарования. прямо, без заигрывания: «скажу, кому не надо нажимать кнопку».  [дожим · к блоку возражений перед Q&A]  [дожим · блок 13: Три набора на одном экране]",
+    "st": [
+      "edit",
+      "перенесён в дожим по ТЗ"
+    ]
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "t": "",
+    "dirk": "Б14 · Агент блока 5",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Блок 5 · что получаете</div><h2 class=\"dh sm\">Сделку закрывает агент</h2><div class=\"tiles\" style=\"--cols:1;max-width:60cqw\"><div class=\"tile ag art\"><div class=\"artimg mv mv-sale\"><div class=\"msg in\" style=\"--i:0\">Сколько стоит?</div><div class=\"msg out\" style=\"--i:1\">Расскажу и покажу примеры — 2 минуты</div><div class=\"msg in\" style=\"--i:2\">Ок, беру</div><div class=\"paid\" style=\"--i:3\">Оплата получена ✓</div></div><b>💬 AI-продавец</b><span>отвечает на входящие заявки круглосуточно<br>консультирует и снимает сомнения<br>доводит до оплаты — без вас и без выходных</span><em class=\"pr\">$500–$2.000 · сборка + ведение</em></div></div><p class=\"note center\">Набор Gold: потенциал $5.000+ в месяц</p></div></div>",
+    "note": "после блока 5 — один агент, но самый дорогой: продавец. Граница Gold — потенциал $5.000+. ~20 сек.  [дожим 14 · AI-продавцы, живая демонстрация]  [дожим · блок 14: AI-продавцы — как продают]",
+    "st": [
+      "new",
+      "правка 8g — агент блока 5"
+    ],
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "k": "Как работает агент-продавец",
+    "t": "Он живёт в ваших мессенджерах",
+    "b": "<div class='route'><div class='rt'><i>01</i><b>изучает, что продаётся</b><span>ваш продукт и цены</span></div><div class='rt'><i>02</i><b>знает техники продаж</b><span>обучен на лучших скриптах</span></div><div class='rt'><i>03</i><b>пишет сценарий</b><span>что отвечать на каждое возражение</span></div><div class='rt'><i>04</i><b>живёт в мессенджерах</b><span>Telegram, WhatsApp, Instagram — круглосуточно</span></div><div class='rt'><i>05</i><b>отвечает клиентам</b><span>пока вы спите или заняты</span></div><div class='rt'><i>06</i><b>доводит до оплаты</b><span>счёт, ссылка, подтверждение</span></div></div><p class='acc'>Вы подключаетесь один раз — когда человек уже готов</p>",
+    "dirk": "Б14 · AI-продавцы",
+    "note": "Шесть строк из editable #219. На пятой пауза — «пока вы спите».  [дожим · блок 14: AI-продавцы]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "k": "Как это было у меня",
+    "t": "Люди не понимали, что говорят не со мной",
+    "b": "<p class='mut'>Я завёл отдельный аккаунт в Telegram и посадил туда продавца</p><p><b>Он продавал мой продукт без меня. Переписка шла своим чередом — я узнавал о продаже из уведомления об оплате</b></p><p class='acc'>Это не эксперимент. Так у меня работает до сих пор</p>",
+    "dirk": "Б14 · AI-продавцы",
+    "note": "Твоя история из editable #99–#100. Здесь уместен живой скрин переписки — он есть в той деке.  [дожим · блок 14: AI-продавцы]",
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "k": "",
+    "t": "Продавец работает, пока вы спите",
+    "b": "<p class='mut'>Он есть только в наборе Gold — и он же закрывает сделки за вас</p><a class='cta-btn' href='#ОПЛАТА' target='_blank' rel='noopener'>Забронировать место — $10<span class='cic'>↗</span></a>",
+    "dirk": "Б14 · AI-продавцы",
+    "note": "⚠️ Продавец входит только в Gold. Не обещать его тем, кто возьмёт Bronze.  [дожим · блок 14: AI-продавцы]"
+  },
+  {
+    "a": 1,
+    "lv": 10,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Эти деньги за месяц и так уйдут</h2><div class=\"spend\"><div class=\"sp-c dim\"><div class=\"sp-h\">Уходит незаметно</div><ul><li>Кофе</li><li>Доставки</li><li>Мелочи</li></ul><div class=\"sp-s\">$16 в день</div></div><div class=\"sp-eq\">=</div><div class=\"sp-c\"><div class=\"sp-h\">Уходит в дело</div><ul><li>Агенты</li><li>Куратор</li><li>Разборы</li></ul><div class=\"sp-s\">$16 в день</div></div></div><p class=\"note center\">Вопрос не «тратить или нет». Вопрос — на что</p></div></div>",
+    "dirk": "Б15 · Эти деньги и так уйдут",
+    "note": "бытовой уровень цены. тепло, без давления. Пауза 2 секунды.  [дожим 15 · парой со слайдом рассрочки]  [дожим · блок 15: Рассрочка]",
+    "st": [
+      "edit",
+      "перенесён в дожим по ТЗ"
+    ]
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "k": "Если сумма сейчас неподъёмная",
+    "t": "Вход можно разбить на части",
+    "b": "<div class='duo'><div class='col'><h5>Сразу</h5><div>часть входа — и вы уже внутри, агенты открыты с первого дня</div></div><div class='col good'><h5>Потом</h5><div>остаток — вторым платежом, когда первый клиент уже оплатил</div></div></div><p class='acc'>Два платежа. Без банка, без кредитной истории, без справок</p>",
+    "dirk": "Б15 · Рассрочка",
+    "note": "Никаких банков и кредитов — канон проекта это прямо запрещает. Механика простая: два платежа. ⚠️ Точные доли и срок второго платежа подтвердить с командой.  [дожим · блок 15: Рассрочка]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "k": "Как работает контент-завод",
+    "t": "Контент, который снимает не вы",
+    "b": "<div class='route'><div class='rt'><i>01</i><b>ищет лучшие идеи</b><span>что уже залетело в вашей нише</span></div><div class='rt'><i>02</i><b>создаёт контент-план</b><span>на месяц вперёд</span></div><div class='rt'><i>03</i><b>подключает ваш аватар</b><span>ваше лицо и голос, без съёмки</span></div><div class='rt'><i>04</i><b>делает Reels, Shorts, TikTok</b><span>вертикальные ролики под каждую площадку</span></div><div class='rt'><i>05</i><b>собирает посты и карусели</b><span>тексты, картинки, обложки</span></div><div class='rt'><i>06</i><b>выкладывает сам</b><span>по расписанию, без вашего участия</span></div></div><p class='acc'>Месяц контента за один вечер. Ни камеры, ни монтажа</p>",
+    "dirk": "Б16 · Контент и AI-аватар",
+    "note": "Шесть строк из editable #209. Аватар — самая «вау» часть, на ней задержаться.  [дожим · блок 16: Контент и AI-аватар]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "k": "Кто уже так сделал",
+    "t": "Светлана · контент-завод",
+    "b": "<div class='duo'><div class='col'><h5>Было</h5><div>ассистент на зарплате, никакого блога</div></div><div class='col good'><h5>Стало</h5><div>8.000 подписчиков и доход в месяц</div></div></div><div class='big-num' style='font-size:clamp(34px,5.4cqw,84px);margin:.4cqh 0'>$3.000</div><p class='quote'>«Три агента — и контент пошёл сам»</p><p class='mut'>Светлана · два месяца</p>",
+    "dirk": "Б16 · Контент и AI-аватар",
+    "note": "Продолжение истории Светланы: сначала дизайн, потом контент-завод. ⚠️ Нужно согласие.  [дожим · блок 16: Контент и AI-аватар]",
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "k": "",
+    "t": "Ваше лицо работает без вас",
+    "b": "<p class='mut'>Контент-завод — услуга с оплатой каждый месяц</p><a class='cta-btn' href='#ОПЛАТА' target='_blank' rel='noopener'>Забронировать место — $10<span class='cic'>↗</span></a>",
+    "dirk": "Б16 · Контент и AI-аватар",
+    "note": "  [дожим · блок 16: Контент и AI-аватар]"
+  },
+  {
+    "dirk": "Б17 · Под ключ",
+    "a": 1,
+    "lv": 9,
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Если у вас уже есть бизнес</div><h2 class=\"dh md\">Не хотите учиться сами — поставим агентов под ключ</h2><div class=\"tiles\" style=\"--cols:3\"><div class=\"tile\"><b>01 · Разбираем бизнес</b><span>где утекают деньги и время</span></div><div class=\"tile\"><b>02 · Ставим семь агентов</b><span>под ваши процессы, а не «вообще»</span></div><div class=\"tile\"><b>03 · Передаём команде</b><span>учим ваших вести агентов дальше</span></div></div><div class=\"worth\"><span>цена внедрения</span><b>от $10.000</b></div><p class=\"note center\">Просто оплатите бронь $10 — и забронируете бесплатный созвон без очереди</p></div></div>",
+    "note": "блок дожима после кнопки, для владельцев бизнеса. Ответ тому, кто думает «мне некогда учиться». Спокойно, без напора: «есть второй путь — мы приходим и ставим». Цена называется ровно: от десяти тысяч долларов. Путь один и тот же для всех: бронь $10 даёт бесплатный созвон без очереди. ~40 сек.  [дожим · блок 17: Под ключ, если есть бизнес]",
+    "t": ""
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "t": "",
+    "dirk": "Б17 · Под ключ · что уже поставили",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Под ключ · наши внедрения</div><h2 class=\"dh md\">Что мы уже поставили бизнесам</h2><div class='cwall cwall3'><div class='ccard'><div class='cshot' style=\"background-image:url(assets/photo/brands/maesta.webp)\"></div><div class='cbody'><b>MAESTA</b><span>клиника лазерных технологий</span><em class='pr'>сайт клиники и кампания по возврату базы пациентов</em><span class='cnote'>база 3.500 человек</span></div></div><div class='ccard'><div class='cshot' style=\"background-image:url(assets/photo/brands/lk-bauservice.webp)\"></div><div class='cbody'><b>L.K. Bauservice</b><span>строительство, Германия</span><em class='pr'>воронка найма: лендинг и анкета, которая сама отбирает кандидатов</em><span class='cnote'>анкета вместо ручного отбора</span></div></div><div class='ccard'><div class='cshot' style=\"background-image:url(assets/photo/brands/svoi-cifry.webp)\"></div><div class='cbody'><b>Свої цифри</b><span>аналитика для бизнеса</span><em class='pr'>сайт сервиса и голосовой помощник, который встречает клиента</em><span class='cnote'>запущено и работает</span></div></div></div><p class=\"note center\">Клиника, стройка в Германии, сервис аналитики. В каждом — наши агенты внутри процессов компании</p></div></div>",
+    "st": [
+      "need",
+      "выручка по этим проектам — только с письменного согласия клиентов. Без цифр слайд работает как доказательство внедрений, с цифрами станет сильнее"
+    ],
+    "note": "блок дожима, сразу за «Под ключ»: доказательство, что мы не только учим, но и внедряем сами. Назвать три ниши вслух — клиника, стройка в Германии, сервис аналитики. Цифры выручки НЕ называть, пока клиенты не дали согласие. «Это не ученики. Это компании, куда мы зашли сами». ~25 сек.  [дожим · блок 17: Под ключ, если есть бизнес]"
+  },
+  {
+    "a": 1,
+    "lv": 8,
+    "t": "",
+    "dirk": "Б18 · Умеете после блока 2",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">После блока 2 · умеете, а не «прошли»</div><h2 class=\"dh sm\">Что вы умеете делать</h2><div class=\"tiles arts\" style=\"--cols:3\"><div class=\"tile art\"><div class=\"artimg\" style=\"background-image:url(assets/photo/umeete/issledovanie.webp)\"></div><b>Исследование ниши и аудитории</b><span>ДНК клиента на данных, не на догадках</span></div><div class=\"tile art\"><div class=\"artimg\" style=\"background-image:url(assets/photo/umeete/strategiya.webp)\"></div><b>Маркетинговая стратегия</b><span>диагноз, развилки, упаковка</span></div><div class=\"tile art\"><div class=\"artimg\" style=\"background-image:url(assets/photo/umeete/predlozhenie.webp)\"></div><b>Предложение и цена</b><span>от которого глупо отказаться</span></div><div class=\"tile art\"><div class=\"artimg\" style=\"background-image:url(assets/photo/umeete/teksty.webp)\"></div><b>Тексты</b><span>сайт, посты, письма, сценарии</span></div><div class=\"tile art\"><div class=\"artimg\" style=\"background-image:url(assets/photo/umeete/dizayn.webp)\"></div><b>Дизайн</b><span>презентации, коммерческие предложения, баннеры</span></div><div class=\"tile art\"><div class=\"artimg\" style=\"background-image:url(assets/photo/umeete/sayty.webp)\"></div><b>Сайты</b><span>одностраничный · многостраничный · интернет-магазин</span></div></div><p class=\"note center\">16 готовых задач · один агент «AI-Сайты» делает услугу целиком</p></div></div>",
+    "note": "решение Влада: «умеете», не «услуги в прайсе» — прайс остаётся из 7 услуг. Исследование и стратегия — этапы внутри услуги сайта; дизайн презентаций и КП — умение, отдельная услуга AI-дизайн идёт с «Команды». ~25 сек. На плитках — реальные артефакты: ДНК клиента и предложение (MILO KIDS), три стратегии (Крипто-У), текст VSL, именное КП, сайт. Показать пальцем: «это не картинки — это документы, которые выходят из агентов».  [дожим 18 · визуализация, развернуть в 6 экранов]  [дожим · блок 18: Визуализация работы агентов]",
+    "st": [
+      "new",
+      "правка 7b — что умеете после блока 2"
+    ]
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "t": "",
+    "dirk": "Б18 · Блок 2 в цифрах",
+    "b": "<div class='tl2'><div class=\"stack-v\"><div class=\"eyebrow\">Блок 2 · итог</div><h2 class=\"dh sm\">Первый блок — в цифрах</h2><div class=\"tiles nums\" style=\"--cols:5\"><div class=\"tile num\"><b>4 + 1</b><span>модуля</span></div><div class=\"tile num\"><b>16</b><span>задач закрываете</span></div><div class=\"tile num\"><b>1</b><span>агент</span></div><div class=\"tile num\"><b>6</b><span>умений</span></div><div class=\"tile num\"><b class=\"money\">$1.000–$3.000</b><span>потенциал в месяц</span></div></div><p class=\"note center\">Один агент оказывает услугу целиком. Сотрудники внутри — под каждую точечную задачу</p></div></div>",
+    "note": "итог блока одними цифрами, без слов: 4 модуля плюс нулевой · 16 задач · 1 агент · 6 умений · потенциал $1.000–$3.000 в месяц. Лестница дохода: Bronze $1.000–$3.000 → Silver $3.000–$5.000 → Gold $5.000+ (решение Влада 09.09). «Потенциал», не «прогноз». Дисклеймер на слайде.  [дожим 18 · вслед за серией умений]  [дожим · блок 18: Визуализация работы агентов]",
+    "st": [
+      "new",
+      "правка 7c — цифры блока 2"
+    ],
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Помните 5 задач в начале?</h2><div class=\"tiles\" style=\"--cols:3\"><div class=\"tile\"><b>Креатив</b><span>готов</span></div><div class=\"tile\"><b>Видео</b><span>готово</span></div><div class=\"tile\"><b>Реклама</b><span>готова</span></div><div class=\"tile\"><b>Продавец</b><span>готов</span></div><div class=\"tile\"><b>Контент</b><span>готов</span></div></div><p class=\"note center\">Пока мы разговаривали, агенты доделали остальное</p></div></div>",
+    "dirk": "Б18 · Пять задач",
+    "note": "закрытие петли «покажу в конце». Вау-момент, не обучение. пять артефактов бегло, без углубления. 🖼 5 готовых артефактов на экран. Trial close: «помните, что написали в начале? Напишите ту же цифру — сколько из пяти закрыто».  [дожим · блок 18: Визуализация работы агентов]"
+  },
+  {
+    "dirk": "Б19 · С кем работали",
+    "a": 1,
+    "lv": 9,
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">С кем мы уже работали</div><h2 class=\"dh md\">Разные ниши и разные страны — система одна</h2><div class='sitewall sitewall3'><figure class='sw'><div class='swimg' style=\"background-image:url(assets/photo/brands/tis.webp)\"></div><figcaption><b>ТІС</b><small>портовый оператор, Одесса</small><u>порт №1 в Украине · с 1994 года</u></figcaption></figure><figure class='sw'><div class='swimg' style=\"background-image:url(assets/photo/brands/zarmilkas.webp)\"></div><figcaption><b>Zarmilkas</b><small>украшения ручной работы</small><u>270 тыс. подписчиков · с 2008 года</u></figcaption></figure><figure class='sw'><div class='swimg' style=\"background-image:url(assets/photo/brands/maesta.webp)\"></div><figcaption><b>MAESTA</b><small>клиника лазерных технологий</small><u>оборудование DEKA · база 3.500 пациентов</u></figcaption></figure><figure class='sw'><div class='swimg' style=\"background-image:url(assets/photo/brands/diamant.webp)\"></div><figcaption><b>Діамант-М</b><small>стоматология, Киев</small><u>работает с 1998 года</u></figcaption></figure><figure class='sw'><div class='swimg' style=\"background-image:url(assets/photo/brands/lk-bauservice.webp)\"></div><figcaption><b>L.K. Bauservice</b><small>строительство, Германия</small><u>прямой работодатель с 2015</u></figcaption></figure><figure class='sw'><div class='swimg' style=\"background-image:url(assets/photo/brands/malaclear.webp)\"></div><figcaption><b>MALACLEAR</b><small>уход за кожей</small><u>100+ отзывов</u></figcaption></figure><figure class='sw'><div class='swimg' style=\"background-image:url(assets/photo/brands/bioswiss.webp)\"></div><figcaption><b>BioSwiss</b><small>нутрицевтика</small></figcaption></figure><figure class='sw'><div class='swimg' style=\"background-image:url(assets/photo/brands/batumibox.webp)\"></div><figcaption><b>BATUMI BOX</b><small>бокс, Батуми</small></figcaption></figure><figure class='sw'><div class='swimg' style=\"background-image:url(assets/photo/brands/svoi-cifry.webp)\"></div><figcaption><b>Свої цифри</b><small>аналитика для бизнеса</small></figcaption></figure></div><p class=\"note center\">Порт №1 в стране, бренд украшений с четвертью миллиона подписчиков, клиника, стройка в Германии. Агенты не спрашивают, какая у вас ниша</p></div></div>",
+    "st": [
+      "need",
+      "ТІС: экран взят с их сайта tis.ua, факты — их собственные. Нужно от Влада: что именно мы для них делали и согласие называть компанию"
+    ],
+    "note": "блок дожима. Не зачитывать все девять — назвать три: «бренд украшений с двумястами семьюдесятью тысячами подписчиков, клиника, стройка в Германии». Доказательства под брендами — подтверждённые, их можно называть вслух. Смысл один: ниша не имеет значения. ~25 сек.  [дожим · блок 19: Разные ниши, разные страны]",
+    "t": ""
+  },
+  {
+    "dirk": "Б20 · Кейсы внедрения",
+    "a": 1,
+    "lv": 9,
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><div class=\"eyebrow\">Кейсы учеников</div><h2 class=\"dh md\">Какую услугу оказали — и сколько на ней заработали</h2><div class=\"uwall\"><div class=\"ucard\" style=\"--i:0\"><div class=\"usvc\"><i>🌐</i>AI-сайты</div><div class=\"uwho\">Саша, 14 лет</div><div class=\"uwhat\">собрал лендинг голосом и продал клиенту</div><div class=\"usum\"><b class=\"cnt\" data-to=\"250\" data-from=\"0\" data-prefix=\"$\" data-suffix=\"\" data-dot=\"1\" data-dur=\"1300\">$250</b></div><div class=\"usub\">за выходные · сейчас $1.500–$3.000 в месяц</div></div><div class=\"ucard\" style=\"--i:1\"><div class=\"usvc\"><i>🎯</i>Реклама</div><div class=\"uwho\">Артём · перформанс</div><div class=\"uwhat\">пересобрал сайт, запустил рекламу и бота на заявки</div><div class=\"usum\"><b class=\"cnt\" data-to=\"400000\" data-from=\"0\" data-prefix=\"\" data-suffix=\" ₴\" data-dot=\"1\" data-dur=\"1300\">400.000 ₴</b></div><div class=\"usub\">заявка обходится в 59 ₴</div></div><div class=\"ucard\" style=\"--i:2\"><div class=\"usvc\"><i>🧭</i>SEO и нейропоиск</div><div class=\"uwho\">Аня, Германия</div><div class=\"uwhat\">контент-завод сам пишет и выкладывает каждый вечер</div><div class=\"usum\"><b class=\"cnt\" data-to=\"500\" data-from=\"0\" data-prefix=\"$\" data-suffix=\"\" data-dot=\"1\" data-dur=\"1300\">$500</b></div><div class=\"usub\">× 4 клиента в месяц · 73 цитирования нейросетей за 3 недели</div></div><div class=\"ucard\" style=\"--i:3\"><div class=\"usvc\"><i>✍️</i>Контент</div><div class=\"uwho\">Максим · студия 3D</div><div class=\"uwhat\">переупаковал продукт и собрал контент-систему на агентах</div><div class=\"usum\"><b class=\"cnt\" data-to=\"100000\" data-from=\"0\" data-prefix=\"$\" data-suffix=\"+\" data-dot=\"1\" data-dur=\"1300\">$100.000+</b></div><div class=\"usub\">продажи студии после переупаковки</div></div><div class=\"ucard\" style=\"--i:4\"><div class=\"usvc\"><i>🎨</i>Дизайн и КП</div><div class=\"uwho\">Светлана</div><div class=\"uwhat\">собрала клиенту продающую презентацию</div><div class=\"usum\"><b class=\"cnt\" data-to=\"500\" data-from=\"0\" data-prefix=\"$\" data-suffix=\"\" data-dot=\"1\" data-dur=\"1300\">$500</b></div><div class=\"usub\">за два дня работы</div></div><div class=\"ucard\" style=\"--i:5\"><div class=\"usvc\"><i>🤖</i>Внедрение под ключ</div><div class=\"uwho\">Юрий · коуч, не программист</div><div class=\"uwhat\">17 сайтов и 8 ботов для клиентов</div><div class=\"usum\"><b class=\"cnt\" data-to=\"6708\" data-from=\"0\" data-prefix=\"€\" data-suffix=\"\" data-dot=\"1\" data-dur=\"1300\">€6.708</b></div><div class=\"usub\">за 90 дней · 19 платных клиентов · 30 платежей</div></div></div><p class=\"note center\">Одна услуга — один ученик — его деньги. Это те же семь услуг, которые вы сегодня видели</p><div class=\"disc\">результаты индивидуальны</div></div></div>",
+    "st": [
+      "need",
+      "согласия на имена и суммы: Саша (свой), Артём, Аня, Максим, Светлана, Юрий. В базе прямая пометка «ни одно согласие не собрано»"
+    ],
+    "note": "блок дожима после кнопки: по одному кейсу на каждую услугу из прайса. Суммы набегают счётчиками — дать досчитать. Не зачитывать все шесть: назвать сайты (сын, четырнадцать лет, триста долларов за выходные) и внедрение (Юрий, почти семь тысяч евро за девяносто дней), остальное — «дальше по экрану». Обязательно: «это их деньги, не мои». 30 сек.  [дожим · блок 20: Кейсы учеников — много кейсов]",
+    "t": ""
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">Забирайте подарки</h2><div class=\"tiles\" style=\"--cols:3\"><div class=\"tile\"><b>ХОЛСТ</b><span>весь эфир в одном документе: калькулятор, услуги и цены, путь до клиента, все промты</span></div><div class=\"tile\"><b>Агент, который собирает сайты</b><span>тот же, которым я работал при вас</span></div><div class=\"tile\"><b>Подписки на нейросети</b><span>со скидкой до 90%</span></div></div></div></div>",
+    "dirk": "Б21 · Подарки",
+    "note": "выполнить обещание. Последний эмоциональный пик щедрости. открывать по одному, с коротким комментарием. Ссылка в чат, попросить написать «забрал».  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"flag\"><h2 class=\"dh\">Карта — не путешествие</h2><p class=\"lead\">ХОЛСТ покажет, ЧТО работает</p><p class=\"note\">Система даёт руки, которые это делают, и человека, который проверит ваш первый заказ</p></div></div>",
+    "dirk": "Б21 · Карта не путешествие",
+    "note": "закрыть риск «наелся подарками». «подарки разогревают аппетит. Кормит система».  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"strike cta-slide\"><h2 class=\"dh md\">Забрали карту — берите и руки</h2><div class=\"bigbtn\"><span class=\"lbl\">Забронировать место — $10</span><span class=\"ic\">↗</span></div><div class=\"deadline\">условия действуют до конца эфира + 30 минут</div></div></div>",
+    "dirk": "Б21 · CTA 6",
+    "note": "  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"photo\"><div class=\"img ph-p8\"></div><div class=\"tint\"></div><div class=\"scrim\"></div><div class=\"frameline\"></div><div class=\"copy mid\"><h2 class=\"dh md\">Ответы на то, что вы сейчас думаете</h2><p class=\"lead\">Пройдусь по самым частым — потом отвечу на ваши из чата</p></div></div></div>",
+    "dirk": "Б21 · Легализация QA",
+    "note": "«за сотни разговоров я знаю эти вопросы наизусть и уважаю каждый».  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><h2 class=\"dh sm\">Пока отвечаю на вопросы</h2><table class=\"ledger\"><tbody><tr class=\"\"><td class=\"idx\">01</td><td>Ценность целиком</td><td class=\"v\">$21.350</td></tr><tr class=\"\"><td class=\"idx\">02</td><td>Вход</td><td class=\"v\">от $490</td></tr><tr class=\"sum\"><td></td><td>Сегодня — бронь</td><td class=\"v\">$10</td></tr></tbody></table></div></div>",
+    "dirk": "Б21 · Экран Q&A · старт",
+    "note": "показать оффер ДО ответов, чтобы стек и цена были перед глазами (канон 76). Ответы идут слайдами — после каждого третьего ответа возвращаться сюда клавишей назад.  [дожим · блок 21: Финал — ответы на вопросы]",
+    "st": [
+      "new",
+      "копия финального экрана — канон 76"
+    ]
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"qa\"><div class=\"quotemark\">“</div><h2 class=\"dh md\">«Дорого»</h2><p class=\"answer\">Один сайт — $250. Вход от $490. Это две сделки</p></div></div>",
+    "dirk": "Б21 · Q&A 1",
+    "note": "логика → кейс (Наталья: $300 на пятый день) → микро-CTA.  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">«У меня нет времени»</h2><div class=\"week\"><div class=\"wk-d on\"><span>ПН</span><i>30 мин</i></div><div class=\"wk-d\"><span>ВТ</span><i></i></div><div class=\"wk-d on\"><span>СР</span><i>30 мин</i></div><div class=\"wk-d\"><span>ЧТ</span><i></i></div><div class=\"wk-d on\"><span>ПТ</span><i>30 мин</i></div><div class=\"wk-d\"><span>СБ</span><i></i></div><div class=\"wk-d\"><span>ВС</span><i></i></div></div><p class=\"note center\">Три куска по полчаса за неделю. Прервались — вернулись к тому же месту</p></div></div>",
+    "dirk": "Б21 · Q&A 2",
+    "note": "«час подряд каждый день — этих трёх условий нет ни у кого из вас. Если вам такое обещают — закрывайте». Кейс: Юра — 4 дня.  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"qa\"><div class=\"quotemark\">“</div><h2 class=\"dh md\">«Я в этом ноль»</h2><p class=\"answer\">Задачу ставите словами. Программировать не придётся</p></div></div>",
+    "dirk": "Б21 · Q&A 3",
+    "note": "кейс Антона — «в сайтах и SEO полный ноль». 60% из 340 участников до этого не заработали онлайн ни доллара.  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">«Мне уже 47. Не поздно?»</h2><div class=\"age\"><div class=\"age-line\"><span class=\"age-mk\" style=\"left:62%\"><b>47</b></span></div><div class=\"age-ends\"><span>18 — самый младший</span><span>65 — самая опытная</span></div></div><p class=\"note center\">Ваш опыт никуда не делся. Он просто перестал быть работой</p></div></div>",
+    "dirk": "Б21 · Q&A 4",
+    "note": "дословно из Домино: «агент умеет делать. Но он не знает, кому и зачем. Ремесло отдаём агенту, понимание остаётся вашим». Кейс Натальи.  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v\"><h2 class=\"dh md\">«А если мне никто не ответит?»</h2><div class=\"funnel\"><div class=\"fn-row\"><div class=\"fn-bar\" style=\"width:100%\"><span>30 сообщений в день</span></div></div><div class=\"fn-row\"><div class=\"fn-bar\" style=\"width:77%\"><span>9 ответов</span></div></div><div class=\"fn-row\"><div class=\"fn-bar\" style=\"width:54%\"><span>4 демонстрации</span></div></div></div><p class=\"note center\">Не отвечают девять из десяти. Так у всех — поэтому и нужен агент, а не сила воли</p></div></div>",
+    "dirk": "Б21 · Q&A 5",
+    "note": "правило тридцати. Проверено живой рассылкой: 24 сообщения — 3 ответа.  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"qa\"><div class=\"quotemark\">“</div><h2 class=\"dh md\">«А что я скажу клиенту?»</h2><p class=\"answer\">Скрипт первого разговора и агент-продавец, который дожимает переписку</p></div></div>",
+    "dirk": "Б21 · Q&A 6",
+    "note": "«и главное — вы показываете демо ДО оплаты. Ситуация \"заплатил и разочаровался\" просто не возникает».  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"qa\"><div class=\"quotemark\">“</div><h2 class=\"dh md\">«У меня нет блога и аудитории»</h2><p class=\"answer\">Ничего не требует вашего лица и ленты. Услуга оказывается конкретному человеку</p></div></div>",
+    "dirk": "Б21 · Q&A 7",
+    "note": "  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"qa\"><div class=\"quotemark\">“</div><h2 class=\"dh md\">«А вы вообще кто?»</h2><p class=\"answer\">Оплата только на странице, которую вы видели на экране. Карту и код из СМС в переписке не спрашивают никогда</p></div></div>",
+    "dirk": "Б21 · Q&A 8",
+    "note": "дословно: «загуглите меня со словом развод — я не мешаю».  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"qa\"><div class=\"quotemark\">“</div><h2 class=\"dh md\">«Сколько я заработаю?»</h2><p class=\"answer\">Конкретных цифр не называю. Это зависит от того, сколько связок вы примените</p></div></div>",
+    "dirk": "Б21 · Q&A 9",
+    "note": "честно и прямо. Дальше — потенциал по наборам, но со словом «потенциал».  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"qa\"><div class=\"quotemark\">“</div><h2 class=\"dh md\">«Начну со следующего потока»</h2><p class=\"answer\">В следующий раз цена уже не эфирная, бонусы сгорят, поток стартует одной датой</p></div></div>",
+    "dirk": "Б21 · Q&A 10",
+    "note": "мягко, без вины: «\"с понедельника\" — это то, что вы обещаете себе не первый год. Как оно?»  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 6,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"qa\"><div class=\"quotemark\">“</div><h2 class=\"dh md\">«А если именно у меня не получится?»</h2><p class=\"answer\">У вас агенты, куратор, разборы, чат и гарантия. Что именно должно «не получиться»?</p></div></div>",
+    "dirk": "Б21 · Q&A 11",
+    "note": "самое глубокое, отвечать тепло. «Этот вопрос задавал себе каждый из сегодняшних кейсов. Подросток. Бухгалтер, которую не брали на работу. Человек, который два с половиной месяца назад спрашивал у ChatGPT рецепт ужина». ---  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"strike\"><div class=\"eyebrow big-eyebrow\">Сколько стоит год «я подумаю»</div><div class=\"figure\">$3.000</div><p class=\"lead center\">Один сайт в месяц по $250 — это $3.000 за год</p><p class=\"note center\">Ровно столько стоит год в статусе «я подумаю»</p></div></div>",
+    "dirk": "Б21 · Цена ожидания",
+    "note": "цена бездействия с видимым расчётом. посчитать вслух, спокойно, как арифметику. Пауза на финальной цифре.  [дожим · блок 21: Финал — ответы на вопросы]",
+    "disc": 1
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"photo\"><div class=\"img ph-p6\"></div><div class=\"tint\"></div><div class=\"scrim\"></div><div class=\"frameline\"></div><div class=\"copy\"><h2 class=\"dh md\">AI не заменит людей</h2><p class=\"lead\">Но люди с AI заменят людей без AI</p><p class=\"note\">Кнопка под видео. Дальше отвечаю на ваши вопросы</p></div></div></div>",
+    "dirk": "Б21 · Финал",
+    "note": "закольцовка на большую идею — работу делает агент, а не вы. пауза. Дальше — личное: «я начал с $600 в месяц и вопроса \"как заработать завтра\". Разница между мной тогда и вами сейчас в том, что вам не надо изобретать — агенты уже собраны». Кнопка на экране, дедлайн условий. «Дальше отвечаю на ваши вопросы — кнопка никуда не денется».  [дожим · блок 21: Финал — ответы на вопросы]"
+  },
+  {
+    "a": 1,
+    "lv": 9,
+    "mvp": 1,
+    "t": "",
+    "b": "<div class='tl2'><div class=\"stack-v tight\"><h2 class=\"dh sm\">Пока отвечаю на вопросы</h2><table class=\"ledger\"><tbody><tr class=\"\"><td class=\"idx\">01</td><td>Ценность целиком</td><td class=\"v\">$21.350</td></tr><tr class=\"\"><td class=\"idx\">02</td><td>Вход</td><td class=\"v\">от $490</td></tr><tr class=\"sum\"><td></td><td>Сегодня — бронь</td><td class=\"v\">$10</td></tr></tbody></table></div></div>",
+    "dirk": "Б21 · Экран Q&A",
+    "note": "экран висит до конца эфира, кнопка на экране. ответы голосом, слайд не меняется. Каждый ответ заканчивается микро-CTA. ---  [дожим · блок 21: Финал — ответы на вопросы]"
+  }
+]

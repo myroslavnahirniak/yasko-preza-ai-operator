@@ -1,0 +1,5 @@
+# Slide25 photo
+
+Built-in imagegen. Saved unchanged: `assets/photo/s25-services-v1.png`.
+
+Square cinematic editorial photograph for a premium AI-services presentation, black and warm golden palette. Lower half: a beautiful designer's black desk in three-quarter perspective with an open elegant laptop displaying a realistic refined architecture website mockup (large building photograph, tiny unreadable UI lines), a tablet standing beside it with a tasteful advertising campaign image, and a printed design sheet; these are professionally finished deliverables for a business. Warm directional golden rim lighting, tactile anodized metal, quiet dark studio, subtle reflections, no person, no robot, no money bills, no dollar symbols, no cloches. Objects fully visible in lower 50-88% of image. Upper 48% is deep nearly uniform warm-black #0B0907 negative space reserved for heading and large live price overlay. Sophisticated photographic realism, clean commercial art direction, not sci-fi, no glowing interfaces, no text or numbers that need reading, no logos, no watermarks. Full bleed 1:1.

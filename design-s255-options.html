@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>255 · Досвід допомагає · три варіанти</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="design-options-base.css">
+<style>
+:root{--controls:116px}
+body{font-family:Manrope,sans-serif}
+.slide{background:radial-gradient(ellipse at 80% 90%,#181309 0%,#0b0907 62%)}
+.slide h1,.slide .claim,.slide .result{font-family:Unbounded,sans-serif;font-weight:500;letter-spacing:-.035em}
+.slide h1{font-size:4.35cqw;line-height:1.3}
+.slide p{font:400 2.85cqw/1.47 Manrope,sans-serif;color:#d6d1c8}
+.slide strong{font-weight:600;color:var(--cream)}
+.slide .result{font-size:3.55cqw;line-height:1.35;color:var(--cream)}
+.slide .top{position:absolute;left:7cqw;right:7cqw;top:7cqh}
+.slide .result{position:absolute;left:7cqw;right:7cqw;bottom:6.8cqh}
+.slide .result em{white-space:nowrap}
+.slide .enter{animation:arrive .6s ease both}
+@keyframes arrive{from{opacity:.3;transform:translateY(.8cqh)}to{opacity:1;transform:none}}
+/* A: editorial photo, two readable paragraphs, a separate conclusion. */
+.v-A .copy{position:absolute;top:27.5cqh;left:7cqw;right:7cqw;display:grid;grid-template-columns:1fr 1fr;gap:5cqw}
+.v-A .copy p{font-size:2.85cqw;line-height:1.43}
+.v-A .photo{position:absolute;left:7cqw;right:7cqw;top:51cqh;height:27cqh;border-radius:1.5cqw;overflow:hidden;background:#1a1109}
+.v-A .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 89%;display:block}
+.v-A .photo:after{content:"";position:absolute;inset:0;border:1px solid #ad8e5430;border-radius:inherit;pointer-events:none}
+.v-A .result{padding-top:2.8cqh;border-top:1px solid #79622180}
+/* B: one statement carries the whole scene. */
+.v-B .top{text-align:center}
+.v-B .lead{position:absolute;top:29cqh;left:12cqw;right:12cqw;text-align:center}
+.v-B .claim{position:absolute;top:41cqh;left:7cqw;right:7cqw;font-size:4.35cqw;line-height:1.35;text-align:center;color:var(--yellow)}
+.v-B .line{position:absolute;top:61cqh;left:37cqw;right:37cqw;height:1px;background:linear-gradient(90deg,transparent,#fdd506aa,transparent)}
+.v-B .explain{position:absolute;top:66cqh;left:10cqw;right:10cqw;text-align:center}
+.v-B .result{text-align:center;font-size:3.3cqw}
+.v-B .halo{position:absolute;left:7cqw;right:7cqw;top:33cqh;height:25cqh;background:radial-gradient(ellipse,#fdd50609,transparent 68%);pointer-events:none}
+/* C: manual action and understanding, side by side on a common baseline. */
+.v-C .top{text-align:center}
+.v-C .lead{position:absolute;top:27cqh;left:9cqw;right:9cqw;text-align:center}
+.v-C .comparison{position:absolute;left:5cqw;right:5cqw;top:39cqh;height:31cqh}
+.v-C .comparison img{width:100%;height:100%;object-fit:contain;display:block}
+.v-C .captions{position:absolute;left:7cqw;right:7cqw;top:70cqh;display:grid;grid-template-columns:1fr 1fr;gap:6cqw}
+.v-C .captions p{font-size:2.75cqw;line-height:1.4;text-align:center}
+.v-C .captions p:first-child{color:#b9b2a6}
+.v-C .result{bottom:5.5cqh;font-size:3.3cqw;text-align:center;padding-top:2.4cqh;border-top:1px solid #66582480}
+.controls .tabs{gap:8px}
+.controls button{font-size:13px;padding:8px 14px}
+.controls .description{max-width:850px;font-size:12px;line-height:1.4}
+.controls .note a{color:#b9b2a6;text-decoration:none}
+.controls .note a:hover{text-decoration:underline;color:var(--cream)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
+@media(max-width:600px){:root{--controls:144px}.controls{gap:7px;padding:8px}.controls button{font-size:11px;padding:7px 8px}.description{max-width:95vw}.controls .note{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.slide .enter{animation:none}}
+</style>
+</head>
+<body>
+<main class="slide" id="slide" aria-label="Слайд 255 — варіанти оформлення"></main>
+<nav class="controls" aria-label="Порівняння варіантів">
+ <div class="tabs" role="tablist" aria-label="Варіант оформлення">
+  <button role="tab" data-v="A">1 · Фото і повітря</button>
+  <button role="tab" data-v="B">2 · Досвід — перевага</button>
+  <button role="tab" data-v="C">3 · Дві сильні сторони</button>
+ </div>
+ <p class="description"></p>
+ <p class="note">Слайд 255 · ← → перемикають варіанти · <a href="google180.html?square&clean&s=255" target="_blank" rel="noopener">Поточний слайд</a></p>
+</nav>
+<script>
+// Source: display 255 / Google 263 / g3f9b3adf0b8_0_1847, snapshot 2026-09-21.
+// Each layout preserves every sentence; no hidden steps or changes to the main deck.
+const heading='<header class="top enter"><h1>«А если мне 45?<br><em>А если 54?</em>»</h1></header>';
+const result='<p class="result enter">Здесь выигрывает не скорость рук,<br>а <em>понимание</em></p>';
+const first='Саша справился, потому что ему не мешал опыт. <strong>Вам он не мешает — он помогает.</strong>';
+const second='Молодой быстрее нажимает кнопки. <strong>Вы быстрее понимаете, что клиенту на самом деле нужно.</strong>';
+window.ORDER=['A','B','C'];
+window.VARIANTS={
+ A:{html:heading+'<div class="copy enter"><p>'+first+'</p><p>'+second+'</p></div><figure class="photo enter"><img src="assets/gen-b243/s253-glasses.webp" alt="Окуляри на блокноті поруч із ноутбуком у теплому світлі"></figure>'+result,
+ desc:'Рекомендую: два короткі блоки пояснення, велике фото й окремий виразний висновок. Текст не перекриває зображення.'},
+ B:{html:'<div class="halo" aria-hidden="true"></div>'+heading+'<p class="lead enter">Саша справился, потому что ему не мешал опыт.</p><div class="claim enter">Вам он не мешает —<br>он помогает.</div><div class="line" aria-hidden="true"></div><p class="explain enter">'+second+'</p>'+result,
+ desc:'Спокійна типографічна подача: головний акцент на тому, що досвід допомагає. Повний текст видно одночасно.'},
+ C:{html:heading+'<p class="lead enter">'+first+'</p><figure class="comparison enter"><img src="assets/proposals/s255/understanding.svg" alt="Ліворуч — клавіші та курсор, праворуч — розуміння запиту клієнта"></figure><div class="captions enter"><p>Молодой быстрее<br>нажимает кнопки.</p><p><strong>Вы быстрее понимаете, что клиенту на самом деле нужно.</strong></p></div>'+result,
+ desc:'Предметне порівняння: натискання кнопок і розуміння клієнта. Об’ємна графіка пояснює різницю, висновок об’єднує обидві частини.'}
+};
+</script>
+<script src="design-options-base.js"></script>
+</body>
+</html>

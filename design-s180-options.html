@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>180 · Сейчас ещё сделаем несколько услуг · визуалы</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+:root{--bg:#0b0907;--cream:#f5f3ee;--muted:#c4bdb1;--dim:#6f685e;--yellow:#fdd506;--rule:#2a2420;--panel:#15110d;--controls:150px}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding-bottom:var(--controls);background:#000;color:var(--cream);font:400 14px/1.4 Manrope,sans-serif}
+.slide{position:relative;width:min(100vw,calc(100dvh - var(--controls)));aspect-ratio:1;container-type:size;overflow:hidden;background:var(--bg)}
+.slide h1,.slide p{margin:0}
+h1{position:absolute;left:7cqw;right:7cqw;top:7cqw;font:500 4.6cqw/1.18 Unbounded,sans-serif;letter-spacing:-.03em;z-index:4}
+h1 em{font-style:normal;color:var(--yellow)}
+.media{position:relative;background:#000;overflow:hidden}
+.media img,.media video{width:100%;height:100%;object-fit:cover;display:block}
+.media.fit video{object-fit:contain}
+.media.light img{object-position:top}
+.media .src{position:absolute;right:1cqw;bottom:.8cqh;font:400 1.4cqw/1 Manrope,sans-serif;color:#6f685e;background:rgba(11,9,7,.7);padding:.5cqh .8cqw}
+.media.ph{border:1px dashed #4a4238;background:repeating-linear-gradient(-45deg,#100c09 0 1.2cqw,#15110d 1.2cqw 2.4cqw);display:flex;align-items:center;justify-content:center;text-align:center;font:400 1.9cqw/1.4 Manrope,sans-serif;color:var(--dim);padding:2cqw}
+.media.ph b{display:block;color:var(--muted);font-weight:500;margin-bottom:.6cqh}
+/* A · 2×2 cards */
+.vA .grid{position:absolute;left:7cqw;right:7cqw;top:27cqh;bottom:7cqw;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1.8cqw;z-index:3}
+.vA .card{background:var(--panel);border:1px solid var(--rule);border-radius:1.2cqw;overflow:hidden;display:flex;flex-direction:column;opacity:0;transform:translateY(2cqh)}
+.vA.play .card{animation:up .6s cubic-bezier(.2,.8,.2,1) forwards}
+.vA.play .card:nth-child(2){animation-delay:.2s}.vA.play .card:nth-child(3){animation-delay:.4s}.vA.play .card:nth-child(4){animation-delay:.6s}
+.vA .card .media{flex:1;min-height:0;border-bottom:1px solid var(--rule)}
+.vA .card .txt{display:flex;gap:1.4cqw;align-items:baseline;padding:1.3cqh 1.6cqw}
+.vA .card .n{font:500 2.4cqw/1 Unbounded,sans-serif;color:var(--yellow);letter-spacing:-.02em}
+.vA .card span{font:400 2.05cqw/1.3 Manrope,sans-serif;color:var(--cream)}
+/* B · rows with thumbs */
+.vB .rows{position:absolute;left:7cqw;right:7cqw;top:26cqh;bottom:6cqh;display:flex;flex-direction:column;z-index:3}
+.vB .row{flex:1;display:grid;grid-template-columns:6cqw 1fr 24cqw;gap:2cqw;align-items:center;border-top:1px solid var(--rule);padding:1.2cqh 0;opacity:0;transform:translateX(-1.5cqw)}
+.vB.play .row{animation:up .55s cubic-bezier(.2,.8,.2,1) forwards}
+.vB.play .row:nth-child(2){animation-delay:.2s}.vB.play .row:nth-child(3){animation-delay:.4s}.vB.play .row:nth-child(4){animation-delay:.6s}
+.vB .row .n{font:500 2.6cqw/1 Unbounded,sans-serif;color:var(--yellow);letter-spacing:-.02em}
+.vB .row span.t{font:400 2.5cqw/1.3 Manrope,sans-serif;color:var(--cream)}
+.vB .row .media{height:100%;max-height:13cqh;border:1px solid #2f2822;border-radius:.9cqw}
+.vB .row .media.ph{font-size:1.5cqw;padding:1cqw}.vB .row .media.ph b{display:none}
+@keyframes up{to{opacity:1;transform:none}}
+.controls{position:fixed;bottom:0;left:0;right:0;height:var(--controls);background:#0c0a08f5;border-top:1px solid #292319;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:0 16px}
+.tabs,.actions{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap}
+button{font:400 13px/1.3 Manrope,sans-serif;cursor:pointer;border:1px solid #504735;border-radius:7px;background:#17130d;color:#ddd5c6;padding:7px 12px}
+button[aria-selected="true"]{color:var(--yellow);border-color:var(--yellow);background:#27210e}
+.description{font-size:12px;text-align:center;color:#c8bfad;max-width:960px;margin:0}
+.note{font-size:11px;color:#a49a84;text-align:center;margin:0;max-width:960px}
+</style></head><body>
+<main class="slide vA" id="slide"></main>
+<nav class="controls"><div class="tabs" role="tablist"><button role="tab" data-v="A">А · Четыре карточки 2×2</button><button role="tab" data-v="B">Б · Четыре строки с превью справа</button></div>
+<p class="description"></p><p class="note">Полный текст четырёх строк. 01 / 02 / 04 — из зипки Влада; 03 «рекламные объявления» — в зипке нет баннеров/объявлений, оставлено место под визуал (штрихованная рамка).</p>
+<div class="actions"><button id="replay">↻ Повторить</button></div></nav>
+<script>
+const R=[
+ ['01','продавец в переписке и по телефону (AI-продавец)',{video:'assets/vlad-1409/video/tg-seller-voice.mp4',poster:'assets/vlad-1409/video/tg-seller-voice-poster.jpg',fit:1,src:'зипка Влада · tg-seller-voice.mp4'}],
+ ['02','рекламное видео с моим лицом (AI-Контент)',{video:'assets/vlad-1409/video/avatar-1.mp4',poster:'assets/vlad-1409/video/avatar-1-poster.jpg',src:'зипка Влада · avatar-1.mp4'}],
+ ['03','рекламные объявления (AI-дизайнер)',{ph:'место под визуал: рекламные объявления / баннеры'}],
+ ['04','реклама в соц сетях (AI-таргет)',{img:'assets/vlad-1409/uslugi/target-github.jpg',light:1,src:'зипка Влада · target-github.jpg'}]];
+const media=m=>m.ph?'<div class="media ph"><div><b>Визуал подставит Мирослав</b>'+m.ph+'</div></div>':'<div class="media'+(m.fit?' fit':'')+(m.light?' light':'')+'">'+(m.video?'<video src="'+m.video+'" poster="'+m.poster+'" muted playsinline loop autoplay></video>':'<img src="'+m.img+'" alt="">')+'<span class="src">'+m.src+'</span></div>';
+const H='<h1>Сейчас ещё сделаем <em>несколько услуг</em></h1>';
+const V={
+A:{desc:'Четыре карточки 2×2: превью результата сверху, номер и полная строка снизу. Видео играют. Под 03 — рамка-заглушка того же размера, чтобы потом просто подменить файл.',
+ html:()=>H+'<div class="grid">'+R.map(r=>'<div class="card">'+media(r[2])+'<div class="txt"><span class="n">'+r[0]+'</span><span>'+r[1]+'</span></div></div>').join('')+'</div>'},
+B:{desc:'Ближе к нынешнему слайду: те же четыре строки с номерами, у каждой справа превью результата. Текст крупнее, чем в 2×2, картинки меньше.',
+ html:()=>H+'<div class="rows">'+R.map(r=>'<div class="row"><span class="n">'+r[0]+'</span><span class="t">'+r[1]+'</span>'+media(r[2])+'</div>').join('')+'</div>'}};
+const slide=document.getElementById('slide');let cur='A';
+function render(){slide.className='slide v'+cur;slide.innerHTML=V[cur].html();document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.v===cur)));document.querySelector('.description').textContent=V[cur].desc;requestAnimationFrame(()=>requestAnimationFrame(()=>slide.classList.add('play')));slide.querySelectorAll('video').forEach(v=>v.play().catch(()=>{}))}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{cur=b.dataset.v;render()});
+document.getElementById('replay').onclick=render;
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){cur=cur==='A'?'B':'A';render()}});
+const q=new URLSearchParams(location.search);if(V[q.get('v')])cur=q.get('v');render();
+</script></body></html>
