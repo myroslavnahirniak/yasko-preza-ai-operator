@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-22T08:34:33.54516Z",
+    "display_name": "GPT Image 2.5",
+    "id": "c31706b6-46a6-42d3-bc7e-a6c72d5e6b89",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_083433_c31706b6-46a6-42d3-bc7e-a6c72d5e6b89_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). The same tired man in a plain jacket stands in a dim old apartment building stairwell in front of a worn apartment door, pressing the doorbell with one finger, a folder of papers under his other arm, peeling paint, one warm bulb, deep coffee-brown shadows, subtle yellow (#FDD506) glow. Slightly comic, sad mood, premium photography. No readable text, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_083433_c31706b6-46a6-42d3-bc7e-a6c72d5e6b89.png",
+    "status": "completed"
+  }
+]

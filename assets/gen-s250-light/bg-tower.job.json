@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-22T02:32:52.308461Z",
+    "display_name": "GPT Image 2.5",
+    "id": "5df53cec-6e33-42c0-be50-dea1f16569a7",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_023252_5df53cec-6e33-42c0-be50-dea1f16569a7_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "A tall slender tower of thirteen thin rounded matte discs stacked with even gaps, standing on a cream floor in the right third of the frame, one disc in the middle saturated yellow, long soft shadow falling to the left. Warm off-white cream background, colour #f0ece3, filling the entire frame edge to edge. Bright airy studio, soft diffused daylight, gentle realistic shadows. Matte materials in warm bone, sand and pale grey, with one single accent of saturated yellow. No green, no blue, nothing dark. Clean minimal high-end editorial 3D render, square 1:1 composition. The left half and the top of the frame must stay completely empty cream, with the object placed in the right portion of the frame. Absolutely no text, no letters, no numbers, no logos, no people.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_023252_5df53cec-6e33-42c0-be50-dea1f16569a7.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-09-22T03:41:12.566957Z",
+    "display_name": "GPT Image 2.5",
+    "id": "f6f39849-ecf7-4465-bd0f-d2793fd75712",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_034112_f6f39849-ecf7-4465-bd0f-d2793fd75712_min.webp",
+    "params": {
+      "aspect_ratio": "3:2",
+      "height": 1360,
+      "medias": [
+        {
+          "data": {
+            "id": "1e669213-bf5c-4160-8ffa-2ad00bec4a67",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/1e669213-bf5c-4160-8ffa-2ad00bec4a67.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Photoreal cinematic still, 3:2 landscape, wide shot with breathing room. The man from the reference photo (platinum-blond short hair, full brown beard, black t-shirt), face clearly recognizable, in a dark warm studio: deep coffee-brown shadows (#0B0907), one warm key light, matte dark surfaces with brass edges. No readable text, no logos, no watermark. Scene: he sits relaxed in a leather chair holding a phone, like a boss; behind and around him a team of SEVEN small sleek matte-black robot assistants with glowing visors, one of them holding a smartphone to its head like a salesman on a call. Accent light: rich electric-yellow gold glow (#FDD506) on the edges, cinematic.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_034112_f6f39849-ecf7-4465-bd0f-d2793fd75712.png",
+    "status": "completed"
+  }
+]

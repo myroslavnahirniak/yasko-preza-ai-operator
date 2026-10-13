@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T23:07:03.559712Z",
+    "display_name": "GPT Image 2.5",
+    "id": "48147601-29f1-454f-bcb4-56fce465907e",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_230703_48147601-29f1-454f-bcb4-56fce465907e_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Abstract three-dimensional render: five vertical columns of warm golden light rising out of a dark floor into a black void, each column taller than the previous one, soft volumetric glow, fine dust particles in the beams, glass-like reflections underneath. Deep black background, warm amber and electric yellow tones only, absolutely no green and no blue. Cinematic, editorial, moody. Composition anchored to the lower half of the frame; the entire upper half is empty black negative space reserved for text. Absolutely no text, no letters, no numbers, no logos, no people.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_230703_48147601-29f1-454f-bcb4-56fce465907e.png",
+    "status": "completed"
+  }
+]

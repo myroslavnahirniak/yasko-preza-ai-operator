@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-22T01:51:35.239784Z",
+    "display_name": "GPT Image 2.5",
+    "id": "9a6bac79-e455-4efd-a848-440f9558ea4e",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_015135_9a6bac79-e455-4efd-a848-440f9558ea4e_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Thirteen thin matte plates arranged as a gently ascending staircase curving upward, floating with soft shadows on a cream surface, the highest plate edged in saturated yellow. Warm off-white cream background, colour #f0ece3, evenly lit studio, soft diffused daylight, gentle realistic contact shadow. Matte materials in warm bone, sand and pale grey, with one single accent of saturated yellow. No green, no blue, no dark or black background. Clean minimal high-end editorial 3D product render, square composition, generous empty cream space around the object. Absolutely no text, no letters, no numbers, no logos, no people.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_015135_9a6bac79-e455-4efd-a848-440f9558ea4e.png",
+    "status": "completed"
+  }
+]

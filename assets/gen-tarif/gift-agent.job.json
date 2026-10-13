@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-09-22T04:44:40.661101Z",
+    "display_name": "GPT Image 2.5",
+    "id": "a0ff4f5e-14c7-41f3-8ea7-90e4b2b69f93",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_044440_a0ff4f5e-14c7-41f3-8ea7-90e4b2b69f93_min.webp",
+    "params": {
+      "aspect_ratio": "3:2",
+      "height": 1360,
+      "medias": [
+        {
+          "data": {
+            "id": "884edba9-1fb6-47b5-bb70-392b6e6bf606",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/884edba9-1fb6-47b5-bb70-392b6e6bf606.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Photoreal cinematic still, 3:2 landscape, premium product photography on a dark warm studio table: deep coffee-brown shadows (#0B0907), one warm key light, matte black materials with brass edges, subtle yellow (#FDD506) accent glow. No readable text, no letters, no logos, no watermark. Subject: a small sleek matte-black robot assistant with a glowing yellow visor standing next to a laptop; on the laptop screen an abstract website wireframe being assembled from glowing yellow blocks.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_044440_a0ff4f5e-14c7-41f3-8ea7-90e4b2b69f93.png",
+    "status": "completed"
+  }
+]

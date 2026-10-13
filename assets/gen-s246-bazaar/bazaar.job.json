@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-22T08:34:33.551192Z",
+    "display_name": "GPT Image 2.5",
+    "id": "49567832-21bd-4297-9ae9-57ed6a31b358",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_083433_49567832-21bd-4297-9ae9-57ed6a31b358_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). A tired man in a plain jacket stands behind a small wooden market stall at a night flea market, on the counter a hand-painted cardboard sign that reads \"САЙТЫ\" in big Cyrillic letters, nothing else for sale, empty street around him, one warm bulb above the stall, deep coffee-brown shadows, subtle yellow (#FDD506) glow, thin haze. Slightly comic, sad mood, premium photography. The sign text must be exactly \"САЙТЫ\". No other text, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_083433_49567832-21bd-4297-9ae9-57ed6a31b358.png",
+    "status": "completed"
+  }
+]

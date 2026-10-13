@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-22T01:50:27.915238Z",
+    "display_name": "GPT Image 2.5",
+    "id": "c965c43f-ec38-414f-9923-1fbdf881f102",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_015027_c965c43f-ec38-414f-9923-1fbdf881f102_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "A neat vertical stack of thirteen identical thin rounded slabs, like a tower of matte ceramic tiles, standing on a cream surface, the topmost slab edged in saturated yellow. Warm off-white cream background, colour #f0ece3, evenly lit studio, soft diffused daylight, gentle realistic contact shadow. Matte materials in warm bone, sand and pale grey, with one single accent of saturated yellow. No green, no blue, no dark or black background. Clean minimal high-end editorial 3D product render, square composition, generous empty cream space around the object. Absolutely no text, no letters, no numbers, no logos, no people.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_015027_c965c43f-ec38-414f-9923-1fbdf881f102.png",
+    "status": "completed"
+  }
+]

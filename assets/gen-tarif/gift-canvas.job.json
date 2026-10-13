@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-09-22T04:44:40.595068Z",
+    "display_name": "GPT Image 2.5",
+    "id": "db8da857-2064-424c-a250-f948818f1266",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_044440_db8da857-2064-424c-a250-f948818f1266_min.webp",
+    "params": {
+      "aspect_ratio": "3:2",
+      "height": 1360,
+      "medias": [
+        {
+          "data": {
+            "id": "58cd00cc-5a8b-4b14-86a6-0b9c4989a1d3",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/58cd00cc-5a8b-4b14-86a6-0b9c4989a1d3.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Photoreal cinematic still, 3:2 landscape, premium product photography on a dark warm studio table: deep coffee-brown shadows (#0B0907), one warm key light, matte black materials with brass edges, subtle yellow (#FDD506) accent glow. No readable text, no letters, no logos, no watermark. Subject: an open thick black notebook / large document laid flat, pages showing an abstract layout with a small calculator, a price list grid and a winding path diagram drawn in glowing yellow lines; a brass pen beside it.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_044440_db8da857-2064-424c-a250-f948818f1266.png",
+    "status": "completed"
+  }
+]
