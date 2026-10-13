@@ -1,0 +1,487 @@
+{
+  "sourceGoogleObjectId": "g3f9b3adf0b8_0_1774",
+  "allowPartTitles": true,
+  "authorization": "Мирослав 22.09: перенести HTML Секрету2 з preza-ai-operator-v5.vercel.app; весь блок до Секрету3, remote228–259.",
+  "slides": [
+    {
+      "t": "Как получить первого клиента, даже если вы никогда ничего не продавали",
+      "b": "<p class='mut'>Секрет №2 — про то, что умение продавать больше не нужно. Нужна конструкция, которая продаёт вместо вас</p>",
+      "k": "Секрет №2",
+      "note": "\nImported Secret2 · remote slide 228",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 228
+      }
+    },
+    {
+      "t": "«Услуги я понял. А клиентов где взять?»",
+      "b": "<div class='route'><div class='rt'><i>01</i><b>Я же не встану на базаре с прилавком</b></div><div class='rt'><i>02</i><b>Я не умею продавать</b></div><div class='rt'><i>03</i><b>Я вчера про эти услуги узнал</b></div></div><p class='acc'>Саша говорил слово в слово. Через сутки у него была первая продажа</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 229",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 229
+      }
+    },
+    {
+      "t": "Так это выглядит в голове",
+      "b": "<p class='mut'>Мужик за прилавком с табличкой «САЙТЫ». Он же звонит в двери по подъездам</p><div class='vizslot'>🖼 ВИЗУАЛ: иллюстрация на весь слайд — базар и обход квартир</div><p class='acc'>Смешно. И ровно так все и представляют себе «искать клиентов»</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 230",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 230
+      }
+    },
+    {
+      "t": "На самом деле вопроса два",
+      "b": "<div class='duo'><div class='col'><h5>Первый</h5><div>А у меня получится это <b>сделать</b>?</div></div><div class='col'><h5>Второй</h5><div>А у меня получится это <b>продать</b>, если я не маркетолог?</div></div></div><p class='mut'>Отвечаю по порядку. Второй тяжелее</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 231",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 231
+      }
+    },
+    {
+      "t": "Продавать не нужно. Нужна связка",
+      "b": "<div class='chain'><div class='ch'><i>01</i><b>Что продаём</b><span>какую услугу</span></div><div class='ch'><i>02</i><b>Кому продаём</b><span>какому бизнесу</span></div><div class='ch pay'><i>03</i><b>Как подходим</b><span>и где искать, чтобы не было конкурентов</span></div></div><p class='acc'>Спрос есть, конкуренции нет. Это и есть связка</p>",
+      "k": "Как это устроено",
+      "note": "\nImported Secret2 · remote slide 232",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 232
+      }
+    },
+    {
+      "t": "Связка, которую я собрал",
+      "b": "<div class='svz'><div class='svzc' style='animation-delay:.05s'><i>Что</i><b>AI-сайты</b><span>от $250</span></div><div class='svzc' style='animation-delay:.25s'><i>Кому</i><b>Локальному бизнесу</b><span>он есть на Google-картах, а сайта нет или он старый</span></div><div class='svzc pay' style='animation-delay:.45s'><i>Как</i><b>Показываем готовое</b><span>сайт собран заранее, клиент просто смотрит</span></div></div><p class='mut'>Одна услуга, один тип клиента, один способ подойти</p>",
+      "k": "Вот моя первая",
+      "note": "Заполненная связка сразу после формулы. Три карточки читать по одной, паузой: зал должен увидеть, что каждое поле — это один короткий ответ, а не стратегия. «Бесплатно» здесь ключевое: сайт показываем до оплаты, поэтому уговаривать не нужно. Как именно — на следующем слайде, здесь не расшифровывать.\nImported Secret2 · remote slide 233",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 233
+      }
+    },
+    {
+      "t": "Как — это четыре решения",
+      "b": "<div class='svz4'><div style='animation-delay:.05s'><i>🎯</i><b>Одна ниша</b><span>не распыляемся — берём одну и знаем её</span></div><div style='animation-delay:.2s'><i>🧩</i><b>Один шаблон</b><span>второй сайт занимает минуты</span></div><div style='animation-delay:.35s'><i>📍</i><b>Топ-локации</b><span>города, где покупают чаще</span></div><div style='animation-delay:.5s'><i>🎁</i><b>Бесплатный сайт</b><span>показываем до оплаты — уговаривать нечего</span></div></div><p class='mut'>Четыре решения принимаются один раз — дальше повторяется</p>",
+      "k": "Как именно",
+      "note": "Раскрытие «как» из связки. Читать по одной плитке. Последняя — ключевая: бесплатный сайт снимает продажу как таковую, человеку нечего решать. Топ-локации — обещание, список входит в программу (бонус #303).\nImported Secret2 · remote slide 234",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 234
+      }
+    },
+    {
+      "t": "Это одна связка. У нас их больше двадцати",
+      "b": "<div class='svzg'><div class='svzgi open' style='animation-delay:.04s'><i>🌐</i><b>AI-сайты</b><u></u></div><div class='svzgi' style='animation-delay:0.07s'><i>🎨</i><b>AI-дизайн</b><u></u></div><div class='svzgi' style='animation-delay:0.09s'><i>🎬</i><b>AI-видео</b><u></u></div><div class='svzgi' style='animation-delay:0.12s'><i>✍️</i><b>Контент</b><u></u></div><div class='svzgi' style='animation-delay:0.14s'><i>🎯</i><b>AI-таргет</b><u></u></div><div class='svzgi' style='animation-delay:0.17s'><i>🧭</i><b>AI-SEO</b><u></u></div><div class='svzgi' style='animation-delay:0.19s'><i>💬</i><b>AI-продавец</b><u></u></div><div class='svzgi' style='animation-delay:0.22s'><i>✍️</i><b>Контент</b><u></u></div><div class='svzgi' style='animation-delay:0.24s'><i>🎯</i><b>AI-таргет</b><u></u></div><div class='svzgi' style='animation-delay:0.27s'><i>🧭</i><b>AI-SEO</b><u></u></div><div class='svzgi' style='animation-delay:0.29s'><i>💬</i><b>AI-продавец</b><u></u></div><div class='svzgi' style='animation-delay:0.32s'><i>🌐</i><b>AI-сайты</b><u></u></div><div class='svzgi' style='animation-delay:0.34s'><i>🎨</i><b>AI-дизайн</b><u></u></div><div class='svzgi' style='animation-delay:0.36s'><i>🎬</i><b>AI-видео</b><u></u></div><div class='svzgi' style='animation-delay:0.39s'><i>🧭</i><b>AI-SEO</b><u></u></div><div class='svzgi' style='animation-delay:0.41s'><i>💬</i><b>AI-продавец</b><u></u></div><div class='svzgi' style='animation-delay:0.44s'><i>🌐</i><b>AI-сайты</b><u></u></div><div class='svzgi' style='animation-delay:0.47s'><i>🎨</i><b>AI-дизайн</b><u></u></div><div class='svzgi' style='animation-delay:0.49s'><i>🎬</i><b>AI-видео</b><u></u></div><div class='svzgi' style='animation-delay:0.52s'><i>✍️</i><b>Контент</b><u></u></div><div class='svzgi' style='animation-delay:0.54s'><i>🎯</i><b>AI-таргет</b><u></u></div></div><p><b>Семь услуг — и под каждую свои связки:</b> кому продавать, где искать, как подойти</p><p class='mut'>Открыта одна. Остальные лежат готовые — их не надо придумывать</p>",
+      "k": "Сколько их всего",
+      "note": "Масштаб. Зал только что увидел одну связку и думает «а если она не моя». Показываем: услуг семь, связок больше двадцати, открыта пока одна. Ниши на закрытых плитках намеренно не подписаны — не выдумываем то, чего нет в каталоге. Каталог — бонус #304.\nImported Secret2 · remote slide 235",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 235
+      }
+    },
+    {
+      "t": "Биржа против салона груминга",
+      "b": "<div class='duo'><div class='col bad'><h5>Биржа</h5><div>тысячи исполнителей на один заказ</div><div>выигрывает тот, кто дешевле</div><div>вы — строка в списке</div></div><div class='col good'><h5>Салон, который теряет клиентов</h5><div>конкурентов ноль</div><div>сравнивать не с кем</div><div>вы — единственный, кто написал</div></div></div><p class='acc'>Услуга одна и та же. Меняется только «где находим»</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 236",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 236
+      }
+    },
+    {
+      "t": "Я никогда не любил продавать",
+      "b": "<p>Переговоры, уговоры, объяснять по третьему разу, ждать ответа и накручивать себя — всё это не моё.</p><p class='mut'>Даже когда было агентство на тысячу проектов — продавал не я. Я нанял отдел продаж</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 237",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 237
+      }
+    },
+    {
+      "t": "Поэтому у меня всегда была одна стратегия",
+      "b": "<div class='duo'><div class='col'><h5>Фотограф</h5><div>снимал людей бесплатно</div><div>набил портфолио</div><div>дальше рекомендовали — уже за деньги</div></div><div class='col'><h5>Маркетолог</h5><div>опыта не было — тренировался на бесплатных</div><div>делал работу целиком</div><div>а потом спрашивал: «сколько готовы заплатить?»</div></div></div><p class='acc'>Сначала отдал. Потом спросил цену</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 238",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 238
+      }
+    },
+    {
+      "t": "Я не стал продавцом. Я оставил ту же стратегию",
+      "b": "<p>Двадцать лет мешало одно: бесплатно можно было отдать пять раз. Каждый раз это были мои руки и мои недели.</p><p class='acc'>Теперь работу делает агент. И отдать можно хоть сто раз</p><p class='mut'>И чтобы проверить, что дело не во мне, я нашёл человека, который не продавал вообще никогда</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 239",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 239
+      }
+    },
+    {
+      "t": "Ваша работа — заполнить три поля",
+      "b": "<p class='mut'>Реальный агент. Слева пустой шаблон, справа заполненный.</p><p>Кнопки, которая что-то испортит, здесь не существует</p>",
+      "k": "Экран",
+      "note": "Демонстрация простоты. Не показывать процесс целиком — только дверь.\nImported Secret2 · remote slide 240",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 240
+      }
+    },
+    {
+      "t": "Пустой шаблон и готовый сайт",
+      "b": "<p class='mut'>Слева — пустой шаблон под нишу. Справа — то, что из него вышло</p><div class='vizslot'>🖼 ВИЗУАЛ: два окна браузера рядом — пустой шаблон и ФАЙНО!pet</div><p class='acc'>Между ними — один запуск агента</p>",
+      "k": "Экран",
+      "note": "\nImported Secret2 · remote slide 241",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 241
+      }
+    },
+    {
+      "t": "Сломать невозможно",
+      "b": "<div class='slchan'><div class='slc'><i>🧭</i><b>Ведёт по шагам</b><span>не даёт перескочить и забыть</span></div><div class='slc'><i>🔒</i><b>Нет кнопки «испортить»</b><span>ошибиться негде</span></div><div class='slc'><i>💬</i><b>Не понял — спроси у него же</b><span>не надо гуглить и искать курсы</span></div></div><p class='acc'>Первый вопрос закрыт. Второй тяжелее</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 242",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 242
+      }
+    },
+    {
+      "t": "Я взял человека с худшими вводными, каких смог найти",
+      "b": "<p>Своего сына Сашу. 14 лет. Ни опыта, ни маркетинга, ни кода.</p><p class='mut'>Он никогда никому ничего не продавал — и от руки почти не пишет, всё на компьютере</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 243",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 243
+      }
+    },
+    {
+      "t": "И предложил то, чего сам раньше не допускал",
+      "b": "<p class='quote'>«Давай продадим сайты, которых ещё нет»</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 244",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 244
+      }
+    },
+    {
+      "t": "Ниша нашлась из-за собаки",
+      "b": "<p>Знакомая переехала в новый город и хотела записать собаку на груминг. Не смогла нигде.</p><p class='acc'>У всех салонов сайты такие, что записаться нельзя</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 245",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 245
+      }
+    },
+    {
+      "t": "Почему именно такие ниши",
+      "b": "<div class='slchan'><div class='slc'><i>🏪</i><b>Бизнес офлайн и работает</b><span>не стартап, а живая точка</span></div><div class='slc'><i>👥</i><b>Клиенты уже есть</b><span>их не надо искать — их теряют</span></div><div class='slc'><i>📵</i><b>Сайта нет или он мешает</b><span>записаться невозможно</span></div></div><p class='acc'>И шаблон под такую нишу у нас уже готов</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 246",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 246
+      }
+    },
+    {
+      "t": "Алгоритм, который я ему дал",
+      "b": "<div class='s2alg'><div class='s2st'><div class='s2n'>01</div><b>Найди 10 салонов</b><span>в одном городе</span></div><div class='s2st'><div class='s2n'>02</div><b>Напиши каждому</b><span>«можно записаться?»</span></div><div class='s2st'><div class='s2n'>03</div><b>Когда ответят</b><span>«хотел через сайт — не вышло»</span></div><div class='s2st'><div class='s2n'>04</div><b>«Я вам его уже сделал»</b><span>обычно беру $1.000, вам бесплатно</span></div><div class='s2st pay'><div class='s2n'>05</div><b>Сказал «да»</b><span>агент собирает сайт по шаблону</span></div></div><p class='mut'>Саше хватило первой десятки. Обычно нужно больше — посчитаем в следующем секрете</p><p class='mut'>Пять шагов. Ни одного, где надо уметь продавать</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 247",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 247
+      }
+    },
+    {
+      "t": "Вот что именно пишем",
+      "b": "<div class='s2msg'><div class='s2b me'><i>Первое сообщение</i>Добрый день! А к вам можно записать собаку на груминг?</div><div class='s2b them'><i>Отвечают</i>Да, конечно. На какое число?</div><div class='s2b me'><i>Второе</i>Я пробовал записаться через сайт — не получилось. Вы так много клиентов теряете?</div><div class='s2b me key'><i>Третье — ради него всё</i>Я сделал вам новый сайт, где можно записаться за минуту. Обычно беру за такие $1.000 — вам сделал бесплатно. Хотите посмотреть?</div></div>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 248",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 248
+      }
+    },
+    {
+      "t": "Почему это срабатывает",
+      "b": "<p>Вы ничего не продаёте. Вы уже сделали — и отдаёте. Человеку нечего согласовывать, нечего ждать и нечем рисковать.</p><p class='acc'>Клиент убеждает себя сам</p><p class='mut'>И так можно сколько угодно: сайт агенту стоит копейки. Метод посчитан и повторяем — цифры будут в следующем секрете</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 249",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 249
+      }
+    },
+    {
+      "t": "Саша",
+      "b": "<p class='mut'>Первая продажа — меньше чем через сутки</p><div class='duo'><div class='col good'><h5>Сколько заняло</h5><div><b>Меньше 24 часов</b></div><div>алгоритм я показал один раз</div></div><div class='col good'><h5>Сколько принесло</h5><div><b>$250</b></div><div>дальше его вёл агент, а не я</div></div></div><div class='s2anchor'><b>$1.000</b> — сколько стоит работа. <b>$250</b> — сколько берёт новичок за первую. Эта разница и есть ваш аргумент</div><p class='acc'>Мой сын заработал свои первые деньги раньше, чем я в его возрасте узнал, что так вообще можно</p>",
+      "k": "Кто это сделал",
+      "note": "\nImported Secret2 · remote slide 250",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 250
+      }
+    },
+    {
+      "t": "Вот этот сайт",
+      "b": "<div class='sgrid' style='grid-template-columns:1fr;width:min(56cqw,720px)'><figure><a class='swrap' href='https://fainopet.vercel.app/' target='_blank' rel='noopener'><div class='swin'><span class='sroll' style='background-image:url(assets/photo/uslugi/sajty-fainopet-full.jpg)'></span></div><figcaption>ФАЙНО!pet — грумінг-салон у Харкові<br>Услуги, цены, работы мастеров, запись<u>↗</u></figcaption></a></figure></div><p class='mut'>Живой. Можно открыть прямо сейчас</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 251",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 251
+      }
+    },
+    {
+      "t": "Вы не продаёте. Вы отдаёте",
+      "b": "<div class='duo'><div class='col bad'><h5>Как было</h5><div>уговорить</div><div>отработать возражения</div><div>дожать сомневающегося</div></div><div class='col good'><h5>Как теперь</h5><div>отдал готовое</div><div>показал тем, кому подходит</div><div>работаешь только с теми, кто сказал «да»</div></div></div><p class='acc'>Услуг у вас безлимит — их делают агенты. Уговаривать незачем</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 252",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 252
+      }
+    },
+    {
+      "t": "И общаться уметь не надо",
+      "b": "<p>Что ответить, как снять сомнение, чем закрыть — переписку ведёт нейронка.</p><p class='acc'>Отдельного навыка продаж здесь просто нет</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 253",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 253
+      }
+    },
+    {
+      "t": "Сайт — только первая связка",
+      "b": "<div class='chain'><div class='ch'><i>Кому</i><b>Сайт уже хороший</b><span>ему — AI-SEO, чтобы советовали нейросети</span></div><div class='ch'><i>Кому</i><b>Заявки идут, отвечать некому</b><span>ему — AI-продавца</span></div><div class='ch pay'><i>Кому</i><b>Ведёт контент сам</b><span>ему — контент-завод</span></div></div><p class='acc'>Формула та же. Меняется одна переменная</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 254",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 254
+      }
+    },
+    {
+      "t": "И под каждую — своя модель поиска",
+      "b": "<div class='tags'><span>стоматология</span><span>барбершоп</span><span>груминг</span><span>оптика</span><span>кондитерская</span><span>автомойка</span><span>студия маникюра</span><span>кофейня</span></div><p class='mut'>Не «попробуйте разное», а последовательность, которую уже прогнали и знают, чего от неё ждать</p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 255",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 255
+      }
+    },
+    {
+      "t": "«А если ему не понравится?»",
+      "b": "<p>Правки — это норма, а не провал. Дизайнер переделывает по три раза и берёт за это деньги.</p><p class='mut'>У вас правка занимает минуты, а не дни</p>",
+      "k": "",
+      "note": "Вова: сказать прямо — не всем будет нравиться, это нормальный рынок; учим превращать недовольного клиента в того, кто рекомендует.\nImported Secret2 · remote slide 256",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 256
+      }
+    },
+    {
+      "t": "И главное — вы показываете до оплаты",
+      "b": "<p>Он видит демо раньше, чем платит.</p><p><b>Ситуация «заплатил и разочаровался» просто не возникает</b></p>",
+      "k": "",
+      "note": "\nImported Secret2 · remote slide 257",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 257
+      }
+    },
+    {
+      "t": "Ни один из них не стал специалистом",
+      "b": "<p><b>Все просто включили машину</b></p>",
+      "k": "",
+      "note": "Пик Секрета 2 — «если смог сын и Юра…»\nImported Secret2 · remote slide 258",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 258
+      }
+    },
+    {
+      "t": "Петля закрыта. Осталось одно",
+      "b": "<p>Продавать вы умеете — точнее, уметь и не надо.</p><p class='acc'>Остался вопрос, который я слышу чаще всех: а когда это делать и где брать людей?</p><p class='tcq'>Видите себя внутри? Напишите «вижу»</p>",
+      "k": "",
+      "note": " TRIAL CLOSE (конец Секрета 2): «Видите себя внутри? Напишите «вижу»» — спросить с восходящей интонацией и дождаться чата.\nImported Secret2 · remote slide 259",
+      "foundation": {
+        "local": 0,
+        "type": "content",
+        "sourceOnly": false,
+        "omitMedia": true,
+        "media": [],
+        "block129": null,
+        "importedHTML": 259
+      }
+    }
+  ]
+}
