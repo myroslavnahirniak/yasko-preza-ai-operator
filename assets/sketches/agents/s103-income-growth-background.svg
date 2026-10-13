@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none">
+  <title>Схематичний образ зростання доходу</title>
+  <defs>
+    <linearGradient id="face" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FDD506" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#FDD506" stop-opacity=".012"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="80" y1="890" x2="880" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDD506" stop-opacity=".19"/>
+      <stop offset=".45" stop-color="#FDD506" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#FDD506" stop-opacity=".65"/>
+    </linearGradient>
+    <linearGradient id="arrow" x1="70" y1="832" x2="898" y2="118" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDD506" stop-opacity=".2"/>
+      <stop offset=".6" stop-color="#FDD506" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#FDD506" stop-opacity=".65"/>
+    </linearGradient>
+    <radialGradient id="light">
+      <stop stop-color="#FDD506" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#FDD506" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="copy-space" cx=".5" cy=".51" r=".49" gradientTransform="translate(0 -.055) scale(1 1.1)">
+      <stop offset="0" stop-color="black"/>
+      <stop offset=".64" stop-color="#111"/>
+      <stop offset="1" stop-color="white"/>
+    </radialGradient>
+    <mask id="quiet-center"><rect width="1000" height="1000" fill="url(#copy-space)"/></mask>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="11"/></filter>
+  </defs>
+  <ellipse cx="852" cy="180" rx="330" ry="290" fill="url(#light)"/>
+  <ellipse cx="110" cy="835" rx="240" ry="205" fill="url(#light)" opacity=".55"/>
+  <g mask="url(#quiet-center)">
+    <!-- Two sculptural columns; the height ratio is the stated 3,000 → 15,000. -->
+    <path d="M89 719 195 690 241 721 135 752Z" fill="#FDD506" fill-opacity=".10" stroke="url(#edge)"/>
+    <path d="M89 719V865L195 836V690M89 865 135 898 241 868V721M135 752V898" fill="url(#face)" stroke="url(#edge)"/>
+    <path d="M779 163 885 134 931 165 825 196Z" fill="#FDD506" fill-opacity=".15" stroke="url(#edge)"/>
+    <path d="M779 163V893L885 864V134M779 893 825 926 931 896V165M825 196V926" fill="url(#face)" stroke="url(#edge)"/>
+    <path d="M89 875 135 908 251 876M769 907 825 941 943 907" stroke="#FDD506" stroke-opacity=".09"/>
+    <path d="M-65 877C165 877 264 732 396 599S736 357 914 71" stroke="#FDD506" stroke-opacity=".15" stroke-width="18" filter="url(#glow)"/>
+    <path d="M-65 877C165 877 264 732 396 599S736 357 914 71" stroke="url(#arrow)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="m860 91 54-20 6 57" stroke="#FDD506" stroke-opacity=".65" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="79" cy="859" r="6" fill="#FDD506" fill-opacity=".4"/>
+    <circle cx="79" cy="859" r="16" stroke="#FDD506" stroke-opacity=".15"/>
+  </g>
+</svg>

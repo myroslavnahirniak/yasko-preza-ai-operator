@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none"><defs><filter id="ink" x="-8%" y="-8%" width="116%" height="116%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="8" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G"/></filter></defs><g filter="url(#ink)" stroke="#F5F3EE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M54 493q218-14 484-1" opacity=".25" stroke-width="2"/>
+<path fill="#FDD506" fill-opacity=".04" stroke="none" d="M89 319q93-37 205 16 100-55 213-12l-15 146q-99-32-198 17-99-49-210-17Z"/>
+<path d="M85 316q103-43 211 16 97-52 208-13l-7 144q-105-29-201 19-97-46-213-20l2-146ZM295 334l1 146M98 310l6-18q93-18 192 28 101-48 201-19l6 15M82 470q119-22 213 23 106-45 205-24M73 332l-9 148q128-17 231 26 104-43 220-26l5-144"/>
+<path d="m120 342 126 13m-129 10 126 14m-129 11 129 15m-131 8 95 12M345 353q57-18 113-7m-115 30q57-18 115-9m-114 32q48-17 113-8m-115 33q50-16 85-13" stroke-width="2.8" opacity=".48"/>
+<path stroke="#FDD506" d="m112 393 133 16m98-12q49-15 114-9" stroke-width="6" opacity=".8"/>
+<path d="m101 178 171-70 172 68-171 69-172-67ZM171 210v49q100 51 201 1v-51M444 179l-1 81M442 258q-12 6-12 21l22 1q0-15-10-22"/>
+<path d="m118 186 155 61 153-63M185 227v25q85 42 172-1" opacity=".28" stroke-width="2"/>
+<path stroke="#FDD506" d="m469 292 33-89 17 6-34 90-12 11-4-18ZM501 203l7-18 18 7-7 17m-46 102 10-4"/>
+<path d="m57 274 16-3m-2-48 18 14m416-92 14-14m-30 4 2-17" stroke-width="2" opacity=".4"/></g></svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none"><defs><filter id="ink" x="-8%" y="-8%" width="116%" height="116%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="8" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G"/></filter></defs><g filter="url(#ink)" stroke="#F5F3EE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M61 491q199-8 467 4M80 507l422-1" opacity=".25" stroke-width="2"/>
+<path fill="#FDD506" fill-opacity=".045" stroke="none" d="M145 473V231l159-84 161 83v243Z"/>
+<path d="m118 240 183-99 184 96M128 249l175-92 174 91M146 239l-3 231 322 3-2-231M143 476l-15 14 355 1-17-16"/>
+<path d="M237 471v-99q64-40 124 0v100M243 377q54-34 111 1M297 361v111M309 424h2"/>
+<path stroke="#FDD506" d="m300 139 2-65q30 14 70 1l-1 56q-33 11-69-3"/>
+<path d="M301 169c-47 1-51 75-1 78 53 3 51-79 1-78ZM300 183l-1 30 18 9"/>
+<path d="m173 276 55-1 1 58-57 2 1-59Zm1 30 54-1m-28-29 1 58M377 276l55-1-1 57-54 1 0-57Zm0 28 55 1m-28-29 1 56M173 370l52-1v56l-53 1 1-56Zm1 27 50-1m-25-27v56M379 370l51-1 1 57-53-1 1-55Zm1 27h50m-25-27 1 55" stroke-width="3"/>
+<path d="M100 487l-2-101m-8 40c-50 2-54-42-29-56-27-38 13-75 45-58 36-28 71 17 52 44 31 31 3 71-34 68M98 396l-18-20m18 35 28-25" stroke-width="3" opacity=".7"/>
+<path d="m160 447 50-12m-50 20 50-12M386 453l56-10m-56 20 55-10M255 481l99 2" stroke-width="2" opacity=".24"/>
+<path stroke="#FDD506" stroke-width="2" d="m430 124 18-19m3 37 28-4m-66-39 6-23" opacity=".7"/></g></svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none"><defs><filter id="ink" x="-8%" y="-8%" width="116%" height="116%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="8" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G"/></filter></defs><g filter="url(#ink)" stroke="#F5F3EE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M55 501q200-9 482-3" opacity=".25" stroke-width="2"/>
+<path fill="#FDD506" fill-opacity=".055" stroke="none" d="m174 152 312 25-15 192-314-29Z"/>
+<path d="m174 151 310 25-14 192-315-28 19-189ZM193 173q8 16-15 25l-10 101q23 0 23 23l246 20q-4-23 23-24l10-101q-25-2-22-22l-255-22Z"/>
+<path d="m169 159-26 4-17 184 324 42 7-18M142 177l-26 5-16 178 325 50 13-23" opacity=".4"/>
+<g stroke="#FDD506"><ellipse cx="321" cy="259" rx="52" ry="62" transform="rotate(7 321 259)"/><path d="m295 261 19 20 40-49" stroke-width="7"/></g>
+<path d="m208 250 30 2m166 13 28 3" stroke-width="3" opacity=".6"/>
+<path d="M89 498l67-112q10-16 26-8l81 37 89-2q33 0 28 24-2 15-32 17l-74 1M158 393l64 90q8 12 23 12l166-41 85-69q20-18 31-6 10 12-8 34l-78 81-143 51M212 473l-68 22"/>
+<path d="m85 469 33 21-20 32-40-24 27-29Z"/>
+<path stroke="#FDD506" stroke-width="3" d="m448 119 18-25m-41 15 3-29m42 59 29-6M234 115l-17-17" opacity=".7"/>
+<path d="m154 444 18-5m-13 14 18-5m-12 14 18-4M405 209l39 5m-40 9 39 4" stroke-width="2" opacity=".25"/></g></svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none"><defs><filter id="ink" x="-8%" y="-8%" width="116%" height="116%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="8" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G"/></filter></defs><g filter="url(#ink)" stroke="#F5F3EE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M66 502q203-8 466-2" opacity=".25" stroke-width="2"/>
+<path d="m158 129 224-5 7 279-219 9-12-283ZM143 156l-22 1 13 278 222-4 1-17M121 180l-18 3 7 273 228-3" opacity=".65"/>
+<path d="m185 166 143-3m-142 23 167-4M186 222l115-3m-113 22 140-2m-139 23 152-2M192 304l134-2m-134 24 116-2m-113 25 145-4" stroke-width="3" opacity=".4"/>
+<path stroke="#FDD506" d="M336 205l11 12 26-29M339 263l11 11 23-28M330 339l26 1"/>
+<path d="m98 409 308-1 19 65-349 3 22-67ZM122 424l265-2 8 29-284 3 11-30M76 477l3 14q169 12 346-2l2-15"/>
+<path stroke-width="2" opacity=".3" d="m137 431 5 16m17-17 4 16m17-17 4 16m17-17 4 16m17-17 4 16m17-17 4 16m17-17 4 16m17-17 4 16m17-17 4 16m17-17 4 16M128 439l256-1"/>
+<g stroke="#FDD506"><ellipse cx="469" cy="462" rx="39" ry="12"/><path d="M430 461v22c0 17 79 17 79 0v-21M432 475q38 16 74 0"/><path d="M443 498l-8 15m38-10v17m27-22 9 14" stroke-width="2" opacity=".6"/></g>
+<path stroke="#FDD506" stroke-width="2" d="M427 360q54-7 45 70m-12-10 11 13 11-13" opacity=".55"/></g></svg>

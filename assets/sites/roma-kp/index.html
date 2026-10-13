@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Роман Ильин · Система</title>
+<meta name="description" content="Тело — не цель. Это интерфейс. Персональная wellness-система Романа Ильина." />
+<link rel="stylesheet" href="../../fonts.css" />
+<style>
+:root{
+  --bg:#06080A; --surface:#0E1311; --surface-2:#111815;
+  --accent:#1FE08F; --accent-bright:#5BFFB0; --teal:#0BBF9A;
+  --text:#F4F7F5; --muted:#8B968F; --line:rgba(255,255,255,.08);
+  --glow:0 0 40px rgba(31,224,143,.35);
+  --mono:"JetBrains Mono",monospace; --display:"Manrope",sans-serif; --body:"Manrope",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:auto}
+body{background:var(--bg);color:var(--text);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+canvas{display:block}
+html{scrollbar-width:none}html::-webkit-scrollbar{display:none}
+a{color:inherit;text-decoration:none}
+
+/* ---------- PRELOADER ---------- */
+#preloader{position:fixed;inset:0;z-index:100;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;transition:opacity .8s ease}
+#preloader.hidden{opacity:0;pointer-events:none}
+.pre-mark{font-family:var(--mono);font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--muted)}
+.pre-bar{width:200px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden}
+.pre-fill{height:100%;width:0%;background:var(--accent);box-shadow:var(--glow);transition:width .2s ease}
+.pre-pct{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:.2em}
+
+/* ---------- STAGE (sticky video) ---------- */
+#scrolltrack{position:relative;height:1000vh}
+#stage{position:sticky;top:0;height:100vh;width:100%;overflow:hidden}
+#seq{position:absolute;inset:0;width:100%;height:100%}
+.scrim{position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(120% 80% at 50% 0%, rgba(6,8,10,0) 40%, rgba(6,8,10,.55) 100%),
+    linear-gradient(180deg, rgba(6,8,10,.45) 0%, rgba(6,8,10,.15) 28%, rgba(6,8,10,.25) 62%, rgba(6,8,10,.85) 100%);}
+.grain{position:fixed;inset:0;z-index:6;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+/* ---------- CHAPTERS ---------- */
+#chapters{position:absolute;inset:0;z-index:5}
+.chapter{position:absolute;inset:0;display:flex;opacity:0;will-change:opacity,transform;padding:clamp(28px,6vw,90px)}
+.chapter .inner{max-width:760px}
+.pos-center{align-items:center;justify-content:center;text-align:center}
+.pos-center .inner{max-width:900px}
+.pos-bl{align-items:flex-end;justify-content:flex-start}
+.pos-br{align-items:flex-end;justify-content:flex-end;text-align:right}
+.pos-c{align-items:center;justify-content:center;text-align:center}
+#chapters .chapter:last-child{background:radial-gradient(ellipse 92% 72% at 50% 56%, rgba(6,8,10,.66), rgba(6,8,10,.12) 78%)}
+
+.kicker{font-family:var(--mono);font-size:clamp(10px,1vw,13px);letter-spacing:.32em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;display:inline-flex;gap:12px;align-items:center}
+.kicker::before{content:"";width:26px;height:1px;background:var(--accent);box-shadow:var(--glow)}
+.pos-center .kicker::before,.pos-c .kicker::before{display:none}
+
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,7vw,5.6rem);line-height:1.02;letter-spacing:-.02em}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(2rem,4.6vw,3.6rem);line-height:1.06;letter-spacing:-.02em}
+.lead{font-size:clamp(1rem,1.5vw,1.32rem);line-height:1.55;color:#D7DED9;margin-top:22px;max-width:620px}
+.pos-center .lead,.pos-c .lead{margin-left:auto;margin-right:auto}
+.accent{color:var(--accent);text-shadow:0 0 30px rgba(31,224,143,.45)}
+.text-veil{position:absolute;inset:0;pointer-events:none;z-index:-1}
+.chapter.pos-bl .inner,.chapter.pos-c .inner{position:relative}
+
+.scrollhint{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:10px}
+.scrollhint .line{width:1px;height:46px;background:linear-gradient(var(--accent),transparent);animation:drop 1.8s ease-in-out infinite}
+@keyframes drop{0%{transform:scaleY(.2);transform-origin:top;opacity:.3}50%{transform:scaleY(1);opacity:1}100%{transform:scaleY(.2);transform-origin:bottom;opacity:.3}}
+
+/* cards: system */
+.grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px;max-width:760px}
+.cell{background:rgba(14,19,17,.55);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:16px;padding:18px 18px 20px}
+.cell .ic{font-size:20px}
+.cell h4{font-family:var(--display);font-weight:700;font-size:1rem;margin:10px 0 5px}
+.cell p{font-size:.83rem;color:var(--muted);line-height:1.4}
+
+/* timeline */
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px;max-width:720px}
+.tl .step{background:rgba(14,19,17,.5);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:16px;padding:20px}
+.tl .step .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase}
+.tl .step h4{font-family:var(--display);font-weight:700;font-size:1.05rem;margin-top:10px}
+
+/* recipes */
+.recipes{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.recipe{background:rgba(14,19,17,.55);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:16px;padding:16px 20px;min-width:170px}
+.recipe .t{font-family:var(--display);font-weight:700;font-size:1rem}
+.recipe .meta{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:.15em;margin-top:6px}
+
+/* guarantee */
+.guarantee{margin-top:26px;border:1px solid rgba(31,224,143,.4);border-radius:18px;padding:22px 26px;background:rgba(31,224,143,.06);box-shadow:inset 0 0 60px rgba(31,224,143,.08),0 0 50px rgba(31,224,143,.12);max-width:620px}
+.guarantee .g-k{font-family:var(--mono);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.guarantee p{font-size:1.05rem;line-height:1.5}
+
+/* pricing */
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px auto 0;max-width:840px}
+.price{background:rgba(14,19,17,.6);backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:20px;padding:26px 22px;text-align:left;position:relative}
+.price.feat{border-color:rgba(31,224,143,.5);box-shadow:var(--glow),inset 0 0 50px rgba(31,224,143,.06);transform:translateY(-6px)}
+.price .tag{position:absolute;top:-11px;left:22px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#06080A;background:var(--accent);padding:4px 12px;border-radius:20px;box-shadow:var(--glow)}
+.price .name{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.price .amt{font-family:var(--display);font-weight:800;font-size:2.6rem;margin:10px 0 4px;letter-spacing:-.02em}
+.price .sub{font-size:.83rem;color:var(--muted)}
+.cta-row{display:flex;gap:14px;justify-content:center;margin-top:30px;flex-wrap:wrap}
+.btn{font-family:var(--display);font-weight:700;font-size:1rem;padding:16px 30px;border-radius:50px;transition:transform .25s ease,box-shadow .25s ease;cursor:pointer;border:1px solid var(--line)}
+.btn.primary{background:var(--accent);color:#06080A;box-shadow:var(--glow);border:none}
+.btn.primary:hover{transform:translateY(-3px);box-shadow:0 0 60px rgba(31,224,143,.6)}
+.btn.ghost{background:rgba(255,255,255,.04);color:var(--text)}
+.btn.ghost:hover{transform:translateY(-3px);border-color:var(--accent)}
+.note{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.1em;margin-top:18px;text-align:center}
+
+/* progress dots */
+#dots{position:fixed;right:26px;top:50%;transform:translateY(-50%);z-index:8;display:flex;flex-direction:column;gap:12px}
+#dots .dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.18);transition:all .35s ease}
+#dots .dot.on{background:var(--accent);box-shadow:var(--glow);transform:scale(1.5)}
+
+/* top brand */
+#brand{position:fixed;top:24px;left:clamp(20px,5vw,60px);z-index:8;font-family:var(--mono);font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--text);mix-blend-mode:difference}
+#bartop{position:fixed;top:0;left:0;height:2px;width:0%;background:var(--accent);z-index:9;box-shadow:var(--glow)}
+
+@media(max-width:760px){
+  .grid6{grid-template-columns:1fr 1fr;gap:10px}
+  .tl,.prices{grid-template-columns:1fr;gap:12px}
+  .price.feat{transform:none}
+  #dots{display:none}
+  .chapter{padding:24px}
+  .pos-bl,.pos-br{align-items:flex-end;justify-content:flex-start;text-align:left}
+  .lead{font-size:1rem}
+}
+@media(prefers-reduced-motion:reduce){.scrollhint .line{animation:none}}
+</style>
+</head>
+<body>
+
+<div id="preloader">
+  <div class="pre-mark">Роман Ильин · Система</div>
+  <div class="pre-bar"><div class="pre-fill" id="preFill"></div></div>
+  <div class="pre-pct" id="prePct">0%</div>
+</div>
+
+<div class="grain"></div>
+<div id="brand">RI · SYSTEM</div>
+<div id="bartop"></div>
+<div id="dots"></div>
+
+<main>
+  <section id="scrolltrack">
+    <div id="stage">
+      <canvas id="seq"></canvas>
+      <div class="scrim"></div>
+      <div id="chapters">
+
+        <!-- 01 HERO -->
+        <section class="chapter pos-center" data-start="0.00" data-end="0.075">
+          <div class="inner">
+            <div class="kicker">Роман Ильин · Система</div>
+            <h1>Тело — не цель.<br>Это <span class="accent">интерфейс</span>.</h1>
+            <p class="lead">Через него ты делаешь всё остальное — работу, смыслы, наследие. Большое «зачем» — жить дольше и быть полезным своим примером.</p>
+          </div>
+          <div class="scrollhint"><span>Листай</span><span class="line"></span></div>
+        </section>
+
+        <!-- 02 WHY -->
+        <section class="chapter pos-bl" data-start="0.075" data-end="0.15">
+          <div class="inner">
+            <div class="kicker">01 · Большое «зачем»</div>
+            <h2>Большая жизнь требует тела,<br>которое её <span class="accent">выдержит</span>.</h2>
+            <p class="lead">Ты мыслишь на десятилетия вперёд. А тело пока живёт по-старому. Этот разрыв — не про лень. Про отсутствие системы.</p>
+          </div>
+        </section>
+
+        <!-- 03 SOLUTION -->
+        <section class="chapter pos-bl" data-start="0.15" data-end="0.21">
+          <div class="inner">
+            <div class="kicker">02 · Почему прошлый раз не сработал</div>
+            <h2>Дисциплина заканчивается.<br><span class="accent">Система</span> — нет.</h2>
+            <p class="lead">Раньше всё держалось на внешнем контроле: коуч ушёл — и ты потерян. Я строю не мотивацию, а инфраструктуру, которая работает без меня.</p>
+          </div>
+        </section>
+
+        <!-- 04 SYSTEM 6 CHANNELS -->
+        <section class="chapter pos-bl" data-start="0.21" data-end="0.33">
+          <div class="inner">
+            <div class="kicker">03 · Как это устроено</div>
+            <h2>Шесть каналов. Один человек,<br>отвечающий за <span class="accent">результат</span>.</h2>
+            <div class="grid6">
+              <div class="cell"><div class="ic">🏃</div><h4>Шаги и активность</h4><p>Каждый день, без фанатизма</p></div>
+              <div class="cell"><div class="ic">🥑</div><h4>Питание по фото</h4><p>Без подсчёта калорий</p></div>
+              <div class="cell"><div class="ic">📊</div><h4>Метрики</h4><p>Отчёт раз в месяц</p></div>
+              <div class="cell"><div class="ic">🤖</div><h4>AI-бот тренировок</h4><p>Видео → правлю технику</p></div>
+              <div class="cell"><div class="ic">💊</div><h4>Медицина</h4><p>Связка с эндокринологом</p></div>
+              <div class="cell"><div class="ic">📐</div><h4>Осанка и физио</h4><p>Последовательности под тебя</p></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 05 TRAINING -->
+        <section class="chapter pos-bl" data-start="0.33" data-end="0.45">
+          <div class="inner">
+            <div class="kicker">04 · Тренировки</div>
+            <h2>AI ведёт программу.<br>Я слежу за <span class="accent">техникой</span>.</h2>
+            <p class="lead">Бот выдаёт нагрузку под твой уровень. Ты снимаешь подход на видео — я разбираю каждое движение. Никаких «делай 3 по 10 и удачи».</p>
+          </div>
+        </section>
+
+        <!-- 06 CYCLE -->
+        <section class="chapter pos-c" data-start="0.45" data-end="0.55">
+          <div class="inner">
+            <div class="kicker">05 · Управляемый цикл</div>
+            <h2>Не марафон силы воли.<br><span class="accent">Управляемый цикл</span>.</h2>
+            <div class="tl">
+              <div class="step"><div class="m">Месяц 1</div><h4>Аудит, база, техника</h4></div>
+              <div class="step"><div class="m">Месяц 2</div><h4>Периодизация, стресс (Whoop)</h4></div>
+              <div class="step"><div class="m">Месяц 3</div><h4>Результат в цифрах, автономность</h4></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 07 NUTRITION -->
+        <section class="chapter pos-bl" data-start="0.55" data-end="0.67">
+          <div class="inner">
+            <div class="kicker">06 · Питание</div>
+            <h2>Без фанатизма<br>и <span class="accent">весов</span>.</h2>
+            <p class="lead">Фотографируешь тарелку — получаешь обратную связь. Персональный план под твой ритм, твою кухню и твои поездки.</p>
+          </div>
+        </section>
+
+        <!-- 08 MEAL PLAN -->
+        <section class="chapter pos-bl" data-start="0.67" data-end="0.79">
+          <div class="inner">
+            <div class="kicker">07 · План питания</div>
+            <h2>Еда, которую<br>реально <span class="accent">готовить</span>.</h2>
+            <div class="recipes">
+              <div class="recipe"><div class="t">Сырники с манкой</div><div class="meta">завтрак · 15 мин</div></div>
+              <div class="recipe"><div class="t">Гречка с курицей</div><div class="meta">обед · 15 мин</div></div>
+              <div class="recipe"><div class="t">+ план под тебя</div><div class="meta">карточки вместо таблиц</div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 09 RESULT + GUARANTEE -->
+        <section class="chapter pos-bl" data-start="0.79" data-end="0.90">
+          <div class="inner">
+            <div class="kicker">08 · Результат, а не обещания</div>
+            <h2>Артём Визарт. 3 месяца.<br>Цифры <span class="accent">до/после</span>.</h2>
+            <p class="lead">Вес, обхваты, состав тела — всё в динамике, а не на словах.</p>
+            <div class="guarantee">
+              <div class="g-k">Гарантия</div>
+              <p>Если за 3 месяца ни одна метрика не сдвинулась — следующий цикл за мой счёт. Я сам в ответе за результат.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10 PRICING + CTA -->
+        <section class="chapter pos-c" data-start="0.90" data-end="1.0">
+          <div class="inner">
+            <div class="kicker">Форматы</div>
+            <h2>Выбери, с чего <span class="accent">начнём</span>.</h2>
+            <div class="prices">
+              <div class="price">
+                <div class="name">Пробный месяц</div>
+                <div class="amt" data-count="700">$0</div>
+                <div class="sub">Один месяц — попробовать систему</div>
+              </div>
+              <div class="price feat">
+                <div class="tag">Рекомендую</div>
+                <div class="name">Полный цикл · 3 мес</div>
+                <div class="amt" data-count="1500">$0</div>
+                <div class="sub">$500 / мес · до результата и автономности</div>
+              </div>
+              <div class="price">
+                <div class="name">Продление</div>
+                <div class="amt" data-count="1000">$0</div>
+                <div class="sub">Следующий цикл</div>
+              </div>
+            </div>
+            <div class="cta-row">
+              <a class="btn primary" href="https://t.me/" target="_blank" rel="noopener">Беру полный цикл →</a>
+              <a class="btn ghost" href="https://t.me/" target="_blank" rel="noopener">Сначала пробный месяц</a>
+            </div>
+            <div class="note">Можно 50/50. Под твою ситуацию подстроюсь.</div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="lib/gsap.min.js"></script>
+<script src="lib/ScrollTrigger.min.js"></script>
+<script src="lib/lenis.min.js"></script>
+<script>
+const N = 242;
+const REMAP = 0.92; // видео полностью проматывается за первые 92% скролла, остаток держит CTA
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const pad = i => String(i).padStart(4,'0');
+const url = i => `frames/frame_${pad(i)}.jpg`;
+
+const canvas = document.getElementById('seq');
+const ctx = canvas.getContext('2d');
+const images = new Array(N);
+let loadedCount = 0, lastDrawn = -1;
+
+function resize(){
+  const dpr = Math.min(window.devicePixelRatio||1, 2);
+  canvas.width = innerWidth*dpr; canvas.height = innerHeight*dpr;
+  canvas.style.width = innerWidth+'px'; canvas.style.height = innerHeight+'px';
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  lastDrawn = -1; draw(currentFrame());
+}
+function draw(f){
+  f = Math.max(0, Math.min(N-1, Math.round(f)));
+  let img = images[f];
+  if(!img || !img.complete || !img.naturalWidth){
+    // ближайший загруженный кадр
+    for(let d=1; d<N; d++){
+      if(images[f-d] && images[f-d].complete && images[f-d].naturalWidth){ img=images[f-d]; break; }
+      if(images[f+d] && images[f+d].complete && images[f+d].naturalWidth){ img=images[f+d]; break; }
+    }
+  }
+  if(!img || !img.naturalWidth) return;
+  const cw=canvas.clientWidth, ch=canvas.clientHeight;
+  const ir=img.naturalWidth/img.naturalHeight, cr=cw/ch;
+  let w,h; if(ir>cr){h=ch;w=ch*ir;}else{w=cw;h=cw/ir;}
+  ctx.clearRect(0,0,cw,ch);
+  ctx.drawImage(img,(cw-w)/2,(ch-h)/2,w,h);
+  lastDrawn=f;
+}
+let _p = 0;
+function currentFrame(){ return Math.min(1,_p/REMAP)*(N-1); }
+
+// ---- preload with progress ----
+const preloader=document.getElementById('preloader');
+const preFill=document.getElementById('preFill');
+const prePct=document.getElementById('prePct');
+let started=false;
+const SHOW_AFTER=Math.min(N,60);   // не ждём все 242 кадра — стартуем после первых ~6с видео, остальное догружаем
+function onload(){
+  loadedCount++;
+  const pct=Math.min(100,Math.round(loadedCount/SHOW_AFTER*100));
+  preFill.style.width=pct+'%'; prePct.textContent=pct+'%';
+  if(loadedCount===1){ resize(); }
+  if(images[Math.round(currentFrame())] && images[Math.round(currentFrame())].complete) draw(currentFrame());
+  if(!started && loadedCount>=SHOW_AFTER){ started=true; setTimeout(()=>{ preloader.classList.add('hidden'); init(); }, 200); }
+}
+for(let i=0;i<N;i++){ const im=new Image(); im.onload=onload; im.onerror=onload; im.src=url(i+1); images[i]=im; }
+addEventListener('resize', resize);
+
+// ---- chapters ----
+const chapters=[...document.querySelectorAll('.chapter')].map(el=>({
+  el, s:parseFloat(el.dataset.start), e:parseFloat(el.dataset.end), counted:false
+}));
+// dots
+const dotsWrap=document.getElementById('dots');
+chapters.forEach((_,i)=>{ const d=document.createElement('div'); d.className='dot'; dotsWrap.appendChild(d); });
+const dots=[...dotsWrap.children];
+const barTop=document.getElementById('bartop');
+
+function smoothstep(a,b,x){ const t=Math.max(0,Math.min(1,(x-a)/(b-a))); return t*t*(3-2*t); }
+
+function vis(p,s,e,isFirst,isLast){
+  const fi=0.022, fo=0.024;                            // ширина кроссфейда в долях прогресса
+  const inK  = isFirst ? 1 : smoothstep(s, s+fi, p);   // вход
+  const outK = isLast  ? 1 : 1 - smoothstep(e-fo, e, p); // выход
+  return {o:Math.max(0,Math.min(1,Math.min(inK,outK))), inK, outK};
+}
+function updateChapters(p){
+  let active=0; const last=chapters.length-1;
+  chapters.forEach((c,i)=>{
+    const {o,inK,outK}=vis(p,c.s,c.e,i===0,i===last);
+    const y=(1-inK)*22 - (1-outK)*22;                  // лёгкий parallax: входит снизу, уходит вверх
+    c.el.style.opacity=o.toFixed(3);
+    c.el.style.transform=`translateY(${y.toFixed(1)}px)`;
+    c.el.style.pointerEvents = o>0.5 ? 'auto':'none';
+    if(p>=c.s && (p<c.e || i===last)) active=i;
+    if(o>0.4 && !c.counted){ c.counted=true; countUp(c.el); }
+  });
+  dots.forEach((d,i)=>d.classList.toggle('on', i===active));
+}
+function countUp(scope){
+  scope.querySelectorAll('[data-count]').forEach(el=>{
+    const target=+el.dataset.count; const t0=performance.now? null:0; let started=null;
+    function step(ts){ if(started===null)started=ts; const k=Math.min(1,(ts-started)/900);
+      const v=Math.round(target*(1-Math.pow(1-k,3)));
+      el.textContent='$'+v.toLocaleString('en-US'); if(k<1)requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  });
+}
+
+function render(p){ _p=p; const f=currentFrame(); if(Math.round(f)!==lastDrawn) draw(f); updateChapters(p);
+  barTop.style.width=(p*100).toFixed(2)+'%'; }
+
+// ---- init scroll engine ----
+let lenis;
+function init(){
+  gsap.registerPlugin(ScrollTrigger);
+  if(!reduce){
+    lenis=new Lenis({lerp:0.085,smoothWheel:true});
+    lenis.on('scroll',ScrollTrigger.update);
+    gsap.ticker.add(t=>lenis.raf(t*1000));
+    gsap.ticker.lagSmoothing(0);
+  }
+  ScrollTrigger.create({
+    trigger:'#scrolltrack', start:'top top', end:'bottom bottom',
+    scrub:reduce?true:0.5,
+    onUpdate:self=>render(self.progress)
+  });
+  render(0);
+  if(window.__romaReady) window.__romaReady();
+}
+</script>
+
+<script>
+/* Міст для деки AI-Оператор (slide «Услуги»): RomaKP.goto(i) прокручує до розділу i, RomaKP.active() — поточний розділ; клавіші деки прокидаються батьківському вікну. */
+(function(){
+  const NAV=['ArrowRight','ArrowLeft',' ','PageDown','PageUp','ArrowDown','ArrowUp','Home','End'];
+  let ready=false; const queue=[];
+  window.__romaReady=function(){ ready=true; queue.splice(0).forEach(fn=>fn()); };
+  const maxY=()=>Math.max(0,document.documentElement.scrollHeight-innerHeight);
+  function target(i){ i=Math.max(0,Math.min(chapters.length-1,i)); if(i===0) return 0; const c=chapters[i]; const p=c.s+(c.e-c.s)*0.38; return p*maxY(); }
+  function goto(i,o){ o=o||{}; const run=()=>{ const y=target(i);
+      if(o.immediate){ if(window.ScrollTrigger) ScrollTrigger.refresh(); if(lenis) lenis.scrollTo(y,{immediate:true}); else scrollTo(0,y); render(maxY()?y/maxY():0); }
+      else if(lenis) lenis.scrollTo(y,{duration:1.7,easing:t=>1-Math.pow(1-t,3)});
+      else scrollTo({top:y,behavior:'smooth'}); };
+    ready?run():queue.push(run); }
+  function active(){ const p=_p; let a=0; chapters.forEach((c,i)=>{ if(p>=c.s&&(p<c.e||i===chapters.length-1)) a=i; }); return a; }
+  window.RomaKP={goto,active,isReady:()=>ready,count:()=>chapters.length};
+  addEventListener('keydown',e=>{ if(e.metaKey||e.ctrlKey||e.altKey) return; if(NAV.includes(e.key)) e.preventDefault();
+    try{ parent.document.dispatchEvent(new parent.KeyboardEvent('keydown',{key:e.key,code:e.code,bubbles:true,cancelable:true})); }catch(x){} });
+  document.addEventListener('click',e=>{ if(e.target.closest('a')) e.preventDefault(); });
+})();
+</script>
+</body>
+</html>

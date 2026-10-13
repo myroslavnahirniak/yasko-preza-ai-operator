@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <defs>
+    <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" seed="13" result="paper"/>
+      <feDisplacementMap in="SourceGraphic" in2="paper" scale="1.7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#ink)" stroke="#F5F3EE" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- A heavy stack of assignments outweighs a single small payment. -->
+    <path d="M300 195q-4 146-1 306m17-307q-1 152 3 309"/>
+    <path d="m300 501-52 32q69 10 131-1l-60-31M234 543q84 8 158-1"/>
+    <path d="M219 551q94 8 190-2" stroke-width="2" opacity=".25"/>
+    <path d="M88 247q219-62 434-142" stroke-width="6"/>
+    <path d="M94 256q207-61 428-143" stroke-width="1.8" opacity=".38"/>
+    <circle cx="308" cy="178" r="17" fill="#0B0907" stroke="#FDD506"/>
+    <path d="m304 178 8-2" stroke="#FDD506" stroke-width="3"/>
+
+    <!-- The left pan hangs lower under the workload. -->
+    <path d="M104 244q-21 85-60 185m60-185q74 91 146 186" stroke-width="3" opacity=".72"/>
+    <path d="M36 433q103-7 222-2-28 52-111 52-77-2-111-50Z" fill="#F5F3EE" fill-opacity=".035"/>
+    <path d="M56 445q92 32 182-1" stroke-width="2" opacity=".32"/>
+
+    <!-- Loose pages, staggered and imperfect like a pencil sketch. -->
+    <path d="m80 289 97-19 29 146-104 16-22-143Z" fill="#0B0907"/>
+    <path d="m109 258 106 10-9 157-108-5 11-162Z" fill="#0B0907"/>
+    <path d="m84 322 99-20 30 124-105 13-21-117Z" fill="#0B0907"/>
+    <path d="m105 341 57-11m-52 28 42-8m-39 26 62-12m-57 31 44-10m-38 29 52-9" stroke-width="2.8" opacity=".6"/>
+    <path d="m130 282 59 5m-58 13 39 3M113 278l-15 4" stroke-width="2.4" opacity=".44"/>
+    <path d="m187 290 5 6 10-13m-35 52 6 5 9-13" stroke="#FDD506" stroke-width="3"/>
+    <path d="M52 490l-8 12m201-13 9 9" stroke-width="2" opacity=".3"/>
+
+    <!-- The opposite pan holds just one yellow coin. -->
+    <path d="M507 112q-47 79-95 190m95-190q21 92 57 190" stroke-width="3" opacity=".72"/>
+    <path d="M402 306q90-6 171-2-22 43-83 45-65-1-88-43Z" fill="#F5F3EE" fill-opacity=".035"/>
+    <path d="M421 316q64 25 131-1" stroke-width="2" opacity=".32"/>
+    <g stroke="#FDD506">
+      <ellipse cx="491" cy="285" rx="28" ry="10" fill="#FDD506" fill-opacity=".12"/>
+      <path d="M463 285v10q27 18 56-1v-9m-44 12v5m10-4v7m12-7v6m12-10v5" stroke-width="3"/>
+      <path d="m469 252-7-11m31 6 1-14m22 20 9-9" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>
