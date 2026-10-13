@@ -1,0 +1,28 @@
+[
+  {
+    "created_at": "2026-09-21T05:46:46.433367Z",
+    "display_name": "Bytedance Image Upscale",
+    "id": "ffaff827-4a83-4b35-b5ef-e1250e4a27ff",
+    "job_type": "bytedance_image_upscale",
+    "min_result_url": null,
+    "params": {
+      "height": 239,
+      "medias": [
+        {
+          "data": {
+            "id": "0fb3c812-84e9-48ea-9919-4a56043b98d9",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/0fb3c812-84e9-48ea-9919-4a56043b98d9.png"
+          },
+          "role": "image"
+        }
+      ],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 1000
+    },
+    "result_url": null,
+    "status": "failed"
+  }
+]
+Error: job ffaff827-4a83-4b35-b5ef-e1250e4a27ff ended with status "failed"

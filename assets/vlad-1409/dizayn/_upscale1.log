@@ -1,0 +1,22 @@
+kp-hero (6962, 2160)
+kp-1 (3320, 2160)
+kp-2 (3223, 2160)
+kp-3 (3288, 2160)
+banner-1 (5684, 2160)
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+    from PIL import Image; im=Image.open('_src/banner-2.up').convert('RGB'); im.save('banner-2.png'); print('banner-2', im.size)
+                              ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/PIL/Image.py", line 3715, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file '_src/banner-2.up'
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+    from PIL import Image; im=Image.open('_src/yt-1.up').convert('RGB'); im.save('yt-1.png'); print('yt-1', im.size)
+                              ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/PIL/Image.py", line 3715, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file '_src/yt-1.up'
+yt-2 (4233, 2160)
+yt-3 (3974, 2160)
+UPSCALE_DONE

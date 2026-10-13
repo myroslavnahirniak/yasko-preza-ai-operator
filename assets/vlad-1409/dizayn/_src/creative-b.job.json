@@ -1,0 +1,27 @@
+[
+  {
+    "created_at": "2026-09-21T05:35:33.523527Z",
+    "display_name": "Bytedance Image Upscale",
+    "id": "8bbc1b33-09bf-4b5e-92c9-2b1aed8f35e0",
+    "job_type": "bytedance_image_upscale",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_053533_8bbc1b33-09bf-4b5e-92c9-2b1aed8f35e0_min.webp",
+    "params": {
+      "height": 2204,
+      "medias": [
+        {
+          "data": {
+            "id": "10f45a70-e911-4314-9efe-3ca0c9af7339",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/10f45a70-e911-4314-9efe-3ca0c9af7339.png"
+          },
+          "role": "image"
+        }
+      ],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2160
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_053533_8bbc1b33-09bf-4b5e-92c9-2b1aed8f35e0.png",
+    "status": "completed"
+  }
+]
