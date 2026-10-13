@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-06T11:21:38.291971Z",
+    "display_name": "GPT Image 2.5",
+    "id": "9eaccb08-9d6a-4171-bce4-0abca6e5c2c9",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_112138_9eaccb08-9d6a-4171-bce4-0abca6e5c2c9_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "f3d3d2f3-a872-4d6d-9d11-547d8e54751c",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/f3d3d2f3-a872-4d6d-9d11-547d8e54751c.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Image edit of the provided poster (1:1). This is a precise edit, not a redesign.\n\nKEEP EXACTLY AS THEY ARE (same position, same size, same font, same colors, same text, pixel-faithful): the two-line headline in the top-left (\"Вот что именно\" in white, \"пишем\" in yellow #FDD506), the black smartphone on the right with its golden rim light, and every chat label, chat bubble, timestamp and check mark on the phone screen. Do not move, rescale, rewrite, retype or re-letter any of it. The phone screen text must stay letter-for-letter identical:\n\"ПЕРВОЕ СООБЩЕНИЕ\"\n\"Добрый день! А к вам можно записать собаку на груминг?\"\n\"ОТВЕЧАЮТ\"\n\"Да, конечно. На какое число?\"\n\"ВТОРОЕ\"\n\"Я пробовал записаться через сайт — не получилось. Вы так много клиентов теряете?\"\n\"ТРЕТЬЕ — РАДИ НЕГО ВСЁ\" (yellow label)\n\"Я сделал вам новый сайт, где можно записаться за минуту. Обычно беру за такие $1.000 — вам сделал бесплатно. Хотите посмотреть?\" (bubble with yellow outline)\n\nONLY CHANGE: fill the empty dark area in the left half of the frame, below the headline and to the left of the phone, with a softly out-of-focus cinematic background (shallow depth of field, strong bokeh): a small dog-grooming salon storefront at night seen from the street, a large warm golden-lit shop window, inside it a fluffy white dog standing on a grooming table, faintly visible and blurred, a grooming dryer and soft warm lamps, wet dark pavement with golden reflections, golden rim light, deep warm-black shadows. The scene fades smoothly into the black around the headline and behind the phone so the phone stays the hero; the background is darker and blurrier than the phone and never competes with the text. Photoreal cinematic film render, like Vlad Yasko posters.\n\nPalette: warm black #0B0907 and a single yellow-gold accent #FDD506, warm amber light only. The shop window and storefront have NO signage, no letters, no logos, no numbers. No new text anywhere, no other text, no watermark, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_112138_9eaccb08-9d6a-4171-bce4-0abca6e5c2c9.png",
+    "status": "completed"
+  }
+]

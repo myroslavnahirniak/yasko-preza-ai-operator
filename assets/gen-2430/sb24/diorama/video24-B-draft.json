@@ -1,0 +1,51 @@
+[
+  {
+    "created_at": "2026-09-30T05:15:07.70457Z",
+    "display_name": "Seedance 2.5",
+    "id": "313a93ee-bcfe-4f00-935a-43c2823c2d4a",
+    "job_type": "seedance_2_5",
+    "min_result_url": null,
+    "params": {
+      "aspect_ratio": "1:1",
+      "bitrate_mode": "standard",
+      "draft": true,
+      "draft_job_id": null,
+      "duration": 15,
+      "extension_mode": null,
+      "generate_audio": false,
+      "genre": "auto",
+      "height": 480,
+      "medias": [
+        {
+          "data": {
+            "id": "eff20794-a1ec-4088-a88e-19045b5ec1fe",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/eff20794-a1ec-4088-a88e-19045b5ec1fe.png"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "c61d91b3-8faf-4f93-9f7d-9206befe18d3",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/c61d91b3-8faf-4f93-9f7d-9206befe18d3.png"
+          },
+          "role": "end_image"
+        }
+      ],
+      "model": "default",
+      "multi_prompt": [],
+      "multi_shot_mode": "custom",
+      "multi_shots": false,
+      "prompt": "Create one continuous 15-second video, square 1:1, with a COMPLETELY LOCKED CAMERA. This is a subtle living background for a webinar slide, not a slideshow: no cuts, no zooms, no camera movement at all. REFERENCE MAP: @Image1 (start image) is the exact opening state and the master composition: a photoreal handmade miniature (tilt-shift macro) of a small dental clinic on a night street, everything switched off, tiny hooded agent figures with head lamps standing ready at five spots. The end image is the SAME composition with all five installations switched on and patients arriving — the state to reach by the end. Scene invariants: keep the building, window frames, the billboard frame on the roof, the light-box, trees, lamp posts, wet road, blurred city bokeh, lighting and framing exactly stable; natural realistic colours. ACTION TIMELINE: 0-2 s: quiet life only — head lamps flicker slightly, a tiny car passes on the wet road, reflections shimmer. 2-4 s: the agent at the far-left shop window touches it and the window lights up as a website display. 4-6 s: the agent at the street light-box switches on the poster with the smiling patient. 6-8.5 s: the agent on the roof switches on the billboard with the smiling woman. 8.5-10.5 s: inside, at the reception, a tiny desk phone lights up and rings with small light rings. 10.5-15 s: the entrance door opens, a tiny concierge in a dark suit greets people, tiny patients walk along the pavement from the right and enter, a short queue forms, the reception glows warmly. Everything that lights up stays lit. Only one installation changes at a time. End exactly on the lit end image. No text, no letters, no numbers, no logos.",
+      "prompt_language": "en",
+      "reference_elements": [],
+      "resolution": "480p",
+      "speedramp": "auto",
+      "width": 480
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260930_051507_313a93ee-bcfe-4f00-935a-43c2823c2d4a.mp4",
+    "status": "completed",
+    "thumbnail_url": "https://cdn.higgsfield.ai/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260930_051507_313a93ee-bcfe-4f00-935a-43c2823c2d4a_thumbnail.webp"
+  }
+]

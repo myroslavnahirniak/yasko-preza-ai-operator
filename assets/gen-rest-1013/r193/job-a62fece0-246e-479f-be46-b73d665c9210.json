@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-10-13T05:07:32.69362Z",
+  "display_name": "Seedance 2.5",
+  "id": "a62fece0-246e-479f-be46-b73d665c9210",
+  "job_type": "seedance_2_5",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "draft": false,
+    "draft_job_id": null,
+    "duration": 6,
+    "extension_mode": null,
+    "generate_audio": false,
+    "genre": "auto",
+    "height": 1080,
+    "medias": [
+      {
+        "data": {
+          "id": "c036773d-dded-412d-882c-052deac66cd6",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/c036773d-dded-412d-882c-052deac66cd6.jpg"
+        },
+        "role": "start_image"
+      }
+    ],
+    "model": "default",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Power-on moment: the room is dim, the man at the desk hits the green button and a wave of golden light bursts through the scene from the buttons outward — the LED strip, monitors and ring light switch on, golden wires glow and pulse, and the whole crew snaps into motion at once with energetic, natural movements: the hunter points into the distance, the builders lift and work their tools, the plumber spins the wrench, the man with the box steps forward, the suited man counts money and grins. Subtle handheld camera, lively and dynamic, not static. Keep the exact composition, framing, every face and outfit identical to the start image; the three yellow labels НАЙТИ КЛИЕНТА, ОКАЗАТЬ УСЛУГУ, ПРОДАТЬ stay sharp and unchanged. No morphing, no new people, no text changes. Cinematic, warm golden light.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "1080p",
+    "speedramp": "auto",
+    "width": 1080
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261013_050732_a62fece0-246e-479f-be46-b73d665c9210.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261013_050732_a62fece0-246e-479f-be46-b73d665c9210_thumbnail.webp"
+}

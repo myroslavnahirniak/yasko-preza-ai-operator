@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T09:44:42.539923Z",
+    "display_name": "GPT Image 2.5",
+    "id": "97143710-51f3-4815-aaab-7804d23bd7b8",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_094442_97143710-51f3-4815-aaab-7804d23bd7b8_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). A pair of worn leather work gloves laid down and left on a dark wooden workbench, as if the work is finished, a few golden dust particles in the light. Single warm key light, deep coffee-brown shadows, subtle yellow (#FDD506) accent glow, thin haze, subtle golden dust. The upper 50% of the frame is nearly black and empty for typography. No people, no readable text, no letters, no numbers, no logos, no watermark. Premium, calm mood.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_094442_97143710-51f3-4815-aaab-7804d23bd7b8.png",
+    "status": "completed"
+  }
+]

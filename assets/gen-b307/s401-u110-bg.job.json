@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T10:49:26.742226Z",
+    "display_name": "GPT Image 2.5",
+    "id": "fe3b2d72-d521-4ba8-81fb-c3df3ddf9603",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_104926_fe3b2d72-d521-4ba8-81fb-c3df3ddf9603_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). A row of five plain dark envelopes standing in a rack, only one of them opened with warm light inside — most stay silent. Single warm key light, deep coffee-brown shadows, subtle yellow (#FDD506) accent glow, thin haze, subtle golden dust. The object sits in the lower third of the frame; the upper 60% of the frame is nearly black and empty for typography. No people, no readable text, no letters, no numbers, no logos, no watermark. Premium, calm mood.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_104926_fe3b2d72-d521-4ba8-81fb-c3df3ddf9603.png",
+    "status": "completed"
+  }
+]

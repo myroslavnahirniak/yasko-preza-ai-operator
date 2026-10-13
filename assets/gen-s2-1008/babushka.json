@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-08T10:48:38.885179Z",
+    "display_name": "GPT Image 2.5",
+    "id": "abccee9c-fd42-4b64-96a2-0726e097f8b0",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261008_104838_abccee9c-fd42-4b64-96a2-0726e097f8b0_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 1024,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Photorealistic cinematic photo: an elderly grandmother seamstress (about 70 years old, grey hair in a bun, glasses, cardigan) sitting at an old sewing machine, carefully sewing a custom-made dress, in a small cozy home workshop with fabric rolls and a dress on a mannequin. Very dark background, warm golden lamp light falling on her hands and the machine, deep black shadows, premium dark-and-gold color grading, shallow depth of field. No text, no logos.",
+      "quality": "high",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "1k",
+      "width": 1024
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261008_104838_abccee9c-fd42-4b64-96a2-0726e097f8b0.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-06T11:17:44.611962Z",
+    "display_name": "GPT Image 2.5",
+    "id": "a89e436a-e073-43c7-b52e-b7eb9e461ba3",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111744_a89e436a-e073-43c7-b52e-b7eb9e461ba3_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "c9a8e788-7b50-48be-be5f-01e137ad8674",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/c9a8e788-7b50-48be-be5f-01e137ad8674.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Square 1:1 poster in the exact style of the reference image (Vlad Yasko's black-and-gold posters): photorealistic cinematic 3D render on a warm black background (#0B0907), golden rim light, premium dark editorial mood, subtle golden dust particles. Typography: heavy geometric sans-serif (Unbounded-like, bold, rounded geometric letters), white with the key phrase in electric yellow #FDD506, perfectly legible Cyrillic, centered, generous margins, nothing cropped.\n\nLayout:\n- Top 20%: one huge white headline, centered, exactly: \"«Дорого»\" (the Russian word Дорого inside French quotation marks « »).\n- Middle 50%: on a reflective black desk, two sleek glowing website mockups in thin dark browser frames stand side by side (modern business landing pages with photos of houses, abstract layout blocks only, no readable words on them). Each website has a small golden price tag hanging from its top corner on a thin string, the tag shows \"$250\" in black. Between the two websites a thin yellow plus sign \"+\". To the right, a thin yellow arrow points to a matte black premium entry pass / ticket with a gold edge, on which is printed in gold \"$490\".\n- Bottom 25%: the answer, three centered lines:\n  line 1, white, medium size: \"Один сайт — $250.\"\n  line 2, white, medium size: \"Вход от $490.\"\n  line 3, electric yellow #FDD506, large bold: \"Это две сделки\"\n\nRender ONLY this exact text: \"«Дорого»\", \"$250\", \"$250\", \"$490\", \"Один сайт — $250.\", \"Вход от $490.\", \"Это две сделки\". Exact Russian spelling, exact punctuation (em dash —, periods as written, no period after \"Это две сделки\"). No other text, no other words or letters anywhere, no logos, no watermark, no signature, no green color, only black, warm gold and yellow #FDD506 accents with white type.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111744_a89e436a-e073-43c7-b52e-b7eb9e461ba3.png",
+    "status": "completed"
+  }
+]

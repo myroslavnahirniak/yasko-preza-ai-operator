@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-06T11:12:38.306281Z",
+    "display_name": "GPT Image 2.5",
+    "id": "fbcf745c-eb9c-49fc-acda-56e665c42d60",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111238_fbcf745c-eb9c-49fc-acda-56e665c42d60_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette with #0B0907 shadows, matching an existing series of dark gold-lit object backgrounds. On a dark rough stone surface in the lower third of the frame: on the left a single plain gold coin lying flat on its own; on the right a neat tall stack of exactly twelve identical plain gold coins, clearly countable, stacked straight. Generous empty space between the single coin and the stack. Single warm key light from the upper left, golden rim light on the coin edges, subtle #FDD506 glow, thin haze and floating golden dust particles, deep coffee-brown shadows, shallow depth of field, premium product-photography feel, calm mood. The upper 55% of the frame stays nearly black and empty for a headline, a subtitle and a button. Coins are completely blank smooth discs with no engravings, no reliefs, no edge markings. No people, no text, no letters, no numbers, no symbols, no logos, no watermark, no green tones.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111238_fbcf745c-eb9c-49fc-acda-56e665c42d60.png",
+    "status": "completed"
+  }
+]

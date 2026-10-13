@@ -1,0 +1,40 @@
+[
+  {
+    "created_at": "2026-10-06T11:19:13.054465Z",
+    "display_name": "GPT Image 2.5",
+    "id": "ded0cec8-a929-4865-b148-1bb3a4c71376",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111913_ded0cec8-a929-4865-b148-1bb3a4c71376_min.webp",
+    "params": {
+      "aspect_ratio": "3:2",
+      "height": 1360,
+      "medias": [
+        {
+          "data": {
+            "id": "72d78790-9ef3-496b-8a64-9d8100c84156",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/72d78790-9ef3-496b-8a64-9d8100c84156.png"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "fe8905e6-1973-46a1-a0e6-75e23f46f4ea",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/fe8905e6-1973-46a1-a0e6-75e23f46f4ea.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "A 3x2 grid sheet of six separate square vignettes forming one consistent editorial illustration series. Layout: an exact invisible grid of three equal columns and two equal rows; each vignette is centered inside its own square cell and occupies only the middle 80% of that cell, surrounded by a wide band of empty pure black space; nothing touches or crosses into a neighbouring cell; no frames, no borders, no dividing lines, no panels. Background everywhere: uniform warm pure black (#0B0907).\nStyle: match the reference images - hand-drawn ink and charcoal cross-hatching editorial sketch, cream-white and light-grey pen lines on black, rich tactile hatching, semi-realistic expressive human faces and gestures exactly like the second reference with the three coworkers; selective electric yellow (#FDD506) accents only on screens, glows and small details. Recurring helper character: the small robot agent from the first reference - rounded-rectangle helmet head with a dark face screen and two big round glowing yellow eyes, yellow ear discs, riveted dark armored body, drawn in the same ink cross-hatching. Every vignette is a compact scene with bold, clearly readable silhouettes that still read at thumbnail size.\nVignettes, top row left to right, then bottom row left to right:\n(1) a 14-year-old boy sitting on a sofa holding a smartphone close to his mouth, recording a voice message; an open laptop beside him shows a landing page glowing yellow;\n(2) a performance marketer man at a desk, his monitor shows rising ad campaign bar and line charts and a small chatbot speech bubble glowing yellow;\n(3) a young woman by a window with a German city roofline of steep gabled houses and a church spire at dusk; next to her the robot agent types articles on a laptop, blank pages flying out of the screen with a yellow glow;\n(4) a small 3D studio: a man presents a sleek 3D-printed product on a turntable, the robot agent films it with a small camera, yellow highlights on the camera screen;\n(5) a woman showing a sleek slide presentation on a laptop to a client sitting across a table, the presentation slides glowing yellow;\n(6) a middle-aged coach, clearly not a programmer, in a casual knitted sweater, at a laptop surrounded by many small floating website cards and chatbot icons glowing yellow, the robot agent small at his shoulder.\nNo text, no letters, no numbers, no logos, no watermark, no green, no color other than black, cream-white ink and yellow.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111913_ded0cec8-a929-4865-b148-1bb3a4c71376.png",
+    "status": "completed"
+  }
+]

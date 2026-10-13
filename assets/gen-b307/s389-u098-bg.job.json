@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T10:48:46.494768Z",
+    "display_name": "GPT Image 2.5",
+    "id": "dc68376b-0dfe-4869-af45-b13d4c982be9",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_104846_dc68376b-0dfe-4869-af45-b13d4c982be9_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). A single empty chair at a small café table by a dark window, one warm lamp on the table — one client is enough. Single warm key light, deep coffee-brown shadows, subtle yellow (#FDD506) accent glow, thin haze, subtle golden dust. The object sits in the lower third of the frame; the upper 60% of the frame is nearly black and empty for typography. No people, no readable text, no letters, no numbers, no logos, no watermark. Premium, calm mood.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_104846_dc68376b-0dfe-4869-af45-b13d4c982be9.png",
+    "status": "completed"
+  }
+]

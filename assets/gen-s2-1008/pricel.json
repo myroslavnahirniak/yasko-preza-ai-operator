@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-08T10:58:32.747564Z",
+    "display_name": "GPT Image 2.5",
+    "id": "1a951c07-c45b-4fe0-a344-7aafe54cc970",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261008_105832_1a951c07-c45b-4fe0-a344-7aafe54cc970_min.webp",
+    "params": {
+      "aspect_ratio": "16:9",
+      "height": 1520,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Premium dark 3D render, cinematic: a large golden sniper-scope crosshair reticle (thin glowing gold circle with cross lines and range ticks) aimed at one single small glowing storefront — a pet grooming salon with a tiny white dog in the lit window — standing on a dark miniature isometric city map with many unlit black buildings and streets; a few small golden location pins around; everything else in deep black shadow. Black background, warm gold rim light, shallow depth of field, high detail. No text, no letters, no logos.",
+      "quality": "high",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2688
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261008_105832_1a951c07-c45b-4fe0-a344-7aafe54cc970.png",
+    "status": "completed"
+  }
+]

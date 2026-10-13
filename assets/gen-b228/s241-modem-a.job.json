@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T09:14:53.564264Z",
+    "display_name": "GPT Image 2.5",
+    "id": "4108948a-1230-4fff-8ae0-e2f93225677a",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_091453_4108948a-1230-4fff-8ae0-e2f93225677a_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). A 1990s beige CRT computer monitor with a completely blank dark screen and an old dial-up modem standing on a dark desk in a dim room, dust floating in the warm light beam. Single warm key light, deep coffee-brown shadows, subtle yellow (#FDD506) accent glow, thin haze, subtle golden dust. The upper 45% of the frame is nearly black and empty for typography. No people, no readable text, no letters, no numbers, no logos, no watermark. Premium, calm mood.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_091453_4108948a-1230-4fff-8ae0-e2f93225677a.png",
+    "status": "completed"
+  }
+]

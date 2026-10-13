@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-06T11:20:03.238114Z",
+    "display_name": "GPT Image 2.5",
+    "id": "ded4ad60-d081-4920-928d-e9ad1e24158d",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_112003_ded4ad60-d081-4920-928d-e9ad1e24158d_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Photorealistic cinematic 3D render, square 1:1, warm black background (#0B0907), golden rim light from the right, shallow depth of field. Lower 55% of the frame: on a reflective black desk three ascending stacks of interlocking matte-black modular blocks joined by glowing electric-yellow (#FDD506) connectors (the first stack has 1 block, the second 3, the third 6), forming a rising bar chart made of linked modules, arranged left to right and centered horizontally; a small sleek black robot agent with glowing yellow rectangular eyes is clicking one more glowing module onto the top of the tallest stack. Golden dust in soft light rays. Upper 45% of the frame is clean, empty, very dark warm-black negative space for headline text, nothing in it. Palette: warm black, golden light, electric yellow accents only. No text, no numbers, no letters, no logos, no watermark, no green, no blue.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_112003_ded4ad60-d081-4920-928d-e9ad1e24158d.png",
+    "status": "completed"
+  }
+]

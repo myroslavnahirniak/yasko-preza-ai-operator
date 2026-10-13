@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T09:04:57.252655Z",
+    "display_name": "GPT Image 2.5",
+    "id": "d8c374a8-4116-4adb-ac83-ae9dae43a9ab",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_090457_d8c374a8-4116-4adb-ac83-ae9dae43a9ab_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). A plain unbranded paper envelope lying on a dark wooden desk next to a closed laptop, warm single desk-lamp light from the right, deep coffee-brown shadows, subtle yellow (#FDD506) accent glow, thin haze, subtle golden dust. The lower 40% of the frame holds the desk; the upper 55% of the frame is nearly black and empty for typography. No people, no readable text, no numbers, no letters, no logos, no watermark. Premium, calm mood.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_090457_d8c374a8-4116-4adb-ac83-ae9dae43a9ab.png",
+    "status": "completed"
+  }
+]

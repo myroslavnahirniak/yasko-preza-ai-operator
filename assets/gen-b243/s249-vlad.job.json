@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-09-21T09:43:08.971408Z",
+    "display_name": "GPT Image 2.5",
+    "id": "addedc44-36fa-49f0-8836-81d383f68c2c",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_094308_addedc44-36fa-49f0-8836-81d383f68c2c_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "bed90bdd-4838-46bf-8f3a-0c3a30f1976b",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/bed90bdd-4838-46bf-8f3a-0c3a30f1976b.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Photoreal cinematic still, square 1:1. The man from the reference photo (platinum-blond short hair, full brown beard, black t-shirt) sits at a desk late at night, lit by the glow of a laptop screen, one hand on his beard, thoughtful, face recognisable, three-quarter view. Warm single desk lamp, deep coffee-brown shadows (#0B0907), subtle yellow (#FDD506) glow. The upper 40% of the frame is nearly black and empty for typography. No readable text, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_094308_addedc44-36fa-49f0-8836-81d383f68c2c.png",
+    "status": "completed"
+  }
+]

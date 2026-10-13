@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-06T11:19:40.092807Z",
+    "display_name": "GPT Image 2.5",
+    "id": "ed8efc73-5c2a-45b8-8627-542fa8e32ac3",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111940_ed8efc73-5c2a-45b8-8627-542fa8e32ac3_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "2052bcfc-f982-4400-afb6-aa25a3e1a3f4",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/2052bcfc-f982-4400-afb6-aa25a3e1a3f4.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Photorealistic cinematic 3D render, square 1:1, warm black background (#0B0907), strong golden rim light from upper right, shallow depth of field, premium dark editorial look. Use the reference image ONLY for the robot design language and lighting (dark gunmetal robot agent with glowing electric-yellow rectangular eyes and yellow ring-lit joints, golden rim light) — do NOT copy its layout, its three robots, or any of its text. Everything sits in the lower 50% of the frame on a matte black desk, wide composition with three clear elements: on the left an open black leather notebook whose pages show a hand-drawn golden route map with a dotted path and glowing yellow waypoints (the map); in the center-right one sleek black gunmetal robot agent with glowing electric-yellow (#FDD506) rectangular eyes and yellow-lit joints, its metal hands actively assembling a glowing website layout on an open laptop screen (abstract blocks and image placeholders, no readable content); in the right foreground a realistic human hand holding a gold pen, drawing a checkmark on a blank sheet of paper next to the laptop. Fine golden dust in the light, soft golden reflections on the desk. The upper 50% of the frame is clean, empty, very dark negative space (near-black #0B0907, no objects, no glow) reserved for headline text. Palette only warm black, gold light and electric-yellow accent. Absolutely no text, no letters, no numbers, no logos, no watermark, no green color.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111940_ed8efc73-5c2a-45b8-8627-542fa8e32ac3.png",
+    "status": "completed"
+  }
+]

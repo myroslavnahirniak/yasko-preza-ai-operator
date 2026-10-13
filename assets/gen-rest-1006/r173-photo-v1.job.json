@@ -1,0 +1,152 @@
+[
+  {
+    "created_at": "2026-10-06T11:17:16.429271Z",
+    "display_name": "GPT Image 2.5",
+    "id": "d33b7e95-50b0-4c53-89ff-57d437a431b8",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111716_d33b7e95-50b0-4c53-89ff-57d437a431b8_min.webp",
+    "params": {
+      "aspect_ratio": "16:9",
+      "height": 1520,
+      "medias": [
+        {
+          "data": {
+            "id": "343ea7d5-9f39-40f6-a721-50f6aa0665b8",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/343ea7d5-9f39-40f6-a721-50f6aa0665b8.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "c7e5c570-e813-4248-8b64-f65777586ebd",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/c7e5c570-e813-4248-8b64-f65777586ebd.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "2ecb8b82-00c8-4ce0-83bd-c5f262b31786",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/2ecb8b82-00c8-4ce0-83bd-c5f262b31786.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "f00f736a-e15f-4e88-b8ca-f5429451dd13",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/f00f736a-e15f-4e88-b8ca-f5429451dd13.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "1c507688-516a-4042-802d-fb353a0c94b2",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/1c507688-516a-4042-802d-fb353a0c94b2.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "edc38cc9-cbbe-44bf-bb76-4a37ab36bc2d",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/edc38cc9-cbbe-44bf-bb76-4a37ab36bc2d.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "dba6305c-fa2f-47a5-903d-a52ea7a85511",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/dba6305c-fa2f-47a5-903d-a52ea7a85511.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "b501b06c-f635-45f6-8c6c-514ae3c72005",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/b501b06c-f635-45f6-8c6c-514ae3c72005.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "29d6d297-3b2e-4100-8499-e5cc84d4240d",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/29d6d297-3b2e-4100-8499-e5cc84d4240d.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "6e9707b2-bb8d-4408-8d65-8b2ed61765db",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/6e9707b2-bb8d-4408-8d65-8b2ed61765db.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "b9bc3766-38fc-4343-8aba-0b6f7b0f6068",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/b9bc3766-38fc-4343-8aba-0b6f7b0f6068.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "cd48472a-4c2c-43ae-98b4-338d77afef8f",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/cd48472a-4c2c-43ae-98b4-338d77afef8f.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "f2ce8991-c983-4cfd-aabf-746d5d4c3747",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/f2ce8991-c983-4cfd-aabf-746d5d4c3747.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "aece1854-b20b-45d4-9b54-cd137828d540",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/aece1854-b20b-45d4-9b54-cd137828d540.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "b092bafa-8888-4f4a-b96e-4cb5b26e3448",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/b092bafa-8888-4f4a-b96e-4cb5b26e3448.webp"
+          },
+          "role": "image"
+        },
+        {
+          "data": {
+            "id": "53fe8399-9870-470f-b548-5e31eaed28c9",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/53fe8399-9870-470f-b548-5e31eaed28c9.webp"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Photoreal cinematic 3D render, wide 16:9, warm black background #0B0907. A long dark matte table surface seen at a low three-quarter angle, spanning the full width of the frame and receding slightly to the right. On the table, premium dark brushed-metal objects that symbolize one complete program, arranged as a density gradient: the far left of the table is almost empty (one small object only, lots of empty table), the middle has a few objects with space between them, and toward the right the objects become denser and pile up generously into a rich heap. Use exactly the objects shown in the reference images, same shapes, materials and golden glow: a compact tower of thirteen dark modular blocks with thin golden seams of light, seven small metal figurines standing in a row, a switchboard console with a few lit keys, a fan of dark blueprint cards, a stack of dark portfolio cards, a metal price tag with a folded corner, a studio microphone, a leather folder with a fountain pen, interlocking gears, a checklist board with a magnifying glass, a small star podium, a cork board with pinned blank notes, a smartphone with a glowing chat icon, a clipboard with blank paper, a small dark globe with golden dots, a ring binder with tabs, a miniature round meeting table with chairs. Golden rim light from behind, a soft yellow #FDD506 glow along the table edge and under the objects, gentle reflections, shallow depth of field, dust in the light. The upper 25% of the frame is nearly black and empty; the bottom edge fades to black. Palette strictly warm black, gold and yellow #FDD506 only. No text, no letters, no numbers, no percent signs, no logos, no watermark, no green, no plants.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2688
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111716_d33b7e95-50b0-4c53-89ff-57d437a431b8.png",
+    "status": "completed"
+  }
+]

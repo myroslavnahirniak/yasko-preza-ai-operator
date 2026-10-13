@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-06T11:17:41.744147Z",
+    "display_name": "GPT Image 2.5",
+    "id": "f2275490-256a-492b-842c-3e7766688a88",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111741_f2275490-256a-492b-842c-3e7766688a88_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "db0432e2-149a-4586-bf5e-5851874481a0",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/db0432e2-149a-4586-bf5e-5851874481a0.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Photorealistic cinematic 3D render, square 1:1, warm black background (#0B0907). Use the reference image ONLY for the robot design language and lighting (dark gunmetal robot agents with glowing electric-yellow ring joints, golden rim light) — do NOT copy its layout, people, laptop or any of its text. In the lower half of the frame: two sleek black gunmetal robot hands and forearms of the same AI agent robot reach forward out of the darkness toward the viewer, palms open and slightly raised as if offering to take over the work; glowing electric-yellow (#FDD506) ring lights at the wrist and knuckle joints. Between the hands hovers a small glowing yellow holographic website wireframe (thin outline of a browser window with empty blocks, no readable content). Strong golden rim light from behind outlines the fingers, subtle golden dust particles, reflective black desk surface below with soft golden reflections. The upper 50% of the frame is clean, empty, very dark negative space (near-black #0B0907, no objects, no glow) reserved for a headline and a button. Minimal premium black-and-gold poster aesthetic, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermark, no green color.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111741_f2275490-256a-492b-842c-3e7766688a88.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "created_at": "2026-10-12T08:27:16.188393Z",
+    "display_name": "Nano Banana Pro",
+    "id": "64b11d26-efe7-40d1-b12c-9c8471edbc45",
+    "job_type": "nano_banana_pro",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261012_082716_64b11d26-efe7-40d1-b12c-9c8471edbc45_min.webp",
+    "params": {
+      "application": null,
+      "aspect_ratio": "1:1",
+      "batch_size": 1,
+      "height": 2048,
+      "input_image": null,
+      "input_images": [
+        {
+          "id": "cad7dc04-138c-4342-b6e0-a031cca59e02",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/cad7dc04-138c-4342-b6e0-a031cca59e02.png"
+        }
+      ],
+      "prompt": "Edit this photo. Keep everything identical: the dark desk, the laptop, plants, pencil cup, lighting, camera angle. Change only: remove the glowing yellow circle from the laptop screen (screen stays dark with a soft warm glow), and lay one real crisp US ten dollar banknote (a $10 bill with Alexander Hamilton, the number 10 clearly visible) flat on the laptop keyboard, lit by warm golden light. Photorealistic.",
+      "resolution": "2k",
+      "surface": null,
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261012_082716_64b11d26-efe7-40d1-b12c-9c8471edbc45.png",
+    "status": "completed"
+  }
+]

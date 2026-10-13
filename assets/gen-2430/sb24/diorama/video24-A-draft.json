@@ -1,0 +1,51 @@
+[
+  {
+    "created_at": "2026-09-30T05:15:06.467676Z",
+    "display_name": "Seedance 2.5",
+    "id": "c69e653e-43f6-4346-a840-0f6bd2df5e44",
+    "job_type": "seedance_2_5",
+    "min_result_url": null,
+    "params": {
+      "aspect_ratio": "1:1",
+      "bitrate_mode": "standard",
+      "draft": true,
+      "draft_job_id": null,
+      "duration": 15,
+      "extension_mode": null,
+      "generate_audio": false,
+      "genre": "auto",
+      "height": 480,
+      "medias": [
+        {
+          "data": {
+            "id": "447de4dd-ccd0-4766-b456-1c85c5e6c91e",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/447de4dd-ccd0-4766-b456-1c85c5e6c91e.png"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "9f859308-94e7-4c31-bce0-dddd77283be6",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/9f859308-94e7-4c31-bce0-dddd77283be6.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "default",
+      "multi_prompt": [],
+      "multi_shot_mode": "custom",
+      "multi_shots": false,
+      "prompt": "Create one continuous 15-second cinematic shot from the start image @Image1, square 1:1, one single take with no cuts. Photoreal, natural realistic colours, warm evening practical light. Start exactly on @Image1: a young woman dentist in a white coat has just placed a small white architectural model of her dental clinic on the dark wooden table; the man with platinum-white hair and a beard, in a white t-shirt and an open charcoal overshirt, leans on the table and looks at the model with calm interest, then gives a small confident nod as if he already knows how to solve it. 0-4 seconds: the camera slowly and smoothly glides forward and down towards the model, as if shrinking to its scale, the office softly blurs away. 4-15 seconds: at miniature scale, one continuous gentle glide along the tiny night street in front of the clinic, real tilt-shift macro look: tiny hooded agent figures with small head lamps switch things on one after another — first the clinic's big shop window lights up like a website display, then a street light-box poster with a smiling patient, then a billboard on the roof, then a desk phone at the reception glows and rings, finally the door opens, a tiny concierge greets people, tiny patients walk in and queue, a small cash register glows warmly. Smooth, continuous, calm pace; consistent people and model; no text, no letters, no numbers, no logos.",
+      "prompt_language": "en",
+      "reference_elements": [],
+      "resolution": "480p",
+      "speedramp": "auto",
+      "width": 480
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260930_051506_c69e653e-43f6-4346-a840-0f6bd2df5e44.mp4",
+    "status": "completed",
+    "thumbnail_url": "https://cdn.higgsfield.ai/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260930_051506_c69e653e-43f6-4346-a840-0f6bd2df5e44_thumbnail.webp"
+  }
+]

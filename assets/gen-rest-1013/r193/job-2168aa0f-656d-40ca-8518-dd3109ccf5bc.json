@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-10-13T05:07:32.606188Z",
+  "display_name": "Seedance 2.5",
+  "id": "2168aa0f-656d-40ca-8518-dd3109ccf5bc",
+  "job_type": "seedance_2_5",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "draft": false,
+    "draft_job_id": null,
+    "duration": 6,
+    "extension_mode": null,
+    "generate_audio": false,
+    "genre": "auto",
+    "height": 1080,
+    "medias": [
+      {
+        "data": {
+          "id": "708e30e7-57c3-4a0a-99f2-b2ab2bd4d2fe",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/708e30e7-57c3-4a0a-99f2-b2ab2bd4d2fe.jpg"
+        },
+        "role": "start_image"
+      }
+    ],
+    "model": "default",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "The man at the desk firmly presses the green button, then the yellow and red ones. Each button flashes bright, and glowing golden energy pulses race down the three golden wires to the labels and into the crew below. The crew comes alive one group after another: the hunter on the left raises his binoculars and scans, the workers in the middle start working — hammer swings, paint roller rolls, the man with the box lifts it, plumber turns the wrench — and the man in the suit on the right fans out his stack of dollar bills with a confident smile. LED strip pulses, parrot ruffles its feathers. Slow push-in camera. Keep the exact composition, framing, every face and outfit identical to the start image; the three yellow labels НАЙТИ КЛИЕНТА, ОКАЗАТЬ УСЛУГУ, ПРОДАТЬ stay sharp and unchanged. No morphing, no new people, no text changes. Cinematic, warm golden light.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "1080p",
+    "speedramp": "auto",
+    "width": 1080
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261013_050732_2168aa0f-656d-40ca-8518-dd3109ccf5bc.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261013_050732_2168aa0f-656d-40ca-8518-dd3109ccf5bc_thumbnail.webp"
+}

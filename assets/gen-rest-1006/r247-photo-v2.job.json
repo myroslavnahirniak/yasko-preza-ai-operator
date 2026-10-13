@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-06T11:21:33.339348Z",
+    "display_name": "GPT Image 2.5",
+    "id": "de235185-1698-422b-abe0-a92f332d4af3",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_112133_de235185-1698-422b-abe0-a92f332d4af3_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Photorealistic cinematic 3D render, square 1:1, warm black background (#0B0907), golden rim light from the right, shallow depth of field, camera pulled back slightly. STRICT COMPOSITION: every object sits in the bottom half of the frame only; the top of the robot's head and the module it holds are clearly BELOW the vertical center of the image (lower than 55% from the top). The entire upper half of the frame is completely empty, clean, very dark warm-black negative space with only faint golden haze, reserved for headline text. Scene: on a reflective black desk, centered horizontally, three ascending stacks of interlocking matte-black modular cube blocks joined by glowing electric-yellow (#FDD506) connectors, left to right: the first stack has exactly 1 block, the second exactly 3 blocks, the third exactly 6 blocks, forming a rising bar chart made of linked modules. A small sleek black robot agent with glowing yellow rectangular eyes stands on the desk to the right of the tallest stack, the robot is about as tall as the tallest stack, and it is clicking one more glowing yellow-lit module onto the top of the tallest stack. Golden dust in soft light rays from the right. Palette: warm black, golden light, electric yellow accents only. No text, no numbers, no letters, no logos, no watermark, no green, no blue.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_112133_de235185-1698-422b-abe0-a92f332d4af3.png",
+    "status": "completed"
+  }
+]

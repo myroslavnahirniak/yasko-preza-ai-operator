@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-06T11:15:26.401255Z",
+    "display_name": "GPT Image 2.5",
+    "id": "4967021f-91eb-41a3-b3ef-3fe4cfd4b6f8",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111526_4967021f-91eb-41a3-b3ef-3fe4cfd4b6f8_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "96220281-f2a5-4f39-b7f0-ef5852af598e",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/96220281-f2a5-4f39-b7f0-ef5852af598e.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Hand-drawn ink illustration on pure black paper, in the style of a fine etching: thin white and light-grey pen lines with dense crosshatching, high contrast, deep black negative space. Match the drawing technique and the robot character design of the reference image exactly (same rounded helmet-like head, same big glowing yellow oval eyes, same jointed body), but a new scene. The only color is electric yellow #FDD506, used for the robot's two glowing oval eyes and the faint glow of its phone screen. A small friendly robot agent (rounded helmet-like head, two big glowing yellow oval eyes, compact jointed body, slightly worn) sits on the ridge of a pitched tiled roof of a British red-brick terraced house at dusk in light rain, shoulders slumped. It holds a smartphone showing a few empty chat bubbles and looks at it with honest, slightly humorous disappointment. Chimney pots and a few loosely sketched rooftops of a northern English city behind it. The house and roof are drawn in white ink lines only, no red color. Composition: robot and roof fill the right and lower 65% of a square frame; the top-left fades to pure black so the image blends into a black slide. No text, no letters, no numbers, no logos, no watermark, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111526_4967021f-91eb-41a3-b3ef-3fe4cfd4b6f8.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T09:14:02.15149Z",
+    "display_name": "GPT Image 2.5",
+    "id": "4314c0c8-eb92-44a4-96a1-b11f5c42351e",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_091402_4314c0c8-eb92-44a4-96a1-b11f5c42351e_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). A row of seven identical small glowing pavilions standing on a dark empty plain, seen from a low angle, the nearest one brightest and the farthest barely visible. Single warm key light, deep coffee-brown shadows, subtle yellow (#FDD506) accent glow, thin haze, subtle golden dust. The upper 50% of the frame is nearly black and empty for typography. No people, no readable text, no letters, no numbers, no logos, no watermark. Premium, calm mood.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_091402_4314c0c8-eb92-44a4-96a1-b11f5c42351e.png",
+    "status": "completed"
+  }
+]

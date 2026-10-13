@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-06T11:14:20.170032Z",
+    "display_name": "GPT Image 2.5",
+    "id": "254f786a-4db2-48d9-9d71-6479e4aea782",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111420_254f786a-4db2-48d9-9d71-6479e4aea782_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "3ad3913f-a2bf-4745-99cc-ef344d4443eb",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/3ad3913f-a2bf-4745-99cc-ef344d4443eb.webp"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Square 1:1 photoreal cinematic 3D render, premium keynote look, near-black warm background (#0B0907), soft haze, warm golden rim light from back-right, single electric-yellow accent color (#FDD506), absolutely no green anywhere. The robot must be exactly the same design as the reference image: dark gunmetal scratched armored robot, rounded helmet with a large glossy black visor showing two vertical glowing yellow eye slits, round yellow-lit ear rings on both sides of the head, thin yellow light strips on chest and shoulders. Composition: the robot stands in the lower-left third of the frame, three-quarter view, body turned to the right, holding a black smartphone sideways in both hands like a camera and filming a product shot to its right: a matte-black unlabeled snack can floating above a small black stone pedestal, golden potato chips frozen mid-air around the can, one warm spotlight from above on the can, faint golden dust particles in the air. The upper 40% of the frame is calm empty warm-black space. The right edge of the frame fades softly into black (a phone mockup will overlap it later). The robot's head and shoulders are fully visible, not cropped at the top. Absolutely no readable text, no letters, no numbers, no logos, no brand marks, no labels on the can, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111420_254f786a-4db2-48d9-9d71-6479e4aea782.png",
+    "status": "completed"
+  }
+]

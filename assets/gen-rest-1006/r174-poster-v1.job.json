@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-06T11:16:05.209855Z",
+    "display_name": "GPT Image 2.5",
+    "id": "6dfddb87-bb7f-40a2-803a-9612e7914372",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111605_6dfddb87-bb7f-40a2-803a-9612e7914372_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "9f6b12dc-5601-4031-b602-7d4f634cb13d",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/9f6b12dc-5601-4031-b602-7d4f634cb13d.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Square 1:1 poster in Vlad Yasko's style (match the attached reference poster: same typography weight, same warm black background, same golden light, same layout discipline). Photoreal cinematic 3D render on warm black #0B0907, golden rim lighting, high contrast, no green tones anywhere.\n\nSCENE (bottom 60% of the frame): a night road that splits into two at a weathered wooden signpost, seen from slightly above and behind a lone human silhouette standing at the fork (back view, no face). The LEFT branch is dark and cold: broken cracked asphalt, cut-down tree stumps along the side, dead grey grass, fading into black fog. The RIGHT branch is warm: smooth wet asphalt lit by a row of golden streetlights, leading toward a distant glowing open doorway, yellow #FDD506 reflections on the road. The signpost has blank boards with no writing.\n\nTYPOGRAPHY — render exactly this Russian text and nothing else:\n\n1) Headline, centered in the top 15% of the frame, on ONE line, large heavy bold geometric rounded sans (Unbounded-like, like the reference): \"У меня было два пути\" — the words \"У меня было\" in white, the words \"два пути\" in yellow #FDD506.\n\n2) LEFT caption block, positioned in the left half, above the left dark road, muted grey-white text, smaller clean modern sans (Manrope-like):\nsmall grey uppercase label: \"ПЕРВЫЙ\"\nline with a small grey arrow \"→\": \"Срезать всё живое\"\nline with a small grey arrow \"→\": \"Продавать запись подешевле\"\n\n3) RIGHT caption block, positioned in the right half, above the right golden road, clean modern sans (Manrope-like):\nsmall yellow #FDD506 uppercase label: \"ВТОРОЙ\"\nwhite line with a small yellow check mark \"✓\": \"Отдать полную систему\"\nwhite line with a small yellow check mark \"✓\": \"Агентов, связки, разборы\"\nwhite line with a small yellow check mark \"✓\": \"И найти честный формат входа\"\n\nOnly \"два пути\" and \"ВТОРОЙ\" are yellow; all other text is white or grey. Caption blocks sit in the dark sky area between the headline and the road scene, with generous margins, crisp and legible, nothing cropped, no text overlapping the silhouette. Exact Russian spelling as quoted, keep the letter \"ё\" in \"всё\". No other text, no numbers, no logos, no watermark, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111605_6dfddb87-bb7f-40a2-803a-9612e7914372.png",
+    "status": "completed"
+  }
+]

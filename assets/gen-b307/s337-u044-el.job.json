@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T10:46:08.523951Z",
+    "display_name": "GPT Image 2.5",
+    "id": "4c10a986-9535-4950-86ff-c3f7b86372eb",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_104608_4c10a986-9535-4950-86ff-c3f7b86372eb_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Premium smooth 3D render icon, square 1:1, plain dark warm background (#0B0907). The single object is placed in the lower-right quadrant of the frame; the upper-left 60% of the frame stays nearly black and empty for typography. Soft warm rim light, one subtle yellow (#FDD506) accent glow beneath the object, matte and brushed-metal materials, shallow depth of field. No text, no labels, no numbers, no logos, no watermark. Object: a dark clipboard holding a stack of blank paper sheets with a brass clip — scripts and proposals",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_104608_4c10a986-9535-4950-86ff-c3f7b86372eb.png",
+    "status": "completed"
+  }
+]

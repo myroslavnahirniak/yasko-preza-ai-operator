@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-10-13T05:07:32.764543Z",
+  "display_name": "Seedance 2.5",
+  "id": "0db78da8-4584-4403-ad46-2dcb3622b9b3",
+  "job_type": "seedance_2_5",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "1:1",
+    "bitrate_mode": "standard",
+    "draft": false,
+    "draft_job_id": null,
+    "duration": 6,
+    "extension_mode": null,
+    "generate_audio": false,
+    "genre": "auto",
+    "height": 1080,
+    "medias": [
+      {
+        "data": {
+          "id": "6b1b3770-d5a3-4f69-a36b-b175fc64dd4f",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/6b1b3770-d5a3-4f69-a36b-b175fc64dd4f.jpg"
+        },
+        "role": "start_image"
+      }
+    ],
+    "model": "default",
+    "multi_prompt": [],
+    "multi_shot_mode": "custom",
+    "multi_shots": false,
+    "prompt": "Dynamic cinematic camera: starts close on the man at the desk who smiles and slaps all three buttons, the buttons light up yellow, green and red, then the camera glides down along the glowing golden wires past the labels to the crew. As the camera passes, each team member turns to camera and springs into action — binoculars up, tools in motion, the suited man throws dollar bills into the air that flutter down. Sparks and golden dust drift through the air, energetic and alive. Keep the exact composition, framing, every face and outfit identical to the start image; the three yellow labels НАЙТИ КЛИЕНТА, ОКАЗАТЬ УСЛУГУ, ПРОДАТЬ stay sharp and unchanged. No morphing, no new people, no text changes. Cinematic, warm golden light.",
+    "prompt_language": "en",
+    "reference_elements": [],
+    "resolution": "1080p",
+    "speedramp": "auto",
+    "width": 1080
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261013_050732_0db78da8-4584-4403-ad46-2dcb3622b9b3.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261013_050732_0db78da8-4584-4403-ad46-2dcb3622b9b3_thumbnail.webp"
+}

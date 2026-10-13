@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-06T11:14:23.278944Z",
+    "display_name": "GPT Image 2.5",
+    "id": "d6faafec-a543-4af5-b734-36383bfe0899",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111423_d6faafec-a543-4af5-b734-36383bfe0899_min.webp",
+    "params": {
+      "aspect_ratio": "21:9",
+      "height": 1152,
+      "medias": [
+        {
+          "data": {
+            "id": "0115986b-19f6-4bb5-aa8a-dc6b44f5d71d",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/0115986b-19f6-4bb5-aa8a-dc6b44f5d71d.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Wide cinematic photoreal 3D render on a warm black background (#0B0907). Eight identical small robots stand in one evenly spaced row along a long glowing golden conveyor belt on a glossy dark table, seen slightly from the front at eye level. Robot design: matte black armored body, rounded helmet with a dark visor and two glowing yellow vertical-bar eyes, thin gold accent rings at the joints — exactly the same robot design, materials and golden rim lighting as in the reference image (use the reference only for robot design and lighting; ignore and do not copy any text from it). Each robot works at its own station holding one prop, left to right: 1) magnifying glass over a small map, 2) megaphone with a blank price tag, 3) blueprint wireframe sheet, 4) color palette swatches, 5) paintbrush and a small framed picture, 6) open laptop with abstract glowing lines of code, 7) glowing contact form card with blank fields, 8) small rocket. Little glowing golden parcels travel along the belt from left to right, and a finished website glows on a glass panel at the far right end of the belt. Composition: all eight robots, their props and the belt sit in the vertical middle of the frame, fully visible, nothing cut off at the left or right edges; calm dark space above and below. Golden rim light, soft volumetric haze, shallow depth of field, premium product-render look, palette only warm black, gold light and yellow (#FDD506) accents. No text, no letters, no numbers, no logos, no watermark, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2688
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111423_d6faafec-a543-4af5-b734-36383bfe0899.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T10:46:52.123762Z",
+    "display_name": "GPT Image 2.5",
+    "id": "a3876683-43dd-43ef-bf4b-014442dd03e7",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_104652_a3876683-43dd-43ef-bf4b-014442dd03e7_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). A heavy dark backpack set down on a dark floor next to an open doorway with warm light — the weight is off your shoulders. Single warm key light, deep coffee-brown shadows, subtle yellow (#FDD506) accent glow, thin haze, subtle golden dust. The object sits in the lower third of the frame; the upper 60% of the frame is nearly black and empty for typography. No people, no readable text, no letters, no numbers, no logos, no watermark. Premium, calm mood.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_104652_a3876683-43dd-43ef-bf4b-014442dd03e7.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-06T11:13:22.967654Z",
+    "display_name": "GPT Image 2.5",
+    "id": "cac56c7d-7a9e-4f42-8936-193a7708f105",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111322_cac56c7d-7a9e-4f42-8936-193a7708f105_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "15a247cf-794c-46e6-96a6-feff49c5469b",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/15a247cf-794c-46e6-96a6-feff49c5469b.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Square 1:1 poster in Vlad Yasko's black-and-gold poster style (match the attached reference image's style: typography, lighting, warm black background, gold accents). Photorealistic cinematic 3D render on a warm black background (#0B0907), golden rim light, premium dark editorial mood, fine golden dust floating in the air. No green anywhere.\n\nTypography: heavy bold geometric sans-serif (Unbounded-like), white and electric yellow #FDD506, perfectly legible Cyrillic, all text centered horizontally, generous margins, nothing cropped at the edges.\n\nLayout:\nTOP (upper 12%): headline line in white, medium-large size, exactly: \"Сколько стоит год «я подумаю»\" (with Russian guillemet quotes « » around я подумаю).\nRight under it: a huge electric yellow figure, the biggest text on the poster, exactly: \"$3.000\" (dollar sign, digit 3, a period, three zeros).\n\nMIDDLE (about 45% of height): a man seen from behind as a dark silhouette sits in a leather armchair, hand on chin, thinking. In front of him a long arc of 12 sleek website screens in thin browser frames recedes into the darkness, one for each month: the nearest few screens glow warm gold, the farther ones fade to cold grey and go dark. A few golden coins slide off the edge of the desk into the shadow. The screens show only abstract website layouts (image blocks and grey bars), absolutely no readable words, labels, tags or numbers on the screens.\n\nBOTTOM (lower 20%): two short centered lines of text:\nLine 3, white, smaller regular-weight sans-serif, exactly: \"Один сайт в месяц по $250 — это $3.000 за год\"\nLine 4, slightly larger bold, exactly: \"Ровно столько стоит год в статусе «я подумаю»\" where the words \"Ровно столько стоит год\" are white and the words \"в статусе «я подумаю»\" are electric yellow #FDD506.\n\nRender ONLY these four exact Russian text strings, letter for letter, with the exact punctuation (« » guillemets, em dash —, dollar signs, periods in $3.000). No other text, no other words, no other numbers, no logos, no watermark, no signature, no captions on the screens.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261006_111322_cac56c7d-7a9e-4f42-8936-193a7708f105.png",
+    "status": "completed"
+  }
+]
