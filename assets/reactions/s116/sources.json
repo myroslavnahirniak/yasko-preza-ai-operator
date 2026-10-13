@@ -1,0 +1,24 @@
+[
+  {
+    "name": "course-tom",
+    "page": "https://tenor.com/view/bored-sleepy-tom-tom-and-jerry-reading-gif-16895182",
+    "media": "https://media.tenor.com/3QgjWIhYn8UAAAPo/bored-sleepy.mp4"
+  },
+  {
+    "name": "profession-chaplin",
+    "page": "https://giphy.com/gifs/5sA46j4PJlXnW",
+    "media": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2J5c2p4M21jbzhmN3QwMDFwMWc3cHR1OWFqM3ozeXQ3dmVmNDR3MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5sA46j4PJlXnW/giphy.mp4"
+  },
+  {
+    "name": "money-spongebob",
+    "page": "https://tenor.com/view/spongebob-no-money-empty-wallet-gif-10670836",
+    "media": "https://media.tenor.com/58A-VQVqKp4AAAPo/spongebob-no-money.mp4"
+  },
+  {
+    "name": "another-one-khaled",
+    "page": "https://tenor.com/view/dj-khaled-another-one-one-gif-5057861",
+    "media": "https://media1.tenor.com/m/pGORhlFQBx0AAAAd/dj-khaled-another-one.gif",
+    "added": "2026-09-16",
+    "replaces": "money-spongebob"
+  }
+]
