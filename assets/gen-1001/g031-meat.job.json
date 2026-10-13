@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-01T04:55:42.724267Z",
+    "display_name": "GPT Image 2.5",
+    "id": "8ac8b636-f463-4571-9b65-cdf76a0aa617",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_045542_8ac8b636-f463-4571-9b65-cdf76a0aa617_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Ultra-realistic cinematic food photo, square frame. A thick juicy steak searing on a black cast-iron grill, flames licking up, sparks and smoke rising, glistening crust. The steak sits in the bottom 40% of the frame; the top 60% is pure deep black with faint drifting smoke, empty for a big headline. High contrast. No people. Moody chiaroscuro, deep blacks, warm golden light, film grain. No text, no letters, no logos, no blue, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_045542_8ac8b636-f463-4571-9b65-cdf76a0aa617.png",
+    "status": "completed"
+  }
+]

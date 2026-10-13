@@ -1,0 +1,776 @@
+<!doctype html><html><head><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"capabilities":{"artifact":"artifact.O-h4mzdy.js","assets":"assets.DhQw8DTi.js","comments":"comments.DcGvuXoo.js","db":"db.DL2sIJ17.js","downloads":"downloads.axDW2QAi.js","embed":"embed.swQslL0W.js","endpoints":"endpoints.BPfoKaE1.js","mcp":"mcp.C8qKIFvQ.js","network":"network.B5UA9Su4.js","permissions":"permissions.DWFFeHI0.js","room":"room.BF1j0KPr.js","sample":"sample.C7KQQdQj.js","self":"artifact.O-h4mzdy.js","user":"user.CCh6oTS_.js"},"transforms":"_transforms.BXjPs0fy.js","comments":"_comments.CoT-GWno.js","translate":"_translate.DqxC5ek1.js","ldx":"_ldx.CqNtBrkk.js"}                                                                                                                                                                                                                                                                                                                                                                                                                             </script><script>(function(){"use strict";var Rn=3e5;function tr(t,e){try{const n=t("navigation")[0],o=[n.responseStart,n.redirectEnd-n.redirectStart,n.domContentLoadedEventStart,e()];for(let a=0;a<o.length;a++){if(!(o[a]>=0&&o[a]<=3e5))return;o[a]=o[a]|0}return o}catch{return}}var rr=["light","dark","system"],nr=/^[A-Za-z0-9_-]{1,64}$/,wt=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,or=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function ar(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||or.has(e)}var bt="data-ldx-props";function sr(t,e){if(e.toLowerCase()===bt)return!0;const n=t.getAttribute(bt);if(n===null)return!1;try{const o=JSON.parse(n);if(o===null||typeof o!="object"||Array.isArray(o))return!0;const a=e.toLowerCase();return Object.keys(o).some(s=>s.toLowerCase()===a)}catch{return!0}}var Tn="http://www.w3.org/1999/xhtml",lr="http://www.w3.org/2000/svg",ir=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),cr=new Set(["script","style"]);function ur(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!ir.has(e):t.namespaceURI===lr?!cr.has(e):!1}function Ve(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function fr(t,e){const n=t.length,o=e.length;let a=0;for(;a<n&&a<o&&Ve(t.charCodeAt(a),e.charCodeAt(a));)a++;let s=0;for(;s<n-a&&s<o-a&&Ve(t.charCodeAt(n-1-s),e.charCodeAt(o-1-s));)s++;return{p:a,s}}function dr(t,e){const n=t.firstChild;if(t.childNodes.length!==1||n===null||n.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const o=n.data,a=o.length,s=e.length,{p:c,s:d}=fr(o,e);c===a&&d===0&&a===s||n.replaceData(c,a-c-d,e.slice(c,s-d));const O=n.data,S=t.ownerDocument.getSelection?.()??null,P=S!==null&&S.rangeCount>0&&(S.anchorNode===n||S.focusNode===n)?{anchor:S.anchorNode,anchorOffset:S.anchorOffset,focus:S.focusNode,focusOffset:S.focusOffset}:null;let v=-1,T=-1;for(let h=0;h<O.length&&h<e.length;h++){const I=O.charCodeAt(h),$=e.charCodeAt(h);I!==$&&Ve(I,$)&&(v<0&&(v=h),T=h)}const m=v>=0;if(m&&n.replaceData(v,T-v+1,e.slice(v,T+1)),m&&P!==null&&P.anchor!==null&&P.focus!==null)try{S.setBaseAndExtent(P.anchor,P.anchorOffset,P.focus,P.focusOffset)}catch{}}var hr=new Set(["html","head","body","frameset"]);function pr(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&hr.has(t.localName)}function mr(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!nr.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[n,o]of Object.entries(e.attrsSet))if(!wt.test(n)||typeof o!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const n of e.attrsRemoved)if(typeof n!="string"||!wt.test(n))return!1}return!0}function vr(t,e){if(t===null||typeof t!="object")return!1;const{seq:n,elements:o}=t;if(typeof n!="number"||!Number.isSafeInteger(n)||!Array.isArray(o)||o.length===0||o.length>64)return!1;for(let a=0;a<o.length;a++)if(!e(o[a]))return!1;return!0}function _r(t){return t===null||typeof t!="object"?!1:vr(t.__frame_patch,mr)}function yr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function gr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function wr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function br(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const n=e.theme;return typeof n=="string"&&rr.includes(n)}var Er=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],Sr=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function kr(t){return typeof t=="string"&&Sr.includes(t)?t:"other"}var Ar=Object.freeze({until:null,now:!1}),Rr="__claude_hot",Tr="__claude_hot_in",Or=/^__claude_hot(?:_in)?(?::|$)/,Et=/^[0-9a-z]{1,32}$/,We=t=>t===void 0?Rr:"__claude_hot:"+t,ye=t=>t===void 0?Tr:"__claude_hot_in:"+t;function Lr(t,e){const n=[];for(let o=0;o<t.length;o++){const a=t.key(o);a!==null&&a!==e&&Or.test(a)&&n.push(a)}for(const o of n)t.removeItem(o)}function Mr(t){let e=null;try{e=B(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!Et.test(e.k)?null:ae(e.g)?{k:e.k,g:e.g}:{k:e.k}}var On=262144,Pr=3e3,Nr=5e3,St=/^[a-z0-9._:-]{1,64}$/,Cr=["none","hot-restart","hard-reload"],jr=["asset","doc","added","removed"],Ir=1500,Fr=/^[0-9a-f]{64}$/;function B(t){return t!==null&&typeof t=="object"?t:null}function ae(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function kt(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function xr(t){return t===void 0||typeof t=="string"&&St.test(t)}function At(t){const e=B(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function Xe(t){const e=B(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&kt(e.seq)&&typeof e.handoff=="string"&&Er.includes(e.handoff)&&xr(e.note)}function Dr(t){const e=B(t);return e!==null&&ae(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||Xe(e.from))}function Hr(t){const e=B(t);return e!==null&&e.kv===1&&ae(e.gen)&&Xe(e.from)&&Object.hasOwn(e,"data")}function qr(t){const e=B(t);return e!==null&&e.__frame_hot_snapshot===!0&&ae(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||At(e.deadline))&&kt(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function Br(t){const e=B(t);return e!==null&&e.__frame_hot_start===!0&&ae(e.gen)&&Xe(e.from)}function Ur(t){return typeof t=="string"&&t.length>=1&&t.length<=128}function Rt(t){return B(t)!==null&&!Array.isArray(t)}function Gr(t){const e=B(t);return e!==null&&e.__frame_cap_grant===!0&&typeof e.cap=="string"&&Ur(e.ver)&&(e.grant===void 0||Rt(e.grant))&&(e.budgets===void 0||Rt(e.budgets)&&Object.values(e.budgets).every(Number.isFinite))&&(e.brokerGen===void 0||ae(e.brokerGen))}function zr(t){const e=B(t);return e!==null&&e.__frame_cap_rewired===!0&&(e.caps===void 0||Array.isArray(e.caps)&&e.caps.every(n=>typeof n=="string"))&&(e.brokerGen===void 0||ae(e.brokerGen))}function Tt(t){const e=B(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function Ot(t){if(t==null||typeof t=="string")return!0;const e=B(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function Kr(t){const e=B(t);return e!==null&&typeof e.path=="string"&&jr.includes(e.kind)&&Ot(e.from)&&Ot(e.to)}function $r(t){return t===null?null:Object.freeze(t.filter(Kr))}function Vr(t){const e=B(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&Tt(e.from)&&Tt(e.to)&&(e.changed===null||Array.isArray(e.changed))&&Cr.includes(e.required)&&At(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Fr.test(e.preflight))}var se=/^[\w.-]+\.js$/;function Wr(t,e,n){return n?"inert":typeof e=="string"&&se.test(e)?t?[e]:"inert":t?"inert":"framed"}var Lt=Object.freeze({[Symbol("claude.hot.restart")]:!0});function Mt(t,e){let n;try{n=t??sessionStorage}catch{return null}const o=We(e?.k),a=ye(e?.k);let s=null;try{s=n.getItem(o)}catch{}try{n.removeItem(o)}catch{}try{Lr(n,a)}catch{}let c=null;if(s!==null&&!(e!==null&&e.g===void 0))try{const d=JSON.parse(s);Hr(d)&&(e===null||d.gen===e.g)&&(c=d)}catch{}if(c===null)try{n.removeItem(a)}catch{}return c}function Xr(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var Yr=/^[^/\\?#]{1,128}$/,Pt=t=>Yr.test(t)&&t!=="."&&t!=="..";function Nt(t,e,n){const o=new URL(t),a="/_f/"+e+"/";if(!e||!o.pathname.startsWith(a)||!Pt(n))return null;const s=o.search.slice(1).split("&").filter(c=>!/^__frame_t(?:=|$)/.test(c)).join("&");return o.origin+"/_f/"+n+"/"+o.pathname.slice(a.length)+(s?"?"+s:"")+o.hash}var Ce="{}";function ge(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function Ct(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function jt(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function Jr(t,e,n,o=null){const a=setTimeout,s=clearTimeout,c=queueMicrotask,d=performance.now.bind(performance),O=new TextEncoder;let S=null,P=null;try{S=history,P=S.replaceState.bind(S)}catch{}const v=(...r)=>{try{console.warn(...r)}catch{}};let T=Xr(),m=null;try{m=sessionStorage}catch{}const h={storage:m,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:T,key:o?.k};let I=o?.k;const $=typeof requestAnimationFrame=="function"?requestAnimationFrame:r=>a(()=>r(d()),16);let y=e?.data??{},N=ge(e?.from),A=e?.gen??0,F=e!==null,V=!1,Q=!1,W=null,Se=!1;const ke=new AbortController;let Ae=null,q=null,Re=null,Te=!1,i=()=>{};const p=new Promise(r=>{i=r});let g=!1,x=!1,C=!1,D,L=null,ce=!1,De=!1,re=!1,Oe=!1,ne=!1,de=!1;const oe=r=>{for(const u of[We(r),ye(r)])try{m?.removeItem(u)}catch{}},H=(r,u)=>{try{u!==null&&n.post(r,u)}catch{}},he=()=>ne||=re&&(q===null||Oe),X=()=>{const r={__frame_hot:!0,ready:q!==null,accept:Re!==null,demand:!0};de=!ne,de&&(r.booting=!0),g&&(r.readData=!0),C&&(r.threw=!0),L?.assess&&(r.preflight=!0),H(r,W)};let Le=!1,Me=!1,l=!1,w=!1;const _=()=>{Le||!Se||l||(Le=!0,H({__frame_reveal_hold:!0},"*"))},M=()=>new Promise(r=>{let u,f=0;const b=j=>{if(u===void 0)u=j;else if(j!==u||++f>=8){r();return}try{$(b)}catch{r()}};try{$(b)}catch{r()}}),Y=()=>{l=!0,H({__frame_reveal_ready:!0},"*")},K=r=>{Me||(Me=!0,r.then(u=>{if(u===!1)return;let f=null;try{f=L?.settle?.()??null}catch{}return(f===null?M():new Promise(b=>{a(b,50),Promise.resolve(f).then(b,b)}).then(M)).then(Y)}))},Pe=()=>{if(w||!l)return;w=!0;const r=()=>{try{L?.afterReveal?.()}catch{}};r(),M().then(()=>{r(),Y()})},He=(r=!1)=>{if(Te||q===null||!F||!Q)return;Te=!0;const u=q,f=y;c(()=>{let b;try{b=u(f)}catch(U){throw i(!1),U}let j=!1;try{j=typeof b?.then=="function"}catch{}if(!j){i(!0);return}Promise.resolve(b).then(()=>i(!0),U=>{i(!1),c(()=>{throw U})})}),K(r?p:n.dcl.then(()=>p))},qe=r=>typeof r=="string"&&St.test(r)?r:void 0,ct=r=>{const u={__frame_hot_restart:!0},f=qe(r?.note);f!==void 0&&(u.note=f),r?.required==="hard-reload"&&(u.required="hard-reload"),H(u,W)},Vt=Object.freeze({get data(){return Q||(x=!0),!F&&!g&&(g=!0,Q&&X()),y},get from(){return N},get gen(){return A},signal:ke.signal,snapshot(r){typeof r=="function"&&(Ae=r)},ready(r){typeof r!="function"||q!==null||(q=r,_(),X(),V&&H({__frame_hot_ready:!0,gen:A},W),He())},accept(r){typeof r=="function"&&(Re=r,X())},restart(r){const u={note:r?.note,required:r?.required};if(Q){ct(u);return}const f=D;D={note:qe(f?.note)??u.note,required:f?.required==="hard-reload"||u.required==="hard-reload"?"hard-reload":void 0}}});let Be=null,Wt=()=>{};const yn=new Promise(r=>{Wt=r});let gn=null;const Xt=()=>gn??=n.dcl.then(()=>{let r=!1;try{r=Be!==null&&Be.expect()}catch{}if(!r)return;const u=Be.maxMs;return new Promise(f=>{yn.then(f),a(f,u)})}),Yt=()=>{if(!ce||De||L===null)return;De=!0;const r=L;Xt().then(()=>{try{l||r.afterStart(jt(e),!1)}catch{}})},Jt=r=>{e!==null&&x&&(g=!0),y={},N=null,A=0;try{m?.removeItem(ye(o?.k))}catch{}e!==null&&!r&&K(n.dcl.then(()=>q!==null?p:void 0))},wn=()=>{ce=!0,K(Xt().then(()=>q!==null?p:void 0)),Yt()};try{addEventListener("error",()=>{C||q!==null||(C=!0,X())})}catch{}const Zt=()=>{a(()=>{!ne&&he()&&de&&X()},0)};try{re=document.readyState==="complete",re||addEventListener("load",()=>{re=!0,Zt()},{once:!0})}catch{re=!0}he(),p.then(()=>{Oe=!0,Zt()});let ue=-1,ut,ft,Ne=!0,dt=!1,ht,Ue=null;const pt=r=>{const u=Ue===null;Ue=Ne&&r[0]!=="withheld"?r:["withheld",r[1],Ce];let f=r[0];if(Ne&&f!=="withheld"){const j={ver:T,handoff:f};ut!==void 0&&(j.seq=ut),ft!==void 0&&(j.note=ft);try{if(m===null)throw new Error("no storage");m.setItem(We(I),'{"kv":1,"gen":'+ue+',"from":'+JSON.stringify(j)+(ht!==void 0?',"k":'+JSON.stringify(ht):"")+',"data":'+(f==="ok"?r[2]:Ce)+"}")}catch{f="unavailable"}}else{f="withheld",oe(I);try{L?.release?.()}catch{}}const b={__frame_hot_snapshotted:!0,gen:ue,handoff:f,bytes:r[1]};r[3]!==void 0&&(b.errName=r[3]),H(b,W),u&&(f==="snapshot_error"||f==="unclonable"||f==="oversize")&&v("claude.hot: snapshot",f,r[3])},pe=r=>{try{return kr(r?.name)}catch{return"other"}},me=(r,u,f=0)=>pt(u===void 0?[r,f,Ce]:[r,f,Ce,pe(u)]),bn=r=>{if(r.gen<=ue)return;const u=ue>=0;if(ue=r.gen,ut=r.seq,ft=qe(r.note),typeof r.key=="string"&&Et.test(r.key)&&r.key!==I&&(oe(I),I=r.key),Ne&&=r.handoff!==!1,u){Ue!==null?pt(Ue):dt&&H({__frame_hot_held:!0,gen:ue},W);return}ke.abort();const f=Object.freeze({handoff:Ne,timeoutMs:r.timeoutMs,deadline:r.deadline??Ar}),b=Ae,j=()=>{if(Ne)try{ht=L?.capture()}catch{}if(b===null){me("empty");return}let k=!1;const G=a(()=>{k||(k=!0,me("snapshot_timeout"))},Math.max(0,f.timeoutMs));Promise.resolve().then(()=>b(f)).then(ve=>{if(k)return;k=!0,s(G);let ee;try{ee=JSON.stringify(ve)}catch(mt){me("unclonable",mt);return}if(typeof ee!="string"){me("unclonable");return}let te=ee.length;try{te=O.encode(ee).length}catch{}if(te>262144){me("oversize",void 0,te);return}pt(["ok",te,ee])},ve=>{k||(k=!0,s(G),me("snapshot_error",ve))})};let U=null;try{U=L?.holdForIme()??null}catch{}if(U===null)j();else{dt=!0,H({__frame_hot_held:!0,gen:ue},W);const k=()=>{dt=!1,j()};U.then(k,k)}},En=r=>{if(!V||F||q===null||r.gen!==A)return;let u=null;try{u=Mt(m,o&&{k:o.k,g:r.gen})}catch{}if(u!==null&&u.gen!==r.gen){u=null;try{m?.removeItem(ye(o?.k))}catch{}}y=u?.data??{},N=Ct(ge(u?.from??r.from),ge(r.from)),u!==null&&(A=u.gen),F=!0,V=!1;const f=jt(u);p.then(b=>{try{b&&L?.afterStart(f,!0)}catch{}}),He(!0)};let Ge=0;const Sn=r=>{const u=Re;if(u===null||r.id<=Ge)return;Ge=r.id;const f=L?.assess;if(r.preflight===void 0||f===void 0){Qt(r,u);return}let b=!1;const j=G=>{b||(b=!0,s(k),r.id===Ge&&Qt(r,u,G))},U=()=>j(f.timeout(r)),k=a(U,Ir+100);f.run(r,window).then(j,U)},Qt=(r,u,f)=>{let b,j=!1,U=!1,k,G,ve=null;const ee=E=>{if(U)return!1;if(k!==void 0&&k!==E)return v(`claude.hot: u.${E}() ignored - u.${k}() was called first`),!1;const Z=k===void 0;return k=E,Z},te=E=>{k="restart",v(`claude.hot: ${E} - restarting`)},mt=()=>{if(!ee("adopt")||r.id!==Ge)return;const E=r.to.ver;if(ze.required!=="none"){te(`u.adopt() needs required 'none', it is '${ze.required}'`);return}if(!Pt(E)){te("u.adopt() cannot address this version");return}if(!T||E===T)return;const Z=T,J=h.entry;let Ke="",_t,_e=null,$e;try{Ke=location.href,_t=S.state,_e=Nt(Ke,Z,E),_e!==null&&(P(_t,"",_e),location.pathname.startsWith("/_f/"+E+"/")?_e=location.href:$e="navigate event canceled")}catch(gt){$e=pe(gt)}if($e!==void 0){G="adopt_failed",te(`adopt_failed ${$e}; URL not changed`);return}_e===null?(G="adopt_skipped",v(`claude.hot: adopt_skipped - page already left /_f/${Z}/; URL not changed, update still applied`)):G="adopted",T=h.ver=E;try{h.entry=Nt(J,Z,E)??J}catch{}const yt=_e;ve=()=>{if(T===E){if(yt!==null)try{if(location.href!==yt)v("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(P(_t,"",Ke),location.href!==Ke){v("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}G="adopt_reverted",v("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(gt){v(`claude.hot: adopt_revert_failed ${pe(gt)} - URL still at the new version`);return}T=h.ver=Z,h.entry=J,yt===null&&(G=void 0)}}},ze=Object.freeze({from:{ver:r.from.ver,seq:r.from.seq},to:{ver:r.to.ver,seq:r.to.seq},changed:$r(r.changed),required:r.required,deadline:r.deadline,adopt:mt,defer(){return ee("defer")&&ze.deadline.now&&te("u.defer() past the deadline"),Lt},restart(E){return ee("restart"),k==="restart"&&!U&&(b??=qe(E?.note),j||=E?.required==="hard-reload"),Lt},...f?.update}),kn=(E,Z)=>{U=!0,E==="threw"?(ve?.(),b??=pe(Z).toLowerCase()):k===void 0&&v(E==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const J={__frame_hot_verdict:!0,id:r.id};J.verdict=E==="threw"||k===void 0||k==="restart"?"restart":k==="adopt"?"applied":"deferred",J.verdict==="restart"&&(j&&(J.required="hard-reload"),b!==void 0&&(J.note=b)),G!==void 0&&(J.verdict==="applied"||G!=="adopted")&&(J.adopt=G),H(Object.assign(J,f?.verdict),W)};let er=!1;const vt=(E,Z)=>er?!1:(er=!0,s(An),kn(E,Z),!0),An=a(()=>vt("timeout"),r.verdictTimeoutMs);Promise.resolve().then(()=>u(ze)).then(()=>vt("settled"),E=>{!vt("threw",E)&&k==="adopt"&&ct({note:pe(E).toLowerCase()}),v("claude.hot: accept",pe(E))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:Vt,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:Vt,boot:h,afterConnect(){Se=!0,(e!==null||q!==null)&&_()},onInit(r,u){W=u,Q=!0;const f=Dr(r)?r:null;f?.phase==="final"&&e!==null&&e.gen===f.gen?(F=!0,N=Ct(N,ge(f.from)),wn()):(V=f?.phase==="pending",Jt(V),F=!V,A=f?.gen??0,N=ge(f?.from)),X(),de&&a(()=>{ne||(ne=!0,X())},Nr),V&&q!==null&&H({__frame_hot_ready:!0,gen:A},u),D!==void 0&&(ct(D),D=void 0),He()},onNoInit(){Q=!0,Jt(!1),F=!0,He()},onShell(r){return r?.__frame_revealed===!0?(Pe(),!1):qr(r)?(bn(r),!0):Br(r)?(En(r),!0):Vr(r)?(Sn(r),!0):!1},attachExtras(r){L=r,Yt(),r.assess&&X()},inSlot:()=>ye(I),hydration(r,u){Be??={expect:r,maxMs:u}},hydrated(){Wt()},carried(){return F?y:{}},presented:()=>l}}var Ln="frame_ldx_runtime",Zr="frame_ldx_build",Mn="script#an-form",Qr=256;function It(t,e,n){for(const o of t)n(o)&&t.delete(o);t.size>=Qr&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function Ye(t,e,n){try{const o=t[e];if(typeof o!="function")return;t[e]=function(...a){const s=o.apply(this,a);try{n(this)}catch{}return s}}catch{}}var Je;function en(){if(Je)return Je;const t={media:new Set,contexts:new Set,onStart:null,onPause:null};Je=t;const e=window.HTMLMediaElement?.prototype;e&&(Ye(e,"play",a=>{It(t.media,a,s=>s.paused),t.onStart?.(a)}),Ye(e,"pause",a=>t.onPause?.(a)));const n=window.AudioContext,o=window.AudioNode?.prototype;return n&&o&&Ye(o,"connect",a=>{const s=a.context;s instanceof n&&(It(t.contexts,s,c=>c.state==="closed"),t.onStart?.(s))}),t}function tn(t){let e=window;for(let n=0;e.parent&&e.parent!==e&&n<8;n++)if(e=e.parent,t(e))return!0;return!1}function rn(){let t=null;const e=()=>t??parent,n=o=>t?o===t:tn(a=>a===o);return{post(o,a){if(t){e().postMessage(o,a);return}let s=parent;for(let c=0;c<8&&(s.postMessage(o,a),!(!s.parent||s.parent===s));c++)s=s.parent},on(o){const a=s=>{const c=s.source;n(c)&&o(s.data,s.origin,s.isTrusted,()=>{t??=c})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:o=>({post(a,s){if(s?.activation){e().postMessage(a,{targetOrigin:o,includeUserActivation:!0});return}if(s?.transfer){e().postMessage(a,o,s.transfer);return}e().postMessage(a,o)},on(a,s){const c=d=>{n(d.source)&&d.origin===o&&a(d.data,d)};return addEventListener("message",c,s),()=>removeEventListener("message",c,s)}})}}function nn(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var Ze="__frame_scroll",on=150,an=310,sn=160,ln=3e4;function cn(){let t=0,e=!1,n=!1,o=!1,a=0,s=null;const c=y=>{try{sessionStorage.setItem(Ze,JSON.stringify({y}))}catch{}},d=()=>{if(clearTimeout(t),s===null)return;const y=s;s=null,c(y)},O=()=>{if(e){e=!1;return}n=!0,s=scrollY,clearTimeout(t),t=setTimeout(d,on)};try{addEventListener("scroll",O,{passive:!0}),addEventListener("pagehide",d)}catch{}const S=()=>{let y;try{y=sessionStorage.getItem(Ze)}catch{return null}if(y===null)return null;let N;try{N=JSON.parse(y)}catch{N=null}const A=N?.y;if(!(typeof A=="number"&&Number.isFinite(A)&&A>=0)){try{sessionStorage.removeItem(Ze)}catch{}return null}return A};let P=!1;const v=y=>{try{const N=scrollY;scrollTo({top:y,left:0,behavior:"instant"}),a=y,o=!0,clearTimeout(t),s=null,c(y);const A=scrollY;A!==N&&(e=!0),A!==y&&!P&&(P=!0,addEventListener("load",()=>{try{if(scrollY===A){const F=S();v(F!==null?F:a)}}catch{}},{once:!0}))}catch{}},T=()=>{try{return!!location.hash}catch{return!0}};let m=!1;const h=()=>{try{if(m||innerWidth>an||innerHeight>sn)return;m=!0;const y=Date.now(),N=()=>{try{removeEventListener("resize",N)}catch{}if(Date.now()-y>ln||n||T())return;const A=S();v(A!==null?A:a)};addEventListener("resize",N)}catch{}};let I=!1,$=!1;return{restore(){if(I||(I=!0,T()))return;const y=S();y!==null&&(v(y),h())},promoted(){if($||($=!0,T()))return;const y=S();y!==null?(v(y),h()):o&&v(a)}}}function un(t,e,n,o){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:O=>O})??null}catch{}const s=window.Worker,c=s?.prototype,d=Object.freeze({Worker:s,workerOn:c?.addEventListener,workerPost:c?.postMessage,workerTerminate:c?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});n(t).then(O=>O?.bootTopLevel?O.bootTopLevel(d,o):o.settle()).catch(()=>o.settle())}var Pn="modulepreload",Nn=function(t){return"/"+t},Cn={},fn=function(e,n,o){let a=Promise.resolve();function s(c){const d=new Event("vite:preloadError",{cancelable:!0});if(d.payload=c,window.dispatchEvent(d),!d.defaultPrevented)throw c}return a.then(c=>{for(const d of c||[])d.status==="rejected"&&s(d.reason);return e().catch(s)})},dn=window===top,Ft=Object.getOwnPropertyDescriptor(window,"claude"),je=Wr(dn,window.__FRAME_PREAMBLE?.topLevel,Ft?.writable===!1),Qe=typeof je=="object"&&je[0],R=Qe?nn():rn();(function(){const t=Object.defineProperty,e=globalThis,n=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let o=0;for(let a=0;a<n.length;a++){const s=n[a];try{t(e,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[s]}catch{}try{t(e,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[s]=="function"&&o++}if(o&&je==="framed")try{R.post({__frame_rtc_lockdown_failed:o},"*")}catch{}})();var xt=1e4,hn=2e3,et=2e3,Dt=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function Ht(t){for(const e of Dt)if(e.endsWith(":*"))try{const n=new URL(t);if(`${n.protocol}//${n.hostname}:*`===e)return!0}catch{}else if(t===e)return!0;return!1}var we=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Ie=window.__FRAME_PREAMBLE?.transforms,tt=window.__FRAME_PREAMBLE?.comments,rt=window.__FRAME_PREAMBLE?.translate,be=window.__FRAME_PREAMBLE?.ldx;function qt(t){return fn(()=>import("/_runtime/"+t),void 0)}var Ee=new Set,pn=setTimeout,mn=800+800*Math.random();function le(t){return qt(t).catch(()=>new Promise(e=>pn(e,mn)).then(()=>qt(t+"?r=1")).then(e=>(e!==void 0&&Ee.add(t),e)))}function Bt(t,e,n){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},brokerGen:t.brokerGen,transforms:new Map,shellOrigin:e,shell:n,mount:it,hooks:Fe,pipe:()=>({wrap:(o,a)=>(...s)=>{try{return a(...s)}catch(c){return Promise.reject(c)}}})}}var fe=null,z=null;function Ut(t,e,n){try{Object.defineProperty(t,e,{value:n,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:n,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var nt=!1,Fe={editBefore:null,edit:null};function vn(t,e,n=!1){const o=[];let a;if(n)try{Fe.editBefore?.(t)}catch{}for(const s of t.elements){const c=document.querySelector(`[data-id="${s.target}"]`);if(!c){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(d=>!ar(d)||sr(c,d))){a=s.target;break}if(s.text!==void 0&&(!ur(c)||pr(c))){a=s.target;break}for(const[d,O]of Object.entries(s.attrsSet??{}))if(!zt(c,d)){try{c.setAttribute(d,O)}catch{}Gt(c,d,O)}for(const d of s.attrsRemoved??[])zt(c,d)||(c.removeAttribute(d),Gt(c,d,null));typeof s.text=="string"&&dr(c,s.text),o.push(s.target)}if(n)try{Fe.edit?.(t.seq,o,a)}catch{}if(a!==void 0){R.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:o}}))}catch{}}function Gt(t,e,n){if(!(t instanceof HTMLInputElement))return;const o=e.toLowerCase();o==="checked"?t.checked=n!==null:o==="value"&&t.type!=="file"&&(t.value=n??"")}function zt(t,e){const n=e.toLowerCase(),o=t;return n==="data-id"||(n==="value"||n==="checked")&&(o.__artifactSecret===!0||/^(password|hidden|file)$/.test(o.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${o.autocomplete??""}`))}function Kt(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,nt=!0):nt&&(delete e.dataset.theme,e.style.colorScheme="",nt=!1)}var ie=new Map,ot=null;function at(){let t;const e={u:new Promise(n=>{t=n}),r:n=>{e.done=!0,t(n)},done:!1,nulled:!1};return e}function xe(t,e){t.nulled=!0,t.ver=e,t.r(null)}function st(t,e){for(const[n,o]of ie)o.done||(e&&o.asked?e(n,o):xe(o,t))}var _n=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),lt=!1,it=(t,e)=>{let n=ie.get(t);if(n?.nulled&&lt)n=at(),ie.set(t,n);else if(!n||n.done){n?.nulled&&z&&R.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},z);return}const o=typeof e=="function"?Object.setPrototypeOf(e,_n):Object.assign(Object.create(null),e);typeof o.then=="function"&&delete o.then,n.want=void 0,n.r(Object.freeze(o))};function $t(){const t=Ft?.value??{};Ut(window,"claude",t);for(const e of Object.keys(we)){if(t[e]!==void 0){Ut(t,e,t[e]);continue}ie.set(e,at())}if(t.use===void 0){const e=n=>{if(typeof n!="string"||!Object.hasOwn(we,n))return Promise.resolve(null);let o=ie.get(n);return o?(ot&&(o.nulled||o.want!==void 0)&&(o=ot(n,o)),o.asked=!0,o.u):Promise.resolve(t[n]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(je==="framed"){const t=Ie&&se.test(Ie)?le(Ie).catch(()=>{}):Promise.resolve(void 0),e=i=>{if(i.type==="auxclick"&&i.button!==1)return;const p=i.target,g=p&&p.closest?p.closest("a[href],area[href]"):null;if(!g)return;const x=g.getAttribute("href");if(!x)return;let C;try{C=new URL(x,document.baseURI)}catch{return}if((C.protocol==="http:"||C.protocol==="https:")&&C.origin!==location.origin){i.preventDefault();const D=(g.getAttribute("target")??"").toLowerCase(),L=i.type==="auxclick"||i.metaKey||i.ctrlKey||i.shiftKey||i.altKey||!["","_self","_top","_parent"].includes(D);R.post({__frame_nav:!0,url:C.href,newTab:L},"*")}};addEventListener("click",e,!0),addEventListener("auxclick",e,!0);const n={},o=i=>{i.isTrusted&&(n.pointer=!0)},a=i=>{i.isTrusted&&(n.click=!0)};addEventListener("pointermove",o,{capture:!0,passive:!0}),addEventListener("click",a,{capture:!0,passive:!0});const s={cb:null};addEventListener("keydown",i=>s.cb?.(i),!0);const c={cb:null};addEventListener("keydown",i=>c.cb?.(i));const d=en();t.then(i=>i?.installEscapeForward?.(s,p=>{z&&R.post(p,z)})),t.then(i=>{try{i?.installFocusKeep?.()}catch{}}),t.then(i=>{if(!i?.wireNav)return;const p=R.port("*");i.wireNav(p),removeEventListener("click",e,!0),removeEventListener("auxclick",e,!0),removeEventListener("pointermove",o,!0),removeEventListener("click",a,!0),i.wireEngagement?.(n,p,d)});let O=null;try{O=cn()}catch{}const S=document.readyState==="loading"?new Promise(i=>document.addEventListener("DOMContentLoaded",()=>i(),{once:!0})):Promise.resolve();let P=null,v=null;try{v=Mr(window.name),P=Mt(null,v)}catch{}const T=$t();let m=null;try{m=Jr(T,P,{post:(i,p)=>R.post(i,p),dcl:S},v)}catch{}t.then(i=>{try{m&&i?.installHotExtras?.(m)}catch{}});let h=null;const I=()=>Array.isArray(h?.flags)&&h.flags.includes("frame_ldx_runtime")&&!!be&&se.test(be)&&document.querySelector("script#an-form")!==null;try{m?.hydration(I,Pr)}catch{}let $=null,y=0;const N=R.on((i,p,g,x)=>{Ht(p)&&yr(i)&&(x(),h=i.__frame_init,z=p,N(),clearTimeout(y),$?.())});R.post({__frame_connect:!0},"*");try{m?.afterConnect()}catch{}const A=setTimeout,F=clearTimeout;let V=()=>NaN,Q=()=>[];try{V=performance.now.bind(performance),Q=performance.getEntriesByType.bind(performance)}catch{}let W=0;const Se=()=>{try{R.post({__frame_alive:!0},"*")}catch{}W=A(Se,hn)},ke=()=>F(W);Se(),addEventListener("load",ke,{once:!0});const Ae=new Promise(i=>{$=i,y=setTimeout(()=>{N(),i()},xt)}),q=new WeakSet;addEventListener("error",i=>{i.target&&q.add(i.target)},!0);const Re=()=>{let i=[];try{i=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(g=>!g.sheet&&!g.disabled&&!q.has(g)&&g.getAttribute("href")&&URL.canParse(g.href)&&(!g.media||matchMedia(g.media).matches))}catch{}let p=i.length;return p===0?Promise.resolve():new Promise(g=>{try{const x=et-V(),C=A(g,x>0?x<et?x:et:0),D=()=>{--p===0&&(F(C),g())};for(const L of i)L.addEventListener("load",D,{once:!0}),L.addEventListener("error",D,{once:!0})}catch{g()}})};S.then(()=>{try{O?.restore()}catch{}}),Promise.all([Ae,S,t]).then(([,,i])=>{if(h?.hostOverlays!==!0||!z)return;let p=!1;try{p=i?.declaresCover?.()===!0}catch{}R.post({__frame_layout:{cover:p}},z)});const Te={cb:null};R.on((i,p)=>{if(Ht(p)&&gr(i)){try{O?.promoted()}catch{}Te.cb?.()}}),Ae.then(async()=>{if(!h||!z){st();try{m?.onNoInit()}catch{}return}if(Kt(h.theme),h.hostVisible===!1&&t.then(l=>l?.applyHostVisible?.(!1,d)),h.hostKeys!==void 0){const l=z,w=h.hostKeys;t.then(_=>_?.installHostKeyForward?.(c,w,M=>R.post(M,l)))}try{m?.onInit(h.hot,z)}catch{}const i=z,p=R.port(i),g=(l,w)=>R.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:l,phase:w}},i),x=l=>R.post({__frame_cap_recovered:{cap:l}},i);let C=h.brokerGen;const D=()=>m?.boot.ver??"",L=D(),ce=(l,w)=>{const _=D();F(w.t),w.want=_,w.t=A(()=>{w.done||xe(w,_)},xt),R.post({__frame_cap_want:!0,cap:l,ver:_},i)},De=(l,w)=>{const _=ie.get(l.cap),M=we[l.cap];if(!w||!_||_.done||_.want!==l.ver||!se.test(M))return;if(F(_.t),_.want=void 0,C=l.brokerGen??C,l.ver!==D()){ce(l.cap,_);return}if(!l.grant||l.cap==="network"){xe(_,l.ver);return}const Y=fe,K=fe={...Y,capabilities:{...Y.capabilities,[l.cap]:l.grant},capBudgets:{...Y.capBudgets,[l.cap]:{...Y.capBudgets[l.cap],...l.budgets}}};le(M).then(Pe=>{Ee.has(M)&&x(l.cap),K.brokerGen=C,lt=!0;try{Pe?.install?.(K)}catch{g(l.cap,"install")}finally{lt=!1}},()=>g(l.cap)).then(()=>{_.done||xe(_,l.ver)})};let re=!1,Oe=!1;R.on((l,w,_)=>{if(w!==i)return;try{if(m?.onShell(l))return}catch{}if(br(l)&&Kt(l.__frame_theme.theme),Gr(l)&&De(l,_),_&&zr(l)&&(C=l.brokerGen??C),wr(l)){const K=l.__frame_host_visible.visible;t.then(Pe=>Pe?.applyHostVisible?.(K,d))}_r(l)&&vn(l.__frame_patch,i,_);const M=l?.__fc_mode;M&&typeof M=="object"&&!re&&tt&&se.test(tt)&&(re=!0,le(tt).then(K=>K.install?.(i,M.on===!0,p)).catch(()=>{}));const Y=l?.__ft_cmd;Y&&typeof Y=="object"&&!Oe&&rt&&se.test(rt)&&(Oe=!0,le(rt).then(K=>K.install?.(i,Y,p)).catch(()=>{}))});const ne=Object.keys(h.capabilities??{}).filter(l=>Object.hasOwn(we,l)).map(l=>[l,we[l]]).filter(l=>typeof l[1]=="string"&&se.test(l[1])),de=await Promise.allSettled(ne.map(([,l])=>le(l))),oe=await t,H=i;if(oe?.buildBoot||g("_transforms"),oe?.buildBoot)try{fe=oe.buildBoot(h,oe.TRANSFORMS??{},{shellOrigin:H,mount:it,hooks:Fe,shell:p},l=>R.post({__frame_cap_telemetry:l},H))}catch{g("_transforms","install"),fe=Bt(h,H,p)}else fe=Bt(h,H,p);oe?.buildBoot&&Ee.has(Ie??"")&&x("_transforms");const he=fe;he.brokerGen=C,de.forEach((l,w)=>{const[_,M]=ne[w];if(l.status!=="fulfilled"){g(_);return}Ee.has(M)&&x(_);try{l.value?.install?.(he)}catch{g(_,"install")}});const X=h.capWants===!0;X&&(ot=(l,w)=>{const _=D();if(!_)return w;if(!w.nulled)return w.want!==_&&ce(l,w),w;if(_===w.ver)return w;const M=at();return ie.set(l,M),ce(l,M),M}),st(L,X&&D()!==L?ce:void 0),await S,await Re(),ke();const Le=tr(Q,V);R.post(Le?{__frame_ready:!0,nav:Le}:{__frame_ready:!0},z),t.then(l=>l?.installSizeReporter?.(H,Te,p));let Me=!1;try{Me=I()}catch{}be&&Me?le(be).then(l=>l?.boot?.({shellOrigin:i,build:he.flags.has(Zr),hot:m?.hot??null,carried:m?.carried(),presented:()=>m?.presented()??!0})).catch(()=>!1).then(l=>{m?.hydrated(),l!==!0?g("_ldx"):Ee.has(be)&&x("_ldx")}):m?.hydrated()})}else Qe&&($t(),un(Qe,Dt,le,{settle:st,mount:it}))})();</script><!-- /frame-runtime --><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Продающие AI-видео</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+:root{
+  --bg:#080B0A; --bg-2:#0D1211; --panel:#121817; --edge:#1F2A27; --edge-soft:#18211F;
+  --text:#F2F6F4; --dim:#8C9B96; --faint:#5C6B66;
+  --acc:#35D07F; --acc-dim:#1E7A4C; --acc-glow:rgba(53,208,127,.14);
+  --f-ui:"Manrope","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f-ui);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+@media (max-width:700px){.wrap{padding:0 16px}}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+
+/* шапка */
+.top{position:relative;padding:54px 0 34px;background:radial-gradient(900px 380px at 50% -140px, var(--acc-glow), transparent 70%)}
+.tag{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--acc-dim);border-radius:999px;padding:6px 16px;font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--acc);text-transform:uppercase}
+.top h1{font-size:clamp(30px,4.6vw,54px);font-weight:800;letter-spacing:-.03em;margin:18px 0 12px;line-height:1.03;text-wrap:balance}
+.top h1 em{font-style:normal;color:var(--acc)}
+.top p{margin:0;color:var(--dim);max-width:60ch;font-size:clamp(15px,1.5vw,18px)}
+
+/* рельса */
+.rail{height:800vh}
+.pin{position:sticky;top:0;height:100svh;display:flex;align-items:center;padding:14px 0 22px}
+.stage{position:relative;width:100%;height:min(830px,calc(100svh - 40px));min-height:560px;background:var(--bg-2);border:1px solid var(--edge);border-radius:20px;overflow:hidden;box-shadow:0 40px 90px -60px rgba(0,0,0,.9), inset 0 1px 0 rgba(255,255,255,.03)}
+
+/* конвейер */
+.pipe{height:62px;flex-shrink:0;border-bottom:1px solid var(--edge-soft);display:flex;align-items:center;gap:18px;padding:0 20px;background:var(--panel)}
+.pipe .brand{font-size:13px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.pipe .brand i{width:8px;height:8px;border-radius:50%;background:var(--acc);display:block}
+.nodes{display:flex;align-items:center;flex:1;min-width:0}
+.node-wrap{position:relative;display:flex;align-items:center;flex:1;min-width:0}
+.node-wrap:last-child{flex:0 0 auto}
+.bead{width:9px;height:9px;border-radius:50%;background:var(--edge);flex-shrink:0;box-shadow:0 0 0 0 var(--acc-glow)}
+.wire{height:1px;background:var(--edge);flex:1;position:relative;overflow:hidden}
+.wire i{position:absolute;inset:0;background:var(--acc);transform-origin:left;transform:scaleX(0)}
+.node-wrap .cap{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);position:absolute;white-space:nowrap;left:0;top:12px}
+@media (max-width:900px){.node-wrap .cap{display:none}}
+.pipe .clock{font-family:var(--f-mono);font-size:11px;color:var(--faint);white-space:nowrap}
+
+/* тело и лог */
+.body{display:grid;grid-template-columns:296px minmax(0,1fr);height:calc(100% - 62px)}
+@media (max-width:1000px){.body{grid-template-columns:1fr}}
+.log{border-right:1px solid var(--edge-soft);background:var(--panel);position:relative;overflow:hidden;padding:18px 0;display:flex;flex-direction:column}
+@media (max-width:1000px){.log{display:none}}
+.log-head{flex-shrink:0;font-family:var(--f-mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);padding:0 18px 12px}
+.log-clip{flex:1;min-height:0;overflow:hidden;position:relative}
+.log-tape{padding:0 18px;will-change:transform}
+.log-line{font-family:var(--f-mono);font-size:11.5px;line-height:1.5;color:var(--dim);padding:5px 0 5px 14px;position:relative;opacity:0}
+.log-line::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc-dim)}
+.log-line b{color:var(--acc);font-weight:500}
+.log-line.done::before{background:var(--acc)}
+
+/* сцены */
+.work{position:relative;overflow:hidden;background:var(--bg-2)}
+.scene{position:absolute;inset:0;background:var(--bg-2);opacity:0;display:flex;flex-direction:column;justify-content:center;gap:clamp(12px,2.2vh,20px);padding:clamp(24px,3.6vh,38px) 42px}
+@media (max-width:700px){.scene{padding:26px 20px}}
+.scene-kicker{font-family:var(--f-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
+.scene h2{font-size:clamp(20px,2.4vw,30px);font-weight:800;letter-spacing:-.025em;margin:0;line-height:1.12;text-wrap:balance}
+.scene .sub{margin:-8px 0 0;color:var(--dim);font-size:13.5px;max-width:76ch;line-height:1.45}
+.lbl{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:9px}
+
+/* 1 · хук */
+.hook-wrap{display:flex;flex-direction:column;justify-content:center;flex:1;min-height:0;gap:clamp(18px,3vh,34px)}
+.hook-line{font-size:clamp(26px,4.2vw,54px);font-weight:800;letter-spacing:-.035em;line-height:1.04;margin:0;max-width:20ch}
+.hook-line .w{opacity:0;display:inline-block}
+.hook-line .w em{font-style:normal;color:var(--acc)}
+.nots{display:flex;gap:clamp(14px,3vw,40px);flex-wrap:wrap}
+.not{opacity:0;max-width:22ch}
+.not b{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);font-weight:500}
+.not span{display:block;font-size:13.5px;color:var(--dim);margin-top:5px;line-height:1.45}
+
+/* 2 · идея */
+.idea3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:760px){.idea3{grid-template-columns:1fr}}
+.ic{border:1px solid var(--edge);background:var(--panel);border-radius:14px;padding:17px;opacity:0}
+.ic .vico{display:block;width:clamp(36px,3.8vw,48px);height:clamp(36px,3.8vw,48px);color:var(--acc);margin-bottom:12px}
+.ic .vico svg{width:100%;height:100%;display:block}
+.ic b{display:block;font-size:14.5px;font-weight:800;letter-spacing:-.015em;margin-bottom:5px}
+.ic p{margin:0;font-size:12.5px;color:var(--dim);line-height:1.45}
+.ic.axis{border-color:var(--acc-dim);background:linear-gradient(180deg,rgba(53,208,127,.07),transparent)}
+
+/* 3 · сценарий */
+.sheet-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,340px);gap:26px;align-items:center}
+@media (max-width:900px){.sheet-row{grid-template-columns:1fr}}
+.sheet{position:relative;height:clamp(230px,40vh,340px);border:1px solid var(--edge);border-radius:14px;overflow:hidden;background:#F6F7F8;opacity:0}
+.sheet img{position:absolute;left:0;top:0;width:100%;display:block}
+.sheet::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(13,18,17,.5),transparent 16%,transparent 80%,rgba(13,18,17,.7))}
+.plan{display:flex;flex-direction:column;gap:9px}
+.pl{display:flex;gap:11px;align-items:flex-start;opacity:0}
+.pl .pn{flex-shrink:0;width:24px;height:24px;border-radius:7px;border:1px solid var(--acc-dim);background:rgba(53,208,127,.09);color:var(--acc);
+  font-family:var(--f-mono);font-size:10px;display:flex;align-items:center;justify-content:center}
+.pl b{display:block;font-size:14px;font-weight:700;letter-spacing:-.01em}
+.pl span{display:block;font-size:12.5px;color:var(--dim);line-height:1.4;margin-top:2px}
+.plan-foot{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);opacity:0;padding-top:4px}
+
+/* 4 · раскадровка */
+.boards{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:center}
+@media (max-width:760px){.boards{grid-template-columns:1fr}}
+.board{position:relative;border:1px solid var(--edge);border-radius:13px;overflow:hidden;background:var(--panel);opacity:0}
+.board img{display:block;width:100%}
+.board .cap{position:absolute;left:10px;top:9px;font-family:var(--f-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);background:rgba(8,11,10,.75);border:1px solid var(--acc-dim);border-radius:999px;padding:3px 9px}
+
+/* 5 · производство: три фазы */
+.prod{position:relative;flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+.phase{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:16px;opacity:0}
+.phase-cap{display:flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+.phase-cap i{width:7px;height:7px;border-radius:50%;background:var(--acc);display:block}
+
+/* A · рендер кадров */
+.rgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:760px){.rgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rcell{position:relative;aspect-ratio:16/9;border:1px solid var(--edge);border-radius:10px;overflow:hidden;background:#0A0F0E}
+.rcell img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;filter:saturate(.4)}
+.rcell .bar{position:absolute;left:8px;right:8px;bottom:8px;height:3px;border-radius:2px;background:rgba(255,255,255,.12);overflow:hidden}
+.rcell .bar i{display:block;height:100%;background:var(--acc);transform-origin:left;transform:scaleX(0)}
+.rcell .num{position:absolute;left:8px;top:7px;font-family:var(--f-mono);font-size:8.5px;letter-spacing:.08em;color:var(--faint)}
+.rcell.done .num{color:var(--acc)}
+.rcell .scan{position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--acc),transparent);opacity:0}
+
+/* B · голос и музыка */
+.audio{display:flex;flex-direction:column;gap:14px}
+.wave{width:100%;height:clamp(90px,16vh,140px);display:block}
+.wave path{fill:none;stroke:var(--acc);stroke-width:2;stroke-linecap:round}
+.wave path.soft{stroke:rgba(53,208,127,.28)}
+.tracks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:700px){.tracks{grid-template-columns:1fr}}
+.trk{border:1px solid var(--edge);background:var(--panel);border-radius:11px;padding:11px 13px;opacity:0}
+.trk b{display:block;font-size:13px;font-weight:700}
+.trk span{display:block;font-size:11.5px;color:var(--dim);margin-top:3px}
+.trk .lvl{margin-top:9px;height:3px;border-radius:2px;background:var(--edge-soft);overflow:hidden}
+.trk .lvl i{display:block;height:100%;background:var(--acc);transform-origin:left;transform:scaleX(0)}
+
+/* C · монтаж */
+.edit{display:flex;flex-direction:column;gap:12px}
+.tl{position:relative;border:1px solid var(--edge);border-radius:12px;background:var(--panel);padding:12px;overflow:hidden}
+.tl-row{display:flex;gap:5px;align-items:stretch}
+.tl-row + .tl-row{margin-top:7px}
+.clipx{position:relative;border-radius:5px;overflow:hidden;height:44px;flex-shrink:0;opacity:0;background:#0A0F0E;border:1px solid var(--edge)}
+.clipx img{width:100%;height:100%;object-fit:cover;display:block}
+.tl-mini{height:16px;border-radius:4px;background:rgba(53,208,127,.16);border:1px solid var(--acc-dim);opacity:0}
+.tl-mini.music{background:rgba(255,255,255,.06);border-color:var(--edge)}
+.playhead{position:absolute;top:6px;bottom:6px;width:2px;background:var(--acc);box-shadow:0 0 12px rgba(53,208,127,.7);opacity:0}
+.edit-note{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);opacity:0}
+
+/* 6 · готовый ролик */
+.screen{position:relative;width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid var(--edge);background:#0A0F0E;opacity:0}
+.screen video,.screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* 7 · второй пример: процесс */
+.second{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:center}
+@media (max-width:900px){.second{grid-template-columns:1fr}}
+.mats{display:flex;flex-direction:column;gap:10px}
+.mat{position:relative;border:1px solid var(--edge);border-radius:11px;overflow:hidden;background:var(--panel);opacity:0}
+.mat img{display:block;width:100%}
+.mat .cap{position:absolute;left:9px;top:8px;font-family:var(--f-mono);font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);background:rgba(8,11,10,.78);border-radius:999px;padding:3px 8px}
+.pfgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.pfcell{position:relative;aspect-ratio:16/9;border:1px solid var(--edge);border-radius:10px;overflow:hidden;background:#0A0F0E;opacity:0}
+.pfcell img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* 8 · итог */
+.fin{font-size:clamp(24px,3.6vw,44px);font-weight:800;letter-spacing:-.03em;line-height:1.06;margin:0;max-width:18ch;opacity:0}
+.fin em{font-style:normal;color:var(--acc)}
+.kit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:760px){.kit{grid-template-columns:1fr}}
+.kit > div{border:1px solid var(--edge);background:var(--panel);border-radius:14px;padding:16px 17px;opacity:0}
+.kit .kico{display:block;width:clamp(36px,3.6vw,46px);height:clamp(36px,3.6vw,46px);color:var(--acc);margin-bottom:12px}
+.kit .kico svg{width:100%;height:100%;display:block}
+.kit b{display:block;font-size:clamp(14px,1.6vw,17px);font-weight:800;letter-spacing:-.015em}
+.kit p{margin:6px 0 0;font-size:12.5px;color:var(--dim);line-height:1.45}
+.price{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-top:1px solid var(--edge-soft);padding-top:16px;opacity:0}
+.price b{font-size:clamp(20px,2.7vw,29px);font-weight:800;letter-spacing:-.025em;color:var(--acc)}
+.price span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+
+/* низ */
+.scene-foot{position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--edge-soft);z-index:8}
+.scene-foot i{display:block;height:100%;background:var(--acc);transform-origin:left;transform:scaleX(0)}
+.hint{position:absolute;right:18px;bottom:16px;z-index:9;display:flex;align-items:center;gap:9px;font-family:var(--f-mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.hint .mouse{width:17px;height:27px;border:1px solid var(--faint);border-radius:9px;position:relative}
+.hint .mouse i{position:absolute;left:50%;top:5px;width:3px;height:3px;border-radius:50%;background:var(--faint);margin-left:-1.5px;animation:wh 1.9s ease-in-out infinite}
+@keyframes wh{0%,100%{transform:translateY(0);opacity:.3}35%{transform:translateY(8px);opacity:1}}
+@media (prefers-reduced-motion:reduce){.hint .mouse i{animation:none}}
+
+footer{padding:34px 0 60px;color:var(--faint);font-size:13px;font-family:var(--f-mono);line-height:1.7}
+
+/* мобильный фолбэк */
+@media (max-width:1000px){
+  .rail{height:auto!important}
+  .pin{position:static;height:auto;padding:0}
+  .stage{height:auto;min-height:0;border-radius:14px}
+  .body{height:auto}
+  .work{overflow:visible}
+  .scene{position:static;opacity:1!important;transform:none!important;border-bottom:1px solid var(--edge-soft)}
+  .scene *{opacity:1!important;transform:none!important}
+  .cal .day{opacity:1!important}
+  .hint,.scene-foot{display:none}
+}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <span class="tag">Услуга 3 из 7</span>
+    <h1>Рекламный ролик <em>без камеры</em><br>и съёмочной группы</h1>
+    <p>Два реальных ролика ниже. Ни актёров, ни площадки, ни оператора — но по картинке это уровень студийной рекламы. Разбираем, как собирается один, и бегло смотрим второй. Крутите.</p>
+  </header>
+</div>
+
+<div class="wrap">
+<div class="rail" id="rail">
+  <div class="pin">
+    <div class="stage">
+
+      <div class="pipe">
+        <span class="brand"><i></i> Контент-завод</span>
+        <span class="nodes" id="nodes"></span>
+        <span class="clock mono" id="clock">00:00</span>
+      </div>
+
+      <div class="body">
+        <div class="log">
+          <div class="log-head">Что делает агент</div>
+          <div class="log-clip"><div class="log-tape" id="tape"></div></div>
+        </div>
+
+        <div class="work" id="work">
+
+          <!-- 1 -->
+          <section class="scene">
+            <span class="scene-kicker">Услуга 3 · Продающие AI-видео</span>
+            <div class="hook-wrap">
+              <h2 class="hook-line" id="hookLine"></h2>
+              <div class="nots" id="nots">
+                <div class="not" data-not><b>нет</b><span>съёмочной группы, света и оператора</span></div>
+                <div class="not" data-not><b>нет</b><span>актёров и гонораров за съёмочный день</span></div>
+                <div class="not" data-not><b>нет</b><span>аренды локаций и переездов</span></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 2 -->
+          <section class="scene">
+            <span class="scene-kicker">Шаг 1 · Идея</span>
+            <h2>Сначала эмоция, потом картинка</h2>
+            <p class="sub">Разбираем на рекламе приложения для тренировок. Ролик должен продавать, поэтому идея идёт от того, что человек чувствует, а не от красивых кадров.</p>
+            <div class="idea3">
+              <div class="ic" data-ic>
+                <span class="vico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40C12 31 6 25 6 18.5 6 12.7 10.4 8 16 8c3.4 0 6.3 1.7 8 4.4C25.7 9.7 28.6 8 32 8c5.6 0 10 4.7 10 10.5C42 25 36 31 24 40Z"/></svg></span>
+                <b>Что человек чувствует</b>
+                <p>Не «удобный трекер», а «я снова в форме и мне легко».</p>
+              </div>
+              <div class="ic axis" data-ic>
+                <span class="vico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="9" width="36" height="26" rx="4"/><path d="M6 28l9-8 7 6 6-6 14 11"/><circle cx="32" cy="17" r="3.2"/><path d="M16 41h16"/></svg></span>
+                <b>Референс под каждый кадр</b>
+                <p>Берём то, что уже снято красиво, и повторяем композицию.</p>
+              </div>
+              <div class="ic" data-ic>
+                <span class="vico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4.2 4.2M32.8 32.8 37 37M37 11l-4.2 4.2M15.2 32.8 11 37"/><circle cx="24" cy="24" r="7"/></svg></span>
+                <b>Один продающий поворот</b>
+                <p>Момент, ради которого ролик досматривают до конца.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 3 -->
+          <section class="scene">
+            <span class="scene-kicker">Шаг 2 · Сценарий</span>
+            <h2 style="font-size:clamp(24px,3vw,38px)">Сценарист готовит сценарий</h2>
+            <div class="sheet-row">
+              <div class="sheet" id="sheet"><img src="assets3/s2-script.jpg" alt="" id="sheetImg"></div>
+              <div>
+                <div class="plan" id="plan">
+                  <div class="pl" data-pl><span class="pn">01</span><span><b>Движение камеры</b><span>наезд, облёт, переход прямо в экран телефона</span></span></div>
+                  <div class="pl" data-pl><span class="pn">02</span><span><b>Свет и цвет</b><span>контровой, дымка, тёплый дневной на кухне</span></span></div>
+                  <div class="pl" data-pl><span class="pn">03</span><span><b>Что в кадре</b><span>герой, предметы, что показывает экран приложения</span></span></div>
+                  <div class="pl" data-pl><span class="pn">04</span><span><b>Эмоция на лице</b><span>сосредоточенность, облегчение, удовольствие</span></span></div>
+                  <div class="pl" data-pl><span class="pn">05</span><span><b>Переход к следующему кадру</b><span>куда уводит камера и чем цепляется следующая сцена</span></span></div>
+                </div>
+                <div class="plan-foot" id="planFoot">30 секунд · 12 кадров · от космоса до логотипа</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 4 -->
+          <section class="scene">
+            <span class="scene-kicker">Шаг 3 · Раскадровка</span>
+            <h2>Готовит раскадровку: как будет выглядеть будущий ролик</h2>
+            <p class="sub">Каждая сцена сначала существует картинкой: свет, ракурс, цвет, что в руках. Только после этого кадр уходит в видео.</p>
+            <div class="boards">
+              <div class="board" data-board><img src="assets3/s2-board.jpg" alt=""><span class="cap">опорные кадры</span></div>
+              <div class="board" data-board><img src="assets3/s2-timeline.jpg" alt=""><span class="cap">сборка по порядку</span></div>
+            </div>
+          </section>
+
+          <!-- 5 -->
+          <section class="scene">
+            <span class="scene-kicker">Шаг 4 · Производство</span>
+            <h2 id="prodTitle">Кадры рендерятся по одному</h2>
+            <div class="prod">
+
+              <div class="phase" id="phA">
+                <span class="phase-cap"><i></i>видео · <span id="rDone">0</span> из 12 кадров</span>
+                <div class="rgrid" id="rgrid"></div>
+              </div>
+
+              <div class="phase" id="phB">
+                <span class="phase-cap"><i></i>голос и музыка</span>
+                <div class="audio">
+                  <svg class="wave" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true">
+                    <path class="soft" id="waveSoft" d=""/>
+                    <path id="waveLine" d=""/>
+                  </svg>
+                  <div class="tracks" id="tracks">
+                    <div class="trk" data-trk><b>Голос</b><span>озвучка ложится в тайминг кадров</span><span class="lvl"><i></i></span></div>
+                    <div class="trk" data-trk><b>Музыка</b><span>трек под темп и настроение</span><span class="lvl"><i></i></span></div>
+                    <div class="trk" data-trk><b>Эффекты</b><span>шаги, клики интерфейса, воздух зала</span><span class="lvl"><i></i></span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="phase" id="phC">
+                <span class="phase-cap"><i></i>монтаж</span>
+                <div class="edit">
+                  <div class="tl" id="tl">
+                    <div class="tl-row" id="tlClips"></div>
+                    <div class="tl-row" id="tlVoice"></div>
+                    <div class="tl-row" id="tlMusic"></div>
+                    <span class="playhead" id="playhead"></span>
+                  </div>
+                  <div class="edit-note" id="editNote">склейки в ритм · титры · логотип в финале</div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- 6 -->
+          <section class="scene">
+            <span class="scene-kicker">Готовый ролик · пример 1</span>
+            <h2>Реклама приложения для тренировок</h2>
+            <div class="screen" id="screenBig" style="max-width:min(760px,100%);margin:0 auto"></div>
+            <p class="sub" style="text-align:center;max-width:60ch;margin-left:auto;margin-right:auto">В кадре нет живого человека. Локации, зал, кухня и интерфейс телефона собраны нейросетями по раскадровке выше.</p>
+          </section>
+
+          <!-- 7 -->
+          <section class="scene">
+            <span class="scene-kicker">Пример 2 · как собирали</span>
+            <h2>Другой жанр, тот же конвейер</h2>
+            <div class="second">
+              <div class="mats" id="mats">
+                <div class="mat" data-mat><img src="assets3/s1-script.jpg" alt=""><span class="cap">сценарий по таймкодам</span></div>
+                <div class="mat" data-mat><img src="assets3/s1-board.jpg" alt=""><span class="cap">раскадровка</span></div>
+              </div>
+              <div>
+                <div class="mat" data-mat style="margin-bottom:10px"><img src="assets3/s1-hero.jpg" alt=""><span class="cap">герой из одного фото</span></div>
+                <div class="pfgrid" id="pfgrid"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 8 -->
+          <section class="scene">
+            <span class="scene-kicker">Готовый ролик · пример 2</span>
+            <h2>Анимационный ролик про профессии</h2>
+            <div class="screen" id="screen2" style="max-width:min(760px,100%);margin:0 auto"></div>
+            <p class="sub" style="text-align:center;max-width:60ch;margin-left:auto;margin-right:auto">Тот же путь: сценарий, раскадровка, генерация, звук и монтаж. Меняется только жанр картинки.</p>
+          </section>
+
+          <!-- 9 -->
+          <section class="scene">
+            <span class="scene-kicker">Итог</span>
+            <h2 class="fin" id="fin">Рекламный ролик <em>уровня студии</em> без съёмки</h2>
+            <div class="kit">
+              <div data-kit><span class="kico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6 42 15v18L24 42 6 33V15Z"/><path d="M6 15l18 9 18-9M24 24v18"/></svg></span><b>8–12 роликов в пакете</b><p>Разные форматы и длины под ленту, сторис и YouTube.</p></div>
+              <div data-kit><span class="kico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="13" width="38" height="26" rx="4"/><path d="M5 20h38"/><path d="m12 13 5 7M23 13l5 7M34 13l5 7"/><path d="M21 26.5 29 31l-8 4.5Z" fill="currentColor" stroke="none"/></svg></span><b>Любой жанр</b><p>Кинематографичная реклама, анимация, история от первого лица.</p></div>
+              <div data-kit><span class="kico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14h32M8 24h20M8 34h26"/><circle cx="36" cy="24" r="5"/><path d="M36 19v-4M36 33v4"/></svg></span><b>Правки без пересъёмки</b><p>Поменять кадр, город или фразу стоит один рендер, а не съёмочный день.</p></div>
+            </div>
+            <div class="price" id="price"><b>$300–$1 200</b><span>за пакет 8–12 роликов · сложность лёгкая</span></div>
+          </section>
+
+        </div>
+      </div>
+
+        </div>
+      </div>
+
+      <div class="hint" id="hint"><span class="mouse"><i></i></span> крутите</div>
+      <div class="scene-foot"><i id="foot"></i></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="wrap">
+  <footer>
+    Оба ролика сделаны без съёмки. Рабочие материалы на слайдах — подлинные: сценарий, раскадровка и опорные кадры из этих проектов.
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var VIDEOS = {
+    hbm:  { src:"video3/reel-hbm.mp4",  poster:"video3/poster-hbm.jpg" },
+    prof: { src:"video3/reel-prof.mp4", poster:"video3/poster-prof.jpg" }
+  };
+
+  var clamp01 = function(v){ return v<0?0:v>1?1:v; };
+  function track(p, stops){
+    if (p <= stops[0][0]) return stops[0][1];
+    var last = stops[stops.length-1];
+    if (p >= last[0]) return last[1];
+    for (var i=1;i<stops.length;i++){
+      var x=stops[i-1], y=stops[i], sp=y[0]-x[0];
+      if (p <= y[0]) return x[1] + (y[1]-x[1]) * (sp ? (p-x[0])/sp : 0);
+    }
+    return last[1];
+  }
+
+  var rail = document.getElementById('rail');
+  if (!rail) return;
+
+  var N = 9;
+  var at = function(i,x){ return (i+x)/N; };
+  function reveal(p,i,from,to){ return track(p, [[at(i,from),0],[at(i,to),1]]); }
+  function fade(el,v,shift){
+    el.style.opacity = v.toFixed(3);
+    if (shift) el.style.transform = 'translate3d(0,' + (shift*(1-v)).toFixed(2) + 'px,0)';
+  }
+
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var narrow = function(){ return innerWidth <= 1000; };
+  var scenes = [].slice.call(document.querySelectorAll('.scene'));
+
+  /* конвейер */
+  var NODE_CAPS = ['старт','идея','сценарий','кадры','производство','ролик','пример 2','ролик 2','итог'];
+  var nodes = document.getElementById('nodes'), beads=[], wires=[];
+  NODE_CAPS.forEach(function(cap,i){
+    var w=document.createElement('span'); w.className='node-wrap';
+    var bd=document.createElement('span'); bd.className='bead'; w.appendChild(bd); beads.push(bd);
+    if (i<NODE_CAPS.length-1){
+      var wire=document.createElement('span'); wire.className='wire';
+      var fill=document.createElement('i'); wire.appendChild(fill); w.appendChild(wire); wires.push(fill);
+    }
+    var c=document.createElement('span'); c.className='cap'; c.textContent=cap; w.appendChild(c);
+    nodes.appendChild(w);
+  });
+
+  /* лог */
+  var LOG = [
+    [at(0,0.20), 'бриф принят'],
+    [at(1,0.15), 'ищу эмоцию, а не кадры'],
+    [at(1,0.55), 'собрал референсы'],
+    [at(2,0.15), 'сценарист пишет по секундам'],
+    [at(2,0.60), '<b>12 кадров</b> на 30 секунд'],
+    [at(3,0.15), 'собираю опорные кадры'],
+    [at(3,0.55), 'раскадровка готова'],
+    [at(4,0.10), 'рендер кадров в <b>Veo 3</b>'],
+    [at(4,0.42), 'озвучка и музыка'],
+    [at(4,0.72), 'монтаж и титры'],
+    [at(5,0.20), 'первый ролик готов'],
+    [at(6,0.20), 'второй проект, другой жанр'],
+    [at(7,0.20), 'второй ролик готов'],
+    [at(8,0.20), 'пакет собран']
+  ];
+  var tape = document.getElementById('tape');
+  var logEls = LOG.map(function(r){
+    var el=document.createElement('div'); el.className='log-line'; el.innerHTML=r[1];
+    tape.appendChild(el); return el;
+  });
+  var LOG_CAP=11, LOG_H=24;
+
+  /* 1 · хук */
+  var HOOK = ['Ролик, ','который ','<em>продаёт</em>.','<br>','Снят ','без ','камеры ','и ','актёров.'];
+  var hookLine = document.getElementById('hookLine');
+  var wordEls = [];
+  HOOK.forEach(function(w){
+    if (w === '<br>'){ hookLine.appendChild(document.createElement('br')); return; }
+    var sp=document.createElement('span'); sp.className='w';
+    sp.innerHTML = w.replace(/ $/,'&nbsp;');
+    hookLine.appendChild(sp); wordEls.push(sp);
+  });
+  var notEls = [].slice.call(document.querySelectorAll('[data-not]'));
+
+  /* 2 · идея */
+  var icEls = [].slice.call(document.querySelectorAll('[data-ic]'));
+
+  /* 3 · сценарий */
+  var sheet = document.getElementById('sheet');
+  var sheetImg = document.getElementById('sheetImg');
+  var plEls = [].slice.call(document.querySelectorAll('[data-pl]'));
+  var planFoot = document.getElementById('planFoot');
+
+  /* 4 · раскадровка */
+  var boardEls = [].slice.call(document.querySelectorAll('[data-board]'));
+
+  /* 5 · производство */
+  var prodTitle = document.getElementById('prodTitle');
+  var phA = document.getElementById('phA'), phB = document.getElementById('phB'), phC = document.getElementById('phC');
+
+  var FRAMES = ['fr-1','fr-3','fr-5','fr-7','fr-9','fr-11','fr-13','fr-15'];
+  var rgrid = document.getElementById('rgrid');
+  var rCells = FRAMES.map(function(f, i){
+    var el = document.createElement('div');
+    el.className = 'rcell';
+    el.innerHTML = '<img src="assets3/' + f + '.jpg" alt="" loading="lazy">'
+                 + '<span class="scan"></span><span class="num">кадр ' + (i+1) + '</span>'
+                 + '<span class="bar"><i></i></span>';
+    rgrid.appendChild(el);
+    return { box: el, img: el.querySelector('img'), bar: el.querySelector('.bar i'),
+             scan: el.querySelector('.scan'), num: el.querySelector('.num') };
+  });
+  var rDone = document.getElementById('rDone');
+
+  var waveLine = document.getElementById('waveLine');
+  var waveSoft = document.getElementById('waveSoft');
+  var trkEls = [].slice.call(document.querySelectorAll('[data-trk]'));
+  var WAVE = [];
+  (function(){
+    var seed = 11;
+    for (var i = 0; i <= 120; i++){
+      seed = (seed*1103515245 + 12345) % 2147483648;
+      var r = seed / 2147483648;
+      var env = Math.sin(i/120*Math.PI);
+      WAVE.push(8 + 48 * env * (0.35 + 0.65*r));
+    }
+  })();
+  function wavePath(t, mul){
+    var n = Math.max(2, Math.round(WAVE.length * t));
+    var d = '';
+    for (var i = 0; i < n; i++){
+      var x = (i/(WAVE.length-1))*600, h = WAVE[i]*mul;
+      d += (i ? ' M' : 'M') + x.toFixed(1) + ' ' + (60-h).toFixed(1) + ' L' + x.toFixed(1) + ' ' + (60+h).toFixed(1);
+    }
+    return d;
+  }
+
+  var tlClips = document.getElementById('tlClips');
+  var tlVoice = document.getElementById('tlVoice');
+  var tlMusic = document.getElementById('tlMusic');
+  var playhead = document.getElementById('playhead');
+  var editNote = document.getElementById('editNote');
+  var WIDTHS = [13, 9, 16, 11, 8, 14, 10, 12];
+  var clipEls = WIDTHS.map(function(w, i){
+    var el = document.createElement('span');
+    el.className = 'clipx';
+    el.style.width = w + '%';
+    el.innerHTML = '<img src="assets3/' + FRAMES[i] + '.jpg" alt="" loading="lazy">';
+    tlClips.appendChild(el);
+    return el;
+  });
+  var voiceEls = [24, 18, 30, 21].map(function(w){
+    var el = document.createElement('span'); el.className = 'tl-mini'; el.style.width = w + '%';
+    tlVoice.appendChild(el); return el;
+  });
+  var musicEls = [48, 45].map(function(w){
+    var el = document.createElement('span'); el.className = 'tl-mini music'; el.style.width = w + '%';
+    tlMusic.appendChild(el); return el;
+  });
+
+  /* 6 · готовый ролик 1 */
+  var screenBig = document.getElementById('screenBig');
+  var vidBig = document.createElement('video');
+  vidBig.muted = true; vidBig.loop = true; vidBig.playsInline = true;
+  vidBig.setAttribute('muted',''); vidBig.setAttribute('playsinline','');
+  vidBig.preload = 'auto'; vidBig.poster = VIDEOS.hbm.poster; vidBig.src = VIDEOS.hbm.src;
+  screenBig.appendChild(vidBig);
+
+  /* 7 · второй пример: материалы */
+  var matEls = [].slice.call(document.querySelectorAll('[data-mat]'));
+  var PF = ['pf-1','pf-4','pf-7','pf-10'];
+  var pfgrid = document.getElementById('pfgrid');
+  var pfEls = PF.map(function(f){
+    var el = document.createElement('div');
+    el.className = 'pfcell';
+    el.innerHTML = '<img src="assets3/' + f + '.jpg" alt="" loading="lazy">';
+    pfgrid.appendChild(el);
+    return el;
+  });
+
+  /* 8 · готовый ролик 2 */
+  var screen2 = document.getElementById('screen2');
+  var vid2 = document.createElement('video');
+  vid2.muted = true; vid2.loop = true; vid2.playsInline = true;
+  vid2.setAttribute('muted',''); vid2.setAttribute('playsinline','');
+  vid2.preload = 'metadata'; vid2.poster = VIDEOS.prof.poster; vid2.src = VIDEOS.prof.src;
+  screen2.appendChild(vid2);
+
+  /* 9 · итог */
+  var fin = document.getElementById('fin');
+  var kits = [].slice.call(document.querySelectorAll('[data-kit]'));
+  var price = document.getElementById('price');
+
+  var foot = document.getElementById('foot');
+  var hint = document.getElementById('hint');
+  var clock = document.getElementById('clock');
+
+  function playState(video, on){
+    if (!video) return;
+    if (on){ var pr = video.play(); if (pr && pr.catch) pr.catch(function(){}); }
+    else video.pause();
+  }
+
+  function render(p){
+    for (var i=0;i<N;i++){
+      var lit = clamp01(p*N - i + 0.12);
+      beads[i].style.background = lit > 0.5 ? 'var(--acc)' : 'var(--edge)';
+      beads[i].style.boxShadow = (lit>0.5 && lit<1) ? '0 0 0 5px var(--acc-glow)' : '0 0 0 0 var(--acc-glow)';
+      if (wires[i]) wires[i].style.transform = 'scaleX(' + clamp01(p*N-i).toFixed(3) + ')';
+    }
+    clock.textContent = '00:' + ('0' + Math.floor(p*44)).slice(-2);
+
+    for (var sc=0; sc<N; sc++){
+      var op = sc === 0 ? 1 : track(p, [[at(sc,-0.04),0],[at(sc,0.06),1]]);
+      scenes[sc].style.opacity = op.toFixed(3);
+      scenes[sc].style.pointerEvents = op > 0.5 ? 'auto' : 'none';
+    }
+
+    /* видео живут только на своих сценах */
+    playState(vidBig, p > at(5,-0.02) && p < at(6,0.10));
+    playState(vid2,   p > at(7,-0.02) && p < at(8,0.10));
+
+    var shown = 0;
+    for (var L=0; L<LOG.length; L++){
+      var o = track(p, [[LOG[L][0],0],[LOG[L][0]+0.008,1]]);
+      logEls[L].style.opacity = o.toFixed(3);
+      logEls[L].style.transform = 'translate3d(0,'+(6*(1-o)).toFixed(1)+'px,0)';
+      if (o > 0.99) logEls[L].classList.add('done'); else logEls[L].classList.remove('done');
+      if (o > 0.2) shown++;
+    }
+    tape.style.transform = 'translate3d(0,' + (-Math.max(0, shown-LOG_CAP)*LOG_H) + 'px,0)';
+
+    /* 1 · хук */
+    wordEls.forEach(function(w,i){
+      var o = reveal(p,0,0.02+i*0.03,0.11+i*0.03);
+      w.style.opacity = o.toFixed(3);
+      w.style.transform = 'translate3d(0,'+(10*(1-o)).toFixed(1)+'px,0)';
+    });
+    notEls.forEach(function(n,i){ fade(n, reveal(p,0,0.44+i*0.05,0.58+i*0.05), 10); });
+
+    /* 2 · идея */
+    icEls.forEach(function(c,i){ fade(c, reveal(p,1,0.08+i*0.08,0.26+i*0.08), 14); });
+
+    /* 3 · сценарий */
+    fade(sheet, reveal(p,2,0.04,0.16), 14);
+    var scrollT = reveal(p,2,0.14,0.80);
+    var over = Math.max(0, sheetImg.offsetHeight - sheet.offsetHeight);
+    sheetImg.style.transform = 'translate3d(0,' + (-over*scrollT).toFixed(1) + 'px,0)';
+    plEls.forEach(function(el,i){ fade(el, reveal(p,2,0.14+i*0.08,0.28+i*0.08), 10); });
+    fade(planFoot, reveal(p,2,0.60,0.72), 8);
+
+    /* 4 · раскадровка */
+    boardEls.forEach(function(bd,i){ fade(bd, reveal(p,3,0.08+i*0.14,0.30+i*0.14), 16); });
+
+    /* 5 · производство: три фазы одна за другой */
+    var pa = reveal(p,4,0.02,0.10) * (1 - reveal(p,4,0.34,0.40));
+    var pb = reveal(p,4,0.38,0.44) * (1 - reveal(p,4,0.64,0.70));
+    var pc = reveal(p,4,0.68,0.74);
+    phA.style.opacity = pa.toFixed(3);
+    phB.style.opacity = pb.toFixed(3);
+    phC.style.opacity = pc.toFixed(3);
+    prodTitle.textContent = pc > 0.5 ? 'Монтаж собирает ролик'
+                          : (pb > 0.5 ? 'Ложатся голос и музыка' : 'Кадры рендерятся по одному');
+
+    // A · кадры
+    var doneCount = 0;
+    rCells.forEach(function(c,i){
+      var st = 0.04 + i*0.032;
+      var prog = reveal(p, 4, st, st + 0.055);
+      c.bar.style.transform = 'scaleX(' + prog.toFixed(3) + ')';
+      c.img.style.opacity = prog.toFixed(3);
+      c.img.style.filter = 'saturate(' + (0.35 + 0.65*prog).toFixed(2) + ')';
+      c.scan.style.opacity = (prog > 0.02 && prog < 0.98 ? 1 : 0);
+      c.scan.style.transform = 'translateY(' + (prog * c.box.offsetHeight).toFixed(1) + 'px)';
+      if (prog > 0.98){ c.box.classList.add('done'); doneCount++; } else c.box.classList.remove('done');
+    });
+    rDone.textContent = Math.min(12, Math.round(doneCount * 1.5));
+
+    // B · звук
+    var wa = reveal(p,4,0.42,0.64);
+    waveLine.setAttribute('d', wa > 0 ? wavePath(wa, 1) : '');
+    waveSoft.setAttribute('d', wa > 0 ? wavePath(Math.min(1, wa*1.25), 0.55) : '');
+    trkEls.forEach(function(t,i){
+      var o = reveal(p,4,0.44+i*0.05,0.54+i*0.05);
+      fade(t, o, 10);
+      t.querySelector('.lvl i').style.transform = 'scaleX(' + reveal(p,4,0.46+i*0.05,0.64).toFixed(3) + ')';
+    });
+
+    // C · монтаж
+    clipEls.forEach(function(c,i){
+      var o = reveal(p,4,0.70+i*0.022,0.78+i*0.022);
+      c.style.opacity = o.toFixed(3);
+      c.style.transform = 'translate3d(' + (-14*(1-o)).toFixed(1) + 'px,0,0)';
+    });
+    voiceEls.forEach(function(v,i){ v.style.opacity = reveal(p,4,0.80+i*0.015,0.86+i*0.015).toFixed(3); });
+    musicEls.forEach(function(m,i){ m.style.opacity = reveal(p,4,0.84+i*0.02,0.90+i*0.02).toFixed(3); });
+    var ph = reveal(p,4,0.74,0.97);
+    playhead.style.opacity = (pc > 0.5 ? 1 : 0);
+    playhead.style.left = (12 + ph * 0.94 * (document.getElementById('tl').offsetWidth - 24)).toFixed(1) + 'px';
+    fade(editNote, reveal(p,4,0.88,0.96), 8);
+
+    /* 6 · готовый ролик 1 */
+    fade(screenBig, reveal(p,5,0.04,0.18), 16);
+
+    /* 7 · второй пример: материалы */
+    matEls.forEach(function(m,i){ fade(m, reveal(p,6,0.06+i*0.08,0.24+i*0.08), 14); });
+    pfEls.forEach(function(c,i){
+      var o = reveal(p,6,0.30+i*0.07,0.46+i*0.07);
+      c.style.opacity = o.toFixed(3);
+      c.style.transform = 'scale(' + (0.94+0.06*o).toFixed(3) + ')';
+    });
+
+    /* 8 · готовый ролик 2 */
+    fade(screen2, reveal(p,7,0.04,0.18), 16);
+
+    /* 9 · итог */
+    fade(fin, reveal(p,8,0.04,0.18), 14);
+    kits.forEach(function(k,i){ fade(k, reveal(p,8,0.18+i*0.09,0.34+i*0.09), 14); });
+    fade(price, reveal(p,8,0.62,0.78), 10);
+
+    foot.style.transform = 'scaleX(' + p.toFixed(4) + ')';
+    hint.style.opacity = (1 - clamp01(p*12)).toFixed(3);
+  }
+
+  function tick(){
+    var range = rail.offsetHeight - innerHeight;
+    render(clamp01(-rail.getBoundingClientRect().top / (range || 1)));
+  }
+  var queued = false;
+  function onScroll(){
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(function(){ tick(); queued = false; });
+  }
+  document.addEventListener('visibilitychange', function(){
+    if (document.visibilityState !== 'visible') return;
+    queued = false; tick();
+  });
+
+  function flatten(){
+    rail.style.height = 'auto';
+    render(1);
+    scenes.forEach(function(sc){ sc.style.opacity = '1'; });
+    tape.style.transform = 'none';
+    logEls.forEach(function(l){ l.style.opacity='1'; l.style.transform='none'; });
+    wordEls.forEach(function(w){ w.style.opacity='1'; w.style.transform='none'; });
+    [].slice.call(document.querySelectorAll('[data-not],[data-ic],[data-board],[data-pl],[data-mat],[data-kit],[data-trk]'))
+      .forEach(function(el){ el.style.opacity='1'; el.style.transform='none'; });
+    sheet.style.opacity='1'; sheetImg.style.transform='none'; planFoot.style.opacity='1';
+    phA.style.opacity='1'; phB.style.opacity='1'; phC.style.opacity='1';
+    rCells.forEach(function(c){ c.img.style.opacity='1'; c.img.style.filter='none'; c.bar.style.transform='scaleX(1)'; c.scan.style.opacity='0'; });
+    clipEls.concat(voiceEls, musicEls).forEach(function(c){ c.style.opacity='1'; c.style.transform='none'; });
+    pfEls.forEach(function(c){ c.style.opacity='1'; c.style.transform='none'; });
+    screenBig.style.opacity='1'; screen2.style.opacity='1';
+    price.style.opacity='1'; fin.style.opacity='1'; editNote.style.opacity='1';
+  }
+
+  function boot(){
+    if (reduce || narrow()){ flatten(); return; }
+    rail.style.height = '';
+    addEventListener('scroll', onScroll, { passive:true });
+    tick();
+  }
+  addEventListener('resize', function(){ removeEventListener('scroll', onScroll); boot(); }, { passive:true });
+  boot();
+})();
+</script>
+
+</body></html>

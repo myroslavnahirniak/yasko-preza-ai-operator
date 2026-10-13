@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-01T05:52:49.976275Z",
+    "display_name": "GPT Image 2.5",
+    "id": "930caa16-c39f-4d80-87a6-51e62732d3a9",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_055249_930caa16-c39f-4d80-87a6-51e62732d3a9_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "fae2d99c-6691-4128-88bb-be49f91e1777",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/fae2d99c-6691-4128-88bb-be49f91e1777.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Edit reference image 1. Keep the exact composition of reference image 1: the open-plan office, the black-and-gold robots working at the desks, the empty office chair and the cardboard box with belongings in the sharp foreground. Recolor into a night scene with deep violet and electric magenta neon light from the windows and screens, mixed with warm orange lamp light on the floor, the chair and the box; city lights outside in pink and purple. Make the upper 45% of the frame (ceiling, sky, top of the windows) much darker - deep navy to near-black - so a white headline on top reads perfectly. Rich saturated colors, high contrast, cinematic. No text, no letters, no logos.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_055249_930caa16-c39f-4d80-87a6-51e62732d3a9.png",
+    "status": "completed"
+  }
+]

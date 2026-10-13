@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T05:12:55.84668Z",
+    "display_name": "GPT Image 2.5",
+    "id": "bd434d18-b3db-4469-a26d-bf6d1a54d938",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051255_bd434d18-b3db-4469-a26d-bf6d1a54d938_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal 3D render, square 1:1, dark warm palette (#0B0907 shadows), matte dark materials with thin brass edge accents, subtle yellow (#FDD506) accent glow, thin haze, golden dust in the light, shallow depth of field. No people, no readable text, no letters, no logos, no watermark. The middle band of the frame (from 35% to 75% of the height): a long dark matte desk seen straight from the front with four objects standing in one evenly spaced row, each under its own small warm spotlight, clearly separated by empty dark space: 1) a smartphone standing upright showing an abstract chat with speech bubbles, a small headset resting beside it; 2) a vertical smartphone on a small tripod with a round ring light behind it, screen showing a paused vertical video with a tiny play icon; 3) a neat stack of printed ad posters with bold abstract colour blocks, one card leaning against the stack; 4) a tablet showing an abstract social feed with a heart icon, a small brass megaphone lying in front of it. The upper 35% of the frame is nearly black and empty for typography; the bottom 25% is a plain dark desk surface, empty, for captions.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051255_bd434d18-b3db-4469-a26d-bf6d1a54d938.png",
+    "status": "completed"
+  }
+]

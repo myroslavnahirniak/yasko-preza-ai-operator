@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-01T04:55:42.974645Z",
+    "display_name": "GPT Image 2.5",
+    "id": "152224a5-9b85-44f7-980f-529409fbdb3e",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_045542_152224a5-9b85-44f7-980f-529409fbdb3e_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Ultra-realistic cinematic photo, square frame. Close-up of the back pocket of worn dark jeans with a few crumpled US dollar bills sticking out, warm golden side light, deep shadows. The pocket occupies the bottom 40% of the frame; the top 60% is dark fabric falling into black, empty for a headline and a large number. Gritty and honest. No faces. Moody chiaroscuro, deep blacks, warm golden light, film grain. No text, no letters, no logos, no blue, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_045542_152224a5-9b85-44f7-980f-529409fbdb3e.png",
+    "status": "completed"
+  }
+]

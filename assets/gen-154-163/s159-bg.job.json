@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T11:38:39.906481Z",
+    "display_name": "GPT Image 2.5",
+    "id": "8875fe81-4962-43ee-a330-8d4fb1aab565",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_113839_8875fe81-4962-43ee-a330-8d4fb1aab565_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal shot, square 1:1, dark warm palette (#0B0907 shadows). A person seen from behind and slightly from the side, face not visible, sitting at a desk in a dim room, leaning back with arms crossed, looking skeptically at a laptop whose screen shows only a soft abstract glow (no readable content). Single warm desk lamp, deep vignette, the upper 45% of the frame is nearly black and empty for typography. No text, no logos, no watermark, calm, moody, realistic.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_113839_8875fe81-4962-43ee-a330-8d4fb1aab565.png",
+    "status": "completed"
+  }
+]

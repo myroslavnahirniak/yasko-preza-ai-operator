@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-01T09:29:15.39968Z",
+    "display_name": "GPT Image 2.5",
+    "id": "c5bec6d0-bd41-4a5a-9e64-04c11260f0a2",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_092915_c5bec6d0-bd41-4a5a-9e64-04c11260f0a2_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "dfbc4511-93a4-437c-860e-a12f508d80bf",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/dfbc4511-93a4-437c-860e-a12f508d80bf.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Ultra-realistic square photo. The man sits at a laptop in a bright studio, palm on his forehead with a good-natured laughing grin; the laptop screen shows only a big spinning loading circle; warm light, colorful accents. The man is exactly the man from the reference image: light platinum-blond almost white short hair, full dark-brown beard, same face. Bright, lively, high-key cinematic photo, warm golden light with teal and magenta accent lights, rich saturated colors, shallow depth of field, energetic positive mood, real photo look, natural skin. No text, no letters, no logos, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_092915_c5bec6d0-bd41-4a5a-9e64-04c11260f0a2.png",
+    "status": "completed"
+  }
+]

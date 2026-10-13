@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-09-21T14:20:04.757686Z",
+    "display_name": "GPT Image 2.5",
+    "id": "272316eb-e8dd-422b-862b-4189dd890373",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_142004_272316eb-e8dd-422b-862b-4189dd890373_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "fc596908-bb5d-4d77-90bf-53ebdf100a40",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/fc596908-bb5d-4d77-90bf-53ebdf100a40.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Photoreal cinematic still, square 1:1. The man from the reference photo (platinum-blond short hair, full brown beard, black t-shirt), face clearly recognizable, shown from the waist up on the RIGHT side of the frame, turned slightly toward the left, calmly explaining something with one open hand raised, slight confident smile, looking at the viewer. Pure solid black background (#000000), no environment, no objects, no floor, single warm key light from the upper left, subtle yellow (#FDD506) rim light on the shoulder. The left 55% of the frame is pure black and empty. No readable text, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_142004_272316eb-e8dd-422b-862b-4189dd890373.png",
+    "status": "completed"
+  }
+]

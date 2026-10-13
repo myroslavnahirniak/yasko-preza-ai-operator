@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T14:11:00.831506Z",
+    "display_name": "GPT Image 2.5",
+    "id": "15331a06-fcbd-4e2b-8d61-d2d72542de45",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_141100_15331a06-fcbd-4e2b-8d61-d2d72542de45_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal 3D render, square 1:1, dark warm palette (#0B0907 shadows), matte dark materials with thin brass edge accents, subtle yellow (#FDD506) accent glow, thin haze, golden dust in the light, shallow depth of field, premium product-commercial look, highly detailed. No people, no readable text, no letters, no logos, no watermark. The upper 40% of the frame is nearly black and empty for typography. Scene: a smartphone standing on a dark desk with a glowing yellow chat bubble rising out of the screen made of thin light lines, small sparks around the bubble, a paper-plane shape of light leaving it — a personal message being prepared.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_141100_15331a06-fcbd-4e2b-8d61-d2d72542de45.png",
+    "status": "completed"
+  }
+]

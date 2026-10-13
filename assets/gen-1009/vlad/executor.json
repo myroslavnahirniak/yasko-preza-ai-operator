@@ -1,0 +1,29 @@
+[
+  {
+    "created_at": "2026-10-09T06:39:53.480011Z",
+    "display_name": "Nano Banana Pro",
+    "id": "5c9d95b5-5978-4435-98fd-2bf089851f6b",
+    "job_type": "nano_banana_pro",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261009_063953_5c9d95b5-5978-4435-98fd-2bf089851f6b_min.webp",
+    "params": {
+      "application": null,
+      "aspect_ratio": "1:1",
+      "batch_size": 1,
+      "height": 2048,
+      "input_image": null,
+      "input_images": [
+        {
+          "id": "94a328c8-dccc-46bb-90f9-5b10ea1a75f8",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/94a328c8-dccc-46bb-90f9-5b10ea1a75f8.png"
+        }
+      ],
+      "prompt": "Edit this photo: remove all thin glowing yellow puppet strings/ropes and any wooden puppet control bars, and remove any other people or body parts at the edges. Keep the bearded blond man exactly the same — same face, pose, costume, props and warm cinematic golden lighting. Extend the dark smoky background naturally to fill the frame. Photorealistic, no text.",
+      "resolution": "2k",
+      "surface": null,
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261009_063953_5c9d95b5-5978-4435-98fd-2bf089851f6b.png",
+    "status": "completed"
+  }
+]

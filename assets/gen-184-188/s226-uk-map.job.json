@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T22:28:38.773605Z",
+    "display_name": "GPT Image 2.5",
+    "id": "1abe471a-6c35-42bf-9ae4-610d0d520f47",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_222838_1abe471a-6c35-42bf-9ae4-610d0d520f47_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Minimal flat vector map illustration, square 1:1, on a plain very dark warm background (#0B0907). Silhouette of Great Britain in dark graphite grey (#1c1713) with a thin subtle warm grey outline, no other countries, no grid, centered, occupying most of the frame. One single glowing yellow (#FDD506) round pin dot placed in the north of England where Leeds is, with a soft yellow glow and a thin yellow ring around it. Clean, modern, minimal infographic style, generous empty space. No text, no letters, no labels, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_222838_1abe471a-6c35-42bf-9ae4-610d0d520f47.png",
+    "status": "completed"
+  }
+]

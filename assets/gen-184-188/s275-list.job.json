@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T14:11:01.608769Z",
+    "display_name": "GPT Image 2.5",
+    "id": "3c625f5d-942c-49cc-a61a-ed05008c46f1",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_141101_3c625f5d-942c-49cc-a61a-ed05008c46f1_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal 3D render, square 1:1, dark warm palette (#0B0907 shadows), matte dark materials with thin brass edge accents, subtle yellow (#FDD506) accent glow, thin haze, golden dust in the light, shallow depth of field, premium product-commercial look, highly detailed. No people, no readable text, no letters, no logos, no watermark. The upper 40% of the frame is nearly black and empty for typography. Scene: a single dark clipboard on a desk with a short list of five rows made of light bars, three rows marked with glowing yellow check marks, a brass pen beside it, warm desk lamp light — the shortlist handed over.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_141101_3c625f5d-942c-49cc-a61a-ed05008c46f1.png",
+    "status": "completed"
+  }
+]

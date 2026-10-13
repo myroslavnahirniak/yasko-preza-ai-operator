@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-09-22T05:10:50.742377Z",
+    "display_name": "GPT Image 2.5",
+    "id": "57fa2aa9-073b-4b2a-9718-315ce6065d2e",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_051050_57fa2aa9-073b-4b2a-9718-315ce6065d2e_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "252dd94e-9996-498c-909b-e2dec6d78525",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/252dd94e-9996-498c-909b-e2dec6d78525.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Premium 3D render of a glowing glass dashboard panel, square 1:1, dark warm background (#0B0907) with volumetric golden-yellow (#FDD506) rim light and reflections on a dark floor, exactly the style of the reference image: black glass card with rounded corners, thin neon-yellow glowing edges, yellow pill tabs, white and yellow typography on black. Content of the panel — a sales messenger chat between a freelancer and a client, plus a commercial-proposal card. Header of the panel: \"Скрипты продаж\" (white) and \"и шаблоны КП\" (yellow), small subtitle \"Ответы на возражения · КП под каждую услугу\". Left column: chat bubbles. Grey incoming bubbles from the client: \"Дорого\", \"Я подумаю\", \"А вы вообще кто?\". Yellow outgoing reply bubbles from the freelancer: \"Один сайт — $250. Это две сделки\", \"Скину КП и два примера — 2 минуты\", \"Оплата только на странице, которую вы видели\". Right column: a document card titled \"КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ\" with lines \"Сайт за вечер · $250\", \"Срок: 5 дней\", \"Предоплата 50%\", and a big yellow button \"Выставить счёт\". Small bottom row of yellow pills: \"здравствуйте\" → \"возражения\" → \"КП\" → \"счёт\". All text in Russian, crisp, correctly spelled, legible. No people, no extra logos. Same glossy glass material, same lighting and same composition angle as the reference.",
+      "quality": "low",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_051050_57fa2aa9-073b-4b2a-9718-315ce6065d2e.png",
+    "status": "completed"
+  }
+]

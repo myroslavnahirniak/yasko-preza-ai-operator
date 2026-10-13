@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T15:31:32.075514Z",
+    "display_name": "GPT Image 2.5",
+    "id": "5ad14d73-63e2-44cc-81b5-3d9560802284",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_153132_5ad14d73-63e2-44cc-81b5-3d9560802284_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). Lower half of the frame: seven tall dark glass showcase cabinets with brass edges in one row on a dark stone floor of a dark showroom, receding slightly from left to right but every cabinet fully visible, evenly spaced across the frame. Inside each cabinet one object stands on a dark pedestal. The first cabinet on the left glows warm yellow (#FDD506) from inside and holds an open laptop showing an abstract website layout with placeholder blocks. The other six cabinets stay dim, each object only hinted by a soft warm rim light: second - a folio of printed presentation pages and a mounted poster board with layout blocks; third - a vertical smartphone on a stand with a paused video and a tiny play icon; fourth - a calendar board with a grid of small pinned cards; fifth - a dark tablet with a rising bar chart; sixth - a small city map with a few tiny glowing pins and a magnifying glass; seventh - a smartphone with chat bubbles on screen. Thin haze, golden dust in the light beam, reflections on the polished floor. The upper 55% of the frame is nearly black and empty for typography. No people, no readable text, no letters, no logos, no watermark. Premium, calm mood.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_153132_5ad14d73-63e2-44cc-81b5-3d9560802284.png",
+    "status": "completed"
+  }
+]

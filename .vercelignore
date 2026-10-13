@@ -1,0 +1,27 @@
+*.md
+.DS_Store
+.env*
+assets/photo/gen/kie-full/
+assets/video/kejsy/
+node_modules/
+shots/
+
+# source/ виключено цілком, крім каталогів, на які посилаються слайди
+source/*
+!source/audit-final-2026-09-11
+source/audit-final-2026-09-11/*
+!source/audit-final-2026-09-11/rendered
+!source/google-2026-09-16
+source/google-2026-09-16/*
+!source/google-2026-09-16/media
+source/google-2026-09-16/*.pptx
+!source/design-s179-motion
+source/design-s179-motion/*
+!source/design-s179-motion/video
+!source/design-s179-motion/orbit-frames
+
+# 25.09 Секрет 2: у деці тільки webp-постери, мастер-PNG і референси не потрібні
+assets/gen-secret2-full/*.png
+assets/gen-secret2-full/*.jpg
+assets/gen-secret2-full/refs/
+assets/gen-secret2-full/log.json

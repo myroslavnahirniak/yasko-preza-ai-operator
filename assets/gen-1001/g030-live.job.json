@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-01T04:55:42.728712Z",
+    "display_name": "GPT Image 2.5",
+    "id": "ca7846b9-b3b1-43aa-b5e9-031d45cbef96",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_045542_ca7846b9-b3b1-43aa-b5e9-031d45cbef96_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Ultra-realistic cinematic photo, square frame. A live broadcast setup seen from behind an empty host chair: a camera on a tripod with a glowing red recording light, a microphone on a boom arm, a laptop with a busy blurred live chat, a ring light turned low, slight haze. Dark room, warm practical lamps. All equipment sits in the right 45% of the frame; the left 55% is dark and empty for text. No faces. Moody chiaroscuro, deep blacks, warm golden light, film grain. No text, no letters, no logos, no blue, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_045542_ca7846b9-b3b1-43aa-b5e9-031d45cbef96.png",
+    "status": "completed"
+  }
+]

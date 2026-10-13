@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-09-16T12:21:15.137629Z",
+    "display_name": "Seedance 2.5",
+    "id": "32a888fd-1a3d-4bef-9eea-0b2a86e81264",
+    "job_type": "seedance_2_5",
+    "min_result_url": null,
+    "params": {
+      "aspect_ratio": "16:9",
+      "bitrate_mode": "standard",
+      "duration": 12,
+      "extension_mode": null,
+      "generate_audio": false,
+      "genre": "auto",
+      "height": 1080,
+      "medias": [],
+      "model": "default",
+      "multi_prompt": [],
+      "multi_shot_mode": "custom",
+      "multi_shots": false,
+      "prompt": "Continuous 12-second cinematic shot, dark warm bakery counter, camera slowly dollies from left to right along four workstations, no cuts, steady speed. Station 1 (0-3s): an open recipe notebook, a hand turns a page, honey jar and flour bowl beside it. Station 2 (3-6s): a steel bowl, a wooden spoon folds dough, a little flour dust in the air. Station 3 (6-9s): thin round cake layers are stacked with cream, the top layer settles into place. Station 4 (9-12s): a piping bag decorates a finished layered honey cake, crumbs and a honey drizzle, warm spotlight. Photoreal, shallow depth of field, matte dark surfaces, deep coffee-brown shadows, single warm key light, subtle yellow rim glow, hands only, no faces, no text, no logos, no watermark.",
+      "prompt_language": "en",
+      "reference_elements": [],
+      "resolution": "1080p",
+      "speedramp": "auto",
+      "width": 1920
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_122115_32a888fd-1a3d-4bef-9eea-0b2a86e81264.mp4",
+    "status": "completed",
+    "thumbnail_url": "https://cdn.higgsfield.ai/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_122115_32a888fd-1a3d-4bef-9eea-0b2a86e81264_thumbnail.webp"
+  }
+]

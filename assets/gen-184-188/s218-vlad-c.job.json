@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-09-21T07:48:07.14875Z",
+    "display_name": "GPT Image 2.5",
+    "id": "7d4df13d-7843-4564-8638-271bf134cca0",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_074807_7d4df13d-7843-4564-8638-271bf134cca0_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "043d3dce-237b-4455-b938-1e5e101dfae2",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/043d3dce-237b-4455-b938-1e5e101dfae2.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Photoreal cinematic still, square 1:1. The man from the reference photo (platinum-blond short hair, full brown beard, black t-shirt), face clearly recognizable. Deep coffee-brown shadows (#0B0907), single warm key light, subtle yellow (#FDD506) glow from the laptop screen. The laptop stands in the lower-right part of the frame; its screen shows an abstract dark chat interface with soft glowing bubbles, no readable text. The upper-left 60% of the frame is nearly black and empty for typography. No readable text, no logos, no watermark. Composition: frontal view across the desk, the man looks straight at the laptop screen with a focused slight smile, the laptop lid seen from behind with a faint yellow glow around it, his face lit from below by the screen.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_074807_7d4df13d-7843-4564-8638-271bf134cca0.png",
+    "status": "completed"
+  }
+]

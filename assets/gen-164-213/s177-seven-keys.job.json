@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T14:55:36.151938Z",
+    "display_name": "GPT Image 2.5",
+    "id": "c8152b3c-16ef-4fe3-8e08-2057dab4118e",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_145536_c8152b3c-16ef-4fe3-8e08-2057dab4118e_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal macro scene, square 1:1, dark warm palette (#0B0907 shadows). In the lower half of the frame: a dark matte metal console with seven large round buttons in a row, brass rims, seen from a low angle in shallow perspective; only the first button on the left is lit bright warm yellow (#FDD506) with a soft glow spilling onto the console, the other six are unlit dark brass. Fine dust, thin haze, single warm key light. The upper 55% of the frame is nearly black and empty for typography. No people, no text, no icons, no logos, no watermark. Premium, calm, one-of-seven mood.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_145536_c8152b3c-16ef-4fe3-8e08-2057dab4118e.png",
+    "status": "completed"
+  }
+]

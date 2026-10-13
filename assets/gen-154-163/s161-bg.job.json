@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T11:24:28.778283Z",
+    "display_name": "GPT Image 2.5",
+    "id": "97c2da68-7b35-4937-ad14-6ba3d9f92f20",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_112428_97c2da68-7b35-4937-ad14-6ba3d9f92f20_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Smooth high-end 3D still life on a dark warm matte surface (#0B0907), square 1:1, top-down slightly angled view. Scattered evenly across the lower 60% of the frame: a ceramic coffee cup, barber scissors, a chrome wrench, a small paper shopping bag, a dental mirror, a flower pot, a house key, a sneaker — everyday objects of small local businesses. Matte and metal materials, soft warm rim light, one subtle yellow (#FDD506) accent glow. The upper 40% is empty dark space with vignette for typography. No text, no labels, no logos, no watermark, no people. Calm, premium, low contrast.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_112428_97c2da68-7b35-4937-ad14-6ba3d9f92f20.png",
+    "status": "completed"
+  }
+]

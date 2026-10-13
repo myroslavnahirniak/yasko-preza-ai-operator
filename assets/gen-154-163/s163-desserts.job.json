@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T11:24:48.107489Z",
+    "display_name": "GPT Image 2.5",
+    "id": "3149ede7-df5e-40a4-a407-e89efaca41f2",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_112448_3149ede7-df5e-40a4-a407-e89efaca41f2_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Photoreal high-end food photography, square 1:1, dark warm background (#0B0907). Four desserts in one neat row on a dark wooden pastry counter, seen from a slightly elevated front angle, evenly spaced, equal size: from left to right — three small cupcakes on a plate, a round fruit tart, a tall layered Russian honey cake (medovik) with visible thin layers, and a slice of classic cheesecake. The honey cake is lit with a single warm spotlight and sits slightly forward; the other three are dimmer. Matte surfaces, soft warm rim light, subtle yellow (#FDD506) glow under the honey cake. The upper 40% of the frame is empty dark space for typography. No text, no labels, no logos, no watermark, no hands.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_112448_3149ede7-df5e-40a4-a407-e89efaca41f2.png",
+    "status": "completed"
+  }
+]

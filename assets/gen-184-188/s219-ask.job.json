@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T07:48:02.761503Z",
+    "display_name": "GPT Image 2.5",
+    "id": "bbc56f35-293c-4032-8f43-2bf6d5070a6f",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_074802_bbc56f35-293c-4032-8f43-2bf6d5070a6f_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal 3D render, square 1:1, dark warm palette (#0B0907 shadows), matte dark materials with thin brass edge accents, subtle yellow (#FDD506) accent glow, thin haze, golden dust in the light, shallow depth of field, premium product-commercial look, highly detailed. No people, no readable text, no letters, no logos, no watermark. The upper 45% of the frame is nearly black and empty for typography. Scene: a smartphone standing on a dark desk, above it a large glowing holographic speech bubble made of thin yellow light lines with a bright question mark inside, tiny sparks around — a person asking a question.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_074802_bbc56f35-293c-4032-8f43-2bf6d5070a6f.png",
+    "status": "completed"
+  }
+]

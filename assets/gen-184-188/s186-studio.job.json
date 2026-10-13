@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T05:14:12.688866Z",
+    "display_name": "GPT Image 2.5",
+    "id": "db18e334-a0c6-4cd3-86cb-2ee3b1311897",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051412_db18e334-a0c6-4cd3-86cb-2ee3b1311897_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal 3D render, square 1:1, dark warm palette (#0B0907 shadows), matte dark materials with thin brass edge accents, subtle yellow (#FDD506) accent glow, thin haze, golden dust in the light, shallow depth of field. No people, no readable text, no letters, no logos, no watermark. Lower half of the frame: a dark designer's desk with a large monitor showing an abstract grid of poster and cover layouts (placeholder colour blocks only), a graphics tablet with a stylus in front of it, a few printed posters with abstract colour blocks pinned on the dark wall behind, one of them lit by a warm yellow (#FDD506) desk lamp. The upper 50% of the frame is nearly black and empty for typography.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051412_db18e334-a0c6-4cd3-86cb-2ee3b1311897.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T14:11:00.994691Z",
+    "display_name": "GPT Image 2.5",
+    "id": "36ed8e47-860b-4b8e-9099-c3dac24747e3",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_141100_36ed8e47-860b-4b8e-9099-c3dac24747e3_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal 3D render, square 1:1, dark warm palette (#0B0907 shadows), matte dark materials with thin brass edge accents, subtle yellow (#FDD506) accent glow, thin haze, golden dust in the light, shallow depth of field, premium product-commercial look, highly detailed. No people, no readable text, no letters, no logos, no watermark. The upper 40% of the frame is nearly black and empty for typography. Scene: a row of small dark business cards lying on a desk, a large brass magnifying glass hovering over one of them with a warm circle of light, a tiny yellow check mark glowing on two cards and a dim cross on another — checking each business.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_141100_36ed8e47-860b-4b8e-9099-c3dac24747e3.png",
+    "status": "completed"
+  }
+]

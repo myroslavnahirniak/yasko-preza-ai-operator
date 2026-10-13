@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T05:10:39.297424Z",
+    "display_name": "GPT Image 2.5",
+    "id": "43b195a6-5685-4975-89d1-dce7e72d9565",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051039_43b195a6-5685-4975-89d1-dce7e72d9565_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows), single warm key light, subtle yellow (#FDD506) accent glow, matte dark surfaces, thin haze, fine golden dust. No people, no readable text, no logos, no watermark. Premium, calm mood. An empty dark asphalt road at night splitting into two paths at a fork in the lower half of the frame: the left path fades into darkness, the right path is lit by warm yellow street lamps receding to the horizon; wet asphalt reflections, low camera. The upper 50% of the frame is nearly black and empty for typography.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051039_43b195a6-5685-4975-89d1-dce7e72d9565.png",
+    "status": "completed"
+  }
+]

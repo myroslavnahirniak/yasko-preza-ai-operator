@@ -1,0 +1,20 @@
+.DS_Store
+.env*
+node_modules/
+shots/
+.vercel/
+assets/photo/gen/kie-full/
+assets/video/kejsy/
+*.master.png
+*.zip
+# source: тільки скрипти/дані у корені + те, на що посилаються слайди
+source/*/
+!source/design-s179-motion/
+source/design-s179-motion/*
+!source/design-s179-motion/video/
+!source/design-s179-motion/orbit-frames/
+!source/sales-v6-20260921/
+!source/google-sales-2026-09-21/
+!source/google-2026-09-16/
+source/google-2026-09-16/*
+!source/google-2026-09-16/foundation-source-v2.json

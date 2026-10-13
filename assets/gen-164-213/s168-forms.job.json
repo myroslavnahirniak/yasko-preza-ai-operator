@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T11:49:57.318258Z",
+    "display_name": "GPT Image 2.5",
+    "id": "fbd11a87-426d-44f8-b8c4-61efb2096c10",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_114957_fbd11a87-426d-44f8-b8c4-61efb2096c10_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Premium smooth 3D render icon, square 1:1, centered single object on a plain dark warm background (#0B0907), soft warm rim light, one subtle yellow (#FDD506) accent glow beneath, matte dark materials with brass edge accents, shallow depth of field, lots of empty dark space around the object. No readable text, no labels, no logos, no watermark. Object: a floating contact form card with three input fields and a yellow submit button, abstract, no readable text.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_114957_fbd11a87-426d-44f8-b8c4-61efb2096c10.png",
+    "status": "completed"
+  }
+]

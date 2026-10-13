@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T11:24:23.097025Z",
+    "display_name": "GPT Image 2.5",
+    "id": "fba666fa-063e-4460-8f68-7dd60d85ff74",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_112423_fba666fa-063e-4460-8f68-7dd60d85ff74_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Smooth high-end 3D render, square 1:1, dark warm background (#0B0907), split composition. LEFT HALF: a heavy, chaotic pile of paper invoices, folders, price tags, cables and web-page wireframe cards stacked in a tangled heap, matte grey-brown materials, dim cool light, feeling of expensive and complicated. RIGHT HALF: a single large glossy yellow (#FDD506) rounded keyboard key floating alone on clean dark space, softly lit, one warm glow beneath it, feeling of simple and effortless. A thin vertical gap of empty darkness between the halves. The top 30% of the frame is empty dark space for a title. No text, no numbers, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_112423_fba666fa-063e-4460-8f68-7dd60d85ff74.png",
+    "status": "completed"
+  }
+]

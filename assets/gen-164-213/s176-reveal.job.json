@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T14:01:59.94499Z",
+    "display_name": "GPT Image 2.5",
+    "id": "d2a10554-d21d-4cfc-bbdb-570717a6492f",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_140159_d2a10554-d21d-4cfc-bbdb-570717a6492f_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). On a small dark stage a laptop stands on a wooden stool under a single warm theatre spotlight from above; the laptop screen glows softly and shows only a large glowing yellow (#FDD506) question mark, nothing else. A dark velvet curtain hangs in the background, a faint haze in the light beam, subtle golden dust particles. The upper 45% of the frame is nearly black and empty for typography. No people, no other text, no logos, no watermark. Suspense, 'reveal at the end' mood, premium and calm.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_140159_d2a10554-d21d-4cfc-bbdb-570717a6492f.png",
+    "status": "completed"
+  }
+]

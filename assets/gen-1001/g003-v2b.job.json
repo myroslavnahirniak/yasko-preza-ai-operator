@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-01T05:47:28.175953Z",
+    "display_name": "GPT Image 2.5",
+    "id": "ee62bbb6-1c55-4b19-9b56-e6f4ab021134",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_054728_ee62bbb6-1c55-4b19-9b56-e6f4ab021134_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "0aa323b6-f4d3-4c2a-937f-d8d74eb331d2",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/0aa323b6-f4d3-4c2a-937f-d8d74eb331d2.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Ultra-realistic cinematic photo, square frame. The man from the reference image (same face: light platinum-blond almost white short hair, full dark-brown beard) sits relaxed and confident in a leather chair with a laptop, smiling slightly, warm rim light on his face. Behind him through a huge glass wall glows a vast office floor where dozens of black-and-gold robots work at desks. Golden cash bills drift slowly through the air around him. Bottom 55% of the frame holds the man and the office; keep his face below the upper 42%. Vivid saturated colors, rich warm golden and amber light with hot orange highlights, high contrast, crisp detail, cinematic, energetic. The upper 42% of the frame is a deeper warm gradient (amber to near-black) so a white headline reads clearly. No text, no letters, no logos, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_054728_ee62bbb6-1c55-4b19-9b56-e6f4ab021134.png",
+    "status": "completed"
+  }
+]

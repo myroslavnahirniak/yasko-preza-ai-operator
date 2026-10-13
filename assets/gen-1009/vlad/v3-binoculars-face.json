@@ -1,0 +1,36 @@
+[
+  {
+    "created_at": "2026-10-09T06:44:32.422797Z",
+    "display_name": "Higgsfield Soul 2.0",
+    "id": "c875bf46-28ea-48e5-8678-08a5cdfda040",
+    "job_type": "text2image_soul_v2",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261009_064432_c875bf46-28ea-48e5-8678-08a5cdfda040_min.webp",
+    "params": {
+      "batch_size": 1,
+      "custom_reference": {
+        "id": null,
+        "name": "Vlad Yasko",
+        "strength": 1,
+        "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/25784be8-c6b3-40e8-aa06-d4f0ff795eab.png"
+      },
+      "enhance_prompt": false,
+      "height": 2048,
+      "prompt": "Cinematic portrait photo of the man standing on a dark rooftop at night, holding binoculars lowered in one hand, turned three-quarters toward the camera with a thoughtful searching look, face clearly visible and lit by warm golden light; behind him a blurred night city with thousands of tiny warm lights; black t-shirt; premium dark-and-gold color grading, deep black shadows, empty dark area on the left half of the frame. Photorealistic, no text.",
+      "quality": "1080p",
+      "seed": 223576,
+      "style": {
+        "id": "3db34ab5-3439-4317-9e03-08dc30852e69",
+        "name": "General",
+        "strength": 1,
+        "url": "https://cdn.higgsfield.ai/soul-v2-style/f33d85f2-6521-4fa8-8e8f-894cfbdee578.webp"
+      },
+      "style_id": "3db34ab5-3439-4317-9e03-08dc30852e69",
+      "style_strength": 1,
+      "use_relax": false,
+      "use_sage_attention": false,
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261009_064432_c875bf46-28ea-48e5-8678-08a5cdfda040.png",
+    "status": "completed"
+  }
+]

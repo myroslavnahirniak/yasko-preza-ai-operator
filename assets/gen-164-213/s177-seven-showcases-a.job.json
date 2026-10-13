@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T15:31:32.079896Z",
+    "display_name": "GPT Image 2.5",
+    "id": "32f964b2-3d5a-4acd-bdaf-6f96b31da8b2",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_153132_32f964b2-3d5a-4acd-bdaf-6f96b31da8b2_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). In the lower half of the frame: a row of seven identical tall dark glass showcase cabinets with thin brass edges standing on a dark stone floor of a dark showroom, seen from the front with only a gentle perspective so all seven are clearly visible and similar in size, evenly spaced across the full width. Each showcase holds one object on a low dark pedestal. Showcase 1 (leftmost) is lit from inside with a warm yellow (#FDD506) glow: an open laptop whose screen shows an abstract website layout with placeholder blocks. Showcases 2-7 are dim, their objects visible only by a faint warm rim light: 2 - a neat stack of printed presentation pages with layout blocks; 3 - a smartphone on a small stand playing a vertical video, tiny play triangle; 4 - a small monthly calendar board with pinned cards; 5 - a dark tablet showing a rising line chart; 6 - a small dark city map with a few tiny glowing pins under a magnifying glass; 7 - a smartphone showing chat bubbles. Thin haze, subtle golden dust in the light beam. The upper 55% of the frame is nearly black and empty for typography. No people, no readable text, no letters, no logos, no watermark. Premium, calm, one-of-seven mood.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_153132_32f964b2-3d5a-4acd-bdaf-6f96b31da8b2.png",
+    "status": "completed"
+  }
+]

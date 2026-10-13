@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T11:38:39.820587Z",
+    "display_name": "GPT Image 2.5",
+    "id": "2a66257e-de7b-4f64-9b47-aee71b812740",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_113839_2a66257e-de7b-4f64-9b47-aee71b812740_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Charming 2D cartoon flash-game illustration in the style of a classic 2010s bakery time-management browser game, square 1:1. A cozy bakery counter seen straight-on: a glass display case in the lower half holding exactly four desserts on small stands, evenly spaced left to right — three cupcakes, a round fruit tart, a tall layered honey cake with visible thin layers, and a slice of cheesecake. Behind the counter a warm wooden wall with shelves, hanging lamps, a small window. Flat cel-shaded vector look, thick clean outlines, warm palette: dark coffee browns, cream, honey, one bright yellow accent lamp. The upper 40% of the frame is a plain dark warm wall with empty space for UI. No characters, no text, no signs, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_113839_2a66257e-de7b-4f64-9b47-aee71b812740.png",
+    "status": "completed"
+  }
+]

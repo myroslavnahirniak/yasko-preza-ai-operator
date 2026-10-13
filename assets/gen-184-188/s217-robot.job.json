@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T09:48:04.569945Z",
+    "display_name": "GPT Image 2.5",
+    "id": "892e2728-9754-4335-9d7f-f6c2fd3df05e",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_094804_892e2728-9754-4335-9d7f-f6c2fd3df05e_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Premium photoreal 3D render, square 1:1, plain dark warm background (#0B0907), a friendly sleek humanoid AI robot assistant with matte dark graphite body, thin brass edge accents and softly glowing yellow (#FDD506) eyes and chest light, seen from the waist up, positioned on the right side of the frame and turned slightly to the left, looking attentively toward the left as if studying a plan, one hand raised slightly; soft warm rim light, subtle yellow glow, thin haze. The left 55% of the frame is nearly black and empty. No text, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_094804_892e2728-9754-4335-9d7f-f6c2fd3df05e.png",
+    "status": "completed"
+  }
+]

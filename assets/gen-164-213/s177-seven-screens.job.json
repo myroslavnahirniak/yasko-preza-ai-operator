@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T14:55:31.824032Z",
+    "display_name": "GPT Image 2.5",
+    "id": "7478cd12-7d09-4955-82fc-2477c5820381",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_145531_7478cd12-7d09-4955-82fc-2477c5820381_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows). In the lower half of the frame: a long dark matte desk with seven laptops standing in a row and receding into darkness; only the first laptop in front is open and its screen glows warm yellow (#FDD506) showing an abstract website layout with placeholder blocks and no readable text; the other six laptops are closed and dark with a faint warm rim light on their edges. Shallow depth of field, thin haze, subtle golden dust. The upper 55% of the frame is nearly black and empty for typography. No people, no text, no logos, no watermark. Premium, calm, one-of-seven mood.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_145531_7478cd12-7d09-4955-82fc-2477c5820381.png",
+    "status": "completed"
+  }
+]

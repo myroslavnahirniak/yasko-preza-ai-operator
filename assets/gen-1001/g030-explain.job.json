@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-01T09:29:16.632326Z",
+    "display_name": "GPT Image 2.5",
+    "id": "2345822a-2643-4208-beed-b8b085bbefc4",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_092916_2345822a-2643-4208-beed-b8b085bbefc4_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "551ad44d-b6c1-4e16-a3e6-08902991bb3c",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/551ad44d-b6c1-4e16-a3e6-08902991bb3c.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Ultra-realistic square photo. The man stands at a large whiteboard, enthusiastically explaining, drawing simple boxes and arrows with a yellow marker, turning to the audience with an open gesture; bright studio, warm light. The man is exactly the man from the reference image: light platinum-blond almost white short hair, full dark-brown beard, same face. Bright, lively, high-key cinematic photo, warm golden light with teal and magenta accent lights, rich saturated colors, shallow depth of field, energetic positive mood, real photo look, natural skin. No text, no letters, no logos, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_092916_2345822a-2643-4208-beed-b8b085bbefc4.png",
+    "status": "completed"
+  }
+]

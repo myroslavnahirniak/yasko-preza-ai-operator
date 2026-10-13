@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T05:12:55.476299Z",
+    "display_name": "GPT Image 2.5",
+    "id": "bb8aa9a7-92f6-405a-ba46-9c6babcdc687",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051255_bb8aa9a7-92f6-405a-ba46-9c6babcdc687_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal 3D render, square 1:1, dark warm palette (#0B0907 shadows), matte dark materials with thin brass edge accents, subtle yellow (#FDD506) accent glow, thin haze, golden dust in the light, shallow depth of field. No people, no readable text, no letters, no logos, no watermark. In the centre of the frame a large round physical yellow (#FDD506) push button with a brass rim sits on a dark matte console and glows softly, a faint ring of yellow light spreading around it. From the button four thin glowing yellow light lines lead outward to four small objects floating in the dark, evenly placed at the upper-left, upper-right, lower-left and lower-right of the button, with empty dark space around each object for captions: upper-left a smartphone with abstract chat bubbles; upper-right a vertical smartphone on a small tripod with a ring light showing a paused video; lower-left a small stack of printed ad cards with abstract colour blocks; lower-right a tablet with an abstract social feed and a small brass megaphone. The top 22% of the frame is nearly black and empty for typography. No hands.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051255_bb8aa9a7-92f6-405a-ba46-9c6babcdc687.png",
+    "status": "completed"
+  }
+]

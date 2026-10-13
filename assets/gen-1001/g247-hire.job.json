@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-02T04:20:53.635266Z",
+    "display_name": "GPT Image 2.5",
+    "id": "4796f7d3-e499-426c-84f5-98da98ab0c71",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261002_042053_4796f7d3-e499-426c-84f5-98da98ab0c71_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "cb4dbe36-3052-4612-b949-fd8ee3e196f8",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/cb4dbe36-3052-4612-b949-fd8ee3e196f8.png"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Ink sketch illustration in exactly the same style as the reference image (black ink hatching, cream paper tones, yellow glowing eyes as the only colour accent), square 1:1. The same friendly robot character from the reference sits on a chair at a job interview across a simple desk, holding a thick folder of its instructions and work examples, sitting upright and eager. Lots of empty dark space at the top for a headline. No text, no letters, no logos.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261002_042053_4796f7d3-e499-426c-84f5-98da98ab0c71.png",
+    "status": "completed"
+  }
+]

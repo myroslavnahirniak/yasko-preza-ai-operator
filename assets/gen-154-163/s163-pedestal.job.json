@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T11:38:39.776971Z",
+    "display_name": "GPT Image 2.5",
+    "id": "f549409e-0a09-4914-8d6b-c48cf080a6c1",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_113839_f549409e-0a09-4914-8d6b-c48cf080a6c1_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Premium 3D render, square 1:1, dark warm studio (#0B0907). A round dark stone turntable; four desserts arranged around it — three cupcakes, a round fruit tart, a slice of cheesecake at the sides and slightly back, dim; and in the center on a raised polished brass pedestal a tall layered honey cake with visible thin layers, lit by a single warm spotlight from above with a soft yellow (#FDD506) rim glow. Smooth matte materials, shallow depth of field, cinematic. Upper 40% of the frame is empty dark space for typography. No text, no labels, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_113839_f549409e-0a09-4914-8d6b-c48cf080a6c1.png",
+    "status": "completed"
+  }
+]

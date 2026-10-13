@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T05:10:38.73463Z",
+    "display_name": "GPT Image 2.5",
+    "id": "5667bde9-ba0a-449f-8c30-635de59b086b",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051038_5667bde9-ba0a-449f-8c30-635de59b086b_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1, dark warm palette (#0B0907 shadows), single warm key light, subtle yellow (#FDD506) accent glow, matte dark surfaces, thin haze, fine golden dust. No people, no readable text, no logos, no watermark. Premium, calm mood. A classic hourglass with fine golden sand on a dark matte table, most of the sand already fallen to the bottom bulb, warm rim light, in the lower half of the frame. The upper 50% of the frame is nearly black and empty for typography.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051038_5667bde9-ba0a-449f-8c30-635de59b086b.png",
+    "status": "completed"
+  }
+]

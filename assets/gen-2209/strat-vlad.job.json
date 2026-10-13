@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-09-22T05:10:56.889283Z",
+    "display_name": "GPT Image 2.5",
+    "id": "641c2091-803a-419d-9b80-078c53a250e0",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_051056_641c2091-803a-419d-9b80-078c53a250e0_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "aa5c1cab-ee28-47cc-bd66-0503a73b5870",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/aa5c1cab-ee28-47cc-bd66-0503a73b5870.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Cinematic photo-real image, square 1:1, dark warm moody interior (background #0B0907 tones), a small group strategy session: the man from the reference photo (same face, blond hair, short beard, black t-shirt) sits at a round dark table leading a discussion with four participants (two women, two men, 30–50 years old, diverse, casual), seen from slightly above and to the side. On the table: laptops, notebooks, a few bright yellow (#FDD506) sticky notes, a coffee cup; a single warm pendant lamp above casts golden light on faces; the rest of the room falls into deep dark shadow with subtle yellow rim light. He gestures with one hand, explaining; participants listen and take notes. Natural skin, real fabric, shallow depth of field, 35mm look, no text, no logos, no watermark.",
+      "quality": "low",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260922_051056_641c2091-803a-419d-9b80-078c53a250e0.png",
+    "status": "completed"
+  }
+]

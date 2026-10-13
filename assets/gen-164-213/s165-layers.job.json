@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T11:49:47.357319Z",
+    "display_name": "GPT Image 2.5",
+    "id": "7cb428d6-d223-44b0-94f1-53005e5ec207",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_114947_7cb428d6-d223-44b0-94f1-53005e5ec207_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Premium 3D exploded-view render, square 1:1, dark warm background (#0B0907). Five thin square dark-metal plates floating in a vertical stack with even gaps, each plate slightly different: the top one glowing warm yellow (#FDD506) at the edges, the others matte graphite with subtle brass edge lines. A faint vertical light beam connects them. Lots of empty dark space on the left half of the frame for text. No text, no labels, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_114947_7cb428d6-d223-44b0-94f1-53005e5ec207.png",
+    "status": "completed"
+  }
+]

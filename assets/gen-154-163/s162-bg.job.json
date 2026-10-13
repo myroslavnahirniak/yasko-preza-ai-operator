@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T11:38:40.27649Z",
+    "display_name": "GPT Image 2.5",
+    "id": "59632f99-d42d-4b40-a01a-68abb5d919fd",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_113840_59632f99-d42d-4b40-a01a-68abb5d919fd_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal shot, square 1:1, dark warm palette. An empty modern office chair at a desk, seen from behind at a low angle; on the desk a laptop with a soft warm glow and a second monitor, no person anywhere. The chair is lit by a single warm rim light, the rest of the room fades into deep coffee-brown darkness. Upper 45% of the frame nearly black and empty for typography. No readable text on screens, no logos, no watermark. Calm, slightly melancholic, realistic.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_113840_59632f99-d42d-4b40-a01a-68abb5d919fd.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-05T07:00:21.061317Z",
+    "display_name": "GPT Image 2.5",
+    "id": "dc0dbb03-e8d8-4729-b944-572f756f30cc",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261005_070021_dc0dbb03-e8d8-4729-b944-572f756f30cc_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "height": 2240,
+      "medias": [],
+      "model": "flare",
+      "prompt": "A 2023 small-business website built on a typical website-builder template (Tilda / Wix style): clean flat design, white background, thin top navbar with logo «Студия» and menu «Услуги · Портфолио · Цены · Контакты» and a rounded pill button «Оставить заявку», a large stock-photo hero of a smiling team at laptops in a bright office with headline «Создаём сайты для вашего бизнеса», a row of three rounded feature cards with generic line icons, pastel blue accent color, standard sans-serif font, a simple footer. Neat but generic template look, nothing special. Flat, straight-on full-page screenshot of the web page only: no browser window, no monitor, no device, no hands, no perspective, fills the whole frame edge to edge. Crisp and legible. No real brand logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 1792
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261005_070021_dc0dbb03-e8d8-4729-b944-572f756f30cc.png",
+    "status": "completed"
+  }
+]

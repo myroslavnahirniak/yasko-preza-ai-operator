@@ -1,0 +1,8 @@
+*.md
+.DS_Store
+.env*
+assets/photo/gen/kie-full/
+assets/video/kejsy/
+node_modules/
+shots/
+source/

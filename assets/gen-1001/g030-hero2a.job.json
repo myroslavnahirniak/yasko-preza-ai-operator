@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-01T10:24:35.358325Z",
+    "display_name": "GPT Image 2.5",
+    "id": "65257e47-1687-4755-bf89-5ea98353ac30",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_102435_65257e47-1687-4755-bf89-5ea98353ac30_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "95646fbb-613f-4461-af2f-83308e50778a",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/95646fbb-613f-4461-af2f-83308e50778a.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Ultra-realistic square photo. Bright sunlit loft with big industrial windows, warm wooden floor and an old red-brick wall, a mustard-yellow armchair and a yellow desk lamp in the background. The man wears a light cream chunky knit sweater, sits at a wooden desk and leans toward a laptop on a stand, pointing at the screen with a big genuine laugh as if reading a funny viewer message out loud; a small podcast microphone on a boom arm in front of him. Warm natural daylight with golden-yellow accents. The man is on the right half of the frame; the left 40% is a softer, calmer, slightly out-of-focus background where text overlays can sit; the top 25% is calm for a headline. The man is exactly the man from the reference image: light platinum-blond almost white short hair, full dark-brown beard, same face. Cinematic real photo, rich but natural colors, shallow depth of field, positive energetic mood, natural skin. No text, no letters, no logos, no green, no plants.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_102435_65257e47-1687-4755-bf89-5ea98353ac30.png",
+    "status": "completed"
+  }
+]

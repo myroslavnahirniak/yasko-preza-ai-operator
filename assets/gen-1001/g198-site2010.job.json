@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-03T10:33:13.167404Z",
+    "display_name": "GPT Image 2.5",
+    "id": "56c2b1ff-2afe-4890-a64c-42a1e422bf6a",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261003_103313_56c2b1ff-2afe-4890-a64c-42a1e422bf6a_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "height": 2240,
+      "medias": [],
+      "model": "flare",
+      "prompt": "A 2010 small-business website in typical Web 2.0 style: glossy grey-to-white gradient header with company name «Компания» and menu «Главная · Каталог · Услуги · Контакты», a big glossy orange rounded banner with reflection and text «Лучшие решения для вашего бизнеса», a red starburst badge «NEW!», a stock photo of smiling people in an office, rounded glossy buttons «Узнать больше», Verdana text, light grey page background with drop shadows, a right sidebar with rounded boxes and RSS icons, a footer with tiny links. Typical template look of that era, slightly cheesy. Flat, straight-on full-page screenshot of the web page only: no browser window, no monitor, no device, no hands, no perspective, fills the whole frame edge to edge. Crisp and legible. No real brand logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 1792
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261003_103313_56c2b1ff-2afe-4890-a64c-42a1e422bf6a.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T11:24:16.702904Z",
+    "display_name": "GPT Image 2.5",
+    "id": "5fe63f32-d965-4c38-9030-06f27d0bb0e5",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_112416_5fe63f32-d965-4c38-9030-06f27d0bb0e5_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal shot inside a small family workshop or bakery at closing time. The owner, a middle-aged person seen from behind and slightly from the side, face not visible, sits at a wooden counter looking at a laptop, one hand on the forehead, thoughtful. Warm dark palette, deep coffee-brown shadows, a single warm lamp, subtle yellow accent in the laptop glow. Strong dark vignette, the upper 45% of the frame is nearly black and empty for typography. No readable text on screen, no signs, no logos, no watermark. Square 1:1, calm, moody, realistic.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_112416_5fe63f32-d965-4c38-9030-06f27d0bb0e5.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T06:42:09.930145Z",
+    "display_name": "GPT Image 2.5",
+    "id": "22079ead-19c2-4428-99ec-6293c153e1f4",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_064209_22079ead-19c2-4428-99ec-6293c153e1f4_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Flat vector cartoon illustration in the same warm hand-drawn style as a cozy bakery game scene, square 1:1, dark warm palette (#0B0907) with warm amber lighting. A cheerful young woman with a laptop sits at a small wooden desk in a cozy home studio at night; above her float three glowing quest badges in a row like game achievements: a paint palette, a browser window with a house-shaped logo, and a film clapperboard with social icons; a small trophy on the shelf, plants, fairy lights, a cat. The upper 30% of the frame is nearly black and empty for typography. No text, no letters, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_064209_22079ead-19c2-4428-99ec-6293c153e1f4.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T07:32:39.951306Z",
+    "display_name": "GPT Image 2.5",
+    "id": "d572fddc-c63d-4020-b0f9-f8af4428c84f",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_073239_d572fddc-c63d-4020-b0f9-f8af4428c84f_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal 3D render, square 1:1, dark warm palette (#0B0907 shadows), matte dark materials with thin brass edge accents, subtle yellow (#FDD506) accent glow, thin haze, golden dust in the light, shallow depth of field. No people, no readable text, no letters, no logos, no watermark. In the lower 62% of the frame two floating browser pages hover side by side in 3D perspective on a dark desk. Left page: dull, dim, grey, filled with long dense abstract paragraph blocks like a boring company description, slightly tilted away. Right page: bright, crisp, closer to the viewer, its very first block at the top highlighted with a glowing yellow (#FDD506) bar like a short direct answer, followed by a few clean lighter blocks. Between them a thin yellow arrow of light from left to right. The upper 38% of the frame is nearly black and empty for typography.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_073239_d572fddc-c63d-4020-b0f9-f8af4428c84f.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T07:32:24.628013Z",
+    "display_name": "GPT Image 2.5",
+    "id": "293f1730-fa3b-4b11-847f-46b3e46eb7f1",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_073224_293f1730-fa3b-4b11-847f-46b3e46eb7f1_min.webp",
+    "params": {
+      "aspect_ratio": "21:9",
+      "height": 1152,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal 3D render, ultra-wide 21:9, dark warm palette (#0B0907 shadows), matte dark materials with thin brass edge accents, subtle yellow (#FDD506) accent glow, thin haze, golden dust in the light, shallow depth of field, premium product-commercial look, highly detailed. No people, no readable text, no letters, no logos, no watermark. Scene: a dark wall of thin monitors showing a glowing yellow pulse line and small bar charts, in front on the desk a printed report with bar charts and a brass pen under a warm desk lamp, a tiny glowing yellow indicator light — monitoring around the clock and reporting.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2688
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_073224_293f1730-fa3b-4b11-847f-46b3e46eb7f1.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-16T11:24:10.875283Z",
+    "display_name": "GPT Image 2.5",
+    "id": "a2275eae-def7-4d42-87f6-603459203796",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_112410_a2275eae-def7-4d42-87f6-603459203796_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "A realistic screenshot of a Google Maps mobile app in dark mode, top-down map view of a dense residential city block with streets, buildings and small park. Exactly five business pins with labels in Russian: «Кофейня», «Салон красоты», «Стоматология», «СТО», «Магазин». Each pin has a small category icon (coffee cup, scissors, tooth, wrench, shopping bag) and a blue-white pin marker; the labels are crisp, legible, clean sans-serif. A subtle location circle around the user's blue dot in the center. Authentic Google Maps UI style: dark map tiles, muted street names, rounded search bar at top left empty, zoom controls. No other pins, no watermark, no extra text, no people. Square 1:1, high fidelity, sharp UI rendering.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_112410_a2275eae-def7-4d42-87f6-603459203796.png",
+    "status": "completed"
+  }
+]

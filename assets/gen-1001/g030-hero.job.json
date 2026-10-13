@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-01T09:29:15.872535Z",
+    "display_name": "GPT Image 2.5",
+    "id": "6a784da2-2eef-4a13-b8a9-7cd3a45032cc",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_092915_6a784da2-2eef-4a13-b8a9-7cd3a45032cc_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "dfae9c27-dd7d-43cd-8f54-0ed52f66d4b6",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/dfae9c27-dd7d-43cd-8f54-0ed52f66d4b6.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Ultra-realistic square photo. The man live-streaming in a bright colorful home studio: he laughs and talks to the camera with one hand raised mid-gesture; in front of him a camera on a tripod with a glowing red recording light and a ring light; behind him a big monitor with a fast-scrolling live chat full of colorful message bubbles and heart reactions. The man is on the right half of the frame; the left 40% is softer background bokeh where text overlays can sit; the top 25% is calmer for a headline. The man is exactly the man from the reference image: light platinum-blond almost white short hair, full dark-brown beard, same face. Bright, lively, high-key cinematic photo, warm golden light with teal and magenta accent lights, rich saturated colors, shallow depth of field, energetic positive mood, real photo look, natural skin. No text, no letters, no logos, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_092915_6a784da2-2eef-4a13-b8a9-7cd3a45032cc.png",
+    "status": "completed"
+  }
+]

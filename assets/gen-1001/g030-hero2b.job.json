@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-10-01T10:24:35.433525Z",
+    "display_name": "GPT Image 2.5",
+    "id": "64f7f446-7e5d-4ac9-b87f-52fb94d417ce",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_102435_64f7f446-7e5d-4ac9-b87f-52fb94d417ce_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "fcf23e85-5a7a-43ca-8548-95f813ffb34f",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/fcf23e85-5a7a-43ca-8548-95f813ffb34f.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Ultra-realistic square photo. Cozy warm evening home studio with amber Edison bulbs, a softbox light and dark wood shelves, yellow and amber accent lights. The man wears a dark denim shirt with rolled-up sleeves, stands holding a smartphone in one hand and looks up from it with a surprised delighted laugh, his other hand open toward the camera as if inviting the audience to answer. Warm cinematic evening light, golden-yellow highlights. The man is on the right half of the frame; the left 40% is a softer, calmer, slightly out-of-focus background where text overlays can sit; the top 25% is calm for a headline. The man is exactly the man from the reference image: light platinum-blond almost white short hair, full dark-brown beard, same face. Cinematic real photo, rich but natural colors, shallow depth of field, positive energetic mood, natural skin. No text, no letters, no logos, no green, no plants.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_102435_64f7f446-7e5d-4ac9-b87f-52fb94d417ce.png",
+    "status": "completed"
+  }
+]

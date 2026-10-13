@@ -1,0 +1,32 @@
+[
+  {
+    "created_at": "2026-09-16T11:50:18.813785Z",
+    "display_name": "GPT Image 2.5",
+    "id": "362f329a-a477-4f9e-a35d-62d8497adff4",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_115018_362f329a-a477-4f9e-a35d-62d8497adff4_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [
+        {
+          "data": {
+            "id": "0a32aa85-ff83-4628-bee6-f36e9567efae",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/0a32aa85-ff83-4628-bee6-f36e9567efae.jpg"
+          },
+          "role": "image"
+        }
+      ],
+      "model": "flare",
+      "prompt": "Photoreal cinematic still, square 1:1. The man from the reference photo (platinum-blond short hair, full brown beard, black t-shirt) sits late at night at a desk buried in work: two laptops, a monitor with dense text-like blur, stacks of printed pages, dozens of sticky notes on the wall, empty coffee cups. He is seen in three-quarter view from the side, leaning over the keyboard, focused and tired, face clearly recognizable. Warm single desk lamp, deep coffee-brown shadows (#0B0907), subtle yellow (#FDD506) glow from the screens. The upper 40% of the frame is nearly black and empty for typography. No readable text on screens, no logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260916_115018_362f329a-a477-4f9e-a35d-62d8497adff4.png",
+    "status": "completed"
+  }
+]

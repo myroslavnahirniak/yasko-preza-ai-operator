@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-02T04:20:49.265748Z",
+    "display_name": "GPT Image 2.5",
+    "id": "035b7c74-30a2-435b-ba5e-77df59944697",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261002_042049_035b7c74-30a2-435b-ba5e-77df59944697_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal scene, square 1:1. A professional restaurant kitchen at night, the head chef station is empty and waiting: a clean white chef jacket hangs on a hook, a folded chef hat and a chef knife lie on the steel counter, copper pans hang above, one warm lamp over the station. The upper 50% of the frame is nearly black and empty for typography. No people. Deep coffee-brown shadows (#0B0907), warm practical light, subtle yellow (#FDD506) accent glow, thin haze. No readable text, no letters, no logos, no watermark, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261002_042049_035b7c74-30a2-435b-ba5e-77df59944697.png",
+    "status": "completed"
+  }
+]

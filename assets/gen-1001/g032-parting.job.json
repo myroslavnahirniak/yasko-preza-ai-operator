@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-01T04:55:42.748617Z",
+    "display_name": "GPT Image 2.5",
+    "id": "8b3b1e48-d5b4-42e6-b88a-eda08c85e7d3",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_045542_8b3b1e48-d5b4-42e6-b88a-eda08c85e7d3_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Ultra-realistic cinematic photo, square frame, night. Two people seen from behind walk away from each other in opposite directions on an empty wet street under warm streetlights, long golden reflections on the asphalt, light fog. Small figures in the lower third; the upper 55% is dark sky and shadow, empty for a headline. Melancholic but warm mood. No faces. Moody chiaroscuro, deep blacks, warm golden light, film grain. No text, no letters, no logos, no blue, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_045542_8b3b1e48-d5b4-42e6-b88a-eda08c85e7d3.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-03T10:33:13.015143Z",
+    "display_name": "GPT Image 2.5",
+    "id": "9f716451-2ded-4834-86eb-1c5d17e77266",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261003_103313_9f716451-2ded-4834-86eb-1c5d17e77266_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "height": 2240,
+      "medias": [],
+      "model": "flare",
+      "prompt": "A 1995 small-business homepage exactly as it looked in Netscape Navigator: flat grey (#C0C0C0) background, Times New Roman text, big centered heading «Добро пожаловать!», blue underlined links «Наши услуги | О нас | Контакты», a horizontal groove rule, a yellow-black striped «Сайт в разработке» construction banner with a tiny pixel-art worker GIF, a low-resolution clip-art picture, a table with thin bevelled borders, a black visitor counter with green digits «000137», an e-mail link with a little envelope icon. Naive, dated, low-res, 640px-era layout. Flat, straight-on full-page screenshot of the web page only: no browser window, no monitor, no device, no hands, no perspective, fills the whole frame edge to edge. Crisp and legible. No real brand logos, no watermark.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 1792
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261003_103313_9f716451-2ded-4834-86eb-1c5d17e77266.png",
+    "status": "completed"
+  }
+]

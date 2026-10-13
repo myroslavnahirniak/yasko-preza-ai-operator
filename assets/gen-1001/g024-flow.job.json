@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-01T04:55:44.026997Z",
+    "display_name": "GPT Image 2.5",
+    "id": "ecea3f9f-9773-46a4-8dc6-c6716111af20",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_045544_ecea3f9f-9773-46a4-8dc6-c6716111af20_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Ultra-realistic cinematic photo, square frame, night. A dark city street with small local businesses - a cafe, a barbershop, a dental clinic, a flower shop - their windows glowing warm. A dense river of small glowing golden message bubbles and notification cards flows along the street and streams into every shop door, like a current of customers. Wet asphalt reflections. The upper 50% is dark sky, empty for a headline. Moody chiaroscuro, deep blacks, warm golden light, film grain. No text, no letters, no logos, no blue, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261001_045544_ecea3f9f-9773-46a4-8dc6-c6716111af20.png",
+    "status": "completed"
+  }
+]

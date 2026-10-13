@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-09-21T05:17:52.125979Z",
+    "display_name": "GPT Image 2.5",
+    "id": "e2727155-ea62-430e-ae07-af36f0b93da7",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051752_e2727155-ea62-430e-ae07-af36f0b93da7_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Premium smooth 3D render icon, square 1:1, centered single object on a plain dark warm background (#0B0907), soft warm rim light, one subtle yellow (#FDD506) accent glow beneath, matte dark materials with brass edge accents, shallow depth of field, lots of empty dark space around the object. No readable text, no labels, no logos, no watermark. Object: a tablet standing upright showing an abstract social feed with a yellow heart icon popping out of the screen, a small brass megaphone leaning against the tablet.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20260921_051752_e2727155-ea62-430e-ae07-af36f0b93da7.png",
+    "status": "completed"
+  }
+]

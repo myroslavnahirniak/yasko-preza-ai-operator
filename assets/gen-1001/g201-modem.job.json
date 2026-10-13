@@ -1,0 +1,23 @@
+[
+  {
+    "created_at": "2026-10-02T04:20:49.216466Z",
+    "display_name": "GPT Image 2.5",
+    "id": "d4967844-c182-4615-a138-5642c82251fc",
+    "job_type": "gpt_image_2_5",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261002_042049_d4967844-c182-4615-a138-5642c82251fc_min.webp",
+    "params": {
+      "aspect_ratio": "1:1",
+      "height": 2048,
+      "medias": [],
+      "model": "flare",
+      "prompt": "Cinematic photoreal still life, square 1:1. A 1990s desk at night: an old beige dial-up modem with glowing amber status LEDs, a coiled phone cable, a used scratched prepaid internet card and a beige CRT monitor glowing softly behind, a desk lamp. Nostalgic, quiet. The upper 50% of the frame is nearly black and empty for typography. No people. Deep coffee-brown shadows (#0B0907), warm practical light, subtle yellow (#FDD506) accent glow, thin haze. No readable text, no letters, no logos, no watermark, no green.",
+      "quality": "xhigh",
+      "reference_elements": [],
+      "remove_bg": false,
+      "resolution": "2k",
+      "width": 2048
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2ztqJIF58iNFVyTnjF1L2Lei8vo/hf_20261002_042049_d4967844-c182-4615-a138-5642c82251fc.png",
+    "status": "completed"
+  }
+]
