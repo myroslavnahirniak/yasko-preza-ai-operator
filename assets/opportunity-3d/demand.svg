@@ -1,0 +1,12 @@
+<svg class="op-object" viewBox="0 0 320 240" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+ <linearGradient id="op-object-2-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7a756a"/><stop offset=".28" stop-color="#38362f"/><stop offset=".7" stop-color="#151613"/><stop offset="1" stop-color="#484335"/></linearGradient>
+ <linearGradient id="op-object-2-edge" x2="1" y2="1"><stop stop-color="#f7efd7"/><stop offset=".35" stop-color="#8a816c"/><stop offset="1" stop-color="#383329"/></linearGradient>
+ <linearGradient id="op-object-2-gold" x2=".8" y2="1"><stop stop-color="#fff4ac"/><stop offset=".35" stop-color="#fdd506"/><stop offset=".8" stop-color="#b58b06"/><stop offset="1" stop-color="#6c5108"/></linearGradient>
+ <linearGradient id="op-object-2-glass" x2=".7" y2="1"><stop stop-color="#322d20"/><stop offset=".5" stop-color="#0d100e"/><stop offset="1" stop-color="#191c16"/></linearGradient>
+ <linearGradient id="op-object-2-side"><stop stop-color="#161712"/><stop offset="1" stop-color="#494331"/></linearGradient>
+ <radialGradient id="op-object-2-light"><stop stop-color="#fdd506" stop-opacity=".23"/><stop offset="1" stop-color="#fdd506" stop-opacity="0"/></radialGradient>
+ </defs><ellipse cx="160" cy="130" rx="156" ry="112" fill="url(#op-object-2-light)"/><ellipse cx="160" cy="192" rx="112" ry="22" fill="#000" opacity=".5"/>
+ <path d="m25 164 130-45 140 45-133 48z" fill="url(#op-object-2-metal)" stroke="#b2a487"/>
+ <path d="m25 164 137 48v12L25 177zm137 48 133-48v13l-133 47" fill="#27261c" stroke="#736346"/>
+ <g class="op-demand-bar" style="--op-n:0"><path d="m65 125 27-11 24 10-27 12z" fill="url(#op-object-2-gold)"/><path d="m65 125 24 11v42l-24-12z" fill="#77632a"/><path d="m89 136 27-12v42l-27 12z" fill="#423a22"/></g><g class="op-demand-bar" style="--op-n:1"><path d="m128 82 27-11 24 10-27 12z" fill="url(#op-object-2-gold)"/><path d="m128 82 24 11v75l-24-12z" fill="#77632a"/><path d="m152 93 27-12v75l-27 12z" fill="#423a22"/></g><g class="op-demand-bar" style="--op-n:2"><path d="m191 39 27-11 24 10-27 12z" fill="url(#op-object-2-gold)"/><path d="m191 39 24 11v108l-24-12z" fill="#d5ab0c"/><path d="m215 50 27-12v108l-27 12z" fill="#8e6d09"/></g>
+ <path d="M45 93 117 64l49 9 73-53m-35 5 35-5-3 33" stroke="url(#op-object-2-gold)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>

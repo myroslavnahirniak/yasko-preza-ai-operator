@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <defs>
+    <linearGradient id="earn-side" x1="-66" y1="0" x2="66" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B0907"/><stop offset=".42" stop-color="#282521"/><stop offset="1" stop-color="#0B0907"/>
+    </linearGradient>
+    <linearGradient id="earn-top" x1="-51" y1="-19" x2="43" y2="17" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#37332C"/><stop offset=".5" stop-color="#1B1813"/><stop offset="1" stop-color="#0B0907"/>
+    </linearGradient>
+    <linearGradient id="earn-edge" x1="-66" y1="0" x2="66" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDD506" stop-opacity=".05"/><stop offset=".3" stop-color="#FDD506" stop-opacity=".65"/><stop offset=".75" stop-color="#FDD506"/><stop offset="1" stop-color="#FDD506" stop-opacity=".12"/>
+    </linearGradient>
+    <radialGradient id="earn-ground"><stop stop-color="#FDD506" stop-opacity=".09"/><stop offset="1" stop-color="#FDD506" stop-opacity="0"/></radialGradient>
+    <g id="earn-coin">
+      <path d="M-66 0v13c0 12.15 29.55 22 66 22s66-9.85 66-22V0" fill="url(#earn-side)" stroke="#645D4E" stroke-opacity=".35"/>
+      <ellipse rx="66" ry="22" fill="url(#earn-top)" stroke="#6D6450" stroke-opacity=".5"/>
+      <ellipse rx="53" ry="16" stroke="#B0A592" stroke-opacity=".13"/>
+      <path d="M-66 0c0 12.15 29.55 22 66 22s66-9.85 66-22" stroke="url(#earn-edge)" stroke-width="1.5"/>
+      <path d="M-51 17v11M-39 21v11M-24 24v10M-8 25v10M8 25v10M24 24v10M39 21v11M51 17v11" stroke="#B4A57E" stroke-opacity=".13"/>
+    </g>
+  </defs>
+  <ellipse cx="203" cy="208" rx="156" ry="24" fill="url(#earn-ground)"/>
+  <g transform="translate(288 137) scale(.76)">
+    <use href="#earn-coin" y="43"/><use href="#earn-coin" y="21"/><use href="#earn-coin"/>
+  </g>
+  <g transform="translate(124 162) scale(.88)">
+    <use href="#earn-coin" y="22"/><use href="#earn-coin"/>
+  </g>
+  <g transform="translate(212 74)">
+    <use href="#earn-coin" y="92"/><use href="#earn-coin" y="69"/><use href="#earn-coin" y="46"/><use href="#earn-coin" y="23"/><use href="#earn-coin"/>
+    <path d="M-45-15C-22-24 14-22 34-18" stroke="#F5F3EE" stroke-opacity=".48" stroke-linecap="round"/>
+    <path d="M-8-9 17 0-8 9-32 0-8-9Z" stroke="#FDD506" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M-8-5 5 0-8 5-21 0-8-5Z" fill="#FDD506" fill-opacity=".13"/>
+  </g>
+</svg>

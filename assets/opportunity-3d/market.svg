@@ -1,0 +1,13 @@
+<svg class="op-object" viewBox="0 0 320 240" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+ <linearGradient id="op-object-3-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7a756a"/><stop offset=".28" stop-color="#38362f"/><stop offset=".7" stop-color="#151613"/><stop offset="1" stop-color="#484335"/></linearGradient>
+ <linearGradient id="op-object-3-edge" x2="1" y2="1"><stop stop-color="#f7efd7"/><stop offset=".35" stop-color="#8a816c"/><stop offset="1" stop-color="#383329"/></linearGradient>
+ <linearGradient id="op-object-3-gold" x2=".8" y2="1"><stop stop-color="#fff4ac"/><stop offset=".35" stop-color="#fdd506"/><stop offset=".8" stop-color="#b58b06"/><stop offset="1" stop-color="#6c5108"/></linearGradient>
+ <linearGradient id="op-object-3-glass" x2=".7" y2="1"><stop stop-color="#322d20"/><stop offset=".5" stop-color="#0d100e"/><stop offset="1" stop-color="#191c16"/></linearGradient>
+ <linearGradient id="op-object-3-side"><stop stop-color="#161712"/><stop offset="1" stop-color="#494331"/></linearGradient>
+ <radialGradient id="op-object-3-light"><stop stop-color="#fdd506" stop-opacity=".23"/><stop offset="1" stop-color="#fdd506" stop-opacity="0"/></radialGradient>
+ </defs><ellipse cx="160" cy="130" rx="156" ry="112" fill="url(#op-object-3-light)"/><ellipse cx="160" cy="190" rx="120" ry="22" fill="#000" opacity=".55"/>
+ <path d="m23 153 126-51 143 51-133 57z" fill="url(#op-object-3-metal)" stroke="#b2a487"/><path d="m23 153 136 57 133-57v15l-133 57-136-57z" fill="#232119" stroke="#6f6040"/>
+ <path d="m49 62 25-9 23 10v49l-23 11-25-12z" fill="url(#op-object-3-metal)" stroke="#9d9279"/><path d="m49 62 25 11 23-10m-23 10v49" stroke="#675e4a" fill="none"/><path d="m106 22 25-9 23 10v68l-23 11-25-12z" fill="url(#op-object-3-metal)" stroke="#9d9279"/><path d="m106 22 25 11 23-10m-23 10v68" stroke="#675e4a" fill="none"/><path d="m207 79 25-9 23 10v43l-23 11-25-12z" fill="url(#op-object-3-metal)" stroke="#9d9279"/><path d="m207 79 25 11 23-10m-23 10v43" stroke="#675e4a" fill="none"/>
+ <path class="op-market-slot" d="m122 155 43-17 42 17-43 20z" fill="#fdd506" fill-opacity=".12" stroke="#fdd506" stroke-width="2"/>
+ <path d="m122 155 0-30 43-17 42 17v30M165 108v30" fill="none" stroke="#fdd506" stroke-opacity=".5" stroke-dasharray="4 5"/>
+ <path d="M163 70v25m-12-12h24" stroke="url(#op-object-3-gold)" stroke-width="6" stroke-linecap="round"/></svg>
