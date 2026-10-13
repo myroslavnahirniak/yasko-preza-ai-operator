@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="uk"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://www.googletagmanager.com"><script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-PCQ9XBXB");
+</script><title>Політика конфіденційності — AI-Маркетолог</title><meta name="description" content="Політика конфіденційності сайту aimarketolog.site: які дані збираються, мета обробки, права суб'єкта даних."><link rel="canonical" href="https://aimarketolog.site/privacy/"><meta property="og:title" content="Політика конфіденційності — AI-Маркетолог"><meta property="og:description" content="Політика конфіденційності сайту aimarketolog.site: які дані збираються, мета обробки, права суб'єкта даних."><meta property="og:type" content="article"><style>@font-face{font-family:Inter;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/inter-cyrillic-400-normal.obahsSVq.woff2) format("woff2"),url(/_astro/inter-cyrillic-400-normal.HOLc17fK.woff) format("woff")}@font-face{font-family:Inter;font-style:normal;font-display:swap;font-weight:600;src:url(/_astro/inter-cyrillic-600-normal.CWCymEST.woff2) format("woff2"),url(/_astro/inter-cyrillic-600-normal.4D_pXhcN.woff) format("woff")}@font-face{font-family:Inter;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/inter-latin-400-normal.C38fXH4l.woff2) format("woff2"),url(/_astro/inter-latin-400-normal.CyCys3Eg.woff) format("woff")}@font-face{font-family:Inter;font-style:normal;font-display:swap;font-weight:600;src:url(/_astro/inter-latin-600-normal.LgqL8muc.woff2) format("woff2"),url(/_astro/inter-latin-600-normal.CiBQ2DWP.woff) format("woff")}@font-face{font-family:Inter Tight;font-style:normal;font-display:swap;font-weight:700;src:url(/_astro/inter-tight-cyrillic-700-normal.DtWWjp29.woff2) format("woff2"),url(/_astro/inter-tight-cyrillic-700-normal.DDZiLR3d.woff) format("woff")}@font-face{font-family:Inter Tight;font-style:normal;font-display:swap;font-weight:700;src:url(/_astro/inter-tight-latin-700-normal.BZKd_v_8.woff2) format("woff2"),url(/_astro/inter-tight-latin-700-normal.DvYAVZQd.woff) format("woff")}
+:root{--doc-bg: #0b0b0d;--doc-fg: #e8e6e3;--doc-muted: #9b978f;--doc-accent: #e3ff66;--doc-line: rgba(232, 230, 227, .14)}*{box-sizing:border-box}body{margin:0;background:var(--doc-bg);color:var(--doc-fg);font-family:Inter,system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}.doc{max-width:760px;margin:0 auto;padding:64px 20px 80px}.doc__prose h1{font-family:Inter Tight,Inter,sans-serif;font-weight:700;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;margin:0 0 .5em}.doc__prose h2{font-family:Inter Tight,Inter,sans-serif;font-weight:700;font-size:clamp(1.2rem,2.4vw,1.5rem);line-height:1.25;margin:2em 0 .6em}.doc__prose p,.doc__prose li{color:var(--doc-fg)}.doc__prose em{color:var(--doc-muted)}.doc__prose a{color:var(--doc-accent);text-decoration:underline;text-underline-offset:3px}.doc__prose ul{padding-left:1.2em}.doc__prose li{margin:.35em 0}.doc__prose strong{color:#fff}.doc__prose hr{border:0;border-top:1px solid var(--doc-line);margin:2em 0}.doc__back{margin-top:56px;padding-top:24px;border-top:1px solid var(--doc-line)}.doc__back a{color:var(--doc-muted);text-decoration:none}.doc__back a:hover{color:var(--doc-fg)}
+</style></head> <body> <article class="doc"> <div class="doc__prose"> <h1 id="політика-конфіденційності">Політика конфіденційності</h1>
+<p><em>Чинна з: 2026-06-01</em></p>
+<h2 id="1-володілець-персональних-даних">1. Володілець персональних даних</h2>
+<p>1.1. Володільцем персональних даних, що збираються на сайті aimarketolog.site, є ФОП <strong>Євсюков Сергій Сергійович</strong> (ІПН 3109706433), далі — «Володілець».</p>
+<p>1.2. Обробка здійснюється відповідно до ЗУ «Про захист персональних даних» № 2297-VI та Регламенту ЄС 2016/679 (GDPR) — у частині, що стосується резидентів ЄС.</p>
+<h2 id="2-які-дані-ми-збираємо">2. Які дані ми збираємо</h2>
+<p>Під час оформлення замовлення Володілець збирає:</p>
+<ul>
+<li><strong>ПІБ</strong> Замовника;</li>
+<li><strong>Email</strong> — для надсилання підтвердження оплати та доступу до Програми;</li>
+<li><strong>Телефон</strong> — для зв’язку з технічних та організаційних питань;</li>
+<li><strong>Дані оплати</strong> — обробляються виключно на стороні monobank; Володілець не зберігає номери карток;</li>
+<li><strong>Технічна інформація</strong> — IP-адреса, тип браузера, час візиту (стандартні дані веб-логів).</li>
+</ul>
+<h2 id="3-мета-та-правові-підстави-обробки">3. Мета та правові підстави обробки</h2>
+<p>3.1. Дані обробляються виключно для:</p>
+<ul>
+<li>обробки замовлення та надання освітньої послуги — <strong>правова підстава: виконання договору</strong> (оферти);</li>
+<li>зв’язку із Замовником з організаційних питань — виконання договору;</li>
+<li>обробки заявок на повернення коштів — виконання договору;</li>
+<li>виконання вимог законодавства (податковий облік, звітність) — <strong>правова підстава: виконання обов’язку Володільця за законом</strong>.</li>
+</ul>
+<p>3.2. Дані <strong>не передаються третім особам для маркетингу чи реклами</strong>.</p>
+<h2 id="4-згода-на-обробку">4. Згода на обробку</h2>
+<p>4.1. Згода на обробку персональних даних надається Замовником шляхом проставлення відповідної позначки (чекбокс) під час оформлення замовлення, до здійснення оплати.</p>
+<p>4.2. Для обробки в межах виконання договору та виконання вимог закону додаткова згода не вимагається (ст. 11 ЗУ № 2297-VI).</p>
+<h2 id="5-передача-даних-третім-особам">5. Передача даних третім особам</h2>
+<p>Володілець передає певні дані обмеженому колу третіх осіб виключно для виконання договору:</p>
+<ul>
+<li><strong>АТ «Універсал Банк» (monobank)</strong> — дані, необхідні для обробки платежу;</li>
+<li><strong>Автор Програми (Влад Ясько, резидент України)</strong> — ПІБ та email Замовника для надання доступу до матеріалів Програми; передача здійснюється в межах України;</li>
+<li><strong>Державна податкова служба України</strong> — у випадках, передбачених законодавством.</li>
+</ul>
+<h2 id="6-зберігання-та-захист-даних">6. Зберігання та захист даних</h2>
+<p>6.1. Персональні дані зберігаються протягом строку, необхідного для досягнення мети обробки (виконання договору та супровід Замовника).</p>
+<p>6.2. Первинні документи, що містять персональні дані та необхідні для податкового обліку, зберігаються <strong>не менше 1095 днів</strong> з дня подання податкової звітності (ст. 44 Податкового кодексу України), після чого знищуються або знеособлюються.</p>
+<p>6.3. Володілець застосовує технічні та організаційні заходи для захисту даних від несанкціонованого доступу, втрати або зміни.</p>
+<h2 id="7-права-субєкта-персональних-даних">7. Права суб’єкта персональних даних</h2>
+<p>7.1. Замовник має право:</p>
+<ul>
+<li>отримати інформацію про обробку своїх даних;</li>
+<li>вимагати виправлення неточних даних;</li>
+<li>вимагати видалення даних — у межах, що не суперечать обов’язку Володільця зберігати первинні документи;</li>
+<li>відкликати згоду на обробку (з відповідним припиненням послуги).</li>
+</ul>
+<p>7.2. Запит надсилається на email <strong><a href="/cdn-cgi/l/email-protection#fd94939b92bd9c94909c8f9698899291929ad38e948998"><span class="__cf_email__" data-cfemail="b3daddd5dcf3d2daded2c1d8d6c7dcdfdcd49dc0dac7d6">[email&#160;protected]</span></a></strong> з підтвердженням особи. Володілець відповідає протягом <strong>30 днів</strong> з дня отримання запиту.</p>
+<p>7.3. <strong>Право на скаргу.</strong> У разі порушення прав Замовник може звернутися до <strong>Уповноваженого Верховної Ради України з прав людини</strong> як органу, що здійснює контроль за додержанням законодавства про захист персональних даних.</p>
+<h2 id="8-файли-cookie">8. Файли cookie</h2>
+<p>8.1. Сайт aimarketolog.site використовує мінімальний набір файлів cookie, необхідних для його роботи (технічні cookie).</p>
+<p>8.2. Сайт використовує аналітичні сервіси (<strong>Google Analytics</strong>, <strong>Microsoft Clarity</strong>) для збору знеособленої статистики відвідувань — перегляди сторінок, джерела трафіку, взаємодія з інтерфейсом — з єдиною метою покращення роботи сайту. Ці дані не використовуються для ідентифікації особи чи персоналізованої реклами. Ви можете вимкнути файли cookie в налаштуваннях свого браузера.</p>
+<h2 id="9-зміни-до-політики">9. Зміни до Політики</h2>
+<p>9.1. Володілець залишає за собою право вносити зміни до цієї Політики. Актуальна версія завжди доступна за адресою aimarketolog.site/privacy. Дата набрання чинності вказана на початку документа.</p>
+<h2 id="10-контакти">10. Контакти</h2>
+<p>Питання щодо обробки персональних даних: <strong><a href="/cdn-cgi/l/email-protection#60090e060f2001090d01120b05140f0c0f074e13091405"><span class="__cf_email__" data-cfemail="83eaede5ecc3e2eaeee2f1e8e6f7ecefece4adf0eaf7e6">[email&#160;protected]</span></a></strong>
+Володілець: ФОП Євсюков Сергій Сергійович
+ІПН: 3109706433
+Адреса: Україна, 61013, Харківська обл., м. Харків, вул. Велика Данилівська, буд. 4</p> </div> <p class="doc__back"><a href="/">← На головну</a></p> </article><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4138c67fa9de496099945e1fe80fb670","r":1}' crossorigin="anonymous"></script>
+</body></html>

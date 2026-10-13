@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI-Охотник — находит клиентов, которым есть что продать</title>
+<meta name="description" content="Ты говоришь, какую услугу продаёшь. AI-Охотник находит людей, которым она нужна, и готовит письмо под каждого.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#0C100A;
+  --panel:#151B10;
+  --panel-2:#1B2214;
+  --line:#2A3320;
+  --on-dark:#EAE6D4;
+  --muted:#93A075;
+  --dim:#6E7A57;
+  --accent:#FF6B1A;
+  --accent-soft:#FF8E4D;
+  --lime:#B4E34A;
+  --display:'Russo One',sans-serif;
+  --sans:'Manrope',system-ui,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--on-dark);font-family:var(--sans);overflow-x:hidden}
+
+/* ---------- шапка ---------- */
+.chrome{position:fixed;top:0;left:0;right:0;z-index:70;display:flex;align-items:center;justify-content:space-between;
+  padding:14px clamp(18px,4vw,44px);background:linear-gradient(rgba(12,16,10,.85),rgba(12,16,10,0));pointer-events:none}
+.chrome>*{pointer-events:auto}
+.chrome .logo{font-family:var(--display);font-size:15px;letter-spacing:.14em;color:var(--on-dark);text-decoration:none}
+.chrome .logo span{color:var(--accent)}
+.chrome .cta{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-decoration:none;color:#140b04;
+  background:var(--accent);padding:10px 18px;border:1px solid var(--accent);transition:background .25s,color .25s}
+.chrome .cta:hover{background:transparent;color:var(--accent)}
+
+/* ---------- лоадер ---------- */
+#tkLoader{position:fixed;inset:0;z-index:200;background:var(--ink);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:22px;transition:opacity .6s ease,visibility .6s}
+#tkLoader.done{opacity:0;visibility:hidden;pointer-events:none}
+#tkLoader .lm{font-family:var(--display);font-size:18px;letter-spacing:.18em;text-transform:uppercase}
+#tkLoader .lm span{color:var(--accent)}
+#tkLoader .ret{width:46px;height:46px;border:1px solid var(--line);border-radius:50%;position:relative;animation:spin 3.2s linear infinite}
+#tkLoader .ret::before{content:'';position:absolute;inset:9px;border:1px solid var(--accent);border-radius:50%;
+  border-top-color:transparent;border-bottom-color:transparent}
+#tkLoader .ret::after{content:'';position:absolute;left:50%;top:50%;width:4px;height:4px;margin:-2px;
+  background:var(--accent);border-radius:50%}
+@keyframes spin{to{transform:rotate(360deg)}}
+#tkLoader .lb{width:min(280px,60vw);height:2px;background:rgba(234,230,212,.14);overflow:hidden}
+#tkLoader .lb i{display:block;height:100%;width:0;background:var(--accent);transition:width .25s ease}
+#tkLoader .lp{font-family:var(--mono);font-size:12px;color:var(--dim);font-variant-numeric:tabular-nums;letter-spacing:.08em}
+
+/* ---------- прогресс ---------- */
+#tkProgress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--accent);z-index:80;transition:width .1s linear}
+
+/* ---------- сцена ---------- */
+#track{position:relative;height:760vh;background:var(--ink)}
+#stage{position:sticky;top:0;height:100vh;overflow:hidden;background:var(--ink)}
+#seq{position:absolute;inset:0;width:100%;height:100%;display:block}
+.tk-vign{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(ellipse 94% 80% at 55% 46%,transparent 44%,rgba(7,10,6,.52) 100%)}
+.tk-shade{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(to top,rgba(7,10,6,.82) 0%,rgba(7,10,6,.58) 14%,rgba(7,10,6,.28) 32%,
+    rgba(7,10,6,.06) 54%,rgba(7,10,6,0) 70%,rgba(7,10,6,.34) 100%)}
+.tk-grain{position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.9'/%3E%3C/svg%3E")}
+
+/* ---------- главы ---------- */
+.tk-ch{position:absolute;z-index:3;left:50%;transform:translateX(-50%);width:min(1240px,100% - 48px);
+  bottom:clamp(56px,9vh,110px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .42s ease}
+.tk-ch.on{opacity:1;visibility:visible;pointer-events:auto}
+.tk-card{max-width:640px;padding:28px 32px;
+  background:linear-gradient(120deg,rgba(15,20,12,.90),rgba(15,20,12,.55));
+  backdrop-filter:blur(14px) saturate(1.05);-webkit-backdrop-filter:blur(14px) saturate(1.05);
+  border:1px solid rgba(234,230,212,.13);box-shadow:0 30px 70px rgba(4,6,3,.5);position:relative;
+  transform:translateY(28px);transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.tk-card::before{content:'';position:absolute;top:-1px;left:-1px;width:16px;height:16px;
+  border-top:2px solid var(--accent);border-left:2px solid var(--accent)}
+.tk-card::after{content:'';position:absolute;bottom:-1px;right:-1px;width:16px;height:16px;
+  border-bottom:2px solid var(--accent);border-right:2px solid var(--accent)}
+.tk-ch.on .tk-card{transform:translateY(0)}
+.tk-eyebrow{display:block;font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--accent-soft);margin-bottom:14px}
+.tk-card h1,.tk-card h2{font-family:var(--display);font-weight:400;margin:0 0 14px;line-height:1.08;
+  text-transform:uppercase;text-wrap:balance}
+.tk-card h1{font-size:clamp(30px,5vw,56px)}
+.tk-card h2{font-size:clamp(22px,3.4vw,38px)}
+.tk-card .cop{color:var(--accent)}
+.tk-card p{color:var(--muted);font-size:clamp(15px,1.5vw,17.5px);max-width:52ch;line-height:1.6}
+
+/* ---------- финальная развилка ---------- */
+.tk-ch.fork{bottom:auto;top:50%;transform:translate(-50%,-50%);text-align:center}
+.tk-ch.fork::before{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:130%;height:150%;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse at center,rgba(7,10,6,.76) 0%,rgba(7,10,6,.54) 45%,rgba(7,10,6,0) 74%)}
+.tk-fork-t{font-family:var(--display);font-weight:400;font-size:clamp(24px,3.8vw,42px);margin:0 0 30px;line-height:1.14;
+  text-transform:uppercase;text-wrap:balance;text-shadow:0 4px 28px rgba(4,6,3,.8)}
+.tk-fork{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:860px;margin:0 auto}
+.tk-fc{display:block;text-decoration:none;color:inherit;text-align:left;padding:26px 28px;
+  border:1px solid rgba(234,230,212,.16);box-shadow:0 24px 60px rgba(4,6,3,.42);position:relative;
+  transform:translateY(26px);opacity:0;
+  transition:transform .6s cubic-bezier(.2,.7,.2,1),opacity .5s ease,box-shadow .3s ease,border-color .3s ease}
+.tk-ch.fork.on .tk-fc{transform:translateY(0);opacity:1}
+.tk-ch.fork.on .tk-fc:nth-child(2){transition-delay:.1s}
+.tk-fc.a{background:linear-gradient(135deg,rgba(21,27,16,.94),rgba(35,44,26,.86))}
+.tk-fc.b{background:linear-gradient(135deg,rgba(255,107,26,.96),rgba(200,74,10,.9));color:#140b04}
+.tk-fc.b p{color:rgba(20,11,4,.75)}
+.tk-fc.b .fe{color:#140b04}
+.tk-fc:hover{box-shadow:0 34px 80px rgba(4,6,3,.6);border-color:rgba(255,142,77,.5)}
+.tk-fc:focus-visible{outline:2px solid var(--accent-soft);outline-offset:4px}
+.tk-fc .fe{display:block;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.2em;
+  text-transform:uppercase;margin-bottom:12px;color:var(--accent-soft)}
+.tk-fc h3{font-family:var(--display);font-weight:400;font-size:clamp(19px,2.3vw,26px);margin:0 0 10px;
+  line-height:1.14;text-transform:uppercase}
+.tk-fc p{font-size:14.5px;color:var(--muted);margin:0 0 16px;line-height:1.55}
+.tk-fc .fb{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700}
+.tk-fc .arr{transition:transform .25s ease}
+.tk-fc:hover .arr{transform:translateX(5px)}
+
+/* ---------- подсказка ---------- */
+.tk-cue{position:absolute;z-index:3;right:clamp(22px,4vw,52px);bottom:clamp(56px,9vh,110px);
+  display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--dim);transition:opacity .4s ease}
+.tk-cue svg{width:18px;height:18px;animation:tkbob 1.9s ease-in-out infinite}
+@keyframes tkbob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+.tk-cue.hide{opacity:0}
+
+/* ---------- обычные секции ---------- */
+.wrap{max-width:1100px;margin:0 auto;padding:0 clamp(20px,4vw,28px)}
+section{padding:clamp(64px,9vw,110px) 0;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--accent);display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.eyebrow::after{content:'';flex:1;height:1px;background:var(--line)}
+h2.sec{font-family:var(--display);font-weight:400;font-size:clamp(26px,3.8vw,40px);
+  text-transform:uppercase;line-height:1.14;margin-bottom:14px;text-wrap:balance}
+.lead{color:var(--muted);max-width:640px;margin-bottom:38px;line-height:1.65}
+.lead b{color:var(--on-dark)}
+
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:960px){.grid4{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.grid4,.grid3,.grid2{grid-template-columns:1fr}}
+
+.card{position:relative;background:var(--panel);border:1px solid var(--line);padding:24px 26px}
+.card.scoped::before{content:'';position:absolute;top:-1px;left:-1px;width:14px;height:14px;
+  border-top:2px solid var(--accent);border-left:2px solid var(--accent)}
+.card.scoped::after{content:'';position:absolute;bottom:-1px;right:-1px;width:14px;height:14px;
+  border-bottom:2px solid var(--accent);border-right:2px solid var(--accent)}
+.card .num{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.2em;margin-bottom:12px;display:block}
+.card h3{font-family:var(--display);font-weight:400;font-size:16.5px;text-transform:uppercase;margin-bottom:8px;line-height:1.25}
+.card p{color:var(--muted);font-size:14.5px;line-height:1.6}
+.card p b{color:var(--on-dark)}
+.card .stat{font-family:var(--mono);font-size:12px;color:var(--dim);margin-top:12px;display:block}
+.card .stat b{color:var(--lime);font-weight:700}
+
+/* разбор цели */
+.dossier{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+@media(max-width:860px){.dossier{grid-template-columns:1fr}}
+.dossier .head{display:flex;align-items:baseline;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.dossier .head h3{font-family:var(--display);font-weight:400;font-size:22px;text-transform:none}
+.dossier .head .stars{font-family:var(--mono);font-size:13px;color:var(--lime)}
+.dossier .head .site{font-family:var(--mono);font-size:12px;color:var(--dim)}
+ul.facts{list-style:none;display:flex;flex-direction:column}
+ul.facts li{display:flex;justify-content:space-between;gap:14px;align-items:baseline;
+  padding:11px 2px;border-bottom:1px dashed var(--line);font-size:14.5px;color:var(--muted)}
+ul.facts li:last-child{border-bottom:none}
+ul.facts .ok{color:var(--lime);font-family:var(--mono);font-size:12px;white-space:nowrap}
+ul.facts .bad{color:#FF5340;font-family:var(--mono);font-size:12px;white-space:nowrap}
+.opp{margin-top:16px;padding:14px 18px;border-left:2px solid var(--lime);background:rgba(180,227,74,.07);
+  color:var(--on-dark);font-size:14.5px;line-height:1.55}
+.opp b{color:var(--lime)}
+
+/* письмо */
+.letter{background:var(--panel);border:1px solid var(--line);padding:clamp(24px,4vw,40px);position:relative}
+.letter::before{content:'';position:absolute;top:-1px;left:-1px;width:16px;height:16px;border-top:2px solid var(--accent);border-left:2px solid var(--accent)}
+.letter::after{content:'';position:absolute;bottom:-1px;right:-1px;width:16px;height:16px;border-bottom:2px solid var(--accent);border-right:2px solid var(--accent)}
+.letter p{color:var(--on-dark);font-size:15.5px;line-height:1.75;max-width:62ch}
+.letter p+p{margin-top:14px}
+.letter .from{margin-top:22px;font-family:var(--mono);font-size:12px;color:var(--dim)}
+.expl{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+.expl .row{display:flex;gap:12px;align-items:baseline;font-size:13.5px;color:var(--muted)}
+.expl .row .tag{font-family:var(--mono);font-size:11px;color:var(--accent);white-space:nowrap;letter-spacing:.08em}
+
+/* цены */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
+@media(max-width:860px){.plans{grid-template-columns:1fr}}
+.plan{background:var(--panel);border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;gap:0;position:relative}
+.plan.hot{border-color:var(--accent)}
+.plan.hot::before{content:'ЧАЩЕ ВСЕГО';position:absolute;top:-9px;left:24px;font-family:var(--mono);
+  font-size:10px;letter-spacing:.18em;background:var(--accent);color:#140b04;padding:2px 10px}
+.plan h3{font-family:var(--display);font-weight:400;font-size:20px;text-transform:uppercase;margin-bottom:6px}
+.plan .for{font-size:13.5px;color:var(--dim);margin-bottom:18px}
+.plan ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:22px}
+.plan li{font-size:14.5px;color:var(--muted);padding-left:20px;position:relative}
+.plan li::before{content:'▸';position:absolute;left:0;color:var(--accent)}
+.plan .go{margin-top:auto;text-align:center;font-family:var(--mono);font-size:13px;letter-spacing:.08em;
+  text-decoration:none;padding:12px 16px;border:1px solid var(--line);color:var(--on-dark);transition:border-color .25s,background .25s,color .25s}
+.plan .go:hover{border-color:var(--accent);color:var(--accent)}
+.plan.hot .go{background:var(--accent);border-color:var(--accent);color:#140b04}
+.plan.hot .go:hover{background:transparent;color:var(--accent)}
+.pricenote{margin-top:22px;color:var(--dim);font-size:13.5px;max-width:640px;line-height:1.6}
+
+/* финал */
+.final{border-bottom:none;text-align:left}
+.final .fin{font-family:var(--display);font-weight:400;font-size:clamp(28px,4.6vw,52px);
+  line-height:1.14;text-transform:uppercase;max-width:820px;text-wrap:balance;margin-bottom:30px}
+.final .fin span{color:var(--accent)}
+.final .cta-big{display:inline-block;font-family:var(--mono);font-size:14px;letter-spacing:.1em;text-decoration:none;
+  color:#140b04;background:var(--accent);padding:16px 32px;border:1px solid var(--accent);transition:background .25s,color .25s}
+.final .cta-big:hover{background:transparent;color:var(--accent)}
+.final .sub{margin-top:16px;color:var(--dim);font-size:13.5px}
+
+footer{padding:34px 0 46px;color:var(--dim);font-size:12.5px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+
+/* ---------- reduced motion ---------- */
+@media(prefers-reduced-motion:reduce){
+  #track{height:auto}
+  #stage{position:relative;height:auto;padding:140px 0 64px;
+    background:var(--ink) url('poster.jpg') center/cover no-repeat}
+  #seq{display:none}
+  .tk-ch{position:relative;left:auto;bottom:auto;top:auto;transform:none;opacity:1;visibility:visible;
+    pointer-events:auto;margin:0 auto 22px}
+  .tk-ch.fork{transform:none}
+  .tk-card,.tk-fc{transform:none;opacity:1}
+  .tk-cue,#tkLoader{display:none}
+  *{transition:none!important;animation:none!important}
+}
+@media(max-width:860px){
+  #track{height:600vh}
+  .tk-card{padding:22px 24px}
+  .tk-fork{grid-template-columns:1fr;gap:14px}
+  .tk-fc{padding:20px 22px}
+  .tk-fc p{display:none}
+  .tk-cue{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="chrome">
+  <a class="logo" href="#">AI-<span>ОХОТНИК</span></a>
+  <a class="cta" href="#" data-x>ЗАПУСТИТЬ ОХОТНИКА →</a>
+</header>
+
+<div id="tkLoader">
+  <div class="ret" aria-hidden="true"></div>
+  <span class="lm">AI-<span>Охотник</span></span>
+  <div class="lb"><i id="tkLoadBar"></i></div>
+  <span class="lp" id="tkLoadPct">0%</span>
+</div>
+
+<div id="tkProgress"></div>
+
+<div id="track">
+  <div id="stage">
+    <canvas id="seq"></canvas>
+    <div class="tk-vign"></div>
+    <div class="tk-shade"></div>
+    <div class="tk-grain"></div>
+
+    <div class="tk-ch" data-start="0" data-end="0.09">
+      <div class="tk-card">
+        <span class="tk-eyebrow">AI-Охотник · Ночная смена</span>
+        <h1>Не трать время<br><span class="cop">на поиск клиентов</span></h1>
+        <p>Пусть охотник принесёт тебе готовую добычу.</p>
+      </div>
+    </div>
+
+    <div class="tk-ch" data-start="0.11" data-end="0.19">
+      <div class="tk-card">
+        <span class="tk-eyebrow">01 · Выход на охоту</span>
+        <h2>Пока ты спишь — он работает</h2>
+        <p>Каждый вечер охотник выходит на охоту за клиентами для тебя.</p>
+      </div>
+    </div>
+
+    <div class="tk-ch" data-start="0.21" data-end="0.30">
+      <div class="tk-card">
+        <span class="tk-eyebrow">02 · След</span>
+        <h2>Скажи, что ты продаёшь</h2>
+        <p>Услугу и город. «Маникюр — Киев». Больше от тебя ничего не нужно — дальше он сам.</p>
+      </div>
+    </div>
+
+    <div class="tk-ch" data-start="0.33" data-end="0.46">
+      <div class="tk-card">
+        <span class="tk-eyebrow">03 · Прочёсывание</span>
+        <h2>Он видит каждого</h2>
+        <p>Проходит город насквозь: сайты, карты, отзывы, соцсети. Сотни компаний за пару минут.</p>
+      </div>
+    </div>
+
+    <div class="tk-ch" data-start="0.48" data-end="0.58">
+      <div class="tk-card">
+        <span class="tk-eyebrow">04 · Выбор цели</span>
+        <h2>И выбирает осознанно</h2>
+        <p>По каждой цели — карточка: что у неё хорошо, что хромает и почему ей нужен именно ты.</p>
+      </div>
+    </div>
+
+    <div class="tk-ch" data-start="0.60" data-end="0.70">
+      <div class="tk-card">
+        <span class="tk-eyebrow">05 · Заряжание</span>
+        <h2>На каждой стреле — письмо</h2>
+        <p>Не рассылка под копирку. Личное предложение, собранное из фактов об этой компании.</p>
+      </div>
+    </div>
+
+    <div class="tk-ch" data-start="0.72" data-end="0.80">
+      <div class="tk-card">
+        <span class="tk-eyebrow">06 · Залп</span>
+        <h2>Несколько целей — один выстрел за другим</h2>
+        <p>Каждое письмо летит точно в свою цель. Никакого спама по площадям.</p>
+      </div>
+    </div>
+
+    <div class="tk-ch" data-start="0.82" data-end="0.90">
+      <div class="tk-card">
+        <span class="tk-eyebrow">07 · Добыча</span>
+        <h2>Люди получают — и отвечают</h2>
+        <p>Потому что письмо про них, а не про тебя. Его хочется дочитать и ответить.</p>
+      </div>
+    </div>
+
+    <div class="tk-ch fork" data-start="0.92" data-end="1.01">
+      <h2 class="tk-fork-t">Готов запустить своего охотника?</h2>
+      <div class="tk-fork">
+        <a class="tk-fc a" href="#how">
+          <span class="fe">Сначала посмотреть</span>
+          <h3>Как он охотится</h3>
+          <p>Четыре шага от твоей услуги до готового письма клиенту.</p>
+          <span class="fb">Смотреть <span class="arr">→</span></span>
+        </a>
+        <a class="tk-fc b" href="#" data-x>
+          <span class="fe">Стартовые кредиты сразу</span>
+          <h3>Запустить охотника</h3>
+          <p>Регистрация бесплатная. Первый поиск — без карты.</p>
+          <span class="fb">Запустить <span class="arr">→</span></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="tk-cue" id="tkCue">Листай
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ КАК ОХОТИТСЯ ═══════════ -->
+<section id="how">
+  <div class="wrap">
+    <div class="eyebrow">Как это работает</div>
+    <h2 class="sec">От услуги до готового письма</h2>
+    <p class="lead">Ты не разбираешься в рекламе и не обязан. Вся охота — четыре шага, из них твой — только первый.</p>
+    <div class="grid4">
+      <div class="card scoped">
+        <span class="num">01</span>
+        <h3>Ты говоришь, что продаёшь</h3>
+        <p>Услугу и город: «маникюр — Киев», «ремонт квартир — Варшава». Охотник берёт след.</p>
+      </div>
+      <div class="card scoped">
+        <span class="num">02</span>
+        <h3>Он прочёсывает город</h3>
+        <p>Собирает компании с карт, сайтов, отзывов и соцсетей.</p>
+        <span class="stat"><b>356 компаний</b> за 2 минуты</span>
+      </div>
+      <div class="card scoped">
+        <span class="num">03</span>
+        <h3>Находит, кому ты нужен</h3>
+        <p>Смотрит каждую: что хорошо, что хромает. Если предложить нечего — отсеивает.</p>
+        <span class="stat"><b>110 годятся</b> · 246 отсеяны</span>
+      </div>
+      <div class="card scoped">
+        <span class="num">04</span>
+        <h3>Пишет письмо под каждого</h3>
+        <p>Личное, по фактам этой компании. Тебе остаётся отправить и ответить на «да».</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ПОЧЕМУ ИМЕННО ЭТОТ ═══════════ -->
+<section id="why">
+  <div class="wrap">
+    <div class="eyebrow">Прозрачный выбор цели</div>
+    <h2 class="sec">Смотри, почему именно этот</h2>
+    <p class="lead">Охотник не говорит «поверь мне». По каждой цели он показывает карточку — все факты, из которых сложился выбор.</p>
+    <div class="dossier">
+      <div class="card">
+        <div class="head">
+          <h3>Laser Line</h3>
+          <span class="stars">★ 4.7 (681)</span>
+          <span class="site">laserline.kiev.ua</span>
+        </div>
+        <ul class="facts">
+          <li>Сайт <span class="ok">ЕСТЬ ✓</span></li>
+          <li>681 отзыв в Google — салон живой, клиенты идут <span class="ok">СИЛЬНО ✓</span></li>
+          <li>Instagram активный, посты каждую неделю <span class="ok">СИЛЬНО ✓</span></li>
+          <li>Записаться можно только по телефону <span class="bad">ХРОМАЕТ ✗</span></li>
+          <li>Сайт плохо открывается на телефоне <span class="bad">ХРОМАЕТ ✗</span></li>
+          <li>Цены нигде не указаны <span class="bad">ХРОМАЕТ ✗</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="card scoped">
+          <span class="num">ВОЗМОЖНОСТЬ НАЙДЕНА</span>
+          <h3>Сильный салон, который теряет запись</h3>
+          <p>Клиенты есть, отзывы отличные — но записаться можно только позвонив. Кто не дозвонился вечером — ушёл к соседям.</p>
+          <div class="opp"><b>Что предложит охотник:</b> сайт с онлайн-записью. Он снимет звонки с администратора и покажет цены тем, кто сейчас уходит, не спросив.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ПИСЬМО ═══════════ -->
+<section id="letter">
+  <div class="wrap">
+    <div class="eyebrow">Стрела с письмом</div>
+    <h2 class="sec">Каждое письмо объяснено</h2>
+    <p class="lead">Вот что получает компания. Ни одной выдуманной строки — каждая собрана из фактов карточки выше.</p>
+    <div class="letter">
+      <p>Привет, команда Laser Line!</p>
+      <p>У вас уже 681 отзыв в Google и живой поток клиентов — это сильно. Заметил только, что записаться к вам можно лишь через Instagram и по телефону, а сайт тяжело открыть с телефона.</p>
+      <p>Могу сделать сайт с онлайн-записью: он снимет часть звонков с администратора и покажет цены тем, кто сейчас уходит, не спросив. Если интересно — покажу короткий пример, как это может выглядеть у вас.</p>
+      <p class="from">— отправляется с твоего аккаунта, твоим именем</p>
+    </div>
+    <div class="expl">
+      <div class="row"><span class="tag">«681 отзыв»</span> из отзывов Google — комплимент по делу, не лесть</div>
+      <div class="row"><span class="tag">«только по телефону»</span> из проверки способов записи — конкретное слабое место</div>
+      <div class="row"><span class="tag">«покажу пример»</span> мягкий шаг — без давления и «купи сейчас»</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ЦЕНА ═══════════ -->
+<section id="price">
+  <div class="wrap">
+    <div class="eyebrow">Сколько стоит</div>
+    <h2 class="sec">Начни бесплатно</h2>
+    <p class="lead">Регистрация бесплатная: стартовые кредиты сразу на счету, первый поиск — <b>без карты</b>. Кредитами оплачивается работа охотника, карты и AI уже включены.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Старт</h3>
+        <p class="for">Попробовать охоту на своём городе</p>
+        <ul>
+          <li>Поиск компаний по картам</li>
+          <li>Разбор каждой цели</li>
+          <li>Письма под каждого клиента</li>
+        </ul>
+        <a class="go" href="#" data-x>Начать бесплатно</a>
+      </div>
+      <div class="plan hot">
+        <h3>Про</h3>
+        <p class="for">Для тех, кто пишет клиентам каждый день</p>
+        <ul>
+          <li>Всё из «Старта»</li>
+          <li>Напоминания тем, кто не ответил</li>
+          <li>Подсказки, что отвечать на «дорого» и «подумаю»</li>
+        </ul>
+        <a class="go" href="#" data-x>Выбрать Про</a>
+      </div>
+      <div class="plan">
+        <h3>Бизнес</h3>
+        <p class="for">Для команд и агентств</p>
+        <ul>
+          <li>Всё из «Про»</li>
+          <li>Telegram, WhatsApp и почта — из одного места</li>
+          <li>Приоритет в очереди на поиск</li>
+        </ul>
+        <a class="go" href="#" data-x>Выбрать Бизнес</a>
+      </div>
+    </div>
+    <p class="pricenote">Кредиты закончились раньше времени? Докупаешь пакет — подписку менять не надо.</p>
+  </div>
+</section>
+
+<!-- ═══════════ ЧЕСТНОСТЬ ═══════════ -->
+<section id="honest">
+  <div class="wrap">
+    <div class="eyebrow">Правила охоты</div>
+    <h2 class="sec">Чего мы не обещаем</h2>
+    <div class="grid3">
+      <div class="card">
+        <h3>Не обещаем доход</h3>
+        <p>Сколько ты заработаешь, зависит от твоей услуги, цены и того, как ты говоришь с клиентом. Охотник даёт поток и подготовку — не гарантию сделок.</p>
+      </div>
+      <div class="card">
+        <h3>Не рассылаем за тебя</h3>
+        <p>Письма уходят с твоего аккаунта, твоими руками. Доступ к твоему мессенджеру мы не храним.</p>
+      </div>
+      <div class="card">
+        <h3>Не судим о том, чего не видим</h3>
+        <p>Охотник смотрит по данным карт и отзывам. Красивый у компании сайт или нет — решаешь ты, открыв его своими глазами.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ФИНАЛ ═══════════ -->
+<section class="final">
+  <div class="wrap">
+    <div class="fin">Не покупай базы лидов.<br>Находи причины <span>написать бизнесу</span>.</div>
+    <a class="cta-big" href="#" data-x>ЗАПУСТИТЬ ОХОТНИКА →</a>
+    <p class="sub">Регистрация бесплатная · стартовые кредиты сразу · карта не нужна</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>AI-Охотник · находит клиентов, которым есть что продать</span>
+    <span>Видео и кадры сгенерированы AI · образ героя использован с его согласия</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var reduced  = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var isMobile = window.matchMedia('(max-width: 860px)').matches;
+
+  var DIR   = isMobile ? 'frames-mobile' : 'frames';
+  var TOTAL = isMobile ? 120 : 226;
+  var BATCH = 18;
+
+  var canvas = document.getElementById('seq');
+  var track  = document.getElementById('track');
+  var loader = document.getElementById('tkLoader');
+  if (!canvas || !track) return;
+  var ctx  = canvas.getContext('2d', { alpha: false });
+  var bar  = document.getElementById('tkLoadBar');
+  var pct  = document.getElementById('tkLoadPct');
+  var prog = document.getElementById('tkProgress');
+  var cue  = document.getElementById('tkCue');
+  var chapters = [].slice.call(document.querySelectorAll('.tk-ch'));
+
+  var frames = new Array(TOTAL);
+  var currentFrame = 0, drawnFrame = -1;
+
+  function url(i) { return DIR + '/frame_' + String(i + 1).padStart(4, '0') + '.webp'; }
+
+  function resize() {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width  = Math.round(canvas.clientWidth  * dpr);
+    canvas.height = Math.round(canvas.clientHeight * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    drawnFrame = -1;
+    draw();
+  }
+
+  function draw() {
+    var img = frames[currentFrame];
+    if (!img || !img.complete || !img.naturalWidth) return;
+    var cw = canvas.clientWidth, ch = canvas.clientHeight;
+    var ir = img.naturalWidth / img.naturalHeight, cr = cw / ch, w, h;
+    if (ir > cr) { h = ch; w = ch * ir; } else { w = cw; h = cw / ir; }
+    ctx.drawImage(img, (cw - w) / 2, (ch - h) / 2, w, h);
+    drawnFrame = currentFrame;
+  }
+
+  function loadFrame(i) {
+    return new Promise(function (res) {
+      var img = new Image();
+      img.decoding = 'async';
+      img.onload = img.onerror = function () { frames[i] = img; res(); };
+      img.src = url(i);
+    });
+  }
+
+  var forced = (function () {
+    var m = /[?&]tkp=([0-9.]+)/.exec(location.search);
+    return m ? Math.max(0, Math.min(1, parseFloat(m[1]))) : null;
+  })();
+
+  function scrollProgress() {
+    if (forced !== null) return forced;
+    var rect = track.getBoundingClientRect();
+    var span = rect.height - window.innerHeight;
+    if (span <= 0) return 0;
+    var p = -rect.top / span;
+    return p < 0 ? 0 : p > 1 ? 1 : p;
+  }
+
+  function onScroll() {
+    var p = scrollProgress();
+    currentFrame = Math.min(Math.floor(p * TOTAL), TOTAL - 1);
+    if (prog) prog.style.width = (p * 100).toFixed(2) + '%';
+    for (var i = 0; i < chapters.length; i++) {
+      var el = chapters[i];
+      var s = parseFloat(el.dataset.start), e = parseFloat(el.dataset.end);
+      var on = p >= s && p <= e;
+      if (on !== el.classList.contains('on')) el.classList.toggle('on', on);
+    }
+    if (cue) cue.classList.toggle('hide', p > 0.04);
+  }
+
+  function tick() {
+    if (currentFrame !== drawnFrame) draw();
+    requestAnimationFrame(tick);
+  }
+
+  function start() {
+    resize();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', resize);
+    onScroll();
+    tick();
+    if (loader) loader.classList.add('done');
+  }
+
+  if (reduced) { if (loader) loader.classList.add('done'); return; }
+
+  (async function preload() {
+    await loadFrame(0);
+    draw();
+    var done = 1;
+    for (var i = 1; i < TOTAL; i += BATCH) {
+      var batch = [];
+      for (var j = i; j < Math.min(i + BATCH, TOTAL); j++) batch.push(loadFrame(j));
+      await Promise.all(batch);
+      done += batch.length;
+      var p = Math.round(done / TOTAL * 100);
+      if (bar) bar.style.width = p + '%';
+      if (pct) pct.textContent = p + '%';
+    }
+    start();
+  })();
+})();
+</script>
+<style>a,button,[role="button"]{cursor:default!important}</style>
+<script>
+(function(){
+ function stop(e){e.preventDefault();e.stopPropagation();return false}
+ ['click','auxclick','mousedown','mouseup','submit','keydown'].forEach(function(t){
+  document.addEventListener(t,function(e){
+   if(t==='keydown'&&e.key!=='Enter'&&e.key!==' ')return;
+   if(e.target.closest&&e.target.closest('a,button,input,form,[role="button"]'))stop(e)
+  },true)
+ });
+ window.addEventListener('beforeunload',function(e){e.preventDefault()});
+})();
+</script>
+</body>
+</html>

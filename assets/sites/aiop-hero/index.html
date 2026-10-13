@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI-Оператор · hero</title>
+<!--
+  09.10 Мирослав: rest 150 — scroll-scrub hero «точь-в-точь как на aimarketolog.site», но з відео ai-operator.mp4 і офером AI-Оператора.
+  Порт act1 з ai-marketolog-launch-3/apps/aim3d (Hero.astro + engine.ts + main.css): AVIF-кадри 1280×720 на canvas (cover + cross-fade
+  між сусідніми кадрами), eased rAF (EASE .11), офер і сайдбар видно на старті й гаснуть на 18–27% скролу, act 360vh.
+  Відмінності під квадратний слайд: розміри в vmin (1rem = 16px макета 1000×1000), сайдбар у скляній плашці (як мобільна версія
+  сайту), мобільний скрим знизу; на фіналі кадр плавно відзумлюється, щоб титр «AI-ОПЕРАТОР» влазив у квадрат.
+  Стрілки ←/→, PageUp/PageDown, пробіл — у деку; ↑/↓ і колесо — скрол hero.
+-->
+<style>
+@font-face{font-family:"Inter";font-weight:400;font-display:swap;src:url(fonts/inter-cyrillic-400.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Inter";font-weight:400;font-display:swap;src:url(fonts/inter-latin-400.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-weight:500;font-display:swap;src:url(fonts/inter-cyrillic-500.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Inter";font-weight:500;font-display:swap;src:url(fonts/inter-latin-500.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-weight:600;font-display:swap;src:url(fonts/inter-cyrillic-600.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Inter";font-weight:600;font-display:swap;src:url(fonts/inter-latin-600.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter Tight";font-weight:500;font-display:swap;src:url(fonts/inter-tight-cyrillic-500.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Inter Tight";font-weight:500;font-display:swap;src:url(fonts/inter-tight-latin-500.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter Tight";font-weight:600;font-display:swap;src:url(fonts/inter-tight-cyrillic-600.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Inter Tight";font-weight:600;font-display:swap;src:url(fonts/inter-tight-latin-600.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter Tight";font-weight:700;font-display:swap;src:url(fonts/inter-tight-cyrillic-700.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Inter Tight";font-weight:700;font-display:swap;src:url(fonts/inter-tight-latin-700.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"JetBrains Mono";font-weight:400;font-display:swap;src:url(fonts/jetbrains-mono-cyrillic-400.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"JetBrains Mono";font-weight:400;font-display:swap;src:url(fonts/jetbrains-mono-latin-400.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"JetBrains Mono";font-weight:500;font-display:swap;src:url(fonts/jetbrains-mono-cyrillic-500.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"JetBrains Mono";font-weight:500;font-display:swap;src:url(fonts/jetbrains-mono-latin-500.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+/* токени — з aim3d/src/styles/main.css */
+:root{
+  --cream:#f4efe7;--cream-soft:#cabfb1;--ink:#0b0c0e;--gold:#fdd506;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --display:"Inter Tight","Inter",-apple-system,system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --pad:3.5rem;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+/* 1rem = 16px макета 1000×1000 → однаково в будь-якому квадраті */
+html{font-size:1.6vmin;background:#0a0807;scrollbar-width:none}
+html::-webkit-scrollbar{display:none}
+body{font-family:var(--sans);background:#0a0807;color:var(--cream);line-height:1.55;
+  font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+ul{list-style:none}
+
+.act1{height:360vh;position:relative}
+.act1__sticky{position:sticky;top:0;height:100vh;overflow:hidden;background:#0a0807 url(frames/frame_0000.avif) 62% 50%/cover no-repeat}
+#frames{position:absolute;inset:0;width:100%;height:100%;display:block}
+/* скрим мобільної версії сайту (текст знизу), трохи м'якший */
+.act1__scrim{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(0deg,rgba(7,5,4,.86) 0%,rgba(7,5,4,.3) 46%,transparent 70%),
+             linear-gradient(78deg,rgba(7,5,4,.35) 0%,transparent 56%)}
+.act1__stage{position:absolute;inset:0;z-index:3}
+
+.eyebrow{display:inline-block;font-family:var(--mono);font-size:.875rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--cream);white-space:nowrap;border-radius:.6rem;padding:.6rem 1.1rem}
+.eyebrow .dot{color:var(--gold)}
+.eyebrow--ghost{background:rgba(10,10,11,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(244,239,231,.16)}
+.display-1{font-family:var(--display);font-size:3.9rem;font-weight:600;line-height:1.0;letter-spacing:-.03em;max-width:36rem}
+.display-1 .accent{background:var(--gold);color:var(--ink);padding:0 .14em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.lead{font-size:1.4rem;line-height:1.5;max-width:30ch}
+.nowrap{white-space:nowrap}
+
+.phase{position:absolute;left:var(--pad);bottom:8.5rem;max-width:40rem;will-change:opacity,transform}
+.phase .eyebrow{margin-bottom:1.35rem}
+.phase h1{margin-bottom:1.2rem;color:var(--cream)}
+.phase .lead{color:#f4efe7}
+
+/* сайдбар: структура .side сайту, у скляній плашці мобільної версії */
+.side{position:absolute;top:var(--pad);right:var(--pad);z-index:3;width:19.5rem;display:flex;flex-direction:column;gap:1.25rem;text-align:right;
+  background:rgba(10,7,5,.46);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border:1px solid rgba(244,239,231,.14);border-radius:.85rem;padding:1.2rem 1.35rem 1.3rem;will-change:opacity}
+.side__grp{display:flex;flex-direction:column;align-items:flex-end;gap:.45rem}
+.side__rule{height:1px;background:linear-gradient(90deg,transparent,rgba(244,239,231,.34))}
+.side__lbl{font-family:var(--mono);font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.side__date{font-family:var(--display);font-size:2.15rem;font-weight:600;letter-spacing:-.02em;color:var(--cream);line-height:1}
+.side__list{display:flex;flex-direction:column;gap:.65rem;margin-top:.7rem;width:100%}
+.side__list li{display:flex;align-items:center;justify-content:flex-end;gap:.8rem;font-size:1.06rem;color:var(--cream);line-height:1.25}
+.side__num{flex:none;font-family:var(--mono);font-size:.8rem;color:var(--gold);width:1.75rem;height:1.75rem;display:grid;place-items:center;border:1px solid rgba(253,213,6,.4);border-radius:.4rem}
+.side__price{font-size:1.06rem;line-height:1.4;color:var(--cream-soft)}
+
+.hint{position:absolute;left:50%;bottom:3.4rem;transform:translateX(-50%);z-index:4;display:flex;flex-direction:column;align-items:center;gap:.55rem;
+  font-family:var(--mono);font-size:.8rem;letter-spacing:.28em;color:var(--cream);text-transform:uppercase;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.hint__arrow{font-size:1.6rem;line-height:1;color:var(--gold);filter:drop-shadow(0 2px 6px rgba(0,0,0,.5));animation:hintbounce 1.5s var(--ease) infinite}
+@keyframes hintbounce{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(.45rem);opacity:1}}
+@media(prefers-reduced-motion:reduce){.hint__arrow{animation:none}}
+</style>
+</head>
+<body>
+<section class="act1" id="hero">
+  <div class="act1__sticky">
+    <canvas id="frames"></canvas>
+    <div class="act1__scrim"></div>
+    <div class="act1__stage">
+      <div class="phase" id="heroOffer">
+        <p class="eyebrow eyebrow--ghost">AI<span class="dot">·</span>ОПЕРАТОР</p>
+        <h1 class="display-1"><span class="accent">$250 в день</span><br>на <span class="nowrap">AI-агентах.</span></h1>
+        <p class="lead">Без опыта, без аудитории и без технической работы.</p>
+      </div>
+      <aside class="side" id="side">
+        <div class="side__grp">
+          <span class="side__lbl">Ты получаешь</span>
+          <span class="side__date">Штат AI-агентов</span>
+          <ul class="side__list">
+            <li><span>Найти клиентов</span><span class="side__num">01</span></li>
+            <li><span>Оказать услугу</span><span class="side__num">02</span></li>
+            <li><span>Продать</span><span class="side__num">03</span></li>
+          </ul>
+        </div>
+        <span class="side__rule"></span>
+        <div class="side__grp">
+          <span class="side__lbl">За 10 недель</span>
+          <span class="side__price">Получишь навык управлять агентами и собирать своих под любую задачу</span>
+        </div>
+      </aside>
+    </div>
+    <div class="hint" id="hint"><span>Прокрути вниз</span><span class="hint__arrow">↓</span></div>
+  </div>
+</section>
+<script>
+/* Порт act1 з aim3d/src/scripts/engine.ts (scroll-scrub AVIF + text phases), поведінка та сама */
+(function(){
+  var $=function(s){return document.querySelector(s)};
+  var clamp=function(v,a,b){return Math.min(b,Math.max(a,v))};
+  var smooth=function(t){return t*t*(3-2*t)};
+  var CFG={count:786,pattern:function(i){return 'frames/frame_'+String(i).padStart(4,'0')+'.avif?v=1009b'}};
+  var heroEl=$('#hero'),canvas=$('#frames'),heroOffer=$('#heroOffer'),side=$('#side'),hint=$('#hint');
+  var ctx=canvas.getContext('2d',{alpha:false});
+  var frames=new Array(CFG.count),ready=false,dpr=Math.min(devicePixelRatio||1,2);
+
+  /* підвантаження «грубо → густо» (09.10, після «недоскролилось»): спершу кожен 24-й кадр по ВСІЙ довжині + останній,
+     далі 12-й, 6-й, 3-й і решта; кадри біля поточної позиції скролу — поза чергою. Так у будь-якій точці скролу,
+     і на фіналі з титром, близький кадр є вже за кілька секунд, а не після повного завантаження (~40 с, 27 МБ). */
+  var focus=-1,pumpFn=null;
+  function preload(){
+    var N=CFG.count,order=[],seen=new Uint8Array(N),i;
+    [24,12,6,3,1].forEach(function(st,pass){for(i=0;i<N;i+=st)if(!seen[i]){seen[i]=1;order.push(i);}if(!pass&&!seen[N-1]){seen[N-1]=1;order.push(N-1);}});
+    var FIRST=Math.ceil(N/24)+1,firstDone=0,qi=FIRST,active=0,limit=8;
+    function mk(i,first,done){var img=new Image();img.decoding='async';
+      img.onload=img.onerror=function(){if(first){firstDone++;if(firstDone>=FIRST)start();}if(done)done();};
+      img.src=CFG.pattern(i);frames[i]=img;}
+    function next(){
+      if(focus>=0)for(var d=0;d<=36;d++){var x=focus+d,y=focus-d;if(x<N&&!frames[x])return x;if(y>=0&&!frames[y])return y;}
+      while(qi<order.length){var k=order[qi++];if(!frames[k])return k;}
+      return -1;
+    }
+    function pump(){while(active<limit){var i=next();if(i<0)return;active++;mk(i,false,function(){active--;pump();});}}
+    pumpFn=pump;
+    order.slice(0,FIRST).forEach(function(i){mk(i,true)});
+    setTimeout(pump,60);
+  }
+  function start(){if(ready)return;ready=true;sizeCanvas();targetP=renderP=heroProgress();renderHero(renderP);}
+
+  function sizeCanvas(){var r=canvas.getBoundingClientRect();canvas.width=Math.round(r.width*dpr);canvas.height=Math.round(r.height*dpr);}
+  var okImg=function(i){var im=frames[i];return im&&im.complete&&im.naturalWidth?im:null};
+  function nearest(i){for(var d=0;d<CFG.count;d++){var a=okImg(i-d);if(a)return a;var b=okImg(i+d);if(b)return b;}return null;}
+
+  /* квадрат: на фіналі (титр «AI-ОПЕРАТОР») кадр плавно зменшується від cover до ширини, де титр влазить;
+     поля і м'який край — edges() */
+  var tiny=document.createElement('canvas');tiny.width=48;tiny.height=27;var tctx=tiny.getContext('2d');
+  var Z0=0.79,Z1=0.885,FIT=0.74;   // p початку/кінця відзуму; частка ширини кадру, видима на фіналі
+  function zoomK(p){var cw=canvas.width,ch=canvas.height;if(cw/ch>=1.5)return 0;return smooth(clamp((p-Z0)/(Z1-Z0),0,1));}
+  var OX0=0.62,ox=OX0;   // горизонтальна позиція кадру: 0.62 на старті (обличчя лівіше, сайдбару вільно), 0.5 — після оферу
+  function place(img,k){
+    var cw=canvas.width,ch=canvas.height,iw=img.naturalWidth||1280,ih=img.naturalHeight||720;
+    var sCover=Math.max(cw/iw,ch/ih),sFit=cw/(iw*FIT),s=sCover+(Math.min(sFit,sCover)-sCover)*k;
+    return {w:iw*s,h:ih*s,x:(cw-iw*s)*ox,y:(ch-ih*s)/2};
+  }
+  function draw(img,k,alpha){var g=place(img,k);ctx.globalAlpha=alpha;ctx.drawImage(img,g.x,g.y,g.w,g.h);ctx.globalAlpha=1;}
+  /* поля відзуму: той самий кадр, зменшений до 48 px і розтягнутий (дешеве розмиття), лягає ПОВЕРХ кадру
+     з м'якою маскою — край кадру розчиняється в полі без шва */
+  var bd=document.createElement('canvas'),bctx=bd.getContext('2d');
+  function edges(img,k){
+    var cw=canvas.width,ch=canvas.height;if(bd.width!==cw||bd.height!==ch){bd.width=cw;bd.height=ch;}
+    tctx.drawImage(img,0,0,48,27);
+    var s=Math.max(cw/48,ch/27),w=48*s,h=27*s;
+    bctx.globalCompositeOperation='source-over';bctx.imageSmoothingEnabled=true;bctx.imageSmoothingQuality='high';
+    bctx.drawImage(tiny,(cw-w)/2,(ch-h)/2,w,h);
+    bctx.fillStyle='rgba(6,8,12,.22)';bctx.fillRect(0,0,cw,ch);
+    var g=place(img,k),top=Math.max(0,g.y),bot=Math.min(ch,g.y+g.h),f=Math.min(ch*0.09,(bot-top)/3);
+    if(bot-top<2)return;
+    bctx.globalCompositeOperation='destination-out';
+    var gr=bctx.createLinearGradient(0,top,0,bot),a=f/(bot-top);
+    gr.addColorStop(0,'rgba(0,0,0,0)');gr.addColorStop(a,'rgba(0,0,0,1)');gr.addColorStop(1-a,'rgba(0,0,0,1)');gr.addColorStop(1,'rgba(0,0,0,0)');
+    bctx.fillStyle=gr;bctx.fillRect(0,top,cw,bot-top);
+    bctx.globalCompositeOperation='source-over';
+    ctx.drawImage(bd,0,0);
+  }
+  function drawFrame(f,k){
+    var N=CFG.count,fc=clamp(f,0,N-1),i0=Math.floor(fc),i1=Math.min(i0+1,N-1),a=fc-i0;
+    var im0=okImg(i0)||nearest(i0);if(!im0)return;
+    ctx.fillStyle='#0a0807';ctx.fillRect(0,0,canvas.width,canvas.height);
+    draw(im0,k,1);
+    var im1=okImg(i1);
+    if(a>0.001&&i1!==i0&&im1)draw(im1,k,a);
+    if(k>0.001)edges(im0,k);
+  }
+
+  function band(p,a,b,c,d){if(p<=a||p>=d)return 0;if(p<b)return (p-a)/(b-a);if(p>c)return 1-(p-c)/(d-c);return 1;}
+  function heroProgress(){var total=heroEl.offsetHeight-innerHeight;return total>0?clamp(-heroEl.getBoundingClientRect().top/total,0,1):0;}
+  function renderHero(p){
+    ox=(canvas.width/canvas.height>=1.5)?0.5:OX0+(0.5-OX0)*smooth(clamp((p-0.2)/0.14,0,1));
+    drawFrame(p*(CFG.count-1),zoomK(p));
+    var o=smooth(band(p,-0.05,0.0,0.18,0.27));
+    heroOffer.style.opacity=String(o);
+    heroOffer.style.transform='translateY('+((1-o)*26).toFixed(1)+'px)';
+    side.style.opacity=String(o);
+    hint.style.opacity=String(clamp(1-p/0.04,0,1));
+  }
+
+  var EASE=0.11,EPS=0.0004,targetP=0,renderP=0,running=false;
+  function loop(){var d=targetP-renderP;if(Math.abs(d)<EPS){renderP=targetP;renderHero(renderP);running=false;return;}
+    renderP+=d*EASE;renderHero(renderP);requestAnimationFrame(loop);}
+  function kick(){if(!running){running=true;requestAnimationFrame(loop);}}
+  addEventListener('scroll',function(){targetP=heroProgress();focus=Math.round(targetP*(CFG.count-1));if(pumpFn)pumpFn();if(ready)kick();},{passive:true});
+
+  /* у деці неактивний слайд прихований (розмір 0): коли екран знову показують — починаємо з першого кадру */
+  var lastH=innerHeight;
+  addEventListener('resize',function(){
+    if(!lastH&&innerHeight)scrollTo(0,0);
+    lastH=innerHeight;
+    dpr=Math.min(devicePixelRatio||1,2);sizeCanvas();targetP=renderP=heroProgress();if(ready)renderHero(renderP);
+  });
+
+  /* клавіші: ↑/↓ — крок скролу hero; ←/→, PageUp/PageDown, пробіл, Home/End — у деку */
+  addEventListener('keydown',function(e){
+    if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();scrollBy({top:(e.key==='ArrowDown'?1:-1)*innerHeight*0.45,behavior:'smooth'});return;}
+    if(parent===window)return;
+    if(/^(ArrowLeft|ArrowRight|PageUp|PageDown|Home|End| )$/.test(e.key)){
+      try{parent.document.dispatchEvent(new KeyboardEvent('keydown',{key:e.key,bubbles:true,cancelable:true}));e.preventDefault();}catch(x){}
+    }
+  });
+
+  /* у деці: щоразу, коли цей екран стає активним (.slide.on), hero починається з першого кадру */
+  try{var sl=frameElement&&frameElement.closest('.slide');if(sl){var wasOn=sl.classList.contains('on');
+    new MutationObserver(function(){var on=sl.classList.contains('on');if(on&&!wasOn){scrollTo(0,0);targetP=renderP=0;if(ready)renderHero(0);}wasOn=on;})
+      .observe(sl,{attributes:true,attributeFilter:['class']});}}catch(x){}
+
+  history.scrollRestoration='manual';scrollTo(0,0);
+  preload();
+})();
+</script>
+</body>
+</html>

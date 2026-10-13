@@ -1,0 +1,100 @@
+/* 12.10 · 5 варіантів подачі блоку «На выходе пакета» у квадратному слайді (?m=a|b|c|d|e) */
+#pp[class*=" m"] .pult__cap.is-on, #pp[class^="m"] .pult__cap.is-on{animation:none}
+
+/* A · «Стек крупно»: екран зверху, опис під ним, усе більше (база 760px) */
+#pp.ma{width:760px}
+#pp.ma .pult__body{grid-template-columns:1fr!important;gap:18px!important}
+#pp.ma .pult__screen{aspect-ratio:16/8.2}
+#pp.ma .pult__line{grid-template-columns:repeat(var(--n),minmax(0,1fr))!important}
+#pp.ma .pult__key{min-height:46px;font-size:14px;padding:6px 10px 6px 6px}
+#pp.ma .pult__cap.is-on{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 22px;align-items:start}
+#pp.ma .pult__cap .pult__top{grid-column:1/-1}
+#pp.ma .pult__cap .pult__how{grid-column:1}
+#pp.ma .pult__cap .pult__does{grid-column:1}
+#pp.ma .pult__cap .pult__two{grid-column:2;grid-row:2/span 2;grid-template-columns:1fr!important}
+#pp.ma .pult__cap .pult__more{grid-column:1/-1}
+#pp.ma .pult__does li{font-size:17px}
+
+/* B · «Сцена»: екран на всю ширину й більшу висоту, під ним один рядок — назва, ціна, 3 пункти; другорядне сховано */
+#pp.mb{width:860px}
+#pp.mb .pult__meter{display:none}
+#pp.mb .pult__body{grid-template-columns:1fr!important;gap:16px!important}
+#pp.mb .pult__screen{aspect-ratio:16/10.6}
+#pp.mb .pult__line{grid-template-columns:repeat(var(--n),minmax(0,1fr))!important;margin-bottom:14px!important}
+#pp.mb .pult__cap.is-on{display:grid;grid-template-columns:auto 1fr;gap:10px 26px;align-items:start}
+#pp.mb .pult__cap .pult__top{grid-column:1;grid-row:1}
+#pp.mb .pult__cap .pult__how{grid-column:1;grid-row:2;align-self:start}
+#pp.mb .pult__cap .pult__does{grid-column:2;grid-row:1/span 2;margin:0}
+#pp.mb .pult__cap .pult__two,#pp.mb .pult__cap .pult__more{display:none!important}
+#pp.mb .pult__does li{font-size:16px}
+
+/* C · «Меню збоку»: агенти — вертикальний список ліворуч, праворуч екран і опис */
+#pp.mc{width:900px}
+#pp.mc .pult{display:grid;grid-template-columns:220px minmax(0,1fr);grid-template-areas:"head head" "line body";column-gap:18px}
+#pp.mc .pult__head{grid-area:head}
+#pp.mc .pult__line{grid-area:line;display:flex!important;flex-direction:column;gap:8px;margin:0!important;align-self:start}
+#pp.mc .pult__key{width:100%;min-height:58px}
+#pp.mc .pult__body{grid-area:body;grid-template-columns:1fr!important;gap:14px!important}
+#pp.mc .pult__screen{aspect-ratio:16/10}
+#pp.mc .pult__cap.is-on{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;align-items:start}
+#pp.mc .pult__cap .pult__top{grid-column:1/-1}
+#pp.mc .pult__cap .pult__how{grid-column:1}
+#pp.mc .pult__cap .pult__does{grid-column:1}
+#pp.mc .pult__cap .pult__two{grid-column:2;grid-row:2/span 2;grid-template-columns:1fr!important}
+#pp.mc .pult__cap .pult__two .pult__path:not(.pult__path--earn){display:none}
+#pp.mc .pult__cap .pult__more{display:none!important}
+
+/* D · «Один агент — один кадр»: без ряду кнопок, великий номер і назва, екран ліворуч, текст праворуч, перемикач ‹ N/M › */
+#pp.md{width:800px}
+#pp.md .pult__line{display:none!important}
+#pp.md .pult__body{grid-template-columns:minmax(0,1.08fr) minmax(0,1fr)!important;gap:22px!important;align-items:stretch!important}
+#pp.md .pult__screen{aspect-ratio:auto;height:560px}
+#pp.md .pult__cap .pult__two{grid-template-columns:1fr!important}
+#pp.md .pult__does li{font-size:16px}
+#pp.md .md-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:18px}
+#pp.md .md-nav button{flex:none;width:52px;height:52px;border-radius:50%;border:1px solid rgba(253,213,6,.6);background:rgba(253,213,6,.08);color:#fdd506;font:600 22px/1 Inter,sans-serif;cursor:pointer}
+#pp.md .md-dots{display:flex;gap:8px;flex:1;justify-content:center}
+#pp.md .md-dots i{width:34px;height:6px;border-radius:3px;background:rgba(244,239,231,.15);cursor:pointer}
+#pp.md .md-dots i.on{background:#fdd506}
+#pp.md .md-cur{font:600 15px/1 'JetBrains Mono',monospace;letter-spacing:.12em;color:#c8c3bc;min-width:64px;text-align:center}
+#pp:not(.md) .md-nav{display:none}
+
+/* E · «Огляд»: усі агенти пакета картками; клік — розгорнути агента (режим A), «← все агенты» — назад */
+#pp.me{width:900px}
+#pp.me.ov .pult__line,#pp.me.ov .pult__body{display:none!important}
+#pp.me:not(.ov) .pult__line{grid-template-columns:repeat(var(--n),minmax(0,1fr))!important}
+#pp.me:not(.ov) .pult__body{grid-template-columns:1fr!important;gap:16px!important}
+#pp.me:not(.ov) .pult__screen{aspect-ratio:16/8.4}
+#pp.me:not(.ov) .pult__cap.is-on{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;align-items:start}
+#pp.me:not(.ov) .pult__cap .pult__top{grid-column:1/-1}
+#pp.me:not(.ov) .pult__cap .pult__two{grid-column:2;grid-row:2/span 2;grid-template-columns:1fr!important}
+#pp.me:not(.ov) .pult__cap .pult__more{display:none!important}
+#pp .ov-grid{display:none}
+#pp.me.ov .ov-grid{display:grid;grid-template-columns:repeat(var(--c,3),minmax(0,1fr));gap:14px}
+#pp .ov-card{display:flex;flex-direction:column;text-align:left;padding:0;border:1px solid rgba(244,239,231,.12);border-radius:18px;background:#15171b;color:#f4efe7;overflow:hidden;cursor:pointer;font:inherit}
+#pp .ov-card:hover{border-color:#fdd506}
+#pp .ov-img{height:170px;background:#0e1011 center/cover no-repeat}
+#pp .ov-tx{display:flex;flex-direction:column;gap:6px;padding:14px 16px 16px}
+#pp .ov-n{font:600 13px/1 'JetBrains Mono',monospace;color:#fdd506;letter-spacing:.1em}
+#pp .ov-nm{font:700 21px/1.15 'Inter Tight',Inter,sans-serif}
+#pp .ov-pr{font:600 15px/1.2 Inter,sans-serif;color:#fdd506}
+#pp .ov-earn{font:400 14.5px/1.4 Inter,sans-serif;color:#c8c3bc}
+#pp .ov-back{display:none;margin:0 0 12px;padding:9px 16px;border-radius:99px;border:1px solid rgba(253,213,6,.6);background:transparent;color:#fdd506;font:600 14px/1 Inter,sans-serif;cursor:pointer}
+#pp.me:not(.ov) .ov-back{display:inline-block}
+/* підгонка під квадрат */
+#pp.ma{width:820px}
+#pp.ma .pult__screen{aspect-ratio:16/7.4}
+#pp.ma .pult__cap .pult__more{display:none!important}
+#pp.mb .pult__screen{aspect-ratio:16/9.2}
+#pp.mc .pult__screen{aspect-ratio:16/11.2}
+#pp.md .pult__screen{height:600px}
+
+/* F · 13.10 «Щільно»: поверх sq — медіа агента ліворуч на всю висоту, праворуч назва + ціна, «Бизнесу» / «Заработок» стовпчиком */
+#pp.sq.mf .pult__body{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr)!important;gap:18px!important;align-items:stretch!important}
+#pp.sq.mf .pult__screen{aspect-ratio:auto!important;height:100%!important;min-height:520px}
+#pp.sq.mf .pult__cap.is-on{display:flex!important;flex-direction:column!important;gap:14px!important}
+#pp.sq.mf .pult__cap .pult__top{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:6px!important}
+#pp.sq.mf .pult__name{display:block!important;font-size:30px!important;line-height:1.1!important;color:#f4efe7!important}
+#pp.sq.mf .pult__cap .pult__two{display:flex!important;flex-direction:column!important;gap:14px!important;flex:1}
+#pp.sq.mf .pult__path{flex:1;display:flex;flex-direction:column;justify-content:flex-start}
+#pp.sq.mf .pult__path p{font-size:21px!important}
